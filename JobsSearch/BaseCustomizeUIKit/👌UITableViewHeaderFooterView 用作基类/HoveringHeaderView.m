@@ -21,7 +21,8 @@
     }return self;
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+-(void)touchesBegan:(NSSet<UITouch *> *)touches
+          withEvent:(UIEvent *)event{
     if (self.hoveringHeaderViewBlock) {
         self.hoveringHeaderViewBlock(@1);
     }

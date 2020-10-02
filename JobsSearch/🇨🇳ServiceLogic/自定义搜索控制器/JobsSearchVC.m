@@ -42,6 +42,11 @@ UITableViewDataSource
     self.tableView.alpha = 1;
     [self.view bringSubviewToFront:self.gk_navigationBar];
 }
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches
+          withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
 #pragma mark —————————— UITableViewDelegate,UITableViewDataSource ——————————
 -(CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -55,7 +60,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
 -(void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    [self.view endEditing:YES];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView
@@ -86,10 +91,20 @@ viewForHeaderInSection:(NSInteger)section{
     if (self.isHoveringHeaderView) {
         JobsSearchHoveringHeaderView *header = [[JobsSearchHoveringHeaderView alloc] initWithReuseIdentifier:NSStringFromClass(JobsSearchHoveringHeaderView.class)
                                                                                                     withData:self.sectionTitleMutArr[section]];
+        @weakify(self)
+        [header setHoveringHeaderViewBlock:^(id data) {
+            @strongify(self)
+            [self.view endEditing:YES];
+        }];
         return header;
     }else{
         JobsSearchNonHoveringHeaderView *header = [[JobsSearchNonHoveringHeaderView alloc] initWithReuseIdentifier:NSStringFromClass(JobsSearchNonHoveringHeaderView.class)
                                                                                                           withData:self.sectionTitleMutArr[section]];
+        @weakify(self)
+        [header setNonHoveringHeaderViewBlock:^(id data) {
+            @strongify(self)
+            [self.view endEditing:YES];
+        }];
         return header;
     }
     
@@ -147,6 +162,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!_jobsSearchBar) {
         _jobsSearchBar = JobsSearchBar.new;
         _jobsSearchBar.mj_size = CGSizeMake(SCREEN_WIDTH, 100);
+        @weakify(self)
+        [_jobsSearchBar actionBlockJobsSearchBar:^(id data) {
+            @strongify(self)
+            NSLog(@"KKK = %@",data);
+        }];
     }return _jobsSearchBar;
 }
 

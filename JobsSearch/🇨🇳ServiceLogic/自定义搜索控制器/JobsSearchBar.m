@@ -46,14 +46,18 @@ UITextFieldDelegate
 #pragma mark —— UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑
 - (BOOL)textFieldShouldBeginEditing:(ZYTextField *)textField{
-    return YES;
+    if (self.jobsSearchBarBlock) {
+        self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
+    }return YES;
 }
 //告诉委托人在指定的文本字段中开始编辑
 //- (void)textFieldDidBeginEditing:(UITextField *)textField{}
 //询问委托人是否应在指定的文本字段中停止编辑
 - (BOOL)textFieldShouldEndEditing:(ZYTextField *)textField{
     textField.isEditting = NO;
-    return YES;
+    if (self.jobsSearchBarBlock) {
+        self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
+    }return YES;
 }
 //告诉委托人对指定的文本字段停止编辑
 - (void)textFieldDidEndEditing:(ZYTextField *)textField{
