@@ -11,21 +11,25 @@
 @implementation UITableViewCell (WhiteArrows)
 
 static char *UITableViewCell_WhiteArrows_img = "UITableViewCell_WhiteArrows_img";
-@dynamic img;
+static char *UITableViewCell_WhiteArrows_size = "UITableViewCell_WhiteArrows_size";
 
-- (void)didMoveToSuperview {
-    [super didMoveToSuperview];
-    // 全局替换右侧箭头
+@dynamic img;
+@dynamic size;
+
+-(void)customAccessoryView:(MKDataBlock)customAccessoryViewBlock{
+    // 不用系统自带的箭头
     if (self.accessoryType == UITableViewCellAccessoryDisclosureIndicator) {
-//        UIImageView *i = [[UIImageView alloc] initWithImage:KIMG(@"WhiteRightArrow")];
-        
         UIButton *btn = UIButton.new;
+        //特比注意:如果这个地方是纯view（UIView、UIIMageView...）就可以不用加size，UIButton是因为受到了UIControl，需要接收一个size，否则显示不出来
+        btn.size = self.size;
         [btn setBackgroundImage:self.img
                        forState:UIControlStateNormal];
         @weakify(self)
         [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             @strongify(self)
-            NSLog(@"kakakaka");
+            if (customAccessoryViewBlock) {
+                customAccessoryViewBlock(self);
+            }
         }];
         
         self.accessoryView = btn;
@@ -48,6 +52,24 @@ static char *UITableViewCell_WhiteArrows_img = "UITableViewCell_WhiteArrows_img"
                                  image,
                                  OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }return image;
+}
+#pragma mark —— @property(nonatomic,assign)CGSize size;
+-(CGSize)size{
+    CGSize Size = [objc_getAssociatedObject(self, UITableViewCell_WhiteArrows_size) CGSizeValue];
+    if (CGSizeEqualToSize(Size, CGSizeZero)) {
+        Size = CGSizeMake(20, 20);//缺省值
+        objc_setAssociatedObject(self,
+                                 UITableViewCell_WhiteArrows_size,
+                                 [NSValue valueWithCGSize:Size],
+                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }return Size;
+}
+
+-(void)setSize:(CGSize)size{
+    objc_setAssociatedObject(self,
+                             UITableViewCell_WhiteArrows_size,
+                             [NSValue valueWithCGSize:size],
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

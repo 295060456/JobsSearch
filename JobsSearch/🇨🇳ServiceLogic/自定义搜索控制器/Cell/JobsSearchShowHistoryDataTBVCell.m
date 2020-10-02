@@ -20,9 +20,9 @@
         cell = [[JobsSearchShowHistoryDataTBVCell alloc] initWithStyle:UITableViewCellStyleDefault
                                                        reuseIdentifier:ReuseIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.contentView.backgroundColor = RandomColor;
         cell.imageView.image = KIMG(@"时钟");
-        cell.img = KIMG(@"");
     }return cell;
 }
 

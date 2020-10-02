@@ -87,6 +87,18 @@ viewForHeaderInSection:(NSInteger)section{
     UIView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:NSStringFromClass(headerClass)];
     return header;
 }
+//实现以下方法,以替换系统默认的右侧小箭头
+- (void)tableView:(UITableView *)tableView
+  willDisplayCell:(UITableViewCell *)cell
+forRowAtIndexPath:(NSIndexPath *)indexPath {
+    cell.img = KIMG(@"删除");
+    @weakify(self)
+    [cell customAccessoryView:^(id data) {
+        @strongify(self)
+        JobsSearchShowHistoryDataTBVCell *cell = (JobsSearchShowHistoryDataTBVCell *)data;
+        NSLog(@"MMM - %ld",cell.index);
+    }];
+}
 #pragma mark —— lazyLoad
 -(UITableView *)tableView{
     if (!_tableView) {
