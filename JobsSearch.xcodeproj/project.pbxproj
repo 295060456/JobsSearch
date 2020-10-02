@@ -115,10 +115,6 @@
 		C59B9B002526E3E10039B485 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AAF2526E3E10039B485 /* CJTextField.m */; };
 		C59B9B012526E3E10039B485 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AB22526E3E10039B485 /* ZYTextField.m */; };
 		C59B9B022526E3E10039B485 /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AB32526E3E10039B485 /* ZYTextField+HistoryDataList.m */; };
-		C59B9B032526E3E10039B485 /* closeCircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9AB52526E3E10039B485 /* closeCircle@2x.png */; };
-		C59B9B042526E3E10039B485 /* 登录注册关闭@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9AB62526E3E10039B485 /* 登录注册关闭@3x.png */; };
-		C59B9B052526E3E10039B485 /* 登录注册关闭@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9AB72526E3E10039B485 /* 登录注册关闭@2x.png */; };
-		C59B9B062526E3E10039B485 /* closeCircle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9AB92526E3E10039B485 /* closeCircle@3x.png */; };
 		C59B9B072526E3E10039B485 /* UITextField+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9ABC2526E3E10039B485 /* UITextField+Extend.m */; };
 		C59B9B082526E3E10039B485 /* UIView+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9ABF2526E3E10039B485 /* UIView+Chain.m */; };
 		C59B9B092526E3E10039B485 /* UIView+Measure.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AC12526E3E10039B485 /* UIView+Measure.m */; };
@@ -281,6 +277,8 @@
 		C59B9D382526E4580039B485 /* Others.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B9D292526E4580039B485 /* Others.bundle */; };
 		C59B9D6B2526E59E0039B485 /* ViewController@1.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9D6A2526E59E0039B485 /* ViewController@1.m */; };
 		C59B9D712526E5AD0039B485 /* ViewController@2.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9D702526E5AD0039B485 /* ViewController@2.m */; };
+		C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9D9E2526EC070039B485 /* JobsSearchVC.m */; };
+		C59B9DDD2526EF5A0039B485 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B9DDC2526EF5A0039B485 /* ZYTextField.bundle */; };
 		E7F73E4FA4EEA0009C5C36E7 /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -529,11 +527,7 @@
 		C59B9AB22526E3E10039B485 /* ZYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
 		C59B9AB32526E3E10039B485 /* ZYTextField+HistoryDataList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZYTextField+HistoryDataList.m"; sourceTree = "<group>"; };
 		C59B9AB42526E3E10039B485 /* ZYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
-		C59B9AB52526E3E10039B485 /* closeCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeCircle@2x.png"; sourceTree = "<group>"; };
-		C59B9AB62526E3E10039B485 /* 登录注册关闭@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录注册关闭@3x.png"; sourceTree = "<group>"; };
-		C59B9AB72526E3E10039B485 /* 登录注册关闭@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录注册关闭@2x.png"; sourceTree = "<group>"; };
 		C59B9AB82526E3E10039B485 /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
-		C59B9AB92526E3E10039B485 /* closeCircle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeCircle@3x.png"; sourceTree = "<group>"; };
 		C59B9ABB2526E3E10039B485 /* UITextField+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extend.h"; sourceTree = "<group>"; };
 		C59B9ABC2526E3E10039B485 /* UITextField+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extend.m"; sourceTree = "<group>"; };
 		C59B9ABE2526E3E10039B485 /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
@@ -839,6 +833,9 @@
 		C59B9D6A2526E59E0039B485 /* ViewController@1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController@1.m"; sourceTree = "<group>"; };
 		C59B9D6F2526E5AD0039B485 /* ViewController@2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController@2.h"; sourceTree = "<group>"; };
 		C59B9D702526E5AD0039B485 /* ViewController@2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController@2.m"; sourceTree = "<group>"; };
+		C59B9D9D2526EC070039B485 /* JobsSearchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchVC.h; sourceTree = "<group>"; };
+		C59B9D9E2526EC070039B485 /* JobsSearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchVC.m; sourceTree = "<group>"; };
+		C59B9DDC2526EF5A0039B485 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
 		DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1235,6 +1232,7 @@
 		C59B9A232526E3800039B485 /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
+				C59B9D9C2526EBDA0039B485 /* 自定义搜索控制器 */,
 				C59B9D692526E59E0039B485 /* ViewController@1.h */,
 				C59B9D6A2526E59E0039B485 /* ViewController@1.m */,
 				C59B9D6F2526E5AD0039B485 /* ViewController@2.h */,
@@ -1396,11 +1394,11 @@
 		C59B9A7E2526E3E10039B485 /* TableViewAnimationKit */ = {
 			isa = PBXGroup;
 			children = (
+				C59B9A832526E3E10039B485 /* TableViewAnimationKit.h */,
 				C59B9A7F2526E3E10039B485 /* TableViewAnimationKit.m */,
+				C59B9A822526E3E10039B485 /* TableViewAnimationKitConfig.h */,
 				C59B9A802526E3E10039B485 /* TableViewAnimationKitHeaders.h */,
 				C59B9A812526E3E10039B485 /* UITableView+XSAnimationKit.h */,
-				C59B9A822526E3E10039B485 /* TableViewAnimationKitConfig.h */,
-				C59B9A832526E3E10039B485 /* TableViewAnimationKit.h */,
 				C59B9A842526E3E10039B485 /* UITableView+XSAnimationKit.m */,
 			);
 			path = TableViewAnimationKit;
@@ -1530,14 +1528,11 @@
 		C59B9AB12526E3E10039B485 /* ZYTextField */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9AB22526E3E10039B485 /* ZYTextField.m */,
-				C59B9AB32526E3E10039B485 /* ZYTextField+HistoryDataList.m */,
+				C59B9DDC2526EF5A0039B485 /* ZYTextField.bundle */,
 				C59B9AB42526E3E10039B485 /* ZYTextField.h */,
-				C59B9AB52526E3E10039B485 /* closeCircle@2x.png */,
-				C59B9AB62526E3E10039B485 /* 登录注册关闭@3x.png */,
-				C59B9AB72526E3E10039B485 /* 登录注册关闭@2x.png */,
+				C59B9AB22526E3E10039B485 /* ZYTextField.m */,
 				C59B9AB82526E3E10039B485 /* ZYTextField+HistoryDataList.h */,
-				C59B9AB92526E3E10039B485 /* closeCircle@3x.png */,
+				C59B9AB32526E3E10039B485 /* ZYTextField+HistoryDataList.m */,
 			);
 			path = ZYTextField;
 			sourceTree = "<group>";
@@ -2266,6 +2261,15 @@
 			path = lottieJson;
 			sourceTree = "<group>";
 		};
+		C59B9D9C2526EBDA0039B485 /* 自定义搜索控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				C59B9D9D2526EC070039B485 /* JobsSearchVC.h */,
+				C59B9D9E2526EC070039B485 /* JobsSearchVC.m */,
+			);
+			path = "自定义搜索控制器";
+			sourceTree = "<group>";
+		};
 		DB6EB4965849B35F47ED7CA5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2408,16 +2412,13 @@
 				C59B9CA32526E3F10039B485 /* spark_red@2x.png in Resources */,
 				C59B998E2526E0A50039B485 /* 手动集成 SDWebImage_WebP in Resources */,
 				C59B9CD32526E3F10039B485 /* iOS小技巧：用runtime 解决UIButton 重复点击问题 in Resources */,
-				C59B9B042526E3E10039B485 /* 登录注册关闭@3x.png in Resources */,
 				C59B9D362526E4580039B485 /* huiyuan.json in Resources */,
-				C59B9B052526E3E10039B485 /* 登录注册关闭@2x.png in Resources */,
 				C59B9CAD2526E3F10039B485 /* 分享控件的用法 in Resources */,
 				C59B9D372526E4580039B485 /* fangzi.json in Resources */,
 				C59B9D2C2526E4580039B485 /* 任务.json in Resources */,
 				C59B9C9B2526E3F10039B485 /* 水平进度条.png in Resources */,
 				C59B9D2B2526E4580039B485 /* 主页.json in Resources */,
 				C59B9D352526E4580039B485 /* dingdan.json in Resources */,
-				C59B9B062526E3E10039B485 /* closeCircle@3x.png in Resources */,
 				C59B9D2D2526E4580039B485 /* green_lottie_tab_news.json in Resources */,
 				C59B9CA62526E3F10039B485 /* day_like@3x.png in Resources */,
 				C59B99872526E0A50039B485 /* BRPickerView.bundle in Resources */,
@@ -2425,6 +2426,7 @@
 				C59B9CC82526E3F10039B485 /* 带有按键音的按钮 in Resources */,
 				C59B9CB72526E3F10039B485 /* del_Photo@3x.png in Resources */,
 				C59B9D2A2526E4580039B485 /* 刷新.bundle in Resources */,
+				C59B9DDD2526EF5A0039B485 /* ZYTextField.bundle in Resources */,
 				C59B98EA2526DE270039B485 /* Assets.xcassets in Resources */,
 				C59B98E52526DE260039B485 /* Main.storyboard in Resources */,
 				C59B9D332526E4580039B485 /* 上传与拍照.json in Resources */,
@@ -2433,7 +2435,6 @@
 				C59B9D302526E4580039B485 /* green_lottie_tab_discover.json in Resources */,
 				C59B9CA22526E3F10039B485 /* spark_red@3x.png in Resources */,
 				C59B99982526E0A50039B485 /* ZZCircleProgress.bundle in Resources */,
-				C59B9B032526E3E10039B485 /* closeCircle@2x.png in Resources */,
 				C59B9CA42526E3F10039B485 /* spark_red.png in Resources */,
 				C59B9D322526E4580039B485 /* 社区.json in Resources */,
 			);
@@ -2676,6 +2677,7 @@
 				C59B9C8A2526E3F10039B485 /* LOTShapeStroke.m in Sources */,
 				C59B9C6D2526E3F10039B485 /* LOTShapeRepeater.m in Sources */,
 				C59B9AD42526E3E10039B485 /* UIImage+screenshot.m in Sources */,
+				C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */,
 				C59B9C932526E3F10039B485 /* FMHttpRequest.m in Sources */,
 				C59B9CC12526E3F10039B485 /* MovieCountDown.m in Sources */,
 				C59B9AF22526E3E10039B485 /* NSString+Extras.m in Sources */,
@@ -2966,6 +2968,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MonkeyKingVideo.JobsSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-ambiguous-macro";
 			};
 			name = Debug;
 		};
@@ -2986,6 +2989,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MonkeyKingVideo.JobsSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-ambiguous-macro";
 			};
 			name = Release;
 		};

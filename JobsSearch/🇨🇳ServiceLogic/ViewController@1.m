@@ -6,8 +6,11 @@
 //
 
 #import "ViewController@1.h"
+#import "JobsSearchVC.h"
 
 @interface ViewController_1 ()
+
+@property(nonatomic,strong)JobsSearchVC *jobsSearchVC;
 
 @end
 
@@ -15,8 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = KYellowColor;
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches
+          withEvent:(UIEvent *)event{
+    @weakify(self)
+    [JobsSearchVC ComingFromVC:weak_self
+                   comingStyle:ComingStyle_PUSH
+             presentationStyle:UIModalPresentationAutomatic
+                 requestParams:nil
+                       success:^(id data) {}
+                      animated:YES];
+}
 
 @end
