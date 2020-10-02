@@ -13,10 +13,6 @@ UITextFieldDelegate
 ,CJTextFieldDeleteDelegate
 >
 
-
-@property(nonatomic,strong)ZYTextField *tf;
-@property(nonatomic,strong)UIButton *cancelBtn;
-
 @property(nonatomic,assign)BOOL isOK;
 @property(nonatomic,copy)MKDataBlock jobsSearchBarBlock;
 
@@ -34,6 +30,7 @@ UITextFieldDelegate
     [super drawRect:rect];
     if (!self.isOK) {
         self.tf.alpha = 1;
+        self.cancelBtn.alpha = 1;
         self.isOK = YES;
     }
 }
@@ -99,10 +96,16 @@ replacementString:(NSString *)string{
         _tf.keyboardAppearance = UIKeyboardAppearanceAlert;
         [self addSubview:_tf];
 //        _passwordTF.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
-        [_tf mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.left.equalTo(self).offset(10);
-            make.bottom.right.equalTo(self).offset(-10);
-        }];
+//        [_tf mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.left.equalTo(self).offset(10);
+//            make.bottom.right.equalTo(self).offset(-10);
+//        }];
+        
+        _tf.frame = CGRectMake(10,
+                               10,
+                               SCREEN_WIDTH - 20,
+                               self.mj_h - 20);
+        
         [UIView cornerCutToCircleWithView:_tf AndCornerRadius:8];
         [UIView colourToLayerOfView:_tf WithColour:kBlueColor AndBorderWidth:1];
     }return _tf;
@@ -113,6 +116,10 @@ replacementString:(NSString *)string{
         _cancelBtn = UIButton.new;
         _cancelBtn.backgroundColor = kRedColor;
         [self addSubview:_cancelBtn];
+        _cancelBtn.frame = CGRectMake(SCREEN_WIDTH - 10,
+                                      10,
+                                      0,
+                                      0);
     }return _cancelBtn;
 }
 

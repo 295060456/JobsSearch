@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JobsSearchBar : UIView
 
+@property(nonatomic,strong)ZYTextField *tf;
+@property(nonatomic,strong)UIButton *cancelBtn;
+
 -(void)actionBlockJobsSearchBar:(MKDataBlock)jobsSearchBarBlock;//事件传递
 
 @end

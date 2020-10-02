@@ -132,6 +132,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!_tableView) {
         _tableView = UITableView.new;
         _tableView.backgroundColor = kRedColor;
+        _tableView.scrollEnabled = NO;
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -164,8 +165,50 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         _jobsSearchBar.mj_size = CGSizeMake(SCREEN_WIDTH, 100);
         @weakify(self)
         [_jobsSearchBar actionBlockJobsSearchBar:^(id data) {
-            @strongify(self)
             NSLog(@"KKK = %@",data);
+            if ([data isKindOfClass:NSString.class]) {
+                NSString *str = (NSString *)data;
+                if ([str isEqualToString:@"textFieldShouldEndEditing:"]) {
+                    [UIView animateWithDuration:2
+                                          delay:0.1
+                         usingSpringWithDamping:0.3
+                          initialSpringVelocity:10
+                                        options:UIViewAnimationOptionCurveEaseInOut
+                                     animations:^{
+                        @strongify(self)
+                        self->_jobsSearchBar.tf.frame = CGRectMake(10,
+                                                                   10,
+                                                                   SCREEN_WIDTH - 20,
+                                                                   self->_jobsSearchBar.mj_h - 20);
+                        self->_jobsSearchBar.cancelBtn.frame = CGRectMake(SCREEN_WIDTH - 10,
+                                                                          10,
+                                                                          0,
+                                                                          0);
+                    } completion:^(BOOL finished) {
+                        
+                    }];
+                }else if([str isEqualToString:@"textFieldShouldBeginEditing:"]){
+                    [UIView animateWithDuration:2
+                                          delay:0.1
+                         usingSpringWithDamping:0.3
+                          initialSpringVelocity:10
+                                        options:UIViewAnimationOptionCurveEaseInOut
+                                     animations:^{
+                        @strongify(self)
+                        self->_jobsSearchBar.tf.frame = CGRectMake(10,
+                                                                   10,
+                                                                   SCREEN_WIDTH - 20 - 80,
+                                                                   self->_jobsSearchBar.mj_h - 20);
+                        
+                        self->_jobsSearchBar.cancelBtn.frame = CGRectMake(SCREEN_WIDTH - 80 - 10,
+                                                                          10,
+                                                                          80,
+                                                                          self->_jobsSearchBar.mj_h - 20);
+                    } completion:^(BOOL finished) {
+                        
+                    }];
+                }else{}
+            }
         }];
     }return _jobsSearchBar;
 }
