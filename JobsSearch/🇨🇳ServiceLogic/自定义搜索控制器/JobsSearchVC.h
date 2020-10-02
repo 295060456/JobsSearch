@@ -9,14 +9,23 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger, JobsSearchItemStyle) {
+    JobsSearchItemStyle_0,// 两竖列的列表的形式，前三用高亮显示
+    JobsSearchItemStyle_1,// 随机色 混排
+    JobsSearchItemStyle_2,// 3列表格形式
+};
+
 @interface JobsSearchVC : BaseVC
 
-+ (instancetype)ComingFromVC:(UIViewController *)rootVC
-                 comingStyle:(ComingStyle)comingStyle
-           presentationStyle:(UIModalPresentationStyle)presentationStyle
-               requestParams:(nullable id)requestParams
-                     success:(MKDataBlock)block
-                    animated:(BOOL)animated;
+@property(nonatomic,assign)JobsSearchItemStyle searchItemStyle;
+@property(nonatomic,assign)BOOL isHoveringHeaderView;
+
++(instancetype)ComingFromVC:(UIViewController *)rootVC
+                comingStyle:(ComingStyle)comingStyle
+          presentationStyle:(UIModalPresentationStyle)presentationStyle
+              requestParams:(nullable id)requestParams
+                    success:(MKDataBlock)block
+                   animated:(BOOL)animated;
 
 @end
 

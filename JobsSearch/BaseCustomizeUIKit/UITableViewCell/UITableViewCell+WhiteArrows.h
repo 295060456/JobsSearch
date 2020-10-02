@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITableViewCell (WhiteArrows)
 
+@property(nonatomic,strong)UIImage *img;
+
 @end
 
 NS_ASSUME_NONNULL_END

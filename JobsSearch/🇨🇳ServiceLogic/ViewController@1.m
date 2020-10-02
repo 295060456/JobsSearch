@@ -23,12 +23,17 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
-    @weakify(self)
-    [JobsSearchVC ComingFromVC:weak_self
+    
+    [JobsSearchVC ComingFromVC:self
                    comingStyle:ComingStyle_PUSH
              presentationStyle:UIModalPresentationAutomatic
                  requestParams:nil
-                       success:^(id data) {}
+                       success:^(id data) {
+        if ([data isKindOfClass:JobsSearchVC.class]) {
+            JobsSearchVC *vc = (JobsSearchVC *)data;
+            vc.isHoveringHeaderView = YES;
+        }
+    }
                       animated:YES];
 }
 

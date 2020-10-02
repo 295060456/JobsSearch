@@ -99,8 +99,6 @@
 		C59B9AF02526E3E10039B485 /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A882526E3E10039B485 /* BaseTableViewer.m */; };
 		C59B9AF12526E3E10039B485 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A8A2526E3E10039B485 /* UIColor+Hex.m */; };
 		C59B9AF22526E3E10039B485 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A8D2526E3E10039B485 /* NSString+Extras.m */; };
-		C59B9AF32526E3E10039B485 /* ViewForHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A902526E3E10039B485 /* ViewForHeader.m */; };
-		C59B9AF42526E3E10039B485 /* ViewForFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A912526E3E10039B485 /* ViewForFooter.m */; };
 		C59B9AF52526E3E10039B485 /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A952526E3E10039B485 /* NSArray+Extension.m */; };
 		C59B9AF62526E3E10039B485 /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A982526E3E10039B485 /* NSArray+Extend.m */; };
 		C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A9B2526E3E10039B485 /* DeleteSystemUITabBarButton.m */; };
@@ -279,6 +277,16 @@
 		C59B9D712526E5AD0039B485 /* ViewController@2.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9D702526E5AD0039B485 /* ViewController@2.m */; };
 		C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9D9E2526EC070039B485 /* JobsSearchVC.m */; };
 		C59B9DDD2526EF5A0039B485 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B9DDC2526EF5A0039B485 /* ZYTextField.bundle */; };
+		C59B9F132526F56E0039B485 /* JobsSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9F122526F56E0039B485 /* JobsSearchBar.m */; };
+		C59BA07C252710CF0039B485 /* HoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA075252710CE0039B485 /* HoveringHeaderView.m */; };
+		C59BA07D252710CF0039B485 /* NonHoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA076252710CF0039B485 /* NonHoveringHeaderView.m */; };
+		C59BA07E252710CF0039B485 /* 是否取消悬停 in Resources */ = {isa = PBXBuildFile; fileRef = C59BA077252710CF0039B485 /* 是否取消悬停 */; };
+		C59BA07F252710CF0039B485 /* UITableViewHeaderFooterView+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA07B252710CF0039B485 /* UITableViewHeaderFooterView+Attribute.m */; };
+		C59BA0A6252711260039B485 /* JobsSearchHoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA0A5252711260039B485 /* JobsSearchHoveringHeaderView.m */; };
+		C59BA0B62527166F0039B485 /* JobsSearchNonHoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA0B52527166F0039B485 /* JobsSearchNonHoveringHeaderView.m */; };
+		C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */; };
+		C59BA1EE25271C030039B485 /* 时钟.png in Resources */ = {isa = PBXBuildFile; fileRef = C59BA1ED25271C030039B485 /* 时钟.png */; };
+		C59BA1F325271DAE0039B485 /* 删除.png in Resources */ = {isa = PBXBuildFile; fileRef = C59BA1F225271DAE0039B485 /* 删除.png */; };
 		E7F73E4FA4EEA0009C5C36E7 /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -499,10 +507,6 @@
 		C59B9A8B2526E3E10039B485 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		C59B9A8D2526E3E10039B485 /* NSString+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extras.m"; sourceTree = "<group>"; };
 		C59B9A8E2526E3E10039B485 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
-		C59B9A902526E3E10039B485 /* ViewForHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewForHeader.m; sourceTree = "<group>"; };
-		C59B9A912526E3E10039B485 /* ViewForFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewForFooter.m; sourceTree = "<group>"; };
-		C59B9A922526E3E10039B485 /* ViewForFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewForFooter.h; sourceTree = "<group>"; };
-		C59B9A932526E3E10039B485 /* ViewForHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewForHeader.h; sourceTree = "<group>"; };
 		C59B9A952526E3E10039B485 /* NSArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
 		C59B9A962526E3E10039B485 /* NSArray+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extend.h"; sourceTree = "<group>"; };
 		C59B9A972526E3E10039B485 /* NSArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
@@ -836,6 +840,23 @@
 		C59B9D9D2526EC070039B485 /* JobsSearchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchVC.h; sourceTree = "<group>"; };
 		C59B9D9E2526EC070039B485 /* JobsSearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchVC.m; sourceTree = "<group>"; };
 		C59B9DDC2526EF5A0039B485 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
+		C59B9F112526F56E0039B485 /* JobsSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchBar.h; sourceTree = "<group>"; };
+		C59B9F122526F56E0039B485 /* JobsSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchBar.m; sourceTree = "<group>"; };
+		C59BA075252710CE0039B485 /* HoveringHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoveringHeaderView.m; sourceTree = "<group>"; };
+		C59BA076252710CF0039B485 /* NonHoveringHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonHoveringHeaderView.m; sourceTree = "<group>"; };
+		C59BA077252710CF0039B485 /* 是否取消悬停 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "是否取消悬停"; sourceTree = "<group>"; };
+		C59BA078252710CF0039B485 /* NonHoveringHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonHoveringHeaderView.h; sourceTree = "<group>"; };
+		C59BA079252710CF0039B485 /* UITableViewHeaderFooterView+Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewHeaderFooterView+Attribute.h"; sourceTree = "<group>"; };
+		C59BA07A252710CF0039B485 /* HoveringHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoveringHeaderView.h; sourceTree = "<group>"; };
+		C59BA07B252710CF0039B485 /* UITableViewHeaderFooterView+Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewHeaderFooterView+Attribute.m"; sourceTree = "<group>"; };
+		C59BA0A4252711260039B485 /* JobsSearchHoveringHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchHoveringHeaderView.h; sourceTree = "<group>"; };
+		C59BA0A5252711260039B485 /* JobsSearchHoveringHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchHoveringHeaderView.m; sourceTree = "<group>"; };
+		C59BA0B42527166F0039B485 /* JobsSearchNonHoveringHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchNonHoveringHeaderView.h; sourceTree = "<group>"; };
+		C59BA0B52527166F0039B485 /* JobsSearchNonHoveringHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchNonHoveringHeaderView.m; sourceTree = "<group>"; };
+		C59BA129252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchShowHistoryDataTBVCell.h; sourceTree = "<group>"; };
+		C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchShowHistoryDataTBVCell.m; sourceTree = "<group>"; };
+		C59BA1ED25271C030039B485 /* 时钟.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "时钟.png"; sourceTree = "<group>"; };
+		C59BA1F225271DAE0039B485 /* 删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除.png"; sourceTree = "<group>"; };
 		DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1176,7 +1197,7 @@
 		C59B9A212526E36F0039B485 /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A8F2526E3E10039B485 /* 👌UITableViewHeaderFooterView */,
+				C59B9A8F2526E3E10039B485 /* 👌UITableViewHeaderFooterView 用作基类 */,
 				C59B9A702526E3E10039B485 /* CALayer */,
 				C59B9A942526E3E10039B485 /* NSArray */,
 				C59B9A2D2526E3E00039B485 /* NSObject */,
@@ -1281,19 +1302,19 @@
 		C59B9A3F2526E3E00039B485 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A402526E3E00039B485 /* UIImage+YBGIF.m */,
-				C59B9A412526E3E00039B485 /* UIImage+SYS.h */,
-				C59B9A422526E3E00039B485 /* UIImage+Tailor.m */,
-				C59B9A432526E3E00039B485 /* UIImage+Overlay.h */,
-				C59B9A442526E3E00039B485 /* UIImage+screenshot.m */,
-				C59B9A452526E3E00039B485 /* UIImage+Extras.m */,
 				C59B9A462526E3E00039B485 /* LoadingImage.h */,
-				C59B9A472526E3E00039B485 /* UIImage+SYS.m */,
-				C59B9A482526E3E00039B485 /* UIImage+Tailor.h */,
-				C59B9A492526E3E00039B485 /* UIImage+YBGIF.h */,
 				C59B9A4A2526E3E00039B485 /* UIImage+Extras.h */,
+				C59B9A452526E3E00039B485 /* UIImage+Extras.m */,
+				C59B9A432526E3E00039B485 /* UIImage+Overlay.h */,
 				C59B9A4B2526E3E00039B485 /* UIImage+Overlay.m */,
 				C59B9A4C2526E3E00039B485 /* UIImage+screenshot.h */,
+				C59B9A442526E3E00039B485 /* UIImage+screenshot.m */,
+				C59B9A412526E3E00039B485 /* UIImage+SYS.h */,
+				C59B9A472526E3E00039B485 /* UIImage+SYS.m */,
+				C59B9A482526E3E00039B485 /* UIImage+Tailor.h */,
+				C59B9A422526E3E00039B485 /* UIImage+Tailor.m */,
+				C59B9A492526E3E00039B485 /* UIImage+YBGIF.h */,
+				C59B9A402526E3E00039B485 /* UIImage+YBGIF.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1301,34 +1322,34 @@
 		C59B9A4D2526E3E00039B485 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A4E2526E3E00039B485 /* BaseVC+TZImagePickerController.m */,
-				C59B9A4F2526E3E00039B485 /* BaseVC+AFNReachability.m */,
-				C59B9A502526E3E00039B485 /* BaseVC+JXCategoryListContentViewDelegate.h */,
-				C59B9A512526E3E00039B485 /* BaseVC+BackBtn.m */,
-				C59B9A522526E3E00039B485 /* BaseVC+JPImageresizerView.h */,
-				C59B9A532526E3E00039B485 /* UIViewController+Shake.m */,
 				C59B9A542526E3E00039B485 /* BaseVC.h */,
-				C59B9A552526E3E00039B485 /* BaseVC+GifImageView.m */,
+				C59B9A602526E3E00039B485 /* BaseVC.m */,
+				C59B9A5E2526E3E00039B485 /* BaseVC+AFNReachability.h */,
+				C59B9A4F2526E3E00039B485 /* BaseVC+AFNReachability.m */,
+				C59B9A5C2526E3E00039B485 /* BaseVC+BackBtn.h */,
+				C59B9A512526E3E00039B485 /* BaseVC+BackBtn.m */,
+				C59B9A662526E3E00039B485 /* BaseVC+BRPickerView.h */,
 				C59B9A562526E3E00039B485 /* BaseVC+BRPickerView.m */,
+				C59B9A672526E3E00039B485 /* BaseVC+BWShareView.h */,
+				C59B9A5B2526E3E00039B485 /* BaseVC+BWShareView.m */,
+				C59B9A652526E3E00039B485 /* BaseVC+GifImageView.h */,
+				C59B9A552526E3E00039B485 /* BaseVC+GifImageView.m */,
+				C59B9A522526E3E00039B485 /* BaseVC+JPImageresizerView.h */,
+				C59B9A622526E3E00039B485 /* BaseVC+JPImageresizerView.m */,
+				C59B9A502526E3E00039B485 /* BaseVC+JXCategoryListContentViewDelegate.h */,
+				C59B9A5D2526E3E00039B485 /* BaseVC+JXCategoryListContentViewDelegate.m */,
+				C59B9A5A2526E3E00039B485 /* BaseVC+MJRefresh.h */,
+				C59B9A682526E3E00039B485 /* BaseVC+MJRefresh.m */,
+				C59B9A592526E3E00039B485 /* BaseVC+OpenURL.h */,
+				C59B9A692526E3E00039B485 /* BaseVC+OpenURL.m */,
+				C59B9A5F2526E3E00039B485 /* BaseVC+TZImagePickerController.h */,
+				C59B9A4E2526E3E00039B485 /* BaseVC+TZImagePickerController.m */,
+				C59B9A642526E3E00039B485 /* BaseVC+TZImagePickerControllerDelegate.h */,
 				C59B9A572526E3E00039B485 /* BaseVC+TZImagePickerControllerDelegate.m */,
 				C59B9A582526E3E00039B485 /* BaseVC+TZLocationManager.h */,
-				C59B9A592526E3E00039B485 /* BaseVC+OpenURL.h */,
-				C59B9A5A2526E3E00039B485 /* BaseVC+MJRefresh.h */,
-				C59B9A5B2526E3E00039B485 /* BaseVC+BWShareView.m */,
-				C59B9A5C2526E3E00039B485 /* BaseVC+BackBtn.h */,
-				C59B9A5D2526E3E00039B485 /* BaseVC+JXCategoryListContentViewDelegate.m */,
-				C59B9A5E2526E3E00039B485 /* BaseVC+AFNReachability.h */,
-				C59B9A5F2526E3E00039B485 /* BaseVC+TZImagePickerController.h */,
-				C59B9A602526E3E00039B485 /* BaseVC.m */,
-				C59B9A612526E3E00039B485 /* UIViewController+Shake.h */,
-				C59B9A622526E3E00039B485 /* BaseVC+JPImageresizerView.m */,
 				C59B9A632526E3E00039B485 /* BaseVC+TZLocationManager.m */,
-				C59B9A642526E3E00039B485 /* BaseVC+TZImagePickerControllerDelegate.h */,
-				C59B9A652526E3E00039B485 /* BaseVC+GifImageView.h */,
-				C59B9A662526E3E00039B485 /* BaseVC+BRPickerView.h */,
-				C59B9A672526E3E00039B485 /* BaseVC+BWShareView.h */,
-				C59B9A682526E3E00039B485 /* BaseVC+MJRefresh.m */,
-				C59B9A692526E3E00039B485 /* BaseVC+OpenURL.m */,
+				C59B9A612526E3E00039B485 /* UIViewController+Shake.h */,
+				C59B9A532526E3E00039B485 /* UIViewController+Shake.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1407,8 +1428,8 @@
 		C59B9A852526E3E10039B485 /* 专治UITableView相应链断裂 */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A862526E3E10039B485 /* BaseTableViewer.h */,
 				C59B9A872526E3E10039B485 /* 专治UITableView相应链断裂 */,
+				C59B9A862526E3E10039B485 /* BaseTableViewer.h */,
 				C59B9A882526E3E10039B485 /* BaseTableViewer.m */,
 			);
 			path = "专治UITableView相应链断裂";
@@ -1432,15 +1453,18 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
-		C59B9A8F2526E3E10039B485 /* 👌UITableViewHeaderFooterView */ = {
+		C59B9A8F2526E3E10039B485 /* 👌UITableViewHeaderFooterView 用作基类 */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A902526E3E10039B485 /* ViewForHeader.m */,
-				C59B9A912526E3E10039B485 /* ViewForFooter.m */,
-				C59B9A922526E3E10039B485 /* ViewForFooter.h */,
-				C59B9A932526E3E10039B485 /* ViewForHeader.h */,
+				C59BA077252710CF0039B485 /* 是否取消悬停 */,
+				C59BA07A252710CF0039B485 /* HoveringHeaderView.h */,
+				C59BA075252710CE0039B485 /* HoveringHeaderView.m */,
+				C59BA078252710CF0039B485 /* NonHoveringHeaderView.h */,
+				C59BA076252710CF0039B485 /* NonHoveringHeaderView.m */,
+				C59BA079252710CF0039B485 /* UITableViewHeaderFooterView+Attribute.h */,
+				C59BA07B252710CF0039B485 /* UITableViewHeaderFooterView+Attribute.m */,
 			);
-			path = "👌UITableViewHeaderFooterView";
+			path = "👌UITableViewHeaderFooterView 用作基类";
 			sourceTree = "<group>";
 		};
 		C59B9A942526E3E10039B485 /* NSArray */ = {
@@ -1484,14 +1508,14 @@
 		C59B9AA12526E3E10039B485 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				C59B9AA92526E3E10039B485 /* TBVCell_style_01.h */,
+				C59B9AA52526E3E10039B485 /* TBVCell_style_01.m */,
+				C59B9AA72526E3E10039B485 /* TBVCell_style_02.h */,
 				C59B9AA22526E3E10039B485 /* TBVCell_style_02.m */,
 				C59B9AA32526E3E10039B485 /* UITableViewCell+WhiteArrows.h */,
-				C59B9AA42526E3E10039B485 /* WhiteRightArrow@2x.png */,
-				C59B9AA52526E3E10039B485 /* TBVCell_style_01.m */,
-				C59B9AA62526E3E10039B485 /* WhiteRightArrow@3x.png */,
-				C59B9AA72526E3E10039B485 /* TBVCell_style_02.h */,
 				C59B9AA82526E3E10039B485 /* UITableViewCell+WhiteArrows.m */,
-				C59B9AA92526E3E10039B485 /* TBVCell_style_01.h */,
+				C59B9AA42526E3E10039B485 /* WhiteRightArrow@2x.png */,
+				C59B9AA62526E3E10039B485 /* WhiteRightArrow@3x.png */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -2264,10 +2288,36 @@
 		C59B9D9C2526EBDA0039B485 /* 自定义搜索控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				C59BA0E5252717560039B485 /* Cell */,
+				C59BA0B32527164F0039B485 /* JobsSearchHeaderFooterView */,
 				C59B9D9D2526EC070039B485 /* JobsSearchVC.h */,
 				C59B9D9E2526EC070039B485 /* JobsSearchVC.m */,
+				C59B9F112526F56E0039B485 /* JobsSearchBar.h */,
+				C59B9F122526F56E0039B485 /* JobsSearchBar.m */,
 			);
 			path = "自定义搜索控制器";
+			sourceTree = "<group>";
+		};
+		C59BA0B32527164F0039B485 /* JobsSearchHeaderFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				C59BA0A4252711260039B485 /* JobsSearchHoveringHeaderView.h */,
+				C59BA0A5252711260039B485 /* JobsSearchHoveringHeaderView.m */,
+				C59BA0B42527166F0039B485 /* JobsSearchNonHoveringHeaderView.h */,
+				C59BA0B52527166F0039B485 /* JobsSearchNonHoveringHeaderView.m */,
+			);
+			path = JobsSearchHeaderFooterView;
+			sourceTree = "<group>";
+		};
+		C59BA0E5252717560039B485 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C59BA129252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.h */,
+				C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */,
+				C59BA1F225271DAE0039B485 /* 删除.png */,
+				C59BA1ED25271C030039B485 /* 时钟.png */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		DB6EB4965849B35F47ED7CA5 /* Pods */ = {
@@ -2398,6 +2448,7 @@
 				C59B9AFB2526E3E10039B485 /* WhiteRightArrow@2x.png in Resources */,
 				C59B9AF82526E3E10039B485 /* 移除 系统自带的 UITabBarButton in Resources */,
 				C59B9CBE2526E3F10039B485 /* Pod里面的Bug in Resources */,
+				C59BA1EE25271C030039B485 /* 时钟.png in Resources */,
 				C59B9D342526E4580039B485 /* wode.json in Resources */,
 				C59B9D2F2526E4580039B485 /* green_lottie_tab_mine.json in Resources */,
 				C59B9CBB2526E3F10039B485 /* 视频水印.gif in Resources */,
@@ -2407,12 +2458,14 @@
 				C59B9AFD2526E3E10039B485 /* WhiteRightArrow@3x.png in Resources */,
 				C59B9C9D2526E3F10039B485 /* iOS 获取手机型号、系统版本.png in Resources */,
 				C59B9CC92526E3F10039B485 /* Sound.wav in Resources */,
+				C59BA07E252710CF0039B485 /* 是否取消悬停 in Resources */,
 				C59B9AEF2526E3E10039B485 /* 专治UITableView相应链断裂 in Resources */,
 				C59B9CA52526E3F10039B485 /* day_like@2x.png in Resources */,
 				C59B9CA32526E3F10039B485 /* spark_red@2x.png in Resources */,
 				C59B998E2526E0A50039B485 /* 手动集成 SDWebImage_WebP in Resources */,
 				C59B9CD32526E3F10039B485 /* iOS小技巧：用runtime 解决UIButton 重复点击问题 in Resources */,
 				C59B9D362526E4580039B485 /* huiyuan.json in Resources */,
+				C59BA1F325271DAE0039B485 /* 删除.png in Resources */,
 				C59B9CAD2526E3F10039B485 /* 分享控件的用法 in Resources */,
 				C59B9D372526E4580039B485 /* fangzi.json in Resources */,
 				C59B9D2C2526E4580039B485 /* 任务.json in Resources */,
@@ -2631,6 +2684,7 @@
 				C59B9C942526E3F10039B485 /* ZBURLRequest.m in Sources */,
 				C59B9D6B2526E59E0039B485 /* ViewController@1.m in Sources */,
 				C59B9ADC2526E3E10039B485 /* BaseVC+GifImageView.m in Sources */,
+				C59BA0A6252711260039B485 /* JobsSearchHoveringHeaderView.m in Sources */,
 				C59B9AE02526E3E10039B485 /* BaseVC+JXCategoryListContentViewDelegate.m in Sources */,
 				C59B9C6E2526E3F10039B485 /* LOTShapeRectangle.m in Sources */,
 				C59B9CAB2526E3F10039B485 /* BWItemModel.m in Sources */,
@@ -2639,6 +2693,7 @@
 				C59B9CB42526E3F10039B485 /* JhtBannerView.m in Sources */,
 				C59B9AEE2526E3E10039B485 /* UITableView+XSAnimationKit.m in Sources */,
 				C59B99942526E0A50039B485 /* NSImage+WebCache.m in Sources */,
+				C59BA0B62527166F0039B485 /* JobsSearchNonHoveringHeaderView.m in Sources */,
 				C59B9CCD2526E3F10039B485 /* Nanosecond_TimerManager.m in Sources */,
 				C59B9CB12526E3F10039B485 /* SuspendView.m in Sources */,
 				C59B99912526E0A50039B485 /* UIImage+WebP_Diff.m in Sources */,
@@ -2670,7 +2725,6 @@
 				C59B9C6A2526E3F10039B485 /* LOTRadialGradientLayer.m in Sources */,
 				C59B9CAA2526E3F10039B485 /* ShowAvailableFont.m in Sources */,
 				C59B9C542526E3F10039B485 /* LOTLayerContainer.m in Sources */,
-				C59B9AF42526E3E10039B485 /* ViewForFooter.m in Sources */,
 				C59B9AD82526E3E10039B485 /* BaseVC+TZImagePickerController.m in Sources */,
 				C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */,
 				C59B9B0C2526E3E10039B485 /* UIView+Extras.m in Sources */,
@@ -2715,6 +2769,7 @@
 				C59B99762526E0A50039B485 /* GKPopAnimatedTransition.m in Sources */,
 				C59B99752526E0A50039B485 /* GKTransitionDelegateHandler.m in Sources */,
 				C59B997F2526E0A50039B485 /* UIImage+GKCategory.m in Sources */,
+				C59BA07F252710CF0039B485 /* UITableViewHeaderFooterView+Attribute.m in Sources */,
 				C59B99812526E0A50039B485 /* UIViewController+GKCategory.m in Sources */,
 				C59B9C7F2526E3F10039B485 /* LOTRoundedRectAnimator.m in Sources */,
 				C59B9CBC2526E3F10039B485 /* MKGPUImageView.m in Sources */,
@@ -2732,13 +2787,14 @@
 				C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */,
 				C59B99842526E0A50039B485 /* BRDatePickerView+BR.m in Sources */,
 				C59B9ADE2526E3E10039B485 /* BaseVC+TZImagePickerControllerDelegate.m in Sources */,
+				C59BA07C252710CF0039B485 /* HoveringHeaderView.m in Sources */,
 				C59B99892526E0A50039B485 /* BRBaseView.m in Sources */,
 				C59B99902526E0A50039B485 /* SDWebImageCodersManager.m in Sources */,
 				C59B99922526E0A50039B485 /* SDWebImageCoderHelper.m in Sources */,
 				C59B999A2526E0A50039B485 /* ZZCircleProgress.m in Sources */,
 				C59B9AF62526E3E10039B485 /* NSArray+Extend.m in Sources */,
+				C59B9F132526F56E0039B485 /* JobsSearchBar.m in Sources */,
 				C59B9C762526E3F10039B485 /* LOTPointInterpolator.m in Sources */,
-				C59B9AF32526E3E10039B485 /* ViewForHeader.m in Sources */,
 				C59B9AE92526E3E10039B485 /* CALayer+Anim.m in Sources */,
 				C59B9CE32526E4110039B485 /* ViewController@3.m in Sources */,
 				C59B9C712526E3F10039B485 /* LOTKeypath.m in Sources */,
@@ -2751,6 +2807,7 @@
 				C59B99882526E0A50039B485 /* BRPickerStyle.m in Sources */,
 				C59B9AE32526E3E10039B485 /* BaseVC+TZLocationManager.m in Sources */,
 				C59B997A2526E0A50039B485 /* GKNavigationBarConfigure.m in Sources */,
+				C59BA07D252710CF0039B485 /* NonHoveringHeaderView.m in Sources */,
 				C59B9C622526E3F10039B485 /* UIBezierPath.m in Sources */,
 				C59B99772526E0A50039B485 /* GKPushAnimatedTransition.m in Sources */,
 				C59B9C732526E3F10039B485 /* LOTCacheProvider.m in Sources */,
@@ -2772,6 +2829,7 @@
 				C59B998F2526E0A50039B485 /* SDWebImageFrame.m in Sources */,
 				C59B9ACB2526E3E10039B485 /* NSObject+SPAlertController.m in Sources */,
 				C59B9ACF2526E3E10039B485 /* NSObject+Extras.m in Sources */,
+				C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */,
 				C59B9CBD2526E3F10039B485 /* BaseGPUImageView.m in Sources */,
 				C59B9C862526E3F10039B485 /* LOTRepeaterRenderer.m in Sources */,
 				C59B9C522526E3F10039B485 /* LOTRenderGroup.m in Sources */,
