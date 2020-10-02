@@ -18,12 +18,8 @@ UITableViewDelegate,
 UITableViewDataSource
 >
 
-@property(nonatomic,strong)UIButton *backBtn;
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)JobsSearchBar *jobsSearchBar;
-
-@property(nonatomic,strong)id requestParams;
-@property(nonatomic,assign)ComingStyle pushOrPresent;
 
 @property(nonatomic,strong)NSMutableArray *sectionTitleMutArr;
 //@property(nonatomic,strong)NSMutableArray *sectionTitleMutArr;
@@ -36,57 +32,11 @@ UITableViewDataSource
     NSLog(@"Running self.class = %@;NSStringFromSelector(_cmd) = '%@';__FUNCTION__ = %s", self.class, NSStringFromSelector(_cmd),__FUNCTION__);
 }
 
-+ (instancetype)ComingFromVC:(UIViewController *)rootVC
-                 comingStyle:(ComingStyle)comingStyle
-           presentationStyle:(UIModalPresentationStyle)presentationStyle
-               requestParams:(nullable id)requestParams
-                     success:(MKDataBlock)successBlock
-                    animated:(BOOL)animated{
-    JobsSearchVC *vc = NSClassFromString(ReuseIdentifier).new;
-    vc.requestParams = requestParams;
-    @weakify(rootVC)
-    switch (comingStyle) {
-        case ComingStyle_PUSH:{
-            if (rootVC.navigationController) {
-                vc.pushOrPresent = ComingStyle_PUSH;
-                if (successBlock) {
-                    successBlock(vc);
-                }
-                [weak_rootVC.navigationController pushViewController:vc
-                                                            animated:animated];
-            }else{
-                vc.pushOrPresent = ComingStyle_PRESENT;
-                //iOS_13中modalPresentationStyle的默认改为UIModalPresentationAutomatic,而在之前默认是UIModalPresentationFullScreen
-                vc.modalPresentationStyle = presentationStyle;
-                if (successBlock) {
-                    successBlock(vc);
-                }
-                [weak_rootVC presentViewController:vc
-                                          animated:animated
-                                        completion:^{}];
-            }
-        }break;
-        case ComingStyle_PRESENT:{
-            vc.pushOrPresent = ComingStyle_PRESENT;
-            //iOS_13中modalPresentationStyle的默认改为UIModalPresentationAutomatic,而在之前默认是UIModalPresentationFullScreen
-            vc.modalPresentationStyle = presentationStyle;
-            if (successBlock) {
-                successBlock(vc);
-            }
-            [weak_rootVC presentViewController:vc
-                                      animated:animated
-                                    completion:^{}];
-        }break;
-        default:
-            NSLog(@"错误的推进方式");
-            break;
-    }return vc;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = KLightGrayColor;
-    self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtn];
+    self.isBackBtnBlackorWhite = YES;
+    self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
     self.gk_navTitle = @"hah";
     [self hideNavLine];
     self.tableView.alpha = 1;
@@ -138,25 +88,6 @@ viewForHeaderInSection:(NSInteger)section{
     return header;
 }
 #pragma mark —— lazyLoad
--(UIButton *)backBtn{
-    if (!_backBtn) {
-        _backBtn = UIButton.new;
-        [_backBtn layoutButtonWithEdgeInsetsStyle:GLButtonEdgeInsetsStyleLeft
-                                  imageTitleSpace:8];
-        [_backBtn setTitleColor:kWhiteColor
-                       forState:UIControlStateNormal];
-        [_backBtn setTitle:@"返回"
-                  forState:UIControlStateNormal];
-        [_backBtn setImage:KBuddleIMG(@"Others", nil, @"back_white")
-                  forState:UIControlStateNormal];
-//        @weakify(self)
-        [[_backBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-//            @strongify(self)
-            NSLog(@"");
-        }];
-    }return _backBtn;
-}
-
 -(UITableView *)tableView{
     if (!_tableView) {
         _tableView = UITableView.new;

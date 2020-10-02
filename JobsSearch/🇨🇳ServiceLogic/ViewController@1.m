@@ -24,7 +24,8 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
     
-    [JobsSearchVC ComingFromVC:self
+    [JobsSearchVC comingFromVC:self
+                          toVC:JobsSearchVC.new
                    comingStyle:ComingStyle_PUSH
              presentationStyle:UIModalPresentationAutomatic
                  requestParams:nil
