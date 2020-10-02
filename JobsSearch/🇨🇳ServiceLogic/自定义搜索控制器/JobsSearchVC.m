@@ -46,7 +46,7 @@ UITableViewDataSource
 -(CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
-        return 100;
+        return 50;
     }else if (indexPath.section == 1){
         return [JobsSearchShowHistoryDataTBVCell cellHeightWithModel:nil];
     }else{}
@@ -77,15 +77,28 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 -(CGFloat)tableView:(UITableView *)tableView
 heightForHeaderInSection:(NSInteger)section{
-    return 80;
+    return 50;
 }
 
 -(UIView *)tableView:(UITableView *)tableView
 viewForHeaderInSection:(NSInteger)section{
+    
+    if (self.isHoveringHeaderView) {
+        JobsSearchHoveringHeaderView *header = [[JobsSearchHoveringHeaderView alloc] initWithReuseIdentifier:NSStringFromClass(JobsSearchHoveringHeaderView.class)
+                                                                                                    withData:self.sectionTitleMutArr[section]];
+        return header;
+    }else{
+        JobsSearchNonHoveringHeaderView *header = [[JobsSearchNonHoveringHeaderView alloc] initWithReuseIdentifier:NSStringFromClass(JobsSearchNonHoveringHeaderView.class)
+                                                                                                          withData:self.sectionTitleMutArr[section]];
+        return header;
+    }
+    
+//    {
+//        Class headerClass = self.isHoveringHeaderView ? JobsSearchHoveringHeaderView.class : JobsSearchNonHoveringHeaderView.class;
+//        UIView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:NSStringFromClass(headerClass)];
+//        return header;
+//    }
 
-    Class headerClass = self.isHoveringHeaderView ? JobsSearchHoveringHeaderView.class : JobsSearchNonHoveringHeaderView.class;
-    UIView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:NSStringFromClass(headerClass)];
-    return header;
 }
 //实现以下方法,以替换系统默认的右侧小箭头
 - (void)tableView:(UITableView *)tableView
