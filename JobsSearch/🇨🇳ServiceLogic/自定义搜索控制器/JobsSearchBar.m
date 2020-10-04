@@ -22,7 +22,7 @@ UITextFieldDelegate
 
 - (instancetype)init{
     if (self = [super init]) {
-        self.backgroundColor = KYellowColor;
+//        self.backgroundColor = KYellowColor;
     }return self;
 }
 
@@ -95,12 +95,7 @@ replacementString:(NSString *)string{
         _tf.returnKeyType = UIReturnKeyDone;
         _tf.keyboardAppearance = UIKeyboardAppearanceAlert;
         [self addSubview:_tf];
-//        _passwordTF.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
-//        [_tf mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.left.equalTo(self).offset(10);
-//            make.bottom.right.equalTo(self).offset(-10);
-//        }];
-        
+//        _tf.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
         _tf.frame = CGRectMake(10,
                                10,
                                SCREEN_WIDTH - 20,
@@ -114,12 +109,22 @@ replacementString:(NSString *)string{
 -(UIButton *)cancelBtn{
     if (!_cancelBtn) {
         _cancelBtn = UIButton.new;
-        _cancelBtn.backgroundColor = kRedColor;
+        _cancelBtn.backgroundColor = KGreenColor;
+        [_cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
         [self addSubview:_cancelBtn];
         _cancelBtn.frame = CGRectMake(SCREEN_WIDTH - 10,
                                       10,
                                       0,
                                       0);
+        [UIView colourToLayerOfView:_cancelBtn WithColour:KGreenColor AndBorderWidth:1];
+        [UIView cornerCutToCircleWithView:_cancelBtn AndCornerRadius:8];
+        @weakify(self)
+        [[_cancelBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            @strongify(self)
+            if (self.jobsSearchBarBlock) {
+                self.jobsSearchBarBlock(NSStringFromSelector(_cmd));//cancelBtn
+            }
+        }];
     }return _cancelBtn;
 }
 

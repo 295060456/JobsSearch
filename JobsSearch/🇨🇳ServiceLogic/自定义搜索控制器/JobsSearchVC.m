@@ -168,11 +168,20 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
             NSLog(@"KKK = %@",data);
             if ([data isKindOfClass:NSString.class]) {
                 NSString *str = (NSString *)data;
-                if ([str isEqualToString:@"textFieldShouldEndEditing:"]) {
-                    [UIView animateWithDuration:2
-                                          delay:0.1
-                         usingSpringWithDamping:0.3
-                          initialSpringVelocity:10
+                if ([str isEqualToString:@"textFieldShouldEndEditing:"]) {//正常位
+                    /*
+                     *    使用弹簧的描述时间曲线来执行动画 ,当dampingRatio == 1 时,动画会平稳的减速到最终的模型值,而不会震荡.
+                     *    小于1的阻尼比在达到完全停止之前会震荡的越来越多.
+                     *    如果你可以使用初始的 spring velocity 来 指定模拟弹簧末端的对象在加载之前移动的速度.
+                     *    他是一个单位坐标系统,其中2被定义为在一秒内移动整个动画距离.
+                     *    如果你在动画中改变一个物体的位置,你想在动画开始前移动到 100 pt/s 你会超过0.5,
+                     *    dampingRatio 阻尼
+                     *    velocity 速度
+                     */
+                    [UIView animateWithDuration:1
+                                          delay:0
+                         usingSpringWithDamping:1
+                          initialSpringVelocity:20
                                         options:UIViewAnimationOptionCurveEaseInOut
                                      animations:^{
                         @strongify(self)
@@ -187,17 +196,27 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     } completion:^(BOOL finished) {
                         
                     }];
-                }else if([str isEqualToString:@"textFieldShouldBeginEditing:"]){
-                    [UIView animateWithDuration:2
-                                          delay:0.1
-                         usingSpringWithDamping:0.3
-                          initialSpringVelocity:10
+                }
+                else if([str isEqualToString:@"textFieldShouldBeginEditing:"]){//编辑期
+                    /*
+                     *    使用弹簧的描述时间曲线来执行动画 ,当dampingRatio == 1 时,动画会平稳的减速到最终的模型值,而不会震荡.
+                     *    小于1的阻尼比在达到完全停止之前会震荡的越来越多.
+                     *    如果你可以使用初始的 spring velocity 来 指定模拟弹簧末端的对象在加载之前移动的速度.
+                     *    他是一个单位坐标系统,其中2被定义为在一秒内移动整个动画距离.
+                     *    如果你在动画中改变一个物体的位置,你想在动画开始前移动到 100 pt/s 你会超过0.5,
+                     *    dampingRatio 阻尼
+                     *    velocity 速度
+                     */
+                    [UIView animateWithDuration:1
+                                          delay:0
+                         usingSpringWithDamping:1
+                          initialSpringVelocity:20
                                         options:UIViewAnimationOptionCurveEaseInOut
                                      animations:^{
                         @strongify(self)
                         self->_jobsSearchBar.tf.frame = CGRectMake(10,
                                                                    10,
-                                                                   SCREEN_WIDTH - 20 - 80,
+                                                                   SCREEN_WIDTH - 20 - 80 - 10,
                                                                    self->_jobsSearchBar.mj_h - 20);
                         
                         self->_jobsSearchBar.cancelBtn.frame = CGRectMake(SCREEN_WIDTH - 80 - 10,
@@ -207,6 +226,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     } completion:^(BOOL finished) {
                         
                     }];
+                }
+                else if ([str isEqualToString:@"cancelBtn"]){//取消按钮点击事件
+                    [self.view endEditing:YES];
                 }else{}
             }
         }];
