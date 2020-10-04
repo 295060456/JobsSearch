@@ -285,8 +285,12 @@
 		C59BA0A6252711260039B485 /* JobsSearchHoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA0A5252711260039B485 /* JobsSearchHoveringHeaderView.m */; };
 		C59BA0B62527166F0039B485 /* JobsSearchNonHoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA0B52527166F0039B485 /* JobsSearchNonHoveringHeaderView.m */; };
 		C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */; };
-		C59BA1EE25271C030039B485 /* 时钟.png in Resources */ = {isa = PBXBuildFile; fileRef = C59BA1ED25271C030039B485 /* 时钟.png */; };
 		C59BA1F325271DAE0039B485 /* 删除.png in Resources */ = {isa = PBXBuildFile; fileRef = C59BA1F225271DAE0039B485 /* 删除.png */; };
+		C5B47F782529F7B300387F47 /* 放大镜.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B47F772529F7B300387F47 /* 放大镜.png */; };
+		C5B47F832529F82A00387F47 /* 时钟.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B47F822529F82A00387F47 /* 时钟.png */; };
+		C5B47F952529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */; };
+		C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F9D252A006F00387F47 /* HotLabel.m */; };
+		C5B47FA4252A127A00387F47 /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47FA3252A127A00387F47 /* UILabel+Extra.m */; };
 		E7F73E4FA4EEA0009C5C36E7 /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -855,8 +859,15 @@
 		C59BA0B52527166F0039B485 /* JobsSearchNonHoveringHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchNonHoveringHeaderView.m; sourceTree = "<group>"; };
 		C59BA129252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchShowHistoryDataTBVCell.h; sourceTree = "<group>"; };
 		C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchShowHistoryDataTBVCell.m; sourceTree = "<group>"; };
-		C59BA1ED25271C030039B485 /* 时钟.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "时钟.png"; sourceTree = "<group>"; };
 		C59BA1F225271DAE0039B485 /* 删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除.png"; sourceTree = "<group>"; };
+		C5B47F772529F7B300387F47 /* 放大镜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "放大镜.png"; sourceTree = "<group>"; };
+		C5B47F822529F82A00387F47 /* 时钟.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "时钟.png"; sourceTree = "<group>"; };
+		C5B47F932529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchShowHotwordsTBVCell.h; sourceTree = "<group>"; };
+		C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchShowHotwordsTBVCell.m; sourceTree = "<group>"; };
+		C5B47F9C252A006F00387F47 /* HotLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotLabel.h; sourceTree = "<group>"; };
+		C5B47F9D252A006F00387F47 /* HotLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotLabel.m; sourceTree = "<group>"; };
+		C5B47FA2252A127A00387F47 /* UILabel+Extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extra.h"; sourceTree = "<group>"; };
+		C5B47FA3252A127A00387F47 /* UILabel+Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extra.m"; sourceTree = "<group>"; };
 		DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1197,6 +1208,7 @@
 		C59B9A212526E36F0039B485 /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C5B47FA8252A12A500387F47 /* UILabel */,
 				C59B9A8F2526E3E10039B485 /* 👌UITableViewHeaderFooterView 用作基类 */,
 				C59B9A702526E3E10039B485 /* CALayer */,
 				C59B9A942526E3E10039B485 /* NSArray */,
@@ -1222,6 +1234,7 @@
 		C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5B47F872529FA1500387F47 /* HotLabel */,
 				C59B9BCA2526E3F00039B485 /* 💰VerifyCodeButton */,
 				C59B9C182526E3F00039B485 /* 电影倒计时特效 */,
 				C59B9BDE2526E3F00039B485 /* 分享控件 */,
@@ -2312,12 +2325,49 @@
 		C59BA0E5252717560039B485 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C59BA129252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.h */,
-				C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */,
+				C5B47F912529FAAD00387F47 /* 热门搜索 */,
+				C5B47F922529FAB900387F47 /* 搜索历史 */,
+				C5B47F822529F82A00387F47 /* 时钟.png */,
+				C5B47F772529F7B300387F47 /* 放大镜.png */,
 				C59BA1F225271DAE0039B485 /* 删除.png */,
-				C59BA1ED25271C030039B485 /* 时钟.png */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5B47F872529FA1500387F47 /* HotLabel */ = {
+			isa = PBXGroup;
+			children = (
+				C5B47F9C252A006F00387F47 /* HotLabel.h */,
+				C5B47F9D252A006F00387F47 /* HotLabel.m */,
+			);
+			path = HotLabel;
+			sourceTree = "<group>";
+		};
+		C5B47F912529FAAD00387F47 /* 热门搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				C5B47F932529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.h */,
+				C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */,
+			);
+			path = "热门搜索";
+			sourceTree = "<group>";
+		};
+		C5B47F922529FAB900387F47 /* 搜索历史 */ = {
+			isa = PBXGroup;
+			children = (
+				C59BA129252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.h */,
+				C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */,
+			);
+			path = "搜索历史";
+			sourceTree = "<group>";
+		};
+		C5B47FA8252A12A500387F47 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				C5B47FA2252A127A00387F47 /* UILabel+Extra.h */,
+				C5B47FA3252A127A00387F47 /* UILabel+Extra.m */,
+			);
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 		DB6EB4965849B35F47ED7CA5 /* Pods */ = {
@@ -2448,7 +2498,6 @@
 				C59B9AFB2526E3E10039B485 /* WhiteRightArrow@2x.png in Resources */,
 				C59B9AF82526E3E10039B485 /* 移除 系统自带的 UITabBarButton in Resources */,
 				C59B9CBE2526E3F10039B485 /* Pod里面的Bug in Resources */,
-				C59BA1EE25271C030039B485 /* 时钟.png in Resources */,
 				C59B9D342526E4580039B485 /* wode.json in Resources */,
 				C59B9D2F2526E4580039B485 /* green_lottie_tab_mine.json in Resources */,
 				C59B9CBB2526E3F10039B485 /* 视频水印.gif in Resources */,
@@ -2461,6 +2510,7 @@
 				C59BA07E252710CF0039B485 /* 是否取消悬停 in Resources */,
 				C59B9AEF2526E3E10039B485 /* 专治UITableView相应链断裂 in Resources */,
 				C59B9CA52526E3F10039B485 /* day_like@2x.png in Resources */,
+				C5B47F782529F7B300387F47 /* 放大镜.png in Resources */,
 				C59B9CA32526E3F10039B485 /* spark_red@2x.png in Resources */,
 				C59B998E2526E0A50039B485 /* 手动集成 SDWebImage_WebP in Resources */,
 				C59B9CD32526E3F10039B485 /* iOS小技巧：用runtime 解决UIButton 重复点击问题 in Resources */,
@@ -2488,6 +2538,7 @@
 				C59B9D302526E4580039B485 /* green_lottie_tab_discover.json in Resources */,
 				C59B9CA22526E3F10039B485 /* spark_red@3x.png in Resources */,
 				C59B99982526E0A50039B485 /* ZZCircleProgress.bundle in Resources */,
+				C5B47F832529F82A00387F47 /* 时钟.png in Resources */,
 				C59B9CA42526E3F10039B485 /* spark_red.png in Resources */,
 				C59B9D322526E4580039B485 /* 社区.json in Resources */,
 			);
@@ -2643,6 +2694,7 @@
 				C59B9CCE2526E3F10039B485 /* CADisplayLink_TimerManager.m in Sources */,
 				C59B9ACE2526E3E10039B485 /* NSObject+Measure.m in Sources */,
 				C59B9C872526E3F10039B485 /* LOTMaskContainer.m in Sources */,
+				C5B47FA4252A127A00387F47 /* UILabel+Extra.m in Sources */,
 				C59B9AE52526E3E10039B485 /* BaseVC+OpenURL.m in Sources */,
 				C59B9AD12526E3E10039B485 /* NSObject+Time.m in Sources */,
 				C59B9C602526E3F10039B485 /* LOTPolystarAnimator.m in Sources */,
@@ -2809,9 +2861,11 @@
 				C59B997A2526E0A50039B485 /* GKNavigationBarConfigure.m in Sources */,
 				C59BA07D252710CF0039B485 /* NonHoveringHeaderView.m in Sources */,
 				C59B9C622526E3F10039B485 /* UIBezierPath.m in Sources */,
+				C5B47F952529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m in Sources */,
 				C59B99772526E0A50039B485 /* GKPushAnimatedTransition.m in Sources */,
 				C59B9C732526E3F10039B485 /* LOTCacheProvider.m in Sources */,
 				C59B98DF2526DE260039B485 /* SceneDelegate.m in Sources */,
+				C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */,
 				C59B9AD62526E3E10039B485 /* UIImage+SYS.m in Sources */,
 				C59B99832526E0A50039B485 /* BRStringPickerView.m in Sources */,
 				C59B9CD42526E3F10039B485 /* UIControl+XY.m in Sources */,

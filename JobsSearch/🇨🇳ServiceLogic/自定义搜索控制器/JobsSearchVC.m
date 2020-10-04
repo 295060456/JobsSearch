@@ -10,7 +10,8 @@
 #import "JobsSearchBar.h"
 #import "JobsSearchHoveringHeaderView.h"
 #import "JobsSearchNonHoveringHeaderView.h"
-#import "JobsSearchShowHistoryDataTBVCell.h"
+#import "JobsSearchShowHistoryDataTBVCell.h"//搜索历史
+#import "JobsSearchShowHotwordsTBVCell.h"//热门搜索
 
 @interface JobsSearchVC ()
 <
@@ -21,8 +22,9 @@ UITableViewDataSource
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)JobsSearchBar *jobsSearchBar;
 
-@property(nonatomic,strong)NSMutableArray *sectionTitleMutArr;
-//@property(nonatomic,strong)NSMutableArray *sectionTitleMutArr;
+//数据容器
+@property(nonatomic,strong)NSMutableArray <NSString *>*sectionTitleMutArr;
+@property(nonatomic,strong)NSMutableArray <NSString *>*hotSearchMutArr;
 
 @end
 
@@ -50,12 +52,17 @@ UITableViewDataSource
 #pragma mark —————————— UITableViewDelegate,UITableViewDataSource ——————————
 -(CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section == 0) {
-        return 50;
-    }else if (indexPath.section == 1){
-        return [JobsSearchShowHistoryDataTBVCell cellHeightWithModel:nil];
-    }else{}
-    return 0;
+    switch (indexPath.section) {
+        case 0:{
+            return 150;
+        }break;
+        case 1:{
+            return [JobsSearchShowHistoryDataTBVCell cellHeightWithModel:nil];
+        }break;
+        default:
+            return 0;
+            break;
+    }
 }
 
 -(void)tableView:(UITableView *)tableView
@@ -65,15 +72,40 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 -(NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    switch (section) {
+        case 0:{
+            return 1;
+        }break;
+        case 1:{
+            return 3;
+        }break;
+        default:
+            return 0;
+            break;
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    JobsSearchShowHistoryDataTBVCell *cell = [JobsSearchShowHistoryDataTBVCell cellWith:tableView];
-    cell.index = indexPath.row;
-    [cell richElementsInCellWithModel:nil];
-    return cell;
+    switch (indexPath.section) {
+        case 0:{//热门搜索
+            JobsSearchShowHotwordsTBVCell *cell = [JobsSearchShowHotwordsTBVCell cellWith:tableView];
+            cell.indexRow = indexPath.row;
+            cell.indexSection = indexPath.section;
+            [cell richElementsInCellWithModel:self.hotSearchMutArr];
+            return cell;
+        }break;
+        case 1:{//搜索历史
+            JobsSearchShowHistoryDataTBVCell *cell = [JobsSearchShowHistoryDataTBVCell cellWith:tableView];
+            cell.indexRow = indexPath.row;
+            cell.indexSection = indexPath.section;
+            [cell richElementsInCellWithModel:nil];
+            return cell;
+        }break;
+        default:
+            return UITableViewCell.new;
+            break;
+    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -124,7 +156,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     [cell customAccessoryView:^(id data) {
         @strongify(self)
         JobsSearchShowHistoryDataTBVCell *cell = (JobsSearchShowHistoryDataTBVCell *)data;
-        NSLog(@"MMM - %ld",cell.index);
+        NSLog(@"MMM - %ld",cell.indexRow);
     }];
 }
 #pragma mark —— lazyLoad
@@ -162,7 +194,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 -(JobsSearchBar *)jobsSearchBar{
     if (!_jobsSearchBar) {
         _jobsSearchBar = JobsSearchBar.new;
-        _jobsSearchBar.mj_size = CGSizeMake(SCREEN_WIDTH, 100);
+        _jobsSearchBar.mj_size = CGSizeMake(SCREEN_WIDTH, 60);
         @weakify(self)
         [_jobsSearchBar actionBlockJobsSearchBar:^(id data) {
             NSLog(@"KKK = %@",data);
@@ -235,12 +267,32 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     }return _jobsSearchBar;
 }
 
--(NSMutableArray *)sectionTitleMutArr{
+-(NSMutableArray<NSString *> *)sectionTitleMutArr{
     if (!_sectionTitleMutArr) {
         _sectionTitleMutArr = NSMutableArray.array;
         [_sectionTitleMutArr addObject:@"热门搜索"];
         [_sectionTitleMutArr addObject:@"搜索历史"];
     }return _sectionTitleMutArr;
+}
+
+-(NSMutableArray<NSString *> *)hotSearchMutArr{
+    if (!_hotSearchMutArr) {
+        _hotSearchMutArr = NSMutableArray.array;
+        [_hotSearchMutArr addObject:@"Java"];
+        [_hotSearchMutArr addObject:@"Python"];
+        [_hotSearchMutArr addObject:@"Objective-C"];
+        [_hotSearchMutArr addObject:@"Swift"];
+        [_hotSearchMutArr addObject:@"C"];
+        [_hotSearchMutArr addObject:@"C++"];
+        [_hotSearchMutArr addObject:@"PHP"];
+        [_hotSearchMutArr addObject:@"C#"];
+        [_hotSearchMutArr addObject:@"Perl"];
+        [_hotSearchMutArr addObject:@"Go"];
+        [_hotSearchMutArr addObject:@"JavaScript"];
+        [_hotSearchMutArr addObject:@"Ruby"];
+        [_hotSearchMutArr addObject:@"R"];
+        [_hotSearchMutArr addObject:@"MATLAB"];
+    }return _hotSearchMutArr;
 }
 
 @end

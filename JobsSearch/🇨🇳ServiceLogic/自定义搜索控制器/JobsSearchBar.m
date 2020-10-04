@@ -15,6 +15,7 @@ UITextFieldDelegate
 
 @property(nonatomic,assign)BOOL isOK;
 @property(nonatomic,copy)MKDataBlock jobsSearchBarBlock;
+@property(nonatomic,strong)UIImageView *imgView;
 
 @end
 
@@ -22,7 +23,7 @@ UITextFieldDelegate
 
 - (instancetype)init{
     if (self = [super init]) {
-//        self.backgroundColor = KYellowColor;
+        self.backgroundColor = HEXCOLOR(0xF9F9F9);
     }return self;
 }
 
@@ -91,7 +92,9 @@ replacementString:(NSString *)string{
         _tf.placeholder = @"请输入搜索内容";
         _tf.delegate = self;
         _tf.cj_delegate = self;
-        _tf.backgroundColor = kBlackColor;
+        _tf.leftView = self.imgView;
+        _tf.leftViewMode = UITextFieldViewModeAlways;
+        _tf.backgroundColor = HEXCOLOR(0xFFFFFF);
         _tf.returnKeyType = UIReturnKeyDone;
         _tf.keyboardAppearance = UIKeyboardAppearanceAlert;
         [self addSubview:_tf];
@@ -101,8 +104,8 @@ replacementString:(NSString *)string{
                                SCREEN_WIDTH - 20,
                                self.mj_h - 20);
         
-        [UIView cornerCutToCircleWithView:_tf AndCornerRadius:8];
-        [UIView colourToLayerOfView:_tf WithColour:kBlueColor AndBorderWidth:1];
+        [UIView cornerCutToCircleWithView:_tf AndCornerRadius:2];
+        [UIView colourToLayerOfView:_tf WithColour:kBlueColor AndBorderWidth:0.05];
     }return _tf;
 }
 
@@ -111,12 +114,13 @@ replacementString:(NSString *)string{
         _cancelBtn = UIButton.new;
         _cancelBtn.backgroundColor = KGreenColor;
         [_cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+        [_cancelBtn setTitleColor:HEXCOLOR(0x0F81FE) forState:UIControlStateNormal];
         [self addSubview:_cancelBtn];
         _cancelBtn.frame = CGRectMake(SCREEN_WIDTH - 10,
                                       10,
                                       0,
                                       0);
-        [UIView colourToLayerOfView:_cancelBtn WithColour:KGreenColor AndBorderWidth:1];
+//        [UIView colourToLayerOfView:_cancelBtn WithColour:KGreenColor AndBorderWidth:1];
         [UIView cornerCutToCircleWithView:_cancelBtn AndCornerRadius:8];
         @weakify(self)
         [[_cancelBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
@@ -126,6 +130,13 @@ replacementString:(NSString *)string{
             }
         }];
     }return _cancelBtn;
+}
+
+-(UIImageView *)imgView{
+    if (!_imgView) {
+        _imgView = UIImageView.new;
+        _imgView.image = KIMG(@"放大镜");
+    }return _imgView;
 }
 
 @end

@@ -11,8 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JobsSearchShowHistoryDataTBVCell : TBVCell_style_01
 
-@property(nonatomic,assign)long index;
-//@property(nonatomic,strong)ZFTableData *data;
+@property(nonatomic,assign)long indexRow;
+@property(nonatomic,assign)long indexSection;
 
 +(instancetype)cellWith:(UITableView *)tableView;
 +(CGFloat)cellHeightWithModel:(id _Nullable)model;
