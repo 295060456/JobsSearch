@@ -220,7 +220,7 @@ viewForHeaderInSection:(NSInteger)section{
         [header setHoveringHeaderViewBlock:^(id data) {
             @strongify(self)
             [self.view endEditing:YES];
-            [self.tableView ww_foldSection:section fold:![self.tableView ww_isSectionFolded:section]];
+            [self.tableView ww_foldSection:section fold:![self.tableView ww_isSectionFolded:section]];//设置可折叠
         }];
         return header;
     }else{
