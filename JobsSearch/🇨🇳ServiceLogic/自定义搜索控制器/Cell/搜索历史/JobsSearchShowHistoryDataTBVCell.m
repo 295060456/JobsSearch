@@ -31,7 +31,7 @@
 }
 
 -(void)richElementsInCellWithModel:(id _Nullable)model{
-
+    self.textLabel.text = model;
 }
 
 @end

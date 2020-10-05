@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		32D5027DF5F5AD09BB6A422C /* Pods_JobsSearch_JobsSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AF52822135395AC4ED7192 /* Pods_JobsSearch_JobsSearchUITests.framework */; };
 		B1FCA2073A31A5D9A5BF4BB0 /* Pods_JobsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */; };
+		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C59B98DC2526DE260039B485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* AppDelegate.m */; };
 		C59B98DF2526DE260039B485 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DE2526DE260039B485 /* SceneDelegate.m */; };
 		C59B98E52526DE260039B485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59B98E32526DE260039B485 /* Main.storyboard */; };
@@ -320,6 +321,7 @@
 		74F5AA78FAB8FF4A24BD8A01 /* Pods-JobsSearch-JobsSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch-JobsSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch-JobsSearchUITests/Pods-JobsSearch-JobsSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A3A6B8F73219A4D790276103 /* Pods-JobsSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchTests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchTests/Pods-JobsSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A84ECDA1DF94EA70BE0F2CA4 /* Pods-JobsSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch/Pods-JobsSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59B98DA2526DE260039B485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C59B98DB2526DE260039B485 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -2314,6 +2316,7 @@
 		C59BA0B32527164F0039B485 /* JobsSearchHeaderFooterView */ = {
 			isa = PBXGroup;
 			children = (
+				C5633213252AE88A00699392 /* 垃圾箱.png */,
 				C59BA0A4252711260039B485 /* JobsSearchHoveringHeaderView.h */,
 				C59BA0A5252711260039B485 /* JobsSearchHoveringHeaderView.m */,
 				C59BA0B42527166F0039B485 /* JobsSearchNonHoveringHeaderView.h */,
@@ -2538,6 +2541,7 @@
 				C59B9D302526E4580039B485 /* green_lottie_tab_discover.json in Resources */,
 				C59B9CA22526E3F10039B485 /* spark_red@3x.png in Resources */,
 				C59B99982526E0A50039B485 /* ZZCircleProgress.bundle in Resources */,
+				C5633214252AE88A00699392 /* 垃圾箱.png in Resources */,
 				C5B47F832529F82A00387F47 /* 时钟.png in Resources */,
 				C59B9CA42526E3F10039B485 /* spark_red.png in Resources */,
 				C59B9D322526E4580039B485 /* 社区.json in Resources */,

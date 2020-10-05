@@ -10,13 +10,15 @@
 @interface JobsSearchHoveringHeaderView()
 
 @property(nonatomic,assign)BOOL isOK;
+@property(nonatomic,strong)UIButton *delBtn;
+@property(nonatomic,copy)MKDataBlock jobsSearchHoveringHeaderViewBlock;
 
 @end
 
 @implementation JobsSearchHoveringHeaderView
 
-- (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
-                               withData:(id)data{
+-(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
+                              withData:(id)data{
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
         if ([data isKindOfClass:NSString.class]) {
             NSString *str = (NSString *)data;
@@ -29,8 +31,15 @@
     [super drawRect:rect];
     if (!self.isOK) {
         self.titleLab.alpha = 1;
+        if (self.isShowDelBtn) {
+            self.delBtn.alpha = 1;
+        }
         self.isOK = YES;
     }
+}
+
+-(void)actionBlockJobsSearchHoveringHeaderView:(MKDataBlock)jobsSearchHoveringHeaderViewBlock{
+    _jobsSearchHoveringHeaderViewBlock = jobsSearchHoveringHeaderViewBlock;
 }
 #pragma mark —— lazyLoad
 -(UILabel *)titleLab{
@@ -46,6 +55,27 @@
             make.left.equalTo(self).offset(10);
         }];
     }return _titleLab;
+}
+
+-(UIButton *)delBtn{
+    if (!_delBtn) {
+        _delBtn = UIButton.new;
+        [_delBtn setImage:KIMG(@"垃圾箱")
+                 forState:UIControlStateNormal];
+        @weakify(self)
+        [[_delBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIButton * _Nullable x) {
+            @strongify(self)
+            if (self.jobsSearchHoveringHeaderViewBlock) {
+                self.jobsSearchHoveringHeaderViewBlock(x);
+            }
+        }];
+        [self addSubview:_delBtn];
+        [_delBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(16, 16));
+            make.right.equalTo(self).offset(-10);
+            make.centerY.equalTo(self);
+        }];
+    }return _delBtn;
 }
 
 @end

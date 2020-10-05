@@ -25,6 +25,7 @@ UITableViewDataSource
 //数据容器
 @property(nonatomic,strong)NSMutableArray <NSString *>*sectionTitleMutArr;
 @property(nonatomic,strong)NSMutableArray <NSString *>*hotSearchMutArr;
+@property(nonatomic,strong)NSMutableArray <NSString *>*historySearchMutArr;
 @property(nonatomic,assign)CGFloat JobsSearchShowHotwordsTBVCellHeight;
 
 @end
@@ -94,7 +95,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
             return 1;
         }break;
         case 1:{
-            return 3;
+            return self.historySearchMutArr.count;
         }break;
         default:
             return 0;
@@ -122,7 +123,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
             JobsSearchShowHistoryDataTBVCell *cell = [JobsSearchShowHistoryDataTBVCell cellWith:tableView];
             cell.indexRow = indexPath.row;
             cell.indexSection = indexPath.section;
-            [cell richElementsInCellWithModel:nil];
+            [cell richElementsInCellWithModel:self.historySearchMutArr[indexPath.row]];
             return cell;
         }break;
         default:
@@ -146,6 +147,16 @@ viewForHeaderInSection:(NSInteger)section{
     if (self.isHoveringHeaderView) {
         JobsSearchHoveringHeaderView *header = [[JobsSearchHoveringHeaderView alloc] initWithReuseIdentifier:NSStringFromClass(JobsSearchHoveringHeaderView.class)
                                                                                                     withData:self.sectionTitleMutArr[section]];
+        
+        if (section == 1) {
+            header.isShowDelBtn = YES;
+            @weakify(self)
+            [header actionBlockJobsSearchHoveringHeaderView:^(id data) {
+                @strongify(self)
+                //删除历史过往记录
+            }];
+        }
+        
         @weakify(self)
         [header setHoveringHeaderViewBlock:^(id data) {
             @strongify(self)
@@ -284,7 +295,17 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                         
                     }];
                 }
+                else if ([str isEqualToString:@"textFieldDidEndEditing:"]){
+                    @strongify(self)
+                    
+                    [self.historySearchMutArr removeAllObjects];
+                    NSArray *jobsSearchHistoryDataArr = (NSArray *)GetUserDefaultObjForKey(@"JobsSearchHistoryData");
+                    self->_historySearchMutArr = [NSMutableArray arrayWithArray:jobsSearchHistoryDataArr];
+                    
+                    [self.tableView reloadData];
+                }
                 else if ([str isEqualToString:@"cancelBtn"]){//取消按钮点击事件
+                    @strongify(self)
                     [self.view endEditing:YES];
                 }else{}
             }
@@ -318,6 +339,17 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         [_hotSearchMutArr addObject:@"R"];
         [_hotSearchMutArr addObject:@"MATLAB"];
     }return _hotSearchMutArr;
+}
+
+-(NSMutableArray<NSString *> *)historySearchMutArr{
+    if (!_historySearchMutArr) {
+        NSArray *jobsSearchHistoryDataArr = (NSArray *)GetUserDefaultObjForKey(@"JobsSearchHistoryData");
+        if (jobsSearchHistoryDataArr) {
+            _historySearchMutArr = [NSMutableArray arrayWithArray:jobsSearchHistoryDataArr];
+        }else{
+            _historySearchMutArr = NSMutableArray.array;
+        }
+    }return _historySearchMutArr;
 }
 
 @end

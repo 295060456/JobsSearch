@@ -59,8 +59,55 @@ UITextFieldDelegate
 //告诉委托人对指定的文本字段停止编辑
 - (void)textFieldDidEndEditing:(ZYTextField *)textField{
     [textField isEmptyText];
-    if (![NSString isNullString:textField.text]) {
-
+    //用以区分是“取消”触发还是“搜索”触发
+    if (self.cancelBtn.selected) {//来自“取消”
+        textField.text = @"";
+        self.cancelBtn.selected = NO;
+    }else{//来自“搜索”
+        //给定一个字符串 判定 是否在目标数组中，以达到数组元素单一性
+        BOOL (^checkArrContainString)(NSArray <NSString *>*arr,
+                                      NSString *string) = ^(NSArray <NSString *>*arr,
+                                                            NSString *string){
+                                          BOOL t = NO;
+                                          for (NSString *str in arr) {
+                                              if ([str isEqualToString:string]) {
+                                                  t = YES;
+                                              }else{
+                                                  t = NO;
+                                              }
+                                          }
+                                          return t;
+                                      };
+        //存数据
+        void (^storage)(NSString *storageID,
+                        id content,
+                        NSMutableArray *container) = ^(NSString *storageID,
+                                                       id content,
+                                                       NSMutableArray *container){
+                            [container addObject:content];
+                            SetUserDefaultKeyWithObject(storageID, container);
+                            UserDefaultSynchronize;
+                            NSLog(@"历史数据已存入");
+        };
+        
+        if (![NSString isNullString:textField.text]) {
+            //先取值进行对比
+            NSArray *jobsSearchHistoryDataArr = (NSArray *)GetUserDefaultObjForKey(@"JobsSearchHistoryData");
+            if (jobsSearchHistoryDataArr.count) {
+                if (!checkArrContainString(jobsSearchHistoryDataArr,textField.text)) {
+                    //目标数组不存在此字符串，允许存入
+                    NSMutableArray *dataMutArr = [NSMutableArray arrayWithArray:jobsSearchHistoryDataArr];
+                    storage(@"JobsSearchHistoryData",textField.text,dataMutArr);
+                }
+            }else{
+                NSMutableArray *dataMutArr = NSMutableArray.array;
+                storage(@"JobsSearchHistoryData",textField.text,dataMutArr);
+            }
+            
+            if (self.jobsSearchBarBlock) {
+                self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
+            }
+        }
     }
 }
 //告诉委托人对指定的文本字段停止编辑
@@ -96,6 +143,7 @@ replacementString:(NSString *)string{
         _tf.backgroundColor = HEXCOLOR(0xFFFFFF);
         _tf.returnKeyType = UIReturnKeyDone;
         _tf.keyboardAppearance = UIKeyboardAppearanceAlert;
+        _tf.returnKeyType = UIReturnKeySearch;
         [self addSubview:_tf];
 //        _tf.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
         _tf.frame = CGRectMake(10,
@@ -124,6 +172,7 @@ replacementString:(NSString *)string{
         @weakify(self)
         [[_cancelBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             @strongify(self)
+            x.selected = YES;
             if (self.jobsSearchBarBlock) {
                 self.jobsSearchBarBlock(NSStringFromSelector(_cmd));//cancelBtn
             }

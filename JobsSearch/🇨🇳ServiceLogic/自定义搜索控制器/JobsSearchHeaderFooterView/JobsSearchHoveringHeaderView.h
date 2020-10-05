@@ -12,9 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface JobsSearchHoveringHeaderView : HoveringHeaderView
 
 @property(nonatomic,strong)UILabel *titleLab;
+@property(nonatomic,assign)BOOL isShowDelBtn;
 
-- (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
-                               withData:(id _Nullable)data;
+-(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
+                              withData:(id _Nullable)data;
+
+-(void)actionBlockJobsSearchHoveringHeaderView:(MKDataBlock)jobsSearchHoveringHeaderViewBlock;
 
 @end
 
