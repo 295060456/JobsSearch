@@ -154,6 +154,16 @@ viewForHeaderInSection:(NSInteger)section{
             [header actionBlockJobsSearchHoveringHeaderView:^(id data) {
                 @strongify(self)
                 //删除历史过往记录
+                [self.historySearchMutArr removeAllObjects];
+                SetUserDefaultKeyWithObject(@"JobsSearchHistoryData", self.historySearchMutArr);
+                UserDefaultSynchronize;
+                
+                if (self.historySearchMutArr.count == 0) {
+                    [self.sectionTitleMutArr removeAllObjects];
+                    self->_sectionTitleMutArr = nil;
+                }
+                
+                [self.tableView reloadData];
             }];
         }
         

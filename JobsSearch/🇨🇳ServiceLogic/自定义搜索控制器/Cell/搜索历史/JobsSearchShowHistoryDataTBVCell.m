@@ -21,7 +21,7 @@
                                                        reuseIdentifier:ReuseIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        cell.contentView.backgroundColor = RandomColor;
+//        cell.contentView.backgroundColor = RandomColor;
         cell.imageView.image = KIMG(@"时钟");
     }return cell;
 }
