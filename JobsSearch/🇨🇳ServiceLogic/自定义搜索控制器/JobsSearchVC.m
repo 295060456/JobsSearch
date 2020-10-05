@@ -188,11 +188,22 @@ viewForHeaderInSection:(NSInteger)section{
   willDisplayCell:(UITableViewCell *)cell
 forRowAtIndexPath:(NSIndexPath *)indexPath {
     cell.img = KIMG(@"删除");
-//    @weakify(self)
+    @weakify(self)
     [cell customAccessoryView:^(id data) {
-//        @strongify(self)
+        @strongify(self)
         JobsSearchShowHistoryDataTBVCell *cell = (JobsSearchShowHistoryDataTBVCell *)data;
         NSLog(@"MMM - %ld",cell.indexRow);
+        
+        [self.historySearchMutArr removeObjectAtIndex:cell.indexRow];
+        SetUserDefaultKeyWithObject(@"JobsSearchHistoryData", self.historySearchMutArr);
+        UserDefaultSynchronize;
+        
+        if (self.historySearchMutArr.count == 0) {
+            [self.sectionTitleMutArr removeAllObjects];
+            self->_sectionTitleMutArr = nil;
+        }
+        
+        [self.tableView reloadData];
     }];
 }
 #pragma mark —— lazyLoad
@@ -302,6 +313,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     NSArray *jobsSearchHistoryDataArr = (NSArray *)GetUserDefaultObjForKey(@"JobsSearchHistoryData");
                     self->_historySearchMutArr = [NSMutableArray arrayWithArray:jobsSearchHistoryDataArr];
                     
+                    [self.sectionTitleMutArr removeAllObjects];
+                    self->_sectionTitleMutArr = nil;
+                    
                     [self.tableView reloadData];
                 }
                 else if ([str isEqualToString:@"cancelBtn"]){//取消按钮点击事件
@@ -317,7 +331,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!_sectionTitleMutArr) {
         _sectionTitleMutArr = NSMutableArray.array;
         [_sectionTitleMutArr addObject:@"热门搜索"];
-        [_sectionTitleMutArr addObject:@"搜索历史"];
+        if (self.historySearchMutArr.count) {
+            [_sectionTitleMutArr addObject:@"搜索历史"];
+        }
     }return _sectionTitleMutArr;
 }
 
