@@ -267,8 +267,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 -(UITableView *)tableView{
     if (!_tableView) {
         _tableView = UITableView.new;
-        _tableView.backgroundColor = kRedColor;
-        _tableView.scrollEnabled = NO;
+        _tableView.backgroundColor = [UIColor colorWithPatternImage:KBuddleIMG(@"Telegram", nil, @"1")];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -441,9 +440,19 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         _scanBtn = UIButton.new;
         [_scanBtn setBackgroundImage:KIMG(@"扫描")
                             forState:UIControlStateNormal];
-        @weakify(self)
+//        @weakify(self)
         [[_scanBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-            @strongify(self)
+//            @strongify(self)
+            CustomSYSUITabBarController *tbvc = [SceneDelegate sharedInstance].customSYSUITabBarController;
+            [NSObject showSYSAlertViewTitle:@"此功能尚未开发"
+                                    message:@"敬请期待"
+                            isSeparateStyle:NO
+                                btnTitleArr:@[@"好的"]
+                             alertBtnAction:@[@""]
+                                   targetVC:tbvc
+                               alertVCBlock:^(id data) {
+                //DIY
+            }];
         }];
     }return _scanBtn;
 }

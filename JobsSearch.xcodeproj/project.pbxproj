@@ -293,6 +293,7 @@
 		C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F9D252A006F00387F47 /* HotLabel.m */; };
 		C5B47FA4252A127A00387F47 /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47FA3252A127A00387F47 /* UILabel+Extra.m */; };
 		C5B8552E252B448200890A66 /* 扫描.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B8552D252B448200890A66 /* 扫描.png */; };
+		C5B85607252B558D00890A66 /* Telegram.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5B85606252B558D00890A66 /* Telegram.bundle */; };
 		E7F73E4FA4EEA0009C5C36E7 /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -872,6 +873,7 @@
 		C5B47FA2252A127A00387F47 /* UILabel+Extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extra.h"; sourceTree = "<group>"; };
 		C5B47FA3252A127A00387F47 /* UILabel+Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extra.m"; sourceTree = "<group>"; };
 		C5B8552D252B448200890A66 /* 扫描.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描.png"; sourceTree = "<group>"; };
+		C5B85606252B558D00890A66 /* Telegram.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Telegram.bundle; sourceTree = "<group>"; };
 		DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -2380,6 +2382,7 @@
 			isa = PBXGroup;
 			children = (
 				C5B8552D252B448200890A66 /* 扫描.png */,
+				C5B85606252B558D00890A66 /* Telegram.bundle */,
 			);
 			path = "图片资源";
 			sourceTree = "<group>";
@@ -2537,6 +2540,7 @@
 				C59B9D2B2526E4580039B485 /* 主页.json in Resources */,
 				C59B9D352526E4580039B485 /* dingdan.json in Resources */,
 				C59B9D2D2526E4580039B485 /* green_lottie_tab_news.json in Resources */,
+				C5B85607252B558D00890A66 /* Telegram.bundle in Resources */,
 				C59B9CA62526E3F10039B485 /* day_like@3x.png in Resources */,
 				C59B99872526E0A50039B485 /* BRPickerView.bundle in Resources */,
 				C59B9CB82526E3F10039B485 /* del_Photo@2x.png in Resources */,

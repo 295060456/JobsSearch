@@ -73,9 +73,7 @@ UITextFieldDelegate
                                           BOOL t = NO;
                                           for (NSString *str in arr) {
                                               if ([str isEqualToString:string]) {
-                                                  t = YES;
-                                              }else{
-                                                  t = NO;
+                                                  t = YES;//只要有一个是重复的就赋值YES 
                                               }
                                           }return t;
                                       };
@@ -146,7 +144,6 @@ replacementString:(NSString *)string{
         _tf.leftView = self.imgView;
         _tf.leftViewMode = UITextFieldViewModeAlways;
         _tf.backgroundColor = HEXCOLOR(0xFFFFFF);
-        _tf.returnKeyType = UIReturnKeyDone;
         _tf.keyboardAppearance = UIKeyboardAppearanceAlert;
         _tf.returnKeyType = UIReturnKeySearch;
         [self addSubview:_tf];
