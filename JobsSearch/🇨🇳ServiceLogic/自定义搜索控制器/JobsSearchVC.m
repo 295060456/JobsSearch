@@ -43,12 +43,18 @@ UITableViewDataSource
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = KLightGrayColor;
-    self.isBackBtnBlackorWhite = YES;
-    self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
-    self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.scanBtn];
-    self.gk_navTitle = @"hah";
-    [self hideNavLine];
+//    self.view.backgroundColor = KLightGrayColor;
+    self.view.backgroundColor = kRedColor;
+    
+    if (![NSString isNullString:(NSString *)self.requestParams]) {
+        self.isBackBtnBlackorWhite = YES;
+        self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
+        self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.scanBtn];
+        
+        self.gk_navTitle = (NSString *)self.requestParams;
+        [self hideNavLine];
+    }
+    
     [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = YES;
     self.tableView.alpha = 1;
     [self.view bringSubviewToFront:self.gk_navigationBar];
@@ -282,10 +288,10 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         [self.view addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.equalTo(self.view);
-            if (self.gk_navBarAlpha) {
-                make.top.equalTo(self.gk_navigationBar.mas_bottom);
-            }else{
+            if ([NSString isNullString:(NSString *)self.requestParams]) {
                 make.top.equalTo(self.view.mas_top);
+            }else{
+                make.top.equalTo(self.gk_navigationBar.mas_bottom);
             }
             
             if ([SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden) {
@@ -306,10 +312,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         _jobsSearchBar.mj_size = CGSizeMake(SCREEN_WIDTH, 60);
         @weakify(self)
         [_jobsSearchBar actionBlockJobsSearchBar:^(id data) {
-            NSLog(@"KKK = %@",data);
+//            NSLog(@"KKK = %@",data);
             if ([data isKindOfClass:NSString.class]) {
                 NSString *str = (NSString *)data;
                 if ([str isEqualToString:@"textFieldShouldEndEditing:"]) {//正常位
+                    NSLog(@"textFieldShouldEndEditing:");
                     /*
                      *    使用弹簧的描述时间曲线来执行动画 ,当dampingRatio == 1 时,动画会平稳的减速到最终的模型值,而不会震荡.
                      *    小于1的阻尼比在达到完全停止之前会震荡的越来越多.
@@ -339,6 +346,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     }];
                 }
                 else if([str isEqualToString:@"textFieldShouldBeginEditing:"]){//编辑期
+                    NSLog(@"textFieldShouldBeginEditing:");
                     /*
                      *    使用弹簧的描述时间曲线来执行动画 ,当dampingRatio == 1 时,动画会平稳的减速到最终的模型值,而不会震荡.
                      *    小于1的阻尼比在达到完全停止之前会震荡的越来越多.
@@ -369,6 +377,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     }];
                 }
                 else if ([str isEqualToString:@"textFieldDidEndEditing:"]){
+                    NSLog(@"textFieldDidEndEditing:");
                     @strongify(self)
                     [self.historySearchMutArr removeAllObjects];
                     NSArray *jobsSearchHistoryDataArr = (NSArray *)GetUserDefaultObjForKey(@"JobsSearchHistoryData");
@@ -381,6 +390,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     [self goUpAndDown:YES];
                 }
                 else if ([str isEqualToString:@"cancelBtn"]){//取消按钮点击事件
+                    NSLog(@"cancelBtn");
                     @strongify(self)
                     [self.view endEditing:YES];
                     
@@ -389,6 +399,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     }
                 }
                 else if ([str isEqualToString:@"textField:shouldChangeCharactersInRange:replacementString:"]){
+                    NSLog(@"textField:shouldChangeCharactersInRange:replacementString:");
                     //正在编辑ing
                     [self goUpAndDown:YES];
                 }
