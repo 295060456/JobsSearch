@@ -59,7 +59,7 @@ CGFloat LZB_TABBAR_HEIGHT;
     
     self.lzb_tabBar.tabBarStyleType = LZBTabBarStyleType_sysNormal;
     self.lzb_tabBar.topLine.alpha = 0;//TabBar顶部分割线
-    self.lzb_tabBar.lottieJsonNameStrMutArr = self.lottieJsonNameStrMutArr;
+//    self.lzb_tabBar.lottieJsonNameStrMutArr = self.lottieJsonNameStrMutArr;
 
     [self p_setUpAllChildViewController];
     

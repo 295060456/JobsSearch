@@ -45,8 +45,10 @@ UITableViewDataSource
     self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
     self.gk_navTitle = @"hah";
     [self hideNavLine];
+    [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = NO;
     self.tableView.alpha = 1;
     [self.view bringSubviewToFront:self.gk_navigationBar];
+    [self.view bringSubviewToFront:[SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBar];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(hotLabelNotification:)
@@ -72,10 +74,10 @@ UITableViewDataSource
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
         @strongify(self)
-        if (isUpAndDown) {
+        if (isUpAndDown) {//顶上去
             self.tableView.mj_y = self.gk_navigationBar.mj_y;
             self.gk_navigationBar.alpha = 0;
-        }else{
+        }else{//正常状态
             self.tableView.mj_y = self.tableViewRect.origin.y;
             self.gk_navigationBar.alpha = 1;
         }
@@ -352,19 +354,15 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                 }
                 else if ([str isEqualToString:@"textFieldDidEndEditing:"]){
                     @strongify(self)
-                    
-                    if (self.tableView.mj_y == self.gk_navigationBar.mj_y) {
-                        [self goUpAndDown:NO];
-                    }
-                    
                     [self.historySearchMutArr removeAllObjects];
                     NSArray *jobsSearchHistoryDataArr = (NSArray *)GetUserDefaultObjForKey(@"JobsSearchHistoryData");
                     self->_historySearchMutArr = [NSMutableArray arrayWithArray:jobsSearchHistoryDataArr];
 
                     [self.sectionTitleMutArr removeAllObjects];
                     self->_sectionTitleMutArr = nil;
-
                     [self.tableView reloadData];
+                    
+                    [self goUpAndDown:YES];
                 }
                 else if ([str isEqualToString:@"cancelBtn"]){//取消按钮点击事件
                     @strongify(self)
