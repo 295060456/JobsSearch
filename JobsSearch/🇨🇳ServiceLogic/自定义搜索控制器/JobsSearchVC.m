@@ -44,6 +44,18 @@ UITableViewDataSource
     [self hideNavLine];
     self.tableView.alpha = 1;
     [self.view bringSubviewToFront:self.gk_navigationBar];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(hotLabelNotification:)
+                                                 name:@"HotLabel"
+                                               object:nil];
+}
+
+-(void)hotLabelNotification:(NSNotification *)notification{
+    NSDictionary *dic = notification.userInfo;
+    NSNumber *b = dic[@"hotLabelHeight"];
+    self.JobsSearchShowHotwordsTBVCellHeight = b.floatValue;
+    [self.tableView reloadData];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
@@ -55,7 +67,11 @@ UITableViewDataSource
 heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.section) {
         case 0:{
-            return [JobsSearchShowHotwordsTBVCell cellHeightWithModel:nil];
+            if (self.JobsSearchShowHotwordsTBVCellHeight == 0) {
+                return [JobsSearchShowHotwordsTBVCell cellHeightWithModel:nil];
+            }else{
+                return self.JobsSearchShowHotwordsTBVCellHeight;
+            }
         }break;
         case 1:{
             return [JobsSearchShowHistoryDataTBVCell cellHeightWithModel:nil];

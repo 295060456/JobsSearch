@@ -85,6 +85,7 @@
                 }];
             }else{//第一次
                 self.X = self.left + (btnSize.width + self.offsetXForEach);
+                self.row = 1;
                 [btn mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.top.equalTo(self).offset(self.top);
                     make.left.equalTo(self).offset(self.left);
@@ -95,6 +96,10 @@
         
         self.hotLabelHeight = self.top * 2 + btnSize.height * self.row + (self.row - 1) * self.offsetYForEach;
         NSLog(@"self.row = %d",self.row);
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:ReuseIdentifier
+                                                            object:nil
+                                                          userInfo:@{@"hotLabelHeight":@(self.hotLabelHeight)}];
     }
 }
 

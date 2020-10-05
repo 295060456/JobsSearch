@@ -25,7 +25,7 @@
 }
 
 +(CGFloat)cellHeightWithModel:(id _Nullable)model{
-    return 70;
+    return 170;
 }
 
 -(void)richElementsInCellWithModel:(id _Nullable)model{
