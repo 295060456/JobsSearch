@@ -9,6 +9,8 @@
 
 @interface JobsSearchShowHotwordsTBVCell ()
 
+@property(nonatomic,copy)MKDataBlock jobsSearchShowHotwordsTBVCellBlock;
+
 @end
 
 @implementation JobsSearchShowHotwordsTBVCell
@@ -23,19 +25,26 @@
 }
 
 +(CGFloat)cellHeightWithModel:(id _Nullable)model{
-    return 50;
+    return 70;
 }
 
 -(void)richElementsInCellWithModel:(id _Nullable)model{
     self.hotLabel.titleArr = (NSArray *)model;
+}
+//点击了哪个Btn？
+-(void)actionBlockJobsSearchShowHotwordsTBVCell:(MKDataBlock)jobsSearchShowHotwordsTBVCellBlock{
+    _jobsSearchShowHotwordsTBVCellBlock = jobsSearchShowHotwordsTBVCellBlock;
 }
 #pragma mark —— lazyLoad
 -(HotLabel *)hotLabel{
     if (!_hotLabel) {
         _hotLabel = HotLabel.new;
         @weakify(self)
-        [_hotLabel actionBlockHotLabel:^(id data) {
+        [_hotLabel actionBlockHotLabel:^(id data) {//点击了哪个Btn？
             @strongify(self)
+            if (self.jobsSearchShowHotwordsTBVCellBlock) {
+                self.jobsSearchShowHotwordsTBVCellBlock(data);
+            }
         }];
         [self.contentView addSubview:_hotLabel];
         [_hotLabel mas_makeConstraints:^(MASConstraintMaker *make) {

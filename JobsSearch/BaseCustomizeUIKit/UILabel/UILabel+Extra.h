@@ -16,6 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
                  font:(UIFont *)font
               maxSize:(CGSize)maxSize;
 
+/*
+ *  CGSize size = [self sizeWithText: @"此处是测试字体"
+                                font:kFontSize(20)
+                             maxSize:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+ */
+
 @end
 
 NS_ASSUME_NONNULL_END

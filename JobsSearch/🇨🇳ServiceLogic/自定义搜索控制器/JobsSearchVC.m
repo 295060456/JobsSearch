@@ -25,6 +25,7 @@ UITableViewDataSource
 //数据容器
 @property(nonatomic,strong)NSMutableArray <NSString *>*sectionTitleMutArr;
 @property(nonatomic,strong)NSMutableArray <NSString *>*hotSearchMutArr;
+@property(nonatomic,assign)CGFloat JobsSearchShowHotwordsTBVCellHeight;
 
 @end
 
@@ -54,7 +55,7 @@ UITableViewDataSource
 heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.section) {
         case 0:{
-            return 150;
+            return [JobsSearchShowHotwordsTBVCell cellHeightWithModel:nil];
         }break;
         case 1:{
             return [JobsSearchShowHistoryDataTBVCell cellHeightWithModel:nil];
@@ -93,6 +94,12 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
             cell.indexRow = indexPath.row;
             cell.indexSection = indexPath.section;
             [cell richElementsInCellWithModel:self.hotSearchMutArr];
+            @weakify(self)
+            //点击的哪个btn？
+            [cell actionBlockJobsSearchShowHotwordsTBVCell:^(UIButton *data) {
+                @strongify(self)
+                self.jobsSearchBar.tf.text = data.titleLabel.text;
+            }];
             return cell;
         }break;
         case 1:{//搜索历史
@@ -147,14 +154,16 @@ viewForHeaderInSection:(NSInteger)section{
 //    }
 
 }
+//cell的生命周期
+//将要出现的cell
 //实现以下方法,以替换系统默认的右侧小箭头
 - (void)tableView:(UITableView *)tableView
   willDisplayCell:(UITableViewCell *)cell
 forRowAtIndexPath:(NSIndexPath *)indexPath {
     cell.img = KIMG(@"删除");
-    @weakify(self)
+//    @weakify(self)
     [cell customAccessoryView:^(id data) {
-        @strongify(self)
+//        @strongify(self)
         JobsSearchShowHistoryDataTBVCell *cell = (JobsSearchShowHistoryDataTBVCell *)data;
         NSLog(@"MMM - %ld",cell.indexRow);
     }];

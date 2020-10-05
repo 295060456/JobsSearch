@@ -8,7 +8,9 @@
 #import "HotLabel.h"
 #import "UILabel+Extra.h"
 
-@interface HotLabel ()
+@interface HotLabel (){
+    CGSize btnSize;
+}
 
 @property(nonatomic,copy)MKDataBlock hotLabelBlock;
 
@@ -17,6 +19,7 @@
 @property(nonatomic,assign)BOOL isOK;
 @property(nonatomic,assign)CGFloat X;//如果加载了下一个btn，那么直到他的尾巴处的x值，记住包含两边固有的间距进行比较
 @property(nonatomic,assign)int row;
+@property(nonatomic,assign)CGFloat hotLabelHeight;
 
 @end
 
@@ -50,9 +53,9 @@
             btn.titleLabel.adjustsFontSizeToFitWidth = YES;
             [UIView cornerCutToCircleWithView:btn AndCornerRadius:3];
             
-            CGSize btnSize = [UILabel sizeWithText:titleStr
-                                              font:self.btnTitleFont
-                                           maxSize:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+            btnSize = [UILabel sizeWithText:titleStr
+                                       font:self.btnTitleFont
+                                    maxSize:CGSizeMake(MAXFLOAT, MAXFLOAT)];
             
             @weakify(self)
             [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIButton * _Nullable x) {
@@ -89,8 +92,14 @@
             }
             [self.btnMutArr addObject:btn];
         }
+        
+        self.hotLabelHeight = self.top * 2 + btnSize.height * self.row + (self.row - 1) * self.offsetYForEach;
         NSLog(@"self.row = %d",self.row);
     }
+}
+
+-(CGFloat)heightForHotLabel{
+    return self.hotLabelHeight;
 }
 
 -(void)actionBlockHotLabel:(MKDataBlock)hotLabelBlock{

@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSArray *titleArr;
 
 -(void)actionBlockHotLabel:(MKDataBlock)hotLabelBlock;//点击事件传递
+-(CGFloat)heightForHotLabel;//约束走完以后，计算得出的高，用于外界自适应
 
 @end
 
