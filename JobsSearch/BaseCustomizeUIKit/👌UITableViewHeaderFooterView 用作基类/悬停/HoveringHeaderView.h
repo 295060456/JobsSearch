@@ -15,6 +15,7 @@
 
 -(instancetype _Nullable)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
                                         withData:(id _Nullable)data;
+
 -(void)actionBlockHoveringHeaderView:(MKDataBlock _Nullable)hoveringHeaderViewBlock;
 
 @end

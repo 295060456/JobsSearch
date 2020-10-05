@@ -294,6 +294,7 @@
 		C5B47FA4252A127A00387F47 /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47FA3252A127A00387F47 /* UILabel+Extra.m */; };
 		C5B8552E252B448200890A66 /* 扫描.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B8552D252B448200890A66 /* 扫描.png */; };
 		C5B85607252B558D00890A66 /* Telegram.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5B85606252B558D00890A66 /* Telegram.bundle */; };
+		C5B85617252B577A00890A66 /* UITableView+WWFoldableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B85615252B577A00890A66 /* UITableView+WWFoldableTableView.m */; };
 		E7F73E4FA4EEA0009C5C36E7 /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -874,6 +875,8 @@
 		C5B47FA3252A127A00387F47 /* UILabel+Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extra.m"; sourceTree = "<group>"; };
 		C5B8552D252B448200890A66 /* 扫描.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描.png"; sourceTree = "<group>"; };
 		C5B85606252B558D00890A66 /* Telegram.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Telegram.bundle; sourceTree = "<group>"; };
+		C5B85615252B577A00890A66 /* UITableView+WWFoldableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+WWFoldableTableView.m"; sourceTree = "<group>"; };
+		C5B85616252B577A00890A66 /* UITableView+WWFoldableTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+WWFoldableTableView.h"; sourceTree = "<group>"; };
 		DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1425,6 +1428,7 @@
 		C59B9A7D2526E3E10039B485 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				C5B85611252B572F00890A66 /* UITableView 折叠功能 */,
 				C59B9A7E2526E3E10039B485 /* TableViewAnimationKit */,
 				C59B9A852526E3E10039B485 /* 专治UITableView相应链断裂 */,
 			);
@@ -1476,10 +1480,8 @@
 			isa = PBXGroup;
 			children = (
 				C59BA077252710CF0039B485 /* 是否取消悬停 */,
-				C59BA07A252710CF0039B485 /* HoveringHeaderView.h */,
-				C59BA075252710CE0039B485 /* HoveringHeaderView.m */,
-				C59BA078252710CF0039B485 /* NonHoveringHeaderView.h */,
-				C59BA076252710CF0039B485 /* NonHoveringHeaderView.m */,
+				C5B8561C252B5ACF00890A66 /* 不悬停 */,
+				C5B8561B252B5AC600890A66 /* 悬停 */,
 				C59BA079252710CF0039B485 /* UITableViewHeaderFooterView+Attribute.h */,
 				C59BA07B252710CF0039B485 /* UITableViewHeaderFooterView+Attribute.m */,
 			);
@@ -2387,6 +2389,33 @@
 			path = "图片资源";
 			sourceTree = "<group>";
 		};
+		C5B85611252B572F00890A66 /* UITableView 折叠功能 */ = {
+			isa = PBXGroup;
+			children = (
+				C5B85616252B577A00890A66 /* UITableView+WWFoldableTableView.h */,
+				C5B85615252B577A00890A66 /* UITableView+WWFoldableTableView.m */,
+			);
+			path = "UITableView 折叠功能";
+			sourceTree = "<group>";
+		};
+		C5B8561B252B5AC600890A66 /* 悬停 */ = {
+			isa = PBXGroup;
+			children = (
+				C59BA07A252710CF0039B485 /* HoveringHeaderView.h */,
+				C59BA075252710CE0039B485 /* HoveringHeaderView.m */,
+			);
+			path = "悬停";
+			sourceTree = "<group>";
+		};
+		C5B8561C252B5ACF00890A66 /* 不悬停 */ = {
+			isa = PBXGroup;
+			children = (
+				C59BA078252710CF0039B485 /* NonHoveringHeaderView.h */,
+				C59BA076252710CF0039B485 /* NonHoveringHeaderView.m */,
+			);
+			path = "不悬停";
+			sourceTree = "<group>";
+		};
 		DB6EB4965849B35F47ED7CA5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2702,6 +2731,7 @@
 				C59B9AD32526E3E10039B485 /* UIImage+Tailor.m in Sources */,
 				C59B9AEB2526E3E10039B485 /* HQCollectionViewFlowLayout.m in Sources */,
 				C59B9C682526E3F10039B485 /* LOTAnimationTransitionController.m in Sources */,
+				C5B85617252B577A00890A66 /* UITableView+WWFoldableTableView.m in Sources */,
 				C59B9AF52526E3E10039B485 /* NSArray+Extension.m in Sources */,
 				C59B9CC62526E3F10039B485 /* LZBTabBarItem.m in Sources */,
 				C59B9C5D2526E3F10039B485 /* LOTComposition.m in Sources */,

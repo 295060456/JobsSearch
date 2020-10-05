@@ -13,6 +13,8 @@
 #import "JobsSearchShowHistoryDataTBVCell.h"//搜索历史
 #import "JobsSearchShowHotwordsTBVCell.h"//热门搜索
 
+#import "UITableView+WWFoldableTableView.h"
+
 @interface JobsSearchVC ()
 <
 UITableViewDelegate,
@@ -218,6 +220,7 @@ viewForHeaderInSection:(NSInteger)section{
         [header setHoveringHeaderViewBlock:^(id data) {
             @strongify(self)
             [self.view endEditing:YES];
+            [self.tableView ww_foldSection:section fold:![self.tableView ww_isSectionFolded:section]];
         }];
         return header;
     }else{
@@ -274,6 +277,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.tableHeaderView = self.jobsSearchBar;
         _tableView.tableFooterView = UIView.new;
+        _tableView.ww_foldable = YES;//设置可折叠
 
         [self.view addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
