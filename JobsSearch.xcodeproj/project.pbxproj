@@ -2305,10 +2305,10 @@
 			children = (
 				C59BA0E5252717560039B485 /* Cell */,
 				C59BA0B32527164F0039B485 /* JobsSearchHeaderFooterView */,
-				C59B9D9D2526EC070039B485 /* JobsSearchVC.h */,
-				C59B9D9E2526EC070039B485 /* JobsSearchVC.m */,
 				C59B9F112526F56E0039B485 /* JobsSearchBar.h */,
 				C59B9F122526F56E0039B485 /* JobsSearchBar.m */,
+				C59B9D9D2526EC070039B485 /* JobsSearchVC.h */,
+				C59B9D9E2526EC070039B485 /* JobsSearchVC.m */,
 			);
 			path = "自定义搜索控制器";
 			sourceTree = "<group>";

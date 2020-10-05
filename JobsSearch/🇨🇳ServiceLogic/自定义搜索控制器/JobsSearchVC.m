@@ -28,6 +28,8 @@ UITableViewDataSource
 @property(nonatomic,strong)NSMutableArray <NSString *>*historySearchMutArr;
 @property(nonatomic,assign)CGFloat JobsSearchShowHotwordsTBVCellHeight;
 
+@property(nonatomic,assign)CGRect tableViewRect;
+
 @end
 
 @implementation JobsSearchVC
@@ -50,6 +52,36 @@ UITableViewDataSource
                                              selector:@selector(hotLabelNotification:)
                                                  name:@"HotLabel"
                                                object:nil];
+}
+
+-(void)goUpAndDown:(BOOL)isUpAndDown{
+    /*
+     *    使用弹簧的描述时间曲线来执行动画 ,当dampingRatio == 1 时,动画会平稳的减速到最终的模型值,而不会震荡.
+     *    小于1的阻尼比在达到完全停止之前会震荡的越来越多.
+     *    如果你可以使用初始的 spring velocity 来 指定模拟弹簧末端的对象在加载之前移动的速度.
+     *    他是一个单位坐标系统,其中2被定义为在一秒内移动整个动画距离.
+     *    如果你在动画中改变一个物体的位置,你想在动画开始前移动到 100 pt/s 你会超过0.5,
+     *    dampingRatio 阻尼
+     *    velocity 速度
+     */
+    @weakify(self)
+    [UIView animateWithDuration:1
+                          delay:0
+         usingSpringWithDamping:1
+          initialSpringVelocity:20
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+        @strongify(self)
+        if (isUpAndDown) {
+            self.tableView.mj_y = self.gk_navigationBar.mj_y;
+            self.gk_navigationBar.alpha = 0;
+        }else{
+            self.tableView.mj_y = self.tableViewRect.origin.y;
+            self.gk_navigationBar.alpha = 1;
+        }
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 -(void)hotLabelNotification:(NSNotification *)notification{
@@ -245,6 +277,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                 make.bottom.equalTo(self.view.mas_bottom).offset(-LZB_TABBAR_HEIGHT);
             }
         }];
+        [self.view layoutIfNeeded];
+        self.tableViewRect = _tableView.frame;
     }return _tableView;
 }
 
@@ -319,19 +353,32 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                 else if ([str isEqualToString:@"textFieldDidEndEditing:"]){
                     @strongify(self)
                     
+                    if (self.tableView.mj_y == self.gk_navigationBar.mj_y) {
+                        [self goUpAndDown:NO];
+                    }
+                    
                     [self.historySearchMutArr removeAllObjects];
                     NSArray *jobsSearchHistoryDataArr = (NSArray *)GetUserDefaultObjForKey(@"JobsSearchHistoryData");
                     self->_historySearchMutArr = [NSMutableArray arrayWithArray:jobsSearchHistoryDataArr];
-                    
+
                     [self.sectionTitleMutArr removeAllObjects];
                     self->_sectionTitleMutArr = nil;
-                    
+
                     [self.tableView reloadData];
                 }
                 else if ([str isEqualToString:@"cancelBtn"]){//取消按钮点击事件
                     @strongify(self)
                     [self.view endEditing:YES];
-                }else{}
+                    
+                    if (self.tableView.mj_y == self.gk_navigationBar.mj_y) {
+                        [self goUpAndDown:NO];
+                    }
+                }
+                else if ([str isEqualToString:@"textField:shouldChangeCharactersInRange:replacementString:"]){
+                    //正在编辑ing
+                    [self goUpAndDown:YES];
+                }
+                else{}
             }
         }];
     }return _jobsSearchBar;
