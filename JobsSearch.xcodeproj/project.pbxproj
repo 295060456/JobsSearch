@@ -292,6 +292,7 @@
 		C5B47F952529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */; };
 		C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F9D252A006F00387F47 /* HotLabel.m */; };
 		C5B47FA4252A127A00387F47 /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47FA3252A127A00387F47 /* UILabel+Extra.m */; };
+		C5B8552E252B448200890A66 /* 扫描.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B8552D252B448200890A66 /* 扫描.png */; };
 		E7F73E4FA4EEA0009C5C36E7 /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -870,6 +871,7 @@
 		C5B47F9D252A006F00387F47 /* HotLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotLabel.m; sourceTree = "<group>"; };
 		C5B47FA2252A127A00387F47 /* UILabel+Extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extra.h"; sourceTree = "<group>"; };
 		C5B47FA3252A127A00387F47 /* UILabel+Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extra.m"; sourceTree = "<group>"; };
+		C5B8552D252B448200890A66 /* 扫描.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描.png"; sourceTree = "<group>"; };
 		DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1286,19 +1288,19 @@
 		C59B9A2D2526E3E00039B485 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A2E2526E3E00039B485 /* NSObject+Random.m */,
 				C59B9A2F2526E3E00039B485 /* NSObject+Alert */,
-				C59B9A342526E3E00039B485 /* NSObject+Shake.h */,
 				C59B9A352526E3E00039B485 /* NSObject+Extras.h */,
-				C59B9A362526E3E00039B485 /* NSObject+Sound.m */,
-				C59B9A372526E3E00039B485 /* NSObject+Time.h */,
+				C59B9A3B2526E3E00039B485 /* NSObject+Extras.m */,
+				C59B9A3E2526E3E00039B485 /* NSObject+Measure.h */,
 				C59B9A382526E3E00039B485 /* NSObject+Measure.m */,
 				C59B9A392526E3E00039B485 /* NSObject+Random.h */,
-				C59B9A3A2526E3E00039B485 /* NSObject+Sound.h */,
-				C59B9A3B2526E3E00039B485 /* NSObject+Extras.m */,
+				C59B9A2E2526E3E00039B485 /* NSObject+Random.m */,
+				C59B9A342526E3E00039B485 /* NSObject+Shake.h */,
 				C59B9A3C2526E3E00039B485 /* NSObject+Shake.m */,
+				C59B9A3A2526E3E00039B485 /* NSObject+Sound.h */,
+				C59B9A362526E3E00039B485 /* NSObject+Sound.m */,
+				C59B9A372526E3E00039B485 /* NSObject+Time.h */,
 				C59B9A3D2526E3E00039B485 /* NSObject+Time.m */,
-				C59B9A3E2526E3E00039B485 /* NSObject+Measure.h */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -1306,10 +1308,10 @@
 		C59B9A2F2526E3E00039B485 /* NSObject+Alert */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A302526E3E00039B485 /* NSObject+SPAlertController.m */,
-				C59B9A312526E3E00039B485 /* NSObject+SYSAlertController.m */,
 				C59B9A322526E3E00039B485 /* NSObject+SPAlertController.h */,
+				C59B9A302526E3E00039B485 /* NSObject+SPAlertController.m */,
 				C59B9A332526E3E00039B485 /* NSObject+SYSAlertController.h */,
+				C59B9A312526E3E00039B485 /* NSObject+SYSAlertController.m */,
 			);
 			path = "NSObject+Alert";
 			sourceTree = "<group>";
@@ -2303,6 +2305,7 @@
 		C59B9D9C2526EBDA0039B485 /* 自定义搜索控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				C5B85532252B44B300890A66 /* 图片资源 */,
 				C59BA0E5252717560039B485 /* Cell */,
 				C59BA0B32527164F0039B485 /* JobsSearchHeaderFooterView */,
 				C59B9F112526F56E0039B485 /* JobsSearchBar.h */,
@@ -2371,6 +2374,14 @@
 				C5B47FA3252A127A00387F47 /* UILabel+Extra.m */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		C5B85532252B44B300890A66 /* 图片资源 */ = {
+			isa = PBXGroup;
+			children = (
+				C5B8552D252B448200890A66 /* 扫描.png */,
+			);
+			path = "图片资源";
 			sourceTree = "<group>";
 		};
 		DB6EB4965849B35F47ED7CA5 /* Pods */ = {
@@ -2537,6 +2548,7 @@
 				C59B98E52526DE260039B485 /* Main.storyboard in Resources */,
 				C59B9D332526E4580039B485 /* 上传与拍照.json in Resources */,
 				C59B9D382526E4580039B485 /* Others.bundle in Resources */,
+				C5B8552E252B448200890A66 /* 扫描.png in Resources */,
 				C59B9CA02526E3F10039B485 /* 验证码按钮单例封装 in Resources */,
 				C59B9D302526E4580039B485 /* green_lottie_tab_discover.json in Resources */,
 				C59B9CA22526E3F10039B485 /* spark_red@3x.png in Resources */,

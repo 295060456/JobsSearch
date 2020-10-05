@@ -19,6 +19,7 @@ UITableViewDelegate,
 UITableViewDataSource
 >
 
+@property(nonatomic,strong)UIButton *scanBtn;
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)JobsSearchBar *jobsSearchBar;
 
@@ -43,9 +44,10 @@ UITableViewDataSource
     self.view.backgroundColor = KLightGrayColor;
     self.isBackBtnBlackorWhite = YES;
     self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
+    self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.scanBtn];
     self.gk_navTitle = @"hah";
     [self hideNavLine];
-    [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = NO;
+    [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = YES;
     self.tableView.alpha = 1;
     [self.view bringSubviewToFront:self.gk_navigationBar];
     [self.view bringSubviewToFront:[SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBar];
@@ -54,6 +56,15 @@ UITableViewDataSource
                                              selector:@selector(hotLabelNotification:)
                                                  name:@"HotLabel"
                                                object:nil];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = NO;
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
 }
 
 -(void)goUpAndDown:(BOOL)isUpAndDown{
@@ -120,6 +131,8 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 -(void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.view endEditing:YES];
+    JobsSearchShowHistoryDataTBVCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    self.jobsSearchBar.tf.text = cell.textLabel.text;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView
@@ -421,6 +434,18 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
             _historySearchMutArr = NSMutableArray.array;
         }
     }return _historySearchMutArr;
+}
+
+-(UIButton *)scanBtn{
+    if (!_scanBtn) {
+        _scanBtn = UIButton.new;
+        [_scanBtn setBackgroundImage:KIMG(@"扫描")
+                            forState:UIControlStateNormal];
+        @weakify(self)
+        [[_scanBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            @strongify(self)
+        }];
+    }return _scanBtn;
 }
 
 @end
