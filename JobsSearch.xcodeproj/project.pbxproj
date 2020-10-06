@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		32D5027DF5F5AD09BB6A422C /* Pods_JobsSearch_JobsSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AF52822135395AC4ED7192 /* Pods_JobsSearch_JobsSearchUITests.framework */; };
 		B1FCA2073A31A5D9A5BF4BB0 /* Pods_JobsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */; };
+		C546C3A9252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */; };
+		C546C3AA252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C59B98DC2526DE260039B485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* AppDelegate.m */; };
 		C59B98DF2526DE260039B485 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DE2526DE260039B485 /* SceneDelegate.m */; };
@@ -324,6 +326,10 @@
 		74F5AA78FAB8FF4A24BD8A01 /* Pods-JobsSearch-JobsSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch-JobsSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch-JobsSearchUITests/Pods-JobsSearch-JobsSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A3A6B8F73219A4D790276103 /* Pods-JobsSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchTests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchTests/Pods-JobsSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A84ECDA1DF94EA70BE0F2CA4 /* Pods-JobsSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch/Pods-JobsSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		C546C3A5252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		C546C3A8252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59B98DA2526DE260039B485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -918,6 +924,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C546C39E252C21F0003694FF /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				C546C3A5252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.h */,
+				C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */,
+				C546C3A8252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.h */,
+				C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
 		C59B98CE2526DE260039B485 = {
 			isa = PBXGroup;
 			children = (
@@ -990,6 +1007,7 @@
 		C59B99192526E09C0039B485 /* Pods不进去的 */ = {
 			isa = PBXGroup;
 			children = (
+				C546C39E252C21F0003694FF /* FDFullscreenPopGesture */,
 				C59B993A2526E0A40039B485 /* BRPickerView */,
 				C59B991A2526E0A40039B485 /* GKNavigationBar */,
 				C59B99562526E0A50039B485 /* SDWebImage */,
@@ -2755,6 +2773,7 @@
 				C59B9AFC2526E3E10039B485 /* TBVCell_style_01.m in Sources */,
 				C59B9C6B2526E3F10039B485 /* LOTAsset.m in Sources */,
 				C59B9AD52526E3E10039B485 /* UIImage+Extras.m in Sources */,
+				C546C3AA252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
 				C59B9B082526E3E10039B485 /* UIView+Chain.m in Sources */,
 				C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */,
 				C59B9C882526E3F10039B485 /* LOTAnimatorNode.m in Sources */,
@@ -2918,6 +2937,7 @@
 				C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */,
 				C59B9AD62526E3E10039B485 /* UIImage+SYS.m in Sources */,
 				C59B99832526E0A50039B485 /* BRStringPickerView.m in Sources */,
+				C546C3A9252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C59B9CD42526E3F10039B485 /* UIControl+XY.m in Sources */,
 				C59B9C582526E3F10039B485 /* LOTPathInterpolator.m in Sources */,
 				C59B9C8E2526E3F10039B485 /* CustomerAVPlayerView+UIGestureRecognizerDelegate.m in Sources */,
