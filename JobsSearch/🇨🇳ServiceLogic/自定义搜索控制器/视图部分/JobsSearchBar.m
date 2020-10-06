@@ -38,9 +38,11 @@ UITextFieldDelegate
 //删除的话：系统先走textField:shouldChangeCharactersInRange:replacementString: 再走cjTextFieldDeleteBackward:
 #pragma mark —— CJTextFieldDeleteDelegate
 - (void)cjTextFieldDeleteBackward:(CJTextField *)textField{
-//    if (self.jobsSearchBarBlock) {
-//        self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
-//    }
+    if ([NSString isNullString:textField.text]) {
+        if (self.jobsSearchBarBlock) {
+            self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
+        }
+    }
 }
 #pragma mark —— UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑

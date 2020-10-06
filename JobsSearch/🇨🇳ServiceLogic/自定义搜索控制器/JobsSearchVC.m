@@ -76,6 +76,18 @@ UITableViewDataSource
     [super viewDidDisappear:animated];
 }
 
+-(void)cancelBtnEvent{
+    if (![NSString isNullString:self.titleStr]) {
+        if (self.tableView.mj_y == self.gk_navigationBar.mj_y) {
+            [self goUpAndDown:NO];
+        }
+    }else{
+        if (self.tableView.mj_y == 0) {
+            [self goUpAndDown:NO];
+        }
+    }
+}
+
 -(void)goUpAndDown:(BOOL)isUpAndDown{
     /*
      *    使用弹簧的描述时间曲线来执行动画 ,当dampingRatio == 1 时,动画会平稳的减速到最终的模型值,而不会震荡.
@@ -405,21 +417,17 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     NSLog(@"cancelBtn");
                     @strongify(self)
                     [self.view endEditing:YES];
-                    
-                    if (![NSString isNullString:self.titleStr]) {
-                        if (self.tableView.mj_y == self.gk_navigationBar.mj_y) {
-                            [self goUpAndDown:NO];
-                        }
-                    }else{
-                        if (self.tableView.mj_y == 0) {
-                            [self goUpAndDown:NO];
-                        }
-                    }
+                    [self cancelBtnEvent];
                 }
                 else if ([str isEqualToString:@"textField:shouldChangeCharactersInRange:replacementString:"]){
                     NSLog(@"textField:shouldChangeCharactersInRange:replacementString:");
                     //正在编辑ing
                     [self goUpAndDown:YES];
+                }
+                else if ([str isEqualToString:@"cjTextFieldDeleteBackward:"]){
+                    NSLog(@"cjTextFieldDeleteBackward:");
+                    @strongify(self)
+                    [self cancelBtnEvent];
                 }
                 else{}
             }
