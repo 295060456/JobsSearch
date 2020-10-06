@@ -43,8 +43,8 @@ UITableViewDataSource
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.view.backgroundColor = KLightGrayColor;
-    self.view.backgroundColor = kRedColor;
+    self.view.backgroundColor = KLightGrayColor;
+//    self.view.backgroundColor = kRedColor;
     
     self.titleStr = (NSString *)self.requestParams;//会根据外界是否传入标题来决定是否生成 gk_navigationBar
     
@@ -305,12 +305,12 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
             }else{
                 make.top.equalTo(self.gk_navigationBar.mas_bottom);
             }
-            
+            //之所以这么处理，全是因为动画逻辑会整体将_tableView往上提一段距离
+            extern CGFloat LZB_TABBAR_HEIGHT;
             if ([SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden) {
-                make.bottom.equalTo(self.view.mas_bottom);
+                make.bottom.equalTo(self.view.mas_bottom).offset(LZB_TABBAR_HEIGHT);
             }else{
-                extern CGFloat LZB_TABBAR_HEIGHT;
-                make.bottom.equalTo(self.view.mas_bottom).offset(-LZB_TABBAR_HEIGHT);
+                make.bottom.equalTo(self.view.mas_bottom);
             }
         }];
         [self.view layoutIfNeeded];
