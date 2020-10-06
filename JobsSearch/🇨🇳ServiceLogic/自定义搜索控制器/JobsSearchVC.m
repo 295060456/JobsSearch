@@ -14,6 +14,7 @@
 #import "JobsSearchShowHotwordsTBVCell.h"//热门搜索
 #import "JobsSearchTableView.h"
 #import "UITableView+WWFoldableTableView.h"
+#import "JobsSearchResultDataListView.h"//逐字搜索返回数据结果下拉列表
 
 @interface JobsSearchVC ()
 <
@@ -24,14 +25,17 @@ UITableViewDataSource
 @property(nonatomic,strong)UIButton *scanBtn;
 @property(nonatomic,strong)JobsSearchTableView *tableView;
 @property(nonatomic,strong)JobsSearchBar *jobsSearchBar;
+@property(nonatomic,strong)JobsSearchResultDataListView *jobsSearchResultDataListView;
 
 //数据容器
 @property(nonatomic,strong)NSMutableArray <NSString *>*sectionTitleMutArr;
 @property(nonatomic,strong)NSMutableArray <NSString *>*hotSearchMutArr;
 @property(nonatomic,strong)NSMutableArray <NSString *>*historySearchMutArr;
+@property(nonatomic,strong)UIColor *bgColour;
 @property(nonatomic,assign)CGFloat JobsSearchShowHotwordsTBVCellHeight;
 @property(nonatomic,assign)NSString *titleStr;//标题
 @property(nonatomic,assign)CGRect tableViewRect;
+@property(nonatomic,assign)CGFloat gk_navigationBarHeight;
 
 @end
 
@@ -43,8 +47,7 @@ UITableViewDataSource
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = KLightGrayColor;
-//    self.view.backgroundColor = kRedColor;
+    self.view.backgroundColor = self.bgColour;
     
     self.titleStr = (NSString *)self.requestParams;//会根据外界是否传入标题来决定是否生成 gk_navigationBar
     
@@ -55,10 +58,12 @@ UITableViewDataSource
         self.isBackBtnBlackorWhite = YES;
         self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
         self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.scanBtn];
-        
+        self.gk_navBackgroundColor = self.bgColour;
+//        self.gk_captureImage;
         self.gk_navTitle = self.titleStr;
         [self hideNavLine];
         [self.view bringSubviewToFront:self.gk_navigationBar];
+        self.gk_navigationBarHeight = self.gk_navigationBar.mj_h;
     }
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -74,6 +79,11 @@ UITableViewDataSource
 
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
+}
+//点击自己 自己移除自己的最正确做法，直接置nil 是不成功的
+-(void)deallocJobsSearchResultDataListView{
+    [_jobsSearchResultDataListView removeFromSuperview];
+    _jobsSearchResultDataListView = nil;
 }
 
 -(void)cancelBtnEvent{
@@ -108,16 +118,19 @@ UITableViewDataSource
         @strongify(self)
         if (isUpAndDown) {//顶上去
             if (![NSString isNullString:self.titleStr]) {
-                self.gk_navigationBar.alpha = 0;
+                self.gk_navigationBar.mj_h = 0;
+                self.gk_navBarAlpha = 0;
+                
                 self.tableView.mj_y = self.gk_navigationBar.mj_y;
             }else{
                 self.tableView.mj_y = 0;
             }
         }else{//正常状态
-            self.tableView.mj_y = self.tableViewRect.origin.y;
             if (![NSString isNullString:self.titleStr]) {
                 self.gk_navigationBar.alpha = 1;
+                self.gk_navigationBar.mj_h = self.gk_navigationBarHeight;
             }
+            self.tableView.mj_y = self.tableViewRect.origin.y;
         }
     } completion:^(BOOL finished) {
         
@@ -190,6 +203,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
             [cell actionBlockJobsSearchShowHotwordsTBVCell:^(UIButton *data) {
                 @strongify(self)
                 self.jobsSearchBar.tf.text = data.titleLabel.text;
+                self.jobsSearchResultDataListView.alpha = 1;
             }];
             return cell;
         }break;
@@ -295,7 +309,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 -(JobsSearchTableView *)tableView{
     if (!_tableView) {
         _tableView = JobsSearchTableView.new;
-        _tableView.backgroundColor = [UIColor colorWithPatternImage:KBuddleIMG(@"Telegram", nil, @"1")];
+        _tableView.backgroundColor = self.bgColour;
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -412,22 +426,33 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     [self.tableView reloadData];
                     
                     [self goUpAndDown:YES];
+                    [self deallocJobsSearchResultDataListView];
                 }
                 else if ([str isEqualToString:@"cancelBtn"]){//取消按钮点击事件
                     NSLog(@"cancelBtn");
                     @strongify(self)
                     [self.view endEditing:YES];
                     [self cancelBtnEvent];
+                    [self deallocJobsSearchResultDataListView];
                 }
                 else if ([str isEqualToString:@"textField:shouldChangeCharactersInRange:replacementString:"]){
                     NSLog(@"textField:shouldChangeCharactersInRange:replacementString:");
+                    //正向输入的非零字符
                     //正在编辑ing
                     [self goUpAndDown:YES];
+                    self.jobsSearchResultDataListView.alpha = 1;
                 }
                 else if ([str isEqualToString:@"cjTextFieldDeleteBackward:"]){
                     NSLog(@"cjTextFieldDeleteBackward:");
+                    NSLog(@"输入框没有值的时候启动的删除");
                     @strongify(self)
                     [self cancelBtnEvent];
+                    [self deallocJobsSearchResultDataListView];
+                }
+                else if ([str isEqualToString:@"输入框有值的时候启动的删除"]){
+                    NSLog(@"输入框有值的时候启动的删除");
+                    @strongify(self)
+                    self.jobsSearchResultDataListView.alpha = 1;
                 }
                 else{}
             }
@@ -496,6 +521,32 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
             }];
         }];
     }return _scanBtn;
+}
+
+-(JobsSearchResultDataListView *)jobsSearchResultDataListView{
+    if (!_jobsSearchResultDataListView) {
+        _jobsSearchResultDataListView = JobsSearchResultDataListView.new;
+        
+        @weakify(self)
+        [_jobsSearchResultDataListView actionBlockJobsSearchResultDataListView:^(id data) {
+            @strongify(self)
+            [self.view endEditing:YES];
+            [self deallocJobsSearchResultDataListView];
+        }];
+        
+        [self.view addSubview:_jobsSearchResultDataListView];
+        [_jobsSearchResultDataListView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.jobsSearchBar.mas_bottom);
+            make.left.right.equalTo(self.view);
+            make.bottom.equalTo(self.tableView);
+        }];
+    }return _jobsSearchResultDataListView;
+}
+
+-(UIColor *)bgColour{
+    if (!_bgColour) {
+        _bgColour = [UIColor colorWithPatternImage:KBuddleIMG(@"Telegram", nil, @"1")];
+    }return _bgColour;
 }
 
 @end

@@ -50,7 +50,7 @@ static char *BaseVC_BackBtn_isBackBtnBlackorWhite = "BaseVC_BackBtn_isBackBtnBla
         BackBtnCategory = UIButton.new;
         [BackBtnCategory layoutButtonWithEdgeInsetsStyle:GLButtonEdgeInsetsStyleLeft
                                          imageTitleSpace:8];
-        [BackBtnCategory setTitleColor:kWhiteColor
+        [BackBtnCategory setTitleColor:kRedColor
                               forState:UIControlStateNormal];
         [BackBtnCategory setTitle:@"返回"
                          forState:UIControlStateNormal];

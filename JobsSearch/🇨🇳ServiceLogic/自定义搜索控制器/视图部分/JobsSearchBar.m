@@ -42,6 +42,10 @@ UITextFieldDelegate
         if (self.jobsSearchBarBlock) {
             self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
         }
+    }else{
+        if (self.jobsSearchBarBlock) {
+            self.jobsSearchBarBlock(@"输入框有值的时候启动的删除");
+        }
     }
 }
 #pragma mark —— UITextFieldDelegate
