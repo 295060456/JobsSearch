@@ -45,9 +45,12 @@ UITableViewDataSource
     [super viewDidLoad];
 //    self.view.backgroundColor = KLightGrayColor;
     self.view.backgroundColor = kRedColor;
+    
+    self.titleStr = (NSString *)self.requestParams;//会根据外界是否传入标题来决定是否生成 gk_navigationBar
+    
     [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = YES;
     self.tableView.alpha = 1;
-    self.titleStr = (NSString *)self.requestParams;//会根据外界是否传入标题来决定是否生成 gk_navigationBar
+
     if (![NSString isNullString:self.titleStr]) {
         self.isBackBtnBlackorWhite = YES;
         self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
