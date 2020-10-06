@@ -21,6 +21,7 @@
         if ([data isKindOfClass:NSString.class]) {
             NSString *str = (NSString *)data;
             self.titleLab.text = str;
+            self.contentView.backgroundColor = kWhiteColor;
         }
     }return self;
 }
@@ -40,10 +41,10 @@
         _titleLab.backgroundColor = kWhiteColor;
         _titleLab.font = kFontSize(10);
         _titleLab.textAlignment = NSTextAlignmentLeft;
-        [self addSubview:_titleLab];
+        [self.contentView addSubview:_titleLab];
         [_titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.right.bottom.equalTo(self);
-            make.left.equalTo(self).offset(10);
+            make.top.right.bottom.equalTo(self.contentView);
+            make.left.equalTo(self.contentView).offset(10);
         }];
     }return _titleLab;
 }

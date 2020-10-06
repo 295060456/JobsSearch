@@ -45,6 +45,7 @@ UITableViewDataSource
     [super viewDidLoad];
 //    self.view.backgroundColor = KLightGrayColor;
     self.view.backgroundColor = kRedColor;
+    self.tableView.alpha = 1;
     
     if (![NSString isNullString:(NSString *)self.requestParams]) {
         self.isBackBtnBlackorWhite = YES;
@@ -53,11 +54,10 @@ UITableViewDataSource
         
         self.gk_navTitle = (NSString *)self.requestParams;
         [self hideNavLine];
+        [self.view bringSubviewToFront:self.gk_navigationBar];
     }
     
     [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = YES;
-    self.tableView.alpha = 1;
-    [self.view bringSubviewToFront:self.gk_navigationBar];
     [self.view bringSubviewToFront:[SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBar];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
