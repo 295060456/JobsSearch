@@ -12,7 +12,7 @@
 #import "JobsSearchNonHoveringHeaderView.h"
 #import "JobsSearchShowHistoryDataTBVCell.h"//搜索历史
 #import "JobsSearchShowHotwordsTBVCell.h"//热门搜索
-
+#import "JobsSearchTableView.h"
 #import "UITableView+WWFoldableTableView.h"
 
 @interface JobsSearchVC ()
@@ -22,7 +22,7 @@ UITableViewDataSource
 >
 
 @property(nonatomic,strong)UIButton *scanBtn;
-@property(nonatomic,strong)UITableView *tableView;
+@property(nonatomic,strong)JobsSearchTableView *tableView;
 @property(nonatomic,strong)JobsSearchBar *jobsSearchBar;
 
 //数据容器
@@ -30,7 +30,7 @@ UITableViewDataSource
 @property(nonatomic,strong)NSMutableArray <NSString *>*hotSearchMutArr;
 @property(nonatomic,strong)NSMutableArray <NSString *>*historySearchMutArr;
 @property(nonatomic,assign)CGFloat JobsSearchShowHotwordsTBVCellHeight;
-
+@property(nonatomic,assign)NSString *titleStr;//标题
 @property(nonatomic,assign)CGRect tableViewRect;
 
 @end
@@ -45,20 +45,18 @@ UITableViewDataSource
     [super viewDidLoad];
 //    self.view.backgroundColor = KLightGrayColor;
     self.view.backgroundColor = kRedColor;
+    [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = YES;
     self.tableView.alpha = 1;
-    
-    if (![NSString isNullString:(NSString *)self.requestParams]) {
+    self.titleStr = (NSString *)self.requestParams;//会根据外界是否传入标题来决定是否生成 gk_navigationBar
+    if (![NSString isNullString:self.titleStr]) {
         self.isBackBtnBlackorWhite = YES;
         self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
         self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.scanBtn];
         
-        self.gk_navTitle = (NSString *)self.requestParams;
+        self.gk_navTitle = self.titleStr;
         [self hideNavLine];
         [self.view bringSubviewToFront:self.gk_navigationBar];
     }
-    
-    [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = YES;
-    [self.view bringSubviewToFront:[SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBar];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(hotLabelNotification:)
@@ -94,11 +92,17 @@ UITableViewDataSource
                      animations:^{
         @strongify(self)
         if (isUpAndDown) {//顶上去
-            self.tableView.mj_y = self.gk_navigationBar.mj_y;
-            self.gk_navigationBar.alpha = 0;
+            if (![NSString isNullString:self.titleStr]) {
+                self.gk_navigationBar.alpha = 0;
+                self.tableView.mj_y = self.gk_navigationBar.mj_y;
+            }else{
+                self.tableView.mj_y = 0;
+            }
         }else{//正常状态
             self.tableView.mj_y = self.tableViewRect.origin.y;
-            self.gk_navigationBar.alpha = 1;
+            if (![NSString isNullString:self.titleStr]) {
+                self.gk_navigationBar.alpha = 1;
+            }
         }
     } completion:^(BOOL finished) {
         
@@ -273,9 +277,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     }];
 }
 #pragma mark —— lazyLoad
--(UITableView *)tableView{
+-(JobsSearchTableView *)tableView{
     if (!_tableView) {
-        _tableView = UITableView.new;
+        _tableView = JobsSearchTableView.new;
         _tableView.backgroundColor = [UIColor colorWithPatternImage:KBuddleIMG(@"Telegram", nil, @"1")];
         _tableView.delegate = self;
         _tableView.dataSource = self;
@@ -284,11 +288,16 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         _tableView.tableHeaderView = self.jobsSearchBar;
         _tableView.tableFooterView = UIView.new;
         _tableView.ww_foldable = YES;//设置可折叠
+        @weakify(self)
+        [_tableView actionBlockJobsSearchTableView:^(id data) {
+            @strongify(self)
+            [self.view endEditing:YES];
+        }];
 
         [self.view addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.equalTo(self.view);
-            if ([NSString isNullString:(NSString *)self.requestParams]) {
+            if ([NSString isNullString:self.titleStr]) {
                 make.top.equalTo(self.view.mas_top);
             }else{
                 make.top.equalTo(self.gk_navigationBar.mas_bottom);
@@ -394,8 +403,14 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     @strongify(self)
                     [self.view endEditing:YES];
                     
-                    if (self.tableView.mj_y == self.gk_navigationBar.mj_y) {
-                        [self goUpAndDown:NO];
+                    if (![NSString isNullString:self.titleStr]) {
+                        if (self.tableView.mj_y == self.gk_navigationBar.mj_y) {
+                            [self goUpAndDown:NO];
+                        }
+                    }else{
+                        if (self.tableView.mj_y == 0) {
+                            [self goUpAndDown:NO];
+                        }
                     }
                 }
                 else if ([str isEqualToString:@"textField:shouldChangeCharactersInRange:replacementString:"]){

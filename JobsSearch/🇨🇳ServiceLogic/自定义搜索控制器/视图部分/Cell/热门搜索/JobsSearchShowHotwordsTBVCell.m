@@ -33,7 +33,7 @@
 }
 //点击了哪个Btn？
 -(void)actionBlockJobsSearchShowHotwordsTBVCell:(MKDataBlock)jobsSearchShowHotwordsTBVCellBlock{
-    _jobsSearchShowHotwordsTBVCellBlock = jobsSearchShowHotwordsTBVCellBlock;
+    self.jobsSearchShowHotwordsTBVCellBlock = jobsSearchShowHotwordsTBVCellBlock;
 }
 #pragma mark —— lazyLoad
 -(HotLabel *)hotLabel{

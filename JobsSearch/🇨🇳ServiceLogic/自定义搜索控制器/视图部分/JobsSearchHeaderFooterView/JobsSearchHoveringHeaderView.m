@@ -40,7 +40,7 @@
 }
 
 -(void)actionBlockJobsSearchHoveringHeaderView:(MKDataBlock)jobsSearchHoveringHeaderViewBlock{
-    _jobsSearchHoveringHeaderViewBlock = jobsSearchHoveringHeaderViewBlock;
+    self.jobsSearchHoveringHeaderViewBlock = jobsSearchHoveringHeaderViewBlock;
 }
 #pragma mark —— lazyLoad
 -(UILabel *)titleLab{

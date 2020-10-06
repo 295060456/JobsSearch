@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,strong)UILabel *titleLab;
 
-- (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
-                               withData:(id _Nullable)data;
+-(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
+                              withData:(id _Nullable)data;
 
 @end
 

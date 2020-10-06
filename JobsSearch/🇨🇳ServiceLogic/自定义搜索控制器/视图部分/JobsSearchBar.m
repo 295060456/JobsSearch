@@ -132,7 +132,7 @@ replacementString:(NSString *)string{
 }
 
 -(void)actionBlockJobsSearchBar:(MKDataBlock)jobsSearchBarBlock{
-    _jobsSearchBarBlock = jobsSearchBarBlock;
+    self.jobsSearchBarBlock = jobsSearchBarBlock;
 }
 #pragma mark —— lazyLoad
 -(ZYTextField *)tf{

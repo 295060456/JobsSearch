@@ -11,6 +11,7 @@
 		B1FCA2073A31A5D9A5BF4BB0 /* Pods_JobsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */; };
 		C546C3A9252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */; };
 		C546C3AA252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
+		C546C45F252C2BF3003694FF /* JobsSearchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C45E252C2BF3003694FF /* JobsSearchTableView.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C59B98DC2526DE260039B485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* AppDelegate.m */; };
 		C59B98DF2526DE260039B485 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DE2526DE260039B485 /* SceneDelegate.m */; };
@@ -330,6 +331,8 @@
 		C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		C546C3A8252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		C546C45D252C2BF3003694FF /* JobsSearchTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchTableView.h; sourceTree = "<group>"; };
+		C546C45E252C2BF3003694FF /* JobsSearchTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchTableView.m; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59B98DA2526DE260039B485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -933,6 +936,27 @@
 				C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */,
 			);
 			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		C546C458252C2B77003694FF /* 视图部分 */ = {
+			isa = PBXGroup;
+			children = (
+				C546C459252C2B95003694FF /* JobsSearchTableView */,
+				C59BA0E5252717560039B485 /* Cell */,
+				C59BA0B32527164F0039B485 /* JobsSearchHeaderFooterView */,
+				C59B9F112526F56E0039B485 /* JobsSearchBar.h */,
+				C59B9F122526F56E0039B485 /* JobsSearchBar.m */,
+			);
+			path = "视图部分";
+			sourceTree = "<group>";
+		};
+		C546C459252C2B95003694FF /* JobsSearchTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C546C45D252C2BF3003694FF /* JobsSearchTableView.h */,
+				C546C45E252C2BF3003694FF /* JobsSearchTableView.m */,
+			);
+			path = JobsSearchTableView;
 			sourceTree = "<group>";
 		};
 		C59B98CE2526DE260039B485 = {
@@ -2328,10 +2352,7 @@
 			isa = PBXGroup;
 			children = (
 				C5B85532252B44B300890A66 /* 图片资源 */,
-				C59BA0E5252717560039B485 /* Cell */,
-				C59BA0B32527164F0039B485 /* JobsSearchHeaderFooterView */,
-				C59B9F112526F56E0039B485 /* JobsSearchBar.h */,
-				C59B9F122526F56E0039B485 /* JobsSearchBar.m */,
+				C546C458252C2B77003694FF /* 视图部分 */,
 				C59B9D9D2526EC070039B485 /* JobsSearchVC.h */,
 				C59B9D9E2526EC070039B485 /* JobsSearchVC.m */,
 			);
@@ -2792,6 +2813,7 @@
 				C59B9C572526E3F10039B485 /* LOTGradientFillRender.m in Sources */,
 				C59B9C592526E3F10039B485 /* LOTLayerGroup.m in Sources */,
 				C59B9C832526E3F10039B485 /* CALayer+Compat.m in Sources */,
+				C546C45F252C2BF3003694FF /* JobsSearchTableView.m in Sources */,
 				C59B9CAC2526E3F10039B485 /* BWShareView.m in Sources */,
 				C59B9CAE2526E3F10039B485 /* BWItemCollectionViewCell.m in Sources */,
 				C59B9AD02526E3E10039B485 /* NSObject+Shake.m in Sources */,
