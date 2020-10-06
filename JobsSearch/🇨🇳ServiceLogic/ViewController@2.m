@@ -6,6 +6,7 @@
 //
 
 #import "ViewController@2.h"
+#import "ViewController@3.h"
 
 @interface ViewController_2 ()
 
@@ -17,5 +18,18 @@
     [super viewDidLoad];
     self.view.backgroundColor = KGreenColor;
 }
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches
+          withEvent:(UIEvent *)event{
+    
+    [ViewController_3 comingFromVC:self
+                              toVC:ViewController_3.new
+                       comingStyle:ComingStyle_PUSH
+                 presentationStyle:UIModalPresentationAutomatic
+                     requestParams:@"测试专用"
+                           success:^(id data) {}
+                      animated:YES];
+}
+
 
 @end

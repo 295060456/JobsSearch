@@ -26,11 +26,11 @@ UITableViewDataSource
 @property(nonatomic,strong)JobsSearchTableView *tableView;
 @property(nonatomic,strong)JobsSearchBar *jobsSearchBar;
 @property(nonatomic,strong)JobsSearchResultDataListView *jobsSearchResultDataListView;
-
 //数据容器
 @property(nonatomic,strong)NSMutableArray <NSString *>*sectionTitleMutArr;
 @property(nonatomic,strong)NSMutableArray <NSString *>*hotSearchMutArr;
 @property(nonatomic,strong)NSMutableArray <NSString *>*historySearchMutArr;
+@property(nonatomic,strong)NSMutableArray <NSString *>*searchResDataMutArr;
 @property(nonatomic,strong)UIColor *bgColour;
 @property(nonatomic,assign)CGFloat JobsSearchShowHotwordsTBVCellHeight;
 @property(nonatomic,assign)NSString *titleStr;//标题
@@ -60,6 +60,9 @@ UITableViewDataSource
         self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.scanBtn];
         self.gk_navBackgroundColor = self.bgColour;
 //        self.gk_captureImage;
+        self.gk_interactivePopDisabled = NO;
+        self.gk_fullScreenPopDisabled = NO;
+        
         self.gk_navTitle = self.titleStr;
         [self hideNavLine];
         [self.view bringSubviewToFront:self.gk_navigationBar];
@@ -79,6 +82,26 @@ UITableViewDataSource
 
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
+}
+//逐字搜索功能
+-(void)searchByString:(NSString *)string{
+    //在此可以网络请求
+    //也可以对本地的一个数据库文件进行遍历
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"假数据"
+                                                     ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data
+                                                        options:0
+                                                          error:nil];
+    
+    NSArray *arr = dic[@"data"];
+    for (NSString *str in arr) {
+        if ([str containsString:string]) {
+            [self.searchResDataMutArr addObject:str];
+        }
+    }
+    self.jobsSearchResultDataListView.searchResDataMutArr = self.searchResDataMutArr;
+    NSLog(@"");
 }
 //点击自己 自己移除自己的最正确做法，直接置nil 是不成功的
 -(void)deallocJobsSearchResultDataListView{
@@ -349,7 +372,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         _jobsSearchBar = JobsSearchBar.new;
         _jobsSearchBar.mj_size = CGSizeMake(SCREEN_WIDTH, 60);
         @weakify(self)
-        [_jobsSearchBar actionBlockJobsSearchBar:^(id data) {
+        [_jobsSearchBar actionBlockJobsSearchBar:^(id data,id data2) {
 //            NSLog(@"KKK = %@",data);
             if ([data isKindOfClass:NSString.class]) {
                 NSString *str = (NSString *)data;
@@ -439,8 +462,12 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     NSLog(@"textField:shouldChangeCharactersInRange:replacementString:");
                     //正向输入的非零字符
                     //正在编辑ing
+                    if ([data2 isKindOfClass:NSString.class]) {
+                        NSString *text = (NSString *)data2;
+                        [self searchByString:(NSString *)text];
+                    }
+                    
                     [self goUpAndDown:YES];
-                    self.jobsSearchResultDataListView.alpha = 1;
                 }
                 else if ([str isEqualToString:@"cjTextFieldDeleteBackward:"]){
                     NSLog(@"cjTextFieldDeleteBackward:");
@@ -452,7 +479,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                 else if ([str isEqualToString:@"输入框有值的时候启动的删除"]){
                     NSLog(@"输入框有值的时候启动的删除");
                     @strongify(self)
-                    self.jobsSearchResultDataListView.alpha = 1;
                 }
                 else{}
             }
@@ -547,6 +573,12 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!_bgColour) {
         _bgColour = [UIColor colorWithPatternImage:KBuddleIMG(@"Telegram", nil, @"1")];
     }return _bgColour;
+}
+
+-(NSMutableArray<NSString *> *)searchResDataMutArr{
+    if (!_searchResDataMutArr) {
+        _searchResDataMutArr = NSMutableArray.array;
+    }return _searchResDataMutArr;
 }
 
 @end

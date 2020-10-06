@@ -14,7 +14,7 @@ UITextFieldDelegate
 >
 
 @property(nonatomic,assign)BOOL isOK;
-@property(nonatomic,copy)MKDataBlock jobsSearchBarBlock;
+@property(nonatomic,copy)TwoDataBlock jobsSearchBarBlock;
 @property(nonatomic,strong)UIImageView *imgView;
 
 @end
@@ -40,11 +40,11 @@ UITextFieldDelegate
 - (void)cjTextFieldDeleteBackward:(CJTextField *)textField{
     if ([NSString isNullString:textField.text]) {
         if (self.jobsSearchBarBlock) {
-            self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
+            self.jobsSearchBarBlock(NSStringFromSelector(_cmd),textField.text);
         }
     }else{
         if (self.jobsSearchBarBlock) {
-            self.jobsSearchBarBlock(@"输入框有值的时候启动的删除");
+            self.jobsSearchBarBlock(@"输入框有值的时候启动的删除",textField.text);
         }
     }
 }
@@ -52,7 +52,7 @@ UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑
 - (BOOL)textFieldShouldBeginEditing:(ZYTextField *)textField{
     if (self.jobsSearchBarBlock) {
-        self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
+        self.jobsSearchBarBlock(NSStringFromSelector(_cmd),textField.text);
     }return YES;
 }
 //告诉委托人在指定的文本字段中开始编辑
@@ -61,7 +61,7 @@ UITextFieldDelegate
 - (BOOL)textFieldShouldEndEditing:(ZYTextField *)textField{
     textField.isEditting = NO;
     if (self.jobsSearchBarBlock) {
-        self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
+        self.jobsSearchBarBlock(NSStringFromSelector(_cmd),textField.text);
     }return YES;
 }
 //告诉委托人对指定的文本字段停止编辑
@@ -110,7 +110,7 @@ UITextFieldDelegate
             }
             
             if (self.jobsSearchBarBlock) {
-                self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
+                self.jobsSearchBarBlock(NSStringFromSelector(_cmd),textField.text);
             }
         }
     }
@@ -124,7 +124,7 @@ shouldChangeCharactersInRange:(NSRange)range
 replacementString:(NSString *)string{
     if (![NSString isNullString:string]) {
         if (self.jobsSearchBarBlock) {
-            self.jobsSearchBarBlock(NSStringFromSelector(_cmd));
+            self.jobsSearchBarBlock(NSStringFromSelector(_cmd),textField.text);
         }
     }return YES;
 }
@@ -137,7 +137,7 @@ replacementString:(NSString *)string{
     return YES;
 }
 
--(void)actionBlockJobsSearchBar:(MKDataBlock)jobsSearchBarBlock{
+-(void)actionBlockJobsSearchBar:(TwoDataBlock)jobsSearchBarBlock{
     self.jobsSearchBarBlock = jobsSearchBarBlock;
 }
 #pragma mark —— lazyLoad
@@ -182,7 +182,7 @@ replacementString:(NSString *)string{
             @strongify(self)
             x.selected = YES;
             if (self.jobsSearchBarBlock) {
-                self.jobsSearchBarBlock(NSStringFromSelector(_cmd));//cancelBtn
+                self.jobsSearchBarBlock(NSStringFromSelector(_cmd),self.tf.text);//cancelBtn
             }
         }];
     }return _cancelBtn;

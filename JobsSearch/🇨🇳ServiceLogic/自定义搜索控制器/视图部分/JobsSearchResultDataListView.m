@@ -92,6 +92,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     }return _tableView;
 }
 
+-searchResDataMutArr
+//-searchResDataMutArr
 
 
 

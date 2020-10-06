@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JobsSearchResultDataListView : UIView
 
+@property(nonatomic,strong)NSMutableArray <NSString *>*searchResDataMutArr;
+
 -(void)actionBlockJobsSearchResultDataListView:(MKDataBlock)jobsSearchResultDataListViewBlock;
 
 @end
