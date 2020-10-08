@@ -453,9 +453,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     [self.tableView reloadData];
                     
                     [self goUpAndDown:YES];
-//                    if (self.jobsSearchResultDataListView.isEndScroll) {//没有执行滚动操作的时候 才可以消失JobsSearchResultDataListView
-//                        [self deallocJobsSearchResultDataListView];
-//                    }
                 }
                 else if ([str isEqualToString:@"cancelBtn"]){//取消按钮点击事件
                     NSLog(@"cancelBtn");
@@ -484,7 +481,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                 }
                 else if ([str isEqualToString:@"输入框有值的时候启动的删除"]){
                     NSLog(@"输入框有值的时候启动的删除");
-//                    @strongify(self)
+                    @strongify(self)
+                    if ([data2 isKindOfClass:NSString.class]) {
+                        NSString *text = (NSString *)data2;
+                        [self searchByString:(NSString *)text];
+                    }
                 }
                 else{}
             }
