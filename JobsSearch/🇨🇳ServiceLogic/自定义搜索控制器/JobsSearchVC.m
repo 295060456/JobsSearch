@@ -47,6 +47,7 @@ UITableViewDataSource
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.isOpenLetterCase = YES;
     self.view.backgroundColor = self.bgColour;
     
     self.titleStr = (NSString *)self.requestParams;//会根据外界是否传入标题来决定是否生成 gk_navigationBar
@@ -96,10 +97,9 @@ UITableViewDataSource
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data
                                                         options:0
                                                           error:nil];
-    
     NSArray *arr = dic[@"data"];
     for (NSString *str in arr) {
-        if ([str containsString:string]) {
+        if (self.isOpenLetterCase ? [str.lowercaseString containsString:string.lowercaseString] : [str containsString:string]) {
             [self.searchResDataMutArr addObject:str];
         }
     }
@@ -453,7 +453,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                     [self.tableView reloadData];
                     
                     [self goUpAndDown:YES];
-                    [self deallocJobsSearchResultDataListView];
+//                    if (self.jobsSearchResultDataListView.isEndScroll) {//没有执行滚动操作的时候 才可以消失JobsSearchResultDataListView
+//                        [self deallocJobsSearchResultDataListView];
+//                    }
                 }
                 else if ([str isEqualToString:@"cancelBtn"]){//取消按钮点击事件
                     NSLog(@"cancelBtn");
@@ -482,7 +484,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                 }
                 else if ([str isEqualToString:@"输入框有值的时候启动的删除"]){
                     NSLog(@"输入框有值的时候启动的删除");
-                    @strongify(self)
+//                    @strongify(self)
                 }
                 else{}
             }
@@ -556,17 +558,25 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 -(JobsSearchResultDataListView *)jobsSearchResultDataListView{
     if (!_jobsSearchResultDataListView) {
         _jobsSearchResultDataListView = JobsSearchResultDataListView.new;
-        
         @weakify(self)
         [_jobsSearchResultDataListView actionBlockJobsSearchResultDataListView:^(id data) {
             @strongify(self)
-            [self.view endEditing:YES];
-            [self deallocJobsSearchResultDataListView];
             
-            if ([data isKindOfClass:NSString.class] &&
+            [self.view endEditing:YES];
+            
+            if ([data isKindOfClass:JobsSearchResultDataListView.class]){//滚动
+                NSLog(@"");
+            }else if ([data isKindOfClass:NSString.class] &&
                 ![NSString isNullString:(NSString *)data]) {
+                
                 self.jobsSearchBar.tf.text = (NSString *)data;
-            }
+                [self deallocJobsSearchResultDataListView];
+                
+            }else if ([data isKindOfClass:UITapGestureRecognizer.class]) {
+                NSLog(@"");
+            }else if ([data isKindOfClass:UIScrollView.class]) {//完全停止滚动
+                NSLog(@"");
+            }else{}
         }];
         
         [self.view addSubview:_jobsSearchResultDataListView];

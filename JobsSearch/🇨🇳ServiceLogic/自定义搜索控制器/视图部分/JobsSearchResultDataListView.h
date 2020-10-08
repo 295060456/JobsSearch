@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,strong)JobsSearchTableView *tableView;
 @property(nonatomic,strong)NSMutableArray <NSString *>*searchResDataMutArr;
+@property(nonatomic,assign)BOOL isEndScroll;//是否停止滚动
 
 -(void)actionBlockJobsSearchResultDataListView:(MKDataBlock)jobsSearchResultDataListViewBlock;
 

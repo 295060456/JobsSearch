@@ -15,6 +15,7 @@
 		C546C49F252C59D4003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */; };
 		C546C4A3252C59D7003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
+		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
 		C59B98DC2526DE260039B485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* AppDelegate.m */; };
 		C59B98DF2526DE260039B485 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DE2526DE260039B485 /* SceneDelegate.m */; };
 		C59B98E52526DE260039B485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59B98E32526DE260039B485 /* Main.storyboard */; };
@@ -341,6 +342,7 @@
 		C546C48B252C3B45003694FF /* JobsSearchResultDataListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchResultDataListView.h; sourceTree = "<group>"; };
 		C546C48C252C3B45003694FF /* JobsSearchResultDataListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchResultDataListView.m; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
+		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59B98DA2526DE260039B485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C59B98DB2526DE260039B485 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -2397,9 +2399,6 @@
 				C546C47E252C38F7003694FF /* 逐字搜索返回数据结果下拉列表Cell */,
 				C5B47F912529FAAD00387F47 /* 热门搜索Cell */,
 				C5B47F922529FAB900387F47 /* 搜索历史Cell */,
-				C5B47F822529F82A00387F47 /* 时钟.png */,
-				C5B47F772529F7B300387F47 /* 放大镜.png */,
-				C59BA1F225271DAE0039B485 /* 删除.png */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -2443,6 +2442,10 @@
 		C5B85532252B44B300890A66 /* 图片资源 */ = {
 			isa = PBXGroup;
 			children = (
+				C5B47F822529F82A00387F47 /* 时钟.png */,
+				C5B47F772529F7B300387F47 /* 放大镜.png */,
+				C59BA1F225271DAE0039B485 /* 删除.png */,
+				C56E29E7252EECEC004ACCC7 /* nodata.png */,
 				C5B8552D252B448200890A66 /* 扫描.png */,
 				C5B85606252B558D00890A66 /* Telegram.bundle */,
 			);
@@ -2648,6 +2651,7 @@
 				C59B99982526E0A50039B485 /* ZZCircleProgress.bundle in Resources */,
 				C5633214252AE88A00699392 /* 垃圾箱.png in Resources */,
 				C5B47F832529F82A00387F47 /* 时钟.png in Resources */,
+				C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */,
 				C5BA3AF5252C64F90039530C /* 假数据.json in Resources */,
 				C59B9CA42526E3F10039B485 /* spark_red.png in Resources */,
 				C59B9D322526E4580039B485 /* 社区.json in Resources */,

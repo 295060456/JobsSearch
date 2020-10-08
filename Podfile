@@ -19,7 +19,7 @@ target 'JobsSearch' do
   pod 'JXCategoryView'
   pod 'YYKit'
   pod 'IQKeyboardManager'
-  pod 'LYEmptyView'
+  pod 'LYEmptyView' # https://github.com/dev-liyang/LYEmptyView iOS一行代码集成空白页面占位图(无数据、无网络占位图)
   pod 'SDWebImage'
   pod 'MBProgressHUD+WJExtension'
   pod 'LYXAlertController'
