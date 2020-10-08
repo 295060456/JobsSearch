@@ -561,16 +561,16 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         @weakify(self)
         [_jobsSearchResultDataListView actionBlockJobsSearchResultDataListView:^(id data) {
             @strongify(self)
-            
-            [self.view endEditing:YES];
-            
+
             if ([data isKindOfClass:JobsSearchResultDataListView.class]){//滚动
                 NSLog(@"");
             }else if ([data isKindOfClass:NSString.class] &&
                 ![NSString isNullString:(NSString *)data]) {
                 
-                self.jobsSearchBar.tf.text = (NSString *)data;
+                self.jobsSearchBar.tf.text = (NSString *)data;//先赋值，最后才存数据
                 [self deallocJobsSearchResultDataListView];
+                
+                [self.view endEditing:YES];//这里结束编辑调用结束完成的协议方法，在此以后才涉及到存历史数据
                 
             }else if ([data isKindOfClass:UITapGestureRecognizer.class]) {
                 NSLog(@"");
