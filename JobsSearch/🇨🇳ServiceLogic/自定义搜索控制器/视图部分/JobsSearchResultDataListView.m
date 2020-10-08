@@ -7,7 +7,6 @@
 
 #import "JobsSearchResultDataListView.h"
 #import "JobsSearchResultDataListTBVCell.h"
-#import "JobsSearchTableView.h"
 
 @interface JobsSearchResultDataListView ()
 <
@@ -15,7 +14,6 @@ UITableViewDelegate
 ,UITableViewDataSource
 >
 
-@property(nonatomic,strong)JobsSearchTableView *tableView;
 @property(nonatomic,copy)MKDataBlock jobsSearchResultDataListViewBlock;
 @property(nonatomic,assign)BOOL isOK;
 
@@ -45,10 +43,13 @@ UITableViewDelegate
 heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return [JobsSearchResultDataListTBVCell cellHeightWithModel:nil];
 }
-
+/*  主承载view实现了 touchesBegan
+ *  那么 手势响应优先执行touchesBegan 而跳过代理方法导致 didSelectRowAtIndexPath 失效
+ *  此时需要在cell子类里面重写touchesBegan方法以便触发
+ */
 -(void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    NSLog(@"此时是失效的,cell的点击事件参见JobsSearchResultDataListTBVCell——touchesBegan");
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -57,14 +58,20 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 -(NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return self.searchResDataMutArr.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     JobsSearchResultDataListTBVCell *cell = [JobsSearchResultDataListTBVCell cellWith:tableView];
-    [cell richElementsInCellWithModel:nil];
-    return cell;
+    [cell richElementsInCellWithModel:self.searchResDataMutArr[indexPath.row]];
+    @weakify(self)
+    [cell actionBlockJobsSearchResultDataListTBVCell:^(id data) {
+        @strongify(self)
+        if (self.jobsSearchResultDataListViewBlock) {
+            self.jobsSearchResultDataListViewBlock(data);
+        }
+    }];return cell;
 }
 
 -(void)actionBlockJobsSearchResultDataListView:(MKDataBlock)jobsSearchResultDataListViewBlock{
@@ -92,9 +99,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     }return _tableView;
 }
 
--searchResDataMutArr
-//-searchResDataMutArr
-
+-(NSMutableArray<NSString *> *)searchResDataMutArr{
+    if (!_searchResDataMutArr) {
+        _searchResDataMutArr = NSMutableArray.array;
+    }return _searchResDataMutArr;
+}
 
 
 @end

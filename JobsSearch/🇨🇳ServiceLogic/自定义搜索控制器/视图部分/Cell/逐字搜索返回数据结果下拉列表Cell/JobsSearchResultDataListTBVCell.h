@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(CGFloat)cellHeightWithModel:(id _Nullable)model;
 -(void)richElementsInCellWithModel:(id _Nullable)model;
 
--(void)actionBlockJobsSearchResultDataListTBVCell:(MKDataBlock)jobsSearchResultDataListTBVCellBlock;
+-(void)actionBlockJobsSearchResultDataListTBVCell:(MKDataBlock)jobsSearchResultDataListTBVCellBlock;//cell 点击事件方法
 
 @end
 

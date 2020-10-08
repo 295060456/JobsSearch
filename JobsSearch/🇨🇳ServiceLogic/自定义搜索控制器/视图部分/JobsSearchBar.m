@@ -124,7 +124,7 @@ shouldChangeCharactersInRange:(NSRange)range
 replacementString:(NSString *)string{
     if (![NSString isNullString:string]) {
         if (self.jobsSearchBarBlock) {
-            self.jobsSearchBarBlock(NSStringFromSelector(_cmd),textField.text);
+            self.jobsSearchBarBlock(NSStringFromSelector(_cmd),[textField.text stringByAppendingString:string]);
         }
     }return YES;
 }

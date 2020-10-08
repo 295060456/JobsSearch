@@ -21,7 +21,7 @@
         self.jobsSearchTableViewBlock(@1);
     }
 }
-
+//tableView 的点击事件
 -(void)actionBlockJobsSearchTableView:(MKDataBlock)jobsSearchTableViewBlock{
     self.jobsSearchTableViewBlock = jobsSearchTableViewBlock;
 }

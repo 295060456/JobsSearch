@@ -85,6 +85,9 @@ UITableViewDataSource
 }
 //逐字搜索功能
 -(void)searchByString:(NSString *)string{
+    //每次都清数据
+    [self.searchResDataMutArr removeAllObjects];
+    [self.jobsSearchResultDataListView.searchResDataMutArr removeAllObjects];
     //在此可以网络请求
     //也可以对本地的一个数据库文件进行遍历
     NSString *path = [[NSBundle mainBundle] pathForResource:@"假数据"
@@ -101,6 +104,7 @@ UITableViewDataSource
         }
     }
     self.jobsSearchResultDataListView.searchResDataMutArr = self.searchResDataMutArr;
+    [self.jobsSearchResultDataListView.tableView reloadData];
     NSLog(@"");
 }
 //点击自己 自己移除自己的最正确做法，直接置nil 是不成功的
@@ -558,6 +562,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
             @strongify(self)
             [self.view endEditing:YES];
             [self deallocJobsSearchResultDataListView];
+            
+            if ([data isKindOfClass:NSString.class] &&
+                ![NSString isNullString:(NSString *)data]) {
+                self.jobsSearchBar.tf.text = (NSString *)data;
+            }
         }];
         
         [self.view addSubview:_jobsSearchResultDataListView];
