@@ -591,7 +591,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 
 -(UIColor *)bgColour{
     if (!_bgColour) {
-        _bgColour = [UIColor colorWithPatternImage:KBuddleIMG(@"Telegram", nil, @"1")];
+        _bgColour = [UIColor colorWithPatternImage:KBuddleIMG(@"Telegram",nil, nil, @"1")];
     }return _bgColour;
 }
 

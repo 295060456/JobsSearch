@@ -341,6 +341,10 @@
 		C546C486252C3979003694FF /* JobsSearchResultDataListTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchResultDataListTBVCell.m; sourceTree = "<group>"; };
 		C546C48B252C3B45003694FF /* JobsSearchResultDataListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchResultDataListView.h; sourceTree = "<group>"; };
 		C546C48C252C3B45003694FF /* JobsSearchResultDataListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchResultDataListView.m; sourceTree = "<group>"; };
+		C5470F7325309C8C00651ACE /* MacroDef_Sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Sys.h; sourceTree = "<group>"; };
+		C5470F7425309C8C00651ACE /* MacroDef_Func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Func.h; sourceTree = "<group>"; };
+		C5470F7525309C8C00651ACE /* MacroDef_Cor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Cor.h; sourceTree = "<group>"; };
+		C5470F7625309C8D00651ACE /* MacroDef_Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Size.h; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -445,7 +449,6 @@
 		C59B99A42526E1190039B485 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 		C59B99A52526E1190039B485 /* Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Other.h; sourceTree = "<group>"; };
 		C59B99A62526E1190039B485 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		C59B99A72526E1190039B485 /* ToolMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolMacro.h; sourceTree = "<group>"; };
 		C59B99A82526E1190039B485 /* Pods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pods.h; sourceTree = "<group>"; };
 		C59B99A92526E1190039B485 /* AABlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABlock.h; sourceTree = "<group>"; };
 		C59B9A272526E3D00039B485 /* CustomSYSUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSYSUITabBarController.h; sourceTree = "<group>"; };
@@ -980,6 +983,17 @@
 			path = "逐字搜索返回数据结果下拉列表Cell";
 			sourceTree = "<group>";
 		};
+		C5470F6C25309C7F00651ACE /* 各项宏定义 */ = {
+			isa = PBXGroup;
+			children = (
+				C5470F7525309C8C00651ACE /* MacroDef_Cor.h */,
+				C5470F7425309C8C00651ACE /* MacroDef_Func.h */,
+				C5470F7625309C8D00651ACE /* MacroDef_Size.h */,
+				C5470F7325309C8C00651ACE /* MacroDef_Sys.h */,
+			);
+			path = "各项宏定义";
+			sourceTree = "<group>";
+		};
 		C59B98CE2526DE260039B485 = {
 			isa = PBXGroup;
 			children = (
@@ -1242,6 +1256,7 @@
 		C59B999E2526E0D50039B485 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				C5470F6C25309C7F00651ACE /* 各项宏定义 */,
 				C59B99A12526E1180039B485 /* Notification */,
 				C59B99A92526E1190039B485 /* AABlock.h */,
 				C59B99A42526E1190039B485 /* APIKey.h */,
@@ -1250,7 +1265,6 @@
 				C59B99A52526E1190039B485 /* Other.h */,
 				C59B99A82526E1190039B485 /* Pods.h */,
 				C59B99A62526E1190039B485 /* PrefixHeader.pch */,
-				C59B99A72526E1190039B485 /* ToolMacro.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
