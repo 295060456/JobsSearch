@@ -37,7 +37,11 @@ completionHandler:(NoResultBlock)openSuccessBlock{
         if (isuseAssert) {
             NSAssert(canOpen,@"打开失败");
         }else{
-//            [MBProgressHUD wj_showPlainText:showTextStr view:superView];
+            [WHToast showErrorWithMessage:showTextStr
+                                 duration:2
+                            finishHandler:^{
+              
+            }];
         }
     };
     

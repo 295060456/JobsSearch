@@ -22,8 +22,7 @@
 #import "GKNavigationBar.h"
 #import "PPBadgeView.h"
 #import <YYKit/YYKit.h>
-#import "MBProgressHUD.h"
-#import "MBProgressHUD+WJExtension.h"
 #import "LYEmptyViewHeader.h"
+#import "WHToast-umbrella.h"
 
 #endif /* Pods_h */
