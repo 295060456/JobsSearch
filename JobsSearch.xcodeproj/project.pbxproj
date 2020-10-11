@@ -18,6 +18,7 @@
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
+		C57F0D2C253337140080EEF0 /* NSObject+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */; };
 		C58C61DB2532FA450092BF89 /* UIView+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58C61DA2532FA450092BF89 /* UIView+Rotate.m */; };
 		C59B98DC2526DE260039B485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* AppDelegate.m */; };
 		C59B98DF2526DE260039B485 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DE2526DE260039B485 /* SceneDelegate.m */; };
@@ -95,7 +96,6 @@
 		C59B9AE22526E3E10039B485 /* BaseVC+JPImageresizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A622526E3E00039B485 /* BaseVC+JPImageresizerView.m */; };
 		C59B9AE32526E3E10039B485 /* BaseVC+TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A632526E3E00039B485 /* BaseVC+TZLocationManager.m */; };
 		C59B9AE42526E3E10039B485 /* BaseVC+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A682526E3E00039B485 /* BaseVC+MJRefresh.m */; };
-		C59B9AE52526E3E10039B485 /* BaseVC+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A692526E3E00039B485 /* BaseVC+OpenURL.m */; };
 		C59B9AE62526E3E10039B485 /* UIView+JHGestureBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A6B2526E3E00039B485 /* UIView+JHGestureBlock.m */; };
 		C59B9AE72526E3E10039B485 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A6E2526E3E10039B485 /* UIButton+Block.m */; };
 		C59B9AE82526E3E10039B485 /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A712526E3E10039B485 /* CALayer+Transition.m */; };
@@ -345,6 +345,8 @@
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
+		C57F0D2A253337140080EEF0 /* NSObject+OpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OpenURL.h"; sourceTree = "<group>"; };
+		C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OpenURL.m"; sourceTree = "<group>"; };
 		C58C61D92532FA450092BF89 /* UIView+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rotate.h"; sourceTree = "<group>"; };
 		C58C61DA2532FA450092BF89 /* UIView+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotate.m"; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -493,7 +495,6 @@
 		C59B9A562526E3E00039B485 /* BaseVC+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseVC+BRPickerView.m"; sourceTree = "<group>"; };
 		C59B9A572526E3E00039B485 /* BaseVC+TZImagePickerControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseVC+TZImagePickerControllerDelegate.m"; sourceTree = "<group>"; };
 		C59B9A582526E3E00039B485 /* BaseVC+TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseVC+TZLocationManager.h"; sourceTree = "<group>"; };
-		C59B9A592526E3E00039B485 /* BaseVC+OpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseVC+OpenURL.h"; sourceTree = "<group>"; };
 		C59B9A5A2526E3E00039B485 /* BaseVC+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseVC+MJRefresh.h"; sourceTree = "<group>"; };
 		C59B9A5B2526E3E00039B485 /* BaseVC+BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseVC+BWShareView.m"; sourceTree = "<group>"; };
 		C59B9A5C2526E3E00039B485 /* BaseVC+BackBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseVC+BackBtn.h"; sourceTree = "<group>"; };
@@ -509,7 +510,6 @@
 		C59B9A662526E3E00039B485 /* BaseVC+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseVC+BRPickerView.h"; sourceTree = "<group>"; };
 		C59B9A672526E3E00039B485 /* BaseVC+BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseVC+BWShareView.h"; sourceTree = "<group>"; };
 		C59B9A682526E3E00039B485 /* BaseVC+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseVC+MJRefresh.m"; sourceTree = "<group>"; };
-		C59B9A692526E3E00039B485 /* BaseVC+OpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseVC+OpenURL.m"; sourceTree = "<group>"; };
 		C59B9A6B2526E3E00039B485 /* UIView+JHGestureBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHGestureBlock.m"; sourceTree = "<group>"; };
 		C59B9A6C2526E3E00039B485 /* UIView+JHGestureBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JHGestureBlock.h"; sourceTree = "<group>"; };
 		C59B9A6E2526E3E10039B485 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
@@ -1362,6 +1362,8 @@
 			isa = PBXGroup;
 			children = (
 				C59B9A2F2526E3E00039B485 /* NSObject+Alert */,
+				C57F0D2A253337140080EEF0 /* NSObject+OpenURL.h */,
+				C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */,
 				C59B9A352526E3E00039B485 /* NSObject+Extras.h */,
 				C59B9A3B2526E3E00039B485 /* NSObject+Extras.m */,
 				C59B9A3E2526E3E00039B485 /* NSObject+Measure.h */,
@@ -1430,8 +1432,6 @@
 				C59B9A5D2526E3E00039B485 /* BaseVC+JXCategoryListContentViewDelegate.m */,
 				C59B9A5A2526E3E00039B485 /* BaseVC+MJRefresh.h */,
 				C59B9A682526E3E00039B485 /* BaseVC+MJRefresh.m */,
-				C59B9A592526E3E00039B485 /* BaseVC+OpenURL.h */,
-				C59B9A692526E3E00039B485 /* BaseVC+OpenURL.m */,
 				C59B9A5F2526E3E00039B485 /* BaseVC+TZImagePickerController.h */,
 				C59B9A4E2526E3E00039B485 /* BaseVC+TZImagePickerController.m */,
 				C59B9A642526E3E00039B485 /* BaseVC+TZImagePickerControllerDelegate.h */,
@@ -2798,7 +2798,6 @@
 				C59B9ACE2526E3E10039B485 /* NSObject+Measure.m in Sources */,
 				C59B9C872526E3F10039B485 /* LOTMaskContainer.m in Sources */,
 				C5B47FA4252A127A00387F47 /* UILabel+Extra.m in Sources */,
-				C59B9AE52526E3E10039B485 /* BaseVC+OpenURL.m in Sources */,
 				C59B9AD12526E3E10039B485 /* NSObject+Time.m in Sources */,
 				C59B9C602526E3F10039B485 /* LOTPolystarAnimator.m in Sources */,
 				C59B9ADB2526E3E10039B485 /* UIViewController+Shake.m in Sources */,
@@ -2831,6 +2830,7 @@
 				C59B9CAC2526E3F10039B485 /* BWShareView.m in Sources */,
 				C59B9CAE2526E3F10039B485 /* BWItemCollectionViewCell.m in Sources */,
 				C59B9AD02526E3E10039B485 /* NSObject+Shake.m in Sources */,
+				C57F0D2C253337140080EEF0 /* NSObject+OpenURL.m in Sources */,
 				C59B9CCC2526E3F10039B485 /* GCD_TimerManager.m in Sources */,
 				C59B9CB22526E3F10039B485 /* FileFolderHandleTool.m in Sources */,
 				C59B9C9A2526E3F10039B485 /* WGradientProgress.m in Sources */,

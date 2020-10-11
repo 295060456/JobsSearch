@@ -41,7 +41,6 @@
 #import "BaseVC+BWShareView.h"
 #import "BaseVC+JPImageresizerView.h"
 #import "BaseVC+JXCategoryListContentViewDelegate.h"
-#import "BaseVC+OpenURL.h"
 #import "BaseVC+MJRefresh.h"
 #import "UIViewController+Shake.h"
 //UITextField
