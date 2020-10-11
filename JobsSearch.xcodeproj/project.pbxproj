@@ -18,6 +18,7 @@
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
+		C58C61DB2532FA450092BF89 /* UIView+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58C61DA2532FA450092BF89 /* UIView+Rotate.m */; };
 		C59B98DC2526DE260039B485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* AppDelegate.m */; };
 		C59B98DF2526DE260039B485 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DE2526DE260039B485 /* SceneDelegate.m */; };
 		C59B98E52526DE260039B485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59B98E32526DE260039B485 /* Main.storyboard */; };
@@ -344,6 +345,8 @@
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
+		C58C61D92532FA450092BF89 /* UIView+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rotate.h"; sourceTree = "<group>"; };
+		C58C61DA2532FA450092BF89 /* UIView+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotate.m"; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59B98DA2526DE260039B485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C59B98DB2526DE260039B485 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1659,18 +1662,20 @@
 		C59B9ABD2526E3E10039B485 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9ABE2526E3E10039B485 /* UIView+Extras.h */,
-				C59B9ABF2526E3E10039B485 /* UIView+Chain.m */,
-				C59B9AC02526E3E10039B485 /* UIView+Gradient.h */,
-				C59B9AC12526E3E10039B485 /* UIView+Measure.m */,
-				C59B9AC22526E3E10039B485 /* UIView+Animation.m */,
-				C59B9AC32526E3E10039B485 /* UIView+SuspendView.m */,
-				C59B9AC42526E3E10039B485 /* UIView+Chain.h */,
-				C59B9AC52526E3E10039B485 /* UIView+Extras.m */,
-				C59B9AC62526E3E10039B485 /* UIView+Gradient.m */,
-				C59B9AC72526E3E10039B485 /* UIView+SuspendView.h */,
 				C59B9AC82526E3E10039B485 /* UIView+Animation.h */,
+				C59B9AC22526E3E10039B485 /* UIView+Animation.m */,
+				C59B9AC42526E3E10039B485 /* UIView+Chain.h */,
+				C59B9ABF2526E3E10039B485 /* UIView+Chain.m */,
+				C59B9ABE2526E3E10039B485 /* UIView+Extras.h */,
+				C59B9AC52526E3E10039B485 /* UIView+Extras.m */,
+				C59B9AC02526E3E10039B485 /* UIView+Gradient.h */,
+				C59B9AC62526E3E10039B485 /* UIView+Gradient.m */,
 				C59B9AC92526E3E10039B485 /* UIView+Measure.h */,
+				C59B9AC12526E3E10039B485 /* UIView+Measure.m */,
+				C58C61D92532FA450092BF89 /* UIView+Rotate.h */,
+				C58C61DA2532FA450092BF89 /* UIView+Rotate.m */,
+				C59B9AC72526E3E10039B485 /* UIView+SuspendView.h */,
+				C59B9AC32526E3E10039B485 /* UIView+SuspendView.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -2877,6 +2882,7 @@
 				C59B9C6A2526E3F10039B485 /* LOTRadialGradientLayer.m in Sources */,
 				C59B9CAA2526E3F10039B485 /* ShowAvailableFont.m in Sources */,
 				C59B9C542526E3F10039B485 /* LOTLayerContainer.m in Sources */,
+				C58C61DB2532FA450092BF89 /* UIView+Rotate.m in Sources */,
 				C59B9AD82526E3E10039B485 /* BaseVC+TZImagePickerController.m in Sources */,
 				C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */,
 				C59B9B0C2526E3E10039B485 /* UIView+Extras.m in Sources */,
