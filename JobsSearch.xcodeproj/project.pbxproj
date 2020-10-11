@@ -14,6 +14,8 @@
 		C546C48D252C3B45003694FF /* JobsSearchResultDataListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C48C252C3B45003694FF /* JobsSearchResultDataListView.m */; };
 		C546C49F252C59D4003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */; };
 		C546C4A3252C59D7003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
+		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
+		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
 		C59B98DC2526DE260039B485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* AppDelegate.m */; };
@@ -211,14 +213,6 @@
 		C59B9C9F2526E3F10039B485 /* UIButton+CountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BCB2526E3F00039B485 /* UIButton+CountDownBtn.m */; };
 		C59B9CA02526E3F10039B485 /* 验证码按钮单例封装 in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BCC2526E3F00039B485 /* 验证码按钮单例封装 */; };
 		C59B9CA12526E3F10039B485 /* CountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BCF2526E3F00039B485 /* CountDownBtn.m */; };
-		C59B9CA22526E3F10039B485 /* spark_red@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BD32526E3F00039B485 /* spark_red@3x.png */; };
-		C59B9CA32526E3F10039B485 /* spark_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BD42526E3F00039B485 /* spark_red@2x.png */; };
-		C59B9CA42526E3F10039B485 /* spark_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BD52526E3F00039B485 /* spark_red.png */; };
-		C59B9CA52526E3F10039B485 /* day_like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BD62526E3F00039B485 /* day_like@2x.png */; };
-		C59B9CA62526E3F10039B485 /* day_like@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BD72526E3F00039B485 /* day_like@3x.png */; };
-		C59B9CA72526E3F10039B485 /* day_like_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BD82526E3F00039B485 /* day_like_red@2x.png */; };
-		C59B9CA82526E3F10039B485 /* day_like_red@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BD92526E3F00039B485 /* day_like_red@3x.png */; };
-		C59B9CA92526E3F10039B485 /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BDA2526E3F00039B485 /* RBCLikeButton.m */; };
 		C59B9CAA2526E3F10039B485 /* ShowAvailableFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BDD2526E3F00039B485 /* ShowAvailableFont.m */; };
 		C59B9CAB2526E3F10039B485 /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BDF2526E3F00039B485 /* BWItemModel.m */; };
 		C59B9CAC2526E3F10039B485 /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BE02526E3F00039B485 /* BWShareView.m */; };
@@ -345,6 +339,9 @@
 		C5470F7425309C8C00651ACE /* MacroDef_Func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Func.h; sourceTree = "<group>"; };
 		C5470F7525309C8C00651ACE /* MacroDef_Cor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Cor.h; sourceTree = "<group>"; };
 		C5470F7625309C8D00651ACE /* MacroDef_Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Size.h; sourceTree = "<group>"; };
+		C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RBCLikeButton.bundle; sourceTree = "<group>"; };
+		C55AABA72532B2F800335ACC /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
+		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -751,15 +748,6 @@
 		C59B9BCD2526E3F00039B485 /* CountDownBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownBtn.h; sourceTree = "<group>"; };
 		C59B9BCE2526E3F00039B485 /* UIButton+CountDownBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDownBtn.h"; sourceTree = "<group>"; };
 		C59B9BCF2526E3F00039B485 /* CountDownBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownBtn.m; sourceTree = "<group>"; };
-		C59B9BD12526E3F00039B485 /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
-		C59B9BD32526E3F00039B485 /* spark_red@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spark_red@3x.png"; sourceTree = "<group>"; };
-		C59B9BD42526E3F00039B485 /* spark_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spark_red@2x.png"; sourceTree = "<group>"; };
-		C59B9BD52526E3F00039B485 /* spark_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark_red.png; sourceTree = "<group>"; };
-		C59B9BD62526E3F00039B485 /* day_like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "day_like@2x.png"; sourceTree = "<group>"; };
-		C59B9BD72526E3F00039B485 /* day_like@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "day_like@3x.png"; sourceTree = "<group>"; };
-		C59B9BD82526E3F00039B485 /* day_like_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "day_like_red@2x.png"; sourceTree = "<group>"; };
-		C59B9BD92526E3F00039B485 /* day_like_red@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "day_like_red@3x.png"; sourceTree = "<group>"; };
-		C59B9BDA2526E3F00039B485 /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
 		C59B9BDC2526E3F00039B485 /* ShowAvailableFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAvailableFont.h; sourceTree = "<group>"; };
 		C59B9BDD2526E3F00039B485 /* ShowAvailableFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAvailableFont.m; sourceTree = "<group>"; };
 		C59B9BDF2526E3F00039B485 /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
@@ -1986,25 +1974,11 @@
 		C59B9BD02526E3F00039B485 /* 高仿抖音点赞动画 */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9BD12526E3F00039B485 /* RBCLikeButton.h */,
-				C59B9BD22526E3F00039B485 /* resource */,
-				C59B9BDA2526E3F00039B485 /* RBCLikeButton.m */,
+				C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */,
+				C55AABA72532B2F800335ACC /* RBCLikeButton.h */,
+				C55AABA82532B2F800335ACC /* RBCLikeButton.m */,
 			);
 			path = "高仿抖音点赞动画";
-			sourceTree = "<group>";
-		};
-		C59B9BD22526E3F00039B485 /* resource */ = {
-			isa = PBXGroup;
-			children = (
-				C59B9BD32526E3F00039B485 /* spark_red@3x.png */,
-				C59B9BD42526E3F00039B485 /* spark_red@2x.png */,
-				C59B9BD52526E3F00039B485 /* spark_red.png */,
-				C59B9BD62526E3F00039B485 /* day_like@2x.png */,
-				C59B9BD72526E3F00039B485 /* day_like@3x.png */,
-				C59B9BD82526E3F00039B485 /* day_like_red@2x.png */,
-				C59B9BD92526E3F00039B485 /* day_like_red@3x.png */,
-			);
-			path = resource;
 			sourceTree = "<group>";
 		};
 		C59B9BDB2526E3F00039B485 /* iOS打印全员字体 */ = {
@@ -2614,7 +2588,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59B9D312526E4580039B485 /* 我的.json in Resources */,
-				C59B9CA72526E3F10039B485 /* day_like_red@2x.png in Resources */,
 				C59B9C962526E3F10039B485 /* ZBNetworking in Resources */,
 				C59B98ED2526DE270039B485 /* LaunchScreen.storyboard in Resources */,
 				C59B9CC42526E3F10039B485 /* 替换系统的UITabBarViewController in Resources */,
@@ -2624,7 +2597,6 @@
 				C59B9D342526E4580039B485 /* wode.json in Resources */,
 				C59B9D2F2526E4580039B485 /* green_lottie_tab_mine.json in Resources */,
 				C59B9CBB2526E3F10039B485 /* 视频水印.gif in Resources */,
-				C59B9CA82526E3F10039B485 /* day_like_red@3x.png in Resources */,
 				C59B9D2E2526E4580039B485 /* green_lottie_tab_home.json in Resources */,
 				C59B99792526E0A50039B485 /* GKNavigationBar.bundle in Resources */,
 				C59B9AFD2526E3E10039B485 /* WhiteRightArrow@3x.png in Resources */,
@@ -2632,9 +2604,7 @@
 				C59B9CC92526E3F10039B485 /* Sound.wav in Resources */,
 				C59BA07E252710CF0039B485 /* 是否取消悬停 in Resources */,
 				C59B9AEF2526E3E10039B485 /* 专治UITableView相应链断裂 in Resources */,
-				C59B9CA52526E3F10039B485 /* day_like@2x.png in Resources */,
 				C5B47F782529F7B300387F47 /* 放大镜.png in Resources */,
-				C59B9CA32526E3F10039B485 /* spark_red@2x.png in Resources */,
 				C59B998E2526E0A50039B485 /* 手动集成 SDWebImage_WebP in Resources */,
 				C59B9CD32526E3F10039B485 /* iOS小技巧：用runtime 解决UIButton 重复点击问题 in Resources */,
 				C59B9D362526E4580039B485 /* huiyuan.json in Resources */,
@@ -2643,11 +2613,11 @@
 				C59B9D372526E4580039B485 /* fangzi.json in Resources */,
 				C59B9D2C2526E4580039B485 /* 任务.json in Resources */,
 				C59B9C9B2526E3F10039B485 /* 水平进度条.png in Resources */,
+				C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */,
 				C59B9D2B2526E4580039B485 /* 主页.json in Resources */,
 				C59B9D352526E4580039B485 /* dingdan.json in Resources */,
 				C59B9D2D2526E4580039B485 /* green_lottie_tab_news.json in Resources */,
 				C5B85607252B558D00890A66 /* Telegram.bundle in Resources */,
-				C59B9CA62526E3F10039B485 /* day_like@3x.png in Resources */,
 				C59B99872526E0A50039B485 /* BRPickerView.bundle in Resources */,
 				C59B9CB82526E3F10039B485 /* del_Photo@2x.png in Resources */,
 				C59B9CC82526E3F10039B485 /* 带有按键音的按钮 in Resources */,
@@ -2661,13 +2631,11 @@
 				C5B8552E252B448200890A66 /* 扫描.png in Resources */,
 				C59B9CA02526E3F10039B485 /* 验证码按钮单例封装 in Resources */,
 				C59B9D302526E4580039B485 /* green_lottie_tab_discover.json in Resources */,
-				C59B9CA22526E3F10039B485 /* spark_red@3x.png in Resources */,
 				C59B99982526E0A50039B485 /* ZZCircleProgress.bundle in Resources */,
 				C5633214252AE88A00699392 /* 垃圾箱.png in Resources */,
 				C5B47F832529F82A00387F47 /* 时钟.png in Resources */,
 				C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */,
 				C5BA3AF5252C64F90039530C /* 假数据.json in Resources */,
-				C59B9CA42526E3F10039B485 /* spark_red.png in Resources */,
 				C59B9D322526E4580039B485 /* 社区.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2836,6 +2804,7 @@
 				C59B9C6B2526E3F10039B485 /* LOTAsset.m in Sources */,
 				C59B9AD52526E3E10039B485 /* UIImage+Extras.m in Sources */,
 				C59B9B082526E3E10039B485 /* UIView+Chain.m in Sources */,
+				C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */,
 				C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */,
 				C59B9C882526E3F10039B485 /* LOTAnimatorNode.m in Sources */,
 				C59B99992526E0A50039B485 /* ZZCountingLabel.m in Sources */,
@@ -2963,7 +2932,6 @@
 				C59B9C4F2526E3F10039B485 /* LOTMask.m in Sources */,
 				C59B9C8C2526E3F10039B485 /* CustomerGPUImagePlayerVC.m in Sources */,
 				C59B9C9E2526E3F10039B485 /* UIDevice+XMUtils.m in Sources */,
-				C59B9CA92526E3F10039B485 /* RBCLikeButton.m in Sources */,
 				C59B99952526E0A50039B485 /* SDWebImageGIFCoder.m in Sources */,
 				C59B9CCF2526E3F10039B485 /* ECAuthorizationTools.m in Sources */,
 				C59B9C4E2526E3F10039B485 /* LOTAnimationCache.m in Sources */,
