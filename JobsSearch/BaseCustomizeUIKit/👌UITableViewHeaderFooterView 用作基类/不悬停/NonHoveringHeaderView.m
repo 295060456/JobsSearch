@@ -14,11 +14,14 @@
 
 @implementation NonHoveringHeaderView
 
--(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
-                              withData:(id)data{
+-(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier{
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
 
     }return self;
+}
+
+-(void)richElementsInCellWithModel:(id _Nullable)model{
+    
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches

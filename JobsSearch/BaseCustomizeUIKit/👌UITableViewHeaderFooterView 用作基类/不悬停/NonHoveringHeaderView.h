@@ -13,9 +13,8 @@
 @property(nonatomic,strong)UIControl * _Nullable result;
 @property(nonatomic,copy)MKDataBlock _Nullable nonHoveringHeaderViewBlock;
 
--(instancetype _Nullable)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
-                                        withData:(id _Nullable )data;
-
+-(instancetype _Nullable)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier;
+-(void)richElementsInCellWithModel:(id _Nullable)model;
 -(void)actionBlockNonHoveringHeaderView:(MKDataBlock _Nullable)nonHoveringHeaderViewBlock;
 
 @end

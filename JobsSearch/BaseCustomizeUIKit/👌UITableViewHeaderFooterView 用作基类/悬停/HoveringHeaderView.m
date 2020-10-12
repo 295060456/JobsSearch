@@ -14,15 +14,17 @@
 
 @implementation HoveringHeaderView
 
-- (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
-                               withData:(id)data{
+- (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier{
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
 //        self.result.alpha = 1;
     }return self;
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches
-          withEvent:(UIEvent *)event{
+-(void)richElementsInCellWithModel:(id _Nullable)model{
+    
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     if (self.hoveringHeaderViewBlock) {
         self.hoveringHeaderViewBlock(@1);
     }
