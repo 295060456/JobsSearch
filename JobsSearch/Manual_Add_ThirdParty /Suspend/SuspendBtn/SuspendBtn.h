@@ -10,12 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface suspendBtn : UIButton
+@interface SuspendBtn : UIButton
+
+@property(nonatomic,assign)BOOL isAllowDrag;//是否允许托拽手势
 
 @end
 
 NS_ASSUME_NONNULL_END
-
 /**
 使用方法：
  如果是View：在需要作用的UIView的子类
