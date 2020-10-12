@@ -21,7 +21,6 @@ target 'JobsSearch' do
   pod 'IQKeyboardManager'
   pod 'LYEmptyView' # https://github.com/dev-liyang/LYEmptyView iOS一行代码集成空白页面占位图(无数据、无网络占位图)
   pod 'SDWebImage'
-  pod 'MBProgressHUD+WJExtension'
   pod 'LYXAlertController'
 #  pod 'FDFullscreenPopGesture'
   pod 'SPAlertController'# https://github.com/SPStore/SPAlertController 深度定制AlertController
