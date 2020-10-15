@@ -11,15 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseNavigationVC : UINavigationController
-<
-UINavigationControllerDelegate
->
 
-@property(nonatomic,strong)UIButton *editBtn;
+-(void)setupBarButtonItem:(UIViewController * __nonnull)vc
+                    title:(NSString * __nullable)title
+                 selector:(SEL __nonnull)selector;
 
-+(UINavigationController *)rootNavigationController;
-
--(void)setupEditBtn:(UIViewController *)vc;
+//+(UINavigationController *)rootNavigationController;
 
 @end
 

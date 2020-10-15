@@ -5,11 +5,11 @@
 //  Created by Jobs on 2020/10/2.
 //
 
-#import "BaseVC.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewController_2 : BaseVC
+@interface ViewController_2 : UIViewController
 
 @end
 

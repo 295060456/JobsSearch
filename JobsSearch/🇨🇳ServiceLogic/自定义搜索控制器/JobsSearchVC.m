@@ -56,7 +56,6 @@ UITableViewDataSource
     self.tableView.alpha = 1;
 
     if (![NSString isNullString:self.titleStr]) {
-        self.isBackBtnBlackorWhite = YES;
         self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
         self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.scanBtn];
         self.gk_navBackgroundColor = self.bgColour;

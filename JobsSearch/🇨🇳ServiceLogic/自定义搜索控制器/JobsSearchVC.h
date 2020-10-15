@@ -5,7 +5,7 @@
 //  Created by Jobs on 2020/10/2.
 //
 
-#import "BaseVC.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +15,7 @@ typedef NS_ENUM(NSUInteger, JobsSearchItemStyle) {
     JobsSearchItemStyle_2,// 3列表格形式
 };
 
-@interface JobsSearchVC : BaseVC
+@interface JobsSearchVC : UIViewController
 
 @property(nonatomic,assign)JobsSearchItemStyle searchItemStyle;
 @property(nonatomic,assign)BOOL isHoveringHeaderView;
