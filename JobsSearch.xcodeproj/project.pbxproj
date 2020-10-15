@@ -132,9 +132,7 @@
 		C59B9B072526E3E10039B485 /* UITextField+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9ABC2526E3E10039B485 /* UITextField+Extend.m */; };
 		C59B9B082526E3E10039B485 /* UIView+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9ABF2526E3E10039B485 /* UIView+Chain.m */; };
 		C59B9B092526E3E10039B485 /* UIView+Measure.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AC12526E3E10039B485 /* UIView+Measure.m */; };
-		C59B9B0A2526E3E10039B485 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AC22526E3E10039B485 /* UIView+Animation.m */; };
 		C59B9B0B2526E3E10039B485 /* UIView+SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AC32526E3E10039B485 /* UIView+SuspendView.m */; };
-		C59B9B0C2526E3E10039B485 /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AC52526E3E10039B485 /* UIView+Extras.m */; };
 		C59B9B0D2526E3E10039B485 /* UIView+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AC62526E3E10039B485 /* UIView+Gradient.m */; };
 		C59B9C4E2526E3F10039B485 /* LOTAnimationCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9B122526E3EF0039B485 /* LOTAnimationCache.m */; };
 		C59B9C4F2526E3F10039B485 /* LOTMask.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9B132526E3EF0039B485 /* LOTMask.m */; };
@@ -288,6 +286,8 @@
 		C59BA0B62527166F0039B485 /* JobsSearchNonHoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA0B52527166F0039B485 /* JobsSearchNonHoveringHeaderView.m */; };
 		C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */; };
 		C59BA1F325271DAE0039B485 /* 删除.png in Resources */ = {isa = PBXBuildFile; fileRef = C59BA1F225271DAE0039B485 /* 删除.png */; };
+		C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEAEA253841B1000E1C5F /* UIView+Extras.m */; };
+		C5AEEAED253841B1000E1C5F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEAEB253841B1000E1C5F /* UIView+Animation.m */; };
 		C5B47F782529F7B300387F47 /* 放大镜.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B47F772529F7B300387F47 /* 放大镜.png */; };
 		C5B47F832529F82A00387F47 /* 时钟.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B47F822529F82A00387F47 /* 时钟.png */; };
 		C5B47F952529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */; };
@@ -576,17 +576,13 @@
 		C59B9AB82526E3E10039B485 /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
 		C59B9ABB2526E3E10039B485 /* UITextField+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extend.h"; sourceTree = "<group>"; };
 		C59B9ABC2526E3E10039B485 /* UITextField+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extend.m"; sourceTree = "<group>"; };
-		C59B9ABE2526E3E10039B485 /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
 		C59B9ABF2526E3E10039B485 /* UIView+Chain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Chain.m"; sourceTree = "<group>"; };
 		C59B9AC02526E3E10039B485 /* UIView+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
 		C59B9AC12526E3E10039B485 /* UIView+Measure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Measure.m"; sourceTree = "<group>"; };
-		C59B9AC22526E3E10039B485 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		C59B9AC32526E3E10039B485 /* UIView+SuspendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuspendView.m"; sourceTree = "<group>"; };
 		C59B9AC42526E3E10039B485 /* UIView+Chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Chain.h"; sourceTree = "<group>"; };
-		C59B9AC52526E3E10039B485 /* UIView+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extras.m"; sourceTree = "<group>"; };
 		C59B9AC62526E3E10039B485 /* UIView+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
 		C59B9AC72526E3E10039B485 /* UIView+SuspendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SuspendView.h"; sourceTree = "<group>"; };
-		C59B9AC82526E3E10039B485 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		C59B9AC92526E3E10039B485 /* UIView+Measure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Measure.h"; sourceTree = "<group>"; };
 		C59B9B122526E3EF0039B485 /* LOTAnimationCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationCache.m; sourceTree = "<group>"; };
 		C59B9B132526E3EF0039B485 /* LOTMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTMask.m; sourceTree = "<group>"; };
@@ -877,6 +873,10 @@
 		C59BA129252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchShowHistoryDataTBVCell.h; sourceTree = "<group>"; };
 		C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchShowHistoryDataTBVCell.m; sourceTree = "<group>"; };
 		C59BA1F225271DAE0039B485 /* 删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除.png"; sourceTree = "<group>"; };
+		C5AEEAE8253841B1000E1C5F /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
+		C5AEEAE9253841B1000E1C5F /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		C5AEEAEA253841B1000E1C5F /* UIView+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extras.m"; sourceTree = "<group>"; };
+		C5AEEAEB253841B1000E1C5F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		C5B47F772529F7B300387F47 /* 放大镜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "放大镜.png"; sourceTree = "<group>"; };
 		C5B47F822529F82A00387F47 /* 时钟.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "时钟.png"; sourceTree = "<group>"; };
 		C5B47F932529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchShowHotwordsTBVCell.h; sourceTree = "<group>"; };
@@ -1707,12 +1707,12 @@
 		C59B9ABD2526E3E10039B485 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9AC82526E3E10039B485 /* UIView+Animation.h */,
-				C59B9AC22526E3E10039B485 /* UIView+Animation.m */,
+				C5AEEAE9253841B1000E1C5F /* UIView+Animation.h */,
+				C5AEEAEB253841B1000E1C5F /* UIView+Animation.m */,
+				C5AEEAE8253841B1000E1C5F /* UIView+Extras.h */,
+				C5AEEAEA253841B1000E1C5F /* UIView+Extras.m */,
 				C59B9AC42526E3E10039B485 /* UIView+Chain.h */,
 				C59B9ABF2526E3E10039B485 /* UIView+Chain.m */,
-				C59B9ABE2526E3E10039B485 /* UIView+Extras.h */,
-				C59B9AC52526E3E10039B485 /* UIView+Extras.m */,
 				C59B9AC02526E3E10039B485 /* UIView+Gradient.h */,
 				C59B9AC62526E3E10039B485 /* UIView+Gradient.m */,
 				C59B9AC92526E3E10039B485 /* UIView+Measure.h */,
@@ -2773,6 +2773,7 @@
 				C59B997D2526E0A50039B485 /* UIScrollView+GKCategory.m in Sources */,
 				C59B99852526E0A50039B485 /* NSDate+BRPickerView.m in Sources */,
 				C59B9C8F2526E3F10039B485 /* CustomerAVPlayerVC.m in Sources */,
+				C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */,
 				C59B9C972526E3F10039B485 /* ZBRequestManager.m in Sources */,
 				C59B9AFA2526E3E10039B485 /* TBVCell_style_02.m in Sources */,
 				C59B9C722526E3F10039B485 /* LOTFillRenderer.m in Sources */,
@@ -2872,12 +2873,12 @@
 				C59B998D2526E0A50039B485 /* UIImage+WebP.m in Sources */,
 				C59B9CA12526E3F10039B485 /* CountDownBtn.m in Sources */,
 				C59B9CC32526E3F10039B485 /* UIViewController+LZBTabBarVCItem.m in Sources */,
-				C59B9B0A2526E3E10039B485 /* UIView+Animation.m in Sources */,
 				C59B997B2526E0A50039B485 /* UINavigationController+GKCategory.m in Sources */,
 				C59B9AE62526E3E10039B485 /* UIView+JHGestureBlock.m in Sources */,
 				C59B9CE12526E4110039B485 /* ViewController@5.m in Sources */,
 				C59B9C7D2526E3F10039B485 /* LOTAnimatedSwitch.m in Sources */,
 				C59B9C512526E3F10039B485 /* LOTKeyframe.m in Sources */,
+				C5AEEAED253841B1000E1C5F /* UIView+Animation.m in Sources */,
 				C59B9C8D2526E3F10039B485 /* CustomerAVPlayerView.m in Sources */,
 				C59B9C6A2526E3F10039B485 /* LOTRadialGradientLayer.m in Sources */,
 				C59B9CAA2526E3F10039B485 /* ShowAvailableFont.m in Sources */,
@@ -2885,7 +2886,6 @@
 				C58C61DB2532FA450092BF89 /* UIView+Rotate.m in Sources */,
 				C59B9AD82526E3E10039B485 /* BaseVC+TZImagePickerController.m in Sources */,
 				C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */,
-				C59B9B0C2526E3E10039B485 /* UIView+Extras.m in Sources */,
 				C59B9C8A2526E3F10039B485 /* LOTShapeStroke.m in Sources */,
 				C59B9C6D2526E3F10039B485 /* LOTShapeRepeater.m in Sources */,
 				C59B9AD42526E3E10039B485 /* UIImage+screenshot.m in Sources */,
