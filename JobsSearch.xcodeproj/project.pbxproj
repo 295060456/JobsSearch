@@ -25,7 +25,6 @@
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
 		C57F0D2C253337140080EEF0 /* NSObject+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */; };
-		C58C61DB2532FA450092BF89 /* UIView+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58C61DA2532FA450092BF89 /* UIView+Rotate.m */; };
 		C5914C0125384E61007777A6 /* UIViewController+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BE425384E5E007777A6 /* UIViewController+Shake.m */; };
 		C5914C0225384E61007777A6 /* UIViewController+GifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BE625384E5E007777A6 /* UIViewController+GifImageView.m */; };
 		C5914C0325384E61007777A6 /* UIViewController+TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BEB25384E5F007777A6 /* UIViewController+TZImagePickerController.m */; };
@@ -359,8 +358,6 @@
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
 		C57F0D2A253337140080EEF0 /* NSObject+OpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OpenURL.h"; sourceTree = "<group>"; };
 		C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OpenURL.m"; sourceTree = "<group>"; };
-		C58C61D92532FA450092BF89 /* UIView+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rotate.h"; sourceTree = "<group>"; };
-		C58C61DA2532FA450092BF89 /* UIView+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotate.m"; sourceTree = "<group>"; };
 		C5914BE425384E5E007777A6 /* UIViewController+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Shake.m"; sourceTree = "<group>"; };
 		C5914BE525384E5E007777A6 /* UIViewController+TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TZImagePickerController.h"; sourceTree = "<group>"; };
 		C5914BE625384E5E007777A6 /* UIViewController+GifImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GifImageView.m"; sourceTree = "<group>"; };
@@ -1717,8 +1714,6 @@
 				C59B9AC62526E3E10039B485 /* UIView+Gradient.m */,
 				C59B9AC92526E3E10039B485 /* UIView+Measure.h */,
 				C59B9AC12526E3E10039B485 /* UIView+Measure.m */,
-				C58C61D92532FA450092BF89 /* UIView+Rotate.h */,
-				C58C61DA2532FA450092BF89 /* UIView+Rotate.m */,
 				C59B9AC72526E3E10039B485 /* UIView+SuspendView.h */,
 				C59B9AC32526E3E10039B485 /* UIView+SuspendView.m */,
 			);
@@ -2879,7 +2874,6 @@
 				C59B9C6A2526E3F10039B485 /* LOTRadialGradientLayer.m in Sources */,
 				C59B9CAA2526E3F10039B485 /* ShowAvailableFont.m in Sources */,
 				C59B9C542526E3F10039B485 /* LOTLayerContainer.m in Sources */,
-				C58C61DB2532FA450092BF89 /* UIView+Rotate.m in Sources */,
 				C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */,
 				C59B9C8A2526E3F10039B485 /* LOTShapeStroke.m in Sources */,
 				C59B9C6D2526E3F10039B485 /* LOTShapeRepeater.m in Sources */,
