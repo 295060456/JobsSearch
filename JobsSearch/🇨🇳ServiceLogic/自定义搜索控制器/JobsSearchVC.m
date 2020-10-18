@@ -51,8 +51,7 @@ UITableViewDataSource
     self.view.backgroundColor = self.bgColour;
     
     self.titleStr = (NSString *)self.requestParams;//会根据外界是否传入标题来决定是否生成 gk_navigationBar
-    
-    [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = YES;
+
     self.tableView.alpha = 1;
 
     if (![NSString isNullString:self.titleStr]) {
@@ -77,7 +76,6 @@ UITableViewDataSource
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden = NO;
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
@@ -358,9 +356,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                 make.top.equalTo(self.gk_navigationBar.mas_bottom);
             }
             //之所以这么处理，全是因为动画逻辑会整体将_tableView往上提一段距离
-            extern CGFloat LZB_TABBAR_HEIGHT;
-            if ([SceneDelegate sharedInstance].customSYSUITabBarController.lzb_tabBarHidden) {
-                make.bottom.equalTo(self.view.mas_bottom).offset(LZB_TABBAR_HEIGHT);
+            if ([AppDelegate sharedInstance].tabbarVC.tabBar.hidden) {
+                make.bottom.equalTo(self.view.mas_bottom).offset([AppDelegate sharedInstance].tabbarVC.myTabBar.height);
             }else{
                 make.bottom.equalTo(self.view.mas_bottom);
             }
@@ -541,13 +538,12 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 //        @weakify(self)
         [[_scanBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
 //            @strongify(self)
-            CustomSYSUITabBarController *tbvc = [SceneDelegate sharedInstance].customSYSUITabBarController;
             [NSObject showSYSAlertViewTitle:@"此功能尚未开发"
                                     message:@"敬请期待"
                             isSeparateStyle:NO
                                 btnTitleArr:@[@"好的"]
                              alertBtnAction:@[@""]
-                                   targetVC:tbvc
+                                   targetVC:[AppDelegate sharedInstance].tabbarVC
                                alertVCBlock:^(id data) {
                 //DIY
             }];

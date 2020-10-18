@@ -34,15 +34,10 @@ static SceneDelegate *static_sceneDelegate = nil;
 - (void)scene:(UIScene *)scene
 willConnectToSession:(UISceneSession *)session
       options:(UISceneConnectionOptions *)connectionOptions {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     //在这里手动创建新的window
     if (@available(iOS 13.0, *)) {
         self.windowScene = (UIWindowScene *)scene;
-        
-        [self.window setRootViewController:self.navigationController];
-        [self.window makeKeyAndVisible];
+        self.window.alpha = 1;
     }
 }
 
@@ -80,21 +75,11 @@ willConnectToSession:(UISceneSession *)session
     // Save changes in the application's managed object context when the application transitions to the background.
     [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
 }
-
 #pragma mark —— lazyLoad
--(CustomSYSUITabBarController *)customSYSUITabBarController{
-    if (!_customSYSUITabBarController) {
-        _customSYSUITabBarController = CustomSYSUITabBarController.new;
-    }return _customSYSUITabBarController;
-}
-
--(UINavigationController *)navigationController{
-    if (!_navigationController) {
-//        _navigationController = [[UINavigationController alloc] initWithRootViewController:self.customSYSUITabBarController];
-        _navigationController = [UINavigationController rootVC:self.customSYSUITabBarController
-                                               transitionScale:NO];
-        _navigationController.navigationBar.hidden = YES;
-    }return _navigationController;
+-(UIWindow *)window{
+    [_window setRootViewController:AppDelegate.sharedInstance.tabbarVC];
+    [_window makeKeyAndVisible];
+    return _window;
 }
 
 @end
