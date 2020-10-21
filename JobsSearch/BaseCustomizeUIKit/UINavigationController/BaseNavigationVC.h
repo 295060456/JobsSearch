@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseNavigationVC : UINavigationController
+@interface BaseNavigationVC : UINavigationController<UINavigationControllerDelegate>
 
 -(void)setupBarButtonItem:(UIViewController * __nonnull)vc
                     title:(NSString * __nullable)title

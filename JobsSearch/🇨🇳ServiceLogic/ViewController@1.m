@@ -24,18 +24,18 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
     
-    [JobsSearchVC comingFromVC:self
-                          toVC:JobsSearchVC.new
-                   comingStyle:ComingStyle_PUSH
-             presentationStyle:UIModalPresentationAutomatic
-                 requestParams:@"搜索功能"
-                       success:^(id data) {
+    [UIViewController comingFromVC:self
+                              toVC:JobsSearchVC.new
+                       comingStyle:ComingStyle_PUSH
+                 presentationStyle:UIModalPresentationAutomatic
+                     requestParams:@"搜索功能"
+                           success:^(id data) {
         if ([data isKindOfClass:JobsSearchVC.class]) {
             JobsSearchVC *vc = (JobsSearchVC *)data;
             vc.isHoveringHeaderView = YES;
         }
     }
-                      animated:YES];
+                          animated:YES];
 }
 
 @end
