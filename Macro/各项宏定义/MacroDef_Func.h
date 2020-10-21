@@ -61,9 +61,9 @@ static inline id getSceneDelegate(){
 #define GetUserDefaultBoolForKey(key) [[NSUserDefaults standardUserDefaults] boolForKey:key]
 #define DeleUserDefaultWithKey(key) [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]
 #define UserDefaultSynchronize  [[NSUserDefaults standardUserDefaults] synchronize]
-
-
-
+#pragma mark ======================================== 默认值 ========================================
+#define defaultValue 0
+#define defaultObj Nil
 
 //判断是否登录,没有登录进行跳转
 #define kGuardLogin if ([IsLogin isLogin]) { \
