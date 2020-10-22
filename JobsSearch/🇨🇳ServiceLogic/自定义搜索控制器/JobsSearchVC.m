@@ -16,6 +16,8 @@
 #import "UITableView+WWFoldableTableView.h"
 #import "JobsSearchResultDataListView.h"//逐字搜索返回数据结果下拉列表
 
+#import "TableViewCell.h"
+
 @interface JobsSearchVC ()
 <
 UITableViewDelegate,
@@ -36,6 +38,7 @@ UITableViewDataSource
 @property(nonatomic,assign)NSString *titleStr;//标题
 @property(nonatomic,assign)CGRect tableViewRect;
 @property(nonatomic,assign)CGFloat gk_navigationBarHeight;
+@property(nonatomic,assign)HotSearchStyle hotSearchStyle;
 
 @end
 
@@ -50,7 +53,8 @@ UITableViewDataSource
     self.isOpenLetterCase = YES;
     self.view.backgroundColor = self.bgColour;
     
-    self.titleStr = (NSString *)self.requestParams;//会根据外界是否传入标题来决定是否生成 gk_navigationBar
+    self.titleStr = (NSString *)self.requestParams[@"Title"];//会根据外界是否传入标题来决定是否生成 gk_navigationBar
+    self.hotSearchStyle = [self.requestParams[@"HotSearchStyle"] integerValue];
 
     self.tableView.alpha = 1;
 
@@ -178,7 +182,18 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.section) {
         case 0:{
             if (self.JobsSearchShowHotwordsTBVCellHeight == 0) {
-                return [JobsSearchShowHotwordsTBVCell cellHeightWithModel:nil];
+                switch (self.hotSearchStyle) {
+                    case HotSearchStyle_1:{
+                        return [JobsSearchShowHotwordsTBVCell cellHeightWithModel:nil];
+                    }break;
+                    case HotSearchStyle_2:{
+                        return [TableViewCell cellHeightWithModel:self.hotSearchMutArr];
+                    }break;
+                        
+                    default:{
+                        return 0;
+                    }break;
+                }
             }else{
                 return self.JobsSearchShowHotwordsTBVCellHeight;
             }
@@ -217,19 +232,35 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.section) {
-        case 0:{//热门搜索
-            JobsSearchShowHotwordsTBVCell *cell = [JobsSearchShowHotwordsTBVCell cellWith:tableView];
-            cell.indexRow = indexPath.row;
-            cell.indexSection = indexPath.section;
-            [cell richElementsInCellWithModel:self.hotSearchMutArr];
-            @weakify(self)
-            //点击的哪个btn？
-            [cell actionBlockJobsSearchShowHotwordsTBVCell:^(UIButton *data) {
-                @strongify(self)
-                self.jobsSearchBar.tf.text = data.titleLabel.text;
-                self.jobsSearchResultDataListView.alpha = 1;
-            }];
-            return cell;
+        case 0:{//热门搜索 KKK
+            switch (self.hotSearchStyle) {
+                case HotSearchStyle_1:{
+                    JobsSearchShowHotwordsTBVCell *cell = [JobsSearchShowHotwordsTBVCell cellWith:tableView];
+                    cell.indexRow = indexPath.row;
+                    cell.indexSection = indexPath.section;
+                    [cell richElementsInCellWithModel:self.hotSearchMutArr];
+                    
+                    @weakify(self)
+                    //点击的哪个btn？
+                    [cell actionBlockJobsSearchShowHotwordsTBVCell:^(UIButton *data) {
+                        @strongify(self)
+                        self.jobsSearchBar.tf.text = data.titleLabel.text;
+                        self.jobsSearchResultDataListView.alpha = 1;
+                    }];
+                    return cell;
+                }break;
+                case HotSearchStyle_2:{
+                    TableViewCell *cell = [TableViewCell cellWith:tableView];
+                    cell.indexRow = indexPath.row;
+                    cell.indexSection = indexPath.section;
+                    [cell richElementsInCellWithModel:self.hotSearchMutArr];
+                    return cell;
+                }break;
+                    
+                default:{
+                    return UITableViewCell.new;
+                }break;
+            }
         }break;
         case 1:{//搜索历史
             JobsSearchShowHistoryDataTBVCell *cell = [JobsSearchShowHistoryDataTBVCell cellWith:tableView];

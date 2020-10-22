@@ -28,7 +28,10 @@
                               toVC:JobsSearchVC.new
                        comingStyle:ComingStyle_PUSH
                  presentationStyle:UIModalPresentationAutomatic
-                     requestParams:@"搜索功能"
+                     requestParams:@{
+                         @"Title":@"搜索功能",
+                         @"HotSearchStyle":@(HotSearchStyle_2)
+                     }
                            success:^(id data) {
         if ([data isKindOfClass:JobsSearchVC.class]) {
             JobsSearchVC *vc = (JobsSearchVC *)data;

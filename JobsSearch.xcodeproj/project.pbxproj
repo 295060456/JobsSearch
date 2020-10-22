@@ -255,6 +255,8 @@
 		C5B85607252B558D00890A66 /* Telegram.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5B85606252B558D00890A66 /* Telegram.bundle */; };
 		C5B85617252B577A00890A66 /* UITableView+WWFoldableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B85615252B577A00890A66 /* UITableView+WWFoldableTableView.m */; };
 		C5BA3AF5252C64F90039530C /* 假数据.json in Resources */ = {isa = PBXBuildFile; fileRef = C5BA3AF4252C64F90039530C /* 假数据.json */; };
+		C5C2444C2541A72F00CB55F5 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C2444B2541A72F00CB55F5 /* TableViewCell.m */; };
+		C5C244552541A8A600CB55F5 /* DataCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C244542541A8A600CB55F5 /* DataCollectionViewCell.m */; };
 		E7F73E4FA4EEA0009C5C36E7 /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -746,6 +748,12 @@
 		C5B85615252B577A00890A66 /* UITableView+WWFoldableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+WWFoldableTableView.m"; sourceTree = "<group>"; };
 		C5B85616252B577A00890A66 /* UITableView+WWFoldableTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+WWFoldableTableView.h"; sourceTree = "<group>"; };
 		C5BA3AF4252C64F90039530C /* 假数据.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "假数据.json"; sourceTree = "<group>"; };
+		C5C2444A2541A72F00CB55F5 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		C5C2444B2541A72F00CB55F5 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		C5C244532541A8A600CB55F5 /* DataCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataCollectionViewCell.h; sourceTree = "<group>"; };
+		C5C244542541A8A600CB55F5 /* DataCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataCollectionViewCell.m; sourceTree = "<group>"; };
+		C5C2445D2541BC8800CB55F5 /* 方式2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方式2.png"; sourceTree = "<group>"; };
+		C5C244612541BF7300CB55F5 /* 方式1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方式1.png"; sourceTree = "<group>"; };
 		DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -2236,8 +2244,8 @@
 		C5B47F912529FAAD00387F47 /* 热门搜索Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C5B47F932529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.h */,
-				C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */,
+				C5C244592541B67500CB55F5 /* 方式1 */,
+				C5C244482541A6E800CB55F5 /* 方式2 */,
 			);
 			path = "热门搜索Cell";
 			sourceTree = "<group>";
@@ -2280,6 +2288,28 @@
 				C5B85615252B577A00890A66 /* UITableView+WWFoldableTableView.m */,
 			);
 			path = "UITableView 折叠功能";
+			sourceTree = "<group>";
+		};
+		C5C244482541A6E800CB55F5 /* 方式2 */ = {
+			isa = PBXGroup;
+			children = (
+				C5C2445D2541BC8800CB55F5 /* 方式2.png */,
+				C5C2444A2541A72F00CB55F5 /* TableViewCell.h */,
+				C5C2444B2541A72F00CB55F5 /* TableViewCell.m */,
+				C5C244532541A8A600CB55F5 /* DataCollectionViewCell.h */,
+				C5C244542541A8A600CB55F5 /* DataCollectionViewCell.m */,
+			);
+			path = "方式2";
+			sourceTree = "<group>";
+		};
+		C5C244592541B67500CB55F5 /* 方式1 */ = {
+			isa = PBXGroup;
+			children = (
+				C5C244612541BF7300CB55F5 /* 方式1.png */,
+				C5B47F932529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.h */,
+				C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */,
+			);
+			path = "方式1";
 			sourceTree = "<group>";
 		};
 		DB6EB4965849B35F47ED7CA5 /* Pods */ = {
@@ -2731,6 +2761,7 @@
 				C59B9AF62526E3E10039B485 /* NSArray+Extend.m in Sources */,
 				C59B9F132526F56E0039B485 /* JobsSearchBar.m in Sources */,
 				C59B9AE92526E3E10039B485 /* CALayer+Anim.m in Sources */,
+				C5C2444C2541A72F00CB55F5 /* TableViewCell.m in Sources */,
 				C59B9CE32526E4110039B485 /* ViewController@3.m in Sources */,
 				C59B9C912526E3F10039B485 /* FMHttpResonse.m in Sources */,
 				C5914C0C25384E61007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */,
@@ -2764,6 +2795,7 @@
 				C59B9ACB2526E3E10039B485 /* NSObject+SPAlertController.m in Sources */,
 				C59B9ACF2526E3E10039B485 /* NSObject+Extras.m in Sources */,
 				C522D00C253464C5006A822F /* HoveringHeaderView.m in Sources */,
+				C5C244552541A8A600CB55F5 /* DataCollectionViewCell.m in Sources */,
 				C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */,
 				C59B9CBD2526E3F10039B485 /* BaseGPUImageView.m in Sources */,
 				C5914C0525384E61007777A6 /* UIViewController+BRPickerView.m in Sources */,
