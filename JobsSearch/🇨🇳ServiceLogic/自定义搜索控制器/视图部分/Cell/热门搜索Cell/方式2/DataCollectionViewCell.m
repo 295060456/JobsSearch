@@ -51,6 +51,15 @@
     self.contentLab.alpha = 1;
 }
 
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+//    NSLog(@"");
+//    return self;
+//}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"");
+}
+
 #pragma mark —— lazyLoad
 -(UILabel *)serialNumLab{
     if (!_serialNumLab) {

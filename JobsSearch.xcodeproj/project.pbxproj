@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32D5027DF5F5AD09BB6A422C /* Pods_JobsSearch_JobsSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AF52822135395AC4ED7192 /* Pods_JobsSearch_JobsSearchUITests.framework */; };
+		546D0F8992EF2B75337A28D6 /* Pods_JobsSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1A4CC21A9B0CCE56525A73 /* Pods_JobsSearchUITests.framework */; };
 		B1FCA2073A31A5D9A5BF4BB0 /* Pods_JobsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */; };
 		C522D00C253464C5006A822F /* HoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C522D006253464C5006A822F /* HoveringHeaderView.m */; };
 		C522D00D253464C5006A822F /* NonHoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C522D00A253464C5006A822F /* NonHoveringHeaderView.m */; };
@@ -279,11 +279,12 @@
 
 /* Begin PBXFileReference section */
 		04083D8AB901BCB9525FBAAE /* Pods-JobsSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch.release.xcconfig"; path = "Target Support Files/Pods-JobsSearch/Pods-JobsSearch.release.xcconfig"; sourceTree = "<group>"; };
-		11AF52822135395AC4ED7192 /* Pods_JobsSearch_JobsSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearch_JobsSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCED29F1CB7E01D79A7E094 /* Pods-JobsSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearchTests/Pods-JobsSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C25F50BEE12F3C5D03F9713 /* Pods-JobsSearch-JobsSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch-JobsSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearch-JobsSearchUITests/Pods-JobsSearch-JobsSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5044EE26354E351789C2EC06 /* Pods-JobsSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchUITests/Pods-JobsSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F5AA78FAB8FF4A24BD8A01 /* Pods-JobsSearch-JobsSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch-JobsSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch-JobsSearchUITests/Pods-JobsSearch-JobsSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A1A4CC21A9B0CCE56525A73 /* Pods_JobsSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6B8F73219A4D790276103 /* Pods-JobsSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchTests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchTests/Pods-JobsSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A84ECDA1DF94EA70BE0F2CA4 /* Pods-JobsSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch/Pods-JobsSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		C522D004253464C5006A822F /* UITableViewHeaderFooterView+Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewHeaderFooterView+Attribute.h"; sourceTree = "<group>"; };
@@ -755,6 +756,7 @@
 		C5C2445D2541BC8800CB55F5 /* 方式2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方式2.png"; sourceTree = "<group>"; };
 		C5C244612541BF7300CB55F5 /* 方式1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方式1.png"; sourceTree = "<group>"; };
 		DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E208309A6E4FE733F446B4B9 /* Pods-JobsSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearchUITests/Pods-JobsSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -778,7 +780,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32D5027DF5F5AD09BB6A422C /* Pods_JobsSearch_JobsSearchUITests.framework in Frameworks */,
+				546D0F8992EF2B75337A28D6 /* Pods_JobsSearchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,8 +791,8 @@
 			isa = PBXGroup;
 			children = (
 				654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */,
-				11AF52822135395AC4ED7192 /* Pods_JobsSearch_JobsSearchUITests.framework */,
 				DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */,
+				8A1A4CC21A9B0CCE56525A73 /* Pods_JobsSearchUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2321,6 +2323,8 @@
 				2C25F50BEE12F3C5D03F9713 /* Pods-JobsSearch-JobsSearchUITests.release.xcconfig */,
 				1BCED29F1CB7E01D79A7E094 /* Pods-JobsSearchTests.debug.xcconfig */,
 				A3A6B8F73219A4D790276103 /* Pods-JobsSearchTests.release.xcconfig */,
+				E208309A6E4FE733F446B4B9 /* Pods-JobsSearchUITests.debug.xcconfig */,
+				5044EE26354E351789C2EC06 /* Pods-JobsSearchUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2336,7 +2340,7 @@
 				C59B98D32526DE260039B485 /* Sources */,
 				C59B98D42526DE260039B485 /* Frameworks */,
 				C59B98D52526DE260039B485 /* Resources */,
-				FAB3444D3E9533018E01130A /* [CP] Embed Pods Frameworks */,
+				690D66721E7B36A8BD79A2B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2374,7 +2378,6 @@
 				C59B98FC2526DE270039B485 /* Sources */,
 				C59B98FD2526DE270039B485 /* Frameworks */,
 				C59B98FE2526DE270039B485 /* Resources */,
-				412B4BE4117F68174EFA0D24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2550,28 +2553,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JobsSearch-JobsSearchUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-JobsSearchUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		412B4BE4117F68174EFA0D24 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JobsSearch-JobsSearchUITests/Pods-JobsSearch-JobsSearchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JobsSearch-JobsSearchUITests/Pods-JobsSearch-JobsSearchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobsSearch-JobsSearchUITests/Pods-JobsSearch-JobsSearchUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		54315656DBF256DE6D6E8DE2 /* [CP] Check Pods Manifest.lock */ = {
@@ -2596,17 +2582,15 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FAB3444D3E9533018E01130A /* [CP] Embed Pods Frameworks */ = {
+		690D66721E7B36A8BD79A2B2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JobsSearch/Pods-JobsSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JobsSearch/Pods-JobsSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3057,7 +3041,7 @@
 		};
 		C59B99102526DE270039B485 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74F5AA78FAB8FF4A24BD8A01 /* Pods-JobsSearch-JobsSearchUITests.debug.xcconfig */;
+			baseConfigurationReference = E208309A6E4FE733F446B4B9 /* Pods-JobsSearchUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
@@ -3076,7 +3060,7 @@
 		};
 		C59B99112526DE270039B485 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C25F50BEE12F3C5D03F9713 /* Pods-JobsSearch-JobsSearchUITests.release.xcconfig */;
+			baseConfigurationReference = 5044EE26354E351789C2EC06 /* Pods-JobsSearchUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
