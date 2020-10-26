@@ -25,6 +25,7 @@
 		C55B29BE253426870038E50C /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C55B29BB253426870038E50C /* SuspendLab.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
+		C56E42FD254719F100B9F555 /* ⚽️PicResource in Resources */ = {isa = PBXBuildFile; fileRef = C56E42FC254719F100B9F555 /* ⚽️PicResource */; };
 		C5710860253C09E3005B3A0C /* JobsPullListAutoSizeView in Resources */ = {isa = PBXBuildFile; fileRef = C5710824253C09E2005B3A0C /* JobsPullListAutoSizeView */; };
 		C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5710827253C09E2005B3A0C /* JobsPullListTBVCell.m */; };
 		C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5710829253C09E2005B3A0C /* JobsPullListAutoSizeView.m */; };
@@ -233,8 +234,6 @@
 		C59B9CE12526E4110039B485 /* ViewController@5.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9CDC2526E4110039B485 /* ViewController@5.m */; };
 		C59B9CE22526E4110039B485 /* ViewController@4.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9CDD2526E4110039B485 /* ViewController@4.m */; };
 		C59B9CE32526E4110039B485 /* ViewController@3.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9CE02526E4110039B485 /* ViewController@3.m */; };
-		C59B9D2A2526E4580039B485 /* 刷新.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B9D182526E4580039B485 /* 刷新.bundle */; };
-		C59B9D382526E4580039B485 /* Others.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B9D292526E4580039B485 /* Others.bundle */; };
 		C59B9D6B2526E59E0039B485 /* ViewController@1.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9D6A2526E59E0039B485 /* ViewController@1.m */; };
 		C59B9D712526E5AD0039B485 /* ViewController@2.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9D702526E5AD0039B485 /* ViewController@2.m */; };
 		C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9D9E2526EC070039B485 /* JobsSearchVC.m */; };
@@ -321,6 +320,7 @@
 		C55B29BB253426870038E50C /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
+		C56E42FC254719F100B9F555 /* ⚽️PicResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "⚽️PicResource"; sourceTree = "<group>"; };
 		C5710824253C09E2005B3A0C /* JobsPullListAutoSizeView */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JobsPullListAutoSizeView; sourceTree = "<group>"; };
 		C5710825253C09E2005B3A0C /* JobsPullListAutoSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsPullListAutoSizeView.h; sourceTree = "<group>"; };
 		C5710827253C09E2005B3A0C /* JobsPullListTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsPullListTBVCell.m; sourceTree = "<group>"; };
@@ -716,8 +716,6 @@
 		C59B9CDE2526E4110039B485 /* ViewController@4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController@4.h"; sourceTree = "<group>"; };
 		C59B9CDF2526E4110039B485 /* ViewController@5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController@5.h"; sourceTree = "<group>"; };
 		C59B9CE02526E4110039B485 /* ViewController@3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController@3.m"; sourceTree = "<group>"; };
-		C59B9D182526E4580039B485 /* 刷新.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "刷新.bundle"; sourceTree = "<group>"; };
-		C59B9D292526E4580039B485 /* Others.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Others.bundle; sourceTree = "<group>"; };
 		C59B9D692526E59E0039B485 /* ViewController@1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController@1.h"; sourceTree = "<group>"; };
 		C59B9D6A2526E59E0039B485 /* ViewController@1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController@1.m"; sourceTree = "<group>"; };
 		C59B9D6F2526E5AD0039B485 /* ViewController@2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController@2.h"; sourceTree = "<group>"; };
@@ -1099,7 +1097,7 @@
 		C59B98CE2526DE260039B485 = {
 			isa = PBXGroup;
 			children = (
-				C59B9D142526E44E0039B485 /* ⚽️PicResource */,
+				C56E42FC254719F100B9F555 /* ⚽️PicResource */,
 				C59B999E2526E0D50039B485 /* Macro */,
 				C59B99192526E09C0039B485 /* Pods不进去的 */,
 				C59B99182526E0730039B485 /* Other */,
@@ -2212,15 +2210,6 @@
 			path = "UIControl+XY";
 			sourceTree = "<group>";
 		};
-		C59B9D142526E44E0039B485 /* ⚽️PicResource */ = {
-			isa = PBXGroup;
-			children = (
-				C59B9D182526E4580039B485 /* 刷新.bundle */,
-				C59B9D292526E4580039B485 /* Others.bundle */,
-			);
-			path = "⚽️PicResource";
-			sourceTree = "<group>";
-		};
 		C59B9D9C2526EBDA0039B485 /* 自定义搜索控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2501,16 +2490,15 @@
 				C5710866253C09E3005B3A0C /* 参考demo in Resources */,
 				C59B9CC82526E3F10039B485 /* 带有按键音的按钮 in Resources */,
 				C59B9CB72526E3F10039B485 /* del_Photo@3x.png in Resources */,
-				C59B9D2A2526E4580039B485 /* 刷新.bundle in Resources */,
 				C59B9DDD2526EF5A0039B485 /* ZYTextField.bundle in Resources */,
 				C5710860253C09E3005B3A0C /* JobsPullListAutoSizeView in Resources */,
 				C59B98EA2526DE270039B485 /* Assets.xcassets in Resources */,
 				C59B98E52526DE260039B485 /* Main.storyboard in Resources */,
-				C59B9D382526E4580039B485 /* Others.bundle in Resources */,
 				C5710876253C09E3005B3A0C /* green_lottie_tab_home.json in Resources */,
 				C5B8552E252B448200890A66 /* 扫描.png in Resources */,
 				C5710871253C09E3005B3A0C /* 主页.json in Resources */,
 				C59B9CA02526E3F10039B485 /* 验证码按钮单例封装 in Resources */,
+				C56E42FD254719F100B9F555 /* ⚽️PicResource in Resources */,
 				C5710883253C09E3005B3A0C /* record_change.json in Resources */,
 				C59B99982526E0A50039B485 /* ZZCircleProgress.bundle in Resources */,
 				C5633214252AE88A00699392 /* 垃圾箱.png in Resources */,
