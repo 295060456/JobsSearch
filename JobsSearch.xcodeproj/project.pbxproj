@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		546D0F8992EF2B75337A28D6 /* Pods_JobsSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1A4CC21A9B0CCE56525A73 /* Pods_JobsSearchUITests.framework */; };
 		B1FCA2073A31A5D9A5BF4BB0 /* Pods_JobsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */; };
-		C522D00C253464C5006A822F /* HoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C522D006253464C5006A822F /* HoveringHeaderView.m */; };
-		C522D00D253464C5006A822F /* NonHoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C522D00A253464C5006A822F /* NonHoveringHeaderView.m */; };
-		C522D00E253464C5006A822F /* UITableViewHeaderFooterView+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C522D00B253464C5006A822F /* UITableViewHeaderFooterView+Attribute.m */; };
 		C546C45F252C2BF3003694FF /* JobsSearchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C45E252C2BF3003694FF /* JobsSearchTableView.m */; };
 		C546C487252C3979003694FF /* JobsSearchResultDataListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C486252C3979003694FF /* JobsSearchResultDataListTBVCell.m */; };
 		C546C48D252C3B45003694FF /* JobsSearchResultDataListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C48C252C3B45003694FF /* JobsSearchResultDataListView.m */; };
@@ -71,6 +68,8 @@
 		C576705B2546B97700C382C8 /* UIViewController+TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57670582546B97700C382C8 /* UIViewController+TZImagePickerController.m */; };
 		C576705C2546B97700C382C8 /* UIViewController+TZImagePickerControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57670592546B97700C382C8 /* UIViewController+TZImagePickerControllerDelegate.m */; };
 		C57F0D2C253337140080EEF0 /* NSObject+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */; };
+		C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C5850A5925483D0D001E6676 /* ViewForTableViewHeader.m */; };
+		C5850A5F25483D0D001E6676 /* ViewForTableViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C5850A5C25483D0D001E6676 /* ViewForTableViewFooter.m */; };
 		C5914C0125384E61007777A6 /* UIViewController+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BE425384E5E007777A6 /* UIViewController+Shake.m */; };
 		C5914C0225384E61007777A6 /* UIViewController+GifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BE625384E5E007777A6 /* UIViewController+GifImageView.m */; };
 		C5914C0525384E61007777A6 /* UIViewController+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BF025384E5F007777A6 /* UIViewController+BRPickerView.m */; };
@@ -239,9 +238,7 @@
 		C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9D9E2526EC070039B485 /* JobsSearchVC.m */; };
 		C59B9DDD2526EF5A0039B485 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B9DDC2526EF5A0039B485 /* ZYTextField.bundle */; };
 		C59B9F132526F56E0039B485 /* JobsSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9F122526F56E0039B485 /* JobsSearchBar.m */; };
-		C59BA07E252710CF0039B485 /* 是否取消悬停 in Resources */ = {isa = PBXBuildFile; fileRef = C59BA077252710CF0039B485 /* 是否取消悬停 */; };
-		C59BA0A6252711260039B485 /* JobsSearchHoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA0A5252711260039B485 /* JobsSearchHoveringHeaderView.m */; };
-		C59BA0B62527166F0039B485 /* JobsSearchNonHoveringHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA0B52527166F0039B485 /* JobsSearchNonHoveringHeaderView.m */; };
+		C59BA0A6252711260039B485 /* JobsSearchTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA0A5252711260039B485 /* JobsSearchTableViewHeaderView.m */; };
 		C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */; };
 		C59BA1F325271DAE0039B485 /* 删除.png in Resources */ = {isa = PBXBuildFile; fileRef = C59BA1F225271DAE0039B485 /* 删除.png */; };
 		C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEAEA253841B1000E1C5F /* UIView+Extras.m */; };
@@ -287,12 +284,6 @@
 		8A1A4CC21A9B0CCE56525A73 /* Pods_JobsSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6B8F73219A4D790276103 /* Pods-JobsSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchTests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchTests/Pods-JobsSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A84ECDA1DF94EA70BE0F2CA4 /* Pods-JobsSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch/Pods-JobsSearch.debug.xcconfig"; sourceTree = "<group>"; };
-		C522D004253464C5006A822F /* UITableViewHeaderFooterView+Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewHeaderFooterView+Attribute.h"; sourceTree = "<group>"; };
-		C522D006253464C5006A822F /* HoveringHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoveringHeaderView.m; sourceTree = "<group>"; };
-		C522D007253464C5006A822F /* HoveringHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoveringHeaderView.h; sourceTree = "<group>"; };
-		C522D009253464C5006A822F /* NonHoveringHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonHoveringHeaderView.h; sourceTree = "<group>"; };
-		C522D00A253464C5006A822F /* NonHoveringHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonHoveringHeaderView.m; sourceTree = "<group>"; };
-		C522D00B253464C5006A822F /* UITableViewHeaderFooterView+Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewHeaderFooterView+Attribute.m"; sourceTree = "<group>"; };
 		C546C3A5252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
@@ -388,6 +379,10 @@
 		C57670592546B97700C382C8 /* UIViewController+TZImagePickerControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TZImagePickerControllerDelegate.m"; sourceTree = "<group>"; };
 		C57F0D2A253337140080EEF0 /* NSObject+OpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OpenURL.h"; sourceTree = "<group>"; };
 		C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OpenURL.m"; sourceTree = "<group>"; };
+		C5850A5925483D0D001E6676 /* ViewForTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewForTableViewHeader.m; sourceTree = "<group>"; };
+		C5850A5A25483D0D001E6676 /* ViewForTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewForTableViewHeader.h; sourceTree = "<group>"; };
+		C5850A5C25483D0D001E6676 /* ViewForTableViewFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewForTableViewFooter.m; sourceTree = "<group>"; };
+		C5850A5D25483D0D001E6676 /* ViewForTableViewFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewForTableViewFooter.h; sourceTree = "<group>"; };
 		C5914BE425384E5E007777A6 /* UIViewController+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Shake.m"; sourceTree = "<group>"; };
 		C5914BE625384E5E007777A6 /* UIViewController+GifImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GifImageView.m"; sourceTree = "<group>"; };
 		C5914BE725384E5E007777A6 /* UIViewController+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Shake.h"; sourceTree = "<group>"; };
@@ -725,11 +720,8 @@
 		C59B9DDC2526EF5A0039B485 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
 		C59B9F112526F56E0039B485 /* JobsSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchBar.h; sourceTree = "<group>"; };
 		C59B9F122526F56E0039B485 /* JobsSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchBar.m; sourceTree = "<group>"; };
-		C59BA077252710CF0039B485 /* 是否取消悬停 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "是否取消悬停"; sourceTree = "<group>"; };
-		C59BA0A4252711260039B485 /* JobsSearchHoveringHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchHoveringHeaderView.h; sourceTree = "<group>"; };
-		C59BA0A5252711260039B485 /* JobsSearchHoveringHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchHoveringHeaderView.m; sourceTree = "<group>"; };
-		C59BA0B42527166F0039B485 /* JobsSearchNonHoveringHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchNonHoveringHeaderView.h; sourceTree = "<group>"; };
-		C59BA0B52527166F0039B485 /* JobsSearchNonHoveringHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchNonHoveringHeaderView.m; sourceTree = "<group>"; };
+		C59BA0A4252711260039B485 /* JobsSearchTableViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchTableViewHeaderView.h; sourceTree = "<group>"; };
+		C59BA0A5252711260039B485 /* JobsSearchTableViewHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchTableViewHeaderView.m; sourceTree = "<group>"; };
 		C59BA129252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchShowHistoryDataTBVCell.h; sourceTree = "<group>"; };
 		C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchShowHistoryDataTBVCell.m; sourceTree = "<group>"; };
 		C59BA1F225271DAE0039B485 /* 删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除.png"; sourceTree = "<group>"; };
@@ -796,24 +788,6 @@
 				8A1A4CC21A9B0CCE56525A73 /* Pods_JobsSearchUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C522D005253464C5006A822F /* 悬停 */ = {
-			isa = PBXGroup;
-			children = (
-				C522D006253464C5006A822F /* HoveringHeaderView.m */,
-				C522D007253464C5006A822F /* HoveringHeaderView.h */,
-			);
-			path = "悬停";
-			sourceTree = "<group>";
-		};
-		C522D008253464C5006A822F /* 不悬停 */ = {
-			isa = PBXGroup;
-			children = (
-				C522D009253464C5006A822F /* NonHoveringHeaderView.h */,
-				C522D00A253464C5006A822F /* NonHoveringHeaderView.m */,
-			);
-			path = "不悬停";
 			sourceTree = "<group>";
 		};
 		C546C39E252C21F0003694FF /* FDFullscreenPopGesture */ = {
@@ -1092,6 +1066,33 @@
 				C57670542546B97700C382C8 /* UIViewController+TZLocationManager.m */,
 			);
 			path = "UIViewController+TZImagePickerController";
+			sourceTree = "<group>";
+		};
+		C5850A5725483D0D001E6676 /* UITableViewHeaderFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				C5850A5825483D0D001E6676 /* ViewForTableViewHeader */,
+				C5850A5B25483D0D001E6676 /* ViewForTableViewFooter */,
+			);
+			path = UITableViewHeaderFooterView;
+			sourceTree = "<group>";
+		};
+		C5850A5825483D0D001E6676 /* ViewForTableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C5850A5925483D0D001E6676 /* ViewForTableViewHeader.m */,
+				C5850A5A25483D0D001E6676 /* ViewForTableViewHeader.h */,
+			);
+			path = ViewForTableViewHeader;
+			sourceTree = "<group>";
+		};
+		C5850A5B25483D0D001E6676 /* ViewForTableViewFooter */ = {
+			isa = PBXGroup;
+			children = (
+				C5850A5C25483D0D001E6676 /* ViewForTableViewFooter.m */,
+				C5850A5D25483D0D001E6676 /* ViewForTableViewFooter.h */,
+			);
+			path = ViewForTableViewFooter;
 			sourceTree = "<group>";
 		};
 		C59B98CE2526DE260039B485 = {
@@ -1392,11 +1393,11 @@
 		C59B9A212526E36F0039B485 /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C5850A5725483D0D001E6676 /* UITableViewHeaderFooterView */,
 				C57278F8254098AA002373D7 /* UINavigationBar */,
 				C57278FB254098AA002373D7 /* UINavigationController */,
 				C55AF59A253C49CF00C558C4 /* UICollectionViewCell */,
 				C5B47FA8252A12A500387F47 /* UILabel */,
-				C59B9A8F2526E3E10039B485 /* 👌UITableViewHeaderFooterView 用作基类 */,
 				C59B9A702526E3E10039B485 /* CALayer */,
 				C59B9A942526E3E10039B485 /* NSArray */,
 				C59B9A2D2526E3E00039B485 /* NSObject */,
@@ -1644,18 +1645,6 @@
 				C59B9A8E2526E3E10039B485 /* NSString+Extras.h */,
 			);
 			path = NSString;
-			sourceTree = "<group>";
-		};
-		C59B9A8F2526E3E10039B485 /* 👌UITableViewHeaderFooterView 用作基类 */ = {
-			isa = PBXGroup;
-			children = (
-				C59BA077252710CF0039B485 /* 是否取消悬停 */,
-				C522D008253464C5006A822F /* 不悬停 */,
-				C522D005253464C5006A822F /* 悬停 */,
-				C522D004253464C5006A822F /* UITableViewHeaderFooterView+Attribute.h */,
-				C522D00B253464C5006A822F /* UITableViewHeaderFooterView+Attribute.m */,
-			);
-			path = "👌UITableViewHeaderFooterView 用作基类";
 			sourceTree = "<group>";
 		};
 		C59B9A942526E3E10039B485 /* NSArray */ = {
@@ -2226,10 +2215,8 @@
 			isa = PBXGroup;
 			children = (
 				C5633213252AE88A00699392 /* 垃圾箱.png */,
-				C59BA0A4252711260039B485 /* JobsSearchHoveringHeaderView.h */,
-				C59BA0A5252711260039B485 /* JobsSearchHoveringHeaderView.m */,
-				C59BA0B42527166F0039B485 /* JobsSearchNonHoveringHeaderView.h */,
-				C59BA0B52527166F0039B485 /* JobsSearchNonHoveringHeaderView.m */,
+				C59BA0A4252711260039B485 /* JobsSearchTableViewHeaderView.h */,
+				C59BA0A5252711260039B485 /* JobsSearchTableViewHeaderView.m */,
 			);
 			path = JobsSearchHeaderFooterView;
 			sourceTree = "<group>";
@@ -2466,7 +2453,6 @@
 				C571087B253C09E3005B3A0C /* 社区.json in Resources */,
 				C59B9CC92526E3F10039B485 /* Sound.wav in Resources */,
 				C5710884253C09E3005B3A0C /* tab_message_animate.json in Resources */,
-				C59BA07E252710CF0039B485 /* 是否取消悬停 in Resources */,
 				C59B9AEF2526E3E10039B485 /* 专治UITableView相应链断裂 in Resources */,
 				C5B47F782529F7B300387F47 /* 放大镜.png in Resources */,
 				C59B998E2526E0A50039B485 /* 手动集成 SDWebImage_WebP in Resources */,
@@ -2646,6 +2632,7 @@
 				C59B9B082526E3E10039B485 /* UIView+Chain.m in Sources */,
 				C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */,
 				C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */,
+				C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */,
 				C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */,
 				C59B99992526E0A50039B485 /* ZZCountingLabel.m in Sources */,
 				C59B9CCB2526E3F10039B485 /* NSTimerManager.m in Sources */,
@@ -2669,14 +2656,14 @@
 				C55B29BE253426870038E50C /* SuspendLab.m in Sources */,
 				C59B9C942526E3F10039B485 /* ZBURLRequest.m in Sources */,
 				C59B9D6B2526E59E0039B485 /* ViewController@1.m in Sources */,
-				C59BA0A6252711260039B485 /* JobsSearchHoveringHeaderView.m in Sources */,
+				C59BA0A6252711260039B485 /* JobsSearchTableViewHeaderView.m in Sources */,
 				C59B9CAB2526E3F10039B485 /* BWItemModel.m in Sources */,
+				C5850A5F25483D0D001E6676 /* ViewForTableViewFooter.m in Sources */,
 				C59B9B012526E3E10039B485 /* ZYTextField.m in Sources */,
 				C59B998B2526E0A50039B485 /* BRAddressModel.m in Sources */,
 				C59B9CB42526E3F10039B485 /* JhtBannerView.m in Sources */,
 				C59B9AEE2526E3E10039B485 /* UITableView+XSAnimationKit.m in Sources */,
 				C59B99942526E0A50039B485 /* NSImage+WebCache.m in Sources */,
-				C59BA0B62527166F0039B485 /* JobsSearchNonHoveringHeaderView.m in Sources */,
 				C59B9CCD2526E3F10039B485 /* Nanosecond_TimerManager.m in Sources */,
 				C59B99912526E0A50039B485 /* UIImage+WebP_Diff.m in Sources */,
 				C5914C0A25384E61007777A6 /* UIViewController+MJRefresh.m in Sources */,
@@ -2741,7 +2728,6 @@
 				C59B9C8C2526E3F10039B485 /* CustomerGPUImagePlayerVC.m in Sources */,
 				C59B9C9E2526E3F10039B485 /* UIDevice+XMUtils.m in Sources */,
 				C59B99952526E0A50039B485 /* SDWebImageGIFCoder.m in Sources */,
-				C522D00D253464C5006A822F /* NonHoveringHeaderView.m in Sources */,
 				C59B9CCF2526E3F10039B485 /* ECAuthorizationTools.m in Sources */,
 				C546C4A3252C59D7003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
 				C59B98DC2526DE260039B485 /* AppDelegate.m in Sources */,
@@ -2781,14 +2767,12 @@
 				C59B9AFF2526E3E10039B485 /* HQTextField.m in Sources */,
 				C59B998A2526E0A50039B485 /* NSBundle+BRPickerView.m in Sources */,
 				C5710867253C09E3005B3A0C /* TLTabBarAnimation.m in Sources */,
-				C522D00E253464C5006A822F /* UITableViewHeaderFooterView+Attribute.m in Sources */,
 				C59B9B072526E3E10039B485 /* UITextField+Extend.m in Sources */,
 				C59B9AD22526E3E10039B485 /* UIImage+YBGIF.m in Sources */,
 				C59B998F2526E0A50039B485 /* SDWebImageFrame.m in Sources */,
 				C59B9ACB2526E3E10039B485 /* NSObject+SPAlertController.m in Sources */,
 				C59B9ACF2526E3E10039B485 /* NSObject+Extras.m in Sources */,
 				C576705B2546B97700C382C8 /* UIViewController+TZImagePickerController.m in Sources */,
-				C522D00C253464C5006A822F /* HoveringHeaderView.m in Sources */,
 				C5C244552541A8A600CB55F5 /* DataCollectionViewCell.m in Sources */,
 				C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */,
 				C59B9CBD2526E3F10039B485 /* BaseGPUImageView.m in Sources */,

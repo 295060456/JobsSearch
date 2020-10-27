@@ -43,7 +43,9 @@
 #import "UIViewController+TZImagePickerController.h"
 #import "UIViewController+TZImagePickerControllerDelegate.h"
 #import "UIViewController+TZLocationManager.h"
-//#import "UIViewController+NavigationBarHiddenMgr.h"
+//UITableViewHeaderFooterView
+#import "ViewForTableViewFooter.h"
+#import "ViewForTableViewHeader.h"
 //UINavigationController
 #import "BaseNavigationVC.h"
 //UITextField

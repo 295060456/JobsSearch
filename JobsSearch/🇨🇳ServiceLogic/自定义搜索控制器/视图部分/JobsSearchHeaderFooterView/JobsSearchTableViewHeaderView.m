@@ -5,9 +5,9 @@
 //  Created by Jobs on 2020/10/2.
 //
 
-#import "JobsSearchHoveringHeaderView.h"
+#import "JobsSearchTableViewHeaderView.h"
 
-@interface JobsSearchHoveringHeaderView()
+@interface JobsSearchTableViewHeaderView()
 
 @property(nonatomic,assign)BOOL isOK;
 @property(nonatomic,strong)UIButton *delBtn;
@@ -15,7 +15,7 @@
 
 @end
 
-@implementation JobsSearchHoveringHeaderView
+@implementation JobsSearchTableViewHeaderView
 
 -(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
                               withData:(id)data{

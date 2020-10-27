@@ -8,8 +8,7 @@
 #import "JobsSearchVC.h"
 
 #import "JobsSearchBar.h"
-#import "JobsSearchHoveringHeaderView.h"
-#import "JobsSearchNonHoveringHeaderView.h"
+#import "JobsSearchTableViewHeaderView.h"
 #import "JobsSearchShowHistoryDataTBVCell.h"//搜索历史
 #import "JobsSearchShowHotwordsTBVCell.h"//热门搜索
 #import "JobsSearchTableView.h"
@@ -286,50 +285,39 @@ heightForHeaderInSection:(NSInteger)section{
 
 -(UIView *)tableView:(UITableView *)tableView
 viewForHeaderInSection:(NSInteger)section{
+    JobsSearchTableViewHeaderView *header = [[JobsSearchTableViewHeaderView alloc] initWithReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderView.class)
+                                                                                                  withData:self.sectionTitleMutArr[section]];
     
-    if (self.isHoveringHeaderView) {
-        JobsSearchHoveringHeaderView *header = [[JobsSearchHoveringHeaderView alloc] initWithReuseIdentifier:NSStringFromClass(JobsSearchHoveringHeaderView.class)
-                                                                                                    withData:self.sectionTitleMutArr[section]];
-        
-        if (section == 1) {
-            header.isShowDelBtn = YES;
-            @weakify(self)
-            [header actionBlockJobsSearchHoveringHeaderView:^(id data) {
-                @strongify(self)
-                //删除历史过往记录
-                [self.historySearchMutArr removeAllObjects];
-                SetUserDefaultKeyWithObject(@"JobsSearchHistoryData", self.historySearchMutArr);
-                UserDefaultSynchronize;
-                
-                if (self.historySearchMutArr.count == 0) {
-                    [self.sectionTitleMutArr removeAllObjects];
-                    self->_sectionTitleMutArr = nil;
-                }
-                
-                [self.tableView reloadData];
-            }];
-        }
-        
+    if (section == 1) {
+        header.isShowDelBtn = YES;
         @weakify(self)
-        [header setHoveringHeaderViewBlock:^(id data) {
+        [header actionBlockJobsSearchHoveringHeaderView:^(id data) {
             @strongify(self)
-            [self.view endEditing:YES];
-            [self.tableView ww_foldSection:section fold:![self.tableView ww_isSectionFolded:section]];//设置可折叠
+            //删除历史过往记录
+            [self.historySearchMutArr removeAllObjects];
+            SetUserDefaultKeyWithObject(@"JobsSearchHistoryData", self.historySearchMutArr);
+            UserDefaultSynchronize;
+            
+            if (self.historySearchMutArr.count == 0) {
+                [self.sectionTitleMutArr removeAllObjects];
+                self->_sectionTitleMutArr = nil;
+            }
+            
+            [self.tableView reloadData];
         }];
-        return header;
-    }else{
-        JobsSearchNonHoveringHeaderView *header = [[JobsSearchNonHoveringHeaderView alloc] initWithReuseIdentifier:NSStringFromClass(JobsSearchNonHoveringHeaderView.class)
-                                                                                                          withData:self.sectionTitleMutArr[section]];
-        @weakify(self)
-        [header setNonHoveringHeaderViewBlock:^(id data) {
-            @strongify(self)
-            [self.view endEditing:YES];
-        }];
-        return header;
     }
+
+    self.scrollViewClass = JobsSearchTableView.class;//这一属性决定UITableViewHeaderFooterView是否悬停
+    
+    @weakify(self)
+    [header actionBlockViewForTableViewHeader:^(id data) {
+        @strongify(self)
+        [self.view endEditing:YES];
+        [self.tableView ww_foldSection:section fold:![self.tableView ww_isSectionFolded:section]];//设置可折叠
+    }];return header;
     
 //    {
-//        Class headerClass = self.isHoveringHeaderView ? JobsSearchHoveringHeaderView.class : JobsSearchNonHoveringHeaderView.class;
+//        Class headerClass = self.isHoveringHeaderView ? JobsSearchHoveringHeaderView.class : JobsSearchTableViewHeaderView.class;
 //        UIView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:NSStringFromClass(headerClass)];
 //        return header;
 //    }
@@ -372,6 +360,10 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         _tableView.tableHeaderView = self.jobsSearchBar;
         _tableView.tableFooterView = UIView.new;
         _tableView.ww_foldable = YES;//设置可折叠
+        
+        [_tableView registerClass:JobsSearchTableViewHeaderView.class
+forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderView.class)];
+        
         @weakify(self)
         [_tableView actionBlockJobsSearchTableView:^(id data) {
             @strongify(self)
