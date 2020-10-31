@@ -12,13 +12,13 @@
 @end
 
 @implementation CollectionViewCell
-
-
--(void)shadowCell{
-    self.layer.shadowColor = [UIColor darkGrayColor].CGColor;
-    self.layer.shadowOffset = CGSizeMake(10, 10);
-    self.layer.shadowRadius = 8.0f;
-    self.layer.shadowOpacity = 0.7f;
+//由具体的子类进行覆写
+-(void)richElementsInCellWithModel:(id _Nullable)model{
+    
+}
+//由具体的子类进行覆写
++(CGSize)cellSizeWithModel:(id _Nullable)model{
+    return CGSizeZero;
 }
 
 @end

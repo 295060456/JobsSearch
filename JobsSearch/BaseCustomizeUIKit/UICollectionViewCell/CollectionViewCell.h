@@ -11,7 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CollectionViewCell : UICollectionViewCell
 
--(void)shadowCell;
+@property(nonatomic,strong)NSIndexPath *idxPath;
+
+-(void)richElementsInCellWithModel:(id _Nullable)model;//由具体的子类进行覆写
++(CGSize)cellSizeWithModel:(id _Nullable)model;//由具体的子类进行覆写
 
 @end
 
