@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
                               withData:(id _Nullable)data;
 
--(void)actionBlockJobsSearchHoveringHeaderView:(MKDataBlock)jobsSearchHoveringHeaderViewBlock;
+-(void)actionBlockJobsSearchHoveringHeaderView:(MKDataBlock _Nullable)jobsSearchHoveringHeaderViewBlock;
 
 @end
 

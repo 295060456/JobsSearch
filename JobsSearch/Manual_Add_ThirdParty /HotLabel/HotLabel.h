@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIColor *btnTitleColor;//按钮的字体颜色
 @property(nonatomic,strong)NSArray *titleArr;
 
--(void)actionBlockHotLabel:(MKDataBlock)hotLabelBlock;//点击事件传递
+-(void)actionBlockHotLabel:(MKDataBlock _Nullable)hotLabelBlock;//点击事件传递
 -(CGFloat)heightForHotLabel;//约束走完以后，计算得出的高，用于外界自适应
 
 @end

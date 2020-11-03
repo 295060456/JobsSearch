@@ -23,7 +23,7 @@
     }
 }
 
--(void)actionMKGPUImageViewBlock:(MKDataBlock)MKGPUImageViewBlock{
+-(void)actionMKGPUImageViewBlock:(MKDataBlock _Nullable)MKGPUImageViewBlock{
     self.MKGPUImageViewBlock = MKGPUImageViewBlock;
 }
 

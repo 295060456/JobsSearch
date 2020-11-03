@@ -137,7 +137,7 @@ replacementString:(NSString *)string{
     return YES;
 }
 
--(void)actionBlockJobsSearchBar:(TwoDataBlock)jobsSearchBarBlock{
+-(void)actionBlockJobsSearchBar:(TwoDataBlock _Nullable)jobsSearchBarBlock{
     self.jobsSearchBarBlock = jobsSearchBarBlock;
 }
 #pragma mark —— lazyLoad

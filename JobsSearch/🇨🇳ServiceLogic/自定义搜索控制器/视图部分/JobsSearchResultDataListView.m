@@ -99,7 +99,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     }];return cell;
 }
 
--(void)actionBlockJobsSearchResultDataListView:(MKDataBlock)jobsSearchResultDataListViewBlock{
+-(void)actionBlockJobsSearchResultDataListView:(MKDataBlock _Nullable)jobsSearchResultDataListViewBlock{
     self.jobsSearchResultDataListViewBlock = jobsSearchResultDataListViewBlock;
 }
 

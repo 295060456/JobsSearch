@@ -39,7 +39,7 @@
     }
 }
 
--(void)actionBlockJobsSearchHoveringHeaderView:(MKDataBlock)jobsSearchHoveringHeaderViewBlock{
+-(void)actionBlockJobsSearchHoveringHeaderView:(MKDataBlock _Nullable)jobsSearchHoveringHeaderViewBlock{
     self.jobsSearchHoveringHeaderViewBlock = jobsSearchHoveringHeaderViewBlock;
 }
 #pragma mark —— lazyLoad

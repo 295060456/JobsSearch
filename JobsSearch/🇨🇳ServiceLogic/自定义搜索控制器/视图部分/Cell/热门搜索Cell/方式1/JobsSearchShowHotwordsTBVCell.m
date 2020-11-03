@@ -32,7 +32,7 @@
     self.hotLabel.titleArr = (NSArray *)model;
 }
 //点击了哪个Btn？
--(void)actionBlockJobsSearchShowHotwordsTBVCell:(MKDataBlock)jobsSearchShowHotwordsTBVCellBlock{
+-(void)actionBlockJobsSearchShowHotwordsTBVCell:(MKDataBlock _Nullable)jobsSearchShowHotwordsTBVCellBlock{
     self.jobsSearchShowHotwordsTBVCellBlock = jobsSearchShowHotwordsTBVCellBlock;
 }
 #pragma mark —— lazyLoad

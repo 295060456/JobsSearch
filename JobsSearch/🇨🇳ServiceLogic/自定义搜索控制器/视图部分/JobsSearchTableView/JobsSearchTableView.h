@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JobsSearchTableView : UITableView
 
--(void)actionBlockJobsSearchTableView:(MKDataBlock)jobsSearchTableViewBlock;//tableView 的点击事件
+-(void)actionBlockJobsSearchTableView:(MKDataBlock _Nullable)jobsSearchTableViewBlock;//tableView 的点击事件
 
 @end
 

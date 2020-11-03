@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)ZYTextField *tf;
 @property(nonatomic,strong)UIButton *cancelBtn;
 
--(void)actionBlockJobsSearchBar:(TwoDataBlock)jobsSearchBarBlock;//事件传递
+-(void)actionBlockJobsSearchBar:(TwoDataBlock _Nullable)jobsSearchBarBlock;//事件传递
 
 @end
 

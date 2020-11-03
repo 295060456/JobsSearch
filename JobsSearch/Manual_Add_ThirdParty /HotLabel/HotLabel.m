@@ -107,7 +107,7 @@
     return self.hotLabelHeight;
 }
 
--(void)actionBlockHotLabel:(MKDataBlock)hotLabelBlock{
+-(void)actionBlockHotLabel:(MKDataBlock _Nullable)hotLabelBlock{
     _hotLabelBlock = hotLabelBlock;
 }
 #pragma mark —— lazyLoad

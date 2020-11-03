@@ -42,7 +42,7 @@
     return YES;
 }
 //cell 点击事件方法
--(void)actionBlockJobsSearchResultDataListTBVCell:(MKDataBlock)jobsSearchResultDataListTBVCellBlock{
+-(void)actionBlockJobsSearchResultDataListTBVCell:(MKDataBlock _Nullable)jobsSearchResultDataListTBVCellBlock{
     self.jobsSearchResultDataListTBVCellBlock = jobsSearchResultDataListTBVCellBlock;
 }
 /*  主承载view实现了 touchesBegan 或者手势响应

@@ -32,7 +32,7 @@
     return YES;
 }
 //tableView 的点击事件
--(void)actionBlockJobsSearchTableView:(MKDataBlock)jobsSearchTableViewBlock{
+-(void)actionBlockJobsSearchTableView:(MKDataBlock _Nullable)jobsSearchTableViewBlock{
     self.jobsSearchTableViewBlock = jobsSearchTableViewBlock;
 }
 #pragma mark —— lazyLoad
