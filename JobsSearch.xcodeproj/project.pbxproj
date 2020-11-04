@@ -21,6 +21,7 @@
 		C546C48D252C3B45003694FF /* JobsSearchResultDataListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C48C252C3B45003694FF /* JobsSearchResultDataListView.m */; };
 		C546C49F252C59D4003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */; };
 		C546C4A3252C59D7003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
+		C54B3C6D25526000003BE195 /* UIFont+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3C6C25526000003BE195 /* UIFont+Extras.m */; };
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
 		C55B29BC253426870038E50C /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55B29B4253426870038E50C /* SuspendView.m */; };
@@ -199,7 +200,6 @@
 		C59B9C9F2526E3F10039B485 /* UIButton+CountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BCB2526E3F00039B485 /* UIButton+CountDownBtn.m */; };
 		C59B9CA02526E3F10039B485 /* 验证码按钮单例封装 in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BCC2526E3F00039B485 /* 验证码按钮单例封装 */; };
 		C59B9CA12526E3F10039B485 /* CountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BCF2526E3F00039B485 /* CountDownBtn.m */; };
-		C59B9CAA2526E3F10039B485 /* ShowAvailableFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BDD2526E3F00039B485 /* ShowAvailableFont.m */; };
 		C59B9CAB2526E3F10039B485 /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BDF2526E3F00039B485 /* BWItemModel.m */; };
 		C59B9CAC2526E3F10039B485 /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BE02526E3F00039B485 /* BWShareView.m */; };
 		C59B9CAD2526E3F10039B485 /* 分享控件的用法 in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BE12526E3F00039B485 /* 分享控件的用法 */; };
@@ -317,6 +317,8 @@
 		C5470F7425309C8C00651ACE /* MacroDef_Func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Func.h; sourceTree = "<group>"; };
 		C5470F7525309C8C00651ACE /* MacroDef_Cor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Cor.h; sourceTree = "<group>"; };
 		C5470F7625309C8D00651ACE /* MacroDef_Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Size.h; sourceTree = "<group>"; };
+		C54B3C6B25526000003BE195 /* UIFont+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extras.h"; sourceTree = "<group>"; };
+		C54B3C6C25526000003BE195 /* UIFont+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extras.m"; sourceTree = "<group>"; };
 		C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RBCLikeButton.bundle; sourceTree = "<group>"; };
 		C55AABA72532B2F800335ACC /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
@@ -653,8 +655,6 @@
 		C59B9BCD2526E3F00039B485 /* CountDownBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownBtn.h; sourceTree = "<group>"; };
 		C59B9BCE2526E3F00039B485 /* UIButton+CountDownBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDownBtn.h"; sourceTree = "<group>"; };
 		C59B9BCF2526E3F00039B485 /* CountDownBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownBtn.m; sourceTree = "<group>"; };
-		C59B9BDC2526E3F00039B485 /* ShowAvailableFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAvailableFont.h; sourceTree = "<group>"; };
-		C59B9BDD2526E3F00039B485 /* ShowAvailableFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAvailableFont.m; sourceTree = "<group>"; };
 		C59B9BDF2526E3F00039B485 /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
 		C59B9BE02526E3F00039B485 /* BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWShareView.m; sourceTree = "<group>"; };
 		C59B9BE12526E3F00039B485 /* 分享控件的用法 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "分享控件的用法"; sourceTree = "<group>"; };
@@ -922,6 +922,15 @@
 				C5470F7325309C8C00651ACE /* MacroDef_Sys.h */,
 			);
 			path = "各项宏定义";
+			sourceTree = "<group>";
+		};
+		C54B3C6A25526000003BE195 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				C54B3C6B25526000003BE195 /* UIFont+Extras.h */,
+				C54B3C6C25526000003BE195 /* UIFont+Extras.m */,
+			);
+			path = UIFont;
 			sourceTree = "<group>";
 		};
 		C55B29B3253426870038E50C /* SuspendView */ = {
@@ -1464,6 +1473,7 @@
 		C59B9A212526E36F0039B485 /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C54B3C6A25526000003BE195 /* UIFont */,
 				C530AFFF254D9A8000EDEDC8 /* UICollectionReusableView 用作基类 */,
 				C530B002254D9A8100EDEDC8 /* UICollectionView */,
 				C530AFFC254D9A8000EDEDC8 /* UICollectionViewCell */,
@@ -1511,7 +1521,6 @@
 				C59B9BF32526E3F00039B485 /* 网络数据实时监测 */,
 				C59B9BF02526E3F00039B485 /* 文件夹操作 */,
 				C59B9C3F2526E3F10039B485 /* ECAuthorizationTools */,
-				C59B9BDB2526E3F00039B485 /* iOS打印全员字体 */,
 				C59B9C452526E3F10039B485 /* LBLaunchImageAd. */,
 				C59B9C292526E3F00039B485 /* SoundBtn */,
 				C59B9BE62526E3F00039B485 /* Suspend */,
@@ -1990,15 +1999,6 @@
 				C55AABA82532B2F800335ACC /* RBCLikeButton.m */,
 			);
 			path = "高仿抖音点赞动画";
-			sourceTree = "<group>";
-		};
-		C59B9BDB2526E3F00039B485 /* iOS打印全员字体 */ = {
-			isa = PBXGroup;
-			children = (
-				C59B9BDC2526E3F00039B485 /* ShowAvailableFont.h */,
-				C59B9BDD2526E3F00039B485 /* ShowAvailableFont.m */,
-			);
-			path = "iOS打印全员字体";
 			sourceTree = "<group>";
 		};
 		C59B9BDE2526E3F00039B485 /* 分享控件 */ = {
@@ -2753,7 +2753,6 @@
 				C59B9CE12526E4110039B485 /* ViewController@5.m in Sources */,
 				C5AEEAED253841B1000E1C5F /* UIView+Animation.m in Sources */,
 				C59B9C8D2526E3F10039B485 /* CustomerAVPlayerView.m in Sources */,
-				C59B9CAA2526E3F10039B485 /* ShowAvailableFont.m in Sources */,
 				C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */,
 				C571086B253C09E3005B3A0C /* CustomTabBar.m in Sources */,
 				C5914C0225384E61007777A6 /* UIViewController+GifImageView.m in Sources */,
@@ -2835,6 +2834,7 @@
 				C5710867253C09E3005B3A0C /* TLTabBarAnimation.m in Sources */,
 				C59B9B072526E3E10039B485 /* UITextField+Extend.m in Sources */,
 				C59B9AD22526E3E10039B485 /* UIImage+YBGIF.m in Sources */,
+				C54B3C6D25526000003BE195 /* UIFont+Extras.m in Sources */,
 				C59B998F2526E0A50039B485 /* SDWebImageFrame.m in Sources */,
 				C530B00C254D9A8100EDEDC8 /* CollectionReusableView.m in Sources */,
 				C59B9ACB2526E3E10039B485 /* NSObject+SPAlertController.m in Sources */,
