@@ -22,6 +22,7 @@
 		C546C49F252C59D4003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */; };
 		C546C4A3252C59D7003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
 		C54B3C6D25526000003BE195 /* UIFont+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3C6C25526000003BE195 /* UIFont+Extras.m */; };
+		C54B3F4C2552979B003BE195 /* UILabel+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3F4B2552979B003BE195 /* UILabel+RichText.m */; };
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
 		C55B29BC253426870038E50C /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55B29B4253426870038E50C /* SuspendView.m */; };
@@ -319,6 +320,8 @@
 		C5470F7625309C8D00651ACE /* MacroDef_Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Size.h; sourceTree = "<group>"; };
 		C54B3C6B25526000003BE195 /* UIFont+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extras.h"; sourceTree = "<group>"; };
 		C54B3C6C25526000003BE195 /* UIFont+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extras.m"; sourceTree = "<group>"; };
+		C54B3F472552979B003BE195 /* UILabel+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RichText.h"; sourceTree = "<group>"; };
+		C54B3F4B2552979B003BE195 /* UILabel+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RichText.m"; sourceTree = "<group>"; };
 		C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RBCLikeButton.bundle; sourceTree = "<group>"; };
 		C55AABA72532B2F800335ACC /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
@@ -2323,6 +2326,8 @@
 		C5B47FA8252A12A500387F47 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				C54B3F472552979B003BE195 /* UILabel+RichText.h */,
+				C54B3F4B2552979B003BE195 /* UILabel+RichText.m */,
 				C5B47FA2252A127A00387F47 /* UILabel+Extra.h */,
 				C5B47FA3252A127A00387F47 /* UILabel+Extra.m */,
 			);
@@ -2663,6 +2668,7 @@
 			files = (
 				C59B9C9F2526E3F10039B485 /* UIButton+CountDownBtn.m in Sources */,
 				C59B997D2526E0A50039B485 /* UIScrollView+GKCategory.m in Sources */,
+				C54B3F4C2552979B003BE195 /* UILabel+RichText.m in Sources */,
 				C59B99852526E0A50039B485 /* NSDate+BRPickerView.m in Sources */,
 				C59B9C8F2526E3F10039B485 /* CustomerAVPlayerVC.m in Sources */,
 				C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */,
