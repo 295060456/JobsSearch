@@ -200,7 +200,6 @@
 		C59B9C9E2526E3F10039B485 /* UIDevice+XMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BC92526E3EF0039B485 /* UIDevice+XMUtils.m */; };
 		C59B9C9F2526E3F10039B485 /* UIButton+CountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BCB2526E3F00039B485 /* UIButton+CountDownBtn.m */; };
 		C59B9CA02526E3F10039B485 /* 验证码按钮单例封装 in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BCC2526E3F00039B485 /* 验证码按钮单例封装 */; };
-		C59B9CA12526E3F10039B485 /* CountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BCF2526E3F00039B485 /* CountDownBtn.m */; };
 		C59B9CAB2526E3F10039B485 /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BDF2526E3F00039B485 /* BWItemModel.m */; };
 		C59B9CAC2526E3F10039B485 /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BE02526E3F00039B485 /* BWShareView.m */; };
 		C59B9CAD2526E3F10039B485 /* 分享控件的用法 in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BE12526E3F00039B485 /* 分享控件的用法 */; };
@@ -331,6 +330,7 @@
 		C55B29B8253426870038E50C /* SuspendBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendBtn.h; sourceTree = "<group>"; };
 		C55B29BA253426870038E50C /* SuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendLab.h; sourceTree = "<group>"; };
 		C55B29BB253426870038E50C /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
+		C562087E2553FFAF00FE435F /* 高度自定义的按钮.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
 		C56E42FC254719F100B9F555 /* ⚽️PicResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "⚽️PicResource"; sourceTree = "<group>"; };
@@ -655,9 +655,7 @@
 		C59B9BC92526E3EF0039B485 /* UIDevice+XMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XMUtils.m"; sourceTree = "<group>"; };
 		C59B9BCB2526E3F00039B485 /* UIButton+CountDownBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CountDownBtn.m"; sourceTree = "<group>"; };
 		C59B9BCC2526E3F00039B485 /* 验证码按钮单例封装 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "验证码按钮单例封装"; sourceTree = "<group>"; };
-		C59B9BCD2526E3F00039B485 /* CountDownBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownBtn.h; sourceTree = "<group>"; };
 		C59B9BCE2526E3F00039B485 /* UIButton+CountDownBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDownBtn.h"; sourceTree = "<group>"; };
-		C59B9BCF2526E3F00039B485 /* CountDownBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownBtn.m; sourceTree = "<group>"; };
 		C59B9BDF2526E3F00039B485 /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
 		C59B9BE02526E3F00039B485 /* BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWShareView.m; sourceTree = "<group>"; };
 		C59B9BE12526E3F00039B485 /* 分享控件的用法 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "分享控件的用法"; sourceTree = "<group>"; };
@@ -1837,6 +1835,7 @@
 		C59B9B932526E3EF0039B485 /* 高度自定义的按钮 */ = {
 			isa = PBXGroup;
 			children = (
+				C562087E2553FFAF00FE435F /* 高度自定义的按钮.md */,
 				C59B9B942526E3EF0039B485 /* UIButton+ImageTitleSpacing.h */,
 				C59B9B952526E3EF0039B485 /* UIButton+ImageTitleSpacing.m */,
 			);
@@ -1985,11 +1984,9 @@
 		C59B9BCA2526E3F00039B485 /* 💰VerifyCodeButton */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9BCB2526E3F00039B485 /* UIButton+CountDownBtn.m */,
 				C59B9BCC2526E3F00039B485 /* 验证码按钮单例封装 */,
-				C59B9BCD2526E3F00039B485 /* CountDownBtn.h */,
+				C59B9BCB2526E3F00039B485 /* UIButton+CountDownBtn.m */,
 				C59B9BCE2526E3F00039B485 /* UIButton+CountDownBtn.h */,
-				C59B9BCF2526E3F00039B485 /* CountDownBtn.m */,
 			);
 			path = "💰VerifyCodeButton";
 			sourceTree = "<group>";
@@ -2752,7 +2749,6 @@
 				C59B9CBA2526E3F10039B485 /* YHGPUImageBeautifyFilter.m in Sources */,
 				C59B9CCA2526E3F10039B485 /* SoundBtn.m in Sources */,
 				C59B998D2526E0A50039B485 /* UIImage+WebP.m in Sources */,
-				C59B9CA12526E3F10039B485 /* CountDownBtn.m in Sources */,
 				C59B997B2526E0A50039B485 /* UINavigationController+GKCategory.m in Sources */,
 				C59B9AE62526E3E10039B485 /* UIView+JHGestureBlock.m in Sources */,
 				C571086D253C09E3005B3A0C /* TabBarItem.m in Sources */,
