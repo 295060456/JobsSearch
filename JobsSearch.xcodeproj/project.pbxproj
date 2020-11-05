@@ -331,6 +331,7 @@
 		C55B29BA253426870038E50C /* SuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendLab.h; sourceTree = "<group>"; };
 		C55B29BB253426870038E50C /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
 		C562087E2553FFAF00FE435F /* 高度自定义的按钮.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
+		C5620C2F25541AC400FE435F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
 		C56E42FC254719F100B9F555 /* ⚽️PicResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "⚽️PicResource"; sourceTree = "<group>"; };
@@ -1179,6 +1180,7 @@
 		C59B98CE2526DE260039B485 = {
 			isa = PBXGroup;
 			children = (
+				C5620C2F25541AC400FE435F /* README.md */,
 				C56E42FC254719F100B9F555 /* ⚽️PicResource */,
 				C59B999E2526E0D50039B485 /* Macro */,
 				C59B99192526E09C0039B485 /* Pods不进去的 */,
