@@ -30,12 +30,13 @@
                  presentationStyle:UIModalPresentationAutomatic
                      requestParams:@{
                          @"Title":@"搜索功能",
-                         @"HotSearchStyle":@(HotSearchStyle_2)
+//                         @"HotSearchStyle":@(HotSearchStyle_2)
+                         @"HotSearchStyle":@(HotSearchStyle_1)
                      }
                            success:^(id data) {
-        if ([data isKindOfClass:JobsSearchVC.class]) {
-            JobsSearchVC *vc = (JobsSearchVC *)data;
-        }
+//        if ([data isKindOfClass:JobsSearchVC.class]) {
+//            JobsSearchVC *vc = (JobsSearchVC *)data;
+//        }
     }
                           animated:YES];
 }

@@ -7,3 +7,12 @@
 2、输入框了里面做了动效
 3、存历史数据用NSUserDefault
 ...
+
+## 精华部分：tableviewcell 高度自适应
+JobsSearchShowHotwordsTBVCell 里面有hotLabel
+JobsSearchShowHotwordsTBVCell 是 UITableViewCell
+
+先走 cellForRowAtIndexPath
+再走 heightForRowAtIndexPath
+走完以后 tableviewcell里面因为有了高度，才开始被撑开，撑开必然调用控件的布局界面的刷新，如果此时tableviewcell里面有控件，需要依据此控件来回馈一个高度值给tableviewcell就不满足系统的生命周期
+我就想到了用通知，得到了高度实时传给VC，然后对tableviewcell的高度进行赋值，然后刷新界面
