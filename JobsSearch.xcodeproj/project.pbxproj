@@ -1465,10 +1465,8 @@
 		C59B9A202526E3680039B485 /* AppDelegate & SceneDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				C59B98DA2526DE260039B485 /* AppDelegate.h */,
-				C59B98DB2526DE260039B485 /* AppDelegate.m */,
-				C59B98DD2526DE260039B485 /* SceneDelegate.h */,
-				C59B98DE2526DE260039B485 /* SceneDelegate.m */,
+				C5C40B40255A71C1002F407A /* AppDelegate */,
+				C5C40B41255A71C8002F407A /* SceneDelegate */,
 			);
 			path = "AppDelegate & SceneDelegate";
 			sourceTree = "<group>";
@@ -2375,6 +2373,24 @@
 				C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */,
 			);
 			path = "方式1";
+			sourceTree = "<group>";
+		};
+		C5C40B40255A71C1002F407A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C59B98DA2526DE260039B485 /* AppDelegate.h */,
+				C59B98DB2526DE260039B485 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C5C40B41255A71C8002F407A /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C59B98DD2526DE260039B485 /* SceneDelegate.h */,
+				C59B98DE2526DE260039B485 /* SceneDelegate.m */,
+			);
+			path = SceneDelegate;
 			sourceTree = "<group>";
 		};
 		DB6EB4965849B35F47ED7CA5 /* Pods */ = {
