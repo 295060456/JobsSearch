@@ -1,26 +1,26 @@
 //
-//  SceneDelegate.m
+//  JobsSearchSceneDelegate.m
 //  DouYin
 //
 //  Created by Jobs on 2020/9/21.
 //
 
-#import "SceneDelegate.h"
-#import "AppDelegate.h"
+#import "JobsSearchSceneDelegate.h"
+#import "JobsSearchAppDelegate.h"
 
 API_AVAILABLE(ios(13.0))
 
-@interface SceneDelegate ()
+@interface JobsSearchSceneDelegate ()
 
 @end
 
-@implementation SceneDelegate
+@implementation JobsSearchSceneDelegate
 
-static SceneDelegate *static_sceneDelegate = nil;
+static JobsSearchSceneDelegate *static_sceneDelegate = nil;
 +(instancetype)sharedInstance{
     @synchronized(self){
         if (!static_sceneDelegate) {
-            static_sceneDelegate = SceneDelegate.new;
+            static_sceneDelegate = JobsSearchSceneDelegate.new;
         }
     }return static_sceneDelegate;
 }
@@ -73,11 +73,11 @@ willConnectToSession:(UISceneSession *)session
     // to restore the scene back to its current state.
 
     // Save changes in the application's managed object context when the application transitions to the background.
-    [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
+    [(JobsSearchAppDelegate *)UIApplication.sharedApplication.delegate saveContext];
 }
 #pragma mark —— lazyLoad
 -(UIWindow *)window{
-    [_window setRootViewController:AppDelegate.sharedInstance.tabbarVC];
+    [_window setRootViewController:JobsSearchAppDelegate.sharedInstance.tabbarVC];
     [_window makeKeyAndVisible];
     return _window;
 }

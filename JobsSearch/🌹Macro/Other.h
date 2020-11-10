@@ -19,7 +19,7 @@
 #import "ViewController@4.h"
 #import "ViewController@5.h"
 
-#import "SceneDelegate.h"
-#import "AppDelegate.h"
+#import "JobsSearchSceneDelegate.h"
+#import "JobsSearchAppDelegate.h"
 
 #endif /* Other_h */

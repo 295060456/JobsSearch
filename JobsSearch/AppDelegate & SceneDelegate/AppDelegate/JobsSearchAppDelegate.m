@@ -1,23 +1,23 @@
 //
-//  AppDelegate.m
+//  JobsSearchAppDelegate.m
 //  DouYin
 //
 //  Created by Jobs on 2020/9/21.
 //
 
-#import "AppDelegate.h"
+#import "JobsSearchAppDelegate.h"
 
-@interface AppDelegate ()
+@interface JobsSearchAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation JobsSearchAppDelegate
 
-static AppDelegate *static_appDelegate = nil;
+static JobsSearchAppDelegate *static_appDelegate = nil;
 +(instancetype)sharedInstance{
     @synchronized(self){
         if (!static_appDelegate) {
-            static_appDelegate = AppDelegate.new;
+            static_appDelegate = JobsSearchAppDelegate.new;
         }
     }return static_appDelegate;
 }

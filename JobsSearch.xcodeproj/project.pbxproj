@@ -87,8 +87,8 @@
 		C5914C0A25384E61007777A6 /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BFA25384E60007777A6 /* UIViewController+MJRefresh.m */; };
 		C5914C0C25384E61007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BFD25384E60007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m */; };
 		C5914C0D25384E61007777A6 /* UIViewController+BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BFE25384E60007777A6 /* UIViewController+BWShareView.m */; };
-		C59B98DC2526DE260039B485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* AppDelegate.m */; };
-		C59B98DF2526DE260039B485 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DE2526DE260039B485 /* SceneDelegate.m */; };
+		C59B98DC2526DE260039B485 /* JobsSearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* JobsSearchAppDelegate.m */; };
+		C59B98DF2526DE260039B485 /* JobsSearchSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DE2526DE260039B485 /* JobsSearchSceneDelegate.m */; };
 		C59B98E52526DE260039B485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59B98E32526DE260039B485 /* Main.storyboard */; };
 		C59B98E82526DE260039B485 /* JobsSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C59B98E62526DE260039B485 /* JobsSearch.xcdatamodeld */; };
 		C59B98EA2526DE270039B485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59B98E92526DE270039B485 /* Assets.xcassets */; };
@@ -425,10 +425,10 @@
 		C5914BFE25384E60007777A6 /* UIViewController+BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BWShareView.m"; sourceTree = "<group>"; };
 		C5914BFF25384E60007777A6 /* UIViewController+BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseVC.h"; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C59B98DA2526DE260039B485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C59B98DB2526DE260039B485 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C59B98DD2526DE260039B485 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		C59B98DE2526DE260039B485 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C59B98DA2526DE260039B485 /* JobsSearchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchAppDelegate.h; sourceTree = "<group>"; };
+		C59B98DB2526DE260039B485 /* JobsSearchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchAppDelegate.m; sourceTree = "<group>"; };
+		C59B98DD2526DE260039B485 /* JobsSearchSceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchSceneDelegate.h; sourceTree = "<group>"; };
+		C59B98DE2526DE260039B485 /* JobsSearchSceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchSceneDelegate.m; sourceTree = "<group>"; };
 		C59B98E42526DE260039B485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C59B98E72526DE260039B485 /* JobsSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JobsSearch.xcdatamodel; sourceTree = "<group>"; };
 		C59B98E92526DE270039B485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -2378,8 +2378,8 @@
 		C5C40B40255A71C1002F407A /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				C59B98DA2526DE260039B485 /* AppDelegate.h */,
-				C59B98DB2526DE260039B485 /* AppDelegate.m */,
+				C59B98DA2526DE260039B485 /* JobsSearchAppDelegate.h */,
+				C59B98DB2526DE260039B485 /* JobsSearchAppDelegate.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -2387,8 +2387,8 @@
 		C5C40B41255A71C8002F407A /* SceneDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				C59B98DD2526DE260039B485 /* SceneDelegate.h */,
-				C59B98DE2526DE260039B485 /* SceneDelegate.m */,
+				C59B98DD2526DE260039B485 /* JobsSearchSceneDelegate.h */,
+				C59B98DE2526DE260039B485 /* JobsSearchSceneDelegate.m */,
 			);
 			path = SceneDelegate;
 			sourceTree = "<group>";
@@ -2816,7 +2816,7 @@
 				C59B99952526E0A50039B485 /* SDWebImageGIFCoder.m in Sources */,
 				C59B9CCF2526E3F10039B485 /* ECAuthorizationTools.m in Sources */,
 				C546C4A3252C59D7003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
-				C59B98DC2526DE260039B485 /* AppDelegate.m in Sources */,
+				C59B98DC2526DE260039B485 /* JobsSearchAppDelegate.m in Sources */,
 				C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */,
 				C59B99842526E0A50039B485 /* BRDatePickerView+BR.m in Sources */,
 				C59B99892526E0A50039B485 /* BRBaseView.m in Sources */,
@@ -2839,7 +2839,7 @@
 				C59B997A2526E0A50039B485 /* GKNavigationBarConfigure.m in Sources */,
 				C5B47F952529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m in Sources */,
 				C59B99772526E0A50039B485 /* GKPushAnimatedTransition.m in Sources */,
-				C59B98DF2526DE260039B485 /* SceneDelegate.m in Sources */,
+				C59B98DF2526DE260039B485 /* JobsSearchSceneDelegate.m in Sources */,
 				C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */,
 				C59B9AD62526E3E10039B485 /* UIImage+SYS.m in Sources */,
 				C59B99832526E0A50039B485 /* BRStringPickerView.m in Sources */,
