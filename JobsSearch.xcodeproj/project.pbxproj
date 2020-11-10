@@ -872,6 +872,24 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
+		C53417AC255A812A00DFAFE4 /* TBVCell_style_01 */ = {
+			isa = PBXGroup;
+			children = (
+				C59B9AA92526E3E10039B485 /* TBVCell_style_01.h */,
+				C59B9AA52526E3E10039B485 /* TBVCell_style_01.m */,
+			);
+			path = TBVCell_style_01;
+			sourceTree = "<group>";
+		};
+		C53417AD255A813100DFAFE4 /* TBVCell_style_02 */ = {
+			isa = PBXGroup;
+			children = (
+				C59B9AA72526E3E10039B485 /* TBVCell_style_02.h */,
+				C59B9AA22526E3E10039B485 /* TBVCell_style_02.m */,
+			);
+			path = TBVCell_style_02;
+			sourceTree = "<group>";
+		};
 		C546C39E252C21F0003694FF /* FDFullscreenPopGesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -1751,10 +1769,8 @@
 		C59B9AA12526E3E10039B485 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9AA92526E3E10039B485 /* TBVCell_style_01.h */,
-				C59B9AA52526E3E10039B485 /* TBVCell_style_01.m */,
-				C59B9AA72526E3E10039B485 /* TBVCell_style_02.h */,
-				C59B9AA22526E3E10039B485 /* TBVCell_style_02.m */,
+				C53417AC255A812A00DFAFE4 /* TBVCell_style_01 */,
+				C53417AD255A813100DFAFE4 /* TBVCell_style_02 */,
 				C59B9AA32526E3E10039B485 /* UITableViewCell+WhiteArrows.h */,
 				C59B9AA82526E3E10039B485 /* UITableViewCell+WhiteArrows.m */,
 				C59B9AA42526E3E10039B485 /* WhiteRightArrow@2x.png */,
