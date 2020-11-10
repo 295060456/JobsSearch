@@ -2458,6 +2458,7 @@
 		C59B98CF2526DE260039B485 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JobsSearch;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					C59B98D62526DE260039B485 = {
