@@ -1181,11 +1181,9 @@
 			isa = PBXGroup;
 			children = (
 				C5620C2F25541AC400FE435F /* README.md */,
-				C56E42FC254719F100B9F555 /* ⚽️PicResource */,
-				C59B999E2526E0D50039B485 /* Macro */,
-				C59B99192526E09C0039B485 /* Pods不进去的 */,
-				C59B99182526E0730039B485 /* Other */,
 				C59B98D92526DE260039B485 /* JobsSearch */,
+				C59B98F82526DE270039B485 /* JobsSearchTests */,
+				C59B99032526DE270039B485 /* JobsSearchUITests */,
 				DB6EB4965849B35F47ED7CA5 /* Pods */,
 				16C9BA6D9A540B88907BA323 /* Frameworks */,
 			);
@@ -1205,6 +1203,10 @@
 		C59B98D92526DE260039B485 /* JobsSearch */ = {
 			isa = PBXGroup;
 			children = (
+				C56E42FC254719F100B9F555 /* ⚽️PicResource */,
+				C59B999E2526E0D50039B485 /* 🌹Macro */,
+				C59B99192526E09C0039B485 /* Pods不进去的 */,
+				C59B99182526E0730039B485 /* Other */,
 				C59B9A202526E3680039B485 /* AppDelegate & SceneDelegate */,
 				C59B9A212526E36F0039B485 /* BaseCustomizeUIKit */,
 				C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */,
@@ -1240,8 +1242,6 @@
 				C59B98EB2526DE270039B485 /* LaunchScreen.storyboard */,
 				C59B98EF2526DE270039B485 /* main.m */,
 				C59B98E62526DE260039B485 /* JobsSearch.xcdatamodeld */,
-				C59B98F82526DE270039B485 /* JobsSearchTests */,
-				C59B99032526DE270039B485 /* JobsSearchUITests */,
 				C59B98D82526DE260039B485 /* Products */,
 			);
 			path = Other;
@@ -1437,7 +1437,7 @@
 			path = ZZCircleProgress;
 			sourceTree = "<group>";
 		};
-		C59B999E2526E0D50039B485 /* Macro */ = {
+		C59B999E2526E0D50039B485 /* 🌹Macro */ = {
 			isa = PBXGroup;
 			children = (
 				C5470F6C25309C7F00651ACE /* 各项宏定义 */,
@@ -1450,7 +1450,7 @@
 				C59B99A82526E1190039B485 /* Pods.h */,
 				C59B99A62526E1190039B485 /* PrefixHeader.pch */,
 			);
-			path = Macro;
+			path = "🌹Macro";
 			sourceTree = "<group>";
 		};
 		C59B99A12526E1180039B485 /* Notification */ = {
@@ -3027,7 +3027,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Macro/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/🌹Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = JobsSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3048,7 +3048,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Macro/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/🌹Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = JobsSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
