@@ -25,4 +25,8 @@
 #import "LYEmptyViewHeader.h"
 #import "WHToast-umbrella.h"
 
+#ifdef DEBUG
+#import <DoraemonKit/DoraemonManager.h>
+#endif
+
 #endif /* Pods_h */
