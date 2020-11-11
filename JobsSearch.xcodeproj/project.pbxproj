@@ -23,6 +23,9 @@
 		C546C4A3252C59D7003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
 		C54B3C6D25526000003BE195 /* UIFont+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3C6C25526000003BE195 /* UIFont+Extras.m */; };
 		C54B3F4C2552979B003BE195 /* UILabel+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3F4B2552979B003BE195 /* UILabel+RichText.m */; };
+		C5569685255BFCC3005C1361 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569680255BFCC2005C1361 /* TimeModel.m */; };
+		C5569686255BFCC3005C1361 /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569681255BFCC2005C1361 /* NSString+Time.m */; };
+		C5569687255BFCC3005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569683255BFCC2005C1361 /* NSString+Extras.m */; };
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
 		C55B29BC253426870038E50C /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55B29B4253426870038E50C /* SuspendView.m */; };
@@ -159,7 +162,6 @@
 		C59B9AEF2526E3E10039B485 /* 专治UITableView相应链断裂 in Resources */ = {isa = PBXBuildFile; fileRef = C59B9A872526E3E10039B485 /* 专治UITableView相应链断裂 */; };
 		C59B9AF02526E3E10039B485 /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A882526E3E10039B485 /* BaseTableViewer.m */; };
 		C59B9AF12526E3E10039B485 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A8A2526E3E10039B485 /* UIColor+Hex.m */; };
-		C59B9AF22526E3E10039B485 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A8D2526E3E10039B485 /* NSString+Extras.m */; };
 		C59B9AF52526E3E10039B485 /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A952526E3E10039B485 /* NSArray+Extension.m */; };
 		C59B9AF62526E3E10039B485 /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A982526E3E10039B485 /* NSArray+Extend.m */; };
 		C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A9B2526E3E10039B485 /* DeleteSystemUITabBarButton.m */; };
@@ -321,6 +323,12 @@
 		C54B3C6C25526000003BE195 /* UIFont+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extras.m"; sourceTree = "<group>"; };
 		C54B3F472552979B003BE195 /* UILabel+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RichText.h"; sourceTree = "<group>"; };
 		C54B3F4B2552979B003BE195 /* UILabel+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RichText.m"; sourceTree = "<group>"; };
+		C556967F255BFCC2005C1361 /* TimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeModel.h; sourceTree = "<group>"; };
+		C5569680255BFCC2005C1361 /* TimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
+		C5569681255BFCC2005C1361 /* NSString+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
+		C5569682255BFCC2005C1361 /* NSString+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Time.h"; sourceTree = "<group>"; };
+		C5569683255BFCC2005C1361 /* NSString+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extras.m"; sourceTree = "<group>"; };
+		C5569684255BFCC3005C1361 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
 		C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RBCLikeButton.bundle; sourceTree = "<group>"; };
 		C55AABA72532B2F800335ACC /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
@@ -578,8 +586,6 @@
 		C59B9A882526E3E10039B485 /* BaseTableViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewer.m; sourceTree = "<group>"; };
 		C59B9A8A2526E3E10039B485 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		C59B9A8B2526E3E10039B485 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
-		C59B9A8D2526E3E10039B485 /* NSString+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extras.m"; sourceTree = "<group>"; };
-		C59B9A8E2526E3E10039B485 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
 		C59B9A952526E3E10039B485 /* NSArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
 		C59B9A962526E3E10039B485 /* NSArray+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extend.h"; sourceTree = "<group>"; };
 		C59B9A972526E3E10039B485 /* NSArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
@@ -1731,8 +1737,12 @@
 		C59B9A8C2526E3E10039B485 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A8E2526E3E10039B485 /* NSString+Extras.h */,
-				C59B9A8D2526E3E10039B485 /* NSString+Extras.m */,
+				C5569684255BFCC3005C1361 /* NSString+Extras.h */,
+				C5569683255BFCC2005C1361 /* NSString+Extras.m */,
+				C5569682255BFCC2005C1361 /* NSString+Time.h */,
+				C5569681255BFCC2005C1361 /* NSString+Time.m */,
+				C556967F255BFCC2005C1361 /* TimeModel.h */,
+				C5569680255BFCC2005C1361 /* TimeModel.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -2732,6 +2742,7 @@
 				C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */,
 				C59B9AD52526E3E10039B485 /* UIImage+Extras.m in Sources */,
 				C59B9B082526E3E10039B485 /* UIView+Chain.m in Sources */,
+				C5569685255BFCC3005C1361 /* TimeModel.m in Sources */,
 				C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */,
 				C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */,
 				C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */,
@@ -2743,6 +2754,7 @@
 				C59B998C2526E0A50039B485 /* BRAddressPickerView.m in Sources */,
 				C576705C2546B97700C382C8 /* UIViewController+TZImagePickerControllerDelegate.m in Sources */,
 				C576704F2546B96500C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
+				C5569687255BFCC3005C1361 /* NSString+Extras.m in Sources */,
 				C59B9C902526E3F10039B485 /* RepeatPlayer.m in Sources */,
 				C59B99972526E0A50039B485 /* SDWebImageWebPCoder.m in Sources */,
 				C546C45F252C2BF3003694FF /* JobsSearchTableView.m in Sources */,
@@ -2782,6 +2794,7 @@
 				C59B9ACC2526E3E10039B485 /* NSObject+SYSAlertController.m in Sources */,
 				C571086E253C09E3005B3A0C /* TabbarVC.m in Sources */,
 				C59B9CBA2526E3F10039B485 /* YHGPUImageBeautifyFilter.m in Sources */,
+				C5569686255BFCC3005C1361 /* NSString+Time.m in Sources */,
 				C59B9CCA2526E3F10039B485 /* SoundBtn.m in Sources */,
 				C59B998D2526E0A50039B485 /* UIImage+WebP.m in Sources */,
 				C59B997B2526E0A50039B485 /* UINavigationController+GKCategory.m in Sources */,
@@ -2798,7 +2811,6 @@
 				C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */,
 				C59B9C932526E3F10039B485 /* FMHttpRequest.m in Sources */,
 				C59B9CC12526E3F10039B485 /* MovieCountDown.m in Sources */,
-				C59B9AF22526E3E10039B485 /* NSString+Extras.m in Sources */,
 				C5914C0D25384E61007777A6 /* UIViewController+BWShareView.m in Sources */,
 				C59B9C982526E3F10039B485 /* ZBCacheManager.m in Sources */,
 				C59B9B022526E3E10039B485 /* ZYTextField+HistoryDataList.m in Sources */,
