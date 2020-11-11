@@ -1731,8 +1731,8 @@
 		C59B9A8C2526E3E10039B485 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A8D2526E3E10039B485 /* NSString+Extras.m */,
 				C59B9A8E2526E3E10039B485 /* NSString+Extras.h */,
+				C59B9A8D2526E3E10039B485 /* NSString+Extras.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
