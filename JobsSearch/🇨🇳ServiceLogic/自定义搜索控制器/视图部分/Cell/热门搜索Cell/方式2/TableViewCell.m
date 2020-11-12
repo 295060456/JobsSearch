@@ -108,7 +108,7 @@ didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(SCREEN_WIDTH / 2, cellHeight);
+    return CGSizeMake(MAINSCREEN_WIDTH / 2, cellHeight);
 }
 ///每个item之间的间距 横（行）间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView
