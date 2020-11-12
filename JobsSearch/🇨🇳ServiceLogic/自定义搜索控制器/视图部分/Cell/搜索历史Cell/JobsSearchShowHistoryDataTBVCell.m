@@ -14,7 +14,7 @@
 
 @implementation JobsSearchShowHistoryDataTBVCell
 
-+(instancetype)cellWith:(UITableView *)tableView{
++(instancetype)cellWithTableView:(UITableView *)tableView{
     JobsSearchShowHistoryDataTBVCell *cell = (JobsSearchShowHistoryDataTBVCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     if (!cell) {
         cell = [[JobsSearchShowHistoryDataTBVCell alloc] initWithStyle:UITableViewCellStyleDefault

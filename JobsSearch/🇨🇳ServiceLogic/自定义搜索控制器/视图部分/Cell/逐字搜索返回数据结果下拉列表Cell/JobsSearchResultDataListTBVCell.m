@@ -16,7 +16,7 @@
 
 @implementation JobsSearchResultDataListTBVCell
 
-+(instancetype)cellWith:(UITableView *)tableView{
++(instancetype)cellWithTableView:(UITableView *)tableView{
     JobsSearchResultDataListTBVCell *cell = (JobsSearchResultDataListTBVCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     if (!cell) {
         cell = [[JobsSearchResultDataListTBVCell alloc] initWithStyle:UITableViewCellStyleDefault

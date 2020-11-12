@@ -15,7 +15,7 @@
 
 @implementation JobsSearchShowHotwordsTBVCell
 
-+(instancetype)cellWith:(UITableView *)tableView{
++(instancetype)cellWithTableView:(UITableView *)tableView{
     JobsSearchShowHotwordsTBVCell *cell = (JobsSearchShowHotwordsTBVCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     if (!cell) {
         cell = [[JobsSearchShowHotwordsTBVCell alloc] initWithStyle:UITableViewCellStyleDefault

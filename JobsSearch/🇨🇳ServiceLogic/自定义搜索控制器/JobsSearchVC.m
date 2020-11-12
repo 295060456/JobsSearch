@@ -234,7 +234,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         case 0:{//热门搜索 KKK
             switch (self.hotSearchStyle) {
                 case HotSearchStyle_1:{
-                    JobsSearchShowHotwordsTBVCell *cell = [JobsSearchShowHotwordsTBVCell cellWith:tableView];
+                    JobsSearchShowHotwordsTBVCell *cell = [JobsSearchShowHotwordsTBVCell cellWithTableView:tableView];
                     cell.indexRow = indexPath.row;
                     cell.indexSection = indexPath.section;
                     [cell richElementsInCellWithModel:self.hotSearchMutArr];
@@ -249,7 +249,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                     return cell;
                 }break;
                 case HotSearchStyle_2:{
-                    TableViewCell *cell = [TableViewCell cellWith:tableView];
+                    TableViewCell *cell = [TableViewCell cellWithTableView:tableView];
                     cell.indexRow = indexPath.row;
                     cell.indexSection = indexPath.section;
                     [cell richElementsInCellWithModel:self.hotSearchMutArr];
@@ -262,7 +262,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
             }
         }break;
         case 1:{//搜索历史
-            JobsSearchShowHistoryDataTBVCell *cell = [JobsSearchShowHistoryDataTBVCell cellWith:tableView];
+            JobsSearchShowHistoryDataTBVCell *cell = [JobsSearchShowHistoryDataTBVCell cellWithTableView:tableView];
             cell.indexRow = indexPath.row;
             cell.indexSection = indexPath.section;
             [cell richElementsInCellWithModel:self.historySearchMutArr[indexPath.row]];

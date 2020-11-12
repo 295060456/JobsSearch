@@ -26,7 +26,7 @@ UICollectionViewDelegateFlowLayout
 
 @implementation TableViewCell
 
-+(instancetype)cellWith:(UITableView *)tableView{
++(instancetype)cellWithTableView:(UITableView *)tableView{
     TableViewCell *cell = (TableViewCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     if (!cell) {
         cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault

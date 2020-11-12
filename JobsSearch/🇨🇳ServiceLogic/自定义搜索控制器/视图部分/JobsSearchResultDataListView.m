@@ -88,7 +88,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    JobsSearchResultDataListTBVCell *cell = [JobsSearchResultDataListTBVCell cellWith:tableView];
+    JobsSearchResultDataListTBVCell *cell = [JobsSearchResultDataListTBVCell cellWithTableView:tableView];
     [cell richElementsInCellWithModel:self.searchResDataMutArr[indexPath.row]];
     @weakify(self)
     [cell actionBlockJobsSearchResultDataListTBVCell:^(id data) {
