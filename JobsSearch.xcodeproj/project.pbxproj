@@ -21,6 +21,10 @@
 		C546C48D252C3B45003694FF /* JobsSearchResultDataListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C48C252C3B45003694FF /* JobsSearchResultDataListView.m */; };
 		C546C49F252C59D4003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */; };
 		C546C4A3252C59D7003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
+		C54AB10D255E5FB2000A314D /* WhiteRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54AB107255E5FB2000A314D /* WhiteRightArrow@2x.png */; };
+		C54AB10E255E5FB2000A314D /* WhiteRightArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54AB108255E5FB2000A314D /* WhiteRightArrow@3x.png */; };
+		C54AB10F255E5FB2000A314D /* UITableViewCell+WhiteArrows.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AB109255E5FB2000A314D /* UITableViewCell+WhiteArrows.m */; };
+		C54AB110255E5FB2000A314D /* UITableViewCell+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AB10C255E5FB2000A314D /* UITableViewCell+Margin.m */; };
 		C54B3C6D25526000003BE195 /* UIFont+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3C6C25526000003BE195 /* UIFont+Extras.m */; };
 		C54B3F4C2552979B003BE195 /* UILabel+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3F4B2552979B003BE195 /* UILabel+RichText.m */; };
 		C5569685255BFCC3005C1361 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569680255BFCC2005C1361 /* TimeModel.m */; };
@@ -142,11 +146,6 @@
 		C59B9AF62526E3E10039B485 /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A982526E3E10039B485 /* NSArray+Extend.m */; };
 		C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A9B2526E3E10039B485 /* DeleteSystemUITabBarButton.m */; };
 		C59B9AF82526E3E10039B485 /* 移除 系统自带的 UITabBarButton in Resources */ = {isa = PBXBuildFile; fileRef = C59B9A9D2526E3E10039B485 /* 移除 系统自带的 UITabBarButton */; };
-		C59B9AFA2526E3E10039B485 /* TBVCell_style_02.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AA22526E3E10039B485 /* TBVCell_style_02.m */; };
-		C59B9AFB2526E3E10039B485 /* WhiteRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9AA42526E3E10039B485 /* WhiteRightArrow@2x.png */; };
-		C59B9AFC2526E3E10039B485 /* TBVCell_style_01.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AA52526E3E10039B485 /* TBVCell_style_01.m */; };
-		C59B9AFD2526E3E10039B485 /* WhiteRightArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B9AA62526E3E10039B485 /* WhiteRightArrow@3x.png */; };
-		C59B9AFE2526E3E10039B485 /* UITableViewCell+WhiteArrows.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AA82526E3E10039B485 /* UITableViewCell+WhiteArrows.m */; };
 		C59B9AFF2526E3E10039B485 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AAD2526E3E10039B485 /* HQTextField.m */; };
 		C59B9B002526E3E10039B485 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AAF2526E3E10039B485 /* CJTextField.m */; };
 		C59B9B012526E3E10039B485 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9AB22526E3E10039B485 /* ZYTextField.m */; };
@@ -295,6 +294,12 @@
 		C5470F7425309C8C00651ACE /* MacroDef_Func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Func.h; sourceTree = "<group>"; };
 		C5470F7525309C8C00651ACE /* MacroDef_Cor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Cor.h; sourceTree = "<group>"; };
 		C5470F7625309C8D00651ACE /* MacroDef_Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Size.h; sourceTree = "<group>"; };
+		C54AB106255E5FB2000A314D /* UITableViewCell+WhiteArrows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+WhiteArrows.h"; sourceTree = "<group>"; };
+		C54AB107255E5FB2000A314D /* WhiteRightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@2x.png"; sourceTree = "<group>"; };
+		C54AB108255E5FB2000A314D /* WhiteRightArrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@3x.png"; sourceTree = "<group>"; };
+		C54AB109255E5FB2000A314D /* UITableViewCell+WhiteArrows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+WhiteArrows.m"; sourceTree = "<group>"; };
+		C54AB10B255E5FB2000A314D /* UITableViewCell+Margin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Margin.h"; sourceTree = "<group>"; };
+		C54AB10C255E5FB2000A314D /* UITableViewCell+Margin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Margin.m"; sourceTree = "<group>"; };
 		C54B3C6B25526000003BE195 /* UIFont+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extras.h"; sourceTree = "<group>"; };
 		C54B3C6C25526000003BE195 /* UIFont+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extras.m"; sourceTree = "<group>"; };
 		C54B3F472552979B003BE195 /* UILabel+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RichText.h"; sourceTree = "<group>"; };
@@ -518,14 +523,6 @@
 		C59B9A9B2526E3E10039B485 /* DeleteSystemUITabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteSystemUITabBarButton.m; sourceTree = "<group>"; };
 		C59B9A9C2526E3E10039B485 /* DeleteSystemUITabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteSystemUITabBarButton.h; sourceTree = "<group>"; };
 		C59B9A9D2526E3E10039B485 /* 移除 系统自带的 UITabBarButton */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "移除 系统自带的 UITabBarButton"; sourceTree = "<group>"; };
-		C59B9AA22526E3E10039B485 /* TBVCell_style_02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCell_style_02.m; sourceTree = "<group>"; };
-		C59B9AA32526E3E10039B485 /* UITableViewCell+WhiteArrows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+WhiteArrows.h"; sourceTree = "<group>"; };
-		C59B9AA42526E3E10039B485 /* WhiteRightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@2x.png"; sourceTree = "<group>"; };
-		C59B9AA52526E3E10039B485 /* TBVCell_style_01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCell_style_01.m; sourceTree = "<group>"; };
-		C59B9AA62526E3E10039B485 /* WhiteRightArrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@3x.png"; sourceTree = "<group>"; };
-		C59B9AA72526E3E10039B485 /* TBVCell_style_02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCell_style_02.h; sourceTree = "<group>"; };
-		C59B9AA82526E3E10039B485 /* UITableViewCell+WhiteArrows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+WhiteArrows.m"; sourceTree = "<group>"; };
-		C59B9AA92526E3E10039B485 /* TBVCell_style_01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCell_style_01.h; sourceTree = "<group>"; };
 		C59B9AAC2526E3E10039B485 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
 		C59B9AAD2526E3E10039B485 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
 		C59B9AAF2526E3E10039B485 /* CJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTextField.m; sourceTree = "<group>"; };
@@ -803,24 +800,6 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
-		C53417AC255A812A00DFAFE4 /* TBVCell_style_01 */ = {
-			isa = PBXGroup;
-			children = (
-				C59B9AA92526E3E10039B485 /* TBVCell_style_01.h */,
-				C59B9AA52526E3E10039B485 /* TBVCell_style_01.m */,
-			);
-			path = TBVCell_style_01;
-			sourceTree = "<group>";
-		};
-		C53417AD255A813100DFAFE4 /* TBVCell_style_02 */ = {
-			isa = PBXGroup;
-			children = (
-				C59B9AA72526E3E10039B485 /* TBVCell_style_02.h */,
-				C59B9AA22526E3E10039B485 /* TBVCell_style_02.m */,
-			);
-			path = TBVCell_style_02;
-			sourceTree = "<group>";
-		};
 		C546C39E252C21F0003694FF /* FDFullscreenPopGesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -873,6 +852,26 @@
 				C5470F7325309C8C00651ACE /* MacroDef_Sys.h */,
 			);
 			path = "各项宏定义";
+			sourceTree = "<group>";
+		};
+		C54AB105255E5FB2000A314D /* 自定义右侧小箭头图标 */ = {
+			isa = PBXGroup;
+			children = (
+				C54AB106255E5FB2000A314D /* UITableViewCell+WhiteArrows.h */,
+				C54AB107255E5FB2000A314D /* WhiteRightArrow@2x.png */,
+				C54AB108255E5FB2000A314D /* WhiteRightArrow@3x.png */,
+				C54AB109255E5FB2000A314D /* UITableViewCell+WhiteArrows.m */,
+			);
+			path = "自定义右侧小箭头图标";
+			sourceTree = "<group>";
+		};
+		C54AB10A255E5FB2000A314D /* 重设边距 */ = {
+			isa = PBXGroup;
+			children = (
+				C54AB10B255E5FB2000A314D /* UITableViewCell+Margin.h */,
+				C54AB10C255E5FB2000A314D /* UITableViewCell+Margin.m */,
+			);
+			path = "重设边距";
 			sourceTree = "<group>";
 		};
 		C54B3C6A25526000003BE195 /* UIFont */ = {
@@ -1566,12 +1565,8 @@
 		C59B9AA12526E3E10039B485 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C53417AC255A812A00DFAFE4 /* TBVCell_style_01 */,
-				C53417AD255A813100DFAFE4 /* TBVCell_style_02 */,
-				C59B9AA32526E3E10039B485 /* UITableViewCell+WhiteArrows.h */,
-				C59B9AA82526E3E10039B485 /* UITableViewCell+WhiteArrows.m */,
-				C59B9AA42526E3E10039B485 /* WhiteRightArrow@2x.png */,
-				C59B9AA62526E3E10039B485 /* WhiteRightArrow@3x.png */,
+				C54AB10A255E5FB2000A314D /* 重设边距 */,
+				C54AB105255E5FB2000A314D /* 自定义右侧小箭头图标 */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -2332,7 +2327,6 @@
 				C59B98ED2526DE270039B485 /* LaunchScreen.storyboard in Resources */,
 				C571087F253C09E3005B3A0C /* green_lottie_tab_mine.json in Resources */,
 				C5710882253C09E3005B3A0C /* green_lottie_tab_discover.json in Resources */,
-				C59B9AFB2526E3E10039B485 /* WhiteRightArrow@2x.png in Resources */,
 				C59B9AF82526E3E10039B485 /* 移除 系统自带的 UITabBarButton in Resources */,
 				C59B9CBE2526E3F10039B485 /* Pod里面的Bug in Resources */,
 				C5710875253C09E3005B3A0C /* dingdan.json in Resources */,
@@ -2342,7 +2336,6 @@
 				C5710863253C09E3005B3A0C /* 功能性动效：手势横向滚动子VC联动Tabbar切换 in Resources */,
 				C5710878253C09E3005B3A0C /* tab_me_animate.json in Resources */,
 				C5710873253C09E3005B3A0C /* 任务.json in Resources */,
-				C59B9AFD2526E3E10039B485 /* WhiteRightArrow@3x.png in Resources */,
 				C5710877253C09E3005B3A0C /* 我的.json in Resources */,
 				C59B9C9D2526E3F10039B485 /* iOS 获取手机型号、系统版本.png in Resources */,
 				C571087B253C09E3005B3A0C /* 社区.json in Resources */,
@@ -2351,6 +2344,8 @@
 				C59B9AEF2526E3E10039B485 /* 专治UITableView相应链断裂 in Resources */,
 				C5B47F782529F7B300387F47 /* 放大镜.png in Resources */,
 				C571087A253C09E3005B3A0C /* tab_home_animate.json in Resources */,
+				C54AB10D255E5FB2000A314D /* WhiteRightArrow@2x.png in Resources */,
+				C54AB10E255E5FB2000A314D /* WhiteRightArrow@3x.png in Resources */,
 				C59B9CD32526E3F10039B485 /* iOS小技巧：用runtime 解决UIButton 重复点击问题 in Resources */,
 				C5710879253C09E3005B3A0C /* upgrade.json in Resources */,
 				C59BA1F325271DAE0039B485 /* 删除.png in Resources */,
@@ -2498,7 +2493,6 @@
 				C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */,
 				C59B9C972526E3F10039B485 /* ZBRequestManager.m in Sources */,
 				C56186A6255D6B60004E7B47 /* XHLaunchImageView.m in Sources */,
-				C59B9AFA2526E3E10039B485 /* TBVCell_style_02.m in Sources */,
 				C59B9CE22526E4110039B485 /* ViewController@4.m in Sources */,
 				C59B98F02526DE270039B485 /* main.m in Sources */,
 				C59B9AD32526E3E10039B485 /* UIImage+Tailor.m in Sources */,
@@ -2506,6 +2500,7 @@
 				C5B85617252B577A00890A66 /* UITableView+WWFoldableTableView.m in Sources */,
 				C59B9AF52526E3E10039B485 /* NSArray+Extension.m in Sources */,
 				C530B00A254D9A8100EDEDC8 /* HQCollectionViewFlowLayout.m in Sources */,
+				C54AB110255E5FB2000A314D /* UITableViewCell+Margin.m in Sources */,
 				C56186A4255D6B60004E7B47 /* XHLaunchAdView.m in Sources */,
 				C59B9B092526E3E10039B485 /* UIView+Measure.m in Sources */,
 				C59B9C992526E3F10039B485 /* NSString+ZBUTF8Encoding.m in Sources */,
@@ -2519,7 +2514,6 @@
 				C5710864253C09E3005B3A0C /* TransitionAnimation.m in Sources */,
 				C59B9C8B2526E3F10039B485 /* UIButton+ImageTitleSpacing.m in Sources */,
 				C530B00B254D9A8100EDEDC8 /* CollectionViewCell.m in Sources */,
-				C59B9AFC2526E3E10039B485 /* TBVCell_style_01.m in Sources */,
 				C530B00F254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m in Sources */,
 				C55B29BD253426870038E50C /* SuspendBtn.m in Sources */,
 				C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */,
@@ -2600,7 +2594,6 @@
 				C5710865253C09E3005B3A0C /* TransitionController.m in Sources */,
 				C571086A253C09E3005B3A0C /* UITabBar+Ex.m in Sources */,
 				C59B9CB92526E3F10039B485 /* LGiOSBtn.m in Sources */,
-				C59B9AFE2526E3E10039B485 /* UITableViewCell+WhiteArrows.m in Sources */,
 				C59B9B0D2526E3E10039B485 /* UIView+Gradient.m in Sources */,
 				C57278FE254098AA002373D7 /* NavigationBar.m in Sources */,
 				C59B9AD72526E3E10039B485 /* UIImage+Overlay.m in Sources */,
@@ -2641,6 +2634,7 @@
 				C59B98E82526DE260039B485 /* JobsSearch.xcdatamodeld in Sources */,
 				C55B29BC253426870038E50C /* SuspendView.m in Sources */,
 				C5914C0125384E61007777A6 /* UIViewController+Shake.m in Sources */,
+				C54AB10F255E5FB2000A314D /* UITableViewCell+WhiteArrows.m in Sources */,
 				C59B9AFF2526E3E10039B485 /* HQTextField.m in Sources */,
 				C5710867253C09E3005B3A0C /* TLTabBarAnimation.m in Sources */,
 				C59B9B072526E3E10039B485 /* UITextField+Extend.m in Sources */,

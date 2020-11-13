@@ -5,11 +5,11 @@
 //  Created by Jobs on 2020/10/6.
 //
 
-#import "TBVCell_style_01.h"
+#import "UITableViewCell+Margin.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JobsSearchResultDataListTBVCell : TBVCell_style_01
+@interface JobsSearchResultDataListTBVCell : UITableViewCell
 
 +(instancetype)cellWithTableView:(UITableView *)tableView;
 +(CGFloat)cellHeightWithModel:(id _Nullable)model;
