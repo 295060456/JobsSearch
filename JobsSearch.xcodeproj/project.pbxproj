@@ -105,6 +105,8 @@
 		C5914C0A25384E61007777A6 /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BFA25384E60007777A6 /* UIViewController+MJRefresh.m */; };
 		C5914C0C25384E61007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BFD25384E60007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m */; };
 		C5914C0D25384E61007777A6 /* UIViewController+BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BFE25384E60007777A6 /* UIViewController+BWShareView.m */; };
+		C591F0182563C931005B78CC /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C591F0162563C931005B78CC /* JsonRes.bundle */; };
+		C591F0192563C931005B78CC /* CustomGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C591F0172563C931005B78CC /* CustomGifHeader.m */; };
 		C59B98DC2526DE260039B485 /* JobsSearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* JobsSearchAppDelegate.m */; };
 		C59B98DF2526DE260039B485 /* JobsSearchSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DE2526DE260039B485 /* JobsSearchSceneDelegate.m */; };
 		C59B98E52526DE260039B485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59B98E32526DE260039B485 /* Main.storyboard */; };
@@ -435,6 +437,9 @@
 		C5914BFD25384E60007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JXCategoryListContentViewDelegate.m"; sourceTree = "<group>"; };
 		C5914BFE25384E60007777A6 /* UIViewController+BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BWShareView.m"; sourceTree = "<group>"; };
 		C5914BFF25384E60007777A6 /* UIViewController+BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseVC.h"; sourceTree = "<group>"; };
+		C591F0152563C931005B78CC /* CustomGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGifHeader.h; sourceTree = "<group>"; };
+		C591F0162563C931005B78CC /* JsonRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JsonRes.bundle; sourceTree = "<group>"; };
+		C591F0172563C931005B78CC /* CustomGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGifHeader.m; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59B98DA2526DE260039B485 /* JobsSearchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchAppDelegate.h; sourceTree = "<group>"; };
 		C59B98DB2526DE260039B485 /* JobsSearchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchAppDelegate.m; sourceTree = "<group>"; };
@@ -1155,6 +1160,16 @@
 			path = ViewForTableViewFooter;
 			sourceTree = "<group>";
 		};
+		C591F0142563C931005B78CC /* CustomGifHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C591F0152563C931005B78CC /* CustomGifHeader.h */,
+				C591F0162563C931005B78CC /* JsonRes.bundle */,
+				C591F0172563C931005B78CC /* CustomGifHeader.m */,
+			);
+			path = CustomGifHeader;
+			sourceTree = "<group>";
+		};
 		C59B98CE2526DE260039B485 = {
 			isa = PBXGroup;
 			children = (
@@ -1315,6 +1330,7 @@
 		C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C591F0142563C931005B78CC /* CustomGifHeader */,
 				C5710821253C09D4005B3A0C /* 深度拓展系统UITabBar全家桶 */,
 				C5B47F872529FA1500387F47 /* HotLabel */,
 				C59B9BCA2526E3F00039B485 /* 💰VerifyCodeButton */,
@@ -2341,6 +2357,7 @@
 				C571087B253C09E3005B3A0C /* 社区.json in Resources */,
 				C59B9CC92526E3F10039B485 /* Sound.wav in Resources */,
 				C5710884253C09E3005B3A0C /* tab_message_animate.json in Resources */,
+				C591F0182563C931005B78CC /* JsonRes.bundle in Resources */,
 				C59B9AEF2526E3E10039B485 /* 专治UITableView相应链断裂 in Resources */,
 				C5B47F782529F7B300387F47 /* 放大镜.png in Resources */,
 				C571087A253C09E3005B3A0C /* tab_home_animate.json in Resources */,
@@ -2488,6 +2505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59B9C9F2526E3F10039B485 /* UIButton+CountDownBtn.m in Sources */,
+				C591F0192563C931005B78CC /* CustomGifHeader.m in Sources */,
 				C54B3F4C2552979B003BE195 /* UILabel+RichText.m in Sources */,
 				C59B9C8F2526E3F10039B485 /* CustomerAVPlayerVC.m in Sources */,
 				C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */,
