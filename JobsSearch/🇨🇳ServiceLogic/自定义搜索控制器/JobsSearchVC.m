@@ -373,11 +373,12 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
         [self.view addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.equalTo(self.view);
-            if ([NSString isNullString:self.titleStr]) {
-                make.top.equalTo(self.view.mas_top);
-            }else{
+            if (self.gk_navBarAlpha && !self.gk_navigationBar.hidden && [NSString isNullString:self.titleStr]) {//显示
                 make.top.equalTo(self.gk_navigationBar.mas_bottom);
+            }else{
+                make.top.equalTo(self.view.mas_top);
             }
+            
             //之所以这么处理，全是因为动画逻辑会整体将_tableView往上提一段距离
             if ([JobsSearchAppDelegate sharedInstance].tabbarVC.tabBar.hidden) {
                 make.bottom.equalTo(self.view.mas_bottom).offset([JobsSearchAppDelegate sharedInstance].tabbarVC.myTabBar.height);
