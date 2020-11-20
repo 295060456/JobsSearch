@@ -915,6 +915,15 @@
 			path = SuspendLab;
 			sourceTree = "<group>";
 		};
+		C55EDA0725677E4F007B403C /* 数据以及资源 */ = {
+			isa = PBXGroup;
+			children = (
+				C5BA3AF4252C64F90039530C /* 假数据.json */,
+				C5B85532252B44B300890A66 /* 图片资源 */,
+			);
+			path = "数据以及资源";
+			sourceTree = "<group>";
+		};
 		C561868D255D6B60004E7B47 /* XHLaunchAd */ = {
 			isa = PBXGroup;
 			children = (
@@ -1361,7 +1370,7 @@
 		C59B9A232526E3800039B485 /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9D9C2526EBDA0039B485 /* 自定义搜索控制器 */,
+				C59B9D9C2526EBDA0039B485 /* JobsSearchCore */,
 				C59B9D692526E59E0039B485 /* ViewController@1.h */,
 				C59B9D6A2526E59E0039B485 /* ViewController@1.m */,
 				C59B9D6F2526E5AD0039B485 /* ViewController@2.h */,
@@ -2085,16 +2094,15 @@
 			path = "UIControl+XY";
 			sourceTree = "<group>";
 		};
-		C59B9D9C2526EBDA0039B485 /* 自定义搜索控制器 */ = {
+		C59B9D9C2526EBDA0039B485 /* JobsSearchCore */ = {
 			isa = PBXGroup;
 			children = (
-				C5B85532252B44B300890A66 /* 图片资源 */,
+				C55EDA0725677E4F007B403C /* 数据以及资源 */,
 				C546C458252C2B77003694FF /* 视图部分 */,
 				C59B9D9D2526EC070039B485 /* JobsSearchVC.h */,
 				C59B9D9E2526EC070039B485 /* JobsSearchVC.m */,
-				C5BA3AF4252C64F90039530C /* 假数据.json */,
 			);
-			path = "自定义搜索控制器";
+			path = JobsSearchCore;
 			sourceTree = "<group>";
 		};
 		C59BA0B32527164F0039B485 /* JobsSearchHeaderFooterView */ = {

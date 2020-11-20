@@ -59,7 +59,6 @@ UITextFieldDelegate
 //- (void)textFieldDidBeginEditing:(UITextField *)textField{}
 //询问委托人是否应在指定的文本字段中停止编辑
 - (BOOL)textFieldShouldEndEditing:(ZYTextField *)textField{
-    textField.isEditting = NO;
     if (self.jobsSearchBarBlock) {
         self.jobsSearchBarBlock(NSStringFromSelector(_cmd),textField.text);
     }return YES;
@@ -133,7 +132,6 @@ replacementString:(NSString *)string{
 //询问委托人文本字段是否应处理按下返回按钮
 - (BOOL)textFieldShouldReturn:(ZYTextField *)textField{
     [self endEditing:YES];
-    textField.isEditting = NO;
     return YES;
 }
 
