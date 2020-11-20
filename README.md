@@ -1,4 +1,9 @@
 #  重写PYSearch
+#warning：最近比较忙，工程是半成品，你们看得起就将就用，我忙过这阵再来统一的修复，有问题可以issues，我几乎每天都GitHub，如果你们有时间也可以拉分支给我提交。
+![JobsSearch【OutLines 01】](https://user-images.githubusercontent.com/13795605/99760436-4b7a7400-2b26-11eb-81b9-8bef6549883f.png)
+![JobsSearch【OutLines 02】](https://user-images.githubusercontent.com/13795605/99760441-4f0dfb00-2b26-11eb-87fc-1521365183b8.png)
+![JobsSearch【OutLines 03】](https://user-images.githubusercontent.com/13795605/99760442-4fa69180-2b26-11eb-84ea-9238a78a4518.png)
+![JobsSearch【OutLines 04】](https://user-images.githubusercontent.com/13795605/99760445-503f2800-2b26-11eb-86e7-6d3f3250dc6a.png)
 
 # 我为什么写这个？吃饱了撑的？
 ## 见不惯PYSearch作者太浮夸了，要么不更新，要么只更新readme，其他关键的不更新，代码很凌乱，自恋狂

@@ -610,7 +610,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
 
 -(UIColor *)bgColour{
     if (!_bgColour) {
-        _bgColour = [UIColor colorWithPatternImage:KBuddleIMG(@"⚽️PicResource", @"Telegram",nil, @"1")];
+        _bgColour = [UIColor colorWithPatternImage:KBuddleIMG(nil, @"Telegram",nil, @"1")];
     }return _bgColour;
 }
 

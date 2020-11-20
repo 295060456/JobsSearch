@@ -2097,10 +2097,10 @@
 		C59B9D9C2526EBDA0039B485 /* JobsSearchCore */ = {
 			isa = PBXGroup;
 			children = (
-				C55EDA0725677E4F007B403C /* 数据以及资源 */,
-				C546C458252C2B77003694FF /* 视图部分 */,
 				C59B9D9D2526EC070039B485 /* JobsSearchVC.h */,
 				C59B9D9E2526EC070039B485 /* JobsSearchVC.m */,
+				C55EDA0725677E4F007B403C /* 数据以及资源 */,
+				C546C458252C2B77003694FF /* 视图部分 */,
 			);
 			path = JobsSearchCore;
 			sourceTree = "<group>";
