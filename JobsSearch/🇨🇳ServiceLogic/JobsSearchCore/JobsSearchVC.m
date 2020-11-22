@@ -380,8 +380,8 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
             }
             
             //之所以这么处理，全是因为动画逻辑会整体将_tableView往上提一段距离
-            if ([JobsSearchAppDelegate sharedInstance].tabbarVC.tabBar.hidden) {
-                make.bottom.equalTo(self.view.mas_bottom).offset([JobsSearchAppDelegate sharedInstance].tabbarVC.myTabBar.height);
+            if ([JobsSearchAppDelegate sharedInstance].tabBarVC.tabBar.hidden) {
+                make.bottom.equalTo(self.view.mas_bottom).offset([JobsSearchAppDelegate sharedInstance].tabBarVC.myTabBar.height);
             }else{
                 make.bottom.equalTo(self.view.mas_bottom);
             }
@@ -567,7 +567,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                             isSeparateStyle:NO
                                 btnTitleArr:@[@"好的"]
                              alertBtnAction:@[@""]
-                                   targetVC:[JobsSearchAppDelegate sharedInstance].tabbarVC
+                                   targetVC:[JobsSearchAppDelegate sharedInstance].tabBarVC
                                alertVCBlock:^(id data) {
                 //DIY
             }];

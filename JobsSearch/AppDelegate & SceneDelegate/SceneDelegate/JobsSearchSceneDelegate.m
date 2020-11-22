@@ -77,7 +77,7 @@ willConnectToSession:(UISceneSession *)session
 }
 #pragma mark —— lazyLoad
 -(UIWindow *)window{
-    [_window setRootViewController:JobsSearchAppDelegate.sharedInstance.tabbarVC];
+    [_window setRootViewController:JobsSearchAppDelegate.sharedInstance.tabBarVC];
     [_window makeKeyAndVisible];
     return _window;
 }
