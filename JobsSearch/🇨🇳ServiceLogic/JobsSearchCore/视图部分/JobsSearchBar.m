@@ -121,6 +121,33 @@ UITextFieldDelegate
 - (BOOL)textField:(ZYTextField *)textField
 shouldChangeCharactersInRange:(NSRange)range
 replacementString:(NSString *)string{
+    
+    NSLog(@"textField.text = %@",textField.text);
+    NSLog(@"string = %@",string);
+    
+#warning 过滤删除最科学的做法
+    
+    NSString *resString = nil;
+    //textField.text 有值 && string无值 ————> 删除操作
+    if (![NSString isNullString:textField.text] && [NSString isNullString:string]) {
+        
+        if (textField.text.length == 1) {
+            resString = @"";
+        }else{
+            resString = [textField.text substringToIndex:(textField.text.length - 1)];//去掉最后一个
+        }
+    }
+    //textField.text 无值 && string有值 ————> 首字符输入
+    if ([NSString isNullString:textField.text] && ![NSString isNullString:string]) {
+        resString = string;
+    }
+    //textField.text 有值 && string有值 ————> 非首字符输入
+    if (![NSString isNullString:textField.text] && ![NSString isNullString:string]) {
+        resString = [textField.text stringByAppendingString:string];
+    }
+
+    NSLog(@"resString = %@",resString);
+    
     if (![NSString isNullString:string]) {
         if (self.jobsSearchBarBlock) {
             self.jobsSearchBarBlock(NSStringFromSelector(_cmd),[textField.text stringByAppendingString:string]);

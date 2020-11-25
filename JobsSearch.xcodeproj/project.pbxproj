@@ -26,7 +26,7 @@
 		C54AB10F255E5FB2000A314D /* UITableViewCell+WhiteArrows.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AB109255E5FB2000A314D /* UITableViewCell+WhiteArrows.m */; };
 		C54AB110255E5FB2000A314D /* UITableViewCell+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AB10C255E5FB2000A314D /* UITableViewCell+Margin.m */; };
 		C54B3C6D25526000003BE195 /* UIFont+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3C6C25526000003BE195 /* UIFont+Extras.m */; };
-		C54B3F4C2552979B003BE195 /* UILabel+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3F4B2552979B003BE195 /* UILabel+RichText.m */; };
+		C54B3F4C2552979B003BE195 /* NSObject+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3F4B2552979B003BE195 /* NSObject+RichText.m */; };
 		C5569685255BFCC3005C1361 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569680255BFCC2005C1361 /* TimeModel.m */; };
 		C5569686255BFCC3005C1361 /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569681255BFCC2005C1361 /* NSString+Time.m */; };
 		C5569687255BFCC3005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569683255BFCC2005C1361 /* NSString+Extras.m */; };
@@ -304,8 +304,8 @@
 		C54AB10C255E5FB2000A314D /* UITableViewCell+Margin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Margin.m"; sourceTree = "<group>"; };
 		C54B3C6B25526000003BE195 /* UIFont+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extras.h"; sourceTree = "<group>"; };
 		C54B3C6C25526000003BE195 /* UIFont+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extras.m"; sourceTree = "<group>"; };
-		C54B3F472552979B003BE195 /* UILabel+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RichText.h"; sourceTree = "<group>"; };
-		C54B3F4B2552979B003BE195 /* UILabel+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RichText.m"; sourceTree = "<group>"; };
+		C54B3F472552979B003BE195 /* NSObject+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RichText.h"; sourceTree = "<group>"; };
+		C54B3F4B2552979B003BE195 /* NSObject+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RichText.m"; sourceTree = "<group>"; };
 		C556967F255BFCC2005C1361 /* TimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeModel.h; sourceTree = "<group>"; };
 		C5569680255BFCC2005C1361 /* TimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
 		C5569681255BFCC2005C1361 /* NSString+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
@@ -1388,6 +1388,8 @@
 		C59B9A2D2526E3E00039B485 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				C54B3F472552979B003BE195 /* NSObject+RichText.h */,
+				C54B3F4B2552979B003BE195 /* NSObject+RichText.m */,
 				C59B9A2F2526E3E00039B485 /* NSObject+Alert */,
 				C57F0D2A253337140080EEF0 /* NSObject+OpenURL.h */,
 				C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */,
@@ -2155,8 +2157,6 @@
 		C5B47FA8252A12A500387F47 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				C54B3F472552979B003BE195 /* UILabel+RichText.h */,
-				C54B3F4B2552979B003BE195 /* UILabel+RichText.m */,
 				C5B47FA2252A127A00387F47 /* UILabel+Extra.h */,
 				C5B47FA3252A127A00387F47 /* UILabel+Extra.m */,
 			);
@@ -2514,7 +2514,7 @@
 			files = (
 				C59B9C9F2526E3F10039B485 /* UIButton+CountDownBtn.m in Sources */,
 				C591F0192563C931005B78CC /* CustomGifHeader.m in Sources */,
-				C54B3F4C2552979B003BE195 /* UILabel+RichText.m in Sources */,
+				C54B3F4C2552979B003BE195 /* NSObject+RichText.m in Sources */,
 				C59B9C8F2526E3F10039B485 /* CustomerAVPlayerVC.m in Sources */,
 				C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */,
 				C59B9C972526E3F10039B485 /* ZBRequestManager.m in Sources */,
