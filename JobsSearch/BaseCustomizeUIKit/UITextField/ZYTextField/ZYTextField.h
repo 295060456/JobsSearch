@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
-#import "CJTextField.h"
 #import "NSObject+RichText.h"
+#import "UITextField+Extend.h"
 
 typedef NS_ENUM(NSUInteger, PlaceHolderAlignment){
     PlaceHolderAlignmentLeft,// 左对齐 默认
@@ -8,7 +8,7 @@ typedef NS_ENUM(NSUInteger, PlaceHolderAlignment){
     PlaceHolderAlignmentRight// 右对齐
 };
 
-@interface ZYTextField : CJTextField
+@interface ZYTextField : UITextField
 
 @property(nonatomic,assign)CGFloat TFRiseHeight;// 键盘在此手机上的最高弹起，区别于全面屏结合非全面屏，有一个安全区域34
 
@@ -34,4 +34,46 @@ typedef NS_ENUM(NSUInteger, PlaceHolderAlignment){
 
 @property(nonatomic,strong)NSMutableArray <RichLabelDataStringsModel *>*richLabelDataStringsForPlaceHolderMutArr;
 
+///输入的和某个预设定值不一致的时候，抖动动画
+- (void)isValidate:(NSString *)validate;
+///输入的为空，抖动动画
+-(void)isEmptyText;
+
 @end
+
+/*
+
+//询问委托人是否应该更改指定的文本
+- (BOOL)textField:(ZYTextField *)textField
+shouldChangeCharactersInRange:(NSRange)range
+replacementString:(NSString *)string{
+    NSLog(@"textField.text = %@",textField.text);
+    NSLog(@"string = %@",string);
+    
+#warning 过滤删除最科学的做法
+    
+    NSString *resString = nil;
+    //textField.text 有值 && string无值 ————> 删除操作
+    if (![NSString isNullString:textField.text] && [NSString isNullString:string]) {
+        
+        if (textField.text.length == 1) {
+            resString = @"";
+        }else{
+            resString = [textField.text substringToIndex:(textField.text.length - 1)];//去掉最后一个
+        }
+    }
+    //textField.text 无值 && string有值 ————> 首字符输入
+    if ([NSString isNullString:textField.text] && ![NSString isNullString:string]) {
+        resString = string;
+    }
+    //textField.text 有值 && string有值 ————> 非首字符输入
+    if (![NSString isNullString:textField.text] && ![NSString isNullString:string]) {
+        resString = [textField.text stringByAppendingString:string];
+    }
+
+    NSLog(@"resString = %@",resString);
+    return YES;
+}
+
+ */
+
