@@ -150,7 +150,6 @@
 		C59B9AEF2526E3E10039B485 /* 专治UITableView相应链断裂 in Resources */ = {isa = PBXBuildFile; fileRef = C59B9A872526E3E10039B485 /* 专治UITableView相应链断裂 */; };
 		C59B9AF02526E3E10039B485 /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A882526E3E10039B485 /* BaseTableViewer.m */; };
 		C59B9AF12526E3E10039B485 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A8A2526E3E10039B485 /* UIColor+Hex.m */; };
-		C59B9AF52526E3E10039B485 /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A952526E3E10039B485 /* NSArray+Extension.m */; };
 		C59B9AF62526E3E10039B485 /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A982526E3E10039B485 /* NSArray+Extend.m */; };
 		C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A9B2526E3E10039B485 /* DeleteSystemUITabBarButton.m */; };
 		C59B9AF82526E3E10039B485 /* 移除 系统自带的 UITabBarButton in Resources */ = {isa = PBXBuildFile; fileRef = C59B9A9D2526E3E10039B485 /* 移除 系统自带的 UITabBarButton */; };
@@ -1246,6 +1245,7 @@
 		C59B98D92526DE260039B485 /* JobsSearch */ = {
 			isa = PBXGroup;
 			children = (
+				C59B98EE2526DE270039B485 /* Info.plist */,
 				C5D3353725763F8A0019C56E /* 资源文件 */,
 				C59B999E2526E0D50039B485 /* 🌹Macro */,
 				C59B99192526E09C0039B485 /* Pods不进去的 */,
@@ -1254,7 +1254,6 @@
 				C59B9A212526E36F0039B485 /* BaseCustomizeUIKit */,
 				C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */,
 				C59B9A232526E3800039B485 /* 🇨🇳ServiceLogic */,
-				C59B98EE2526DE270039B485 /* Info.plist */,
 			);
 			path = JobsSearch;
 			sourceTree = "<group>";
@@ -1280,11 +1279,11 @@
 		C59B99182526E0730039B485 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C59B98D82526DE260039B485 /* Products */,
 				C59B98E32526DE260039B485 /* Main.storyboard */,
 				C59B98EB2526DE270039B485 /* LaunchScreen.storyboard */,
 				C59B98EF2526DE270039B485 /* main.m */,
 				C59B98E62526DE260039B485 /* JobsSearch.xcdatamodeld */,
-				C59B98D82526DE260039B485 /* Products */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -2083,9 +2082,9 @@
 		C59B9D9C2526EBDA0039B485 /* JobsSearchCore */ = {
 			isa = PBXGroup;
 			children = (
+				C546C458252C2B77003694FF /* 视图部分 */,
 				C59B9D9D2526EC070039B485 /* JobsSearchVC.h */,
 				C59B9D9E2526EC070039B485 /* JobsSearchVC.m */,
-				C546C458252C2B77003694FF /* 视图部分 */,
 			);
 			path = JobsSearchCore;
 			sourceTree = "<group>";
@@ -2553,7 +2552,6 @@
 				C59B9AD32526E3E10039B485 /* UIImage+Tailor.m in Sources */,
 				C546C49F252C59D4003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C5B85617252B577A00890A66 /* UITableView+WWFoldableTableView.m in Sources */,
-				C59B9AF52526E3E10039B485 /* NSArray+Extension.m in Sources */,
 				C530B00A254D9A8100EDEDC8 /* HQCollectionViewFlowLayout.m in Sources */,
 				C54AB110255E5FB2000A314D /* UITableViewCell+Margin.m in Sources */,
 				C56186A4255D6B60004E7B47 /* XHLaunchAdView.m in Sources */,

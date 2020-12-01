@@ -119,7 +119,6 @@ UIViewController *childViewController_customStyle(UIViewController *viewControll
  *  UITabBarSystemItemMostRecent,
  *  UITabBarSystemItemMostViewed,
  */
-
 UIViewController *childViewController_SystemStyle(UIViewController *viewController,
                                                   UITabBarSystemItem systemItem,
                                                   NSUInteger tag){
@@ -134,7 +133,6 @@ UIViewController *childViewController_SystemStyle(UIViewController *viewControll
     for (int i = 0; i < self.tabBarControllerConfigMutArr.count; i++) {
         TabBarControllerConfig *config = (TabBarControllerConfig *)self.tabBarControllerConfigMutArr[i];
 
-        
         UIViewController *viewController = self.childMutArr[i];
         //
 //        [self addLottieImage:viewController
@@ -158,33 +156,35 @@ UIViewController *childViewController_SystemStyle(UIViewController *viewControll
             BaseNavigationVC *nav = [[BaseNavigationVC alloc] initWithRootViewController:viewController];
             nav.title = config.title;
             [self.childMutArr replaceObjectAtIndex:i withObject:nav];//替换元素，每个VC加Navigation
+            
+            [self addChildViewController:nav];
         }
     }
 #warning 这句话走了以后 才会有self.tabBar
-    self.viewControllers = self.childMutArr;
+//    self.viewControllers = self.childMutArr;
     
-    for (UIView *subView in self.tabBar.subviews) {
-        if ([subView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-            [UIView animationAlert:subView];//图片从小放大
-            [self.UITabBarButtonMutArr addObject:subView];
-        }
-    }
+//    for (UIView *subView in self.tabBar.subviews) {
+//        if ([subView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+//            [UIView animationAlert:subView];//图片从小放大
+//            [self.UITabBarButtonMutArr addObject:subView];
+//        }
+//    }
     
-    for (int i = 0; i < self.childMutArr.count; i++) {
-        TabBarControllerConfig *config = (TabBarControllerConfig *)self.tabBarControllerConfigMutArr[i];
-        if (![NSString isNullString:config.lottieName]) {
-            [self.tabBar addLottieImage:i
-                                offsetY:-config.humpOffsetY / 2
-                             lottieName:config.lottieName];
-        }
-    }
+//    for (int i = 0; i < self.childMutArr.count; i++) {
+//        TabBarControllerConfig *config = (TabBarControllerConfig *)self.tabBarControllerConfigMutArr[i];
+//        if (![NSString isNullString:config.lottieName]) {
+//            [self.tabBar addLottieImage:i
+//                                offsetY:-config.humpOffsetY / 2
+//                             lottieName:config.lottieName];
+//        }
+//    }
     
-    //初始显示
-    if (self.firstUI_selectedIndex < self.viewControllers.count) {
-        self.selectedIndex = self.firstUI_selectedIndex;//初始显示哪个
-        [self lottieImagePlay:self.childMutArr[self.firstUI_selectedIndex]];
-        [self.tabBar animationLottieImage:self.firstUI_selectedIndex];
-    }
+//    //初始显示
+//    if (self.firstUI_selectedIndex < self.childMutArr.count) {
+//        self.selectedIndex = self.firstUI_selectedIndex;//初始显示哪个
+//        [self lottieImagePlay:self.childMutArr[self.firstUI_selectedIndex]];
+//        [self.tabBar animationLottieImage:self.firstUI_selectedIndex];
+//    }
 }
 // MARK: - 给UITabBarItem绑定动画
 /// 给UITabBarItem绑定动画
@@ -288,7 +288,7 @@ NSArray *imgs (){//静态轮播图
     if (translation.x > 0.f && self.selectedIndex > 0) {
         self.selectedIndex --;
     }
-    else if (translation.x < 0.f && self.selectedIndex + 1 < self.viewControllers.count) {
+    else if (translation.x < 0.f && self.selectedIndex + 1 < self.childMutArr.count) {
         self.selectedIndex ++;
     }
 }
@@ -319,17 +319,17 @@ NSArray *imgs (){//静态轮播图
     }
 }
 
--(void)addLottieImage:(UIViewController *)vc
-          lottieImage:(NSString *)lottieImage{
-    vc.view.backgroundColor = [UIColor lightGrayColor];
-
-    LOTAnimationView *lottieView = [LOTAnimationView animationNamed:lottieImage];
-    lottieView.frame = [UIScreen mainScreen].bounds;
-    lottieView.contentMode = UIViewContentModeScaleAspectFit;
-    lottieView.loopAnimation = YES;
-    lottieView.tag = 100;
-    [vc.view addSubview:lottieView];
-}
+//-(void)addLottieImage:(UIViewController *)vc
+//          lottieImage:(NSString *)lottieImage{
+//    vc.view.backgroundColor = [UIColor lightGrayColor];
+//
+//    LOTAnimationView *lottieView = [LOTAnimationView animationNamed:lottieImage];
+//    lottieView.frame = [UIScreen mainScreen].bounds;
+//    lottieView.contentMode = UIViewContentModeScaleAspectFit;
+//    lottieView.loopAnimation = YES;
+//    lottieView.tag = 100;
+//    [vc.view addSubview:lottieView];
+//}
 
 -(void)lottieImagePlay:(UIViewController *)vc{
     LOTAnimationView *lottieView = (LOTAnimationView *)[vc.view viewWithTag:100];
@@ -352,8 +352,10 @@ NSArray *imgs (){//静态轮播图
         shakerAnimation(item.badgeView, 2, 20);//重力弹跳动画效果
         [item pp_increase];
 
-        UIView *UITabBarButton = self.UITabBarButtonMutArr[index];
-        [UIView animationAlert:UITabBarButton];//图片从小放大
+        if (self.UITabBarButtonMutArr.count) {
+            UIView *UITabBarButton = self.UITabBarButtonMutArr[index];
+            [UIView animationAlert:UITabBarButton];//图片从小放大
+        }
     }
 }
 #pragma mark - UITabBarControllerDelegate

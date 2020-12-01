@@ -21,14 +21,17 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
-    
-    [ViewController_3 comingFromVC:self
+
+    [UIViewController comingFromVC:self
                               toVC:ViewController_3.new
                        comingStyle:ComingStyle_PUSH
-                 presentationStyle:UIModalPresentationAutomatic
+                 presentationStyle:[UIDevice currentDevice].systemVersion.doubleValue >= 13.0 ? UIModalPresentationAutomatic : UIModalPresentationFullScreen
                      requestParams:@"测试专用"
-                           success:^(id data) {}
-                      animated:YES];
+          hidesBottomBarWhenPushed:YES
+                          animated:YES
+                           success:^(id data) {
+        
+    }];
 }
 
 

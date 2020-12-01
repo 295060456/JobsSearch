@@ -23,22 +23,21 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
-    
+
     [UIViewController comingFromVC:self
                               toVC:JobsSearchVC.new
                        comingStyle:ComingStyle_PUSH
-                 presentationStyle:UIModalPresentationAutomatic
+                 presentationStyle:[UIDevice currentDevice].systemVersion.doubleValue >= 13.0 ? UIModalPresentationAutomatic : UIModalPresentationFullScreen
                      requestParams:@{
                          @"Title":@"搜索功能",
 //                         @"HotSearchStyle":@(HotSearchStyle_2)
                          @"HotSearchStyle":@(HotSearchStyle_1)
                      }
+          hidesBottomBarWhenPushed:YES
+                          animated:YES
                            success:^(id data) {
-//        if ([data isKindOfClass:JobsSearchVC.class]) {
-//            JobsSearchVC *vc = (JobsSearchVC *)data;
-//        }
-    }
-                          animated:YES];
+        
+    }];
 }
 
 @end
