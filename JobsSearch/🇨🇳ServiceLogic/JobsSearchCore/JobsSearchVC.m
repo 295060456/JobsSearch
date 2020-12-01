@@ -14,6 +14,7 @@
 #import "JobsSearchTableView.h"
 #import "UITableView+WWFoldableTableView.h"
 #import "JobsSearchResultDataListView.h"//逐字搜索返回数据结果下拉列表
+#import "UIViewController+NavigationBar.h"
 
 #import "TableViewCell.h"
 
@@ -49,32 +50,45 @@ UITableViewDataSource
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.isOpenLetterCase = YES;
-    self.view.backgroundColor = self.bgColour;
-    
-    self.titleStr = (NSString *)self.requestParams[@"Title"];//会根据外界是否传入标题来决定是否生成 gk_navigationBar
-    self.hotSearchStyle = [self.requestParams[@"HotSearchStyle"] integerValue];
+//    self.isOpenLetterCase = YES;//模糊查询时，是否开启输入字母大小写检测？默认开启
+//    self.view.backgroundColor = self.bgColour;
+    self.setupNavigationBarHidden = YES;
+    self.isHiddenNavigationBar = YES;
+   
+////    JobsSearchAppDelegate.sharedInstance.tabBarVC.tabBar.hidden = YES;
+//
+//    self.titleStr = (NSString *)self.requestParams[@"Title"];//会根据外界是否传入标题来决定是否生成 gk_navigationBar
+//    self.hotSearchStyle = [self.requestParams[@"HotSearchStyle"] integerValue];
+
+//    if (![NSString isNullString:self.titleStr]) {
+//        self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
+//        self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.scanBtn];
+//        self.gk_navBackgroundColor = self.bgColour;
+////        self.gk_captureImage;
+//        self.gk_interactivePopDisabled = NO;
+//        self.gk_fullScreenPopDisabled = NO;
+//
+//        self.gk_navTitle = self.titleStr;
+//        [self hideNavLine];
+//        [self.view bringSubviewToFront:self.gk_navigationBar];
+//        self.gk_navigationBarHeight = self.gk_navigationBar.mj_h;
+//    }
 
     self.tableView.alpha = 1;
-
-    if (![NSString isNullString:self.titleStr]) {
-        self.gk_navLeftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtnCategory];
-        self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.scanBtn];
-        self.gk_navBackgroundColor = self.bgColour;
-//        self.gk_captureImage;
-        self.gk_interactivePopDisabled = NO;
-        self.gk_fullScreenPopDisabled = NO;
-        
-        self.gk_navTitle = self.titleStr;
-        [self hideNavLine];
-        [self.view bringSubviewToFront:self.gk_navigationBar];
-        self.gk_navigationBarHeight = self.gk_navigationBar.mj_h;
-    }
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(hotLabelNotification:)
                                                  name:@"HotLabel"
                                                object:nil];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+//    self.navigationController.navigationBar.hidden = YES;
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -83,6 +97,16 @@ UITableViewDataSource
 
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
+}
+
+-(void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    NSLog(@"");
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    NSLog(@"");
 }
 //逐字搜索功能
 -(void)searchByString:(NSString *)string{
@@ -378,13 +402,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
             }else{
                 make.top.equalTo(self.view.mas_top);
             }
-            
-            //之所以这么处理，全是因为动画逻辑会整体将_tableView往上提一段距离
-            if ([JobsSearchAppDelegate sharedInstance].tabBarVC.tabBar.hidden) {
-                make.bottom.equalTo(self.view.mas_bottom).offset([JobsSearchAppDelegate sharedInstance].tabBarVC.myTabBar.height);
-            }else{
-                make.bottom.equalTo(self.view.mas_bottom);
-            }
+            make.bottom.equalTo(self.view.mas_bottom);
         }];
         [self.view layoutIfNeeded];
         self.tableViewRect = _tableView.frame;
@@ -396,8 +414,9 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
         _jobsSearchBar = JobsSearchBar.new;
         _jobsSearchBar.mj_size = CGSizeMake(MAINSCREEN_WIDTH, 60);
         @weakify(self)
-        [_jobsSearchBar actionBlockJobsSearchBar:^(id data,id data2) {
-//            NSLog(@"KKK = %@",data);
+        [_jobsSearchBar actionBlockJobsSearchBar:^(id data,//方法名
+                                                   id data2) {//值
+            NSLog(@"HHH data = %@,data2 = %@",data,data2);
             if ([data isKindOfClass:NSString.class]) {
                 NSString *str = (NSString *)data;
                 if ([str isEqualToString:@"textFieldShouldEndEditing:"]) {//正常位

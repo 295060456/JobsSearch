@@ -36,6 +36,7 @@ static char *UIViewController_BaseVC_pushOrPresent = "UIViewController_BaseVC_pu
                 if (successBlock) {
                     successBlock(toVC);
                 }
+                toVC.hidesBottomBarWhenPushed = YES;//下面有黑条
                 [weak_rootVC.navigationController pushViewController:toVC
                                                             animated:animated];
             }else{

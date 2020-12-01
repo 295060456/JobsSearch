@@ -126,6 +126,7 @@ didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
         [_window makeKeyAndVisible];
     }return _window;
 }
+
 -(TabbarVC *)tabBarVC{
     if (!_tabBarVC) {
         _tabBarVC = TabbarVC.new;

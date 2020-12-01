@@ -237,6 +237,7 @@
 		C5BA3AF5252C64F90039530C /* 假数据.json in Resources */ = {isa = PBXBuildFile; fileRef = C5BA3AF4252C64F90039530C /* 假数据.json */; };
 		C5C2444C2541A72F00CB55F5 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C2444B2541A72F00CB55F5 /* TableViewCell.m */; };
 		C5C244552541A8A600CB55F5 /* DataCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C244542541A8A600CB55F5 /* DataCollectionViewCell.m */; };
+		C5D33083257606770019C56E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D33082257606770019C56E /* BaseViewController.m */; };
 		E7F73E4FA4EEA0009C5C36E7 /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -696,6 +697,8 @@
 		C5C244542541A8A600CB55F5 /* DataCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataCollectionViewCell.m; sourceTree = "<group>"; };
 		C5C2445D2541BC8800CB55F5 /* 方式2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方式2.png"; sourceTree = "<group>"; };
 		C5C244612541BF7300CB55F5 /* 方式1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方式1.png"; sourceTree = "<group>"; };
+		C5D33081257606770019C56E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C5D33082257606770019C56E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E208309A6E4FE733F446B4B9 /* Pods-JobsSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearchUITests/Pods-JobsSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1150,8 +1153,8 @@
 		C57278FB254098AA002373D7 /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				C57278FC254098AA002373D7 /* BaseNavigationVC.m */,
 				C57278FD254098AA002373D7 /* BaseNavigationVC.h */,
+				C57278FC254098AA002373D7 /* BaseNavigationVC.m */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
@@ -1481,26 +1484,8 @@
 		C59B9A4D2526E3E00039B485 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C57670532546B96D00C382C8 /* UIViewController+TZImagePickerController */,
-				C576704C2546B94A00C382C8 /* UIViewController+JXCategory */,
-				C572790625409923002373D7 /* UIViewController+NavigationBar.h */,
-				C572790725409923002373D7 /* UIViewController+NavigationBar.m */,
-				C5914BEC25384E5F007777A6 /* UIViewController+BackBtn.h */,
-				C5914BF525384E5F007777A6 /* UIViewController+BackBtn.m */,
-				C5914BFF25384E60007777A6 /* UIViewController+BaseVC.h */,
-				C5914BF425384E5F007777A6 /* UIViewController+BaseVC.m */,
-				C5914BF825384E60007777A6 /* UIViewController+BRPickerView.h */,
-				C5914BF025384E5F007777A6 /* UIViewController+BRPickerView.m */,
-				C5914BFB25384E60007777A6 /* UIViewController+BWShareView.h */,
-				C5914BFE25384E60007777A6 /* UIViewController+BWShareView.m */,
-				C5914BF725384E60007777A6 /* UIViewController+GifImageView.h */,
-				C5914BE625384E5E007777A6 /* UIViewController+GifImageView.m */,
-				C5914BF325384E5F007777A6 /* UIViewController+JPImageresizerView.h */,
-				C5914BF125384E5F007777A6 /* UIViewController+JPImageresizerView.m */,
-				C5914BF625384E60007777A6 /* UIViewController+MJRefresh.h */,
-				C5914BFA25384E60007777A6 /* UIViewController+MJRefresh.m */,
-				C5914BE725384E5E007777A6 /* UIViewController+Shake.h */,
-				C5914BE425384E5E007777A6 /* UIViewController+Shake.m */,
+				C5D330802576063F0019C56E /* BaseViewController */,
+				C5D3303A257606180019C56E /* UIViewController+Category */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -2225,6 +2210,42 @@
 			path = SceneDelegate;
 			sourceTree = "<group>";
 		};
+		C5D3303A257606180019C56E /* UIViewController+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C57670532546B96D00C382C8 /* UIViewController+TZImagePickerController */,
+				C576704C2546B94A00C382C8 /* UIViewController+JXCategory */,
+				C572790625409923002373D7 /* UIViewController+NavigationBar.h */,
+				C572790725409923002373D7 /* UIViewController+NavigationBar.m */,
+				C5914BEC25384E5F007777A6 /* UIViewController+BackBtn.h */,
+				C5914BF525384E5F007777A6 /* UIViewController+BackBtn.m */,
+				C5914BFF25384E60007777A6 /* UIViewController+BaseVC.h */,
+				C5914BF425384E5F007777A6 /* UIViewController+BaseVC.m */,
+				C5914BF825384E60007777A6 /* UIViewController+BRPickerView.h */,
+				C5914BF025384E5F007777A6 /* UIViewController+BRPickerView.m */,
+				C5914BFB25384E60007777A6 /* UIViewController+BWShareView.h */,
+				C5914BFE25384E60007777A6 /* UIViewController+BWShareView.m */,
+				C5914BF725384E60007777A6 /* UIViewController+GifImageView.h */,
+				C5914BE625384E5E007777A6 /* UIViewController+GifImageView.m */,
+				C5914BF325384E5F007777A6 /* UIViewController+JPImageresizerView.h */,
+				C5914BF125384E5F007777A6 /* UIViewController+JPImageresizerView.m */,
+				C5914BF625384E60007777A6 /* UIViewController+MJRefresh.h */,
+				C5914BFA25384E60007777A6 /* UIViewController+MJRefresh.m */,
+				C5914BE725384E5E007777A6 /* UIViewController+Shake.h */,
+				C5914BE425384E5E007777A6 /* UIViewController+Shake.m */,
+			);
+			path = "UIViewController+Category";
+			sourceTree = "<group>";
+		};
+		C5D330802576063F0019C56E /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D33081257606770019C56E /* BaseViewController.h */,
+				C5D33082257606770019C56E /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		DB6EB4965849B35F47ED7CA5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2553,6 +2574,7 @@
 				C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */,
 				C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */,
 				C59B99992526E0A50039B485 /* ZZCountingLabel.m in Sources */,
+				C5D33083257606770019C56E /* BaseViewController.m in Sources */,
 				C59B9CCB2526E3F10039B485 /* NSTimerManager.m in Sources */,
 				C59B9CC02526E3F10039B485 /* AVFounationTools.m in Sources */,
 				C576705C2546B97700C382C8 /* UIViewController+TZImagePickerControllerDelegate.m in Sources */,

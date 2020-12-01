@@ -134,10 +134,8 @@ replacementString:(NSString *)string{
 
     NSLog(@"resString = %@",resString);
     
-    if (![NSString isNullString:string]) {
-        if (self.jobsSearchBarBlock) {
-            self.jobsSearchBarBlock(NSStringFromSelector(_cmd),resString);
-        }
+    if (self.jobsSearchBarBlock) {
+        self.jobsSearchBarBlock(NSStringFromSelector(_cmd),resString);
     }return YES;
 }
 //询问委托人是否应删除文本字段的当前内容
@@ -158,6 +156,8 @@ replacementString:(NSString *)string{
         _tf.placeholder = @"请输入搜索内容";
         _tf.delegate = self;
         _tf.leftView = self.imgView;
+        _tf.placeHolderAlignment = PlaceHolderAlignmentCenter;
+        _tf.ZYtextColor = KPurpleColor;
         _tf.leftViewMode = UITextFieldViewModeAlways;
         _tf.backgroundColor = HEXCOLOR(0xFFFFFF);
         _tf.keyboardAppearance = UIKeyboardAppearanceAlert;
