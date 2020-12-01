@@ -102,7 +102,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 -(void)actionBlockJobsSearchResultDataListView:(MKDataBlock _Nullable)jobsSearchResultDataListViewBlock{
     self.jobsSearchResultDataListViewBlock = jobsSearchResultDataListViewBlock;
 }
-
 #pragma mark —— lazyLoad
 -(JobsSearchTableView *)tableView{
     if (!_tableView) {

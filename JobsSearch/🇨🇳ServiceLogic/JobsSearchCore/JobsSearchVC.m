@@ -129,7 +129,6 @@ UITableViewDataSource
     }
     self.jobsSearchResultDataListView.searchResDataMutArr = self.searchResDataMutArr;
     [self.jobsSearchResultDataListView.tableView reloadData];
-    NSLog(@"");
 }
 //点击自己 自己移除自己的最正确做法，直接置nil 是不成功的
 -(void)deallocJobsSearchResultDataListView{
@@ -510,9 +509,6 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                     }
                     
                     [self goUpAndDown:YES];
-                    
-                    [self cancelBtnEvent];
-                    [self deallocJobsSearchResultDataListView];
                 }
                 else{}
             }
@@ -585,6 +581,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
 -(JobsSearchResultDataListView *)jobsSearchResultDataListView{
     if (!_jobsSearchResultDataListView) {
         _jobsSearchResultDataListView = JobsSearchResultDataListView.new;
+        _jobsSearchResultDataListView.backgroundColor = kRedColor;
         @weakify(self)
         [_jobsSearchResultDataListView actionBlockJobsSearchResultDataListView:^(id data) {
             @strongify(self)

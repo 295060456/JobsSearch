@@ -21,6 +21,12 @@
 #import "SPAlertController.h"
 #endif
 
+//#if __has_include(<IQKeyboardManager/IQKeyboardManager.h>)
+//#import <IQKeyboardManager/IQKeyboardManager.h>
+//#else
+//#import "IQKeyboardManager.h"
+//#endif
+
 #if __has_include(<ReactiveObjC/ReactiveObjC.h>)
 #import <ReactiveObjC/ReactiveObjC.h>
 #else
