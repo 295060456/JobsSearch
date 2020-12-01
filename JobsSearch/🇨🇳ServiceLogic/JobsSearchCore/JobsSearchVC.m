@@ -491,21 +491,9 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                     }
                     
                     [self goUpAndDown:YES];
-                }
-                else if ([str isEqualToString:@"cjTextFieldDeleteBackward:"]){
-                    NSLog(@"cjTextFieldDeleteBackward:");
-                    NSLog(@"输入框没有值的时候启动的删除");
-                    @strongify(self)
+                    
                     [self cancelBtnEvent];
                     [self deallocJobsSearchResultDataListView];
-                }
-                else if ([str isEqualToString:@"输入框有值的时候启动的删除"]){
-                    NSLog(@"输入框有值的时候启动的删除");
-                    @strongify(self)
-                    if ([data2 isKindOfClass:NSString.class]) {
-                        NSString *text = (NSString *)data2;
-                        [self searchByString:(NSString *)text];
-                    }
                 }
                 else{}
             }

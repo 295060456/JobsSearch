@@ -10,7 +10,6 @@
 @interface JobsSearchBar ()
 <
 UITextFieldDelegate
-,CJTextFieldDeleteDelegate
 >
 
 @property(nonatomic,assign)BOOL isOK;
@@ -33,19 +32,6 @@ UITextFieldDelegate
         self.tf.alpha = 1;
         self.cancelBtn.alpha = 1;
         self.isOK = YES;
-    }
-}
-//删除的话：系统先走textField:shouldChangeCharactersInRange:replacementString: 再走cjTextFieldDeleteBackward:
-#pragma mark —— CJTextFieldDeleteDelegate
-- (void)cjTextFieldDeleteBackward:(CJTextField *)textField{
-    if ([NSString isNullString:textField.text]) {
-        if (self.jobsSearchBarBlock) {
-            self.jobsSearchBarBlock(NSStringFromSelector(_cmd),textField.text);
-        }
-    }else{
-        if (self.jobsSearchBarBlock) {
-            self.jobsSearchBarBlock(@"输入框有值的时候启动的删除",textField.text);
-        }
     }
 }
 #pragma mark —— UITextFieldDelegate
@@ -78,7 +64,7 @@ UITextFieldDelegate
                                           BOOL t = NO;
                                           for (NSString *str in arr) {
                                               if ([str isEqualToString:string]) {
-                                                  t = YES;//只要有一个是重复的就赋值YES 
+                                                  t = YES;//只要有一个是重复的就赋值YES
                                               }
                                           }return t;
                                       };
@@ -150,7 +136,7 @@ replacementString:(NSString *)string{
     
     if (![NSString isNullString:string]) {
         if (self.jobsSearchBarBlock) {
-            self.jobsSearchBarBlock(NSStringFromSelector(_cmd),[textField.text stringByAppendingString:string]);
+            self.jobsSearchBarBlock(NSStringFromSelector(_cmd),resString);
         }
     }return YES;
 }
@@ -171,7 +157,6 @@ replacementString:(NSString *)string{
         _tf = ZYTextField.new;
         _tf.placeholder = @"请输入搜索内容";
         _tf.delegate = self;
-        _tf.cj_delegate = self;
         _tf.leftView = self.imgView;
         _tf.leftViewMode = UITextFieldViewModeAlways;
         _tf.backgroundColor = HEXCOLOR(0xFFFFFF);
