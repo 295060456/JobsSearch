@@ -121,7 +121,6 @@
             return newbounds;
         }break;
         case PlaceHolderAlignmentRight:{
-
             CGFloat width = bounds.size.width - size.width;
             newbounds.origin.x = width - (self.placeHolderOffset + self.leftViewOffsetX);
             newbounds.size.width = size.width;

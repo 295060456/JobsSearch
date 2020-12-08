@@ -24,13 +24,13 @@ typedef NS_ENUM(NSUInteger, PlaceHolderAlignment){
 @property(nonatomic,assign)CGFloat offset;
 @property(nonatomic,assign)CGFloat leftViewOffsetX;
 @property(nonatomic,assign)CGFloat rightViewOffsetX;
+@property(nonatomic,assign)PlaceHolderAlignment placeHolderAlignment;//PlaceHolder的位置
+@property(nonatomic,assign)CGFloat placeHolderOffset;//左/右/居中 对齐的时候的偏移量 传正值
 
 @property(nonatomic,assign)CGFloat ZYTextFieldCornerRadius;
 @property(nonatomic,assign)CGFloat ZYTextFieldBorderWidth;
 @property(nonatomic,assign)UIColor *ZYTextFieldBorderColor;
 @property(nonatomic,assign)BOOL ZYTextFieldMasksToBounds;
-@property(nonatomic,assign)PlaceHolderAlignment placeHolderAlignment;//PlaceHolder的位置
-@property(nonatomic,assign)CGFloat placeHolderOffset;//左/右/居中 对齐的时候的偏移量 传正值
 
 @property(nonatomic,strong)NSMutableArray <RichLabelDataStringsModel *>*richLabelDataStringsForPlaceHolderMutArr;
 
