@@ -60,8 +60,14 @@
 #import "UITableViewCell+WhiteArrows.h"
 //UIColor
 #import "UIColor+Hex.h"
-
+//UIImage
 #import "LoadingImage.h"
+#import "UIImage+Extras.h"
+#import "UIImage+Overlay.h"
+#import "UIImage+screenshot.h"
+#import "UIImage+SYS.h"
+#import "UIImage+Tailor.h"
+#import "UIImage+YBGIF.h"
 
 #import "MacroDef_Sys.h"
 #import "MacroDef_Cor.h"

@@ -87,11 +87,11 @@
 #import "PPBadgeView.h"
 #endif
 
-#if __has_include(<YYKit/YYKit.h>)
-#import <YYKit/YYKit.h>
-#else
-#import "YYKit.h"
-#endif
+//#if __has_include(<YYKit/YYKit.h>)
+//#import <YYKit/YYKit.h>
+//#else
+//#import "YYKit.h"
+//#endif
 
 #if __has_include(<LYEmptyViewHeader/LYEmptyViewHeader.h>)
 #import <LYEmptyViewHeader/LYEmptyViewHeader.h>

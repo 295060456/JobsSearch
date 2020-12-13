@@ -30,7 +30,7 @@ def func
   pod 'GKNavigationBar'
   pod 'JXCategoryView'
   pod 'JXPagingView/Pager' # https://github.com/pujiaxin33/JXPagingView NO_SMP
-  pod 'YYKit'
+#  pod 'YYKit'
   pod 'LYEmptyView' # https://github.com/dev-liyang/LYEmptyView iOS一行代码集成空白页面占位图(无数据、无网络占位图)
   pod 'SDWebImage'
 #  pod 'FDFullscreenPopGesture'
