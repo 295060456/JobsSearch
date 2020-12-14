@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#warning UIControlStateSelected 不要用 只锁定 UIControlStateNormal 因为不同的按钮状态会刷新按钮界面，导致self.titleLabel 和 self.imageView 位置大小错乱，很难以调整，看不懂他底层的调用方案
-#warning 每一次因为selected不同而需要更换title和image 都必须调用layoutButtonWithEdgeInsetsStyle:imageTitleSpace: 进行刷新
-
 // 定义一个枚举（包含了四种类型的button）
 typedef NS_ENUM(NSUInteger, GLButtonEdgeInsetsStyle) {
     GLButtonEdgeInsetsStyleTop, // image在上，label在下

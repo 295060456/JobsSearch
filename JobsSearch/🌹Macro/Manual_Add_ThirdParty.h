@@ -68,6 +68,8 @@
 #import "UIImage+SYS.h"
 #import "UIImage+Tailor.h"
 #import "UIImage+YBGIF.h"
+//UIControl
+#import "UIControl+XY.h"
 
 #import "MacroDef_Sys.h"
 #import "MacroDef_Cor.h"
@@ -76,8 +78,6 @@
 
 #import "UIButton+ImageTitleSpacing.h"
 #import "NSTimerManager.h"
-#import "UIControl+XY.h"
-#import "PlaySound.h"
 #import "YBNotificationManager.h"
 #import "TXFileOperation.h"
 #import "FileFolderHandleTool.h"
