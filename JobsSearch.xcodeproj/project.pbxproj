@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		546D0F8992EF2B75337A28D6 /* Pods_JobsSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1A4CC21A9B0CCE56525A73 /* Pods_JobsSearchUITests.framework */; };
 		B1FCA2073A31A5D9A5BF4BB0 /* Pods_JobsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */; };
+		C5226BF925875982004447FB /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226BF425875982004447FB /* BWShareView.m */; };
+		C5226BFA25875982004447FB /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226BF625875982004447FB /* BWItemCollectionViewCell.m */; };
+		C5226BFB25875982004447FB /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226BF725875982004447FB /* BWItemModel.m */; };
 		C530B008254D9A8100EDEDC8 /* LMHWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C530AFF5254D9A8000EDEDC8 /* LMHWaterFallLayout.m */; };
 		C530B009254D9A8100EDEDC8 /* KFZShopCatoryFlowLayput.m in Sources */ = {isa = PBXBuildFile; fileRef = C530AFF8254D9A8000EDEDC8 /* KFZShopCatoryFlowLayput.m */; };
 		C530B00A254D9A8100EDEDC8 /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C530AFFA254D9A8000EDEDC8 /* HQCollectionViewFlowLayout.m */; };
@@ -168,10 +171,6 @@
 		C59B9C9E2526E3F10039B485 /* UIDevice+XMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BC92526E3EF0039B485 /* UIDevice+XMUtils.m */; };
 		C59B9C9F2526E3F10039B485 /* UIButton+CountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BCB2526E3F00039B485 /* UIButton+CountDownBtn.m */; };
 		C59B9CA02526E3F10039B485 /* 验证码按钮单例封装 in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BCC2526E3F00039B485 /* 验证码按钮单例封装 */; };
-		C59B9CAB2526E3F10039B485 /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BDF2526E3F00039B485 /* BWItemModel.m */; };
-		C59B9CAC2526E3F10039B485 /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BE02526E3F00039B485 /* BWShareView.m */; };
-		C59B9CAD2526E3F10039B485 /* 分享控件的用法 in Resources */ = {isa = PBXBuildFile; fileRef = C59B9BE12526E3F00039B485 /* 分享控件的用法 */; };
-		C59B9CAE2526E3F10039B485 /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BE22526E3F00039B485 /* BWItemCollectionViewCell.m */; };
 		C59B9CB22526E3F10039B485 /* FileFolderHandleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BF22526E3F00039B485 /* FileFolderHandleTool.m */; };
 		C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BF42526E3F00039B485 /* MonitorNetwoking.m */; };
 		C59B9CB42526E3F10039B485 /* JhtBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9BFA2526E3F00039B485 /* JhtBannerView.m */; };
@@ -266,6 +265,13 @@
 		8A1A4CC21A9B0CCE56525A73 /* Pods_JobsSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6B8F73219A4D790276103 /* Pods-JobsSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchTests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchTests/Pods-JobsSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A84ECDA1DF94EA70BE0F2CA4 /* Pods-JobsSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch/Pods-JobsSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		C5226BF125875981004447FB /* BWItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemCollectionViewCell.h; sourceTree = "<group>"; };
+		C5226BF225875981004447FB /* BWItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemModel.h; sourceTree = "<group>"; };
+		C5226BF325875982004447FB /* 分享控件的用法.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "分享控件的用法.md"; sourceTree = "<group>"; };
+		C5226BF425875982004447FB /* BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWShareView.m; sourceTree = "<group>"; };
+		C5226BF525875982004447FB /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
+		C5226BF625875982004447FB /* BWItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemCollectionViewCell.m; sourceTree = "<group>"; };
+		C5226BF725875982004447FB /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
 		C530AFF4254D9A8000EDEDC8 /* LMHWaterFallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHWaterFallLayout.h; sourceTree = "<group>"; };
 		C530AFF5254D9A8000EDEDC8 /* LMHWaterFallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHWaterFallLayout.m; sourceTree = "<group>"; };
 		C530AFF7254D9A8000EDEDC8 /* KFZShopCatoryFlowLayput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFZShopCatoryFlowLayput.h; sourceTree = "<group>"; };
@@ -573,13 +579,6 @@
 		C59B9BCB2526E3F00039B485 /* UIButton+CountDownBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CountDownBtn.m"; sourceTree = "<group>"; };
 		C59B9BCC2526E3F00039B485 /* 验证码按钮单例封装 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "验证码按钮单例封装"; sourceTree = "<group>"; };
 		C59B9BCE2526E3F00039B485 /* UIButton+CountDownBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDownBtn.h"; sourceTree = "<group>"; };
-		C59B9BDF2526E3F00039B485 /* BWItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemModel.m; sourceTree = "<group>"; };
-		C59B9BE02526E3F00039B485 /* BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWShareView.m; sourceTree = "<group>"; };
-		C59B9BE12526E3F00039B485 /* 分享控件的用法 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "分享控件的用法"; sourceTree = "<group>"; };
-		C59B9BE22526E3F00039B485 /* BWItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWItemCollectionViewCell.m; sourceTree = "<group>"; };
-		C59B9BE32526E3F00039B485 /* BWItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemModel.h; sourceTree = "<group>"; };
-		C59B9BE42526E3F00039B485 /* BWItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemCollectionViewCell.h; sourceTree = "<group>"; };
-		C59B9BE52526E3F00039B485 /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
 		C59B9BF12526E3F00039B485 /* FileFolderHandleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileFolderHandleTool.h; sourceTree = "<group>"; };
 		C59B9BF22526E3F00039B485 /* FileFolderHandleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileFolderHandleTool.m; sourceTree = "<group>"; };
 		C59B9BF42526E3F00039B485 /* MonitorNetwoking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitorNetwoking.m; sourceTree = "<group>"; };
@@ -1914,13 +1913,13 @@
 		C59B9BDE2526E3F00039B485 /* 分享控件 */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9BDF2526E3F00039B485 /* BWItemModel.m */,
-				C59B9BE02526E3F00039B485 /* BWShareView.m */,
-				C59B9BE12526E3F00039B485 /* 分享控件的用法 */,
-				C59B9BE22526E3F00039B485 /* BWItemCollectionViewCell.m */,
-				C59B9BE32526E3F00039B485 /* BWItemModel.h */,
-				C59B9BE42526E3F00039B485 /* BWItemCollectionViewCell.h */,
-				C59B9BE52526E3F00039B485 /* BWShareView.h */,
+				C5226BF325875982004447FB /* 分享控件的用法.md */,
+				C5226BF125875981004447FB /* BWItemCollectionViewCell.h */,
+				C5226BF625875982004447FB /* BWItemCollectionViewCell.m */,
+				C5226BF225875981004447FB /* BWItemModel.h */,
+				C5226BF725875982004447FB /* BWItemModel.m */,
+				C5226BF525875982004447FB /* BWShareView.h */,
+				C5226BF425875982004447FB /* BWShareView.m */,
 			);
 			path = "分享控件";
 			sourceTree = "<group>";
@@ -2687,7 +2686,6 @@
 				C5710879253C09E3005B3A0C /* upgrade.json in Resources */,
 				C59BA1F325271DAE0039B485 /* 删除.png in Resources */,
 				C571087C253C09E3005B3A0C /* tab_search_animate.json in Resources */,
-				C59B9CAD2526E3F10039B485 /* 分享控件的用法 in Resources */,
 				C5710880253C09E3005B3A0C /* huiyuan.json in Resources */,
 				C571086F253C09E3005B3A0C /* TabbaritemImage.bundle in Resources */,
 				C59B9C9B2526E3F10039B485 /* 水平进度条.png in Resources */,
@@ -2842,6 +2840,7 @@
 				C59B9CCE2526E3F10039B485 /* CADisplayLink_TimerManager.m in Sources */,
 				C59B9ACE2526E3E10039B485 /* NSObject+Measure.m in Sources */,
 				C5B47FA4252A127A00387F47 /* UILabel+Extra.m in Sources */,
+				C5226BF925875982004447FB /* BWShareView.m in Sources */,
 				C59B9CB52526E3F10039B485 /* JhtBannerScrollView.m in Sources */,
 				C5914C0625384E61007777A6 /* UIViewController+JPImageresizerView.m in Sources */,
 				C5710864253C09E3005B3A0C /* TransitionAnimation.m in Sources */,
@@ -2867,8 +2866,6 @@
 				C544BFD22583754500C6CF2A /* LOTAnimationMJRefreshHeader.m in Sources */,
 				C546C45F252C2BF3003694FF /* JobsSearchTableView.m in Sources */,
 				C5D77EA2257F5F820087FC92 /* ZYTextField+HistoryDataList.m in Sources */,
-				C59B9CAC2526E3F10039B485 /* BWShareView.m in Sources */,
-				C59B9CAE2526E3F10039B485 /* BWItemCollectionViewCell.m in Sources */,
 				C59B9AD02526E3E10039B485 /* NSObject+Shake.m in Sources */,
 				C57F0D2C253337140080EEF0 /* NSObject+OpenURL.m in Sources */,
 				C59B9CCC2526E3F10039B485 /* GCD_TimerManager.m in Sources */,
@@ -2880,7 +2877,6 @@
 				C59B9C942526E3F10039B485 /* ZBURLRequest.m in Sources */,
 				C59B9D6B2526E59E0039B485 /* ViewController@1.m in Sources */,
 				C59BA0A6252711260039B485 /* JobsSearchTableViewHeaderView.m in Sources */,
-				C59B9CAB2526E3F10039B485 /* BWItemModel.m in Sources */,
 				C5850A5F25483D0D001E6676 /* ViewForTableViewFooter.m in Sources */,
 				C59B9CB42526E3F10039B485 /* JhtBannerView.m in Sources */,
 				C59B9AEE2526E3E10039B485 /* UITableView+XSAnimationKit.m in Sources */,
@@ -2946,11 +2942,13 @@
 				C546C487252C3979003694FF /* JobsSearchResultDataListTBVCell.m in Sources */,
 				C5D6D9BC25860E3900029AFF /* NSObject+Time.m in Sources */,
 				C59B999A2526E0A50039B485 /* ZZCircleProgress.m in Sources */,
+				C5226BFB25875982004447FB /* BWItemModel.m in Sources */,
 				C59B9AF62526E3E10039B485 /* NSArray+Extend.m in Sources */,
 				C56186A5255D6B60004E7B47 /* XHLaunchAdButton.m in Sources */,
 				C59B9F132526F56E0039B485 /* JobsSearchBar.m in Sources */,
 				C59B9AE92526E3E10039B485 /* CALayer+Anim.m in Sources */,
 				C5C2444C2541A72F00CB55F5 /* TableViewCell.m in Sources */,
+				C5226BFA25875982004447FB /* BWItemCollectionViewCell.m in Sources */,
 				C59B9CE32526E4110039B485 /* ViewController@3.m in Sources */,
 				C544BFD02583754500C6CF2A /* UIViewController+MJRefresh.m in Sources */,
 				C59B9C912526E3F10039B485 /* FMHttpResonse.m in Sources */,
