@@ -35,19 +35,20 @@
 		C552A52A2589D20C00A89501 /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A952526E3E10039B485 /* NSArray+Extension.m */; };
 		C552A6702589D2CA00A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552A66E2589D2CA00A89501 /* UIImage+ScreenShot.m */; };
 		C5569687255BFCC3005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569683255BFCC2005C1361 /* NSString+Extras.m */; };
+		C558E311258A1EA10078DB8F /* XHLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E2FD258A1EA10078DB8F /* XHLaunchAdView.m */; };
+		C558E312258A1EA10078DB8F /* XHLaunchAdButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E300258A1EA10078DB8F /* XHLaunchAdButton.m */; };
+		C558E313258A1EA10078DB8F /* XHLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E302258A1EA10078DB8F /* XHLaunchImageView.m */; };
+		C558E314258A1EA10078DB8F /* XHLaunchAdConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E303258A1EA10078DB8F /* XHLaunchAdConst.m */; };
+		C558E315258A1EA10078DB8F /* XHLaunchAd不用pod导入的情况说明.md in Resources */ = {isa = PBXBuildFile; fileRef = C558E305258A1EA10078DB8F /* XHLaunchAd不用pod导入的情况说明.md */; };
+		C558E316258A1EA10078DB8F /* XHLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E306258A1EA10078DB8F /* XHLaunchAd.m */; };
+		C558E317258A1EA10078DB8F /* XHLaunchAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E307258A1EA10078DB8F /* XHLaunchAdController.m */; };
+		C558E318258A1EA10078DB8F /* XHLaunchAdDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E308258A1EA10078DB8F /* XHLaunchAdDownloader.m */; };
+		C558E319258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E30A258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.m */; };
+		C558E31A258A1EA10078DB8F /* XHLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E30B258A1EA10078DB8F /* XHLaunchAdConfiguration.m */; };
+		C558E31B258A1EA10078DB8F /* XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E30D258A1EA10078DB8F /* XHLaunchAdCache.m */; };
+		C558E31C258A1EA10078DB8F /* XHLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E30F258A1EA10078DB8F /* XHLaunchAdImageManager.m */; };
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
-		C56186A4255D6B60004E7B47 /* XHLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5618691255D6B60004E7B47 /* XHLaunchAdView.m */; };
-		C56186A5255D6B60004E7B47 /* XHLaunchAdButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5618694255D6B60004E7B47 /* XHLaunchAdButton.m */; };
-		C56186A6255D6B60004E7B47 /* XHLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5618696255D6B60004E7B47 /* XHLaunchImageView.m */; };
-		C56186A7255D6B60004E7B47 /* XHLaunchAdConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C5618697255D6B60004E7B47 /* XHLaunchAdConst.m */; };
-		C56186A8255D6B60004E7B47 /* XHLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = C5618699255D6B60004E7B47 /* XHLaunchAd.m */; };
-		C56186A9255D6B60004E7B47 /* XHLaunchAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = C561869A255D6B60004E7B47 /* XHLaunchAdController.m */; };
-		C56186AA255D6B60004E7B47 /* XHLaunchAdDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C561869B255D6B60004E7B47 /* XHLaunchAdDownloader.m */; };
-		C56186AB255D6B60004E7B47 /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C561869D255D6B60004E7B47 /* XHLaunchAdImageView+XHLaunchAdCache.m */; };
-		C56186AC255D6B60004E7B47 /* XHLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C561869E255D6B60004E7B47 /* XHLaunchAdConfiguration.m */; };
-		C56186AD255D6B60004E7B47 /* XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C56186A0255D6B60004E7B47 /* XHLaunchAdCache.m */; };
-		C56186AE255D6B60004E7B47 /* XHLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C56186A2255D6B60004E7B47 /* XHLaunchAdImageManager.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C56BB988258798F40043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB985258798F40043C977 /* UIControl+XY.m */; };
 		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
@@ -121,7 +122,7 @@
 		C59B99982526E0A50039B485 /* ZZCircleProgress.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B99702526E0A50039B485 /* ZZCircleProgress.bundle */; };
 		C59B99992526E0A50039B485 /* ZZCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B99722526E0A50039B485 /* ZZCountingLabel.m */; };
 		C59B999A2526E0A50039B485 /* ZZCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B99742526E0A50039B485 /* ZZCircleProgress.m */; };
-		C59B99AA2526E1190039B485 /* YBNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B99A32526E1180039B485 /* YBNotificationManager.m */; };
+		C59B99AA2526E1190039B485 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B99A32526E1180039B485 /* NotificationManager.m */; };
 		C59B9ACA2526E3E10039B485 /* NSObject+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A2E2526E3E00039B485 /* NSObject+Random.m */; };
 		C59B9ACB2526E3E10039B485 /* NSObject+SPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A302526E3E00039B485 /* NSObject+SPAlertController.m */; };
 		C59B9ACC2526E3E10039B485 /* NSObject+SYSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A312526E3E00039B485 /* NSObject+SYSAlertController.m */; };
@@ -289,10 +290,6 @@
 		C544BFCD2583754500C6CF2A /* LOTAnimationMJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationMJRefreshHeader.m; sourceTree = "<group>"; };
 		C544BFCE2583754500C6CF2A /* LOTAnimationMJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationMJRefreshHeader.h; sourceTree = "<group>"; };
 		C544BFCF2583754500C6CF2A /* JsonRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JsonRes.bundle; sourceTree = "<group>"; };
-		C546C3A5252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
-		C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		C546C3A8252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		C546C45D252C2BF3003694FF /* JobsSearchTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchTableView.h; sourceTree = "<group>"; };
 		C546C45E252C2BF3003694FF /* JobsSearchTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchTableView.m; sourceTree = "<group>"; };
 		C546C485252C3979003694FF /* JobsSearchResultDataListTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchResultDataListTBVCell.h; sourceTree = "<group>"; };
@@ -320,31 +317,34 @@
 		C552A6772589D2E800A89501 /* 专治UITableView相应链断裂.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "专治UITableView相应链断裂.md"; sourceTree = "<group>"; };
 		C5569683255BFCC2005C1361 /* NSString+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extras.m"; sourceTree = "<group>"; };
 		C5569684255BFCC3005C1361 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
+		C558E1E5258A1CD50078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
+		C558E2A9258A1DAA0078DB8F /* JobsSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JobsSearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		C558E2FA258A1EA10078DB8F /* XHLaunchAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdController.h; sourceTree = "<group>"; };
+		C558E2FB258A1EA10078DB8F /* XHLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAd.h; sourceTree = "<group>"; };
+		C558E2FC258A1EA10078DB8F /* XHLaunchAdDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdDownloader.h; sourceTree = "<group>"; };
+		C558E2FD258A1EA10078DB8F /* XHLaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdView.m; sourceTree = "<group>"; };
+		C558E2FE258A1EA10078DB8F /* XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdCache.h; sourceTree = "<group>"; };
+		C558E2FF258A1EA10078DB8F /* XHLaunchAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConfiguration.h; sourceTree = "<group>"; };
+		C558E300258A1EA10078DB8F /* XHLaunchAdButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdButton.m; sourceTree = "<group>"; };
+		C558E301258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XHLaunchAdImageView+XHLaunchAdCache.h"; sourceTree = "<group>"; };
+		C558E302258A1EA10078DB8F /* XHLaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchImageView.m; sourceTree = "<group>"; };
+		C558E303258A1EA10078DB8F /* XHLaunchAdConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConst.m; sourceTree = "<group>"; };
+		C558E304258A1EA10078DB8F /* XHLaunchAdImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdImageManager.h; sourceTree = "<group>"; };
+		C558E305258A1EA10078DB8F /* XHLaunchAd不用pod导入的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "XHLaunchAd不用pod导入的情况说明.md"; sourceTree = "<group>"; };
+		C558E306258A1EA10078DB8F /* XHLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAd.m; sourceTree = "<group>"; };
+		C558E307258A1EA10078DB8F /* XHLaunchAdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdController.m; sourceTree = "<group>"; };
+		C558E308258A1EA10078DB8F /* XHLaunchAdDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdDownloader.m; sourceTree = "<group>"; };
+		C558E309258A1EA10078DB8F /* XHLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchImageView.h; sourceTree = "<group>"; };
+		C558E30A258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XHLaunchAdImageView+XHLaunchAdCache.m"; sourceTree = "<group>"; };
+		C558E30B258A1EA10078DB8F /* XHLaunchAdConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConfiguration.m; sourceTree = "<group>"; };
+		C558E30C258A1EA10078DB8F /* XHLaunchAdButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdButton.h; sourceTree = "<group>"; };
+		C558E30D258A1EA10078DB8F /* XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdCache.m; sourceTree = "<group>"; };
+		C558E30E258A1EA10078DB8F /* XHLaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdView.h; sourceTree = "<group>"; };
+		C558E30F258A1EA10078DB8F /* XHLaunchAdImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdImageManager.m; sourceTree = "<group>"; };
+		C558E310258A1EA10078DB8F /* XHLaunchAdConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConst.h; sourceTree = "<group>"; };
 		C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RBCLikeButton.bundle; sourceTree = "<group>"; };
 		C55AABA72532B2F800335ACC /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
-		C561868E255D6B60004E7B47 /* XHLaunchAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdController.h; sourceTree = "<group>"; };
-		C561868F255D6B60004E7B47 /* XHLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAd.h; sourceTree = "<group>"; };
-		C5618690255D6B60004E7B47 /* XHLaunchAdDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdDownloader.h; sourceTree = "<group>"; };
-		C5618691255D6B60004E7B47 /* XHLaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdView.m; sourceTree = "<group>"; };
-		C5618692255D6B60004E7B47 /* XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdCache.h; sourceTree = "<group>"; };
-		C5618693255D6B60004E7B47 /* XHLaunchAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConfiguration.h; sourceTree = "<group>"; };
-		C5618694255D6B60004E7B47 /* XHLaunchAdButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdButton.m; sourceTree = "<group>"; };
-		C5618695255D6B60004E7B47 /* XHLaunchAdImageView+XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XHLaunchAdImageView+XHLaunchAdCache.h"; sourceTree = "<group>"; };
-		C5618696255D6B60004E7B47 /* XHLaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchImageView.m; sourceTree = "<group>"; };
-		C5618697255D6B60004E7B47 /* XHLaunchAdConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConst.m; sourceTree = "<group>"; };
-		C5618698255D6B60004E7B47 /* XHLaunchAdImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdImageManager.h; sourceTree = "<group>"; };
-		C5618699255D6B60004E7B47 /* XHLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAd.m; sourceTree = "<group>"; };
-		C561869A255D6B60004E7B47 /* XHLaunchAdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdController.m; sourceTree = "<group>"; };
-		C561869B255D6B60004E7B47 /* XHLaunchAdDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdDownloader.m; sourceTree = "<group>"; };
-		C561869C255D6B60004E7B47 /* XHLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchImageView.h; sourceTree = "<group>"; };
-		C561869D255D6B60004E7B47 /* XHLaunchAdImageView+XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XHLaunchAdImageView+XHLaunchAdCache.m"; sourceTree = "<group>"; };
-		C561869E255D6B60004E7B47 /* XHLaunchAdConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConfiguration.m; sourceTree = "<group>"; };
-		C561869F255D6B60004E7B47 /* XHLaunchAdButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdButton.h; sourceTree = "<group>"; };
-		C56186A0255D6B60004E7B47 /* XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdCache.m; sourceTree = "<group>"; };
-		C56186A1255D6B60004E7B47 /* XHLaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdView.h; sourceTree = "<group>"; };
-		C56186A2255D6B60004E7B47 /* XHLaunchAdImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdImageManager.m; sourceTree = "<group>"; };
-		C56186A3255D6B60004E7B47 /* XHLaunchAdConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConst.h; sourceTree = "<group>"; };
 		C5620C2F25541AC400FE435F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C56BB985258798F40043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
@@ -467,8 +467,8 @@
 		C59B99742526E0A50039B485 /* ZZCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCircleProgress.m; sourceTree = "<group>"; };
 		C59B999F2526E1180039B485 /* Manual_Add_ThirdParty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manual_Add_ThirdParty.h; sourceTree = "<group>"; };
 		C59B99A02526E1180039B485 /* DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineStructure.h; sourceTree = "<group>"; };
-		C59B99A22526E1180039B485 /* YBNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBNotificationManager.h; sourceTree = "<group>"; };
-		C59B99A32526E1180039B485 /* YBNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBNotificationManager.m; sourceTree = "<group>"; };
+		C59B99A22526E1180039B485 /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationManager.h; sourceTree = "<group>"; };
+		C59B99A32526E1180039B485 /* NotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationManager.m; sourceTree = "<group>"; };
 		C59B99A42526E1190039B485 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 		C59B99A52526E1190039B485 /* Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Other.h; sourceTree = "<group>"; };
 		C59B99A62526E1190039B485 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -901,17 +901,6 @@
 			path = LOTAnimationMJRefreshHeader;
 			sourceTree = "<group>";
 		};
-		C546C39E252C21F0003694FF /* FDFullscreenPopGesture */ = {
-			isa = PBXGroup;
-			children = (
-				C546C3A5252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.h */,
-				C546C3A6252C222F003694FF /* UINavigationController+FDFullscreenPopGesture.m */,
-				C546C3A8252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.h */,
-				C546C3A7252C222F003694FF /* UIScrollView+FDFullscreenPopGesture.m */,
-			);
-			path = FDFullscreenPopGesture;
-			sourceTree = "<group>";
-		};
 		C546C458252C2B77003694FF /* 视图部分 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1052,6 +1041,108 @@
 			path = "NSObject+Others";
 			sourceTree = "<group>";
 		};
+		C558E1E2258A1CB30078DB8F /* 第三方头文件管理 */ = {
+			isa = PBXGroup;
+			children = (
+				C558E1E4258A1CC20078DB8F /* Pods */,
+				C558E1E3258A1CBC0078DB8F /* 手动导入的第三方 */,
+			);
+			path = "第三方头文件管理";
+			sourceTree = "<group>";
+		};
+		C558E1E3258A1CBC0078DB8F /* 手动导入的第三方 */ = {
+			isa = PBXGroup;
+			children = (
+				C59B999F2526E1180039B485 /* Manual_Add_ThirdParty.h */,
+			);
+			path = "手动导入的第三方";
+			sourceTree = "<group>";
+		};
+		C558E1E4258A1CC20078DB8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C59B99A82526E1190039B485 /* Pods.h */,
+				C558E1E5258A1CD50078DB8F /* PodsManual.h */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C558E244258A1D1C0078DB8F /* 各项全局定义 */ = {
+			isa = PBXGroup;
+			children = (
+				C5470F6C25309C7F00651ACE /* 各项宏定义 */,
+				C558E245258A1D270078DB8F /* 其他的一些全局定义文件 */,
+				C59B99A12526E1180039B485 /* NotificationManager */,
+			);
+			path = "各项全局定义";
+			sourceTree = "<group>";
+		};
+		C558E245258A1D270078DB8F /* 其他的一些全局定义文件 */ = {
+			isa = PBXGroup;
+			children = (
+				C59B99A92526E1190039B485 /* AABlock.h */,
+				C59B99A42526E1190039B485 /* APIKey.h */,
+				C59B99A02526E1180039B485 /* DefineStructure.h */,
+			);
+			path = "其他的一些全局定义文件";
+			sourceTree = "<group>";
+		};
+		C558E2A7258A1D930078DB8F /* 其他杂项 */ = {
+			isa = PBXGroup;
+			children = (
+				C59B99A52526E1190039B485 /* Other.h */,
+			);
+			path = "其他杂项";
+			sourceTree = "<group>";
+		};
+		C558E2A8258A1DA20078DB8F /* Swift-OC桥接头文件 */ = {
+			isa = PBXGroup;
+			children = (
+				C558E2A9258A1DAA0078DB8F /* JobsSearch-Bridging-Header.h */,
+			);
+			path = "Swift-OC桥接头文件";
+			sourceTree = "<group>";
+		};
+		C558E2F9258A1EA10078DB8F /* XHLaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				C558E2FB258A1EA10078DB8F /* XHLaunchAd.h */,
+				C558E306258A1EA10078DB8F /* XHLaunchAd.m */,
+				C558E305258A1EA10078DB8F /* XHLaunchAd不用pod导入的情况说明.md */,
+				C558E30C258A1EA10078DB8F /* XHLaunchAdButton.h */,
+				C558E300258A1EA10078DB8F /* XHLaunchAdButton.m */,
+				C558E2FE258A1EA10078DB8F /* XHLaunchAdCache.h */,
+				C558E30D258A1EA10078DB8F /* XHLaunchAdCache.m */,
+				C558E2FF258A1EA10078DB8F /* XHLaunchAdConfiguration.h */,
+				C558E30B258A1EA10078DB8F /* XHLaunchAdConfiguration.m */,
+				C558E310258A1EA10078DB8F /* XHLaunchAdConst.h */,
+				C558E303258A1EA10078DB8F /* XHLaunchAdConst.m */,
+				C558E2FA258A1EA10078DB8F /* XHLaunchAdController.h */,
+				C558E307258A1EA10078DB8F /* XHLaunchAdController.m */,
+				C558E2FC258A1EA10078DB8F /* XHLaunchAdDownloader.h */,
+				C558E308258A1EA10078DB8F /* XHLaunchAdDownloader.m */,
+				C558E304258A1EA10078DB8F /* XHLaunchAdImageManager.h */,
+				C558E30F258A1EA10078DB8F /* XHLaunchAdImageManager.m */,
+				C558E301258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.h */,
+				C558E30A258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.m */,
+				C558E30E258A1EA10078DB8F /* XHLaunchAdView.h */,
+				C558E2FD258A1EA10078DB8F /* XHLaunchAdView.m */,
+				C558E309258A1EA10078DB8F /* XHLaunchImageView.h */,
+				C558E302258A1EA10078DB8F /* XHLaunchImageView.m */,
+			);
+			name = XHLaunchAd;
+			path = "../../../../Desktop/DouDong-II/PodsManual/XHLaunchAd";
+			sourceTree = "<group>";
+		};
+		C558EFEF258A2E5B0078DB8F /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				C59B9A212526E36F0039B485 /* BaseCustomizeUIKit */,
+				C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
 		C55EDA0725677E4F007B403C /* 数据以及资源 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1059,36 +1150,6 @@
 				C5B85532252B44B300890A66 /* 图片资源 */,
 			);
 			path = "数据以及资源";
-			sourceTree = "<group>";
-		};
-		C561868D255D6B60004E7B47 /* XHLaunchAd */ = {
-			isa = PBXGroup;
-			children = (
-				C561868E255D6B60004E7B47 /* XHLaunchAdController.h */,
-				C561868F255D6B60004E7B47 /* XHLaunchAd.h */,
-				C5618690255D6B60004E7B47 /* XHLaunchAdDownloader.h */,
-				C5618691255D6B60004E7B47 /* XHLaunchAdView.m */,
-				C5618692255D6B60004E7B47 /* XHLaunchAdCache.h */,
-				C5618693255D6B60004E7B47 /* XHLaunchAdConfiguration.h */,
-				C5618694255D6B60004E7B47 /* XHLaunchAdButton.m */,
-				C5618695255D6B60004E7B47 /* XHLaunchAdImageView+XHLaunchAdCache.h */,
-				C5618696255D6B60004E7B47 /* XHLaunchImageView.m */,
-				C5618697255D6B60004E7B47 /* XHLaunchAdConst.m */,
-				C5618698255D6B60004E7B47 /* XHLaunchAdImageManager.h */,
-				C5618699255D6B60004E7B47 /* XHLaunchAd.m */,
-				C561869A255D6B60004E7B47 /* XHLaunchAdController.m */,
-				C561869B255D6B60004E7B47 /* XHLaunchAdDownloader.m */,
-				C561869C255D6B60004E7B47 /* XHLaunchImageView.h */,
-				C561869D255D6B60004E7B47 /* XHLaunchAdImageView+XHLaunchAdCache.m */,
-				C561869E255D6B60004E7B47 /* XHLaunchAdConfiguration.m */,
-				C561869F255D6B60004E7B47 /* XHLaunchAdButton.h */,
-				C56186A0255D6B60004E7B47 /* XHLaunchAdCache.m */,
-				C56186A1255D6B60004E7B47 /* XHLaunchAdView.h */,
-				C56186A2255D6B60004E7B47 /* XHLaunchAdImageManager.m */,
-				C56186A3255D6B60004E7B47 /* XHLaunchAdConst.h */,
-			);
-			name = XHLaunchAd;
-			path = "../../../JobsIM/JobsIM/Pod 不进去的/XHLaunchAd";
 			sourceTree = "<group>";
 		};
 		C5710821253C09D4005B3A0C /* 深度拓展系统UITabBar全家桶 */ = {
@@ -1390,12 +1451,13 @@
 		C59B98CE2526DE260039B485 = {
 			isa = PBXGroup;
 			children = (
-				C5620C2F25541AC400FE435F /* README.md */,
 				C59B98D92526DE260039B485 /* JobsSearch */,
 				C59B98F82526DE270039B485 /* JobsSearchTests */,
 				C59B99032526DE270039B485 /* JobsSearchUITests */,
-				DB6EB4965849B35F47ED7CA5 /* Pods */,
 				16C9BA6D9A540B88907BA323 /* Frameworks */,
+				DB6EB4965849B35F47ED7CA5 /* Pods */,
+				C59B99192526E09C0039B485 /* PodsManual */,
+				C5620C2F25541AC400FE435F /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1414,13 +1476,10 @@
 			isa = PBXGroup;
 			children = (
 				C59B98EE2526DE270039B485 /* Info.plist */,
-				C5D3353725763F8A0019C56E /* 资源文件 */,
-				C59B999E2526E0D50039B485 /* 🌹Macro */,
-				C59B99192526E09C0039B485 /* Pods不进去的 */,
-				C59B99182526E0730039B485 /* Other */,
 				C59B9A202526E3680039B485 /* AppDelegate & SceneDelegate */,
-				C59B9A212526E36F0039B485 /* BaseCustomizeUIKit */,
-				C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */,
+				C59B999E2526E0D50039B485 /* 🌹Macro */,
+				C558EFEF258A2E5B0078DB8F /* 3rd */,
+				C59B99182526E0730039B485 /* Other */,
 				C59B9A232526E3800039B485 /* 🇨🇳ServiceLogic */,
 			);
 			path = JobsSearch;
@@ -1447,6 +1506,7 @@
 		C59B99182526E0730039B485 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C5D3353725763F8A0019C56E /* 资源文件 */,
 				C59B98D82526DE260039B485 /* Products */,
 				C59B98E32526DE260039B485 /* Main.storyboard */,
 				C59B98EB2526DE270039B485 /* LaunchScreen.storyboard */,
@@ -1456,14 +1516,13 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		C59B99192526E09C0039B485 /* Pods不进去的 */ = {
+		C59B99192526E09C0039B485 /* PodsManual */ = {
 			isa = PBXGroup;
 			children = (
-				C561868D255D6B60004E7B47 /* XHLaunchAd */,
-				C546C39E252C21F0003694FF /* FDFullscreenPopGesture */,
+				C558E2F9258A1EA10078DB8F /* XHLaunchAd */,
 				C59B996F2526E0A50039B485 /* ZZCircleProgress */,
 			);
-			path = "Pods不进去的";
+			path = PodsManual;
 			sourceTree = "<group>";
 		};
 		C59B996F2526E0A50039B485 /* ZZCircleProgress */ = {
@@ -1481,26 +1540,22 @@
 		C59B999E2526E0D50039B485 /* 🌹Macro */ = {
 			isa = PBXGroup;
 			children = (
-				C5470F6C25309C7F00651ACE /* 各项宏定义 */,
-				C59B99A12526E1180039B485 /* Notification */,
-				C59B99A92526E1190039B485 /* AABlock.h */,
-				C59B99A42526E1190039B485 /* APIKey.h */,
-				C59B99A02526E1180039B485 /* DefineStructure.h */,
-				C59B999F2526E1180039B485 /* Manual_Add_ThirdParty.h */,
-				C59B99A52526E1190039B485 /* Other.h */,
-				C59B99A82526E1190039B485 /* Pods.h */,
 				C59B99A62526E1190039B485 /* PrefixHeader.pch */,
+				C558E1E2258A1CB30078DB8F /* 第三方头文件管理 */,
+				C558E244258A1D1C0078DB8F /* 各项全局定义 */,
+				C558E2A7258A1D930078DB8F /* 其他杂项 */,
+				C558E2A8258A1DA20078DB8F /* Swift-OC桥接头文件 */,
 			);
 			path = "🌹Macro";
 			sourceTree = "<group>";
 		};
-		C59B99A12526E1180039B485 /* Notification */ = {
+		C59B99A12526E1180039B485 /* NotificationManager */ = {
 			isa = PBXGroup;
 			children = (
-				C59B99A22526E1180039B485 /* YBNotificationManager.h */,
-				C59B99A32526E1180039B485 /* YBNotificationManager.m */,
+				C59B99A22526E1180039B485 /* NotificationManager.h */,
+				C59B99A32526E1180039B485 /* NotificationManager.m */,
 			);
-			path = Notification;
+			path = NotificationManager;
 			sourceTree = "<group>";
 		};
 		C59B9A202526E3680039B485 /* AppDelegate & SceneDelegate */ = {
@@ -2641,6 +2696,7 @@
 				TargetAttributes = {
 					C59B98D62526DE260039B485 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1230;
 					};
 					C59B98F42526DE270039B485 = {
 						CreatedOnToolsVersion = 12.2;
@@ -2708,6 +2764,7 @@
 				C59B9C9B2526E3F10039B485 /* 水平进度条.png in Resources */,
 				C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */,
 				C5710881253C09E3005B3A0C /* fangzi.json in Resources */,
+				C558E315258A1EA10078DB8F /* XHLaunchAd不用pod导入的情况说明.md in Resources */,
 				C5B85607252B558D00890A66 /* Telegram.bundle in Resources */,
 				C571087E253C09E3005B3A0C /* music_animation.json in Resources */,
 				C5710872253C09E3005B3A0C /* wode.json in Resources */,
@@ -2844,14 +2901,12 @@
 				C59B9C8F2526E3F10039B485 /* CustomerAVPlayerVC.m in Sources */,
 				C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */,
 				C59B9C972526E3F10039B485 /* ZBRequestManager.m in Sources */,
-				C56186A6255D6B60004E7B47 /* XHLaunchImageView.m in Sources */,
 				C59B9CE22526E4110039B485 /* ViewController@4.m in Sources */,
 				C59B98F02526DE270039B485 /* main.m in Sources */,
 				C59B9AD32526E3E10039B485 /* UIImage+Tailor.m in Sources */,
 				C5B85617252B577A00890A66 /* UITableView+WWFoldableTableView.m in Sources */,
 				C530B00A254D9A8100EDEDC8 /* HQCollectionViewFlowLayout.m in Sources */,
 				C54AB110255E5FB2000A314D /* UITableViewCell+Margin.m in Sources */,
-				C56186A4255D6B60004E7B47 /* XHLaunchAdView.m in Sources */,
 				C59B9B092526E3E10039B485 /* UIView+Measure.m in Sources */,
 				C59B9C992526E3F10039B485 /* NSString+ZBUTF8Encoding.m in Sources */,
 				C59B9CCE2526E3F10039B485 /* CADisplayLink_TimerManager.m in Sources */,
@@ -2867,7 +2922,6 @@
 				C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */,
 				C59B9AD52526E3E10039B485 /* UIImage+Extras.m in Sources */,
 				C59B9B082526E3E10039B485 /* UIView+Chain.m in Sources */,
-				C56186A7255D6B60004E7B47 /* XHLaunchAdConst.m in Sources */,
 				C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */,
 				C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */,
 				C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */,
@@ -2902,7 +2956,7 @@
 				C530B008254D9A8100EDEDC8 /* LMHWaterFallLayout.m in Sources */,
 				C5D77571257F59E60087FC92 /* JobsMagicTextField.m in Sources */,
 				C530B00E254D9A8100EDEDC8 /* CollectionView.m in Sources */,
-				C59B99AA2526E1190039B485 /* YBNotificationManager.m in Sources */,
+				C59B99AA2526E1190039B485 /* NotificationManager.m in Sources */,
 				C5D0B81A25878DA0002CA224 /* UIButton+ImageTitleSpacing.m in Sources */,
 				C59B9B0B2526E3E10039B485 /* UIView+SuspendView.m in Sources */,
 				C59B9C9C2526E3F10039B485 /* WGradientProgressView.m in Sources */,
@@ -2914,28 +2968,30 @@
 				C571086D253C09E3005B3A0C /* TabBarItem.m in Sources */,
 				C59B9CE12526E4110039B485 /* ViewController@5.m in Sources */,
 				C5AEEAED253841B1000E1C5F /* UIView+Animation.m in Sources */,
-				C56186AD255D6B60004E7B47 /* XHLaunchAdCache.m in Sources */,
 				C59B9C8D2526E3F10039B485 /* CustomerAVPlayerView.m in Sources */,
 				C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */,
+				C558E311258A1EA10078DB8F /* XHLaunchAdView.m in Sources */,
 				C571086B253C09E3005B3A0C /* CustomTabBar.m in Sources */,
 				C5914C0225384E61007777A6 /* UIViewController+GifImageView.m in Sources */,
 				C544BFD12583754500C6CF2A /* MJRefreshConfigModel.m in Sources */,
-				C56186AE255D6B60004E7B47 /* XHLaunchAdImageManager.m in Sources */,
 				C576705A2546B97700C382C8 /* UIViewController+TZLocationManager.m in Sources */,
+				C558E31A258A1EA10078DB8F /* XHLaunchAdConfiguration.m in Sources */,
 				C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */,
 				C59B9C932526E3F10039B485 /* FMHttpRequest.m in Sources */,
 				C59B9CC12526E3F10039B485 /* MovieCountDown.m in Sources */,
 				C5914C0D25384E61007777A6 /* UIViewController+BWShareView.m in Sources */,
 				C5D6D9CC25860E4A00029AFF /* NSTimerManager.m in Sources */,
 				C59B9C982526E3F10039B485 /* ZBCacheManager.m in Sources */,
-				C56186A8255D6B60004E7B47 /* XHLaunchAd.m in Sources */,
 				C59B9CD12526E3F10039B485 /* NSObject+LBLaunchImage.m in Sources */,
 				C59B9CBF2526E3F10039B485 /* GPUImageTools.m in Sources */,
 				C59B9C922526E3F10039B485 /* FMARCNetwork.m in Sources */,
 				C59B9CD22526E3F10039B485 /* LBLaunchImageAdView.m in Sources */,
 				C5D0B81125878D94002CA224 /* SoundBtn.m in Sources */,
 				C59B9ACA2526E3E10039B485 /* NSObject+Random.m in Sources */,
+				C558E318258A1EA10078DB8F /* XHLaunchAdDownloader.m in Sources */,
 				C59B9D712526E5AD0039B485 /* ViewController@2.m in Sources */,
+				C558E316258A1EA10078DB8F /* XHLaunchAd.m in Sources */,
+				C558E31B258A1EA10078DB8F /* XHLaunchAdCache.m in Sources */,
 				C59B9AF02526E3E10039B485 /* BaseTableViewer.m in Sources */,
 				C5710865253C09E3005B3A0C /* TransitionController.m in Sources */,
 				C571086A253C09E3005B3A0C /* UITabBar+Ex.m in Sources */,
@@ -2944,7 +3000,6 @@
 				C57278FE254098AA002373D7 /* NavigationBar.m in Sources */,
 				C5D7756E257F59E60087FC92 /* UITextField+Extend.m in Sources */,
 				C59B9AD72526E3E10039B485 /* UIImage+Overlay.m in Sources */,
-				C56186AA255D6B60004E7B47 /* XHLaunchAdDownloader.m in Sources */,
 				C546C48D252C3B45003694FF /* JobsSearchResultDataListView.m in Sources */,
 				C57278FF254098AA002373D7 /* BaseNavigationVC.m in Sources */,
 				C59B9CBC2526E3F10039B485 /* MKGPUImageView.m in Sources */,
@@ -2955,14 +3010,14 @@
 				C59B9C9E2526E3F10039B485 /* UIDevice+XMUtils.m in Sources */,
 				C59B9CCF2526E3F10039B485 /* ECAuthorizationTools.m in Sources */,
 				C59B98DC2526DE260039B485 /* JobsSearchAppDelegate.m in Sources */,
+				C558E319258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 				C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */,
-				C56186AC255D6B60004E7B47 /* XHLaunchAdConfiguration.m in Sources */,
 				C546C487252C3979003694FF /* JobsSearchResultDataListTBVCell.m in Sources */,
 				C5D6D9BC25860E3900029AFF /* NSObject+Time.m in Sources */,
 				C59B999A2526E0A50039B485 /* ZZCircleProgress.m in Sources */,
+				C558E314258A1EA10078DB8F /* XHLaunchAdConst.m in Sources */,
 				C5226BFB25875982004447FB /* BWItemModel.m in Sources */,
 				C59B9AF62526E3E10039B485 /* NSArray+Extend.m in Sources */,
-				C56186A5255D6B60004E7B47 /* XHLaunchAdButton.m in Sources */,
 				C59B9F132526F56E0039B485 /* JobsSearchBar.m in Sources */,
 				C59B9AE92526E3E10039B485 /* CALayer+Anim.m in Sources */,
 				C5C2444C2541A72F00CB55F5 /* TableViewCell.m in Sources */,
@@ -2991,12 +3046,13 @@
 				C5710867253C09E3005B3A0C /* TLTabBarAnimation.m in Sources */,
 				C59B9AD22526E3E10039B485 /* UIImage+YBGIF.m in Sources */,
 				C54B3C6D25526000003BE195 /* UIFont+Extras.m in Sources */,
+				C558E312258A1EA10078DB8F /* XHLaunchAdButton.m in Sources */,
 				C530B00C254D9A8100EDEDC8 /* CollectionReusableView.m in Sources */,
 				C59B9ACB2526E3E10039B485 /* NSObject+SPAlertController.m in Sources */,
-				C56186AB255D6B60004E7B47 /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 				C59B9ACF2526E3E10039B485 /* NSObject+Extras.m in Sources */,
-				C56186A9255D6B60004E7B47 /* XHLaunchAdController.m in Sources */,
 				C576705B2546B97700C382C8 /* UIViewController+TZImagePickerController.m in Sources */,
+				C558E313258A1EA10078DB8F /* XHLaunchImageView.m in Sources */,
+				C558E317258A1EA10078DB8F /* XHLaunchAdController.m in Sources */,
 				C595D2662587145A002A4531 /* SuspendView.m in Sources */,
 				C5C244552541A8A600CB55F5 /* DataCollectionViewCell.m in Sources */,
 				C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */,
@@ -3005,6 +3061,7 @@
 				C59B9AEA2526E3E10039B485 /* UIImageView+GIF.m in Sources */,
 				C59B9AED2526E3E10039B485 /* TableViewAnimationKit.m in Sources */,
 				C59B9CB62526E3F10039B485 /* JhtBannerCardView.m in Sources */,
+				C558E31C258A1EA10078DB8F /* XHLaunchAdImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3177,6 +3234,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/🌹Macro/PrefixHeader.pch";
@@ -3187,6 +3245,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MonkeyKingVideo.JobsSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JobsSearch/🌹Macro/JobsSearch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-ambiguous-macro";
 			};
@@ -3198,6 +3259,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/🌹Macro/PrefixHeader.pch";
@@ -3208,6 +3270,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MonkeyKingVideo.JobsSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JobsSearch/🌹Macro/JobsSearch-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-ambiguous-macro";
 			};
