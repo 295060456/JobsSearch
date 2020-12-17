@@ -14,25 +14,21 @@ static char *UIViewController_MJRefresh_refreshConfigHeader = "UIViewController_
 
 static char *UIViewController_MJRefresh_refreshConfigFooter = "UIViewController_MJRefresh_refreshConfigFooter";
 @dynamic refreshConfigFooter;
-
-//static char *UIViewController_MJRefresh_lotAnimationMJRefreshHeader = "UIViewController_MJRefresh_lotAnimationMJRefreshHeader";
-//@dynamic lotAnimationMJRefreshHeader;
-
 /*
  * 相关继承关系图谱 4个header + 9个Footer ;已经实现的👌
     MJRefreshGifHeader  👌 ->MJRefreshStateHeader->MJRefreshHeader->MJRefreshComponent->UIView
-    MJRefreshHeader ->MJRefreshComponent->UIView
-    MJRefreshNormalHeader ->MJRefreshStateHeader->MJRefreshHeader->MJRefreshComponent->UIView
-    MJRefreshStateHeader ->MJRefreshHeader->MJRefreshComponent->UIView
+    MJRefreshNormalHeader 👌->MJRefreshStateHeader->MJRefreshHeader->MJRefreshComponent->UIView
+    MJRefreshStateHeader 👌->MJRefreshHeader->MJRefreshComponent->UIView
+    MJRefreshHeader 👌->MJRefreshComponent->UIView
  
-    MJRefreshAutoFooter ->MJRefreshFooter->MJRefreshComponent->UIView
     MJRefreshAutoGifFooter  👌 ->MJRefreshAutoStateFooter->MJRefreshAutoFooter->MJRefreshFooter->MJRefreshComponent->UIView
     MJRefreshAutoNormalFooter  👌 ->MJRefreshAutoStateFooter->MJRefreshAutoFooter->MJRefreshFooter->MJRefreshComponent->UIView
     MJRefreshAutoStateFooter ->MJRefreshAutoFooter->MJRefreshFooter->MJRefreshComponent->UIView
-    MJRefreshBackFooter ->MJRefreshFooter->MJRefreshComponent->UIView
+    MJRefreshAutoFooter ->MJRefreshFooter->MJRefreshComponent->UIView
     MJRefreshBackGifFooter ->MJRefreshBackStateFooter->MJRefreshBackFooter->MJRefreshFooter->MJRefreshComponent->UIView
     MJRefreshBackNormalFooter  👌 ->MJRefreshBackStateFooter->MJRefreshBackFooter->MJRefreshFooter->MJRefreshComponent->UIView
     MJRefreshBackStateFooter ->MJRefreshBackFooter->MJRefreshFooter->MJRefreshComponent->UIView
+    MJRefreshBackFooter ->MJRefreshFooter->MJRefreshComponent->UIView
     MJRefreshFooter->MJRefreshComponent->UIView
  *
  */
@@ -116,11 +112,183 @@ static char *UIViewController_MJRefresh_refreshConfigFooter = "UIViewController_
  MJRefreshStateNoMoreData   //   所有数据加载完毕，没有更多的数据了
  */
 #pragma mark —— MJRefreshHeader
+-(LOTAnimationMJRefreshHeader *)lotAnimationMJRefreshHeader{
+    LOTAnimationMJRefreshHeader *lotAnimMJRefreshHeader;
+    if (!lotAnimMJRefreshHeader) {
+        @weakify(self)
+        lotAnimMJRefreshHeader = [LOTAnimationMJRefreshHeader headerWithRefreshingBlock:^{
+            @strongify(self)
+            [self pullToRefresh];
+        }];
+        //图片
+        {
+            // 普通闲置状态
+            [lotAnimMJRefreshHeader setImages:self.refreshConfigHeader.stateIdlePicsMutArr
+                                     forState:MJRefreshStateIdle];
+            // 松开就可以进行刷新的状态
+            [lotAnimMJRefreshHeader setImages:self.refreshConfigHeader.pullingPicsMutArr
+                                     forState:MJRefreshStatePulling];
+            // 正在刷新中的状态
+            [lotAnimMJRefreshHeader setImages:self.refreshConfigHeader.refreshingPicsMutArr
+                                     duration:self.refreshConfigHeader.refreshingDuration
+                                     forState:MJRefreshStateRefreshing];
+            // 即将刷新的状态
+            [lotAnimMJRefreshHeader setImages:self.refreshConfigHeader.willRefreshPicsMutArr
+                                     forState:MJRefreshStateWillRefresh];
+            // 所有数据加载完毕，没有更多的数据了
+            [lotAnimMJRefreshHeader setImages:self.refreshConfigHeader.noMoreDataPicsMutArr
+                                     forState:MJRefreshStateNoMoreData];
+        }
+        //文字
+        {
+            // 普通闲置状态
+            [lotAnimMJRefreshHeader setTitle:self.refreshConfigHeader.stateIdleTitle
+                                    forState:MJRefreshStateIdle];
+            // 松开就可以进行刷新的状态
+            [lotAnimMJRefreshHeader setTitle:self.refreshConfigHeader.pullingTitle
+                                    forState:MJRefreshStatePulling];
+            // 正在刷新中的状态
+            [lotAnimMJRefreshHeader setTitle:self.refreshConfigHeader.refreshingTitle
+                                  forState:MJRefreshStateRefreshing];
+            // 即将刷新的状态
+            [lotAnimMJRefreshHeader setTitle:self.refreshConfigHeader.willRefreshTitle
+                                    forState:MJRefreshStateWillRefresh];
+            // 所有数据加载完毕，没有更多的数据了
+            [lotAnimMJRefreshHeader setTitle:self.refreshConfigHeader.noMoreDataTitle
+                                    forState:MJRefreshStateNoMoreData];
+        }
+        //其他
+        {
+            // 设置字体
+            lotAnimMJRefreshHeader.stateLabel.font = self.refreshConfigHeader.font;
+            // 设置颜色
+            lotAnimMJRefreshHeader.stateLabel.textColor = self.refreshConfigHeader.textColor;
+            //震动特效反馈
+            if (self.refreshConfigHeader.isShake) {
+                [self addObserver:self
+                       forKeyPath:@"state"
+                          options:NSKeyValueObservingOptionNew
+                          context:nil];
+            }
+        }
+    }return lotAnimMJRefreshHeader;
+}
+
+-(MJRefreshNormalHeader *)mjRefreshNormalHeader{
+    MJRefreshNormalHeader *mjRefreshNormalHeader;
+    if (!mjRefreshNormalHeader) {
+        @weakify(self)
+        mjRefreshNormalHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            @strongify(self)
+            [self pullToRefresh];
+        }];
+        //文字
+        {
+            // 普通闲置状态
+            [mjRefreshNormalHeader setTitle:self.refreshConfigHeader.stateIdleTitle
+                                   forState:MJRefreshStateIdle];
+            // 松开就可以进行刷新的状态
+            [mjRefreshNormalHeader setTitle:self.refreshConfigHeader.pullingTitle
+                                   forState:MJRefreshStatePulling];
+            // 正在刷新中的状态
+            [mjRefreshNormalHeader setTitle:self.refreshConfigHeader.refreshingTitle
+                                   forState:MJRefreshStateRefreshing];
+            // 即将刷新的状态
+            [mjRefreshNormalHeader setTitle:self.refreshConfigHeader.willRefreshTitle
+                                   forState:MJRefreshStateWillRefresh];
+            // 所有数据加载完毕，没有更多的数据了
+            [mjRefreshNormalHeader setTitle:self.refreshConfigHeader.noMoreDataTitle
+                                   forState:MJRefreshStateNoMoreData];
+        }
+        //其他
+        {
+            // 设置字体
+            mjRefreshNormalHeader.stateLabel.font = self.refreshConfigHeader.font;
+            // 设置颜色
+            mjRefreshNormalHeader.stateLabel.textColor = self.refreshConfigHeader.textColor;
+            //震动特效反馈
+            if (self.refreshConfigHeader.isShake) {
+                [self addObserver:self
+                       forKeyPath:@"state"
+                          options:NSKeyValueObservingOptionNew
+                          context:nil];
+            }
+        }
+    }return mjRefreshNormalHeader;
+}
+
+-(MJRefreshStateHeader *)mjRefreshStateHeader{
+    MJRefreshStateHeader *mjRefreshStateHeader;
+    if (!mjRefreshStateHeader) {
+        @weakify(self)
+        mjRefreshStateHeader = [MJRefreshStateHeader headerWithRefreshingBlock:^{
+            @strongify(self)
+            [self pullToRefresh];
+        }];
+        //文字
+        {
+            // 普通闲置状态
+            [mjRefreshStateHeader setTitle:self.refreshConfigHeader.stateIdleTitle
+                                   forState:MJRefreshStateIdle];
+            // 松开就可以进行刷新的状态
+            [mjRefreshStateHeader setTitle:self.refreshConfigHeader.pullingTitle
+                                   forState:MJRefreshStatePulling];
+            // 正在刷新中的状态
+            [mjRefreshStateHeader setTitle:self.refreshConfigHeader.refreshingTitle
+                                   forState:MJRefreshStateRefreshing];
+            // 即将刷新的状态
+            [mjRefreshStateHeader setTitle:self.refreshConfigHeader.willRefreshTitle
+                                   forState:MJRefreshStateWillRefresh];
+            // 所有数据加载完毕，没有更多的数据了
+            [mjRefreshStateHeader setTitle:self.refreshConfigHeader.noMoreDataTitle
+                                   forState:MJRefreshStateNoMoreData];
+        }
+        //其他
+        {
+            // 设置字体
+            mjRefreshStateHeader.stateLabel.font = self.refreshConfigHeader.font;
+            // 设置颜色
+            mjRefreshStateHeader.stateLabel.textColor = self.refreshConfigHeader.textColor;
+            //震动特效反馈
+            if (self.refreshConfigHeader.isShake) {
+                [self addObserver:self
+                       forKeyPath:@"state"
+                          options:NSKeyValueObservingOptionNew
+                          context:nil];
+            }
+        }
+    }return mjRefreshStateHeader;
+}
+
+-(MJRefreshHeader *)mjRefreshHeader{
+    MJRefreshHeader *mjRefreshHeader;
+    if (!mjRefreshHeader) {
+        @weakify(self)
+        mjRefreshHeader = [MJRefreshHeader headerWithRefreshingBlock:^{
+            @strongify(self)
+            [self pullToRefresh];
+        }];
+        //其他
+        {
+            //震动特效反馈
+            if (self.refreshConfigHeader.isShake) {
+                [self addObserver:self
+                       forKeyPath:@"state"
+                          options:NSKeyValueObservingOptionNew
+                          context:nil];
+            }
+        }
+    }return mjRefreshHeader;
+}
+
 -(MJRefreshGifHeader *)mjRefreshGifHeader{
     MJRefreshGifHeader *mjRefreshGifHeader;
     if (!mjRefreshGifHeader) {
-        mjRefreshGifHeader = [MJRefreshGifHeader headerWithRefreshingTarget:self
-                                                           refreshingAction:@selector(pullToRefresh)];
+        @weakify(self)
+        mjRefreshGifHeader = [MJRefreshGifHeader headerWithRefreshingBlock:^{
+            @strongify(self)
+            [self pullToRefresh];
+        }];
         //图片
         {
             // 普通闲置状态
@@ -131,7 +299,7 @@ static char *UIViewController_MJRefresh_refreshConfigFooter = "UIViewController_
                                  forState:MJRefreshStatePulling];
             // 正在刷新中的状态
             [mjRefreshGifHeader setImages:self.refreshConfigHeader.refreshingPicsMutArr
-                                 duration:0.7
+                                 duration:self.refreshConfigHeader.refreshingDuration
                                  forState:MJRefreshStateRefreshing];
             // 即将刷新的状态
             [mjRefreshGifHeader setImages:self.refreshConfigHeader.willRefreshPicsMutArr
@@ -178,8 +346,11 @@ static char *UIViewController_MJRefresh_refreshConfigFooter = "UIViewController_
 -(MJRefreshAutoGifFooter *)mjRefreshAutoGifFooter{
     MJRefreshAutoGifFooter *mjRefreshAutoGifFooter;
     if (!mjRefreshAutoGifFooter) {
-        mjRefreshAutoGifFooter = [MJRefreshAutoGifFooter footerWithRefreshingTarget:self
-                                                                   refreshingAction:@selector(loadMoreRefresh)];
+        @weakify(self)
+        mjRefreshAutoGifFooter = [MJRefreshAutoGifFooter footerWithRefreshingBlock:^{
+            @strongify(self)
+            [self loadMoreRefresh];
+        }];
         // 图片
         {
             // 普通闲置状态
@@ -190,7 +361,7 @@ static char *UIViewController_MJRefresh_refreshConfigFooter = "UIViewController_
                                      forState:MJRefreshStatePulling];
             // 正在刷新中的状态
             [mjRefreshAutoGifFooter setImages:self.refreshConfigFooter.refreshingPicsMutArr
-                                     duration:0.4
+                                     duration:self.refreshConfigFooter.refreshingDuration
                                      forState:MJRefreshStateRefreshing];
             // 即将刷新的状态
             [mjRefreshAutoGifFooter setImages:self.refreshConfigFooter.willRefreshPicsMutArr
@@ -238,8 +409,11 @@ static char *UIViewController_MJRefresh_refreshConfigFooter = "UIViewController_
 -(MJRefreshBackNormalFooter *)mjRefreshBackNormalFooter{
     MJRefreshBackNormalFooter *mjRefreshBackNormalFooter;
     if (!mjRefreshBackNormalFooter) {
-        mjRefreshBackNormalFooter = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self
-                                                                         refreshingAction:@selector(loadMoreRefresh)];
+        @weakify(self)
+        mjRefreshBackNormalFooter = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+            @strongify(self)
+            [self loadMoreRefresh];
+        }];
         // 文字 (此模式下只有文字而没有图片)
         {
             // 普通闲置状态
