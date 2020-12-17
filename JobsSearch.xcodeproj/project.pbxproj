@@ -220,6 +220,8 @@
 		C5D0B81125878D94002CA224 /* SoundBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B80D25878D94002CA224 /* SoundBtn.m */; };
 		C5D0B81925878DA0002CA224 /* 高度自定义的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B81725878DA0002CA224 /* 高度自定义的按钮.md */; };
 		C5D0B81A25878DA0002CA224 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B81825878DA0002CA224 /* UIButton+ImageTitleSpacing.m */; };
+		C5D1BF24258B1FBD00784D2F /* UIView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1BF22258B1FBD00784D2F /* UIView+EmptyData.m */; };
+		C5D1BF30258B1FDC00784D2F /* UIViewController+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1BF2F258B1FDC00784D2F /* UIViewController+EmptyData.m */; };
 		C5D601D72586314400029AFF /* UIViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D601D62586314400029AFF /* UIViewController+NavigationBar.m */; };
 		C5D601E02586314D00029AFF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D601DE2586314D00029AFF /* BaseViewController.m */; };
 		C5D6D9BB25860E3900029AFF /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6D9B625860E3900029AFF /* TimeModel.m */; };
@@ -667,6 +669,10 @@
 		C5D0B81625878DA0002CA224 /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
 		C5D0B81725878DA0002CA224 /* 高度自定义的按钮.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
 		C5D0B81825878DA0002CA224 /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
+		C5D1BF22258B1FBD00784D2F /* UIView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmptyData.m"; sourceTree = "<group>"; };
+		C5D1BF23258B1FBD00784D2F /* UIView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyData.h"; sourceTree = "<group>"; };
+		C5D1BF2E258B1FDC00784D2F /* UIViewController+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EmptyData.h"; sourceTree = "<group>"; };
+		C5D1BF2F258B1FDC00784D2F /* UIViewController+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EmptyData.m"; sourceTree = "<group>"; };
 		C5D601D52586314400029AFF /* UIViewController+NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBar.h"; sourceTree = "<group>"; };
 		C5D601D62586314400029AFF /* UIViewController+NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBar.m"; sourceTree = "<group>"; };
 		C5D601DE2586314D00029AFF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -1818,6 +1824,7 @@
 			children = (
 				C595BBCF25864175002A4531 /* UIView+Animation */,
 				C595BBD125864182002A4531 /* UIView+Chain */,
+				C5D1BF21258B1FBD00784D2F /* UIView+EmptyData */,
 				C595BBD02586417C002A4531 /* UIView+Extras */,
 				C595BBD22586418A002A4531 /* UIView+Gradient */,
 				C5529F402589CE1F00A89501 /* UIView+JHGestureBlock */,
@@ -2373,6 +2380,24 @@
 			path = "高度自定义的按钮";
 			sourceTree = "<group>";
 		};
+		C5D1BA33258B0C6100784D2F /* UIViewController+EmptyData */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1BF2E258B1FDC00784D2F /* UIViewController+EmptyData.h */,
+				C5D1BF2F258B1FDC00784D2F /* UIViewController+EmptyData.m */,
+			);
+			path = "UIViewController+EmptyData";
+			sourceTree = "<group>";
+		};
+		C5D1BF21258B1FBD00784D2F /* UIView+EmptyData */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1BF22258B1FBD00784D2F /* UIView+EmptyData.m */,
+				C5D1BF23258B1FBD00784D2F /* UIView+EmptyData.h */,
+			);
+			path = "UIView+EmptyData";
+			sourceTree = "<group>";
+		};
 		C5D3303A257606180019C56E /* UIViewController+Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -2597,6 +2622,7 @@
 		C5D7890F257F79F70087FC92 /* UIViewController+Others */ = {
 			isa = PBXGroup;
 			children = (
+				C5D1BA33258B0C6100784D2F /* UIViewController+EmptyData */,
 				C544BBC82583723500C6CF2A /* UIViewController+BackBtn */,
 				C544BBCF2583723D00C6CF2A /* UIViewController+BaseVC */,
 				C544BBD32583724700C6CF2A /* UIViewController+BRPickerView */,
@@ -2985,6 +3011,7 @@
 				C59B9CD12526E3F10039B485 /* NSObject+LBLaunchImage.m in Sources */,
 				C59B9CBF2526E3F10039B485 /* GPUImageTools.m in Sources */,
 				C59B9C922526E3F10039B485 /* FMARCNetwork.m in Sources */,
+				C5D1BF30258B1FDC00784D2F /* UIViewController+EmptyData.m in Sources */,
 				C59B9CD22526E3F10039B485 /* LBLaunchImageAdView.m in Sources */,
 				C5D0B81125878D94002CA224 /* SoundBtn.m in Sources */,
 				C59B9ACA2526E3E10039B485 /* NSObject+Random.m in Sources */,
@@ -3014,6 +3041,7 @@
 				C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */,
 				C546C487252C3979003694FF /* JobsSearchResultDataListTBVCell.m in Sources */,
 				C5D6D9BC25860E3900029AFF /* NSObject+Time.m in Sources */,
+				C5D1BF24258B1FBD00784D2F /* UIView+EmptyData.m in Sources */,
 				C59B999A2526E0A50039B485 /* ZZCircleProgress.m in Sources */,
 				C558E314258A1EA10078DB8F /* XHLaunchAdConst.m in Sources */,
 				C5226BFB25875982004447FB /* BWItemModel.m in Sources */,
