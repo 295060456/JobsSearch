@@ -18,9 +18,9 @@ static char *UIView_EmptyData_tipsLab = "UIView_EmptyData_tipsLab";
         if (self.subviews.count == 1) {
             UIView *view = self.subviews[0];
             if (view == self.tipsLab) {
-                return NO;
+                return YES;
             }
-        }return YES;
+        }return NO;
     };
     
     if (!self.subviews.count || checkSubviews()) {
