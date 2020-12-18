@@ -74,7 +74,8 @@
             make.left.equalTo(self.contentView).offset(10);
             make.centerY.equalTo(self.contentView);
         }];
-        [UIView cornerCutToCircleWithView:_serialNumLab AndCornerRadius:3];
+        [UIView cornerCutToCircleWithView:_serialNumLab
+                          andCornerRadius:3];
     }return _serialNumLab;
 }
 

@@ -51,7 +51,8 @@
             btn.titleLabel.textColor = self.btnTitleColor;
             [btn.titleLabel sizeToFit];
             btn.titleLabel.adjustsFontSizeToFitWidth = YES;
-            [UIView cornerCutToCircleWithView:btn AndCornerRadius:3];
+            [UIView cornerCutToCircleWithView:btn
+                              andCornerRadius:3];
             
             btnSize = [UILabel sizeWithText:titleStr
                                        font:self.btnTitleFont

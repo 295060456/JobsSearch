@@ -23,9 +23,23 @@
 		C544BFD12583754500C6CF2A /* MJRefreshConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BFCA2583754500C6CF2A /* MJRefreshConfigModel.m */; };
 		C544BFD22583754500C6CF2A /* LOTAnimationMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BFCD2583754500C6CF2A /* LOTAnimationMJRefreshHeader.m */; };
 		C544BFD32583754500C6CF2A /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C544BFCF2583754500C6CF2A /* JsonRes.bundle */; };
+		C5460E51258C8EDF0008928C /* UIView+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460E4F258C8EDF0008928C /* UIView+AOP.m */; };
+		C5460E5D258C8EF00008928C /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460E5C258C8EF00008928C /* ZYTextField.m */; };
 		C546C45F252C2BF3003694FF /* JobsSearchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C45E252C2BF3003694FF /* JobsSearchTableView.m */; };
 		C546C487252C3979003694FF /* JobsSearchResultDataListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C486252C3979003694FF /* JobsSearchResultDataListTBVCell.m */; };
 		C546C48D252C3B45003694FF /* JobsSearchResultDataListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C48C252C3B45003694FF /* JobsSearchResultDataListView.m */; };
+		C546FFCD258B61CD0008928C /* XHLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFBA258B61CD0008928C /* XHLaunchAdView.m */; };
+		C546FFCE258B61CD0008928C /* XHLaunchAdButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFBD258B61CD0008928C /* XHLaunchAdButton.m */; };
+		C546FFCF258B61CD0008928C /* XHLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFBF258B61CD0008928C /* XHLaunchImageView.m */; };
+		C546FFD0258B61CD0008928C /* XHLaunchAdConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFC0258B61CD0008928C /* XHLaunchAdConst.m */; };
+		C546FFD1258B61CD0008928C /* XHLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFC2258B61CD0008928C /* XHLaunchAd.m */; };
+		C546FFD2258B61CD0008928C /* XHLaunchAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFC3258B61CD0008928C /* XHLaunchAdController.m */; };
+		C546FFD3258B61CD0008928C /* XHLaunchAdDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFC4258B61CD0008928C /* XHLaunchAdDownloader.m */; };
+		C546FFD4258B61CD0008928C /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFC6258B61CD0008928C /* XHLaunchAdImageView+XHLaunchAdCache.m */; };
+		C546FFD5258B61CD0008928C /* XHLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFC7258B61CD0008928C /* XHLaunchAdConfiguration.m */; };
+		C546FFD6258B61CD0008928C /* XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFC9258B61CD0008928C /* XHLaunchAdCache.m */; };
+		C546FFD7258B61CD0008928C /* XHLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFCB258B61CD0008928C /* XHLaunchAdImageManager.m */; };
+		C546FFDE258B622B0008928C /* UIViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C546FFDD258B622B0008928C /* UIViewController+NavigationBar.m */; };
 		C54AB10D255E5FB2000A314D /* WhiteRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54AB107255E5FB2000A314D /* WhiteRightArrow@2x.png */; };
 		C54AB10E255E5FB2000A314D /* WhiteRightArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54AB108255E5FB2000A314D /* WhiteRightArrow@3x.png */; };
 		C54AB10F255E5FB2000A314D /* UITableViewCell+WhiteArrows.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AB109255E5FB2000A314D /* UITableViewCell+WhiteArrows.m */; };
@@ -35,18 +49,6 @@
 		C552A52A2589D20C00A89501 /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A952526E3E10039B485 /* NSArray+Extension.m */; };
 		C552A6702589D2CA00A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552A66E2589D2CA00A89501 /* UIImage+ScreenShot.m */; };
 		C5569687255BFCC3005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569683255BFCC2005C1361 /* NSString+Extras.m */; };
-		C558E311258A1EA10078DB8F /* XHLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E2FD258A1EA10078DB8F /* XHLaunchAdView.m */; };
-		C558E312258A1EA10078DB8F /* XHLaunchAdButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E300258A1EA10078DB8F /* XHLaunchAdButton.m */; };
-		C558E313258A1EA10078DB8F /* XHLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E302258A1EA10078DB8F /* XHLaunchImageView.m */; };
-		C558E314258A1EA10078DB8F /* XHLaunchAdConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E303258A1EA10078DB8F /* XHLaunchAdConst.m */; };
-		C558E315258A1EA10078DB8F /* XHLaunchAd不用pod导入的情况说明.md in Resources */ = {isa = PBXBuildFile; fileRef = C558E305258A1EA10078DB8F /* XHLaunchAd不用pod导入的情况说明.md */; };
-		C558E316258A1EA10078DB8F /* XHLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E306258A1EA10078DB8F /* XHLaunchAd.m */; };
-		C558E317258A1EA10078DB8F /* XHLaunchAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E307258A1EA10078DB8F /* XHLaunchAdController.m */; };
-		C558E318258A1EA10078DB8F /* XHLaunchAdDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E308258A1EA10078DB8F /* XHLaunchAdDownloader.m */; };
-		C558E319258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E30A258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.m */; };
-		C558E31A258A1EA10078DB8F /* XHLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E30B258A1EA10078DB8F /* XHLaunchAdConfiguration.m */; };
-		C558E31B258A1EA10078DB8F /* XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E30D258A1EA10078DB8F /* XHLaunchAdCache.m */; };
-		C558E31C258A1EA10078DB8F /* XHLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C558E30F258A1EA10078DB8F /* XHLaunchAdImageManager.m */; };
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
@@ -222,7 +224,6 @@
 		C5D0B81A25878DA0002CA224 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B81825878DA0002CA224 /* UIButton+ImageTitleSpacing.m */; };
 		C5D1BF24258B1FBD00784D2F /* UIView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1BF22258B1FBD00784D2F /* UIView+EmptyData.m */; };
 		C5D1BF30258B1FDC00784D2F /* UIViewController+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1BF2F258B1FDC00784D2F /* UIViewController+EmptyData.m */; };
-		C5D601D72586314400029AFF /* UIViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D601D62586314400029AFF /* UIViewController+NavigationBar.m */; };
 		C5D601E02586314D00029AFF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D601DE2586314D00029AFF /* BaseViewController.m */; };
 		C5D6D9BB25860E3900029AFF /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6D9B625860E3900029AFF /* TimeModel.m */; };
 		C5D6D9BC25860E3900029AFF /* NSObject+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6D9BA25860E3900029AFF /* NSObject+Time.m */; };
@@ -232,7 +233,6 @@
 		C5D77570257F59E60087FC92 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77564257F59E50087FC92 /* HQTextField.m */; };
 		C5D77571257F59E60087FC92 /* JobsMagicTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77566257F59E50087FC92 /* JobsMagicTextField.m */; };
 		C5D77572257F59E60087FC92 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77569257F59E60087FC92 /* CJTextField.m */; };
-		C5D77573257F59E60087FC92 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D7756C257F59E60087FC92 /* ZYTextField.m */; };
 		C5D77EA2257F5F820087FC92 /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77EA0257F5F810087FC92 /* ZYTextField+HistoryDataList.m */; };
 		E7F73E4FA4EEA0009C5C36E7 /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
@@ -292,12 +292,40 @@
 		C544BFCD2583754500C6CF2A /* LOTAnimationMJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationMJRefreshHeader.m; sourceTree = "<group>"; };
 		C544BFCE2583754500C6CF2A /* LOTAnimationMJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationMJRefreshHeader.h; sourceTree = "<group>"; };
 		C544BFCF2583754500C6CF2A /* JsonRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JsonRes.bundle; sourceTree = "<group>"; };
+		C5460E4F258C8EDF0008928C /* UIView+AOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AOP.m"; sourceTree = "<group>"; };
+		C5460E50258C8EDF0008928C /* UIView+AOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AOP.h"; sourceTree = "<group>"; };
+		C5460E5B258C8EF00008928C /* ZYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
+		C5460E5C258C8EF00008928C /* ZYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
 		C546C45D252C2BF3003694FF /* JobsSearchTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchTableView.h; sourceTree = "<group>"; };
 		C546C45E252C2BF3003694FF /* JobsSearchTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchTableView.m; sourceTree = "<group>"; };
 		C546C485252C3979003694FF /* JobsSearchResultDataListTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchResultDataListTBVCell.h; sourceTree = "<group>"; };
 		C546C486252C3979003694FF /* JobsSearchResultDataListTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchResultDataListTBVCell.m; sourceTree = "<group>"; };
 		C546C48B252C3B45003694FF /* JobsSearchResultDataListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchResultDataListView.h; sourceTree = "<group>"; };
 		C546C48C252C3B45003694FF /* JobsSearchResultDataListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchResultDataListView.m; sourceTree = "<group>"; };
+		C546FFB7258B61CD0008928C /* XHLaunchAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdController.h; sourceTree = "<group>"; };
+		C546FFB8258B61CD0008928C /* XHLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAd.h; sourceTree = "<group>"; };
+		C546FFB9258B61CD0008928C /* XHLaunchAdDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdDownloader.h; sourceTree = "<group>"; };
+		C546FFBA258B61CD0008928C /* XHLaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdView.m; sourceTree = "<group>"; };
+		C546FFBB258B61CD0008928C /* XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdCache.h; sourceTree = "<group>"; };
+		C546FFBC258B61CD0008928C /* XHLaunchAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConfiguration.h; sourceTree = "<group>"; };
+		C546FFBD258B61CD0008928C /* XHLaunchAdButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdButton.m; sourceTree = "<group>"; };
+		C546FFBE258B61CD0008928C /* XHLaunchAdImageView+XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XHLaunchAdImageView+XHLaunchAdCache.h"; sourceTree = "<group>"; };
+		C546FFBF258B61CD0008928C /* XHLaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchImageView.m; sourceTree = "<group>"; };
+		C546FFC0258B61CD0008928C /* XHLaunchAdConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConst.m; sourceTree = "<group>"; };
+		C546FFC1258B61CD0008928C /* XHLaunchAdImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdImageManager.h; sourceTree = "<group>"; };
+		C546FFC2258B61CD0008928C /* XHLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAd.m; sourceTree = "<group>"; };
+		C546FFC3258B61CD0008928C /* XHLaunchAdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdController.m; sourceTree = "<group>"; };
+		C546FFC4258B61CD0008928C /* XHLaunchAdDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdDownloader.m; sourceTree = "<group>"; };
+		C546FFC5258B61CD0008928C /* XHLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchImageView.h; sourceTree = "<group>"; };
+		C546FFC6258B61CD0008928C /* XHLaunchAdImageView+XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XHLaunchAdImageView+XHLaunchAdCache.m"; sourceTree = "<group>"; };
+		C546FFC7258B61CD0008928C /* XHLaunchAdConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConfiguration.m; sourceTree = "<group>"; };
+		C546FFC8258B61CD0008928C /* XHLaunchAdButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdButton.h; sourceTree = "<group>"; };
+		C546FFC9258B61CD0008928C /* XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdCache.m; sourceTree = "<group>"; };
+		C546FFCA258B61CD0008928C /* XHLaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdView.h; sourceTree = "<group>"; };
+		C546FFCB258B61CD0008928C /* XHLaunchAdImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdImageManager.m; sourceTree = "<group>"; };
+		C546FFCC258B61CD0008928C /* XHLaunchAdConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConst.h; sourceTree = "<group>"; };
+		C546FFDC258B622B0008928C /* UIViewController+NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBar.h"; sourceTree = "<group>"; };
+		C546FFDD258B622B0008928C /* UIViewController+NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBar.m"; sourceTree = "<group>"; };
 		C5470F7325309C8C00651ACE /* MacroDef_Sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Sys.h; sourceTree = "<group>"; };
 		C5470F7425309C8C00651ACE /* MacroDef_Func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Func.h; sourceTree = "<group>"; };
 		C5470F7525309C8C00651ACE /* MacroDef_Cor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_Cor.h; sourceTree = "<group>"; };
@@ -321,29 +349,6 @@
 		C5569684255BFCC3005C1361 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
 		C558E1E5258A1CD50078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
 		C558E2A9258A1DAA0078DB8F /* JobsSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JobsSearch-Bridging-Header.h"; sourceTree = "<group>"; };
-		C558E2FA258A1EA10078DB8F /* XHLaunchAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdController.h; sourceTree = "<group>"; };
-		C558E2FB258A1EA10078DB8F /* XHLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAd.h; sourceTree = "<group>"; };
-		C558E2FC258A1EA10078DB8F /* XHLaunchAdDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdDownloader.h; sourceTree = "<group>"; };
-		C558E2FD258A1EA10078DB8F /* XHLaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdView.m; sourceTree = "<group>"; };
-		C558E2FE258A1EA10078DB8F /* XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdCache.h; sourceTree = "<group>"; };
-		C558E2FF258A1EA10078DB8F /* XHLaunchAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConfiguration.h; sourceTree = "<group>"; };
-		C558E300258A1EA10078DB8F /* XHLaunchAdButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdButton.m; sourceTree = "<group>"; };
-		C558E301258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XHLaunchAdImageView+XHLaunchAdCache.h"; sourceTree = "<group>"; };
-		C558E302258A1EA10078DB8F /* XHLaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchImageView.m; sourceTree = "<group>"; };
-		C558E303258A1EA10078DB8F /* XHLaunchAdConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConst.m; sourceTree = "<group>"; };
-		C558E304258A1EA10078DB8F /* XHLaunchAdImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdImageManager.h; sourceTree = "<group>"; };
-		C558E305258A1EA10078DB8F /* XHLaunchAd不用pod导入的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "XHLaunchAd不用pod导入的情况说明.md"; sourceTree = "<group>"; };
-		C558E306258A1EA10078DB8F /* XHLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAd.m; sourceTree = "<group>"; };
-		C558E307258A1EA10078DB8F /* XHLaunchAdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdController.m; sourceTree = "<group>"; };
-		C558E308258A1EA10078DB8F /* XHLaunchAdDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdDownloader.m; sourceTree = "<group>"; };
-		C558E309258A1EA10078DB8F /* XHLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchImageView.h; sourceTree = "<group>"; };
-		C558E30A258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XHLaunchAdImageView+XHLaunchAdCache.m"; sourceTree = "<group>"; };
-		C558E30B258A1EA10078DB8F /* XHLaunchAdConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConfiguration.m; sourceTree = "<group>"; };
-		C558E30C258A1EA10078DB8F /* XHLaunchAdButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdButton.h; sourceTree = "<group>"; };
-		C558E30D258A1EA10078DB8F /* XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdCache.m; sourceTree = "<group>"; };
-		C558E30E258A1EA10078DB8F /* XHLaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdView.h; sourceTree = "<group>"; };
-		C558E30F258A1EA10078DB8F /* XHLaunchAdImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdImageManager.m; sourceTree = "<group>"; };
-		C558E310258A1EA10078DB8F /* XHLaunchAdConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConst.h; sourceTree = "<group>"; };
 		C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RBCLikeButton.bundle; sourceTree = "<group>"; };
 		C55AABA72532B2F800335ACC /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
@@ -673,8 +678,6 @@
 		C5D1BF23258B1FBD00784D2F /* UIView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyData.h"; sourceTree = "<group>"; };
 		C5D1BF2E258B1FDC00784D2F /* UIViewController+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EmptyData.h"; sourceTree = "<group>"; };
 		C5D1BF2F258B1FDC00784D2F /* UIViewController+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EmptyData.m"; sourceTree = "<group>"; };
-		C5D601D52586314400029AFF /* UIViewController+NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBar.h"; sourceTree = "<group>"; };
-		C5D601D62586314400029AFF /* UIViewController+NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBar.m"; sourceTree = "<group>"; };
 		C5D601DE2586314D00029AFF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		C5D601DF2586314D00029AFF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		C5D6D9B625860E3900029AFF /* TimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
@@ -692,8 +695,6 @@
 		C5D77567257F59E50087FC92 /* JobsMagicTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsMagicTextField.h; sourceTree = "<group>"; };
 		C5D77569257F59E60087FC92 /* CJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTextField.m; sourceTree = "<group>"; };
 		C5D7756A257F59E60087FC92 /* CJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTextField.h; sourceTree = "<group>"; };
-		C5D7756C257F59E60087FC92 /* ZYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
-		C5D7756D257F59E60087FC92 /* ZYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
 		C5D77EA0257F5F810087FC92 /* ZYTextField+HistoryDataList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZYTextField+HistoryDataList.m"; sourceTree = "<group>"; };
 		C5D77EA1257F5F820087FC92 /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
 		DEC5B5D7F5396530156D2C4F /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -816,15 +817,6 @@
 			path = "UIViewController+MJRefresh";
 			sourceTree = "<group>";
 		};
-		C544BBB42583722200C6CF2A /* UIViewController+NavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				C5D601D52586314400029AFF /* UIViewController+NavigationBar.h */,
-				C5D601D62586314400029AFF /* UIViewController+NavigationBar.m */,
-			);
-			path = "UIViewController+NavigationBar";
-			sourceTree = "<group>";
-		};
 		C544BBBE2583722D00C6CF2A /* UIViewController+Shake */ = {
 			isa = PBXGroup;
 			children = (
@@ -907,6 +899,15 @@
 			path = LOTAnimationMJRefreshHeader;
 			sourceTree = "<group>";
 		};
+		C5460E4E258C8EDF0008928C /* UIView+AOP */ = {
+			isa = PBXGroup;
+			children = (
+				C5460E50258C8EDF0008928C /* UIView+AOP.h */,
+				C5460E4F258C8EDF0008928C /* UIView+AOP.m */,
+			);
+			path = "UIView+AOP";
+			sourceTree = "<group>";
+		};
 		C546C458252C2B77003694FF /* 视图部分 */ = {
 			isa = PBXGroup;
 			children = (
@@ -937,6 +938,45 @@
 				C546C486252C3979003694FF /* JobsSearchResultDataListTBVCell.m */,
 			);
 			path = "逐字搜索返回数据结果下拉列表Cell";
+			sourceTree = "<group>";
+		};
+		C546FFB6258B61CD0008928C /* XHLaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				C546FFB7258B61CD0008928C /* XHLaunchAdController.h */,
+				C546FFB8258B61CD0008928C /* XHLaunchAd.h */,
+				C546FFB9258B61CD0008928C /* XHLaunchAdDownloader.h */,
+				C546FFBA258B61CD0008928C /* XHLaunchAdView.m */,
+				C546FFBB258B61CD0008928C /* XHLaunchAdCache.h */,
+				C546FFBC258B61CD0008928C /* XHLaunchAdConfiguration.h */,
+				C546FFBD258B61CD0008928C /* XHLaunchAdButton.m */,
+				C546FFBE258B61CD0008928C /* XHLaunchAdImageView+XHLaunchAdCache.h */,
+				C546FFBF258B61CD0008928C /* XHLaunchImageView.m */,
+				C546FFC0258B61CD0008928C /* XHLaunchAdConst.m */,
+				C546FFC1258B61CD0008928C /* XHLaunchAdImageManager.h */,
+				C546FFC2258B61CD0008928C /* XHLaunchAd.m */,
+				C546FFC3258B61CD0008928C /* XHLaunchAdController.m */,
+				C546FFC4258B61CD0008928C /* XHLaunchAdDownloader.m */,
+				C546FFC5258B61CD0008928C /* XHLaunchImageView.h */,
+				C546FFC6258B61CD0008928C /* XHLaunchAdImageView+XHLaunchAdCache.m */,
+				C546FFC7258B61CD0008928C /* XHLaunchAdConfiguration.m */,
+				C546FFC8258B61CD0008928C /* XHLaunchAdButton.h */,
+				C546FFC9258B61CD0008928C /* XHLaunchAdCache.m */,
+				C546FFCA258B61CD0008928C /* XHLaunchAdView.h */,
+				C546FFCB258B61CD0008928C /* XHLaunchAdImageManager.m */,
+				C546FFCC258B61CD0008928C /* XHLaunchAdConst.h */,
+			);
+			path = XHLaunchAd;
+			sourceTree = "<group>";
+		};
+		C546FFDB258B622B0008928C /* UIViewController+NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				C546FFDC258B622B0008928C /* UIViewController+NavigationBar.h */,
+				C546FFDD258B622B0008928C /* UIViewController+NavigationBar.m */,
+			);
+			name = "UIViewController+NavigationBar";
+			path = "../../../../../../../JobsIM/JobsIM/3rd/BaseCustomizeUIKit/UIViewController/UIViewController+Category/UIViewController+Others/UIViewController+NavigationBar";
 			sourceTree = "<group>";
 		};
 		C5470F6C25309C7F00651ACE /* 各项宏定义 */ = {
@@ -1107,37 +1147,6 @@
 				C558E2A9258A1DAA0078DB8F /* JobsSearch-Bridging-Header.h */,
 			);
 			path = "Swift-OC桥接头文件";
-			sourceTree = "<group>";
-		};
-		C558E2F9258A1EA10078DB8F /* XHLaunchAd */ = {
-			isa = PBXGroup;
-			children = (
-				C558E2FB258A1EA10078DB8F /* XHLaunchAd.h */,
-				C558E306258A1EA10078DB8F /* XHLaunchAd.m */,
-				C558E305258A1EA10078DB8F /* XHLaunchAd不用pod导入的情况说明.md */,
-				C558E30C258A1EA10078DB8F /* XHLaunchAdButton.h */,
-				C558E300258A1EA10078DB8F /* XHLaunchAdButton.m */,
-				C558E2FE258A1EA10078DB8F /* XHLaunchAdCache.h */,
-				C558E30D258A1EA10078DB8F /* XHLaunchAdCache.m */,
-				C558E2FF258A1EA10078DB8F /* XHLaunchAdConfiguration.h */,
-				C558E30B258A1EA10078DB8F /* XHLaunchAdConfiguration.m */,
-				C558E310258A1EA10078DB8F /* XHLaunchAdConst.h */,
-				C558E303258A1EA10078DB8F /* XHLaunchAdConst.m */,
-				C558E2FA258A1EA10078DB8F /* XHLaunchAdController.h */,
-				C558E307258A1EA10078DB8F /* XHLaunchAdController.m */,
-				C558E2FC258A1EA10078DB8F /* XHLaunchAdDownloader.h */,
-				C558E308258A1EA10078DB8F /* XHLaunchAdDownloader.m */,
-				C558E304258A1EA10078DB8F /* XHLaunchAdImageManager.h */,
-				C558E30F258A1EA10078DB8F /* XHLaunchAdImageManager.m */,
-				C558E301258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.h */,
-				C558E30A258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.m */,
-				C558E30E258A1EA10078DB8F /* XHLaunchAdView.h */,
-				C558E2FD258A1EA10078DB8F /* XHLaunchAdView.m */,
-				C558E309258A1EA10078DB8F /* XHLaunchImageView.h */,
-				C558E302258A1EA10078DB8F /* XHLaunchImageView.m */,
-			);
-			name = XHLaunchAd;
-			path = "../../../../Desktop/DouDong-II/PodsManual/XHLaunchAd";
 			sourceTree = "<group>";
 		};
 		C558EFEF258A2E5B0078DB8F /* 3rd */ = {
@@ -1525,7 +1534,7 @@
 		C59B99192526E09C0039B485 /* PodsManual */ = {
 			isa = PBXGroup;
 			children = (
-				C558E2F9258A1EA10078DB8F /* XHLaunchAd */,
+				C546FFB6258B61CD0008928C /* XHLaunchAd */,
 				C59B996F2526E0A50039B485 /* ZZCircleProgress */,
 			);
 			path = PodsManual;
@@ -1823,6 +1832,7 @@
 			isa = PBXGroup;
 			children = (
 				C595BBCF25864175002A4531 /* UIView+Animation */,
+				C5460E4E258C8EDF0008928C /* UIView+AOP */,
 				C595BBD125864182002A4531 /* UIView+Chain */,
 				C5D1BF21258B1FBD00784D2F /* UIView+EmptyData */,
 				C595BBD02586417C002A4531 /* UIView+Extras */,
@@ -2611,8 +2621,8 @@
 			isa = PBXGroup;
 			children = (
 				C5D77561257F59E50087FC92 /* ZYTextField.bundle */,
-				C5D7756D257F59E60087FC92 /* ZYTextField.h */,
-				C5D7756C257F59E60087FC92 /* ZYTextField.m */,
+				C5460E5B258C8EF00008928C /* ZYTextField.h */,
+				C5460E5C258C8EF00008928C /* ZYTextField.m */,
 				C5D77EA1257F5F820087FC92 /* ZYTextField+HistoryDataList.h */,
 				C5D77EA0257F5F810087FC92 /* ZYTextField+HistoryDataList.m */,
 			);
@@ -2622,15 +2632,15 @@
 		C5D7890F257F79F70087FC92 /* UIViewController+Others */ = {
 			isa = PBXGroup;
 			children = (
-				C5D1BA33258B0C6100784D2F /* UIViewController+EmptyData */,
 				C544BBC82583723500C6CF2A /* UIViewController+BackBtn */,
 				C544BBCF2583723D00C6CF2A /* UIViewController+BaseVC */,
 				C544BBD32583724700C6CF2A /* UIViewController+BRPickerView */,
 				C544BBDA2583725100C6CF2A /* UIViewController+BWShareView */,
+				C5D1BA33258B0C6100784D2F /* UIViewController+EmptyData */,
 				C544BBDB2583725800C6CF2A /* UIViewController+GifImageView */,
 				C544BBDC2583726000C6CF2A /* UIViewController+JPImageresizerView */,
 				C544BBAA2583721B00C6CF2A /* UIViewController+MJRefresh */,
-				C544BBB42583722200C6CF2A /* UIViewController+NavigationBar */,
+				C546FFDB258B622B0008928C /* UIViewController+NavigationBar */,
 				C544BBBE2583722D00C6CF2A /* UIViewController+Shake */,
 			);
 			path = "UIViewController+Others";
@@ -2790,7 +2800,6 @@
 				C59B9C9B2526E3F10039B485 /* 水平进度条.png in Resources */,
 				C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */,
 				C5710881253C09E3005B3A0C /* fangzi.json in Resources */,
-				C558E315258A1EA10078DB8F /* XHLaunchAd不用pod导入的情况说明.md in Resources */,
 				C5B85607252B558D00890A66 /* Telegram.bundle in Resources */,
 				C571087E253C09E3005B3A0C /* music_animation.json in Resources */,
 				C5710872253C09E3005B3A0C /* wode.json in Resources */,
@@ -2931,6 +2940,7 @@
 				C59B98F02526DE270039B485 /* main.m in Sources */,
 				C59B9AD32526E3E10039B485 /* UIImage+Tailor.m in Sources */,
 				C5B85617252B577A00890A66 /* UITableView+WWFoldableTableView.m in Sources */,
+				C546FFD5258B61CD0008928C /* XHLaunchAdConfiguration.m in Sources */,
 				C530B00A254D9A8100EDEDC8 /* HQCollectionViewFlowLayout.m in Sources */,
 				C54AB110255E5FB2000A314D /* UITableViewCell+Margin.m in Sources */,
 				C59B9B092526E3E10039B485 /* UIView+Measure.m in Sources */,
@@ -2951,8 +2961,9 @@
 				C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */,
 				C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */,
 				C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */,
-				C5D601D72586314400029AFF /* UIViewController+NavigationBar.m in Sources */,
+				C546FFCF258B61CD0008928C /* XHLaunchImageView.m in Sources */,
 				C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */,
+				C546FFDE258B622B0008928C /* UIViewController+NavigationBar.m in Sources */,
 				C56BB988258798F40043C977 /* UIControl+XY.m in Sources */,
 				C59B99992526E0A50039B485 /* ZZCountingLabel.m in Sources */,
 				C59B9CC02526E3F10039B485 /* AVFounationTools.m in Sources */,
@@ -2966,6 +2977,7 @@
 				C5D77EA2257F5F820087FC92 /* ZYTextField+HistoryDataList.m in Sources */,
 				C59B9AD02526E3E10039B485 /* NSObject+Shake.m in Sources */,
 				C57F0D2C253337140080EEF0 /* NSObject+OpenURL.m in Sources */,
+				C5460E51258C8EDF0008928C /* UIView+AOP.m in Sources */,
 				C59B9CCC2526E3F10039B485 /* GCD_TimerManager.m in Sources */,
 				C530B009254D9A8100EDEDC8 /* KFZShopCatoryFlowLayput.m in Sources */,
 				C59B9CB22526E3F10039B485 /* FileFolderHandleTool.m in Sources */,
@@ -2973,7 +2985,9 @@
 				C59B9C9A2526E3F10039B485 /* WGradientProgress.m in Sources */,
 				C59B9AF12526E3E10039B485 /* UIColor+Hex.m in Sources */,
 				C59B9C942526E3F10039B485 /* ZBURLRequest.m in Sources */,
+				C546FFD2258B61CD0008928C /* XHLaunchAdController.m in Sources */,
 				C59B9D6B2526E59E0039B485 /* ViewController@1.m in Sources */,
+				C546FFD3258B61CD0008928C /* XHLaunchAdDownloader.m in Sources */,
 				C59BA0A6252711260039B485 /* JobsSearchTableViewHeaderView.m in Sources */,
 				C5850A5F25483D0D001E6676 /* ViewForTableViewFooter.m in Sources */,
 				C59B9CB42526E3F10039B485 /* JhtBannerView.m in Sources */,
@@ -2984,6 +2998,7 @@
 				C530B00E254D9A8100EDEDC8 /* CollectionView.m in Sources */,
 				C59B99AA2526E1190039B485 /* NotificationManager.m in Sources */,
 				C5D0B81A25878DA0002CA224 /* UIButton+ImageTitleSpacing.m in Sources */,
+				C546FFD7258B61CD0008928C /* XHLaunchAdImageManager.m in Sources */,
 				C59B9B0B2526E3E10039B485 /* UIView+SuspendView.m in Sources */,
 				C59B9C9C2526E3F10039B485 /* WGradientProgressView.m in Sources */,
 				C59B9ACC2526E3E10039B485 /* NSObject+SYSAlertController.m in Sources */,
@@ -2991,17 +3006,16 @@
 				C59B9CBA2526E3F10039B485 /* YHGPUImageBeautifyFilter.m in Sources */,
 				C59B9AE62526E3E10039B485 /* UIView+JHGestureBlock.m in Sources */,
 				C5D6D9BB25860E3900029AFF /* TimeModel.m in Sources */,
+				C5460E5D258C8EF00008928C /* ZYTextField.m in Sources */,
 				C571086D253C09E3005B3A0C /* TabBarItem.m in Sources */,
 				C59B9CE12526E4110039B485 /* ViewController@5.m in Sources */,
 				C5AEEAED253841B1000E1C5F /* UIView+Animation.m in Sources */,
 				C59B9C8D2526E3F10039B485 /* CustomerAVPlayerView.m in Sources */,
 				C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */,
-				C558E311258A1EA10078DB8F /* XHLaunchAdView.m in Sources */,
 				C571086B253C09E3005B3A0C /* CustomTabBar.m in Sources */,
 				C5914C0225384E61007777A6 /* UIViewController+GifImageView.m in Sources */,
 				C544BFD12583754500C6CF2A /* MJRefreshConfigModel.m in Sources */,
 				C576705A2546B97700C382C8 /* UIViewController+TZLocationManager.m in Sources */,
-				C558E31A258A1EA10078DB8F /* XHLaunchAdConfiguration.m in Sources */,
 				C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */,
 				C59B9C932526E3F10039B485 /* FMHttpRequest.m in Sources */,
 				C59B9CC12526E3F10039B485 /* MovieCountDown.m in Sources */,
@@ -3015,14 +3029,13 @@
 				C59B9CD22526E3F10039B485 /* LBLaunchImageAdView.m in Sources */,
 				C5D0B81125878D94002CA224 /* SoundBtn.m in Sources */,
 				C59B9ACA2526E3E10039B485 /* NSObject+Random.m in Sources */,
-				C558E318258A1EA10078DB8F /* XHLaunchAdDownloader.m in Sources */,
 				C59B9D712526E5AD0039B485 /* ViewController@2.m in Sources */,
-				C558E316258A1EA10078DB8F /* XHLaunchAd.m in Sources */,
-				C558E31B258A1EA10078DB8F /* XHLaunchAdCache.m in Sources */,
 				C59B9AF02526E3E10039B485 /* BaseTableViewer.m in Sources */,
 				C5710865253C09E3005B3A0C /* TransitionController.m in Sources */,
 				C571086A253C09E3005B3A0C /* UITabBar+Ex.m in Sources */,
+				C546FFD4258B61CD0008928C /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 				C59B9CB92526E3F10039B485 /* LGiOSBtn.m in Sources */,
+				C546FFD1258B61CD0008928C /* XHLaunchAd.m in Sources */,
 				C59B9B0D2526E3E10039B485 /* UIView+Gradient.m in Sources */,
 				C57278FE254098AA002373D7 /* NavigationBar.m in Sources */,
 				C5D7756E257F59E60087FC92 /* UITextField+Extend.m in Sources */,
@@ -3032,23 +3045,23 @@
 				C59B9CBC2526E3F10039B485 /* MKGPUImageView.m in Sources */,
 				C552A52A2589D20C00A89501 /* NSArray+Extension.m in Sources */,
 				C59B9AE82526E3E10039B485 /* CALayer+Transition.m in Sources */,
+				C546FFCD258B61CD0008928C /* XHLaunchAdView.m in Sources */,
 				C59B9C952526E3F10039B485 /* ZBRequestEngine.m in Sources */,
 				C59B9C8C2526E3F10039B485 /* CustomerGPUImagePlayerVC.m in Sources */,
 				C59B9C9E2526E3F10039B485 /* UIDevice+XMUtils.m in Sources */,
 				C59B9CCF2526E3F10039B485 /* ECAuthorizationTools.m in Sources */,
 				C59B98DC2526DE260039B485 /* JobsSearchAppDelegate.m in Sources */,
-				C558E319258A1EA10078DB8F /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 				C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */,
 				C546C487252C3979003694FF /* JobsSearchResultDataListTBVCell.m in Sources */,
 				C5D6D9BC25860E3900029AFF /* NSObject+Time.m in Sources */,
 				C5D1BF24258B1FBD00784D2F /* UIView+EmptyData.m in Sources */,
 				C59B999A2526E0A50039B485 /* ZZCircleProgress.m in Sources */,
-				C558E314258A1EA10078DB8F /* XHLaunchAdConst.m in Sources */,
 				C5226BFB25875982004447FB /* BWItemModel.m in Sources */,
 				C59B9AF62526E3E10039B485 /* NSArray+Extend.m in Sources */,
 				C59B9F132526F56E0039B485 /* JobsSearchBar.m in Sources */,
 				C59B9AE92526E3E10039B485 /* CALayer+Anim.m in Sources */,
 				C5C2444C2541A72F00CB55F5 /* TableViewCell.m in Sources */,
+				C546FFD6258B61CD0008928C /* XHLaunchAdCache.m in Sources */,
 				C5226BFA25875982004447FB /* BWItemCollectionViewCell.m in Sources */,
 				C59B9CE32526E4110039B485 /* ViewController@3.m in Sources */,
 				C544BFD02583754500C6CF2A /* UIViewController+MJRefresh.m in Sources */,
@@ -3063,7 +3076,8 @@
 				C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */,
 				C59B9AD62526E3E10039B485 /* UIImage+SYS.m in Sources */,
 				C5D77572257F59E60087FC92 /* CJTextField.m in Sources */,
-				C5D77573257F59E60087FC92 /* ZYTextField.m in Sources */,
+				C546FFD0258B61CD0008928C /* XHLaunchAdConst.m in Sources */,
+				C546FFCE258B61CD0008928C /* XHLaunchAdButton.m in Sources */,
 				C59B9C8E2526E3F10039B485 /* CustomerAVPlayerView+UIGestureRecognizerDelegate.m in Sources */,
 				C5710869253C09E3005B3A0C /* UITabBar+TLAnimation.m in Sources */,
 				C571086C253C09E3005B3A0C /* UITabBarItem+TLAnimation.m in Sources */,
@@ -3074,13 +3088,10 @@
 				C5710867253C09E3005B3A0C /* TLTabBarAnimation.m in Sources */,
 				C59B9AD22526E3E10039B485 /* UIImage+YBGIF.m in Sources */,
 				C54B3C6D25526000003BE195 /* UIFont+Extras.m in Sources */,
-				C558E312258A1EA10078DB8F /* XHLaunchAdButton.m in Sources */,
 				C530B00C254D9A8100EDEDC8 /* CollectionReusableView.m in Sources */,
 				C59B9ACB2526E3E10039B485 /* NSObject+SPAlertController.m in Sources */,
 				C59B9ACF2526E3E10039B485 /* NSObject+Extras.m in Sources */,
 				C576705B2546B97700C382C8 /* UIViewController+TZImagePickerController.m in Sources */,
-				C558E313258A1EA10078DB8F /* XHLaunchImageView.m in Sources */,
-				C558E317258A1EA10078DB8F /* XHLaunchAdController.m in Sources */,
 				C595D2662587145A002A4531 /* SuspendView.m in Sources */,
 				C5C244552541A8A600CB55F5 /* DataCollectionViewCell.m in Sources */,
 				C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */,
@@ -3089,7 +3100,6 @@
 				C59B9AEA2526E3E10039B485 /* UIImageView+GIF.m in Sources */,
 				C59B9AED2526E3E10039B485 /* TableViewAnimationKit.m in Sources */,
 				C59B9CB62526E3F10039B485 /* JhtBannerCardView.m in Sources */,
-				C558E31C258A1EA10078DB8F /* XHLaunchAdImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

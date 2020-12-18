@@ -169,8 +169,11 @@ replacementString:(NSString *)string{
                                MAINSCREEN_WIDTH - 20,
                                self.mj_h - 20);
         
-        [UIView cornerCutToCircleWithView:_tf AndCornerRadius:2];
-        [UIView colourToLayerOfView:_tf WithColour:kBlueColor AndBorderWidth:0.05];
+        [UIView cornerCutToCircleWithView:_tf
+                          andCornerRadius:2];
+        [UIView colourToLayerOfView:_tf
+                         withColour:kBlueColor
+                     andBorderWidth:0.05];
     }return _tf;
 }
 
@@ -186,7 +189,8 @@ replacementString:(NSString *)string{
                                       0,
                                       0);
 //        [UIView colourToLayerOfView:_cancelBtn WithColour:KGreenColor AndBorderWidth:1];
-        [UIView cornerCutToCircleWithView:_cancelBtn AndCornerRadius:8];
+        [UIView cornerCutToCircleWithView:_cancelBtn
+                          andCornerRadius:8];
         @weakify(self)
         [[_cancelBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             @strongify(self)
