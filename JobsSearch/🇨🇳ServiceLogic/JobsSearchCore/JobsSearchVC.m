@@ -318,8 +318,12 @@ viewForHeaderInSection:(NSInteger)section{
             @strongify(self)
             //删除历史过往记录
             [self.historySearchMutArr removeAllObjects];
-            SetUserDefaultKeyWithObject(@"JobsSearchHistoryData", self.historySearchMutArr);
-            UserDefaultSynchronize;
+            
+            UserDefaultModel *userDefaultModel = UserDefaultModel.new;
+            userDefaultModel.key = @"JobsSearchHistoryData";
+            userDefaultModel.obj = self.historySearchMutArr;
+            
+            [UserDefaultManager storedData:userDefaultModel];
             
             if (self.historySearchMutArr.count == 0) {
                 [self.sectionTitleMutArr removeAllObjects];
@@ -360,8 +364,12 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         NSLog(@"MMM - %ld",cell.indexRow);
         
         [self.historySearchMutArr removeObjectAtIndex:cell.indexRow];
-        SetUserDefaultKeyWithObject(@"JobsSearchHistoryData", self.historySearchMutArr);
-        UserDefaultSynchronize;
+
+        UserDefaultModel *userDefaultModel = UserDefaultModel.new;
+        userDefaultModel.key = @"JobsSearchHistoryData";
+        userDefaultModel.obj = self.historySearchMutArr;
+        
+        [UserDefaultManager storedData:userDefaultModel];
         
         if (self.historySearchMutArr.count == 0) {
             [self.sectionTitleMutArr removeAllObjects];
@@ -483,7 +491,8 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                     NSLog(@"textFieldDidEndEditing:");
                     @strongify(self)
                     [self.historySearchMutArr removeAllObjects];
-                    NSArray *jobsSearchHistoryDataArr = (NSArray *)GetUserDefaultObjForKey(@"JobsSearchHistoryData");
+                    
+                    NSArray *jobsSearchHistoryDataArr = (NSArray *)[UserDefaultManager fetchDataWithKey:@"JobsSearchHistoryData"];
                     self->_historySearchMutArr = [NSMutableArray arrayWithArray:jobsSearchHistoryDataArr];
 
                     [self.sectionTitleMutArr removeAllObjects];
@@ -548,7 +557,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
 
 -(NSMutableArray<NSString *> *)historySearchMutArr{
     if (!_historySearchMutArr) {
-        NSArray *jobsSearchHistoryDataArr = (NSArray *)GetUserDefaultObjForKey(@"JobsSearchHistoryData");
+        NSArray *jobsSearchHistoryDataArr = (NSArray *)[UserDefaultManager fetchDataWithKey:@"JobsSearchHistoryData"];
         if (jobsSearchHistoryDataArr) {
             _historySearchMutArr = [NSMutableArray arrayWithArray:jobsSearchHistoryDataArr];
         }else{

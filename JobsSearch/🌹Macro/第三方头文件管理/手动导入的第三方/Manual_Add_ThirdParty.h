@@ -75,6 +75,7 @@
 #import "UIButton+ImageTitleSpacing.h"
 
 #pragma mark —— Manual_Add_ThirdParty
+#import "UserDefaultManager.h"
 #import "NSTimerManager.h"
 #import "TXFileOperation.h"
 #import "FileFolderHandleTool.h"

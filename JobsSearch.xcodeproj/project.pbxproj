@@ -112,6 +112,8 @@
 		C595D2652587145A002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D25E2587145A002A4531 /* SuspendLab.m */; };
 		C595D2662587145A002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2602587145A002A4531 /* SuspendView.m */; };
 		C595D2672587145A002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2632587145A002A4531 /* SuspendBtn.m */; };
+		C59A3C3A258DD1D6005F6260 /* UserDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3C38258DD1D6005F6260 /* UserDefaultModel.m */; };
+		C59A3C3B258DD1D6005F6260 /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3C39258DD1D6005F6260 /* UserDefaultManager.m */; };
 		C59B98DC2526DE260039B485 /* JobsSearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DB2526DE260039B485 /* JobsSearchAppDelegate.m */; };
 		C59B98DF2526DE260039B485 /* JobsSearchSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B98DE2526DE260039B485 /* JobsSearchSceneDelegate.m */; };
 		C59B98E52526DE260039B485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59B98E32526DE260039B485 /* Main.storyboard */; };
@@ -450,6 +452,10 @@
 		C595D2612587145A002A4531 /* SuspendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendView.h; sourceTree = "<group>"; };
 		C595D2632587145A002A4531 /* SuspendBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendBtn.m; sourceTree = "<group>"; };
 		C595D2642587145A002A4531 /* SuspendBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendBtn.h; sourceTree = "<group>"; };
+		C59A3C36258DD1D6005F6260 /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
+		C59A3C37258DD1D6005F6260 /* UserDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultModel.h; sourceTree = "<group>"; };
+		C59A3C38258DD1D6005F6260 /* UserDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultModel.m; sourceTree = "<group>"; };
+		C59A3C39258DD1D6005F6260 /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
 		C59B98D72526DE260039B485 /* JobsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59B98DA2526DE260039B485 /* JobsSearchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchAppDelegate.h; sourceTree = "<group>"; };
 		C59B98DB2526DE260039B485 /* JobsSearchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchAppDelegate.m; sourceTree = "<group>"; };
@@ -1463,6 +1469,17 @@
 			path = SuspendBtn;
 			sourceTree = "<group>";
 		};
+		C59A3C35258DD1D6005F6260 /* UserDefaultManager */ = {
+			isa = PBXGroup;
+			children = (
+				C59A3C36258DD1D6005F6260 /* UserDefaultManager.h */,
+				C59A3C37258DD1D6005F6260 /* UserDefaultModel.h */,
+				C59A3C38258DD1D6005F6260 /* UserDefaultModel.m */,
+				C59A3C39258DD1D6005F6260 /* UserDefaultManager.m */,
+			);
+			path = UserDefaultManager;
+			sourceTree = "<group>";
+		};
 		C59B98CE2526DE260039B485 = {
 			isa = PBXGroup;
 			children = (
@@ -1617,6 +1634,7 @@
 		C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C59A3C35258DD1D6005F6260 /* UserDefaultManager */,
 				C59B9C182526E3F00039B485 /* 电影倒计时特效 */,
 				C59B9BDE2526E3F00039B485 /* 分享控件 */,
 				C59B9BF62526E3F00039B485 /* 卡片式滑动效果 */,
@@ -2962,6 +2980,7 @@
 				C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */,
 				C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */,
 				C546FFCF258B61CD0008928C /* XHLaunchImageView.m in Sources */,
+				C59A3C3A258DD1D6005F6260 /* UserDefaultModel.m in Sources */,
 				C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */,
 				C546FFDE258B622B0008928C /* UIViewController+NavigationBar.m in Sources */,
 				C56BB988258798F40043C977 /* UIControl+XY.m in Sources */,
@@ -3019,6 +3038,7 @@
 				C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */,
 				C59B9C932526E3F10039B485 /* FMHttpRequest.m in Sources */,
 				C59B9CC12526E3F10039B485 /* MovieCountDown.m in Sources */,
+				C59A3C3B258DD1D6005F6260 /* UserDefaultManager.m in Sources */,
 				C5914C0D25384E61007777A6 /* UIViewController+BWShareView.m in Sources */,
 				C5D6D9CC25860E4A00029AFF /* NSTimerManager.m in Sources */,
 				C59B9C982526E3F10039B485 /* ZBCacheManager.m in Sources */,
