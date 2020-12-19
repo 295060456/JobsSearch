@@ -57,7 +57,7 @@
                                                                                                                                              (CFStringRef)urlStr,
                                                                                                                                              (CFStringRef)@"!$&'()*+,-./:;=?@_~%#[]",
                                                                                                                                              NULL,
-                                                                                                                                             kCFStringEncodingUTF8))])
+                                                                                                                                             kCFStringEncodingUTF8))]);
 }
 //替换相关的字符为暂位符 example
 +(NSString *)numberSuitScanf:(NSString*)number{
