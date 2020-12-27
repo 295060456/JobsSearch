@@ -11,6 +11,7 @@
 
 -(void)ifEmptyData{
     [self.view ifEmptyData];
+    self.view.tipsLab.text = [NSString stringWithFormat:@"%@\n%@",self.view.tipsTitle,ReuseIdentifier];
 }
 
 @end
