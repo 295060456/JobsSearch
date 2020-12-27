@@ -19,6 +19,8 @@
 		C530B00C254D9A8100EDEDC8 /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C530B001254D9A8000EDEDC8 /* CollectionReusableView.m */; };
 		C530B00E254D9A8100EDEDC8 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C530B006254D9A8100EDEDC8 /* CollectionView.m */; };
 		C530B00F254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C530B007254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m */; };
+		C53D39232598C80600B48431 /* XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D39202598C80600B48431 /* XLBubbleTransition.m */; };
+		C53D39242598C80600B48431 /* UIViewController+XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D39212598C80600B48431 /* UIViewController+XLBubbleTransition.m */; };
 		C544BFD02583754500C6CF2A /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BFC72583754500C6CF2A /* UIViewController+MJRefresh.m */; };
 		C544BFD12583754500C6CF2A /* MJRefreshConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BFCA2583754500C6CF2A /* MJRefreshConfigModel.m */; };
 		C544BFD22583754500C6CF2A /* LOTAnimationMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BFCD2583754500C6CF2A /* LOTAnimationMJRefreshHeader.m */; };
@@ -287,6 +289,11 @@
 		C530B005254D9A8100EDEDC8 /* UICollectionView+RegisterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+RegisterClass.h"; sourceTree = "<group>"; };
 		C530B006254D9A8100EDEDC8 /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
 		C530B007254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+RegisterClass.m"; sourceTree = "<group>"; };
+		C53D391E2598C80600B48431 /* XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBubbleTransition.h; sourceTree = "<group>"; };
+		C53D391F2598C80600B48431 /* UIViewController+XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XLBubbleTransition.h"; sourceTree = "<group>"; };
+		C53D39202598C80600B48431 /* XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBubbleTransition.m; sourceTree = "<group>"; };
+		C53D39212598C80600B48431 /* UIViewController+XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XLBubbleTransition.m"; sourceTree = "<group>"; };
+		C53D39222598C80600B48431 /* 使用方法.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "使用方法.md"; sourceTree = "<group>"; };
 		C544BFC72583754500C6CF2A /* UIViewController+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJRefresh.m"; sourceTree = "<group>"; };
 		C544BFC92583754500C6CF2A /* MJRefreshConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConfigModel.h; sourceTree = "<group>"; };
 		C544BFCA2583754500C6CF2A /* MJRefreshConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConfigModel.m; sourceTree = "<group>"; };
@@ -810,6 +817,18 @@
 				C552A5382589D26600A89501 /* 我为什么要这么做.md */,
 			);
 			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		C53D391D2598C80600B48431 /* UIViewController+XLBubbleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C53D39222598C80600B48431 /* 使用方法.md */,
+				C53D391F2598C80600B48431 /* UIViewController+XLBubbleTransition.h */,
+				C53D39212598C80600B48431 /* UIViewController+XLBubbleTransition.m */,
+				C53D391E2598C80600B48431 /* XLBubbleTransition.h */,
+				C53D39202598C80600B48431 /* XLBubbleTransition.m */,
+			);
+			path = "UIViewController+XLBubbleTransition";
 			sourceTree = "<group>";
 		};
 		C544BBAA2583721B00C6CF2A /* UIViewController+MJRefresh */ = {
@@ -2429,6 +2448,7 @@
 		C5D3303A257606180019C56E /* UIViewController+Category */ = {
 			isa = PBXGroup;
 			children = (
+				C53D391D2598C80600B48431 /* UIViewController+XLBubbleTransition */,
 				C576704C2546B94A00C382C8 /* UIViewController+JXCategory */,
 				C5D7890F257F79F70087FC92 /* UIViewController+Others */,
 				C57670532546B96D00C382C8 /* UIViewController+TZImagePickerController */,
@@ -2985,6 +3005,7 @@
 				C546FFDE258B622B0008928C /* UIViewController+NavigationBar.m in Sources */,
 				C56BB988258798F40043C977 /* UIControl+XY.m in Sources */,
 				C59B99992526E0A50039B485 /* ZZCountingLabel.m in Sources */,
+				C53D39242598C80600B48431 /* UIViewController+XLBubbleTransition.m in Sources */,
 				C59B9CC02526E3F10039B485 /* AVFounationTools.m in Sources */,
 				C576705C2546B97700C382C8 /* UIViewController+TZImagePickerControllerDelegate.m in Sources */,
 				C576704F2546B96500C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
@@ -3007,6 +3028,7 @@
 				C546FFD2258B61CD0008928C /* XHLaunchAdController.m in Sources */,
 				C59B9D6B2526E59E0039B485 /* ViewController@1.m in Sources */,
 				C546FFD3258B61CD0008928C /* XHLaunchAdDownloader.m in Sources */,
+				C53D39232598C80600B48431 /* XLBubbleTransition.m in Sources */,
 				C59BA0A6252711260039B485 /* JobsSearchTableViewHeaderView.m in Sources */,
 				C5850A5F25483D0D001E6676 /* ViewForTableViewFooter.m in Sources */,
 				C59B9CB42526E3F10039B485 /* JhtBannerView.m in Sources */,
