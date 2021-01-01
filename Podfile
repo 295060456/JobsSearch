@@ -22,7 +22,6 @@ def func
   pod 'DoraemonKit' # https://github.com/didi/DoraemonKit 滴滴打车出的工具
   pod 'Masonry'
   pod 'AFNetworking'
-  pod 'TZImagePickerController'
   pod 'ReactiveObjC'
   pod 'MJRefresh'
   pod 'MJExtension'

@@ -40,9 +40,6 @@
 #import "UIViewController+JXPagerViewListViewDelegate.h"
 #import "UIViewController+MJRefresh.h"
 #import "UIViewController+Shake.h"
-#import "UIViewController+TZImagePickerController.h"
-#import "UIViewController+TZImagePickerControllerDelegate.h"
-#import "UIViewController+TZLocationManager.h"
 #import "UIViewController+EmptyData.h"
 /// UITableViewHeaderFooterView
 #import "ViewForTableViewFooter.h"
