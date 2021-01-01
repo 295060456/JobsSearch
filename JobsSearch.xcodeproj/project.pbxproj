@@ -14,7 +14,6 @@
 		C530B008254D9A8100EDEDC8 /* LMHWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C530AFF5254D9A8000EDEDC8 /* LMHWaterFallLayout.m */; };
 		C530B009254D9A8100EDEDC8 /* KFZShopCatoryFlowLayput.m in Sources */ = {isa = PBXBuildFile; fileRef = C530AFF8254D9A8000EDEDC8 /* KFZShopCatoryFlowLayput.m */; };
 		C530B00A254D9A8100EDEDC8 /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C530AFFA254D9A8000EDEDC8 /* HQCollectionViewFlowLayout.m */; };
-		C530B00B254D9A8100EDEDC8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C530AFFE254D9A8000EDEDC8 /* CollectionViewCell.m */; };
 		C530B00C254D9A8100EDEDC8 /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C530B001254D9A8000EDEDC8 /* CollectionReusableView.m */; };
 		C530B00E254D9A8100EDEDC8 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C530B006254D9A8100EDEDC8 /* CollectionView.m */; };
 		C530B00F254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C530B007254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m */; };
@@ -53,6 +52,8 @@
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
+		C56762E5259F12DA006905A9 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56762E1259F12DA006905A9 /* CollectionViewCell.m */; };
+		C56762E6259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C56762E4259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C56BB988258798F40043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB985258798F40043C977 /* UIControl+XY.m */; };
 		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
 		C56E42FD254719F100B9F555 /* ⚽️PicResource in Resources */ = {isa = PBXBuildFile; fileRef = C56E42FC254719F100B9F555 /* ⚽️PicResource */; };
@@ -323,8 +324,6 @@
 		C530AFF8254D9A8000EDEDC8 /* KFZShopCatoryFlowLayput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFZShopCatoryFlowLayput.m; sourceTree = "<group>"; };
 		C530AFFA254D9A8000EDEDC8 /* HQCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		C530AFFB254D9A8000EDEDC8 /* HQCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		C530AFFD254D9A8000EDEDC8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		C530AFFE254D9A8000EDEDC8 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		C530B000254D9A8000EDEDC8 /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
 		C530B001254D9A8000EDEDC8 /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
 		C530B004254D9A8100EDEDC8 /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
@@ -405,6 +404,10 @@
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
 		C5620C2F25541AC400FE435F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
+		C56762E1259F12DA006905A9 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		C56762E2259F12DA006905A9 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		C56762E3259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+ShakeAnimation.h"; sourceTree = "<group>"; };
+		C56762E4259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+ShakeAnimation.m"; sourceTree = "<group>"; };
 		C56BB985258798F40043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BB986258798F40043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C56BB987258798F40043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
@@ -890,8 +893,10 @@
 		C530AFFC254D9A8000EDEDC8 /* UICollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C530AFFD254D9A8000EDEDC8 /* CollectionViewCell.h */,
-				C530AFFE254D9A8000EDEDC8 /* CollectionViewCell.m */,
+				C56762E2259F12DA006905A9 /* CollectionViewCell.h */,
+				C56762E1259F12DA006905A9 /* CollectionViewCell.m */,
+				C56762E3259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.h */,
+				C56762E4259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -3202,8 +3207,8 @@
 				C5710864253C09E3005B3A0C /* TransitionAnimation.m in Sources */,
 				C5C64FAE259DF87100FD2F99 /* ECPrivacyCheckHomeKit.m in Sources */,
 				C5D0B80325878D7A002CA224 /* NSObject+Sound.m in Sources */,
-				C530B00B254D9A8100EDEDC8 /* CollectionViewCell.m in Sources */,
 				C530B00F254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m in Sources */,
+				C56762E5259F12DA006905A9 /* CollectionViewCell.m in Sources */,
 				C5C64FB6259DF87100FD2F99 /* ECPrivacyCheckMediaAndAppleMusic.m in Sources */,
 				C5C64FAF259DF87100FD2F99 /* ECPrivacyCheckBluetooth.m in Sources */,
 				C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */,
@@ -3353,6 +3358,7 @@
 				C530B00C254D9A8100EDEDC8 /* CollectionReusableView.m in Sources */,
 				C59B9ACB2526E3E10039B485 /* NSObject+SPAlertController.m in Sources */,
 				C59B9ACF2526E3E10039B485 /* NSObject+Extras.m in Sources */,
+				C56762E6259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */,
 				C595D2662587145A002A4531 /* SuspendView.m in Sources */,
 				C5C244552541A8A600CB55F5 /* DataCollectionViewCell.m in Sources */,
 				C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */,
