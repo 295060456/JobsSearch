@@ -17,6 +17,7 @@
 		C530B00C254D9A8100EDEDC8 /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C530B001254D9A8000EDEDC8 /* CollectionReusableView.m */; };
 		C530B00E254D9A8100EDEDC8 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C530B006254D9A8100EDEDC8 /* CollectionView.m */; };
 		C530B00F254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C530B007254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m */; };
+		C53C9D5E25A1CFDD0007F58F /* NSObject+DataSave.m in Sources */ = {isa = PBXBuildFile; fileRef = C53C9D5925A1CFDD0007F58F /* NSObject+DataSave.m */; };
 		C53D39232598C80600B48431 /* XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D39202598C80600B48431 /* XLBubbleTransition.m */; };
 		C53D39242598C80600B48431 /* UIViewController+XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D39212598C80600B48431 /* UIViewController+XLBubbleTransition.m */; };
 		C544BFD02583754500C6CF2A /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BFC72583754500C6CF2A /* UIViewController+MJRefresh.m */; };
@@ -330,6 +331,8 @@
 		C530B005254D9A8100EDEDC8 /* UICollectionView+RegisterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+RegisterClass.h"; sourceTree = "<group>"; };
 		C530B006254D9A8100EDEDC8 /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
 		C530B007254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+RegisterClass.m"; sourceTree = "<group>"; };
+		C53C9D5925A1CFDD0007F58F /* NSObject+DataSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DataSave.m"; sourceTree = "<group>"; };
+		C53C9D5A25A1CFDD0007F58F /* NSObject+DataSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DataSave.h"; sourceTree = "<group>"; };
 		C53D391E2598C80600B48431 /* XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBubbleTransition.h; sourceTree = "<group>"; };
 		C53D391F2598C80600B48431 /* UIViewController+XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XLBubbleTransition.h"; sourceTree = "<group>"; };
 		C53D39202598C80600B48431 /* XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBubbleTransition.m; sourceTree = "<group>"; };
@@ -920,6 +923,15 @@
 				C552A5382589D26600A89501 /* 我为什么要这么做.md */,
 			);
 			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		C53C9D5825A1CFDD0007F58F /* NSObject+DataSave */ = {
+			isa = PBXGroup;
+			children = (
+				C53C9D5A25A1CFDD0007F58F /* NSObject+DataSave.h */,
+				C53C9D5925A1CFDD0007F58F /* NSObject+DataSave.m */,
+			);
+			path = "NSObject+DataSave";
 			sourceTree = "<group>";
 		};
 		C53D391D2598C80600B48431 /* UIViewController+XLBubbleTransition */ = {
@@ -1786,9 +1798,10 @@
 			isa = PBXGroup;
 			children = (
 				C5D6D9B525860E3900029AFF /* NSObject (Time) */,
-				C5D6D9B825860E3900029AFF /* NSObject+Time */,
 				C59B9A2F2526E3E00039B485 /* NSObject+Alert */,
+				C53C9D5825A1CFDD0007F58F /* NSObject+DataSave */,
 				C55564582580A4E6004DB33A /* NSObject+Others */,
+				C5D6D9B825860E3900029AFF /* NSObject+Time */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -3279,6 +3292,7 @@
 				C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */,
 				C5C64FB4259DF87100FD2F99 /* ECPrivacyCheckSpeechRecognition.m in Sources */,
 				C59B9C932526E3F10039B485 /* FMHttpRequest.m in Sources */,
+				C53C9D5E25A1CFDD0007F58F /* NSObject+DataSave.m in Sources */,
 				C59B9CC12526E3F10039B485 /* MovieCountDown.m in Sources */,
 				C59A3C3B258DD1D6005F6260 /* UserDefaultManager.m in Sources */,
 				C5914C0D25384E61007777A6 /* UIViewController+BWShareView.m in Sources */,
