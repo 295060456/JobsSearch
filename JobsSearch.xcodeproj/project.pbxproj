@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B1FCA2073A31A5D9A5BF4BB0 /* Pods_JobsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */; };
+		C51574FE25A350C00074D945 /* UIView+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C51574FD25A350C00074D945 /* UIView+Gesture.m */; };
 		C5226BF925875982004447FB /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226BF425875982004447FB /* BWShareView.m */; };
 		C5226BFA25875982004447FB /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226BF625875982004447FB /* BWItemCollectionViewCell.m */; };
 		C5226BFB25875982004447FB /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226BF725875982004447FB /* BWItemModel.m */; };
@@ -312,6 +313,8 @@
 		74F5AA78FAB8FF4A24BD8A01 /* Pods-JobsSearch-JobsSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch-JobsSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch-JobsSearchUITests/Pods-JobsSearch-JobsSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		84E21B6A48866E084609E155 /* Pods-JobsSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchTests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchTests/Pods-JobsSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A84ECDA1DF94EA70BE0F2CA4 /* Pods-JobsSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch/Pods-JobsSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		C51574FC25A350C00074D945 /* UIView+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gesture.h"; sourceTree = "<group>"; };
+		C51574FD25A350C00074D945 /* UIView+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gesture.m"; sourceTree = "<group>"; };
 		C5226BF125875981004447FB /* BWItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemCollectionViewCell.h; sourceTree = "<group>"; };
 		C5226BF225875981004447FB /* BWItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemModel.h; sourceTree = "<group>"; };
 		C5226BF325875982004447FB /* 分享控件的用法.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "分享控件的用法.md"; sourceTree = "<group>"; };
@@ -854,6 +857,15 @@
 				331F074F780A29A046522DAD /* Pods_JobsSearchUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C51574FB25A350C00074D945 /* UIView+Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				C51574FC25A350C00074D945 /* UIView+Gesture.h */,
+				C51574FD25A350C00074D945 /* UIView+Gesture.m */,
+			);
+			path = "UIView+Gesture";
 			sourceTree = "<group>";
 		};
 		C530AFF2254D9A8000EDEDC8 /* UICollectionViewFlowLayout */ = {
@@ -1971,6 +1983,7 @@
 		C59B9ABD2526E3E10039B485 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C51574FB25A350C00074D945 /* UIView+Gesture */,
 				C595BBCF25864175002A4531 /* UIView+Animation */,
 				C5460E4E258C8EDF0008928C /* UIView+AOP */,
 				C595BBD125864182002A4531 /* UIView+Chain */,
@@ -3277,6 +3290,7 @@
 				C59B9ACC2526E3E10039B485 /* NSObject+SYSAlertController.m in Sources */,
 				C571086E253C09E3005B3A0C /* TabbarVC.m in Sources */,
 				C59B9CBA2526E3F10039B485 /* YHGPUImageBeautifyFilter.m in Sources */,
+				C51574FE25A350C00074D945 /* UIView+Gesture.m in Sources */,
 				C5C64FD9259DF87100FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */,
 				C59B9AE62526E3E10039B485 /* UIView+JHGestureBlock.m in Sources */,
 				C5D6D9BB25860E3900029AFF /* TimeModel.m in Sources */,
