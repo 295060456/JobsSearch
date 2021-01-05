@@ -54,6 +54,7 @@
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
+		C565CB4225A4380800848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */; };
 		C56762E5259F12DA006905A9 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56762E1259F12DA006905A9 /* CollectionViewCell.m */; };
 		C56762E6259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C56762E4259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C56BB988258798F40043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB985258798F40043C977 /* UIControl+XY.m */; };
@@ -410,6 +411,9 @@
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
 		C5620C2F25541AC400FE435F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
+		C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
+		C565CB4025A4380800848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
+		C565CB4125A4380800848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
 		C56762E1259F12DA006905A9 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		C56762E2259F12DA006905A9 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		C56762E3259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+ShakeAnimation.h"; sourceTree = "<group>"; };
@@ -1319,6 +1323,16 @@
 			path = "数据以及资源";
 			sourceTree = "<group>";
 		};
+		C565CB3E25A4380800848134 /* TwoVerticalArrangementLabsView */ = {
+			isa = PBXGroup;
+			children = (
+				C565CB4025A4380800848134 /* TwoVerticalArrangementLabsView.h */,
+				C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */,
+				C565CB4125A4380800848134 /* TwoVerticalArrangementLabsView.png */,
+			);
+			path = TwoVerticalArrangementLabsView;
+			sourceTree = "<group>";
+		};
 		C5710821253C09D4005B3A0C /* 深度拓展系统UITabBar全家桶 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1768,6 +1782,7 @@
 		C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C565CB3E25A4380800848134 /* TwoVerticalArrangementLabsView */,
 				C59A3C35258DD1D6005F6260 /* UserDefaultManager */,
 				C59B9C182526E3F00039B485 /* 电影倒计时特效 */,
 				C59B9BDE2526E3F00039B485 /* 分享控件 */,
@@ -3340,6 +3355,7 @@
 				C59B9AE82526E3E10039B485 /* CALayer+Transition.m in Sources */,
 				C546FFCD258B61CD0008928C /* XHLaunchAdView.m in Sources */,
 				C59B9C952526E3F10039B485 /* ZBRequestEngine.m in Sources */,
+				C565CB4225A4380800848134 /* TwoVerticalArrangementLabsView.m in Sources */,
 				C59B9C8C2526E3F10039B485 /* CustomerGPUImagePlayerVC.m in Sources */,
 				C59B9C9E2526E3F10039B485 /* UIDevice+XMUtils.m in Sources */,
 				C59B98DC2526DE260039B485 /* JobsSearchAppDelegate.m in Sources */,
