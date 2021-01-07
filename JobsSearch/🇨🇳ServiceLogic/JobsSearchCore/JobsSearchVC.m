@@ -580,9 +580,10 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                                 btnTitleArr:@[@"好的"]
                              alertBtnAction:@[@""]
                                    targetVC:[JobsSearchAppDelegate sharedInstance].tabBarVC
-                               alertVCBlock:^(id data) {
-                //DIY
-            }];
+                                     funcVC:nil
+                                   animated:YES
+                               alertVCBlock:nil
+                            completionBlock:nil];
         }];
     }return _scanBtn;
 }
