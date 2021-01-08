@@ -27,6 +27,7 @@ def func
   pod 'MJExtension'
   pod 'BRPickerView'
   pod 'GKNavigationBar'
+  pod 'GKPhotoBrowser' # https://github.com/QuintGao/GKPhotoBrowser iOS仿微信、今日头条等图片浏览器 
   pod 'JXCategoryView'
   pod 'JXPagingView/Pager' # https://github.com/pujiaxin33/JXPagingView NO_SMP
 #  pod 'YYKit'

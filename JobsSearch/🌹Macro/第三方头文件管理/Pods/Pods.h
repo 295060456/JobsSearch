@@ -81,6 +81,12 @@
 #import "GKNavigationBar.h"
 #endif
 
+#if __has_include(<GKPhotoBrowser/GKPhotoBrowser.h>)
+#import <GKPhotoBrowser/GKPhotoBrowser.h>
+#else
+#import "GKPhotoBrowser.h"
+#endif
+
 #if __has_include(<PPBadgeView/PPBadgeView.h>)
 #import <PPBadgeView/PPBadgeView.h>
 #else
