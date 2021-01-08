@@ -402,7 +402,6 @@ static char *UIViewController_MJRefresh_refreshConfigFooter = "UIViewController_
                           context:nil];
             }
         }
-        mjRefreshAutoGifFooter.hidden = YES;
     }return mjRefreshAutoGifFooter;
 }
 
@@ -446,7 +445,6 @@ static char *UIViewController_MJRefresh_refreshConfigFooter = "UIViewController_
                           context:nil];
             }
         }
-        mjRefreshBackNormalFooter.hidden = YES;
     }return mjRefreshBackNormalFooter;
 }
 
@@ -491,8 +489,208 @@ static char *UIViewController_MJRefresh_refreshConfigFooter = "UIViewController_
                           context:nil];
             }
         }
-        mjRefreshAutoNormalFooter.hidden = YES;
     }return mjRefreshAutoNormalFooter;
+}
+
+-(MJRefreshAutoStateFooter *)mjRefreshAutoStateFooter{
+    MJRefreshAutoStateFooter *mjRefreshAutoStateFooter;
+    if (!mjRefreshAutoStateFooter) {
+        @weakify(self)
+        mjRefreshAutoStateFooter = [MJRefreshAutoStateFooter footerWithRefreshingBlock:^{
+            @strongify(self)
+            [self loadMoreRefresh];
+        }];
+        // 文字
+        {
+            // 普通闲置状态
+            [mjRefreshAutoStateFooter setTitle:self.refreshConfigFooter.stateIdleTitle
+                                      forState:MJRefreshStateIdle];
+            // 松开就可以进行刷新的状态
+            [mjRefreshAutoStateFooter setTitle:self.refreshConfigFooter.pullingTitle
+                                      forState:MJRefreshStatePulling];
+            // 正在刷新中的状态
+            [mjRefreshAutoStateFooter setTitle:self.refreshConfigFooter.refreshingTitle
+                                      forState:MJRefreshStateRefreshing];
+            /** 即将刷新的状态 */
+            [mjRefreshAutoStateFooter setTitle:self.refreshConfigFooter.willRefreshTitle
+                                      forState:MJRefreshStateWillRefresh];
+            /** 所有数据加载完毕，没有更多的数据了 */
+            [mjRefreshAutoStateFooter setTitle:self.refreshConfigFooter.noMoreDataTitle
+                                      forState:MJRefreshStateNoMoreData];
+        }
+        //其他
+        {
+            // 设置字体
+            mjRefreshAutoStateFooter.stateLabel.font = self.refreshConfigFooter.font;
+            // 设置颜色
+            mjRefreshAutoStateFooter.stateLabel.textColor = self.refreshConfigFooter.textColor;
+            if (self.refreshConfigFooter.isShake) {
+                //震动特效反馈
+                [self addObserver:self
+                       forKeyPath:@"state"
+                          options:NSKeyValueObservingOptionNew
+                          context:nil];
+            }
+        }
+    }return mjRefreshAutoStateFooter;
+}
+
+-(MJRefreshAutoFooter *)mjRefreshAutoFooter{
+    MJRefreshAutoFooter *mjRefreshAutoFooter;
+    if (!mjRefreshAutoFooter) {
+        @weakify(self)
+        mjRefreshAutoFooter = [MJRefreshAutoFooter footerWithRefreshingBlock:^{
+            @strongify(self)
+            [self loadMoreRefresh];
+        }];
+    }return mjRefreshAutoFooter;
+}
+
+-(MJRefreshBackGifFooter *)mjRefreshBackGifFooter{
+    MJRefreshBackGifFooter *mjRefreshBackGifFooter;
+    if (!mjRefreshBackGifFooter) {
+        @weakify(self)
+        mjRefreshBackGifFooter = [MJRefreshBackGifFooter footerWithRefreshingBlock:^{
+            @strongify(self)
+            [self loadMoreRefresh];
+        }];
+        // 图片
+        {
+            // 普通闲置状态
+            [mjRefreshBackGifFooter setImages:self.refreshConfigFooter.stateIdlePicsMutArr
+                                     forState:MJRefreshStateIdle];
+            // 松开就可以进行刷新的状态
+            [mjRefreshBackGifFooter setImages:self.refreshConfigFooter.pullingPicsMutArr
+                                     forState:MJRefreshStatePulling];
+            // 正在刷新中的状态
+            [mjRefreshBackGifFooter setImages:self.refreshConfigFooter.refreshingPicsMutArr
+                                     duration:self.refreshConfigFooter.refreshingDuration
+                                     forState:MJRefreshStateRefreshing];
+            // 即将刷新的状态
+            [mjRefreshBackGifFooter setImages:self.refreshConfigFooter.willRefreshPicsMutArr
+                                     forState:MJRefreshStateWillRefresh];
+            // 所有数据加载完毕，没有更多的数据了
+            [mjRefreshBackGifFooter setImages:self.refreshConfigFooter.noMoreDataPicsMutArr
+                                     forState:MJRefreshStateNoMoreData];
+        }
+        // 文字
+        {
+            // 普通闲置状态
+            [mjRefreshBackGifFooter setTitle:self.refreshConfigFooter.stateIdleTitle
+                                    forState:MJRefreshStateIdle];
+            // 松开就可以进行刷新的状态
+            [mjRefreshBackGifFooter setTitle:self.refreshConfigFooter.pullingTitle
+                                    forState:MJRefreshStatePulling];
+            // 正在刷新中的状态
+            [mjRefreshBackGifFooter setTitle:self.refreshConfigFooter.refreshingTitle
+                                    forState:MJRefreshStateRefreshing];
+            /** 即将刷新的状态 */
+            [mjRefreshBackGifFooter setTitle:self.refreshConfigFooter.willRefreshTitle
+                                    forState:MJRefreshStateWillRefresh];
+            /** 所有数据加载完毕，没有更多的数据了 */
+            [mjRefreshBackGifFooter setTitle:self.refreshConfigFooter.noMoreDataTitle
+                                    forState:MJRefreshStateNoMoreData];
+        }
+        //其他
+        {
+            // 设置字体
+            mjRefreshBackGifFooter.stateLabel.font = self.refreshConfigFooter.font;
+            // 设置颜色
+            mjRefreshBackGifFooter.stateLabel.textColor = self.refreshConfigFooter.textColor;
+            if (self.refreshConfigFooter.isShake) {
+                //震动特效反馈
+                [self addObserver:self
+                       forKeyPath:@"state"
+                          options:NSKeyValueObservingOptionNew
+                          context:nil];
+            }
+        }
+    }return mjRefreshBackGifFooter;
+}
+
+-(MJRefreshBackStateFooter *)mjRefreshBackStateFooter{
+    MJRefreshBackStateFooter *mjRefreshBackStateFooter;
+    if (!mjRefreshBackStateFooter) {
+        @weakify(self)
+        mjRefreshBackStateFooter = [MJRefreshBackStateFooter footerWithRefreshingBlock:^{
+            @strongify(self)
+            [self loadMoreRefresh];
+        }];
+        // 文字
+        {
+            // 普通闲置状态
+            [mjRefreshBackStateFooter setTitle:self.refreshConfigFooter.stateIdleTitle
+                                    forState:MJRefreshStateIdle];
+            // 松开就可以进行刷新的状态
+            [mjRefreshBackStateFooter setTitle:self.refreshConfigFooter.pullingTitle
+                                    forState:MJRefreshStatePulling];
+            // 正在刷新中的状态
+            [mjRefreshBackStateFooter setTitle:self.refreshConfigFooter.refreshingTitle
+                                    forState:MJRefreshStateRefreshing];
+            /** 即将刷新的状态 */
+            [mjRefreshBackStateFooter setTitle:self.refreshConfigFooter.willRefreshTitle
+                                    forState:MJRefreshStateWillRefresh];
+            /** 所有数据加载完毕，没有更多的数据了 */
+            [mjRefreshBackStateFooter setTitle:self.refreshConfigFooter.noMoreDataTitle
+                                    forState:MJRefreshStateNoMoreData];
+        }
+        //其他
+        {
+            // 设置字体
+            mjRefreshBackStateFooter.stateLabel.font = self.refreshConfigFooter.font;
+            // 设置颜色
+            mjRefreshBackStateFooter.stateLabel.textColor = self.refreshConfigFooter.textColor;
+            if (self.refreshConfigFooter.isShake) {
+                //震动特效反馈
+                [self addObserver:self
+                       forKeyPath:@"state"
+                          options:NSKeyValueObservingOptionNew
+                          context:nil];
+            }
+        }
+    }return mjRefreshBackStateFooter;
+}
+
+-(MJRefreshBackFooter *)mjRefreshBackFooter{
+    MJRefreshBackFooter *mjRefreshBackFooter;
+    if (!mjRefreshBackFooter) {
+        @weakify(self)
+        mjRefreshBackFooter = [MJRefreshBackFooter footerWithRefreshingBlock:^{
+            @strongify(self)
+            [self loadMoreRefresh];
+        }];
+        //其他
+        {
+            if (self.refreshConfigFooter.isShake) {
+                //震动特效反馈
+                [self addObserver:self
+                       forKeyPath:@"state"
+                          options:NSKeyValueObservingOptionNew
+                          context:nil];
+            }
+        }
+    }return mjRefreshBackFooter;
+}
+
+-(MJRefreshFooter *)mjRefreshFooter{
+    MJRefreshFooter *mjRefreshFooter;
+    if (!mjRefreshFooter) {
+        @weakify(self)
+        mjRefreshFooter = [MJRefreshFooter footerWithRefreshingBlock:^{
+            @strongify(self)
+            [self loadMoreRefresh];
+        }];
+        //其他
+        {
+            if (self.refreshConfigFooter.isShake) {
+                //震动特效反馈
+                [self addObserver:self
+                       forKeyPath:@"state"
+                          options:NSKeyValueObservingOptionNew
+                          context:nil];
+            }
+        }
+    }return mjRefreshFooter;
 }
 
 @end

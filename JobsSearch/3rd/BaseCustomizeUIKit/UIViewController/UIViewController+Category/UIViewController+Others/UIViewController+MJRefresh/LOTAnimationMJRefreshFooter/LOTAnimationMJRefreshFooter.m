@@ -1,22 +1,22 @@
 //
-//  UBLCustomGifHeader.m
+//  LOTAnimationMJRefreshFooter.m
 //  DouYin
 //
-//  Created by John on 2020/11/14.
+//  Created by Jobs on 2021/1/8.
 //
 
-#import "LOTAnimationMJRefreshHeader.h"
+#import "LOTAnimationMJRefreshFooter.h"
 
 static const CGFloat OffsetBetweenStateLabelAndAnimationView = 5;//StateLabel 和 AnimationView 之间的间距
 
-@interface LOTAnimationMJRefreshHeader ()
+@interface LOTAnimationMJRefreshFooter ()
 
 @property(nonatomic,strong)LOTAnimationView *animationView;
-@property(nonatomic,copy)MKDataBlock refreshHeaderBlock;
+@property(nonatomic,copy)MKDataBlock refreshFooterBlock;
 
 @end
 
-@implementation LOTAnimationMJRefreshHeader
+@implementation LOTAnimationMJRefreshFooter
 
 - (void)prepare{
     [super prepare];
@@ -34,8 +34,6 @@ static const CGFloat OffsetBetweenStateLabelAndAnimationView = 5;//StateLabel �
 // 执行重新给子视图布局的时候
 - (void)placeSubviews{
     [super placeSubviews];
-    //隐藏更新时间文字
-    self.lastUpdatedTimeLabel.hidden = YES;
     self.stateLabel.mj_w = self.stateLabel.mj_textWidth;
     self.stateLabel.center = CGPointMake(self.mj_w / 2.0 + 15, self.mj_h / 2.0 + 0.0);
     self.animationView.mj_x = self.stateLabel.mj_x - OffsetBetweenStateLabelAndAnimationView - self.animationView.mj_w;
@@ -84,20 +82,20 @@ static const CGFloat OffsetBetweenStateLabelAndAnimationView = 5;//StateLabel �
 
 - (void)beginRefreshing{
     [super beginRefreshing];
-    if (self.refreshHeaderBlock) {
-        self.refreshHeaderBlock(@(RefreshingType_beginRefreshing));
+    if (self.refreshFooterBlock) {
+        self.refreshFooterBlock(@(RefreshingType_beginRefreshing));
     }
 }
 
 - (void)endRefreshing{
     [super endRefreshing];
-    if (self.refreshHeaderBlock) {
-        self.refreshHeaderBlock(@(RefreshingType_endRefreshing));
+    if (self.refreshFooterBlock) {
+        self.refreshFooterBlock(@(RefreshingType_endRefreshing));
     }
 }
 
--(void)actionBlockRefreshHeader:(MKDataBlock)refreshHeaderBlock{
-    self.refreshHeaderBlock = refreshHeaderBlock;
+-(void)actionBlockRefreshFooter:(MKDataBlock)refreshFooterBlock{
+    self.refreshFooterBlock = refreshFooterBlock;
 }
 #pragma mark —— lazyLoad
 - (LOTAnimationView *)animationView{
@@ -124,5 +122,6 @@ static const CGFloat OffsetBetweenStateLabelAndAnimationView = 5;//StateLabel �
         _refreshConfigModel = MJRefreshConfigModel.new;
     }return _refreshConfigModel;
 }
+
 
 @end
