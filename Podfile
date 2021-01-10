@@ -40,6 +40,7 @@ def func
   pod 'ZZCircleProgress'
   pod 'TXFileOperation'
   pod 'SZTextView'
+  pod 'YYImage'
   pod 'GKNavigationBar'
 #  pod 'AWRichText'//有问题不好 用YYLabel
   pod 'FLAnimatedImageView+RGWrapper'
