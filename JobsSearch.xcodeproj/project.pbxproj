@@ -258,6 +258,7 @@
 		C5C64FD7259DF87100FD2F99 /* 文件和文件夹@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C64FA2259DF87100FD2F99 /* 文件和文件夹@3x.png */; };
 		C5C64FD8259DF87100FD2F99 /* 定位服务@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C64FA3259DF87100FD2F99 /* 定位服务@3x.png */; };
 		C5C64FD9259DF87100FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C64FA6259DF87100FD2F99 /* ECPrivacyCheckGatherTool.m */; };
+		C5CF145825AC7D5800381935 /* LYLUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CF145525AC7D5800381935 /* LYLUnicode.m */; };
 		C5D0B80325878D7A002CA224 /* NSObject+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B80125878D7A002CA224 /* NSObject+Sound.m */; };
 		C5D0B80F25878D94002CA224 /* Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B80B25878D94002CA224 /* Sound.wav */; };
 		C5D0B81025878D94002CA224 /* 带有按键音的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B80C25878D94002CA224 /* 带有按键音的按钮.md */; };
@@ -781,6 +782,9 @@
 		C5C64FA9259DF87100FD2F99 /* ECPrivacyCheckTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPrivacyCheckTools.h; sourceTree = "<group>"; };
 		C5C64FAB259DF87100FD2F99 /* ECPrivacyCheckTools不用pod管理的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ECPrivacyCheckTools不用pod管理的情况说明.md"; sourceTree = "<group>"; };
 		C5C64FAC259DF87100FD2F99 /* ECAuthorizationTools.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ECAuthorizationTools.md; sourceTree = "<group>"; };
+		C5CF145525AC7D5800381935 /* LYLUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLUnicode.m; sourceTree = "<group>"; };
+		C5CF145625AC7D5800381935 /* 解决打印日志对于Unicode编码不能正常显示中文的问题 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "解决打印日志对于Unicode编码不能正常显示中文的问题"; sourceTree = "<group>"; };
+		C5CF145725AC7D5800381935 /* LYLUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLUnicode.h; sourceTree = "<group>"; };
 		C5D0B80125878D7A002CA224 /* NSObject+Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sound.m"; sourceTree = "<group>"; };
 		C5D0B80225878D7A002CA224 /* NSObject+Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sound.h"; sourceTree = "<group>"; };
 		C5D0B80B25878D94002CA224 /* Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound.wav; sourceTree = "<group>"; };
@@ -1768,6 +1772,7 @@
 		C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5CF145425AC7D5800381935 /* LYLUnicode */,
 				C5A437CD25AAF7B3000F0CD2 /* 手势滑动返回 */,
 				C565CB3E25A4380800848134 /* TwoVerticalArrangementLabsView */,
 				C59A3C35258DD1D6005F6260 /* UserDefaultManager */,
@@ -2582,6 +2587,16 @@
 			path = ReadMe;
 			sourceTree = "<group>";
 		};
+		C5CF145425AC7D5800381935 /* LYLUnicode */ = {
+			isa = PBXGroup;
+			children = (
+				C5CF145625AC7D5800381935 /* 解决打印日志对于Unicode编码不能正常显示中文的问题 */,
+				C5CF145725AC7D5800381935 /* LYLUnicode.h */,
+				C5CF145525AC7D5800381935 /* LYLUnicode.m */,
+			);
+			path = LYLUnicode;
+			sourceTree = "<group>";
+		};
 		C5D0B80A25878D94002CA224 /* SoundBtn */ = {
 			isa = PBXGroup;
 			children = (
@@ -3293,6 +3308,7 @@
 				C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */,
 				C571086B253C09E3005B3A0C /* CustomTabBar.m in Sources */,
 				C5914C0225384E61007777A6 /* UIViewController+GifImageView.m in Sources */,
+				C5CF145825AC7D5800381935 /* LYLUnicode.m in Sources */,
 				C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */,
 				C5C64FB4259DF87100FD2F99 /* ECPrivacyCheckSpeechRecognition.m in Sources */,
 				C59B9C932526E3F10039B485 /* FMHttpRequest.m in Sources */,
