@@ -190,6 +190,16 @@
 		C59BA0A6252711260039B485 /* JobsSearchTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA0A5252711260039B485 /* JobsSearchTableViewHeaderView.m */; };
 		C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */; };
 		C59BA1F325271DAE0039B485 /* 删除.png in Resources */ = {isa = PBXBuildFile; fileRef = C59BA1F225271DAE0039B485 /* 删除.png */; };
+		C5A437D325AAF7B3000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A437CE25AAF7B3000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m */; };
+		C5A437D525AAF7B3000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A437D225AAF7B3000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		C5A442D225ABFBDE000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A442BE25ABFBDD000F0CD2 /* GKPhotoBrowser+SaveBtn.m */; };
+		C5A442D325ABFBDE000F0CD2 /* JXCategoryTitleBackgroundCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A442C425ABFBDD000F0CD2 /* JXCategoryTitleBackgroundCellModel.m */; };
+		C5A442D425ABFBDE000F0CD2 /* JXCategoryTitleBackgroundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A442C525ABFBDD000F0CD2 /* JXCategoryTitleBackgroundCell.m */; };
+		C5A442D525ABFBDE000F0CD2 /* JXCategoryTitleBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A442C625ABFBDD000F0CD2 /* JXCategoryTitleBackgroundView.m */; };
+		C5A442D625ABFBDE000F0CD2 /* JXCategoryTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A442C925ABFBDD000F0CD2 /* JXCategoryTimelineView.m */; };
+		C5A442D725ABFBDE000F0CD2 /* JXCategoryTimelineCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A442CA25ABFBDD000F0CD2 /* JXCategoryTimelineCellModel.m */; };
+		C5A442D825ABFBDE000F0CD2 /* JXCategoryTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A442CB25ABFBDD000F0CD2 /* JXCategoryTimelineCell.m */; };
+		C5A442D925ABFBDE000F0CD2 /* WHToast+DDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A442D025ABFBDE000F0CD2 /* WHToast+DDToast.m */; };
 		C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEAEA253841B1000E1C5F /* UIView+Extras.m */; };
 		C5AEEAED253841B1000E1C5F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEAEB253841B1000E1C5F /* UIView+Animation.m */; };
 		C5B47F782529F7B300387F47 /* 放大镜.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B47F772529F7B300387F47 /* 放大镜.png */; };
@@ -662,6 +672,27 @@
 		C59BA129252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchShowHistoryDataTBVCell.h; sourceTree = "<group>"; };
 		C59BA12A252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchShowHistoryDataTBVCell.m; sourceTree = "<group>"; };
 		C59BA1F225271DAE0039B485 /* 删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除.png"; sourceTree = "<group>"; };
+		C5A437CE25AAF7B3000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		C5A437CF25AAF7B3000F0CD2 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		C5A437D025AAF7B3000F0CD2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C5A437D125AAF7B3000F0CD2 /* UIScrollView+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		C5A437D225AAF7B3000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		C5A442BD25ABFBDD000F0CD2 /* GKPhotoBrowser+SaveBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GKPhotoBrowser+SaveBtn.h"; sourceTree = "<group>"; };
+		C5A442BE25ABFBDD000F0CD2 /* GKPhotoBrowser+SaveBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GKPhotoBrowser+SaveBtn.m"; sourceTree = "<group>"; };
+		C5A442C225ABFBDD000F0CD2 /* JXCategoryTitleBackgroundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTitleBackgroundCell.h; sourceTree = "<group>"; };
+		C5A442C325ABFBDD000F0CD2 /* JXCategoryTitleBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTitleBackgroundView.h; sourceTree = "<group>"; };
+		C5A442C425ABFBDD000F0CD2 /* JXCategoryTitleBackgroundCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTitleBackgroundCellModel.m; sourceTree = "<group>"; };
+		C5A442C525ABFBDD000F0CD2 /* JXCategoryTitleBackgroundCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTitleBackgroundCell.m; sourceTree = "<group>"; };
+		C5A442C625ABFBDD000F0CD2 /* JXCategoryTitleBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTitleBackgroundView.m; sourceTree = "<group>"; };
+		C5A442C725ABFBDD000F0CD2 /* JXCategoryTitleBackgroundCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTitleBackgroundCellModel.h; sourceTree = "<group>"; };
+		C5A442C925ABFBDD000F0CD2 /* JXCategoryTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTimelineView.m; sourceTree = "<group>"; };
+		C5A442CA25ABFBDD000F0CD2 /* JXCategoryTimelineCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTimelineCellModel.m; sourceTree = "<group>"; };
+		C5A442CB25ABFBDD000F0CD2 /* JXCategoryTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTimelineCell.m; sourceTree = "<group>"; };
+		C5A442CC25ABFBDD000F0CD2 /* JXCategoryTimelineCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTimelineCellModel.h; sourceTree = "<group>"; };
+		C5A442CD25ABFBDD000F0CD2 /* JXCategoryTimelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTimelineView.h; sourceTree = "<group>"; };
+		C5A442CE25ABFBDD000F0CD2 /* JXCategoryTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTimelineCell.h; sourceTree = "<group>"; };
+		C5A442D025ABFBDE000F0CD2 /* WHToast+DDToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WHToast+DDToast.m"; sourceTree = "<group>"; };
+		C5A442D125ABFBDE000F0CD2 /* WHToast+DDToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WHToast+DDToast.h"; sourceTree = "<group>"; };
 		C5AEEAE8253841B1000E1C5F /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
 		C5AEEAE9253841B1000E1C5F /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		C5AEEAEA253841B1000E1C5F /* UIView+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extras.m"; sourceTree = "<group>"; };
@@ -1650,6 +1681,9 @@
 		C59B99192526E09C0039B485 /* PodsManual */ = {
 			isa = PBXGroup;
 			children = (
+				C5A442BC25ABFBDD000F0CD2 /* GKPhotoBrowser+SaveBtn */,
+				C5A442BF25ABFBDD000F0CD2 /* JXCategoryView */,
+				C5A442CF25ABFBDE000F0CD2 /* WHToast */,
 				C5C64F67259DF87100FD2F99 /* ECPrivacyCheckTools */,
 				C546FFB6258B61CD0008928C /* XHLaunchAd */,
 				C59B996F2526E0A50039B485 /* ZZCircleProgress */,
@@ -1734,6 +1768,7 @@
 		C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5A437CD25AAF7B3000F0CD2 /* 手势滑动返回 */,
 				C565CB3E25A4380800848134 /* TwoVerticalArrangementLabsView */,
 				C59A3C35258DD1D6005F6260 /* UserDefaultManager */,
 				C59B9C182526E3F00039B485 /* 电影倒计时特效 */,
@@ -2278,6 +2313,71 @@
 				C5B47F922529FAB900387F47 /* 搜索历史Cell */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5A437CD25AAF7B3000F0CD2 /* 手势滑动返回 */ = {
+			isa = PBXGroup;
+			children = (
+				C5A437D025AAF7B3000F0CD2 /* README.md */,
+				C5A437CF25AAF7B3000F0CD2 /* UINavigationController+FDFullscreenPopGesture.h */,
+				C5A437D225AAF7B3000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m */,
+				C5A437D125AAF7B3000F0CD2 /* UIScrollView+FDFullscreenPopGesture.h */,
+				C5A437CE25AAF7B3000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m */,
+			);
+			path = "手势滑动返回";
+			sourceTree = "<group>";
+		};
+		C5A442BC25ABFBDD000F0CD2 /* GKPhotoBrowser+SaveBtn */ = {
+			isa = PBXGroup;
+			children = (
+				C5A442BD25ABFBDD000F0CD2 /* GKPhotoBrowser+SaveBtn.h */,
+				C5A442BE25ABFBDD000F0CD2 /* GKPhotoBrowser+SaveBtn.m */,
+			);
+			path = "GKPhotoBrowser+SaveBtn";
+			sourceTree = "<group>";
+		};
+		C5A442BF25ABFBDD000F0CD2 /* JXCategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				C5A442C125ABFBDD000F0CD2 /* JXCategoryTitleBackgroundView */,
+				C5A442C825ABFBDD000F0CD2 /* JXCategoryTimelineView */,
+			);
+			path = JXCategoryView;
+			sourceTree = "<group>";
+		};
+		C5A442C125ABFBDD000F0CD2 /* JXCategoryTitleBackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				C5A442C225ABFBDD000F0CD2 /* JXCategoryTitleBackgroundCell.h */,
+				C5A442C525ABFBDD000F0CD2 /* JXCategoryTitleBackgroundCell.m */,
+				C5A442C725ABFBDD000F0CD2 /* JXCategoryTitleBackgroundCellModel.h */,
+				C5A442C425ABFBDD000F0CD2 /* JXCategoryTitleBackgroundCellModel.m */,
+				C5A442C325ABFBDD000F0CD2 /* JXCategoryTitleBackgroundView.h */,
+				C5A442C625ABFBDD000F0CD2 /* JXCategoryTitleBackgroundView.m */,
+			);
+			path = JXCategoryTitleBackgroundView;
+			sourceTree = "<group>";
+		};
+		C5A442C825ABFBDD000F0CD2 /* JXCategoryTimelineView */ = {
+			isa = PBXGroup;
+			children = (
+				C5A442CE25ABFBDD000F0CD2 /* JXCategoryTimelineCell.h */,
+				C5A442CB25ABFBDD000F0CD2 /* JXCategoryTimelineCell.m */,
+				C5A442CC25ABFBDD000F0CD2 /* JXCategoryTimelineCellModel.h */,
+				C5A442CA25ABFBDD000F0CD2 /* JXCategoryTimelineCellModel.m */,
+				C5A442CD25ABFBDD000F0CD2 /* JXCategoryTimelineView.h */,
+				C5A442C925ABFBDD000F0CD2 /* JXCategoryTimelineView.m */,
+			);
+			path = JXCategoryTimelineView;
+			sourceTree = "<group>";
+		};
+		C5A442CF25ABFBDE000F0CD2 /* WHToast */ = {
+			isa = PBXGroup;
+			children = (
+				C5A442D025ABFBDE000F0CD2 /* WHToast+DDToast.m */,
+				C5A442D125ABFBDE000F0CD2 /* WHToast+DDToast.h */,
+			);
+			path = WHToast;
 			sourceTree = "<group>";
 		};
 		C5B47F872529FA1500387F47 /* HotLabel */ = {
@@ -3099,6 +3199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C552A6702589D2CA00A89501 /* UIImage+ScreenShot.m in Sources */,
+				C5A442D225ABFBDE000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */,
 				C59B9C9F2526E3F10039B485 /* UIButton+CountDownBtn.m in Sources */,
 				C54B3F4C2552979B003BE195 /* NSObject+RichText.m in Sources */,
 				C5C64FAD259DF87100FD2F99 /* ECPrivacyCheckMicrophone.m in Sources */,
@@ -3110,6 +3211,7 @@
 				C52F996825A6D9B400924990 /* NSObject+SYSAlertController.m in Sources */,
 				C5B85617252B577A00890A66 /* UITableView+WWFoldableTableView.m in Sources */,
 				C546FFD5258B61CD0008928C /* XHLaunchAdConfiguration.m in Sources */,
+				C5A437D525AAF7B3000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C530B00A254D9A8100EDEDC8 /* HQCollectionViewFlowLayout.m in Sources */,
 				C54AB110255E5FB2000A314D /* UITableViewCell+Margin.m in Sources */,
 				C59B9B092526E3E10039B485 /* UIView+Measure.m in Sources */,
@@ -3123,6 +3225,7 @@
 				C5710864253C09E3005B3A0C /* TransitionAnimation.m in Sources */,
 				C5C64FAE259DF87100FD2F99 /* ECPrivacyCheckHomeKit.m in Sources */,
 				C5D0B80325878D7A002CA224 /* NSObject+Sound.m in Sources */,
+				C5A442D825ABFBDE000F0CD2 /* JXCategoryTimelineCell.m in Sources */,
 				C530B00F254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m in Sources */,
 				C56762E5259F12DA006905A9 /* CollectionViewCell.m in Sources */,
 				C5C64FB6259DF87100FD2F99 /* ECPrivacyCheckMediaAndAppleMusic.m in Sources */,
@@ -3130,16 +3233,19 @@
 				C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */,
 				C59B9AD52526E3E10039B485 /* UIImage+Extras.m in Sources */,
 				C59B9B082526E3E10039B485 /* UIView+Chain.m in Sources */,
+				C5A442D325ABFBDE000F0CD2 /* JXCategoryTitleBackgroundCellModel.m in Sources */,
 				C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */,
 				C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */,
 				C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */,
 				C546FFCF258B61CD0008928C /* XHLaunchImageView.m in Sources */,
+				C5A442D525ABFBDE000F0CD2 /* JXCategoryTitleBackgroundView.m in Sources */,
 				C59A3C3A258DD1D6005F6260 /* UserDefaultModel.m in Sources */,
 				C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */,
 				C546FFDE258B622B0008928C /* UIViewController+NavigationBar.m in Sources */,
 				C56BB988258798F40043C977 /* UIControl+XY.m in Sources */,
 				C59B99992526E0A50039B485 /* ZZCountingLabel.m in Sources */,
 				C53D39242598C80600B48431 /* UIViewController+XLBubbleTransition.m in Sources */,
+				C5A442D625ABFBDE000F0CD2 /* JXCategoryTimelineView.m in Sources */,
 				C576704F2546B96500C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
 				C5569687255BFCC3005C1361 /* NSString+Extras.m in Sources */,
 				C5D601E02586314D00029AFF /* BaseViewController.m in Sources */,
@@ -3192,6 +3298,7 @@
 				C59B9C932526E3F10039B485 /* FMHttpRequest.m in Sources */,
 				C53C9D5E25A1CFDD0007F58F /* NSObject+DataSave.m in Sources */,
 				C59B9CC12526E3F10039B485 /* MovieCountDown.m in Sources */,
+				C5A442D925ABFBDE000F0CD2 /* WHToast+DDToast.m in Sources */,
 				C59A3C3B258DD1D6005F6260 /* UserDefaultManager.m in Sources */,
 				C5914C0D25384E61007777A6 /* UIViewController+BWShareView.m in Sources */,
 				C5D6D9CC25860E4A00029AFF /* NSTimerManager.m in Sources */,
@@ -3209,6 +3316,7 @@
 				C5710865253C09E3005B3A0C /* TransitionController.m in Sources */,
 				C5DF428F25A8997200E91985 /* LOTAnimationMJRefreshFooter.m in Sources */,
 				C571086A253C09E3005B3A0C /* UITabBar+Ex.m in Sources */,
+				C5A442D725ABFBDE000F0CD2 /* JXCategoryTimelineCellModel.m in Sources */,
 				C546FFD4258B61CD0008928C /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 				C59B9CB92526E3F10039B485 /* LGiOSBtn.m in Sources */,
 				C546FFD1258B61CD0008928C /* XHLaunchAd.m in Sources */,
@@ -3229,6 +3337,7 @@
 				C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */,
 				C546C487252C3979003694FF /* JobsSearchResultDataListTBVCell.m in Sources */,
 				C5D6D9BC25860E3900029AFF /* NSObject+Time.m in Sources */,
+				C5A442D425ABFBDE000F0CD2 /* JXCategoryTitleBackgroundCell.m in Sources */,
 				C5D1BF24258B1FBD00784D2F /* UIView+EmptyData.m in Sources */,
 				C59B999A2526E0A50039B485 /* ZZCircleProgress.m in Sources */,
 				C5C64FB2259DF87100FD2F99 /* ECPrivacyCheckFilesAndFolders.m in Sources */,
@@ -3237,6 +3346,7 @@
 				C59B9F132526F56E0039B485 /* JobsSearchBar.m in Sources */,
 				C59B9AE92526E3E10039B485 /* CALayer+Anim.m in Sources */,
 				C5C2444C2541A72F00CB55F5 /* TableViewCell.m in Sources */,
+				C5A437D325AAF7B3000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
 				C546FFD6258B61CD0008928C /* XHLaunchAdCache.m in Sources */,
 				C5226BFA25875982004447FB /* BWItemCollectionViewCell.m in Sources */,
 				C59B9CE32526E4110039B485 /* ViewController@3.m in Sources */,
