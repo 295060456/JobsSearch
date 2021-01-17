@@ -51,6 +51,7 @@
 		C5569687255BFCC3005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569683255BFCC2005C1361 /* NSString+Extras.m */; };
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
+		C55FE9D925B4262600D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE9D725B4262600D8C30D /* UIView+MJRefresh.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C565CB4225A4380800848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */; };
 		C56762E5259F12DA006905A9 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56762E1259F12DA006905A9 /* CollectionViewCell.m */; };
@@ -406,6 +407,8 @@
 		C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RBCLikeButton.bundle; sourceTree = "<group>"; };
 		C55AABA72532B2F800335ACC /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
+		C55FE9D725B4262600D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
+		C55FE9D825B4262600D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
 		C5620C2F25541AC400FE435F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
@@ -1311,6 +1314,15 @@
 			path = "数据以及资源";
 			sourceTree = "<group>";
 		};
+		C55FE9D625B4262600D8C30D /* UIView+MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C55FE9D825B4262600D8C30D /* UIView+MJRefresh.h */,
+				C55FE9D725B4262600D8C30D /* UIView+MJRefresh.m */,
+			);
+			path = "UIView+MJRefresh";
+			sourceTree = "<group>";
+		};
 		C565CB3E25A4380800848134 /* TwoVerticalArrangementLabsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1990,15 +2002,16 @@
 		C59B9ABD2526E3E10039B485 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C51574FB25A350C00074D945 /* UIView+Gesture */,
 				C595BBCF25864175002A4531 /* UIView+Animation */,
 				C5460E4E258C8EDF0008928C /* UIView+AOP */,
 				C595BBD125864182002A4531 /* UIView+Chain */,
 				C5D1BF21258B1FBD00784D2F /* UIView+EmptyData */,
 				C595BBD02586417C002A4531 /* UIView+Extras */,
+				C51574FB25A350C00074D945 /* UIView+Gesture */,
 				C595BBD22586418A002A4531 /* UIView+Gradient */,
 				C5529F402589CE1F00A89501 /* UIView+JHGestureBlock */,
 				C595BBD325864190002A4531 /* UIView+Measure */,
+				C55FE9D625B4262600D8C30D /* UIView+MJRefresh */,
 				C595BBD425864197002A4531 /* UIView+SuspendView */,
 			);
 			path = UIView;
@@ -3334,6 +3347,7 @@
 				C5DF428F25A8997200E91985 /* LOTAnimationMJRefreshFooter.m in Sources */,
 				C571086A253C09E3005B3A0C /* UITabBar+Ex.m in Sources */,
 				C5A442D725ABFBDE000F0CD2 /* JXCategoryTimelineCellModel.m in Sources */,
+				C55FE9D925B4262600D8C30D /* UIView+MJRefresh.m in Sources */,
 				C546FFD4258B61CD0008928C /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 				C59B9CB92526E3F10039B485 /* LGiOSBtn.m in Sources */,
 				C546FFD1258B61CD0008928C /* XHLaunchAd.m in Sources */,

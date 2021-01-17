@@ -21,6 +21,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    NSLog(@"%d",self.setupNavigationBarHidden);
     self.isHiddenNavigationBar = self.setupNavigationBarHidden;
     [self.navigationController setNavigationBarHidden:self.setupNavigationBarHidden animated:animated];
 }
@@ -32,8 +33,14 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    NSLog(@"%d",self.setupNavigationBarHidden);
     self.isHiddenNavigationBar = self.setupNavigationBarHidden;
     [self.navigationController setNavigationBarHidden:self.setupNavigationBarHidden animated:animated];
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.view.targetView.mj_footer.y = self.view.targetView.contentSize.height;
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer

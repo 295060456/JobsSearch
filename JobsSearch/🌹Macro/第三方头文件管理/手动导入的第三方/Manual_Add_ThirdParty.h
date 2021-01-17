@@ -31,6 +31,7 @@
 #import "UIView+Gradient.h"
 #import "UIView+EmptyData.h"
 #import "UIView+Gesture.h"
+#import "UIView+MJRefresh.h"
 /// UIViewController
 #import "UIViewController+JXCategoryListContentViewDelegate.h"
 #import "UIViewController+JXPagerViewListViewDelegate.h"
