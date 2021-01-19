@@ -7,7 +7,11 @@
 
 #import "JobsSearchResultDataListView.h"
 #import "JobsSearchResultDataListTBVCell.h"
+#if __has_include(<LYEmptyView/LYEmptyViewHeader.h>)
+#import <LYEmptyView/LYEmptyViewHeader.h>
+#else
 #import "LYEmptyViewHeader.h"
+#endif
 
 @interface JobsSearchResultDataListView ()
 <

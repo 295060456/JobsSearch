@@ -66,7 +66,6 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
     CGRect endFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     CGFloat KeyboardOffsetY = beginFrame.origin.y - endFrame.origin.y;// 正则抬起 ，负值下降
     NSLog(@"KeyboardOffsetY = %f",KeyboardOffsetY);
-    NSLog(@"BottomSafeAreaHeight = %f",BottomSafeAreaHeight());
  
     if (KeyboardOffsetY > 0) {
         NSLog(@"键盘抬起");
@@ -79,6 +78,14 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
 
 -(void)keyboardDidChangeFrameNotification:(NSNotification *)notification{
 
+}
+#pragma mark —— lazyLoad
+-(UIImageView *)bgImageView{
+    if (!_bgImageView) {
+        _bgImageView = UIImageView.new;
+        _bgImageView.frame = self.view.bounds;
+        self.view = _bgImageView;
+    }return _bgImageView;
 }
 
 @end
