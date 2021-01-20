@@ -5,11 +5,11 @@
 //  Created by Jobs on 2020/10/22.
 //
 
-#import "CollectionViewCell.h"
+#import "BaseCollectionViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DataCollectionViewCell : CollectionViewCell
+@interface DataCollectionViewCell : BaseCollectionViewCell
 
 @property(nonatomic,assign)long indexRow;
 @property(nonatomic,assign)long indexSection;
