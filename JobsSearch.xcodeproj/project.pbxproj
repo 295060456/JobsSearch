@@ -97,6 +97,7 @@
 		C5710884253C09E3005B3A0C /* tab_message_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = C571085F253C09E3005B3A0C /* tab_message_animate.json */; };
 		C57278FE254098AA002373D7 /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C57278F9254098AA002373D7 /* NavigationBar.m */; };
 		C57278FF254098AA002373D7 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C57278FC254098AA002373D7 /* BaseNavigationVC.m */; };
+		C572959D25BB0A3B00726419 /* UIView+BackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C572959B25BB0A3B00726419 /* UIView+BackgroundImage.m */; };
 		C576704F2546B96500C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C576704D2546B96500C382C8 /* UIViewController+JXPagerViewListViewDelegate.m */; };
 		C57F0D2C253337140080EEF0 /* NSObject+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */; };
 		C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C5850A5925483D0D001E6676 /* ViewForTableViewHeader.m */; };
@@ -477,6 +478,8 @@
 		C57278FA254098AA002373D7 /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
 		C57278FC254098AA002373D7 /* BaseNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationVC.m; sourceTree = "<group>"; };
 		C57278FD254098AA002373D7 /* BaseNavigationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationVC.h; sourceTree = "<group>"; };
+		C572959B25BB0A3B00726419 /* UIView+BackgroundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BackgroundImage.m"; sourceTree = "<group>"; };
+		C572959C25BB0A3B00726419 /* UIView+BackgroundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BackgroundImage.h"; sourceTree = "<group>"; };
 		C576704D2546B96500C382C8 /* UIViewController+JXPagerViewListViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JXPagerViewListViewDelegate.m"; sourceTree = "<group>"; };
 		C576704E2546B96500C382C8 /* UIViewController+JXPagerViewListViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JXPagerViewListViewDelegate.h"; sourceTree = "<group>"; };
 		C57F0D2A253337140080EEF0 /* NSObject+OpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OpenURL.h"; sourceTree = "<group>"; };
@@ -1501,6 +1504,15 @@
 			path = UINavigationController;
 			sourceTree = "<group>";
 		};
+		C572959A25BB0A3B00726419 /* UIView+BackgroundImage */ = {
+			isa = PBXGroup;
+			children = (
+				C572959B25BB0A3B00726419 /* UIView+BackgroundImage.m */,
+				C572959C25BB0A3B00726419 /* UIView+BackgroundImage.h */,
+			);
+			path = "UIView+BackgroundImage";
+			sourceTree = "<group>";
+		};
 		C576704C2546B94A00C382C8 /* UIViewController+JXCategory */ = {
 			isa = PBXGroup;
 			children = (
@@ -2015,6 +2027,7 @@
 		C59B9ABD2526E3E10039B485 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C572959A25BB0A3B00726419 /* UIView+BackgroundImage */,
 				C595BBCF25864175002A4531 /* UIView+Animation */,
 				C5460E4E258C8EDF0008928C /* UIView+AOP */,
 				C595BBD125864182002A4531 /* UIView+Chain */,
@@ -3343,6 +3356,7 @@
 				C53C9D5E25A1CFDD0007F58F /* NSObject+DataSave.m in Sources */,
 				C59B9CC12526E3F10039B485 /* MovieCountDown.m in Sources */,
 				C5A442D925ABFBDE000F0CD2 /* WHToast+DDToast.m in Sources */,
+				C572959D25BB0A3B00726419 /* UIView+BackgroundImage.m in Sources */,
 				C59A3C3B258DD1D6005F6260 /* UserDefaultManager.m in Sources */,
 				C5914C0D25384E61007777A6 /* UIViewController+BWShareView.m in Sources */,
 				C5D6D9CC25860E4A00029AFF /* NSTimerManager.m in Sources */,
