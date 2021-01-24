@@ -580,7 +580,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                                 btnTitleArr:@[@"好的"]
                              alertBtnAction:@[@""]
                                    targetVC:[JobsSearchAppDelegate sharedInstance].tabBarVC
-                                     funcVC:nil
+                                     funcInWhere:nil
                                    animated:YES
                                alertVCBlock:nil
                             completionBlock:nil];
