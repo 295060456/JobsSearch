@@ -13,6 +13,12 @@
 
 @implementation BaseCollectionReusableView
 
+-(instancetype)initWithFrame:(CGRect)frame{
+    if (self = [super initWithFrame:frame]) {
+        [self richElementsInCellWithModel:nil];
+    }return self;
+}
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     @weakify(self)
     if (self.collectionReusableViewBlock) {

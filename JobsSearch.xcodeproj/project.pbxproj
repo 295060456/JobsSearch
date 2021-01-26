@@ -3635,6 +3635,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 				WARNING_CFLAGS = "-Wno-ambiguous-macro";
 			};
 			name = Debug;
@@ -3659,6 +3660,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "JobsSearch/🌹Macro/JobsSearch-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 				WARNING_CFLAGS = "-Wno-ambiguous-macro";
 			};
 			name = Release;
