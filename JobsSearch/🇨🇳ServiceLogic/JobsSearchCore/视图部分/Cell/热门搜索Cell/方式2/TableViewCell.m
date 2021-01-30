@@ -53,13 +53,10 @@ UICollectionViewDelegateFlowLayout
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView
                                    cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-//    DataCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DataCollectionViewCell"
-//                                                                             forIndexPath:indexPath];
-    
+
     DataCollectionViewCell *cell = [DataCollectionViewCell cellWithCollectionView:collectionView
-                                                  registerCollectionViewCellClass:DataCollectionViewCell.class
                                                                      forIndexPath:indexPath];
-    
+
     cell.indexRow = indexPath.row;
     cell.indexSection = indexPath.section;
     [cell richElementsInCellWithModel:self.titleArr[indexPath.row]];

@@ -28,10 +28,11 @@
 #import "Manual_Add_ThirdParty.h"
 #pragma mark —— 各项全局定义
 /// 各项宏定义
-#import "MacroDef_Sys.h"
+#import "MacroDef_App.h"
 #import "MacroDef_Cor.h"
 #import "MacroDef_Size.h"
 #import "MacroDef_Func.h"
+#import "MacroDef_Sys.h"
 /// 其他的一些全局定义文件
 #import "DefineStructure.h"
 #import "AABlock.h"
