@@ -50,6 +50,7 @@
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
 		C55FE9D925B4262600D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE9D725B4262600D8C30D /* UIView+MJRefresh.m */; };
+		C562DBD125C7C422004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DBD025C7C422004D1AEA /* UIView+ViewController.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C565CB4225A4380800848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */; };
 		C56762E5259F12DA006905A9 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56762E1259F12DA006905A9 /* BaseCollectionViewCell.m */; };
@@ -409,6 +410,8 @@
 		C55FE9D725B4262600D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
 		C55FE9D825B4262600D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
 		C5620C2F25541AC400FE435F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C562DBCF25C7C422004D1AEA /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		C562DBD025C7C422004D1AEA /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		C5633213252AE88A00699392 /* 垃圾箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾箱.png"; sourceTree = "<group>"; };
 		C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
 		C565CB4025A4380800848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
@@ -1331,6 +1334,15 @@
 			path = "UIView+MJRefresh";
 			sourceTree = "<group>";
 		};
+		C562DBC825C7C41C004D1AEA /* UIView+ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C562DBCF25C7C422004D1AEA /* UIView+ViewController.h */,
+				C562DBD025C7C422004D1AEA /* UIView+ViewController.m */,
+			);
+			path = "UIView+ViewController";
+			sourceTree = "<group>";
+		};
 		C565CB3E25A4380800848134 /* TwoVerticalArrangementLabsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2029,6 +2041,7 @@
 		C59B9ABD2526E3E10039B485 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C562DBC825C7C41C004D1AEA /* UIView+ViewController */,
 				C572959A25BB0A3B00726419 /* UIView+BackgroundImage */,
 				C595BBCF25864175002A4531 /* UIView+Animation */,
 				C5460E4E258C8EDF0008928C /* UIView+AOP */,
@@ -3349,6 +3362,7 @@
 				C5AEEAED253841B1000E1C5F /* UIView+Animation.m in Sources */,
 				C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */,
 				C571086B253C09E3005B3A0C /* CustomTabBar.m in Sources */,
+				C562DBD125C7C422004D1AEA /* UIView+ViewController.m in Sources */,
 				C5914C0225384E61007777A6 /* UIViewController+GifImageView.m in Sources */,
 				C5CF145825AC7D5800381935 /* LYLUnicode.m in Sources */,
 				C58D938525B80CC400414ACB /* BaseTableViewCell.m in Sources */,
