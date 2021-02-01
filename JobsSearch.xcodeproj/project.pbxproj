@@ -56,6 +56,8 @@
 		C56762E5259F12DA006905A9 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56762E1259F12DA006905A9 /* BaseCollectionViewCell.m */; };
 		C56762E6259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C56762E4259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C56BB988258798F40043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB985258798F40043C977 /* UIControl+XY.m */; };
+		C56D893225C8232B001960CD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D892D25C8232B001960CD /* UIColor+Hex.m */; };
+		C56D893325C8232B001960CD /* UIColor+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D893025C8232B001960CD /* UIColor+Gradient.m */; };
 		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
 		C56E42FD254719F100B9F555 /* ⚽️PicResource in Resources */ = {isa = PBXBuildFile; fileRef = C56E42FC254719F100B9F555 /* ⚽️PicResource */; };
 		C5710860253C09E3005B3A0C /* JobsPullListAutoSizeView in Resources */ = {isa = PBXBuildFile; fileRef = C5710824253C09E2005B3A0C /* JobsPullListAutoSizeView */; };
@@ -144,7 +146,6 @@
 		C59B9AED2526E3E10039B485 /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A7F2526E3E10039B485 /* TableViewAnimationKit.m */; };
 		C59B9AEE2526E3E10039B485 /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A842526E3E10039B485 /* UITableView+XSAnimationKit.m */; };
 		C59B9AF02526E3E10039B485 /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A882526E3E10039B485 /* BaseTableViewer.m */; };
-		C59B9AF12526E3E10039B485 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A8A2526E3E10039B485 /* UIColor+Hex.m */; };
 		C59B9AF62526E3E10039B485 /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A982526E3E10039B485 /* NSArray+Extend.m */; };
 		C59B9AF72526E3E10039B485 /* DeleteSystemUITabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A9B2526E3E10039B485 /* DeleteSystemUITabBarButton.m */; };
 		C59B9AF82526E3E10039B485 /* 移除 系统自带的 UITabBarButton in Resources */ = {isa = PBXBuildFile; fileRef = C59B9A9D2526E3E10039B485 /* 移除 系统自带的 UITabBarButton */; };
@@ -423,6 +424,10 @@
 		C56BB985258798F40043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BB986258798F40043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C56BB987258798F40043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
+		C56D892D25C8232B001960CD /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		C56D892E25C8232B001960CD /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		C56D893025C8232B001960CD /* UIColor+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Gradient.m"; sourceTree = "<group>"; };
+		C56D893125C8232B001960CD /* UIColor+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Gradient.h"; sourceTree = "<group>"; };
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
 		C56E42FC254719F100B9F555 /* ⚽️PicResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "⚽️PicResource"; sourceTree = "<group>"; };
 		C5710824253C09E2005B3A0C /* JobsPullListAutoSizeView */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JobsPullListAutoSizeView; sourceTree = "<group>"; };
@@ -582,8 +587,6 @@
 		C59B9A842526E3E10039B485 /* UITableView+XSAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XSAnimationKit.m"; sourceTree = "<group>"; };
 		C59B9A862526E3E10039B485 /* BaseTableViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewer.h; sourceTree = "<group>"; };
 		C59B9A882526E3E10039B485 /* BaseTableViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewer.m; sourceTree = "<group>"; };
-		C59B9A8A2526E3E10039B485 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
-		C59B9A8B2526E3E10039B485 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		C59B9A952526E3E10039B485 /* NSArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
 		C59B9A962526E3E10039B485 /* NSArray+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extend.h"; sourceTree = "<group>"; };
 		C59B9A972526E3E10039B485 /* NSArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
@@ -1353,6 +1356,24 @@
 			path = TwoVerticalArrangementLabsView;
 			sourceTree = "<group>";
 		};
+		C56D892C25C8232B001960CD /* UIColor+Hex */ = {
+			isa = PBXGroup;
+			children = (
+				C56D892D25C8232B001960CD /* UIColor+Hex.m */,
+				C56D892E25C8232B001960CD /* UIColor+Hex.h */,
+			);
+			path = "UIColor+Hex";
+			sourceTree = "<group>";
+		};
+		C56D892F25C8232B001960CD /* UIColor+Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				C56D893025C8232B001960CD /* UIColor+Gradient.m */,
+				C56D893125C8232B001960CD /* UIColor+Gradient.h */,
+			);
+			path = "UIColor+Gradient";
+			sourceTree = "<group>";
+		};
 		C5710821253C09D4005B3A0C /* 深度拓展系统UITabBar全家桶 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1975,8 +1996,8 @@
 		C59B9A892526E3E10039B485 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A8B2526E3E10039B485 /* UIColor+Hex.h */,
-				C59B9A8A2526E3E10039B485 /* UIColor+Hex.m */,
+				C56D892F25C8232B001960CD /* UIColor+Gradient */,
+				C56D892C25C8232B001960CD /* UIColor+Hex */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -3308,6 +3329,7 @@
 				C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */,
 				C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */,
 				C546FFCF258B61CD0008928C /* XHLaunchImageView.m in Sources */,
+				C56D893325C8232B001960CD /* UIColor+Gradient.m in Sources */,
 				C5A442D525ABFBDE000F0CD2 /* JXCategoryTitleBackgroundView.m in Sources */,
 				C59A3C3A258DD1D6005F6260 /* UserDefaultModel.m in Sources */,
 				C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */,
@@ -3332,7 +3354,6 @@
 				C5C64FB3259DF87100FD2F99 /* ECPrivacyCheckCalendars.m in Sources */,
 				C5710868253C09E3005B3A0C /* TabBarControllerConfig.m in Sources */,
 				C59B9C9A2526E3F10039B485 /* WGradientProgress.m in Sources */,
-				C59B9AF12526E3E10039B485 /* UIColor+Hex.m in Sources */,
 				C59B9C942526E3F10039B485 /* ZBURLRequest.m in Sources */,
 				C546FFD2258B61CD0008928C /* XHLaunchAdController.m in Sources */,
 				C59B9D6B2526E59E0039B485 /* ViewController@1.m in Sources */,
@@ -3451,6 +3472,7 @@
 				C5710867253C09E3005B3A0C /* TLTabBarAnimation.m in Sources */,
 				C59B9AD22526E3E10039B485 /* UIImage+YBGIF.m in Sources */,
 				C54B3C6D25526000003BE195 /* UIFont+Extras.m in Sources */,
+				C56D893225C8232B001960CD /* UIColor+Hex.m in Sources */,
 				C530B00C254D9A8100EDEDC8 /* BaseCollectionReusableView.m in Sources */,
 				C59B9ACF2526E3E10039B485 /* NSObject+Extras.m in Sources */,
 				C5DF429225A8997200E91985 /* LOTAnimationMJRefreshHeader.m in Sources */,
