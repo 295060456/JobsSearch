@@ -8,13 +8,6 @@
 #ifndef MacroDef_App_h
 #define MacroDef_App_h
 
-#define DevEnviron_Cambodia_Main @"柬埔寨（主要）开发环境"
-//#define DevEnviron_Cambodia_Minor @"柬埔寨（次要）开发环境"
-//#define DevEnviron_Cambodia_Rally @"柬埔寨Rally（次要）开发环境"
-//#define DevEnviron_China_Mainland @"中国大陆开发环境"
-//#define TestEnviron @"测试环境"
-//#define ProductEnviron @"生产环境"
-
 /// 播放器view的tag，列表中UI控件唯一tag值
 #define kPlayerView 2000
 
@@ -31,5 +24,9 @@ static const CGFloat JXTableHeaderViewHeight = 289;
 static const CGFloat JXheightForHeaderInSection = 50;
 
 #define mkSkipHQAppString @"itms-services://?action=download-manifest&url=https://bt.5li2v2.com/channel/ios/hqbetgame_201_6215472_202009132133_4712.plist"
+
+//输入原型图上的宽和高，对外输出App对应的移动设备的真实宽高
+#define KWidth(width) (SCREEN_WIDTH / 375) * width //375 对应原型图的宽
+#define KHeight(height) (SCREEN_HEIGHT / 743) * height //743 对应原型图的高
 
 #endif /* MacroDef_App_h */
