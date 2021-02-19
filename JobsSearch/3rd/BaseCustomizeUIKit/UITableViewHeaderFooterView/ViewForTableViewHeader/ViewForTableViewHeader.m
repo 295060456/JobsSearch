@@ -9,6 +9,8 @@
 
 @interface ViewForTableViewHeader ()
 
+@property(nonatomic,copy)MKDataBlock _Nullable viewForTableViewHeaderBlock;
+
 @end
 
 @implementation ViewForTableViewHeader
@@ -23,6 +25,10 @@
     
 }
 
++(CGFloat)heightWithModel:(id _Nullable)model{
+    return 0;
+}
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
     if (self.viewForTableViewHeaderBlock) {
@@ -33,6 +39,5 @@
 -(void)actionBlockViewForTableViewHeader:(MKDataBlock _Nullable)viewForTableViewHeaderBlock{
     self.viewForTableViewHeaderBlock = viewForTableViewHeaderBlock;
 }
-
 
 @end
