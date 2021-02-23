@@ -102,6 +102,8 @@
 		C572959D25BB0A3B00726419 /* UIView+BackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C572959B25BB0A3B00726419 /* UIView+BackgroundImage.m */; };
 		C576704F2546B96500C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C576704D2546B96500C382C8 /* UIViewController+JXPagerViewListViewDelegate.m */; };
 		C57F0D2C253337140080EEF0 /* NSObject+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */; };
+		C583B84825E4B2E70054FD6E /* BaseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C583B84325E4B2E70054FD6E /* BaseImageView.m */; };
+		C583B84925E4B2E70054FD6E /* UIImageView+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C583B84625E4B2E70054FD6E /* UIImageView+GIF.m */; };
 		C5850A5E25483D0D001E6676 /* ViewForTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C5850A5925483D0D001E6676 /* ViewForTableViewHeader.m */; };
 		C5850A5F25483D0D001E6676 /* ViewForTableViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C5850A5C25483D0D001E6676 /* ViewForTableViewFooter.m */; };
 		C58D938525B80CC400414ACB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D938325B80CC400414ACB /* BaseTableViewCell.m */; };
@@ -143,7 +145,6 @@
 		C59B9AE62526E3E10039B485 /* UIView+JHGestureBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A6B2526E3E00039B485 /* UIView+JHGestureBlock.m */; };
 		C59B9AE82526E3E10039B485 /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A712526E3E10039B485 /* CALayer+Transition.m */; };
 		C59B9AE92526E3E10039B485 /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A722526E3E10039B485 /* CALayer+Anim.m */; };
-		C59B9AEA2526E3E10039B485 /* UIImageView+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A762526E3E10039B485 /* UIImageView+GIF.m */; };
 		C59B9AED2526E3E10039B485 /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A7F2526E3E10039B485 /* TableViewAnimationKit.m */; };
 		C59B9AEE2526E3E10039B485 /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A842526E3E10039B485 /* UITableView+XSAnimationKit.m */; };
 		C59B9AF02526E3E10039B485 /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A882526E3E10039B485 /* BaseTableViewer.m */; };
@@ -492,6 +493,10 @@
 		C576704E2546B96500C382C8 /* UIViewController+JXPagerViewListViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JXPagerViewListViewDelegate.h"; sourceTree = "<group>"; };
 		C57F0D2A253337140080EEF0 /* NSObject+OpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OpenURL.h"; sourceTree = "<group>"; };
 		C57F0D2B253337140080EEF0 /* NSObject+OpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OpenURL.m"; sourceTree = "<group>"; };
+		C583B84325E4B2E70054FD6E /* BaseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseImageView.m; sourceTree = "<group>"; };
+		C583B84425E4B2E70054FD6E /* BaseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseImageView.h; sourceTree = "<group>"; };
+		C583B84625E4B2E70054FD6E /* UIImageView+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GIF.m"; sourceTree = "<group>"; };
+		C583B84725E4B2E70054FD6E /* UIImageView+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GIF.h"; sourceTree = "<group>"; };
 		C5850A5925483D0D001E6676 /* ViewForTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewForTableViewHeader.m; sourceTree = "<group>"; };
 		C5850A5A25483D0D001E6676 /* ViewForTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewForTableViewHeader.h; sourceTree = "<group>"; };
 		C5850A5C25483D0D001E6676 /* ViewForTableViewFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewForTableViewFooter.m; sourceTree = "<group>"; };
@@ -580,8 +585,6 @@
 		C59B9A722526E3E10039B485 /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
 		C59B9A732526E3E10039B485 /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
 		C59B9A742526E3E10039B485 /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
-		C59B9A762526E3E10039B485 /* UIImageView+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GIF.m"; sourceTree = "<group>"; };
-		C59B9A772526E3E10039B485 /* UIImageView+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GIF.h"; sourceTree = "<group>"; };
 		C59B9A7F2526E3E10039B485 /* TableViewAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAnimationKit.m; sourceTree = "<group>"; };
 		C59B9A802526E3E10039B485 /* TableViewAnimationKitHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitHeaders.h; sourceTree = "<group>"; };
 		C59B9A812526E3E10039B485 /* UITableView+XSAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+XSAnimationKit.h"; sourceTree = "<group>"; };
@@ -1591,6 +1594,24 @@
 			path = "UIViewController+JXCategory";
 			sourceTree = "<group>";
 		};
+		C583B84225E4B2E70054FD6E /* BaseImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C583B84325E4B2E70054FD6E /* BaseImageView.m */,
+				C583B84425E4B2E70054FD6E /* BaseImageView.h */,
+			);
+			path = BaseImageView;
+			sourceTree = "<group>";
+		};
+		C583B84525E4B2E70054FD6E /* UIImageView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C583B84625E4B2E70054FD6E /* UIImageView+GIF.m */,
+				C583B84725E4B2E70054FD6E /* UIImageView+GIF.h */,
+			);
+			path = "UIImageView+Category";
+			sourceTree = "<group>";
+		};
 		C5850A5725483D0D001E6676 /* UITableViewHeaderFooterView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1986,8 +2007,8 @@
 		C59B9A752526E3E10039B485 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9A772526E3E10039B485 /* UIImageView+GIF.h */,
-				C59B9A762526E3E10039B485 /* UIImageView+GIF.m */,
+				C583B84225E4B2E70054FD6E /* BaseImageView */,
+				C583B84525E4B2E70054FD6E /* UIImageView+Category */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
@@ -3354,6 +3375,7 @@
 				C5A442D525ABFBDE000F0CD2 /* JXCategoryTitleBackgroundView.m in Sources */,
 				C59A3C3A258DD1D6005F6260 /* UserDefaultModel.m in Sources */,
 				C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */,
+				C583B84925E4B2E70054FD6E /* UIImageView+GIF.m in Sources */,
 				C546FFDE258B622B0008928C /* UIViewController+NavigationBar.m in Sources */,
 				C56BB988258798F40043C977 /* UIControl+XY.m in Sources */,
 				C59B99992526E0A50039B485 /* ZZCountingLabel.m in Sources */,
@@ -3482,6 +3504,7 @@
 				C59B9AD62526E3E10039B485 /* UIImage+SYS.m in Sources */,
 				C5D77572257F59E60087FC92 /* CJTextField.m in Sources */,
 				C546FFD0258B61CD0008928C /* XHLaunchAdConst.m in Sources */,
+				C583B84825E4B2E70054FD6E /* BaseImageView.m in Sources */,
 				C546FFCE258B61CD0008928C /* XHLaunchAdButton.m in Sources */,
 				C5710869253C09E3005B3A0C /* UITabBar+TLAnimation.m in Sources */,
 				C571086C253C09E3005B3A0C /* UITabBarItem+TLAnimation.m in Sources */,
@@ -3505,7 +3528,6 @@
 				C5914C0525384E61007777A6 /* UIViewController+BRPickerView.m in Sources */,
 				C5D24A8A25AD6AF7008CD6E1 /* TabbarVC.m in Sources */,
 				C56730E425D779BB008ABAF9 /* BaseView.m in Sources */,
-				C59B9AEA2526E3E10039B485 /* UIImageView+GIF.m in Sources */,
 				C59B9AED2526E3E10039B485 /* TableViewAnimationKit.m in Sources */,
 				C59B9CB62526E3F10039B485 /* JhtBannerCardView.m in Sources */,
 			);
