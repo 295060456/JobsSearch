@@ -42,7 +42,7 @@ def func
   pod 'SZTextView'
   pod 'YYImage'
   pod 'GKNavigationBar'
-#  pod 'AWRichText'//有问题不好 用YYLabel
+  pod 'TABAnimated' # https://github.com/tigerAndBull/TABAnimated
   pod 'FLAnimatedImageView+RGWrapper'
   pod 'LYXAlertController' # https://github.com/liuyunxinok/LYXAlertController 为解决UIAlertController的UI（字体颜色，action背景色,字体大小等）设置局限，故自己封装一个YXAlertController，可以随意进行颜色和字体设置。样式大小，title和message的行距缩进与系统样式保持一致。
   pod 'PPBadgeView' #https://github.com/jkpang/PPBadgeView iOS自定义Badge组件, 支持UIView, UITabBarItem, UIBarButtonItem以及子类
