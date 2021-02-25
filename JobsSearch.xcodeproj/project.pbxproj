@@ -115,6 +115,7 @@
 		C5914C0825384E61007777A6 /* UIViewController+BackBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BF525384E5F007777A6 /* UIViewController+BackBtn.m */; };
 		C5914C0C25384E61007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BFD25384E60007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m */; };
 		C5914C0D25384E61007777A6 /* UIViewController+BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914BFE25384E60007777A6 /* UIViewController+BWShareView.m */; };
+		C594322225E7AA5B003BCA91 /* UITextView+IndicateWordLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = C594321F25E7AA5B003BCA91 /* UITextView+IndicateWordLimit.m */; };
 		C595D2652587145A002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D25E2587145A002A4531 /* SuspendLab.m */; };
 		C595D2662587145A002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2602587145A002A4531 /* SuspendView.m */; };
 		C595D2672587145A002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2632587145A002A4531 /* SuspendBtn.m */; };
@@ -519,6 +520,9 @@
 		C5914BFD25384E60007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JXCategoryListContentViewDelegate.m"; sourceTree = "<group>"; };
 		C5914BFE25384E60007777A6 /* UIViewController+BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BWShareView.m"; sourceTree = "<group>"; };
 		C5914BFF25384E60007777A6 /* UIViewController+BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseVC.h"; sourceTree = "<group>"; };
+		C594321F25E7AA5B003BCA91 /* UITextView+IndicateWordLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+IndicateWordLimit.m"; sourceTree = "<group>"; };
+		C594322025E7AA5B003BCA91 /* UITextView+IndicateWordLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+IndicateWordLimit.h"; sourceTree = "<group>"; };
+		C594322125E7AA5B003BCA91 /* UITextView+IndicateWordLimit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UITextView+IndicateWordLimit.png"; sourceTree = "<group>"; };
 		C595D25D2587145A002A4531 /* SuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendLab.h; sourceTree = "<group>"; };
 		C595D25E2587145A002A4531 /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
 		C595D2602587145A002A4531 /* SuspendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendView.m; sourceTree = "<group>"; };
@@ -1648,6 +1652,16 @@
 			path = BaseTableViewCell;
 			sourceTree = "<group>";
 		};
+		C594321E25E7AA5B003BCA91 /* UITextView+IndicateWordLimit */ = {
+			isa = PBXGroup;
+			children = (
+				C594322025E7AA5B003BCA91 /* UITextView+IndicateWordLimit.h */,
+				C594321F25E7AA5B003BCA91 /* UITextView+IndicateWordLimit.m */,
+				C594322125E7AA5B003BCA91 /* UITextView+IndicateWordLimit.png */,
+			);
+			path = "UITextView+IndicateWordLimit";
+			sourceTree = "<group>";
+		};
 		C595BBCF25864175002A4531 /* UIView+Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1889,6 +1903,7 @@
 				C59B9AA12526E3E10039B485 /* UITableViewCell */,
 				C5850A5725483D0D001E6676 /* UITableViewHeaderFooterView */,
 				C59B9AAA2526E3E10039B485 /* UITextField */,
+				C594321E25E7AA5B003BCA91 /* UITextView+IndicateWordLimit */,
 				C59B9ABD2526E3E10039B485 /* UIView */,
 				C59B9A4D2526E3E00039B485 /* UIViewController */,
 			);
@@ -3340,6 +3355,7 @@
 				C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */,
 				C59B9C972526E3F10039B485 /* ZBRequestManager.m in Sources */,
 				C59B9CE22526E4110039B485 /* ViewController@4.m in Sources */,
+				C594322225E7AA5B003BCA91 /* UITextView+IndicateWordLimit.m in Sources */,
 				C59B98F02526DE270039B485 /* main.m in Sources */,
 				C59B9AD32526E3E10039B485 /* UIImage+Tailor.m in Sources */,
 				C5B85617252B577A00890A66 /* UITableView+WWFoldableTableView.m in Sources */,
