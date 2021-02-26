@@ -419,7 +419,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
 -(JobsSearchBar *)jobsSearchBar{
     if (!_jobsSearchBar) {
         _jobsSearchBar = JobsSearchBar.new;
-        _jobsSearchBar.mj_size = CGSizeMake(MAINSCREEN_WIDTH, 60);
+        _jobsSearchBar.mj_size = CGSizeMake(SCREEN_WIDTH, 60);
         @weakify(self)
         [_jobsSearchBar actionBlockJobsSearchBar:^(id data,//方法名
                                                    id data2) {//值
@@ -446,9 +446,9 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                         @strongify(self)
                         self->_jobsSearchBar.tf.frame = CGRectMake(10,
                                                                    10,
-                                                                   MAINSCREEN_WIDTH - 20,
+                                                                   SCREEN_WIDTH - 20,
                                                                    self->_jobsSearchBar.mj_h - 20);
-                        self->_jobsSearchBar.cancelBtn.frame = CGRectMake(MAINSCREEN_WIDTH - 10,
+                        self->_jobsSearchBar.cancelBtn.frame = CGRectMake(SCREEN_WIDTH - 10,
                                                                           10,
                                                                           0,
                                                                           0);
@@ -476,10 +476,10 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                         @strongify(self)
                         self->_jobsSearchBar.tf.frame = CGRectMake(10,
                                                                    10,
-                                                                   MAINSCREEN_WIDTH - 20 - 80 - 10,
+                                                                   SCREEN_WIDTH - 20 - 80 - 10,
                                                                    self->_jobsSearchBar.mj_h - 20);
                         
-                        self->_jobsSearchBar.cancelBtn.frame = CGRectMake(MAINSCREEN_WIDTH - 80 - 10,
+                        self->_jobsSearchBar.cancelBtn.frame = CGRectMake(SCREEN_WIDTH - 80 - 10,
                                                                           10,
                                                                           80,
                                                                           self->_jobsSearchBar.mj_h - 20);

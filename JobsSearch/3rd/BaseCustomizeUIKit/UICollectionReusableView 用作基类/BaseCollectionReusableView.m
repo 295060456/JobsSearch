@@ -15,11 +15,12 @@
 
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-        [self richElementsInCellWithModel:nil];
+        [self richElementsInViewWithModel:nil];
     }return self;
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+-(void)touchesBegan:(NSSet<UITouch *> *)touches
+          withEvent:(UIEvent *)event{
     @weakify(self)
     if (self.collectionReusableViewBlock) {
         self.collectionReusableViewBlock(weak_self);
@@ -34,7 +35,7 @@
     return CGSizeZero;
 }
 //由具体的子类进行覆写
--(void)richElementsInCellWithModel:(id _Nullable)model{
+-(void)richElementsInViewWithModel:(id _Nullable)model{
     
 }
 

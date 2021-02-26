@@ -170,7 +170,7 @@ replacementString:(NSString *)string{
 //        _tf.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
         _tf.frame = CGRectMake(10,
                                10,
-                               MAINSCREEN_WIDTH - 20,
+                               SCREEN_WIDTH - 20,
                                self.mj_h - 20);
         
         [UIView cornerCutToCircleWithView:_tf
@@ -188,7 +188,7 @@ replacementString:(NSString *)string{
         [_cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
         [_cancelBtn setTitleColor:HEXCOLOR(0x0F81FE) forState:UIControlStateNormal];
         [self addSubview:_cancelBtn];
-        _cancelBtn.frame = CGRectMake(MAINSCREEN_WIDTH - 10,
+        _cancelBtn.frame = CGRectMake(SCREEN_WIDTH - 10,
                                       10,
                                       0,
                                       0);
