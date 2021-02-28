@@ -14,7 +14,7 @@
 #import "JobsSearchTableView.h"
 #import "UITableView+WWFoldableTableView.h"
 #import "JobsSearchResultDataListView.h"//逐字搜索返回数据结果下拉列表
-#import "UIViewController+NavigationBar.h"
+#import "UIViewController+BaseNavigationBar.h"
 
 #import "TableViewCell.h"
 
@@ -337,7 +337,7 @@ viewForHeaderInSection:(NSInteger)section{
     self.scrollViewClass = JobsSearchTableView.class;//这一属性决定UITableViewHeaderFooterView是否悬停
     
     @weakify(self)
-    [header actionBlockViewForTableViewHeader:^(id data) {
+    [header actionBlockTableViewHeaderView:^(id data) {
         @strongify(self)
         [self.view endEditing:YES];
         [self.tableView ww_foldSection:section fold:![self.tableView ww_isSectionFolded:section]];//设置可折叠

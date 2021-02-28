@@ -49,11 +49,11 @@
 #import "UIViewController+GifImageView.h"
 #import "UIViewController+JPImageresizerView.h"
 #import "UIViewController+MJRefresh.h"
-#import "UIViewController+NavigationBar.h"
+#import "UIViewController+BaseNavigationBar.h"
 #import "UIViewController+Shake.h"
 #pragma mark —— UITableViewHeaderFooterView
-#import "ViewForTableViewFooter.h"
-#import "ViewForTableViewHeader.h"
+#import "TableViewFooterView.h"
+#import "TableViewHeaderView.h"
 #pragma mark —— UINavigationController
 #import "BaseNavigationVC.h"
 #pragma mark —— UITextField
@@ -62,7 +62,7 @@
 #import "ZYTextField.h"
 #import "UITextField+Extend.h"
 #pragma mark —— UITableView
-#import "BaseTableViewer.h"
+#import "BaseTableView.h"
 #pragma mark —— UITableViewCell
 #import "UITableViewCell+Margin.h"
 #import "UITableViewCell+WhiteArrows.h"

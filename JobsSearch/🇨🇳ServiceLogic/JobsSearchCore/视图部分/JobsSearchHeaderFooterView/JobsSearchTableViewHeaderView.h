@@ -5,11 +5,11 @@
 //  Created by Jobs on 2020/10/2.
 //
 
-#import "ViewForTableViewHeader.h"
+#import "TableViewHeaderView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JobsSearchTableViewHeaderView : ViewForTableViewHeader
+@interface JobsSearchTableViewHeaderView : TableViewHeaderView
 
 @property(nonatomic,strong)UILabel *titleLab;
 @property(nonatomic,assign)BOOL isShowDelBtn;
