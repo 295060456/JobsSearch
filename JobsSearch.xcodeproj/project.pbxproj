@@ -399,6 +399,7 @@
 		C54B3C6C25526000003BE195 /* UIFont+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extras.m"; sourceTree = "<group>"; };
 		C54B3F472552979B003BE195 /* NSObject+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RichText.h"; sourceTree = "<group>"; };
 		C54B3F4B2552979B003BE195 /* NSObject+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RichText.m"; sourceTree = "<group>"; };
+		C54C625225EFC2AC007DD043 /* DDCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCacheTool.h; sourceTree = "<group>"; };
 		C54C88E925C553B90054F53F /* MacroDef_App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_App.h; sourceTree = "<group>"; };
 		C552A5342589D23400A89501 /* 验证码按钮单例封装.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "验证码按钮单例封装.md"; sourceTree = "<group>"; };
 		C552A5382589D26600A89501 /* 我为什么要这么做.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "我为什么要这么做.md"; sourceTree = "<group>"; };
@@ -1208,6 +1209,14 @@
 			path = UIFont;
 			sourceTree = "<group>";
 		};
+		C54C625125EFC2AC007DD043 /* 清除缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				C54C625225EFC2AC007DD043 /* DDCacheTool.h */,
+			);
+			path = "清除缓存";
+			sourceTree = "<group>";
+		};
 		C5529F402589CE1F00A89501 /* UIView+JHGestureBlock */ = {
 			isa = PBXGroup;
 			children = (
@@ -1948,6 +1957,7 @@
 		C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C54C625125EFC2AC007DD043 /* 清除缓存 */,
 				C5CF145425AC7D5800381935 /* LYLUnicode */,
 				C5A437CD25AAF7B3000F0CD2 /* 手势滑动返回 */,
 				C565CB3E25A4380800848134 /* TwoVerticalArrangementLabsView */,
