@@ -64,7 +64,11 @@ static inline CGFloat StatusBarHeight(){
 //导航栏高度
 static inline CGFloat NavigationHeight(){
     NSLog(@"%f",StatusBarHeight());
-    return StatusBarHeight() + 44;
+    return 44;
+}
+//导航栏高度 + 状态栏高度
+static inline CGFloat NavigationBarAndStatusBarHeight(){
+    return StatusBarHeight() + NavigationHeight();
 }
 //tabbar高度：全面屏手机比普通手机多34的安全区域
 #import "JobsSearchAppDelegate.h"
