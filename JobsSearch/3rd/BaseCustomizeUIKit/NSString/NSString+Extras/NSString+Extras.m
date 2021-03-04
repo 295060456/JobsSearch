@@ -467,7 +467,7 @@
     }
     CGRect rect=[stingS boundingRectWithSize:CGSizeMake(wid, MAXFLOAT)
                                      options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin
-                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font]}
+                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font weight:UIFontWeightRegular]}
                                      context:nil];
     return rect.size.height;
 }
