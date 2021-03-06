@@ -46,6 +46,7 @@
 		C54B3F4C2552979B003BE195 /* NSObject+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3F4B2552979B003BE195 /* NSObject+RichText.m */; };
 		C552A52A2589D20C00A89501 /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9A952526E3E10039B485 /* NSArray+Extension.m */; };
 		C552A6702589D2CA00A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552A66E2589D2CA00A89501 /* UIImage+ScreenShot.m */; };
+		C5542B8D25F32498002D1CA6 /* CheckMemFreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5542B8C25F32498002D1CA6 /* CheckMemFreeVC.m */; };
 		C5569687255BFCC3005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569683255BFCC2005C1361 /* NSString+Extras.m */; };
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
@@ -406,6 +407,8 @@
 		C552A66E2589D2CA00A89501 /* UIImage+ScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScreenShot.m"; sourceTree = "<group>"; };
 		C552A66F2589D2CA00A89501 /* UIImage+ScreenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScreenShot.h"; sourceTree = "<group>"; };
 		C552A6772589D2E800A89501 /* 专治UITableView相应链断裂.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "专治UITableView相应链断裂.md"; sourceTree = "<group>"; };
+		C5542B8B25F32498002D1CA6 /* CheckMemFreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckMemFreeVC.h; sourceTree = "<group>"; };
+		C5542B8C25F32498002D1CA6 /* CheckMemFreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckMemFreeVC.m; sourceTree = "<group>"; };
 		C5569683255BFCC2005C1361 /* NSString+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extras.m"; sourceTree = "<group>"; };
 		C5569684255BFCC3005C1361 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
 		C558E1E5258A1CD50078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
@@ -1271,6 +1274,15 @@
 			path = "UIImage+ScreenShot";
 			sourceTree = "<group>";
 		};
+		C5542B8A25F32498002D1CA6 /* CheckMemFreeVC */ = {
+			isa = PBXGroup;
+			children = (
+				C5542B8B25F32498002D1CA6 /* CheckMemFreeVC.h */,
+				C5542B8C25F32498002D1CA6 /* CheckMemFreeVC.m */,
+			);
+			path = CheckMemFreeVC;
+			sourceTree = "<group>";
+		};
 		C55564582580A4E6004DB33A /* NSObject+Others */ = {
 			isa = PBXGroup;
 			children = (
@@ -1957,6 +1969,7 @@
 		C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5542B8A25F32498002D1CA6 /* CheckMemFreeVC */,
 				C54C625125EFC2AC007DD043 /* 清除缓存 */,
 				C5CF145425AC7D5800381935 /* LYLUnicode */,
 				C5A437CD25AAF7B3000F0CD2 /* 手势滑动返回 */,
@@ -3463,6 +3476,7 @@
 				C546FFD2258B61CD0008928C /* XHLaunchAdController.m in Sources */,
 				C59B9D6B2526E59E0039B485 /* ViewController@1.m in Sources */,
 				C546FFD3258B61CD0008928C /* XHLaunchAdDownloader.m in Sources */,
+				C5542B8D25F32498002D1CA6 /* CheckMemFreeVC.m in Sources */,
 				C53D39232598C80600B48431 /* XLBubbleTransition.m in Sources */,
 				C59BA0A6252711260039B485 /* JobsSearchTableViewHeaderView.m in Sources */,
 				C5850A5F25483D0D001E6676 /* TableViewFooterView.m in Sources */,
