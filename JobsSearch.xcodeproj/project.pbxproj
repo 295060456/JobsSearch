@@ -2572,8 +2572,8 @@
 		C5A442CF25ABFBDE000F0CD2 /* WHToast */ = {
 			isa = PBXGroup;
 			children = (
-				C5A442D025ABFBDE000F0CD2 /* WHToast+DDToast.m */,
 				C5A442D125ABFBDE000F0CD2 /* WHToast+DDToast.h */,
+				C5A442D025ABFBDE000F0CD2 /* WHToast+DDToast.m */,
 			);
 			path = WHToast;
 			sourceTree = "<group>";

@@ -574,14 +574,18 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
 //        @weakify(self)
         [[_scanBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
 //            @strongify(self)
-            [NSObject showSYSAlertViewTitle:@"此功能尚未开发"
-                                    message:@"敬请期待"
-                            isSeparateStyle:NO
-                                btnTitleArr:@[@"好的"]
-                             alertBtnAction:@[@""]
-                                   targetVC:[JobsSearchAppDelegate sharedInstance].tabBarVC
-                                     funcInWhere:nil
-                                   animated:YES
+            
+            SYSAlertControllerConfig *config = SYSAlertControllerConfig.new;
+            config.title = @"此功能尚未开发";
+            config.message = @"敬请期待";
+            config.isSeparateStyle = NO;
+            config.btnTitleArr = @[@"好的"];
+            config.alertBtnActionArr = @[@""];
+            config.targetVC = [JobsSearchAppDelegate sharedInstance].tabBarVC;
+            config.funcInWhere = self;
+            config.animated = YES;
+            
+            [NSObject showSYSAlertViewConfig:config
                                alertVCBlock:nil
                             completionBlock:nil];
         }];
