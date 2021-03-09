@@ -35,16 +35,16 @@
     self.contentStr = model;
     switch (self.indexRow) {
         case 0:{
-            self.serialNumLabBGCor = RGBCOLOR(245, 58, 50);
+            self.serialNumLabBGCor = COLOR_RGB(245, 58, 50);
         }break;
         case 1:{
-            self.serialNumLabBGCor = RGBCOLOR(255, 115, 38);
+            self.serialNumLabBGCor = COLOR_RGB(255, 115, 38);
         }break;
         case 2:{
-            self.serialNumLabBGCor = RGBCOLOR(253, 198, 48);
+            self.serialNumLabBGCor = COLOR_RGB(253, 198, 48);
         }break;
         default:{
-            self.serialNumLabBGCor = RGBCOLOR(232, 232, 232);
+            self.serialNumLabBGCor = COLOR_RGB(232, 232, 232);
         }break;
     }
     self.serialNumLab.alpha = 1;
