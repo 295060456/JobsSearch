@@ -50,13 +50,14 @@
 		C5569687255BFCC3005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5569683255BFCC2005C1361 /* NSString+Extras.m */; };
 		C55AABA92532B2F800335ACC /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */; };
 		C55AABAA2532B2F800335ACC /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AABA82532B2F800335ACC /* RBCLikeButton.m */; };
+		C55E0B6025F9CA0500716A9B /* UICollectionViewCell+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E0B5C25F9CA0500716A9B /* UICollectionViewCell+Default.m */; };
+		C55E0B6125F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E0B5F25F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation.m */; };
+		C55E0B6825F9CA0900716A9B /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E0B6725F9CA0900716A9B /* BaseCollectionViewCell.m */; };
 		C55FE9D925B4262600D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE9D725B4262600D8C30D /* UIView+MJRefresh.m */; };
 		C562DBD125C7C422004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DBD025C7C422004D1AEA /* UIView+ViewController.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C565CB4225A4380800848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */; };
 		C56730E425D779BB008ABAF9 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C56730E325D779BB008ABAF9 /* BaseView.m */; };
-		C56762E5259F12DA006905A9 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56762E1259F12DA006905A9 /* BaseCollectionViewCell.m */; };
-		C56762E6259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C56762E4259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C56BB988258798F40043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB985258798F40043C977 /* UIControl+XY.m */; };
 		C56BD5B725E9389F001E1E69 /* NSObject+CallBackInfoByBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BD5B625E9389F001E1E69 /* NSObject+CallBackInfoByBlock.m */; };
 		C56D893225C8232B001960CD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D892D25C8232B001960CD /* UIColor+Hex.m */; };
@@ -416,6 +417,13 @@
 		C55AABA62532B2F800335ACC /* RBCLikeButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RBCLikeButton.bundle; sourceTree = "<group>"; };
 		C55AABA72532B2F800335ACC /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
 		C55AABA82532B2F800335ACC /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
+		C55E0B5B25F9CA0500716A9B /* UICollectionViewCell+Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Default.h"; sourceTree = "<group>"; };
+		C55E0B5C25F9CA0500716A9B /* UICollectionViewCell+Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Default.m"; sourceTree = "<group>"; };
+		C55E0B5E25F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+ShakeAnimation.h"; sourceTree = "<group>"; };
+		C55E0B5F25F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+ShakeAnimation.m"; sourceTree = "<group>"; };
+		C55E0B6625F9CA0900716A9B /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
+		C55E0B6725F9CA0900716A9B /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
+		C55E28BE25FB276B00716A9B /* MacroDef_SysWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_SysWarning.h; sourceTree = "<group>"; };
 		C55FE9D725B4262600D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
 		C55FE9D825B4262600D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
 		C5620C2F25541AC400FE435F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -427,10 +435,6 @@
 		C565CB4125A4380800848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
 		C56730E225D779BB008ABAF9 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		C56730E325D779BB008ABAF9 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
-		C56762E1259F12DA006905A9 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
-		C56762E2259F12DA006905A9 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
-		C56762E3259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+ShakeAnimation.h"; sourceTree = "<group>"; };
-		C56762E4259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+ShakeAnimation.m"; sourceTree = "<group>"; };
 		C56BB985258798F40043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BB986258798F40043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C56BB987258798F40043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
@@ -950,10 +954,8 @@
 		C530AFFC254D9A8000EDEDC8 /* UICollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C56762E2259F12DA006905A9 /* BaseCollectionViewCell.h */,
-				C56762E1259F12DA006905A9 /* BaseCollectionViewCell.m */,
-				C56762E3259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.h */,
-				C56762E4259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m */,
+				C55E0B6525F9CA0900716A9B /* BaseCollectionViewCell */,
+				C55E0B5925F9C9F600716A9B /* UICollectionViewCell+Category */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -1174,11 +1176,11 @@
 		C5470F6C25309C7F00651ACE /* 各项宏定义 */ = {
 			isa = PBXGroup;
 			children = (
-				C54C88E925C553B90054F53F /* MacroDef_App.h */,
-				C5470F7525309C8C00651ACE /* MacroDef_Cor.h */,
-				C5470F7425309C8C00651ACE /* MacroDef_Func.h */,
-				C5470F7625309C8D00651ACE /* MacroDef_Size.h */,
-				C5470F7325309C8C00651ACE /* MacroDef_Sys.h */,
+				C55E28A725FB274500716A9B /* MacroDef_App */,
+				C55E28B125FB274D00716A9B /* MacroDef_Cor */,
+				C55E28B525FB275400716A9B /* MacroDef_Func */,
+				C55E28B925FB275C00716A9B /* MacroDef_Size */,
+				C55E28BA25FB276200716A9B /* MacroDef_Sys */,
 			);
 			path = "各项宏定义";
 			sourceTree = "<group>";
@@ -1366,6 +1368,83 @@
 				C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */,
 			);
 			path = 3rd;
+			sourceTree = "<group>";
+		};
+		C55E0B5925F9C9F600716A9B /* UICollectionViewCell+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C55E0B5A25F9CA0500716A9B /* UICollectionViewCell+Default */,
+				C55E0B5D25F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation */,
+			);
+			path = "UICollectionViewCell+Category";
+			sourceTree = "<group>";
+		};
+		C55E0B5A25F9CA0500716A9B /* UICollectionViewCell+Default */ = {
+			isa = PBXGroup;
+			children = (
+				C55E0B5B25F9CA0500716A9B /* UICollectionViewCell+Default.h */,
+				C55E0B5C25F9CA0500716A9B /* UICollectionViewCell+Default.m */,
+			);
+			path = "UICollectionViewCell+Default";
+			sourceTree = "<group>";
+		};
+		C55E0B5D25F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C55E0B5E25F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation.h */,
+				C55E0B5F25F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation.m */,
+			);
+			path = "UICollectionViewCell+ShakeAnimation";
+			sourceTree = "<group>";
+		};
+		C55E0B6525F9CA0900716A9B /* BaseCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C55E0B6625F9CA0900716A9B /* BaseCollectionViewCell.h */,
+				C55E0B6725F9CA0900716A9B /* BaseCollectionViewCell.m */,
+			);
+			path = BaseCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		C55E28A725FB274500716A9B /* MacroDef_App */ = {
+			isa = PBXGroup;
+			children = (
+				C54C88E925C553B90054F53F /* MacroDef_App.h */,
+			);
+			path = MacroDef_App;
+			sourceTree = "<group>";
+		};
+		C55E28B125FB274D00716A9B /* MacroDef_Cor */ = {
+			isa = PBXGroup;
+			children = (
+				C5470F7525309C8C00651ACE /* MacroDef_Cor.h */,
+			);
+			path = MacroDef_Cor;
+			sourceTree = "<group>";
+		};
+		C55E28B525FB275400716A9B /* MacroDef_Func */ = {
+			isa = PBXGroup;
+			children = (
+				C5470F7425309C8C00651ACE /* MacroDef_Func.h */,
+			);
+			path = MacroDef_Func;
+			sourceTree = "<group>";
+		};
+		C55E28B925FB275C00716A9B /* MacroDef_Size */ = {
+			isa = PBXGroup;
+			children = (
+				C5470F7625309C8D00651ACE /* MacroDef_Size.h */,
+			);
+			path = MacroDef_Size;
+			sourceTree = "<group>";
+		};
+		C55E28BA25FB276200716A9B /* MacroDef_Sys */ = {
+			isa = PBXGroup;
+			children = (
+				C5470F7325309C8C00651ACE /* MacroDef_Sys.h */,
+				C55E28BE25FB276B00716A9B /* MacroDef_SysWarning.h */,
+			);
+			path = MacroDef_Sys;
 			sourceTree = "<group>";
 		};
 		C55EDA0725677E4F007B403C /* 数据以及资源 */ = {
@@ -3435,7 +3514,6 @@
 				C5D0B80325878D7A002CA224 /* NSObject+Sound.m in Sources */,
 				C5A442D825ABFBDE000F0CD2 /* JXCategoryTimelineCell.m in Sources */,
 				C530B00F254D9A8100EDEDC8 /* UICollectionView+RegisterClass.m in Sources */,
-				C56762E5259F12DA006905A9 /* BaseCollectionViewCell.m in Sources */,
 				C5C64FB6259DF87100FD2F99 /* ECPrivacyCheckMediaAndAppleMusic.m in Sources */,
 				C5C64FAF259DF87100FD2F99 /* ECPrivacyCheckBluetooth.m in Sources */,
 				C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */,
@@ -3572,6 +3650,7 @@
 				C595D2672587145A002A4531 /* SuspendBtn.m in Sources */,
 				C5C64FB8259DF87100FD2F99 /* ECPrivacyCheckContacts.m in Sources */,
 				C5914C0825384E61007777A6 /* UIViewController+BackBtn.m in Sources */,
+				C55E0B6125F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation.m in Sources */,
 				C5B47F952529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m in Sources */,
 				C59B98DF2526DE260039B485 /* JobsSearchSceneDelegate.m in Sources */,
 				C595D2652587145A002A4531 /* SuspendLab.m in Sources */,
@@ -3596,7 +3675,8 @@
 				C530B00C254D9A8100EDEDC8 /* BaseCollectionReusableView.m in Sources */,
 				C59B9ACF2526E3E10039B485 /* NSObject+Extras.m in Sources */,
 				C5DF429225A8997200E91985 /* LOTAnimationMJRefreshHeader.m in Sources */,
-				C56762E6259F12DA006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */,
+				C55E0B6025F9CA0500716A9B /* UICollectionViewCell+Default.m in Sources */,
+				C55E0B6825F9CA0900716A9B /* BaseCollectionViewCell.m in Sources */,
 				C595D2662587145A002A4531 /* SuspendView.m in Sources */,
 				C5C244552541A8A600CB55F5 /* DataCollectionViewCell.m in Sources */,
 				C59BA12B252719DE0039B485 /* JobsSearchShowHistoryDataTBVCell.m in Sources */,

@@ -66,6 +66,12 @@
 #pragma mark —— UITableViewCell
 #import "UITableViewCell+Margin.h"
 #import "UITableViewCell+WhiteArrows.h"
+#pragma mark —— UICollectionViewCell
+/// BaseCollectionViewCell
+#import "BaseCollectionViewCell.h"
+/// UICollectionViewCell+Category
+#import "UICollectionViewCell+Default.h"
+#import "UICollectionViewCell+ShakeAnimation.h"
 #pragma mark —— UIColor
 #import "UIColor+Hex.h"
 #import "UIColor+Gradient.h"
