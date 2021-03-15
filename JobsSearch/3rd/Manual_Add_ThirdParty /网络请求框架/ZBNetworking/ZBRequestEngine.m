@@ -344,7 +344,7 @@ NSString *const _delegate = @"_delegate";
     }
     //=====================================================
     if (self.baseHeaders.count > 0) {
-        NSMutableDictionary *headers = NSMutableDictionary.dictionary;;
+        NSMutableDictionary *headers = NSMutableDictionary.dictionary;
         [headers addEntriesFromDictionary:self.baseHeaders];
         if (request.headers) {
             [headers addEntriesFromDictionary:request.headers];
