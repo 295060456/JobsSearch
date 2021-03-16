@@ -61,6 +61,10 @@
 #import "CJTextField.h"
 #import "ZYTextField.h"
 #import "UITextField+Extend.h"
+#pragma mark —— UITextView
+/// UITextView+Category
+#import "UITextView+IndicateWordLimit.h"
+#import "UITextView+Extend.h"
 #pragma mark —— UITableView
 #import "BaseTableView.h"
 #pragma mark —— UITableViewCell

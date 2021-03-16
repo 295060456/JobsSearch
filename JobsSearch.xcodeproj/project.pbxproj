@@ -54,6 +54,7 @@
 		C55E0B6125F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E0B5F25F9CA0500716A9B /* UICollectionViewCell+ShakeAnimation.m */; };
 		C55E0B6825F9CA0900716A9B /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E0B6725F9CA0900716A9B /* BaseCollectionViewCell.m */; };
 		C55FE9D925B4262600D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE9D725B4262600D8C30D /* UIView+MJRefresh.m */; };
+		C5618F8E26008ECE00D4546E /* UITextView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C5618F8D26008ECE00D4546E /* UITextView+Extend.m */; };
 		C562DBD125C7C422004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DBD025C7C422004D1AEA /* UIView+ViewController.m */; };
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C565CB4225A4380800848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */; };
@@ -426,6 +427,8 @@
 		C55E28BE25FB276B00716A9B /* MacroDef_SysWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_SysWarning.h; sourceTree = "<group>"; };
 		C55FE9D725B4262600D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
 		C55FE9D825B4262600D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
+		C5618F8C26008ECE00D4546E /* UITextView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extend.h"; sourceTree = "<group>"; };
+		C5618F8D26008ECE00D4546E /* UITextView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extend.m"; sourceTree = "<group>"; };
 		C5620C2F25541AC400FE435F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C562DBCF25C7C422004D1AEA /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		C562DBD025C7C422004D1AEA /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
@@ -1465,6 +1468,32 @@
 			path = "UIView+MJRefresh";
 			sourceTree = "<group>";
 		};
+		C5618F8A26008EBB00D4546E /* UITextView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C5618F8B26008ECE00D4546E /* UITextView+Extend */,
+				C594321E25E7AA5B003BCA91 /* UITextView+IndicateWordLimit */,
+			);
+			path = "UITextView+Category";
+			sourceTree = "<group>";
+		};
+		C5618F8B26008ECE00D4546E /* UITextView+Extend */ = {
+			isa = PBXGroup;
+			children = (
+				C5618F8C26008ECE00D4546E /* UITextView+Extend.h */,
+				C5618F8D26008ECE00D4546E /* UITextView+Extend.m */,
+			);
+			path = "UITextView+Extend";
+			sourceTree = "<group>";
+		};
+		C5618F9226008ED200D4546E /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				C5618F8A26008EBB00D4546E /* UITextView+Category */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
 		C562DBC825C7C41C004D1AEA /* UIView+ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -2038,7 +2067,7 @@
 				C59B9AA12526E3E10039B485 /* UITableViewCell */,
 				C5850A5725483D0D001E6676 /* UITableViewHeaderFooterView */,
 				C59B9AAA2526E3E10039B485 /* UITextField */,
-				C594321E25E7AA5B003BCA91 /* UITextView+IndicateWordLimit */,
+				C5618F9226008ED200D4546E /* UITextView */,
 				C59B9ABD2526E3E10039B485 /* UIView */,
 				C59B9A4D2526E3E00039B485 /* UIViewController */,
 			);
@@ -3560,6 +3589,7 @@
 				C5850A5F25483D0D001E6676 /* TableViewFooterView.m in Sources */,
 				C59B9CB42526E3F10039B485 /* JhtBannerView.m in Sources */,
 				C59B9AEE2526E3E10039B485 /* UITableView+XSAnimationKit.m in Sources */,
+				C5618F8E26008ECE00D4546E /* UITextView+Extend.m in Sources */,
 				C59B9CCD2526E3F10039B485 /* Nanosecond_TimerManager.m in Sources */,
 				C530B008254D9A8100EDEDC8 /* LMHWaterFallLayout.m in Sources */,
 				C5D77571257F59E60087FC92 /* JobsMagicTextField.m in Sources */,
