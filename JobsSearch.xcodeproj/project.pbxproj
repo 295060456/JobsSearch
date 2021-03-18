@@ -187,8 +187,6 @@
 		C59B9CCD2526E3F10039B485 /* Nanosecond_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9C3A2526E3F10039B485 /* Nanosecond_TimerManager.m */; };
 		C59B9CCE2526E3F10039B485 /* CADisplayLink_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9C3D2526E3F10039B485 /* CADisplayLink_TimerManager.m */; };
 		C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9C442526E3F10039B485 /* ImageCodeView.m */; };
-		C59B9CD12526E3F10039B485 /* NSObject+LBLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9C462526E3F10039B485 /* NSObject+LBLaunchImage.m */; };
-		C59B9CD22526E3F10039B485 /* LBLaunchImageAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9C472526E3F10039B485 /* LBLaunchImageAdView.m */; };
 		C59B9CE12526E4110039B485 /* ViewController@5.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9CDC2526E4110039B485 /* ViewController@5.m */; };
 		C59B9CE22526E4110039B485 /* ViewController@4.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9CDD2526E4110039B485 /* ViewController@4.m */; };
 		C59B9CE32526E4110039B485 /* ViewController@3.m in Sources */ = {isa = PBXBuildFile; fileRef = C59B9CE02526E4110039B485 /* ViewController@3.m */; };
@@ -404,6 +402,7 @@
 		C54B3F4B2552979B003BE195 /* NSObject+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RichText.m"; sourceTree = "<group>"; };
 		C54C625225EFC2AC007DD043 /* DDCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCacheTool.h; sourceTree = "<group>"; };
 		C54C88E925C553B90054F53F /* MacroDef_App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_App.h; sourceTree = "<group>"; };
+		C550B6A32603676F00A81441 /* 安全区域.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "安全区域.png"; sourceTree = "<group>"; };
 		C552A5342589D23400A89501 /* 验证码按钮单例封装.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "验证码按钮单例封装.md"; sourceTree = "<group>"; };
 		C552A5382589D26600A89501 /* 我为什么要这么做.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "我为什么要这么做.md"; sourceTree = "<group>"; };
 		C552A66E2589D2CA00A89501 /* UIImage+ScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScreenShot.m"; sourceTree = "<group>"; };
@@ -1436,6 +1435,7 @@
 		C55E28B925FB275C00716A9B /* MacroDef_Size */ = {
 			isa = PBXGroup;
 			children = (
+				C550B6A32603676F00A81441 /* 安全区域.png */,
 				C5470F7625309C8D00651ACE /* MacroDef_Size.h */,
 			);
 			path = MacroDef_Size;
@@ -2573,10 +2573,10 @@
 		C59B9C452526E3F10039B485 /* LBLaunchImageAd. */ = {
 			isa = PBXGroup;
 			children = (
-				C59B9C462526E3F10039B485 /* NSObject+LBLaunchImage.m */,
+				C59B9C492526E3F10039B485 /* LBLaunchImageAdView.h */,
 				C59B9C472526E3F10039B485 /* LBLaunchImageAdView.m */,
 				C59B9C482526E3F10039B485 /* NSObject+LBLaunchImage.h */,
-				C59B9C492526E3F10039B485 /* LBLaunchImageAdView.h */,
+				C59B9C462526E3F10039B485 /* NSObject+LBLaunchImage.m */,
 			);
 			path = LBLaunchImageAd.;
 			sourceTree = "<group>";
@@ -3628,10 +3628,8 @@
 				C5C64FB0259DF87100FD2F99 /* ECPrivacyCheckCamera.m in Sources */,
 				C5C64FB7259DF87100FD2F99 /* ECPrivacyCheckPhotos.m in Sources */,
 				C59B9C982526E3F10039B485 /* ZBCacheManager.m in Sources */,
-				C59B9CD12526E3F10039B485 /* NSObject+LBLaunchImage.m in Sources */,
 				C59B9C922526E3F10039B485 /* FMARCNetwork.m in Sources */,
 				C5D1BF30258B1FDC00784D2F /* UIViewController+EmptyData.m in Sources */,
-				C59B9CD22526E3F10039B485 /* LBLaunchImageAdView.m in Sources */,
 				C5D0B81125878D94002CA224 /* SoundBtn.m in Sources */,
 				C59B9ACA2526E3E10039B485 /* NSObject+Random.m in Sources */,
 				C59B9D712526E5AD0039B485 /* ViewController@2.m in Sources */,
