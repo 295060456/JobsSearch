@@ -162,6 +162,7 @@ replacementString:(NSString *)string{
         _tf.leftView = self.imgView;
         _tf.placeHolderAlignment = PlaceHolderAlignmentCenter;
         _tf.ZYtextColor = KPurpleColor;
+        _tf.inputAccessoryView = self.inputAccessoryView;
         _tf.leftViewMode = UITextFieldViewModeAlways;
         _tf.backgroundColor = HEXCOLOR(0xFFFFFF);
         _tf.keyboardAppearance = UIKeyboardAppearanceAlert;
@@ -211,6 +212,14 @@ replacementString:(NSString *)string{
         _imgView = UIImageView.new;
         _imgView.image = KIMG(@"放大镜");
     }return _imgView;
+}
+
+-(JobsInputAccessoryView *)inputAccessoryView{
+    if (!_inputAccessoryView) {
+        _inputAccessoryView = JobsInputAccessoryView.new;
+        _inputAccessoryView.frame = [JobsInputAccessoryView viewFrameWithModel:nil];
+        [_inputAccessoryView richElementsInViewWithModel:nil];
+    }return _inputAccessoryView;
 }
 
 @end
