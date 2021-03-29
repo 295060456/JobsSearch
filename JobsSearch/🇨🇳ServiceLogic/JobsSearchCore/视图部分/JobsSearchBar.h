@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JobsSearchBar : UIView
+@interface JobsSearchBar : UIView<UITextFieldDelegate>
 
-@property(nonatomic,strong)ZYTextField *tf;
+@property(nonatomic,strong)ZYTextField *textField;
 @property(nonatomic,strong)UIButton *cancelBtn;
 @property(nonatomic,strong)JobsInputAccessoryView *inputAccessoryView;
 

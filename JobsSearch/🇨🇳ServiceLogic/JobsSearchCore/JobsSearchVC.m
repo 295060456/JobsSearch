@@ -233,7 +233,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.view endEditing:YES];
     JobsSearchShowHistoryDataTBVCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    self.jobsSearchBar.tf.text = cell.textLabel.text;
+    self.jobsSearchBar.textField.text = cell.textLabel.text;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView
@@ -266,7 +266,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                     //点击的哪个btn？
                     [cell actionBlockJobsSearchShowHotwordsTBVCell:^(UIButton *data) {
                         @strongify(self)
-                        self.jobsSearchBar.tf.text = data.titleLabel.text;
+                        self.jobsSearchBar.textField.text = data.titleLabel.text;
                         self.jobsSearchResultDataListView.alpha = 1;
                     }];
                     return cell;
@@ -444,7 +444,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                                         options:UIViewAnimationOptionCurveEaseInOut
                                      animations:^{
                         @strongify(self)
-                        self->_jobsSearchBar.tf.frame = CGRectMake(10,
+                        self->_jobsSearchBar.textField.frame = CGRectMake(10,
                                                                    10,
                                                                    SCREEN_WIDTH - 20,
                                                                    self->_jobsSearchBar.mj_h - 20);
@@ -474,7 +474,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                                         options:UIViewAnimationOptionCurveEaseInOut
                                      animations:^{
                         @strongify(self)
-                        self->_jobsSearchBar.tf.frame = CGRectMake(10,
+                        self->_jobsSearchBar.textField.frame = CGRectMake(10,
                                                                    10,
                                                                    SCREEN_WIDTH - 20 - 80 - 10,
                                                                    self->_jobsSearchBar.mj_h - 20);
@@ -605,7 +605,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
             }else if ([data isKindOfClass:NSString.class] &&
                 ![NSString isNullString:(NSString *)data]) {
                 
-                self.jobsSearchBar.tf.text = (NSString *)data;//先赋值，最后才存数据
+                self.jobsSearchBar.textField.text = (NSString *)data;//先赋值，最后才存数据
                 [self deallocJobsSearchResultDataListView];
                 
                 [self.view endEditing:YES];//这里结束编辑调用结束完成的协议方法，在此以后才涉及到存历史数据

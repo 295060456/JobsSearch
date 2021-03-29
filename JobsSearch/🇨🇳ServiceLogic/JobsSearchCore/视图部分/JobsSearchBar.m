@@ -8,9 +8,6 @@
 #import "JobsSearchBar.h"
 
 @interface JobsSearchBar ()
-<
-UITextFieldDelegate
->
 
 @property(nonatomic,assign)BOOL isOK;
 @property(nonatomic,copy)TwoDataBlock jobsSearchBarBlock;
@@ -29,7 +26,7 @@ UITextFieldDelegate
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
     if (!self.isOK) {
-        self.tf.alpha = 1;
+        self.textField.alpha = 1;
         self.cancelBtn.alpha = 1;
         self.isOK = YES;
     }
@@ -111,36 +108,7 @@ UITextFieldDelegate
 - (BOOL)textField:(ZYTextField *)textField
 shouldChangeCharactersInRange:(NSRange)range
 replacementString:(NSString *)string{
-    
-    NSLog(@"textField.text = %@",textField.text);
-    NSLog(@"string = %@",string);
-    
-#warning 过滤删除最科学的做法
-    
-    NSString *resString = nil;
-    //textField.text 有值 && string无值 ————> 删除操作
-    if (![NSString isNullString:textField.text] && [NSString isNullString:string]) {
-        
-        if (textField.text.length == 1) {
-            resString = @"";
-        }else{
-            resString = [textField.text substringToIndex:(textField.text.length - 1)];//去掉最后一个
-        }
-    }
-    //textField.text 无值 && string有值 ————> 首字符输入
-    if ([NSString isNullString:textField.text] && ![NSString isNullString:string]) {
-        resString = string;
-    }
-    //textField.text 有值 && string有值 ————> 非首字符输入
-    if (![NSString isNullString:textField.text] && ![NSString isNullString:string]) {
-        resString = [textField.text stringByAppendingString:string];
-    }
-
-    NSLog(@"resString = %@",resString);
-    
-    if (self.jobsSearchBarBlock) {
-        self.jobsSearchBarBlock(NSStringFromSelector(_cmd),resString);
-    }return YES;
+    return YES;
 }
 //询问委托人是否应删除文本字段的当前内容
 //- (BOOL)textFieldShouldClear:(UITextField *)textField
@@ -154,32 +122,42 @@ replacementString:(NSString *)string{
     self.jobsSearchBarBlock = jobsSearchBarBlock;
 }
 #pragma mark —— lazyLoad
--(ZYTextField *)tf{
-    if (!_tf) {
-        _tf = ZYTextField.new;
-        _tf.placeholder = @"请输入搜索内容";
-        _tf.delegate = self;
-        _tf.leftView = self.imgView;
-        _tf.placeHolderAlignment = PlaceHolderAlignmentCenter;
-        _tf.ZYtextColor = KPurpleColor;
-        _tf.inputAccessoryView = self.inputAccessoryView;
-        _tf.leftViewMode = UITextFieldViewModeAlways;
-        _tf.backgroundColor = HEXCOLOR(0xFFFFFF);
-        _tf.keyboardAppearance = UIKeyboardAppearanceAlert;
-        _tf.returnKeyType = UIReturnKeySearch;
-        [self addSubview:_tf];
+-(ZYTextField *)textField{
+    if (!_textField) {
+        _textField = ZYTextField.new;
+        _textField.placeholder = @"请输入搜索内容";
+        _textField.delegate = self;
+        _textField.leftView = self.imgView;
+        _textField.placeHolderAlignment = PlaceHolderAlignmentCenter;
+        _textField.ZYtextColor = KPurpleColor;
+        _textField.inputAccessoryView = self.inputAccessoryView;
+        _textField.leftViewMode = UITextFieldViewModeAlways;
+        _textField.backgroundColor = HEXCOLOR(0xFFFFFF);
+        _textField.keyboardAppearance = UIKeyboardAppearanceAlert;
+        _textField.returnKeyType = UIReturnKeySearch;
+        [self addSubview:_textField];
 //        _tf.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
-        _tf.frame = CGRectMake(10,
+        _textField.frame = CGRectMake(10,
                                10,
                                SCREEN_WIDTH - 20,
                                self.mj_h - 20);
         
-        [UIView cornerCutToCircleWithView:_tf
+        @weakify(self)
+        [_textField.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
+            @strongify(self)
+            NSLog(@"MMM = %@",x);
+            if (self.jobsSearchBarBlock) {
+                self.jobsSearchBarBlock(NSStringFromSelector(_cmd),x);
+            }
+        }];
+
+        
+        [UIView cornerCutToCircleWithView:_textField
                           andCornerRadius:2];
-        [UIView colourToLayerOfView:_tf
+        [UIView colourToLayerOfView:_textField
                          withColour:kBlueColor
                      andBorderWidth:0.05];
-    }return _tf;
+    }return _textField;
 }
 
 -(UIButton *)cancelBtn{
@@ -201,7 +179,7 @@ replacementString:(NSString *)string{
             @strongify(self)
             x.selected = YES;
             if (self.jobsSearchBarBlock) {
-                self.jobsSearchBarBlock(NSStringFromSelector(_cmd),self.tf.text);//cancelBtn
+                self.jobsSearchBarBlock(NSStringFromSelector(_cmd),self.textField.text);//cancelBtn
             }
         }];
     }return _cancelBtn;
