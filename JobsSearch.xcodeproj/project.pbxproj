@@ -267,7 +267,6 @@
 		C5C64FD7259DF87100FD2F99 /* 文件和文件夹@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C64FA2259DF87100FD2F99 /* 文件和文件夹@3x.png */; };
 		C5C64FD8259DF87100FD2F99 /* 定位服务@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C64FA3259DF87100FD2F99 /* 定位服务@3x.png */; };
 		C5C64FD9259DF87100FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C64FA6259DF87100FD2F99 /* ECPrivacyCheckGatherTool.m */; };
-		C5CF145825AC7D5800381935 /* LYLUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CF145525AC7D5800381935 /* LYLUnicode.m */; };
 		C5D0B80325878D7A002CA224 /* NSObject+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B80125878D7A002CA224 /* NSObject+Sound.m */; };
 		C5D0B80F25878D94002CA224 /* Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B80B25878D94002CA224 /* Sound.wav */; };
 		C5D0B81025878D94002CA224 /* 带有按键音的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B80C25878D94002CA224 /* 带有按键音的按钮.md */; };
@@ -295,6 +294,7 @@
 		C5DF429125A8997200E91985 /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5DF428925A8997200E91985 /* JsonRes.bundle */; };
 		C5DF429225A8997200E91985 /* LOTAnimationMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF428C25A8997200E91985 /* LOTAnimationMJRefreshHeader.m */; };
 		C5DF429325A8997200E91985 /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF428E25A8997200E91985 /* UIViewController+MJRefresh.m */; };
+		C5DFDF66261318E8008C7E2E /* DebugLogDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DFDF65261318E8008C7E2E /* DebugLogDescription.m */; };
 		CA6EE73762B5868388EF36F0 /* Pods_JobsSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F074F780A29A046522DAD /* Pods_JobsSearchUITests.framework */; };
 		E50379004173D08E1032FECD /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C172D9519EC6E511BC962FC /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
@@ -829,9 +829,6 @@
 		C5C64FA9259DF87100FD2F99 /* ECPrivacyCheckTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPrivacyCheckTools.h; sourceTree = "<group>"; };
 		C5C64FAB259DF87100FD2F99 /* ECPrivacyCheckTools不用pod管理的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ECPrivacyCheckTools不用pod管理的情况说明.md"; sourceTree = "<group>"; };
 		C5C64FAC259DF87100FD2F99 /* ECAuthorizationTools.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ECAuthorizationTools.md; sourceTree = "<group>"; };
-		C5CF145525AC7D5800381935 /* LYLUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLUnicode.m; sourceTree = "<group>"; };
-		C5CF145625AC7D5800381935 /* 解决打印日志对于Unicode编码不能正常显示中文的问题 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "解决打印日志对于Unicode编码不能正常显示中文的问题"; sourceTree = "<group>"; };
-		C5CF145725AC7D5800381935 /* LYLUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLUnicode.h; sourceTree = "<group>"; };
 		C5D0B80125878D7A002CA224 /* NSObject+Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sound.m"; sourceTree = "<group>"; };
 		C5D0B80225878D7A002CA224 /* NSObject+Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sound.h"; sourceTree = "<group>"; };
 		C5D0B80B25878D94002CA224 /* Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound.wav; sourceTree = "<group>"; };
@@ -881,6 +878,8 @@
 		C5DF428C25A8997200E91985 /* LOTAnimationMJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationMJRefreshHeader.m; sourceTree = "<group>"; };
 		C5DF428D25A8997200E91985 /* LOTAnimationMJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationMJRefreshHeader.h; sourceTree = "<group>"; };
 		C5DF428E25A8997200E91985 /* UIViewController+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJRefresh.m"; sourceTree = "<group>"; };
+		C5DFDF64261318E8008C7E2E /* DebugLogDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLogDescription.h; sourceTree = "<group>"; };
+		C5DFDF65261318E8008C7E2E /* DebugLogDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLogDescription.m; sourceTree = "<group>"; };
 		D8D79E15865353E7FAA5C7E8 /* Pods-JobsSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchUITests/Pods-JobsSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2175,6 +2174,7 @@
 		C59B9A212526E36F0039B485 /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C5DFDF63261318E8008C7E2E /* DebugLogDescription */,
 				C563202026084B2E00822149 /* BaseProtocol */,
 				C59B9A702526E3E10039B485 /* CALayer */,
 				C59B9A942526E3E10039B485 /* NSArray */,
@@ -2211,7 +2211,6 @@
 			children = (
 				C5542B8A25F32498002D1CA6 /* CheckMemFreeVC */,
 				C54C625125EFC2AC007DD043 /* 清除缓存 */,
-				C5CF145425AC7D5800381935 /* LYLUnicode */,
 				C5A437CD25AAF7B3000F0CD2 /* 手势滑动返回 */,
 				C565CB3E25A4380800848134 /* TwoVerticalArrangementLabsView */,
 				C59A3C35258DD1D6005F6260 /* UserDefaultManager */,
@@ -2253,11 +2252,11 @@
 		C59B9A2D2526E3E00039B485 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				C5D8D6BF260CC84800BDAF76 /* NSObject+DefConfig */,
 				C5D6D9B525860E3900029AFF /* NSObject (Time) */,
 				C59B9A2F2526E3E00039B485 /* NSObject+Alert */,
 				C56BD5B425E9389F001E1E69 /* NSObject+CallBackInfoByBlock */,
 				C53C9D5825A1CFDD0007F58F /* NSObject+DataSave */,
+				C5D8D6BF260CC84800BDAF76 /* NSObject+DefConfig */,
 				C55564582580A4E6004DB33A /* NSObject+Others */,
 				C5D6D9B825860E3900029AFF /* NSObject+Time */,
 			);
@@ -3001,16 +3000,6 @@
 			path = ReadMe;
 			sourceTree = "<group>";
 		};
-		C5CF145425AC7D5800381935 /* LYLUnicode */ = {
-			isa = PBXGroup;
-			children = (
-				C5CF145625AC7D5800381935 /* 解决打印日志对于Unicode编码不能正常显示中文的问题 */,
-				C5CF145725AC7D5800381935 /* LYLUnicode.h */,
-				C5CF145525AC7D5800381935 /* LYLUnicode.m */,
-			);
-			path = LYLUnicode;
-			sourceTree = "<group>";
-		};
 		C5D0B80A25878D94002CA224 /* SoundBtn */ = {
 			isa = PBXGroup;
 			children = (
@@ -3333,6 +3322,15 @@
 			path = LOTAnimationMJRefreshHeader;
 			sourceTree = "<group>";
 		};
+		C5DFDF63261318E8008C7E2E /* DebugLogDescription */ = {
+			isa = PBXGroup;
+			children = (
+				C5DFDF64261318E8008C7E2E /* DebugLogDescription.h */,
+				C5DFDF65261318E8008C7E2E /* DebugLogDescription.m */,
+			);
+			path = DebugLogDescription;
+			sourceTree = "<group>";
+		};
 		DB6EB4965849B35F47ED7CA5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3653,6 +3651,7 @@
 				C5C64FAD259DF87100FD2F99 /* ECPrivacyCheckMicrophone.m in Sources */,
 				C5AEEAEC253841B1000E1C5F /* UIView+Extras.m in Sources */,
 				C59B9C972526E3F10039B485 /* ZBRequestManager.m in Sources */,
+				C5DFDF66261318E8008C7E2E /* DebugLogDescription.m in Sources */,
 				C59B9CE22526E4110039B485 /* ViewController@4.m in Sources */,
 				C594322225E7AA5B003BCA91 /* UITextView+IndicateWordLimit.m in Sources */,
 				C59B98F02526DE270039B485 /* main.m in Sources */,
@@ -3745,7 +3744,6 @@
 				C571086B253C09E3005B3A0C /* CustomTabBar.m in Sources */,
 				C562DBD125C7C422004D1AEA /* UIView+ViewController.m in Sources */,
 				C5914C0225384E61007777A6 /* UIViewController+GifImageView.m in Sources */,
-				C5CF145825AC7D5800381935 /* LYLUnicode.m in Sources */,
 				C58D938525B80CC400414ACB /* BaseTableViewCell.m in Sources */,
 				C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */,
 				C5A96D3225BD343B000077BC /* NSObject+SPAlertController.m in Sources */,
