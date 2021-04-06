@@ -99,6 +99,12 @@
 //#import "YYKit.h"
 //#endif
 
+#if __has_include(<YYImage/YYImage.h>)
+#import <YYImage/YYImage.h>
+#else
+#import "YYImage.h"
+#endif
+
 #if __has_include(<LYEmptyView/LYEmptyViewHeader.h>)
 #import <LYEmptyView/LYEmptyViewHeader.h>
 #else

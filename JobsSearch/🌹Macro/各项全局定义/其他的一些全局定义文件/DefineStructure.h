@@ -13,6 +13,11 @@
 /*
  这个类只放置用户自定义的定义的枚举值
  */
-
+typedef enum : NSInteger {
+    VIP界面 = 1,
+    充值界面,
+    上传短视频界面,
+    上传帖子界面
+} 界面;
 
 #endif /* DefineStructure_h */

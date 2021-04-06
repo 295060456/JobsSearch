@@ -45,11 +45,11 @@
 #import "LYEmptyViewHeader.h"
 #endif
 
-//#if __has_include(<YYImage/YYImage.h>)
-//#import <YYImage/YYImage.h>
-//#else
-//#import "YYImage.h"
-//#endif
+#if __has_include(<YYImage/YYImage.h>)
+#import <YYImage/YYImage.h>
+#else
+#import "YYImage.h"
+#endif
 /**
  @param weakSelf 方便使用，用来打破循环引用。使用时需要改成实际类型，否则没有代码提示.
  @param arg 事件默认传递的对象，比如`NSNotification`，`UIButton`。
