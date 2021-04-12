@@ -1360,6 +1360,24 @@
 			path = "清除缓存";
 			sourceTree = "<group>";
 		};
+		C5502120262431F800487A54 /* NSObject+SPAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				C5A96D2E25BD343B000077BC /* NSObject+SPAlertController.h */,
+				C5A96D3025BD343B000077BC /* NSObject+SPAlertController.m */,
+			);
+			path = "NSObject+SPAlertController";
+			sourceTree = "<group>";
+		};
+		C550212A2624320000487A54 /* NSObject+SYSAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				C5A96D2F25BD343B000077BC /* NSObject+SYSAlertController.h */,
+				C5A96D3125BD343B000077BC /* NSObject+SYSAlertController.m */,
+			);
+			path = "NSObject+SYSAlertController";
+			sourceTree = "<group>";
+		};
 		C5529F402589CE1F00A89501 /* UIView+JHGestureBlock */ = {
 			isa = PBXGroup;
 			children = (
@@ -2282,10 +2300,8 @@
 		C59B9A2F2526E3E00039B485 /* NSObject+Alert */ = {
 			isa = PBXGroup;
 			children = (
-				C5A96D2E25BD343B000077BC /* NSObject+SPAlertController.h */,
-				C5A96D3025BD343B000077BC /* NSObject+SPAlertController.m */,
-				C5A96D2F25BD343B000077BC /* NSObject+SYSAlertController.h */,
-				C5A96D3125BD343B000077BC /* NSObject+SYSAlertController.m */,
+				C5502120262431F800487A54 /* NSObject+SPAlertController */,
+				C550212A2624320000487A54 /* NSObject+SYSAlertController */,
 			);
 			path = "NSObject+Alert";
 			sourceTree = "<group>";
