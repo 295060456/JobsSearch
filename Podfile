@@ -53,6 +53,12 @@ def func
   pod 'WHToast' # https://github.com/remember17/WHToast 一个轻量级的提示控件，没有任何依赖
   pod 'TABAnimated' # https://github.com/tigerAndBull/TABAnimated
   pod 'lottie-ios', '~> 2.5.3'
+  
+  pod 'ZFPlayer'
+  pod 'ZFPlayer/ControlView'
+  pod 'ZFPlayer/AVPlayer'
+  pod 'ZFPlayer/ijkplayer'
+  
   end
 
 # 基础的公共配置
