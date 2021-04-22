@@ -305,6 +305,7 @@
 		C5D6D9CC25860E4A00029AFF /* NSTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6D9CB25860E4A00029AFF /* NSTimerManager.m */; };
 		C5D8D164260CC3EB00BDAF76 /* toastLoading.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5D8D163260CC3EB00BDAF76 /* toastLoading.gif */; };
 		C5D8DFDE260CDB3500BDAF76 /* JobsInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D8DFDD260CDB3500BDAF76 /* JobsInputAccessoryView.m */; };
+		C5EA12F926311FD700155822 /* UILabel+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EA12F726311FD700155822 /* UILabel+Gesture.m */; };
 		CA6EE73762B5868388EF36F0 /* Pods_JobsSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F074F780A29A046522DAD /* Pods_JobsSearchUITests.framework */; };
 		E50379004173D08E1032FECD /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C172D9519EC6E511BC962FC /* Pods_JobsSearchTests.framework */; };
 /* End PBXBuildFile section */
@@ -895,6 +896,9 @@
 		C5D8D163260CC3EB00BDAF76 /* toastLoading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = toastLoading.gif; sourceTree = "<group>"; };
 		C5D8DFDC260CDB3500BDAF76 /* JobsInputAccessoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsInputAccessoryView.h; sourceTree = "<group>"; };
 		C5D8DFDD260CDB3500BDAF76 /* JobsInputAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsInputAccessoryView.m; sourceTree = "<group>"; };
+		C5EA12F726311FD700155822 /* UILabel+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Gesture.m"; sourceTree = "<group>"; };
+		C5EA12F826311FD700155822 /* UILabel+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Gesture.h"; sourceTree = "<group>"; };
+		C5EA176F2631227F00155822 /* JobsBaseCustomizeUIKitCoreHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsBaseCustomizeUIKitCoreHeader.h; sourceTree = "<group>"; };
 		D8D79E15865353E7FAA5C7E8 /* Pods-JobsSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchUITests/Pods-JobsSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1078,6 +1082,7 @@
 			isa = PBXGroup;
 			children = (
 				C59B999F2526E1180039B485 /* Manual_Add_ThirdParty.h */,
+				C5EA176F2631227F00155822 /* JobsBaseCustomizeUIKitCoreHeader.h */,
 			);
 			path = "手动导入的第三方";
 			sourceTree = "<group>";
@@ -1467,6 +1472,7 @@
 			isa = PBXGroup;
 			children = (
 				C58D68CB2630446A00966F5F /* UILabel+Extra */,
+				C5EA12F626311FD700155822 /* UILabel+Gesture */,
 			);
 			path = "UILabel+Category";
 			sourceTree = "<group>";
@@ -3503,6 +3509,15 @@
 			path = JobsInputAccessoryView;
 			sourceTree = "<group>";
 		};
+		C5EA12F626311FD700155822 /* UILabel+Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				C5EA12F726311FD700155822 /* UILabel+Gesture.m */,
+				C5EA12F826311FD700155822 /* UILabel+Gesture.h */,
+			);
+			path = "UILabel+Gesture";
+			sourceTree = "<group>";
+		};
 		DB6EB4965849B35F47ED7CA5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3977,6 +3992,7 @@
 				C5A442D425ABFBDE000F0CD2 /* JXCategoryTitleBackgroundCell.m in Sources */,
 				C58D6A5C2630446C00966F5F /* UIView+Extras.m in Sources */,
 				C58D6A7D2630446C00966F5F /* MJRefreshConfigModel.m in Sources */,
+				C5EA12F926311FD700155822 /* UILabel+Gesture.m in Sources */,
 				C58D6A922630446C00966F5F /* HQCollectionViewFlowLayout.m in Sources */,
 				C58D6A342630446B00966F5F /* UIImage+ScreenShot.m in Sources */,
 				C58D6A8F2630446C00966F5F /* TableViewFooterView.m in Sources */,
