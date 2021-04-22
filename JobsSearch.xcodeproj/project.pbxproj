@@ -191,6 +191,7 @@
 		C58D6AAC2630446C00966F5F /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D6A2E2630446B00966F5F /* ZYTextField+HistoryDataList.m */; };
 		C58D6AAD2630446C00966F5F /* JobsMagicTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D6A322630446B00966F5F /* JobsMagicTextField.m */; };
 		C58D6B58263044F300966F5F /* CustomZFPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D6B56263044F300966F5F /* CustomZFPlayerControlView.m */; };
+		C58E92B526312F5A00D1EDB8 /* UIButton+DataBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = C58E92B426312F5A00D1EDB8 /* UIButton+DataBinding.m */; };
 		C595D2652587145A002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D25E2587145A002A4531 /* SuspendLab.m */; };
 		C595D2662587145A002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2602587145A002A4531 /* SuspendView.m */; };
 		C595D2672587145A002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2632587145A002A4531 /* SuspendBtn.m */; };
@@ -684,6 +685,8 @@
 		C58D6A332630446B00966F5F /* JobsMagicTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsMagicTextField.h; sourceTree = "<group>"; };
 		C58D6B56263044F300966F5F /* CustomZFPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomZFPlayerControlView.m; sourceTree = "<group>"; };
 		C58D6B57263044F300966F5F /* CustomZFPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomZFPlayerControlView.h; sourceTree = "<group>"; };
+		C58E92B326312F5A00D1EDB8 /* UIButton+DataBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DataBinding.h"; sourceTree = "<group>"; };
+		C58E92B426312F5A00D1EDB8 /* UIButton+DataBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DataBinding.m"; sourceTree = "<group>"; };
 		C595D25D2587145A002A4531 /* SuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendLab.h; sourceTree = "<group>"; };
 		C595D25E2587145A002A4531 /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
 		C595D2602587145A002A4531 /* SuspendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendView.m; sourceTree = "<group>"; };
@@ -1538,9 +1541,10 @@
 			children = (
 				C58D68DC2630446A00966F5F /* 高度自定义的按钮 */,
 				C58D68E02630446A00966F5F /* 高仿抖音点赞动画 */,
-				C58D68E42630446A00966F5F /* UIButton+Timer */,
-				C58D68EB2630446A00966F5F /* SoundBtn */,
 				C58D68F02630446A00966F5F /* 高仿iOS长按删除+抖动 */,
+				C58D68EB2630446A00966F5F /* SoundBtn */,
+				C58E92B226312F5A00D1EDB8 /* UIButton+DataBinding */,
+				C58D68E42630446A00966F5F /* UIButton+Timer */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -2807,6 +2811,15 @@
 			path = "播放器控制层";
 			sourceTree = "<group>";
 		};
+		C58E92B226312F5A00D1EDB8 /* UIButton+DataBinding */ = {
+			isa = PBXGroup;
+			children = (
+				C58E92B326312F5A00D1EDB8 /* UIButton+DataBinding.h */,
+				C58E92B426312F5A00D1EDB8 /* UIButton+DataBinding.m */,
+			);
+			path = "UIButton+DataBinding";
+			sourceTree = "<group>";
+		};
 		C595D25C2587145A002A4531 /* SuspendLab */ = {
 			isa = PBXGroup;
 			children = (
@@ -3913,6 +3926,7 @@
 				C58D6A522630446C00966F5F /* UIView+Measure.m in Sources */,
 				C5C64FB9259DF87100FD2F99 /* ECPrivacyCheckHealth.m in Sources */,
 				C58D6A6F2630446C00966F5F /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
+				C58E92B526312F5A00D1EDB8 /* UIButton+DataBinding.m in Sources */,
 				C59B9CB22526E3F10039B485 /* FileFolderHandleTool.m in Sources */,
 				C58D6A542630446C00966F5F /* UIView+Chain.m in Sources */,
 				C5C64FB3259DF87100FD2F99 /* ECPrivacyCheckCalendars.m in Sources */,
