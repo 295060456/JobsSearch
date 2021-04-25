@@ -12,12 +12,13 @@ source 'https://github.com/Artsy/Specs.git'# 使用其他来源地址
 # 需要特别说明的：在 post_install 时，为了一些版本的兼容，需要遍历所有 target，调整一部分库的版本；但是如果开启了 generate_multiple_pod_projects 的话，由于项目结构的变化，installer.pod_targets 就没办法获得所有 pods 引入的 target 了
 install! 'cocoapods',:deterministic_uuids=>false,generate_multiple_pod_projects: true,disable_input_output_paths: true
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 inhibit_all_warnings!
 use_frameworks!
 
 # 特别说明：Ruby对大小写敏感，所以方法名不要用大写，否则执行失败
 def func
+  pod 'JobsGlobleDef'
   pod 'FBRetainCycleDetector' # https://github.com/facebook/FBRetainCycleDetector
   pod 'DoraemonKit' # https://github.com/didi/DoraemonKit 滴滴打车出的工具
   pod 'Masonry'
