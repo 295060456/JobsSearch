@@ -125,11 +125,11 @@
 
 #if DEBUG
 
-#if __has_include(<FBRetainCycleDetector/FBRetainCycleDetector.h>)
-#import <FBRetainCycleDetector/FBRetainCycleDetector.h>
-#else
-#import "FBRetainCycleDetector.h"
-#endif
+//#if __has_include(<FBRetainCycleDetector/FBRetainCycleDetector.h>)
+//#import <FBRetainCycleDetector/FBRetainCycleDetector.h>
+//#else
+//#import "FBRetainCycleDetector.h"
+//#endif
 
 #if __has_include(<DoraemonManager/DoraemonManager.h>)
 #import <DoraemonKit/DoraemonManager.h>
