@@ -41,20 +41,20 @@
 }
 ///【用户添加关注】 POST
 +(void)networking_postMyPostGETWithAuthorId:(NSString *)authorId
-                               successBlock:(MKDataBlock)successBlock{
+                               successBlock:(MKDataBlock _Nullable)successBlock{
 }
 ///【用户取消关注】
 +(void)networking_userFocusDeleteGETWithAuthorId:(NSString *)authorId
-                                    successBlock:(MKDataBlock)successBlock{
+                                    successBlock:(MKDataBlock _Nullable)successBlock{
 }
 ///【帖子添加关注】 POST
 +(void)networking_postFansListPOSTWithAuthorId:(NSString *)authorId
-                                  successBlock:(MKDataBlock)successBlock{
+                                  successBlock:(MKDataBlock _Nullable)successBlock{
 
 }
 ///【帖子取消关注】
 +(void)networking_postFocusDeleteGETWithAuthorId:(NSString *)authorId
-                                    successBlock:(MKDataBlock)successBlock{
+                                    successBlock:(MKDataBlock _Nullable)successBlock{
 
 }
 /// 配置关注按钮
@@ -98,7 +98,7 @@
 }
 /// 用户更新个人信息-昵称-生日-地区  POST
 +(void)networking_userInfoUpdatePOST:(id)userInfoUpdateModel
-                        successBlock:(MKDataBlock)successBlock{
+                        successBlock:(MKDataBlock _Nullable)successBlock{
 
 }
 // 进App就要调用这个接口
@@ -126,11 +126,11 @@
 +(void)checkVersionBlock:(MKDataBlock)block{}
 /// 视频列表(关注、点赞)  POST
 +(void)networking_loadVideosPOSTWithParameters:(NSDictionary *)parameters
-                                  successBlock:(MKDataBlock)successBlock
-                                  failureBlock:(MKDataBlock)failureBlock{}
+                                  successBlock:(MKDataBlock _Nullable)successBlock
+                                  failureBlock:(MKDataBlock _Nullable)failureBlock{}
 
 +(void)networking_myPraiseVideoGETWithParameters:(id)parameters
-                                    successBlock:(MKDataBlock)successBlock
-                                    failureBlock:(MKDataBlock)failureBlock{}
+                                    successBlock:(MKDataBlock _Nullable)successBlock
+                                    failureBlock:(MKDataBlock _Nullable)failureBlock{}
 
 @end
