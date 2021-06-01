@@ -252,6 +252,7 @@
 		C5B47F832529F82A00387F47 /* 时钟.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B47F822529F82A00387F47 /* 时钟.png */; };
 		C5B47F952529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */; };
 		C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F9D252A006F00387F47 /* HotLabel.m */; };
+		C5B5C95226665B5500264958 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5C95126665B5500264958 /* BaseButton.m */; };
 		C5B8552E252B448200890A66 /* 扫描.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B8552D252B448200890A66 /* 扫描.png */; };
 		C5B85607252B558D00890A66 /* Telegram.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5B85606252B558D00890A66 /* Telegram.bundle */; };
 		C5BA3AF5252C64F90039530C /* 假数据.json in Resources */ = {isa = PBXBuildFile; fileRef = C5BA3AF4252C64F90039530C /* 假数据.json */; };
@@ -817,6 +818,9 @@
 		C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchShowHotwordsTBVCell.m; sourceTree = "<group>"; };
 		C5B47F9C252A006F00387F47 /* HotLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotLabel.h; sourceTree = "<group>"; };
 		C5B47F9D252A006F00387F47 /* HotLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotLabel.m; sourceTree = "<group>"; };
+		C5B5C95026665B5500264958 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		C5B5C95126665B5500264958 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		C5B5C95326665B5D00264958 /* BaseButtonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseButtonProtocol.h; sourceTree = "<group>"; };
 		C5B8552D252B448200890A66 /* 扫描.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描.png"; sourceTree = "<group>"; };
 		C5B85606252B558D00890A66 /* Telegram.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Telegram.bundle; sourceTree = "<group>"; };
 		C5BA3AF4252C64F90039530C /* 假数据.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "假数据.json"; sourceTree = "<group>"; };
@@ -1539,6 +1543,7 @@
 		C58D68DB2630446A00966F5F /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				C5B5C94F26665B5500264958 /* BaseButton */,
 				C58D68DC2630446A00966F5F /* 高度自定义的按钮 */,
 				C58D68E02630446A00966F5F /* 高仿抖音点赞动画 */,
 				C58D68F02630446A00966F5F /* 高仿iOS长按删除+抖动 */,
@@ -2710,8 +2715,9 @@
 		C58D6A182630446B00966F5F /* BaseProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				C58D6A192630446B00966F5F /* BaseViewControllerProtocol.h */,
+				C5B5C95326665B5D00264958 /* BaseButtonProtocol.h */,
 				C58D6A1A2630446B00966F5F /* BaseCellProtocol.h */,
+				C58D6A192630446B00966F5F /* BaseViewControllerProtocol.h */,
 				C58D6A1B2630446B00966F5F /* BaseViewProtocol.h */,
 			);
 			path = BaseProtocol;
@@ -3337,6 +3343,15 @@
 			path = "搜索历史Cell";
 			sourceTree = "<group>";
 		};
+		C5B5C94F26665B5500264958 /* BaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				C5B5C95026665B5500264958 /* BaseButton.h */,
+				C5B5C95126665B5500264958 /* BaseButton.m */,
+			);
+			path = BaseButton;
+			sourceTree = "<group>";
+		};
 		C5B85532252B44B300890A66 /* 图片资源 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3938,6 +3953,7 @@
 				C546FFD3258B61CD0008928C /* XHLaunchAdDownloader.m in Sources */,
 				C5542B8D25F32498002D1CA6 /* CheckMemFreeVC.m in Sources */,
 				C58D6A602630446C00966F5F /* UITextView+Extend.m in Sources */,
+				C5B5C95226665B5500264958 /* BaseButton.m in Sources */,
 				C58D6A852630446C00966F5F /* UITableView+XSAnimationKit.m in Sources */,
 				C58D6A882630446C00966F5F /* BaseTableView.m in Sources */,
 				C59BA0A6252711260039B485 /* JobsSearchTableViewHeaderView.m in Sources */,
