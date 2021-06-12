@@ -68,6 +68,7 @@
 		C5710882253C09E3005B3A0C /* green_lottie_tab_discover.json in Resources */ = {isa = PBXBuildFile; fileRef = C571085D253C09E3005B3A0C /* green_lottie_tab_discover.json */; };
 		C5710883253C09E3005B3A0C /* record_change.json in Resources */ = {isa = PBXBuildFile; fileRef = C571085E253C09E3005B3A0C /* record_change.json */; };
 		C5710884253C09E3005B3A0C /* tab_message_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = C571085F253C09E3005B3A0C /* tab_message_animate.json */; };
+		C57686CC2674AB7600379F34 /* DDRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = C57686CB2674AB7600379F34 /* DDRecord.m */; };
 		C58D6A342630446B00966F5F /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D68B82630446A00966F5F /* UIImage+ScreenShot.m */; };
 		C58D6A352630446B00966F5F /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D68BB2630446A00966F5F /* UIImage+Extras.m */; };
 		C58D6A362630446B00966F5F /* UIImage+SYS.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D68BF2630446A00966F5F /* UIImage+SYS.m */; };
@@ -451,6 +452,8 @@
 		C571085D253C09E3005B3A0C /* green_lottie_tab_discover.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_discover.json; sourceTree = "<group>"; };
 		C571085E253C09E3005B3A0C /* record_change.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = record_change.json; sourceTree = "<group>"; };
 		C571085F253C09E3005B3A0C /* tab_message_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_message_animate.json; sourceTree = "<group>"; };
+		C57686CA2674AB7600379F34 /* DDRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRecord.h; sourceTree = "<group>"; };
+		C57686CB2674AB7600379F34 /* DDRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRecord.m; sourceTree = "<group>"; };
 		C58D68B52630446A00966F5F /* LoadingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingImage.h; sourceTree = "<group>"; };
 		C58D68B82630446A00966F5F /* UIImage+ScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScreenShot.m"; sourceTree = "<group>"; };
 		C58D68B92630446A00966F5F /* UIImage+ScreenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScreenShot.h"; sourceTree = "<group>"; };
@@ -1354,6 +1357,15 @@
 				C571084D253C09E3005B3A0C /* wode.json */,
 			);
 			path = LottieResources;
+			sourceTree = "<group>";
+		};
+		C57686C92674AB7600379F34 /* DDRecord */ = {
+			isa = PBXGroup;
+			children = (
+				C57686CA2674AB7600379F34 /* DDRecord.h */,
+				C57686CB2674AB7600379F34 /* DDRecord.m */,
+			);
+			path = DDRecord;
 			sourceTree = "<group>";
 		};
 		C58D68B32630446A00966F5F /* JobsBaseCustomizeUIKitCore */ = {
@@ -2541,6 +2553,7 @@
 		C58D69E82630446B00966F5F /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				C57686C92674AB7600379F34 /* DDRecord */,
 				C58D6A0F2630446B00966F5F /* NSObject (Time) */,
 				C58D69E92630446B00966F5F /* NSObject+Alert */,
 				C58D6A152630446B00966F5F /* NSObject+CallBackInfoByBlock */,
@@ -3990,6 +4003,7 @@
 				C59B9D712526E5AD0039B485 /* ViewController@2.m in Sources */,
 				C5710865253C09E3005B3A0C /* TransitionController.m in Sources */,
 				C58D6A6B2630446C00966F5F /* BaseImageView.m in Sources */,
+				C57686CC2674AB7600379F34 /* DDRecord.m in Sources */,
 				C571086A253C09E3005B3A0C /* UITabBar+Ex.m in Sources */,
 				C58D6A782630446C00966F5F /* UIViewController+Shake.m in Sources */,
 				C58D6A6E2630446C00966F5F /* NSString+Extras.m in Sources */,
