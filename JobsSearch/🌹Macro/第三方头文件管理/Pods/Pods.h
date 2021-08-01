@@ -21,12 +21,6 @@
 #import "SPAlertController.h"
 #endif
 
-//#if __has_include(<IQKeyboardManager/IQKeyboardManager.h>)
-//#import <IQKeyboardManager/IQKeyboardManager.h>
-//#else
-//#import "IQKeyboardManager.h"
-//#endif
-
 #if __has_include(<ReactiveObjC/ReactiveObjC.h>)
 #import <ReactiveObjC/ReactiveObjC.h>
 #else
@@ -93,12 +87,6 @@
 #import "PPBadgeView.h"
 #endif
 
-//#if __has_include(<YYKit/YYKit.h>)
-//#import <YYKit/YYKit.h>
-//#else
-//#import "YYKit.h"
-//#endif
-
 #if __has_include(<YYImage/YYImage.h>)
 #import <YYImage/YYImage.h>
 #else
@@ -124,12 +112,6 @@
 #endif
 
 #if DEBUG
-
-//#if __has_include(<FBRetainCycleDetector/FBRetainCycleDetector.h>)
-//#import <FBRetainCycleDetector/FBRetainCycleDetector.h>
-//#else
-//#import "FBRetainCycleDetector.h"
-//#endif
 
 #if __has_include(<DoraemonManager/DoraemonManager.h>)
 #import <DoraemonKit/DoraemonManager.h>
