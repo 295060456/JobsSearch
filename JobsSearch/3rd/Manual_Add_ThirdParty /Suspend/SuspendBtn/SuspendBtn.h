@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_END
   -(SuspendBtn *)suspendBtn{
       if (!_suspendBtn) {
           _suspendBtn = SuspendBtn.new;
-          [_suspendBtn setImage:KBuddleIMG(@"⚽️PicResource",
+          [_suspendBtn setImage:KBuddleIMG(@"bundle",
                                            @"Others",
                                            nil,
                                            @"旋转")

@@ -87,14 +87,14 @@
 -(NSMutableArray<UIImage *> *)stateIdlePicsMutArr{
     if (!_stateIdlePicsMutArr) {
         _stateIdlePicsMutArr = NSMutableArray.array;
-        [_stateIdlePicsMutArr addObject:KBuddleIMG(@"⚽️PicResource",@"刷新", nil, @"header.png")];
+        [_stateIdlePicsMutArr addObject:KBuddleIMG(@"bundle",@"刷新", nil, @"header.png")];
     }return _stateIdlePicsMutArr;
 }
 
 -(NSMutableArray<UIImage *> *)pullingPicsMutArr{
     if (!_pullingPicsMutArr) {
         _pullingPicsMutArr = NSMutableArray.array;
-        [_pullingPicsMutArr addObject:KBuddleIMG(@"⚽️PicResource",@"刷新", nil, @"Indeterminate Spinner - Small.png")];
+        [_pullingPicsMutArr addObject:KBuddleIMG(@"bundle",@"刷新", nil, @"Indeterminate Spinner - Small.png")];
     }return _pullingPicsMutArr;
 }
 
@@ -105,7 +105,7 @@
         for (int i = 1; i <= 55; i++) {
             NSString *str = [NSString stringWithFormat:@"gif_header_%d",i];
             str = [str stringByAppendingString:@".png"];
-            [_refreshingPicsMutArr addObject:KBuddleIMG(@"⚽️PicResource",
+            [_refreshingPicsMutArr addObject:KBuddleIMG(@"bundle",
                                                         @"刷新",
                                                         @"刷新图片 166 * 166 @3x 100 * 100 @2x",
                                                         str)];
@@ -121,7 +121,7 @@
         for (int i = 1; i <= 55; i++) {
             NSString *str = [NSString stringWithFormat:@"gif_header_%d",i];
             str = [str stringByAppendingString:@".png"];
-            [_willRefreshPicsMutArr addObject:KBuddleIMG(@"⚽️PicResource",
+            [_willRefreshPicsMutArr addObject:KBuddleIMG(@"bundle",
                                                          @"刷新",
                                                          @"刷新图片 166 * 166 @3x 100 * 100 @2x",
                                                          str)];
@@ -137,7 +137,7 @@
         for (int i = 1; i <= 55; i++) {
             NSString *str = [NSString stringWithFormat:@"gif_header_%d",i];
             str = [str stringByAppendingString:@".png"];
-            [_noMoreDataPicsMutArr addObject:KBuddleIMG(@"⚽️PicResource",
+            [_noMoreDataPicsMutArr addObject:KBuddleIMG(@"bundle",
                                                         @"刷新",
                                                         @"刷新图片 166 * 166 @3x 100 * 100 @2x",
                                                         str)];

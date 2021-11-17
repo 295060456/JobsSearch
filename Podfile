@@ -2,8 +2,8 @@
 # platform :ios, '9.0'
 
 # 下面两行是指明依赖库的来源地址
-source 'https://github.com/CocoaPods/Specs.git'# 使用官方默认地址（默认）
-source 'https://github.com/Artsy/Specs.git'# 使用其他来源地址
+# source 'https://github.com/CocoaPods/Specs.git'# 使用官方默认地址（默认）
+# source 'https://github.com/Artsy/Specs.git'# 使用其他来源地址
 
 # install! 只走一次，多次使用只以最后一个标准执行
 # deterministic_uuids 解决与私有库的冲突
@@ -18,7 +18,7 @@ use_frameworks!
 
 # 特别说明：Ruby对大小写敏感，所以方法名不要用大写，否则执行失败
 def develop_sdk
-  pod 'LookinServer', :configurations => ['Debug']
+  pod 'LookinServer', :configurations => ['Debug'] # https://lookin.work/
 end
 
 def func

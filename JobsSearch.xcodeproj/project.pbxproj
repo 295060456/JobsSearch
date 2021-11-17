@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		0A38542D09D528140077DC9E /* Pods_JobsSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374684BCE143D2E2D51B3656 /* Pods_JobsSearchTests.framework */; };
 		72A14BD50B6A982DFF7EF1A5 /* Pods_JobsSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB98B64C053178FE1889DCEF /* Pods_JobsSearchUITests.framework */; };
+		84588E8A2743F7E200119697 /* Agency.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E812743F7E100119697 /* Agency.xcassets */; };
+		84588E8B2743F7E200119697 /* Tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E822743F7E200119697 /* Tabbar.xcassets */; };
+		84588E8C2743F7E200119697 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E832743F7E200119697 /* Home.xcassets */; };
+		84588E8D2743F7E200119697 /* Customer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E842743F7E200119697 /* Customer.xcassets */; };
+		84588E8E2743F7E200119697 /* Bank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E852743F7E200119697 /* Bank.xcassets */; };
+		84588E8F2743F7E200119697 /* Login.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E862743F7E200119697 /* Login.xcassets */; };
+		84588E902743F7E200119697 /* Message.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E872743F7E200119697 /* Message.xcassets */; };
+		84588E912743F7E200119697 /* Chip.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E882743F7E200119697 /* Chip.xcassets */; };
+		84588E922743F7E200119697 /* UserInfo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E892743F7E200119697 /* UserInfo.xcassets */; };
+		84589D7B2744C30A00119697 /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84589D7A2744C30A00119697 /* bundle */; };
 		B1FCA2073A31A5D9A5BF4BB0 /* Pods_JobsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */; };
 		C5226BF925875982004447FB /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226BF425875982004447FB /* BWShareView.m */; };
 		C5226BFA25875982004447FB /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226BF625875982004447FB /* BWItemCollectionViewCell.m */; };
@@ -33,7 +43,6 @@
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C565CB4225A4380800848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */; };
 		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
-		C56E42FD254719F100B9F555 /* ⚽️PicResource in Resources */ = {isa = PBXBuildFile; fileRef = C56E42FC254719F100B9F555 /* ⚽️PicResource */; };
 		C5710860253C09E3005B3A0C /* JobsPullListAutoSizeView in Resources */ = {isa = PBXBuildFile; fileRef = C5710824253C09E2005B3A0C /* JobsPullListAutoSizeView */; };
 		C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5710827253C09E2005B3A0C /* JobsPullListTBVCell.m */; };
 		C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5710829253C09E2005B3A0C /* JobsPullListAutoSizeView.m */; };
@@ -257,7 +266,6 @@
 		C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F9D252A006F00387F47 /* HotLabel.m */; };
 		C5B5C95226665B5500264958 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5C95126665B5500264958 /* BaseButton.m */; };
 		C5B8552E252B448200890A66 /* 扫描.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B8552D252B448200890A66 /* 扫描.png */; };
-		C5B85607252B558D00890A66 /* Telegram.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5B85606252B558D00890A66 /* Telegram.bundle */; };
 		C5BA3AF5252C64F90039530C /* 假数据.json in Resources */ = {isa = PBXBuildFile; fileRef = C5BA3AF4252C64F90039530C /* 假数据.json */; };
 		C5C2444C2541A72F00CB55F5 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C2444B2541A72F00CB55F5 /* TableViewCell.m */; };
 		C5C244552541A8A600CB55F5 /* DataCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C244542541A8A600CB55F5 /* DataCollectionViewCell.m */; };
@@ -340,6 +348,16 @@
 		374684BCE143D2E2D51B3656 /* Pods_JobsSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F5AA78FAB8FF4A24BD8A01 /* Pods-JobsSearch-JobsSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch-JobsSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch-JobsSearchUITests/Pods-JobsSearch-JobsSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84588E812743F7E100119697 /* Agency.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Agency.xcassets; sourceTree = "<group>"; };
+		84588E822743F7E200119697 /* Tabbar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tabbar.xcassets; sourceTree = "<group>"; };
+		84588E832743F7E200119697 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
+		84588E842743F7E200119697 /* Customer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Customer.xcassets; sourceTree = "<group>"; };
+		84588E852743F7E200119697 /* Bank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Bank.xcassets; sourceTree = "<group>"; };
+		84588E862743F7E200119697 /* Login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Login.xcassets; sourceTree = "<group>"; };
+		84588E872743F7E200119697 /* Message.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Message.xcassets; sourceTree = "<group>"; };
+		84588E882743F7E200119697 /* Chip.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chip.xcassets; sourceTree = "<group>"; };
+		84588E892743F7E200119697 /* UserInfo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserInfo.xcassets; sourceTree = "<group>"; };
+		84589D7A2744C30A00119697 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
 		A4C4C01C7F0007273D14CECE /* Pods-JobsSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchUITests/Pods-JobsSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A84ECDA1DF94EA70BE0F2CA4 /* Pods-JobsSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch/Pods-JobsSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		C51F86FF2608616100953C10 /* MacroDef_AppDeviceScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_AppDeviceScreenSize.h; sourceTree = "<group>"; };
@@ -403,7 +421,6 @@
 		C565CB4025A4380800848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
 		C565CB4125A4380800848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
-		C56E42FC254719F100B9F555 /* ⚽️PicResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "⚽️PicResource"; sourceTree = "<group>"; };
 		C5710824253C09E2005B3A0C /* JobsPullListAutoSizeView */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JobsPullListAutoSizeView; sourceTree = "<group>"; };
 		C5710825253C09E2005B3A0C /* JobsPullListAutoSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsPullListAutoSizeView.h; sourceTree = "<group>"; };
 		C5710827253C09E2005B3A0C /* JobsPullListTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsPullListTBVCell.m; sourceTree = "<group>"; };
@@ -826,7 +843,6 @@
 		C5B5C95126665B5500264958 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
 		C5B5C95326665B5D00264958 /* BaseButtonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseButtonProtocol.h; sourceTree = "<group>"; };
 		C5B8552D252B448200890A66 /* 扫描.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描.png"; sourceTree = "<group>"; };
-		C5B85606252B558D00890A66 /* Telegram.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Telegram.bundle; sourceTree = "<group>"; };
 		C5BA3AF4252C64F90039530C /* 假数据.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "假数据.json"; sourceTree = "<group>"; };
 		C5C2444A2541A72F00CB55F5 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		C5C2444B2541A72F00CB55F5 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
@@ -954,6 +970,70 @@
 				CB98B64C053178FE1889DCEF /* Pods_JobsSearchUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84588E232743F6E800119697 /* 其他 */ = {
+			isa = PBXGroup;
+			children = (
+				C59B98E32526DE260039B485 /* Main.storyboard */,
+				C59B98EB2526DE270039B485 /* LaunchScreen.storyboard */,
+				C59B98EF2526DE270039B485 /* main.m */,
+				C59B98E62526DE260039B485 /* JobsSearch.xcdatamodeld */,
+			);
+			path = "其他";
+			sourceTree = "<group>";
+		};
+		84588E242743F6FE00119697 /* 视频资源文件 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "视频资源文件";
+			sourceTree = "<group>";
+		};
+		84588E252743F70600119697 /* 图片资源文件 */ = {
+			isa = PBXGroup;
+			children = (
+				84589D7A2744C30A00119697 /* bundle */,
+				84588E802743F7D400119697 /* xcassets */,
+				84588E262743F72700119697 /* 进入编译期的资源 */,
+			);
+			path = "图片资源文件";
+			sourceTree = "<group>";
+		};
+		84588E262743F72700119697 /* 进入编译期的资源 */ = {
+			isa = PBXGroup;
+			children = (
+				C5B47F772529F7B300387F47 /* 放大镜.png */,
+				C5B8552D252B448200890A66 /* 扫描.png */,
+				C59BA1F225271DAE0039B485 /* 删除.png */,
+				C5B47F822529F82A00387F47 /* 时钟.png */,
+				C56E29E7252EECEC004ACCC7 /* nodata.png */,
+			);
+			path = "进入编译期的资源";
+			sourceTree = "<group>";
+		};
+		84588E802743F7D400119697 /* xcassets */ = {
+			isa = PBXGroup;
+			children = (
+				84588E812743F7E100119697 /* Agency.xcassets */,
+				84588E852743F7E200119697 /* Bank.xcassets */,
+				84588E882743F7E200119697 /* Chip.xcassets */,
+				84588E842743F7E200119697 /* Customer.xcassets */,
+				84588E832743F7E200119697 /* Home.xcassets */,
+				84588E862743F7E200119697 /* Login.xcassets */,
+				84588E872743F7E200119697 /* Message.xcassets */,
+				84588E822743F7E200119697 /* Tabbar.xcassets */,
+				84588E892743F7E200119697 /* UserInfo.xcassets */,
+				C59B98E92526DE270039B485 /* Assets.xcassets */,
+			);
+			path = xcassets;
+			sourceTree = "<group>";
+		};
+		845897762744BFC400119697 /* 外部字体 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "外部字体";
 			sourceTree = "<group>";
 		};
 		C51F86FE2608616100953C10 /* 苹果产品尺寸 */ = {
@@ -1199,13 +1279,12 @@
 			path = MacroDef_Sys;
 			sourceTree = "<group>";
 		};
-		C55EDA0725677E4F007B403C /* 数据以及资源 */ = {
+		C55EDA0725677E4F007B403C /* Json数据 */ = {
 			isa = PBXGroup;
 			children = (
 				C5BA3AF4252C64F90039530C /* 假数据.json */,
-				C5B85532252B44B300890A66 /* 图片资源 */,
 			);
-			path = "数据以及资源";
+			path = "Json数据";
 			sourceTree = "<group>";
 		};
 		C565CB3E25A4380800848134 /* TwoVerticalArrangementLabsView */ = {
@@ -2943,12 +3022,9 @@
 		C59B99182526E0730039B485 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				C5D3353725763F8A0019C56E /* 资源文件 */,
+				84588E232743F6E800119697 /* 其他 */,
+				C5D3353725763F8A0019C56E /* 资源文件管理 */,
 				C59B98D82526DE260039B485 /* Products */,
-				C59B98E32526DE260039B485 /* Main.storyboard */,
-				C59B98EB2526DE270039B485 /* LaunchScreen.storyboard */,
-				C59B98EF2526DE270039B485 /* main.m */,
-				C59B98E62526DE260039B485 /* JobsSearch.xcdatamodeld */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -3373,19 +3449,6 @@
 			path = BaseButton;
 			sourceTree = "<group>";
 		};
-		C5B85532252B44B300890A66 /* 图片资源 */ = {
-			isa = PBXGroup;
-			children = (
-				C5B47F772529F7B300387F47 /* 放大镜.png */,
-				C5B8552D252B448200890A66 /* 扫描.png */,
-				C59BA1F225271DAE0039B485 /* 删除.png */,
-				C5B47F822529F82A00387F47 /* 时钟.png */,
-				C56E29E7252EECEC004ACCC7 /* nodata.png */,
-				C5B85606252B558D00890A66 /* Telegram.bundle */,
-			);
-			path = "图片资源";
-			sourceTree = "<group>";
-		};
 		C5C244482541A6E800CB55F5 /* 方式2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3548,14 +3611,15 @@
 			path = "UINavigationController+Category";
 			sourceTree = "<group>";
 		};
-		C5D3353725763F8A0019C56E /* 资源文件 */ = {
+		C5D3353725763F8A0019C56E /* 资源文件管理 */ = {
 			isa = PBXGroup;
 			children = (
-				C55EDA0725677E4F007B403C /* 数据以及资源 */,
-				C59B98E92526DE270039B485 /* Assets.xcassets */,
-				C56E42FC254719F100B9F555 /* ⚽️PicResource */,
+				845897762744BFC400119697 /* 外部字体 */,
+				84588E252743F70600119697 /* 图片资源文件 */,
+				84588E242743F6FE00119697 /* 视频资源文件 */,
+				C55EDA0725677E4F007B403C /* Json数据 */,
 			);
-			path = "资源文件";
+			path = "资源文件管理";
 			sourceTree = "<group>";
 		};
 		C5D6D9C925860E4A00029AFF /* NSTimerManager */ = {
@@ -3723,6 +3787,7 @@
 				C5710875253C09E3005B3A0C /* dingdan.json in Resources */,
 				C5710870253C09E3005B3A0C /* home_priase_animation.json in Resources */,
 				C58D6A472630446C00966F5F /* 带有按键音的按钮.md in Resources */,
+				84588E902743F7E200119697 /* Message.xcassets in Resources */,
 				C5710874253C09E3005B3A0C /* green_lottie_tab_news.json in Resources */,
 				C58D6A3D2630446B00966F5F /* WhiteRightArrow@3x.png in Resources */,
 				C58D6A462630446C00966F5F /* Sound.wav in Resources */,
@@ -3734,14 +3799,17 @@
 				C5710877253C09E3005B3A0C /* 我的.json in Resources */,
 				C571087B253C09E3005B3A0C /* 社区.json in Resources */,
 				C5710884253C09E3005B3A0C /* tab_message_animate.json in Resources */,
+				84589D7B2744C30A00119697 /* bundle in Resources */,
 				C5B47F782529F7B300387F47 /* 放大镜.png in Resources */,
 				C5C64FBC259DF87100FD2F99 /* 媒体与AppleMusic@2x.png in Resources */,
+				84588E8A2743F7E200119697 /* Agency.xcassets in Resources */,
 				C58D6A732630446C00966F5F /* 使用方法.md in Resources */,
 				C571087A253C09E3005B3A0C /* tab_home_animate.json in Resources */,
 				C5C64FCF259DF87100FD2F99 /* 定位服务@2x.png in Resources */,
 				C58D6A422630446B00966F5F /* RBCLikeButton.bundle in Resources */,
 				C5D8D164260CC3EB00BDAF76 /* toastLoading.gif in Resources */,
 				C5C64FBF259DF87100FD2F99 /* 运动与健身@3x.png in Resources */,
+				84588E922743F7E200119697 /* UserInfo.xcassets in Resources */,
 				C5C64FC1259DF87100FD2F99 /* 提醒事项@3x.png in Resources */,
 				C5710879253C09E3005B3A0C /* upgrade.json in Resources */,
 				C59BA1F325271DAE0039B485 /* 删除.png in Resources */,
@@ -3749,14 +3817,15 @@
 				C5710880253C09E3005B3A0C /* huiyuan.json in Resources */,
 				C571086F253C09E3005B3A0C /* TabbaritemImage.bundle in Resources */,
 				C59B9C9B2526E3F10039B485 /* 水平进度条.png in Resources */,
+				84588E8F2743F7E200119697 /* Login.xcassets in Resources */,
 				C58D6A892630446C00966F5F /* 专治UITableView相应链断裂.md in Resources */,
 				C5C64FCC259DF87100FD2F99 /* 语音识别@3x.png in Resources */,
+				84588E912743F7E200119697 /* Chip.xcassets in Resources */,
 				C5C64FCB259DF87100FD2F99 /* 蓝牙@3x.png in Resources */,
 				C58D6A652630446C00966F5F /* 我为什么要这么做.md in Resources */,
 				C5C64FC7259DF87100FD2F99 /* 通讯录@2x.png in Resources */,
 				C5710881253C09E3005B3A0C /* fangzi.json in Resources */,
 				C58D6A5F2630446C00966F5F /* 移除 系统自带的 UITabBarButton in Resources */,
-				C5B85607252B558D00890A66 /* Telegram.bundle in Resources */,
 				C571087E253C09E3005B3A0C /* music_animation.json in Resources */,
 				C5710872253C09E3005B3A0C /* wode.json in Resources */,
 				C5C64FBE259DF87100FD2F99 /* 媒体与AppleMusic@3x.png in Resources */,
@@ -3773,10 +3842,13 @@
 				C5C64FD7259DF87100FD2F99 /* 文件和文件夹@3x.png in Resources */,
 				C58D6A8B2630446C00966F5F /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md in Resources */,
 				C59B98E52526DE260039B485 /* Main.storyboard in Resources */,
+				84588E8B2743F7E200119697 /* Tabbar.xcassets in Resources */,
 				C5C64FC6259DF87100FD2F99 /* 提醒事项@2x.png in Resources */,
+				84588E8C2743F7E200119697 /* Home.xcassets in Resources */,
 				C5C64FC4259DF87100FD2F99 /* 02.PNG in Resources */,
 				C5C64FC2259DF87100FD2F99 /* 01.PNG in Resources */,
 				C5710876253C09E3005B3A0C /* green_lottie_tab_home.json in Resources */,
+				84588E8D2743F7E200119697 /* Customer.xcassets in Resources */,
 				C5C64FCD259DF87100FD2F99 /* 日历@2x.png in Resources */,
 				C5C64FC8259DF87100FD2F99 /* 日历@3x.png in Resources */,
 				C5B8552E252B448200890A66 /* 扫描.png in Resources */,
@@ -3787,12 +3859,12 @@
 				C5710871253C09E3005B3A0C /* 主页.json in Resources */,
 				C5C64FBD259DF87100FD2F99 /* 运动与健身@2x.png in Resources */,
 				C5C64FCA259DF87100FD2F99 /* 蓝牙@2x.png in Resources */,
-				C56E42FD254719F100B9F555 /* ⚽️PicResource in Resources */,
 				C58D6AAB2630446C00966F5F /* ZYTextField.bundle in Resources */,
 				C5710883253C09E3005B3A0C /* record_change.json in Resources */,
 				C59B99982526E0A50039B485 /* ZZCircleProgress.bundle in Resources */,
 				C5633214252AE88A00699392 /* 垃圾箱.png in Resources */,
 				C5B47F832529F82A00387F47 /* 时钟.png in Resources */,
+				84588E8E2743F7E200119697 /* Bank.xcassets in Resources */,
 				C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */,
 				C5C64FD0259DF87100FD2F99 /* 文件和文件夹@2x.png in Resources */,
 				C58D6A622630446C00966F5F /* UITextView+IndicateWordLimit.png in Resources */,

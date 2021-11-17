@@ -136,24 +136,24 @@ didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
         _tabBarVC.myTabBar.offsetHeight = 5;
         [_tabBarVC.childMutArr addObject:childViewController_customStyle(ViewController_1.new,
                                                                          @"首页",
-                                                                         KBuddleIMG(@"⚽️PicResource", @"TabbaritemImage", nil, @"community_selected"),
-                                                                         KBuddleIMG(@"⚽️PicResource", @"TabbaritemImage", nil, @"community_unselected"),
+                                                                         KBuddleIMG(@"bundle", @"TabbaritemImage", nil, @"community_selected"),
+                                                                         KBuddleIMG(@"bundle", @"TabbaritemImage", nil, @"community_unselected"),
                                                                          0,
                                                                          @"home_priase_animation",
                                                                          1)];
         
         [_tabBarVC.childMutArr addObject:childViewController_customStyle(ViewController_2.new,
                                                                          @"精彩生活",
-                                                                         KBuddleIMG(@"⚽️PicResource", @"TabbaritemImage", nil, @"post_selected"),
-                                                                         KBuddleIMG(@"⚽️PicResource", @"TabbaritemImage", nil, @"post_unselected"),
+                                                                         KBuddleIMG(@"bundle", @"TabbaritemImage", nil, @"post_selected"),
+                                                                         KBuddleIMG(@"bundle", @"TabbaritemImage", nil, @"post_unselected"),
                                                                          30,
                                                                          @"green_lottie_tab_home",
                                                                          1)];
         
         [_tabBarVC.childMutArr addObject:childViewController_customStyle(ViewController_3.new,
                                                                          @"发现",
-                                                                         KBuddleIMG(@"⚽️PicResource", @"TabbaritemImage", nil, @"My_selected"),
-                                                                         KBuddleIMG(@"⚽️PicResource", @"TabbaritemImage", nil, @"My_unselected"),
+                                                                         KBuddleIMG(@"bundle", @"TabbaritemImage", nil, @"My_selected"),
+                                                                         KBuddleIMG(@"bundle", @"TabbaritemImage", nil, @"My_unselected"),
                                                                          0,
                                                                          @"green_lottie_tab_mine",
                                                                          1)];
