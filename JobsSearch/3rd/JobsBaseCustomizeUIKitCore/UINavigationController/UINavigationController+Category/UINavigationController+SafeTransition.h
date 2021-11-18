@@ -12,9 +12,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UINavigationController (SafeTransition)
+@interface UINavigationController (SafeTransition)<UINavigationControllerDelegate>
+
 @property (nonatomic, assign) BOOL viewTransitionInProgress;
+
 - (void)ty_popToRootViewControllerBySetControllersAnimated:(BOOL)animated;
+
 @end
 
 NS_ASSUME_NONNULL_END

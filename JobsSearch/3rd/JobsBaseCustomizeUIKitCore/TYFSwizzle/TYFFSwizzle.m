@@ -24,15 +24,17 @@
 #import "TYFFSwizzle.h"
 #import <objc/runtime.h>
 
-void TYFFSwizzleMethod(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector) {
+void TYFFSwizzleMethod(Class originalCls,
+                       SEL originalSelector,
+                       Class swizzledCls,
+                       SEL swizzledSelector) {
     Method originalMethod = class_getInstanceMethod(originalCls, originalSelector);
     Method swizzledMethod = class_getInstanceMethod(swizzledCls, swizzledSelector);
     
-    BOOL didAddMethod =
-    class_addMethod(originalCls,
-                    originalSelector,
-                    method_getImplementation(swizzledMethod),
-                    method_getTypeEncoding(swizzledMethod));
+    BOOL didAddMethod = class_addMethod(originalCls,
+                                        originalSelector,
+                                        method_getImplementation(swizzledMethod),
+                                        method_getTypeEncoding(swizzledMethod));
     
     if (didAddMethod) {
         class_replaceMethod(originalCls,

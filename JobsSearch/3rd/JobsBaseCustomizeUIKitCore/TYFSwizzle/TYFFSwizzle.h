@@ -7,4 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-void TYFFSwizzleMethod(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector);
+void TYFFSwizzleMethod(Class originalCls,
+                       SEL originalSelector,
+                       Class swizzledCls,
+                       SEL swizzledSelector);
