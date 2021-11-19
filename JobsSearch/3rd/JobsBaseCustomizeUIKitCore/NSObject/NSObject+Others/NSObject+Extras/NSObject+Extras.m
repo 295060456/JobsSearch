@@ -187,6 +187,37 @@ static void selectorImp(id self,
         return NSNotFound;
     }return taskInfo.resident_size/1024.0/1024.0;
 }
+/// App 国际化相关系统宏二次封装 + 设置缺省值
++(NSString *_Nullable)localStringWithKey:(nonnull NSString *)key{
+    return NSLocalizedString(key, nil);
+}
+
++(NSString *_Nullable)localizedString:(nonnull NSString *)key
+                            fromTable:(nullable NSString *)tableName{
+    return NSLocalizedStringFromTable(key,
+                                      tableName,
+                                      nil);
+}
+
++(NSString *_Nullable)localizedString:(nonnull NSString *)key
+                            fromTable:(nullable NSString *)tableName
+                             inBundle:(nullable NSBundle *)bundle{
+    return NSLocalizedStringFromTableInBundle(key,
+                                              tableName,
+                                              bundle ? : NSBundle.mainBundle,
+                                              nil);
+}
+
++(NSString *_Nullable)localizedString:(nonnull NSString *)key
+                            fromTable:(nullable NSString *)tableName
+                             inBundle:(nullable NSBundle *)bundle
+                         defaultValue:(nullable NSString *)defaultValue{
+    return NSLocalizedStringWithDefaultValue(key,
+                                             tableName,
+                                             bundle ? : NSBundle.mainBundle,
+                                             defaultValue,
+                                             nil);
+}
 /// 加入键盘通知的监听者
 -(void)keyboard{
     [[NSNotificationCenter defaultCenter] addObserver:self

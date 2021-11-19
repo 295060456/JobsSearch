@@ -13,6 +13,12 @@
 #import "BaseCellProtocol.h"
 #import "BaseViewProtocol.h"
 
+#pragma mark —— UIViewModel
+#import "UIViewModel.h"
+
+#pragma mark —— NSBundle
+#import "NSBundle+CLLanguage.h"
+
 #pragma mark —— CALayer
 /// CALayer+Transition
 #import "CALayer+Transition.h"
@@ -149,6 +155,7 @@
 
 #pragma mark —— UITableViewCell
 /// UITableViewCell+Category
+#import "UITableViewCell+BaseCellProtocol.h"
 // 重设边距
 #import "UITableViewCell+Margin.h"
 // 自定义右侧小箭头图标
@@ -158,8 +165,10 @@
 
 #pragma mark —— UITableViewHeaderFooterView
 /// BaseTableViewHeaderFooterView
-#import "TableViewFooterView.h"
-#import "TableViewHeaderView.h"
+#import "BaseTableViewFooterView.h"
+#import "BaseTableViewHeaderView.h"
+/// UITableViewHeaderFooterView+Category
+#import "UITableViewHeaderFooterView+BaseTableViewHeaderFooterViewProtocol.h"
 
 #pragma mark —— UITextField
 /// BaseTextField

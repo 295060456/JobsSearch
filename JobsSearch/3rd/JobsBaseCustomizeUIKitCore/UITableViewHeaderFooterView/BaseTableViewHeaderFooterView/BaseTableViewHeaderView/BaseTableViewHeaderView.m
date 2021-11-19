@@ -1,19 +1,19 @@
 //
-//  ViewForTableViewFooter.m
+//  ViewForTableViewHeader.m
 //  UBallLive
 //
 //  Created by Jobs on 2020/10/27.
 //
 
-#import "TableViewFooterView.h"
+#import "BaseTableViewHeaderView.h"
 
-@interface TableViewFooterView ()
+@interface BaseTableViewHeaderView ()
 
-@property(nonatomic,copy)MKDataBlock _Nullable tableViewFooterViewBlock;
+@property(nonatomic,copy)MKDataBlock _Nullable tableViewHeaderViewBlock;
 
 @end
 
-@implementation TableViewFooterView
+@implementation BaseTableViewHeaderView
 
 -(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier{
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
@@ -29,15 +29,15 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
-    if (self.tableViewFooterViewBlock) {
-        self.tableViewFooterViewBlock(@1);
+    if (self.tableViewHeaderViewBlock) {
+        self.tableViewHeaderViewBlock(@1);
     }
 }
 /*
-    用于以此为基类的actionBlockTableViewFooterView的子类的所有数据的回调,当然也可以用NSObject分类的方法定位于：@interface NSObject (CallBackInfoByBlock)
+    用于以此为基类的TableViewHeaderView的子类的所有数据的回调,当然也可以用NSObject分类的方法定位于：@interface NSObject (CallBackInfoByBlock)
  */
--(void)actionBlockTableViewFooterView:(MKDataBlock _Nullable)tableViewFooterViewBlock{
-    self.tableViewFooterViewBlock = tableViewFooterViewBlock;
+-(void)actionBlockTableViewHeaderView:(MKDataBlock _Nullable)tableViewHeaderViewBlock{
+    self.tableViewHeaderViewBlock = tableViewHeaderViewBlock;
 }
 
 @end
