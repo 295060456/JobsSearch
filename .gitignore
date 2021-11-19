@@ -78,6 +78,7 @@ doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txtii
 
 # 应用程序包装
 * .ipa
+# 具有调试信息的目标文件
 * .dSYM.zip
 * .dSYM
 
@@ -85,6 +86,38 @@ doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txtii
 
 # git
 .git
+
+=============================================================
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+=============================================================
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+
+=============================================================
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
 
 =============================================================
 
