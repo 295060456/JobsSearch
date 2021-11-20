@@ -21,9 +21,9 @@ static char *UIButton_CountDownBtn_timerFinishBlock = "UIButton_CountDownBtn_tim
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-designated-initializers"
-- (instancetype)initWithConfig:(ButtonTimerConfigModel *_Nonnull)config{
+- (instancetype)initWithConfig:(nullable ButtonTimerConfigModel *)config{
     if (self = [super init]) {
-        self.btnTimerConfig = config;
+        self.btnTimerConfig = config;//为空则加载默认配置，self.btnTimerConfig 有容错机制
         [self setLayerConfigReadyPlay];
         [self setTitleReadyPlay];
         [self setTitleLabelConfigReadyPlay];
@@ -118,7 +118,7 @@ static char *UIButton_CountDownBtn_timerFinishBlock = "UIButton_CountDownBtn_tim
         [self setTitle:self.btnTimerConfig.titleRunningStr
               forState:UIControlStateNormal];
     }
-    NSLog(@"WWWW = %@",self.btnTimerConfig.titleRunningStr);
+    NSLog(@"☕️☕️☕️☕️ = %@",self.btnTimerConfig.titleRunningStr);
 }
 /// 计时器结束
 -(void)setTitleEnd{
@@ -286,8 +286,7 @@ static char *UIButton_CountDownBtn_timerFinishBlock = "UIButton_CountDownBtn_tim
         if (self.timerFinishBlock) {
             self.timerFinishBlock(data);
         }
-    }];
-    return BtnTimerConfig;
+    }];return BtnTimerConfig;
 }
 
 -(void)setBtnTimerConfig:(ButtonTimerConfigModel *)btnTimerConfig{

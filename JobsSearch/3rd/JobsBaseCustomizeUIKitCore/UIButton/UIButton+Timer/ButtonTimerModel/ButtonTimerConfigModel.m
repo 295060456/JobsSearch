@@ -124,11 +124,6 @@
 -(NSString *)titleRunningStr{
     if (!_titleRunningStr) {
         _titleRunningStr = self.titleRunningDefaultStr;
-    }
-    if (self.countDownBtnNewLineType == CountDownBtnNewLineType_newLine) {//提行模式
-        if (![_titleRunningStr containsString:@"\n"]) {
-            _titleRunningStr = [_titleRunningStr stringByAppendingString:@"\n"];
-        }
     }return _titleRunningStr;
 }
 
