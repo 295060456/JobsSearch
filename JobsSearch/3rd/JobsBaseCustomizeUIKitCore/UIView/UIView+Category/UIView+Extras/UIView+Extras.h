@@ -91,5 +91,7 @@ typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
               shadowOpacity:(CGFloat)shadowOpacity
            layerShadowColor:(UIColor *__nullable)layerShadowColor
           layerShadowRadius:(CGFloat)layerShadowRadius;
+/// 监听键盘事件
+-(void)monitorKeyboardAction;
 
 @end

@@ -192,7 +192,6 @@
     [animation setRepeatCount:3];
     [lay_lb addAnimation:animation forKey:nil];
 }
-
 #pragma mark —— lazyLoad
 -(UIFont *)ZYtextFont{
     if (!_ZYtextFont) {
