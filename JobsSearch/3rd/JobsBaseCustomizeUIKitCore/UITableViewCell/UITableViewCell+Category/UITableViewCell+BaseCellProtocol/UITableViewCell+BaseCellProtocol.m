@@ -21,7 +21,7 @@
 
 -(void)richElementsInCellWithModel:(UIViewModel *_Nullable)model{
     if ([model isKindOfClass:UIViewModel.class]) {
-        self.textLabel.textColor = model.textColor;
+        self.textLabel.textColor = model.textCor;
         self.textLabel.font = model.font;
         self.textLabel.text = model.text;
         self.imageView.image = model.image;
