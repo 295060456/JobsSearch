@@ -298,7 +298,7 @@ shouldSelectViewController:(UIViewController *)viewController {
         [_suspendBtn setImage:KIMG(@"旋转")
                      forState:UIControlStateNormal];
         _suspendBtn.isAllowDrag = NO;//悬浮效果必须要的参数
-        @weakify(self)
+        @jobs_weakify(self)
         self.view.vc = weak_self;
         [self.view addSubview:_suspendBtn];
         _suspendBtn.frame = CGRectMake(80,

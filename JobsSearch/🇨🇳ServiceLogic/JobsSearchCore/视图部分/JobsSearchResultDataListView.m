@@ -47,7 +47,7 @@ UITableViewDelegate
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     self.isEndScroll = YES;
     if (self.jobsSearchResultDataListViewBlock) {
-        @weakify(self)
+        @jobs_weakify(self)
         self.jobsSearchResultDataListViewBlock(weak_self);
     }
 }

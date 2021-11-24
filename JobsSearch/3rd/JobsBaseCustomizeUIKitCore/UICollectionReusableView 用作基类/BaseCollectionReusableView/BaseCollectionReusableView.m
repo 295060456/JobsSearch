@@ -21,7 +21,7 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
-    @weakify(self)
+    @jobs_weakify(self)
     if (self.collectionReusableViewBlock) {
         self.collectionReusableViewBlock(weak_self);
     }

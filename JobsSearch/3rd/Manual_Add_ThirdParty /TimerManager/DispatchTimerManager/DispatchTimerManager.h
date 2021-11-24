@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MacroDef_Func.h"
 
 typedef NS_ENUM(NSInteger, DispatchTimerState) {
     DispatchTimerState_init = 0,

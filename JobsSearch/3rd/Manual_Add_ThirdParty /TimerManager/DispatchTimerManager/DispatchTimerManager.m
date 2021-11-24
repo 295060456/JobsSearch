@@ -94,7 +94,7 @@
                               dispatch_time(DISPATCH_TIME_NOW, self.start * NSEC_PER_SEC),
                               self.timeInterval * NSEC_PER_SEC,
                               0);
-    @weakify(self)
+    @jobs_weakify(self)
     dispatch_source_set_event_handler(self.dispatchTimer, ^{[weak_self fire];});
 }
 

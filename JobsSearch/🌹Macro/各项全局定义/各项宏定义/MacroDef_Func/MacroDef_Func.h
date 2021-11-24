@@ -94,8 +94,53 @@ return; \
 #define LocalString(x, ...)     NSLocalizedString(x, nil)
 #define StringFormat(format,...) [NSString stringWithFormat:format, ##__VA_ARGS__]
 #pragma mark ======================================== 强弱引用 ==============================================
-#define WeakSelf __weak typeof(self) weakSelf = self;
-#define StrongSelf __strong typeof(self) strongSelf = self;
+
+/**
+ 
+ Uses
+ 
+     UIView *view;
+     UIButton *btn;
+     
+     @jobs_weakify(view)
+     weak_view.size;
+     @jobs_weakify(btn)
+     weak_btn.frame
+ 
+ */
+
+#ifndef jobs_weakify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define jobs_weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+#else
+#define jobs_weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define jobs_weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+#else
+#define jobs_weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+#endif
+#endif
+#endif
+
+#ifndef jobs_strongify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define jobs_strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+#else
+#define jobs_strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define jobs_strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+#else
+#define jobs_strongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
+#endif
+#endif
+#endif
+
 #pragma mark ======================================== 其他 =================================================
 #define ReuseIdentifier NSStringFromClass ([self class])
 #define CurrentThread [NSThread currentThread]

@@ -85,7 +85,7 @@ static char *UIViewController_BaseVC_rootVC = "UIViewController_BaseVC_rootVC";
     if (toVC) {
         toVC.requestParams = requestParams;
         toVC.rootVC = rootVC;
-        @weakify(rootVC)
+        @jobs_weakify(rootVC)
         switch (comingStyle) {
             case ComingStyle_PUSH:{
                 if (rootVC.navigationController) {
