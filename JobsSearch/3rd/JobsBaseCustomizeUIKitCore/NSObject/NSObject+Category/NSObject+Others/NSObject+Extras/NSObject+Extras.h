@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <Photos/Photos.h>
+#import <objc/runtime.h>
+#import <sys/sysctl.h>
+#import <mach/mach.h>
+
 #import "AABlock.h"
 #import "MacroDef_Func.h"
+#import "MacroDef_SysWarning.h"
 
 #import "WHToast+DDToast.h"
 
@@ -115,16 +120,23 @@ SEL _Nullable selectorBlocks(callback _Nonnull ,id _Nullable target);
       contentView:(UIScrollView *_Nonnull)contentView;
 /// 转换为NSData
 +(NSData *_Nullable)transformToData:(id _Nullable)object;
-/// NSInvocation的使用，方法多参数传递
-/// @param methodName 方法名
-/// @param target 靶点，方法在哪里
-/// @param paramarrays 参数数组
-+(void)methodName:(NSString *_Nonnull)methodName
-           target:(id _Nonnull)target
-      paramarrays:(NSArray *_Nullable)paramarrays;
 /// 监听程序被杀死前的时刻，进行一些需要异步的操作：磁盘读写、网络请求...
 -(void)terminalCheck:(MKDataBlock _Nullable)checkBlock;
-
+/// 判断本程序是否存在某个类
++(BOOL)judgementAppExistClassWithName:(nullable NSString *)className;
+/// 判断某个实例对象是否存在某个【不带参数的方法】
++(BOOL)judgementObj:(nullable id)obj existMethodWithName:(nullable NSString *)methodName;
+/// 如果某个实例对象存在某个【不带参数的方法】，则对其调用执行
+/// @param targetObj 靶点，方法在哪里
+/// @param methodName 不带参数的方法名
++(void)targetObj:(nullable id)targetObj callingMethodWithName:(nullable NSString *)methodName;
+/// NSInvocation的使用，方法多参数传递
+/// @param methodName 方法名
+/// @param targetObj 靶点，方法在哪里
+/// @param paramarrays 参数数组
++(void)methodName:(NSString *_Nonnull)methodName
+        targetObj:(id _Nonnull)targetObj
+      paramarrays:(NSArray *_Nullable)paramarrays;
 @end
 /**
  通知的写法：示例代码
@@ -186,6 +198,3 @@ SEL _Nullable selectorBlocks(callback _Nonnull ,id _Nullable target);
  }
  
  */
-
-
-

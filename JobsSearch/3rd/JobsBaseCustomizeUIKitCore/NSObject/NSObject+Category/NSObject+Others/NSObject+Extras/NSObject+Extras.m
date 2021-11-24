@@ -7,9 +7,6 @@
 //
 
 #import "NSObject+Extras.h"
-#import <objc/runtime.h>
-#import <sys/sysctl.h>
-#import <mach/mach.h>
 
 @implementation NSObject (Extras)
 
@@ -330,12 +327,50 @@ static void selectorImp(id self,
         return nil;
     }
 }
+/// 监听程序被杀死前的时刻，进行一些需要异步的操作：磁盘读写、网络请求...
+-(void)terminalCheck:(MKDataBlock _Nullable)checkBlock{
+    [NSNotificationCenter.defaultCenter addObserver:self
+                                           selector:selectorBlocks(^(id  _Nullable weakSelf,
+                                                                     id  _Nullable arg) {
+        //进行埋点操作
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            NSLog(@"我只执行一次");
+            // 在这里写遗言：最后希望去完成的事情
+            if (checkBlock) {
+                checkBlock(@1);
+            }
+            [NSThread sleepForTimeInterval:60];
+            NSLog(@"程序被杀死");
+        });
+    }, self)
+                                               name:@"UIApplicationWillTerminateNotification"
+                                             object:nil];
+}
+/// 判断本程序是否存在某个类
++(BOOL)judgementAppExistClassWithName:(nullable NSString *)className{
+    return NSClassFromString(className);
+}
+/// 判断某个实例对象是否存在某个【不带参数的方法】
++(BOOL)judgementObj:(id)obj existMethodWithName:(nullable NSString *)methodName{
+    SEL sel = NSSelectorFromString(methodName);
+    return [obj respondsToSelector:sel];
+}
+/// 如果某个实例对象存在某个【不带参数的方法】，则对其调用执行
+/// @param targetObj 靶点，方法在哪里
+/// @param methodName 不带参数的方法名
++(void)targetObj:(nullable id)targetObj
+callingMethodWithName:(nullable NSString *)methodName{
+    if ([NSObject judgementObj:targetObj existMethodWithName:methodName]) {
+        SuppressWarcPerformSelectorLeaksWarning([targetObj performSelector:NSSelectorFromString(methodName)]);
+    }
+}
 /// NSInvocation的使用，方法多参数传递
 /// @param methodName 方法名
-/// @param target 靶点，方法在哪里
+/// @param targetObj 靶点，方法在哪里
 /// @param paramarrays 参数数组
 +(void)methodName:(NSString *_Nonnull)methodName
-           target:(id _Nonnull)target
+        targetObj:(id _Nonnull)targetObj
       paramarrays:(NSArray *_Nullable)paramarrays{
     SEL selector = NSSelectorFromString(methodName);
     /*
@@ -343,7 +378,7 @@ static void selectorImp(id self,
      a. numberOfArguments:方法参数的个数
      b. methodReturnLength:方法返回值类型的长度，大于0表示有返回值
      **/
-    NSMethodSignature *signature = [target methodSignatureForSelector:selector];
+    NSMethodSignature *signature = [targetObj methodSignatureForSelector:selector];
     //或使用下面这种方式
     //NSMethodSignature *signature = [[target class] instanceMethodSignatureForSelector:selector];
     
@@ -365,7 +400,7 @@ static void selectorImp(id self,
     
     //只能使用该方法来创建，不能使用alloc init
     NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
-    invocation.target = target;
+    invocation.target = targetObj;
     invocation.selector = selector;
     /*
      注意:
@@ -386,26 +421,6 @@ static void selectorImp(id self,
         [invocation getReturnValue:&result];
         NSLog(@"result = %@",result);
     }
-}
-/// 监听程序被杀死前的时刻，进行一些需要异步的操作：磁盘读写、网络请求...
--(void)terminalCheck:(MKDataBlock _Nullable)checkBlock{
-    [NSNotificationCenter.defaultCenter addObserver:self
-                                           selector:selectorBlocks(^(id  _Nullable weakSelf,
-                                                                     id  _Nullable arg) {
-        //进行埋点操作
-        static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
-            NSLog(@"我只执行一次");
-            // 在这里写遗言：最后希望去完成的事情
-            if (checkBlock) {
-                checkBlock(@1);
-            }
-            [NSThread sleepForTimeInterval:60];
-            NSLog(@"程序被杀死");
-        });
-    }, self)
-                                               name:@"UIApplicationWillTerminateNotification"
-                                             object:nil];
 }
 #pragma mark —— @property(nonatomic,strong)NSIndexPath *_indexPath;
 -(NSIndexPath *)_indexPath{
