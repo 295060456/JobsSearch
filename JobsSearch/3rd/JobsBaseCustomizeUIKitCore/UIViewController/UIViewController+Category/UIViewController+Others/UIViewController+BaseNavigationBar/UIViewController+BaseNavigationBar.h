@@ -7,7 +7,15 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseNavigationBar.h"
+#import "MacroDef_Cor.h"
+#import "MacroDef_Size.h"
 #import "LoadingImage.h"
+
+#if __has_include(<Masonry/Masonry.h>)
+#import <Masonry/Masonry.h>
+#else
+#import "Masonry.h"
+#endif
 
 #if __has_include(<GKNavigationBar/GKNavigationBar.h>)
 #import <GKNavigationBar/GKNavigationBar.h>

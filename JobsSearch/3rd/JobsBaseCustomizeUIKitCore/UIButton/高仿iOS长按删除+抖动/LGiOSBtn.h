@@ -7,9 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+Chain.h"
-#import "UIView+Measure.h"
 #import "LoadingImage.h"
+#import "UIView+Chain.h"
+#import "MacroDef_Cor.h"
+
+#if __has_include(<MJRefresh/MJRefresh.h>)
+#import <MJRefresh/MJRefresh.h>
+#else
+#import "MJRefresh.h"
+#endif
+
+#if __has_include(<Masonry/Masonry.h>)
+#import <Masonry/Masonry.h>
+#else
+#import "Masonry.h"
+#endif
 
 @class LGiOSBtn;
 

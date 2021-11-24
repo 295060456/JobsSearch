@@ -7,8 +7,6 @@
 //
 
 #import "NSBundle+CLLanguage.h"
-#import <objc/runtime.h>
-#import "CLLanguageManager.h"
 
 @interface CLBundle : NSBundle
 

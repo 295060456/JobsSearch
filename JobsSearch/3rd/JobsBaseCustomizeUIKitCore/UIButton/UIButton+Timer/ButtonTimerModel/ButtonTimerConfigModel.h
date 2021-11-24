@@ -10,6 +10,32 @@
 #import "TimerManager.h"//时间管理
 #import "NSObject+RichText.h"//富文本
 #import "ButtonTimerDefStructure.h"
+#import "MacroDef_App.h"
+#import "MacroDef_Size.h"
+
+#if __has_include(<ReactiveObjC/RACmetamacros.h>)
+#import <ReactiveObjC/RACmetamacros.h>
+#else
+#import "RACmetamacros.h"
+#endif
+
+#if __has_include(<ReactiveObjC/RACEXTScope.h>)
+#import <ReactiveObjC/RACEXTScope.h>
+#else
+#import "RACEXTScope.h"
+#endif
+
+#if __has_include(<ReactiveObjC/RACEXTKeyPathCoding.h>)
+#import <ReactiveObjC/RACEXTKeyPathCoding.h>
+#else
+#import "RACEXTKeyPathCoding.h"
+#endif
+
+//#if __has_include(<ReactiveObjC/RACEXTRuntimeExtensions.h>)
+//#import <ReactiveObjC/RACEXTRuntimeExtensions.h>
+//#else
+//#import "RACEXTRuntimeExtensions.h"
+//#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

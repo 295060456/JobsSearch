@@ -9,6 +9,13 @@
 //UITableViewCell 右侧的小箭头 白色
 
 #import <UIKit/UIKit.h>
+#import "AABlock.h"
+
+#if __has_include(<ReactiveObjC/ReactiveObjC.h>)
+#import <ReactiveObjC/ReactiveObjC.h>
+#else
+#import "ReactiveObjC.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

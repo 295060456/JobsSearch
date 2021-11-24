@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Photos/Photos.h>
 #import "AABlock.h"
+#import "MacroDef_Func.h"
 
 #import "WHToast+DDToast.h"
 

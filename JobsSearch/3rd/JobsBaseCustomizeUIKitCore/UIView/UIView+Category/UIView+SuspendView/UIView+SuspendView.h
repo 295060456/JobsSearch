@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIView+Measure.h"
+#import "MacroDef_Size.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

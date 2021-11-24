@@ -5,6 +5,36 @@
 //  Created by Jobs on 2021/1/8.
 //
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "AABlock.h"
+#import "MJRefreshConfigModel.h"
+#import "UIView+Measure.h"
+
+#if __has_include(<ReactiveObjC/RACmetamacros.h>)
+#import <ReactiveObjC/RACmetamacros.h>
+#else
+#import "RACmetamacros.h"
+#endif
+
+#if __has_include(<ReactiveObjC/RACEXTScope.h>)
+#import <ReactiveObjC/RACEXTScope.h>
+#else
+#import "RACEXTScope.h"
+#endif
+
+#if __has_include(<ReactiveObjC/RACEXTKeyPathCoding.h>)
+#import <ReactiveObjC/RACEXTKeyPathCoding.h>
+#else
+#import "RACEXTKeyPathCoding.h"
+#endif
+
+//#if __has_include(<ReactiveObjC/RACEXTRuntimeExtensions.h>)
+//#import <ReactiveObjC/RACEXTRuntimeExtensions.h>
+//#else
+//#import "RACEXTRuntimeExtensions.h"
+//#endif
+
 #if __has_include(<MJRefresh/MJRefresh.h>)
 #import <MJRefresh/MJRefresh.h>
 #else
@@ -16,10 +46,6 @@
 #else
 #import "Lottie.h"
 #endif
-
-#import "MJRefreshConfigModel.h"
-
-#import "UIView+Measure.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

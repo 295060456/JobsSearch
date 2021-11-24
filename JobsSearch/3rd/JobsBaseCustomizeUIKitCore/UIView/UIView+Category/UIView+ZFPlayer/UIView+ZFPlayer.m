@@ -6,16 +6,17 @@
 //
 
 #import "UIView+ZFPlayer.h"
-#import <objc/runtime.h>
 
 @implementation UIView (ZFPlayer)
 
-static char *UIView_ZFPlayer_player = "UIView_ZFPlayer_player";
-static char *UIView_ZFPlayer_playerManager = "UIView_ZFPlayer_playerManager";
+static char *UIView_ZFPlayer_playerCtr = "UIView_ZFPlayer_playerCtr";
+static char *UIView_ZFPlayer_avPlayerManager = "UIView_ZFPlayer_avPlayerManager";
+static char *UIView_ZFPlayer_ijkPlayerManager = "UIView_ZFPlayer_ijkPlayerManager";
 static char *UIView_ZFPlayer_customPlayerControlView = "UIView_ZFPlayer_customPlayerControlView";
 
-@dynamic player;
-@dynamic playerManager;
+@dynamic playerCtr;
+@dynamic avPlayerManager;
+@dynamic ijkPlayerManager;
 @dynamic customPlayerControlView;
 
 -(void)enterBackgroundStopPlayer{
@@ -26,43 +27,64 @@ static char *UIView_ZFPlayer_customPlayerControlView = "UIView_ZFPlayer_customPl
 }
 
 -(void)notification:(NSNotification *)notification{
-    [self.playerManager stop];
+    if (objc_getAssociatedObject(self, UIView_ZFPlayer_avPlayerManager)) {
+        [self.avPlayerManager stop];
+    }
+    
+    if (objc_getAssociatedObject(self, UIView_ZFPlayer_ijkPlayerManager)) {
+        [self.ijkPlayerManager stop];
+    }
 }
-#pragma mark —— @property(nonatomic,strong,nullable)ZFPlayerController *player;
--(ZFPlayerController *)player{
-    ZFPlayerController *Player = objc_getAssociatedObject(self, UIView_ZFPlayer_player);
-    if (!Player) {
+#pragma mark —— @property(nonatomic,strong,nullable)ZFPlayerController *playerCtr;
+-(ZFPlayerController *)playerCtr{
+    ZFPlayerController *PlayerCtr = objc_getAssociatedObject(self, UIView_ZFPlayer_playerCtr);
+    if (!PlayerCtr) {
         
-        @weakify(self)
-        Player = [[ZFPlayerController alloc] initWithPlayerManager:self.playerManager
-                                                     containerView:self];
-        Player.controlView = self.customPlayerControlView;
-        NSLog(@"%@",Player.controlView);
-        Player.muted = YES;//静音播放
-        [Player setPlayerDidToEnd:^(id<ZFPlayerMediaPlayback>  _Nonnull asset) {
-            @strongify(self)
-            [self.playerManager replay];//设置循环播放
-        }];
+        if (objc_getAssociatedObject(self, UIView_ZFPlayer_avPlayerManager)) {
+            @weakify(self)
+            PlayerCtr = [[ZFPlayerController alloc] initWithPlayerManager:self.avPlayerManager
+                                                            containerView:self];
+            PlayerCtr.controlView = self.customPlayerControlView;
+            NSLog(@"%@",PlayerCtr.controlView);
+            PlayerCtr.muted = YES;//静音播放
+            [PlayerCtr setPlayerDidToEnd:^(id<ZFPlayerMediaPlayback>  _Nonnull asset) {
+                @strongify(self)
+                [self.avPlayerManager replay];//设置循环播放
+            }];
+        }
+        
+        if (objc_getAssociatedObject(self, UIView_ZFPlayer_ijkPlayerManager)) {
+            @weakify(self)
+            PlayerCtr = [[ZFPlayerController alloc] initWithPlayerManager:self.ijkPlayerManager
+                                                            containerView:self];
+            PlayerCtr.controlView = self.customPlayerControlView;
+            NSLog(@"%@",PlayerCtr.controlView);
+            PlayerCtr.muted = YES;//静音播放
+            [PlayerCtr setPlayerDidToEnd:^(id<ZFPlayerMediaPlayback>  _Nonnull asset) {
+                @strongify(self)
+                [self.ijkPlayerManager replay];//设置循环播放
+            }];
+        }
         
         objc_setAssociatedObject(self,
-                                 UIView_ZFPlayer_player,
-                                 Player,
+                                 UIView_ZFPlayer_playerCtr,
+                                 PlayerCtr,
                                  OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }return Player;
+    }return PlayerCtr;
 }
 
--(void)setPlayer:(ZFPlayerController *)player{
+-(void)setPlayerCtr:(ZFPlayerController *)playerCtr{
     objc_setAssociatedObject(self,
-                             UIView_ZFPlayer_player,
-                             player,
+                             UIView_ZFPlayer_playerCtr,
+                             playerCtr,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-#pragma mark —— @property(nonatomic,strong,nullable)ZFAVPlayerManager *playerManager;
--(ZFAVPlayerManager *)playerManager{
-    ZFAVPlayerManager *PlayerManager = objc_getAssociatedObject(self, UIView_ZFPlayer_playerManager);
-    if (!PlayerManager) {
-        PlayerManager = ZFAVPlayerManager.new;
-        PlayerManager.shouldAutoPlay = YES;
+#pragma mark —— @property(nonatomic,strong,nullable)ZFAVPlayerManager *avPlayerManager;//默认不支持FLV流视频格式的
+-(ZFAVPlayerManager *)avPlayerManager{
+    ZFAVPlayerManager *AVPlayerManager = objc_getAssociatedObject(self, UIView_ZFPlayer_avPlayerManager);
+    if (!AVPlayerManager) {
+        AVPlayerManager = ZFAVPlayerManager.new;
+        AVPlayerManager.shouldAutoPlay = YES;
         
 //        {//可用
 //            NSString *str = @"https://www.apple.com/105/media/us/iphone-x/2017/01df5b43-28e4-4848-bf20-490c34a926a7/films/feature/iphone-x-feature-tpl-cc-us-20170912_1280x720h.mp4";//苹果官方给出的测试地址；都可用
@@ -78,16 +100,34 @@ static char *UIView_ZFPlayer_customPlayerControlView = "UIView_ZFPlayer_customPl
 //        }
         
         objc_setAssociatedObject(self,
-                                 UIView_ZFPlayer_playerManager,
-                                 PlayerManager,
+                                 UIView_ZFPlayer_avPlayerManager,
+                                 AVPlayerManager,
                                  OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }return PlayerManager;
+    }return AVPlayerManager;
 }
 
--(void)setPlayerManager:(ZFAVPlayerManager *)playerManager{
+-(void)setAvPlayerManager:(ZFAVPlayerManager *)avPlayerManager{
     objc_setAssociatedObject(self,
-                             UIView_ZFPlayer_playerManager,
-                             playerManager,
+                             UIView_ZFPlayer_avPlayerManager,
+                             avPlayerManager,
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+#pragma mark —— @property(nonatomic,strong,nullable)ZFIJKPlayerManager *ijkPlayerManager;//ZFPlayer的作者告诉我：如果要兼容FLV流视频格式请用这个
+-(ZFIJKPlayerManager *)ijkPlayerManager{
+    ZFIJKPlayerManager *IJKPlayerManager = objc_getAssociatedObject(self, UIView_ZFPlayer_ijkPlayerManager);
+    if (!IJKPlayerManager) {
+        IJKPlayerManager = ZFIJKPlayerManager.new;
+        objc_setAssociatedObject(self,
+                                 UIView_ZFPlayer_ijkPlayerManager,
+                                 IJKPlayerManager,
+                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }return IJKPlayerManager;
+}
+
+-(void)setIjkPlayerManager:(ZFIJKPlayerManager *)ijkPlayerManager{
+    objc_setAssociatedObject(self,
+                             UIView_ZFPlayer_ijkPlayerManager,
+                             ijkPlayerManager,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 #pragma mark —— @property(nonatomic,strong,nullable)CustomZFPlayerControlView *customPlayerControlView;

@@ -6,7 +6,6 @@
 //
 
 #import "UIViewController+JPImageresizerView.h"
-#import <objc/runtime.h>
 
 @implementation UIViewController (JPImageresizerView)
 

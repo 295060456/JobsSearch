@@ -6,6 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoadingImage.h"
+#import "MacroDef_Cor.h"
+#import "BaseViewControllerProtocol.h"
+#import "UIButton+ImageTitleSpacing.h"
 
 #if __has_include(<GKNavigationBar/GKNavigationBar.h>)
 #import <GKNavigationBar/GKNavigationBar.h>
@@ -13,9 +17,11 @@
 #import "GKNavigationBar.h"
 #endif
 
-#import "BaseViewControllerProtocol.h"
-#import "UIButton+ImageTitleSpacing.h"
-#import "LoadingImage.h"
+#if __has_include(<ReactiveObjC/ReactiveObjC.h>)
+#import <ReactiveObjC/ReactiveObjC.h>
+#else
+#import "ReactiveObjC.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

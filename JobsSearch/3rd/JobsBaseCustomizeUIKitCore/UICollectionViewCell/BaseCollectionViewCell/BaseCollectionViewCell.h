@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MacroDef_Func.h"
 #import "BaseCellProtocol.h"
 #import "UICollectionViewCell+ShakeAnimation.h"
 

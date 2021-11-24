@@ -1,7 +1,9 @@
 #import <UIKit/UIKit.h>
+#import <objc/runtime.h>
 #import "NSObject+RichText.h"
 #import "UITextField+Extend.h"
 #import "LoadingImage.h"
+#import "MacroDef_Cor.h"
 
 typedef NS_ENUM(NSUInteger, PlaceHolderAlignment){
     PlaceHolderAlignmentLeft,// 左对齐 默认

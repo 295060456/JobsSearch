@@ -7,7 +7,6 @@
 //
 
 #import "NSObject+Random.h"
-#import <ImageIO/CGImageSource.h>
 
 @implementation NSObject (Random)
 

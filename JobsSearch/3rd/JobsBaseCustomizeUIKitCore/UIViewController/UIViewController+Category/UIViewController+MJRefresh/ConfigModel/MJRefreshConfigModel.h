@@ -6,7 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "LoadingImage.h"
+#import "MacroDef_Cor.h"
 /**
  MJRefreshStateIdle,   //   普通闲置状态
  MJRefreshStatePulling,   //   松开就可以进行刷新的状态

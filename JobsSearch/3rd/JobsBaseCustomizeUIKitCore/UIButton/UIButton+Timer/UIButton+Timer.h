@@ -13,6 +13,12 @@
 #import "ButtonTimerDefStructure.h"
 #import "ButtonTimerConfigModel.h"
 
+#if __has_include(<ReactiveObjC/ReactiveObjC.h>)
+#import <ReactiveObjC/ReactiveObjC.h>
+#else
+#import "ReactiveObjC.h"
+#endif
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (Timer)

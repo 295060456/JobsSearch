@@ -7,7 +7,6 @@
 //
 
 #import "UIImage+SYS.h"
-#import <objc/message.h>
 
 @implementation UIImage (SYS)
 

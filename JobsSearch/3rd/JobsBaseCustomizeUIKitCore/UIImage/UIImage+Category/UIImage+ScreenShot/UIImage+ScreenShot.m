@@ -31,13 +31,41 @@
     UIGraphicsEndImageContext();
     return image;
 }
+
++(UIImage *)getLanuchScreenShot{
+    NSString *name = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchStoryboardName"];
+    if(name == nil){
+        return nil;
+    }
+    UIViewController *vc = [[UIStoryboard storyboardWithName:name bundle:nil] instantiateInitialViewController];
+    if(vc){
+        UIView * view = vc.view;
+        UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        view.frame = window.bounds;
+        [window addSubview:view];
+        [window layoutIfNeeded];
+        UIImage *image = [UIImage getCurrentViewShot:view];
+        window = nil;
+        return image;
+    }
+    return nil;
+}
+
 /** 获取某个view 上的截图 */
 +(UIImage *)getCurrentViewShot:(UIView *)view{
-    CGSize size = view.frame.size;
+    if (CGRectIsEmpty(view.frame)) {
+        return nil;
+    }
+    CGSize size = view.bounds.size;
     CGFloat scale = [UIScreen mainScreen].scale;
     UIGraphicsBeginImageContextWithOptions(size,
-                                           YES,
+                                           NO,
                                            scale);
+//    if ([view respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)]) {
+//        [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
+//    }else{
+//        [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+//    }
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

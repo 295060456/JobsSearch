@@ -14,6 +14,9 @@
 #endif
 
 #import "UIView+Measure.h"
+#import "MacroDef_Cor.h"
+#import "MacroDef_App.h"
+#import "MacroDef_Size.h"
 
 NS_ASSUME_NONNULL_BEGIN
 /// 用于实现右下角的字符数量监控

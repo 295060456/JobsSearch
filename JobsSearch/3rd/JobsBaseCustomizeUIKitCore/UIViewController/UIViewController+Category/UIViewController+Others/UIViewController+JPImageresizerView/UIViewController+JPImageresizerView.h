@@ -6,7 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <objc/runtime.h>
+#import "AABlock.h"
+
+#if __has_include(<JPImageresizerView/JPImageresizerView.h>)
+#import <JPImageresizerView/JPImageresizerView.h>
+#else
 #import "JPImageresizerView.h"
+#endif
 
 typedef enum : NSInteger {
     JPImageresizerConfigureType_1 = 0,//默认配置裁剪图片/GIF（UIImage）

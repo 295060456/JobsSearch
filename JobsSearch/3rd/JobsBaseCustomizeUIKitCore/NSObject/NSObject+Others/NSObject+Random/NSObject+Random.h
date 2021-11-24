@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <ImageIO/CGImageSource.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

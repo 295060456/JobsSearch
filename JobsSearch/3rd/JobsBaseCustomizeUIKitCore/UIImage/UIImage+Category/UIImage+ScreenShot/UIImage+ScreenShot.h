@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MacroDef_Func.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(UIImage *)getCurrentScrollviewShot:(UIScrollView *)scrollview;
 /** 获取某个 范围内的 截图 */
 +(UIImage *)getCurrentInnerViewShot:(UIView *)innerView atFrame:(CGRect)rect;
+
++(UIImage *)getLanuchScreenShot;
 
 @end
 

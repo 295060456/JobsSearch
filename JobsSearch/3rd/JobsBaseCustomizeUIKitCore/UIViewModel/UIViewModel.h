@@ -6,6 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "MacroDef_App.h"
+#import "UIImage+Extras.h"
+#import "MacroDef_Cor.h"
+#import "MacroDef_App.h"
+#import "MacroDef_Size.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

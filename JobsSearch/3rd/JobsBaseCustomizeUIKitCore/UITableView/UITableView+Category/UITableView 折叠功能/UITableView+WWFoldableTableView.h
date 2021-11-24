@@ -8,6 +8,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MacroDef_SysWarning.h"
 
 @interface UITableView (WWFoldableTableView)
 

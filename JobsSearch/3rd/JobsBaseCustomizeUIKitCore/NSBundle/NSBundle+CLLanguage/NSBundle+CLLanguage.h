@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
+#import "CLLanguageManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

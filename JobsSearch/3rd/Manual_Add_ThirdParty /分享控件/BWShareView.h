@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MacroDef_Func.h"
+
 @class BWItemModel;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -16,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 UICollectionViewDelegate
 ,UICollectionViewDataSource
 >
+
 @property(nonatomic,strong)UICollectionViewFlowLayout *layout;
 @property(nonatomic,strong)UICollectionViewFlowLayout *layout2;
 
