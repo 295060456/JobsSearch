@@ -50,7 +50,7 @@
                 }
                 
                 [NSObject methodName:config.alertBtnActionArr[i]
-                              target:config.funcInWhere
+                           targetObj:config.funcInWhere
                          paramarrays:parameters];
             }];
             [alertController addAction:okAction];
@@ -103,7 +103,7 @@
                 }
                 
                 [NSObject methodName:config.alertBtnActionArr[i]
-                              target:config.funcInWhere
+                           targetObj:config.funcInWhere
                          paramarrays:parameters];
             }];
             [alertController addAction:okAction];

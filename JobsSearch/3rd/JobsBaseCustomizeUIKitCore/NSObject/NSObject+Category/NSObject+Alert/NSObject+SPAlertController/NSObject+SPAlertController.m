@@ -114,7 +114,7 @@
                 }
                 
                 [NSObject methodName:config.alertBtnActionArr[i]
-                              target:config.funcInWhere
+                           targetObj:config.funcInWhere
                          paramarrays:parameters];
             }];
             
