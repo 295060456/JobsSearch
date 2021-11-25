@@ -16,6 +16,7 @@
 #import "MacroDef_Func.h"
 #import "MacroDef_SysWarning.h"
 #import "FileFolderHandleTool.h"
+#import "LoadingImage.h"
 
 #import "WHToast+DDToast.h"
 

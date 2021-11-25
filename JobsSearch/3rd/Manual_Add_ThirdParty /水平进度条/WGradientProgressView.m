@@ -12,7 +12,6 @@
 
 @property(nonatomic,strong)UILabel *titleLab;
 @property(nonatomic,strong)UIImageView *imgV;
-@property(nonatomic,assign)BOOL isOK;
 
 @end
 
@@ -26,13 +25,13 @@
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    if (!self.isOK) {
+    static dispatch_once_t dispatchOnce;
+    dispatch_once(&dispatchOnce, ^{
         if (self.img) {
             self.imgV.alpha = 1;
         }
         self.titleLab.alpha = 1;
-        self.isOK = YES;
-    }
+    });
 }
 #pragma mark —— lazyLoad
 -(UILabel *)titleLab{

@@ -11,7 +11,6 @@
 @interface JobsMagicTextField ()
 
 @property(nonatomic,strong)UILabel *placeholderAnimationLbl;
-@property(nonatomic,assign)BOOL isOK;
 
 @end
 
@@ -34,10 +33,10 @@
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    if (!self.isOK) {
+    static dispatch_once_t dispatchOnce;
+    dispatch_once(&dispatchOnce, ^{
         self.placeholderAnimationLbl.alpha = 1;
-        self.isOK = YES;
-    }
+    });
 }
 
 -(void)changeEditing{

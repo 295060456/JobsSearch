@@ -158,6 +158,12 @@ dispatch_async(queue, block);\
 }
 ///获取主队列
 #define GET_MAIN_QUEUE_ASYNC(block) GET_QUEUE_ASYNC(dispatch_get_main_queue(), block)
+///执行只需运行一次的线程安全代码
+#define dispatch_once_t_Func(Selector)\
+static dispatch_once_t dispatchOnce;\
+dispatch_once(&dispatchOnce, ^{\
+    Selector\
+});\
 
 #pragma mark ======================================== 时间相关 ========================================
 /** 时间间隔 */

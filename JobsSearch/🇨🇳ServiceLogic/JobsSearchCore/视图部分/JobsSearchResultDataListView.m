@@ -20,7 +20,6 @@ UITableViewDelegate
 >
 
 @property(nonatomic,copy)MKDataBlock jobsSearchResultDataListViewBlock;
-@property(nonatomic,assign)BOOL isOK;
 
 @end
 
@@ -38,10 +37,10 @@ UITableViewDelegate
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    if (!self.isOK) {
+    static dispatch_once_t dispatchOnce;
+    dispatch_once(&dispatchOnce, ^{
         self.tableView.alpha = 1;
-        self.isOK = YES;
-    }
+    });
 }
 #pragma mark —————————— UIScrollViewDelegate ——————————
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{

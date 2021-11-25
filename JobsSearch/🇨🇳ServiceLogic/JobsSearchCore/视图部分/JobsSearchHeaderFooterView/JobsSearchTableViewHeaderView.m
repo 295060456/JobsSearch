@@ -9,7 +9,6 @@
 
 @interface JobsSearchTableViewHeaderView()
 
-@property(nonatomic,assign)BOOL isOK;
 @property(nonatomic,strong)UIButton *delBtn;
 @property(nonatomic,copy)MKDataBlock jobsSearchHoveringHeaderViewBlock;
 
@@ -30,13 +29,13 @@
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    if (!self.isOK) {
+    static dispatch_once_t dispatchOnce;
+    dispatch_once(&dispatchOnce, ^{
         self.titleLab.alpha = 1;
         if (self.isShowDelBtn) {
             self.delBtn.alpha = 1;
         }
-        self.isOK = YES;
-    }
+    });
 }
 
 -(void)actionBlockJobsSearchHoveringHeaderView:(MKDataBlock _Nullable)jobsSearchHoveringHeaderViewBlock{

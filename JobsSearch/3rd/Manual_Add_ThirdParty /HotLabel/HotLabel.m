@@ -16,7 +16,6 @@
 
 @property(nonatomic,strong)UIScrollView *scrollView;//所有控件加在这上面
 @property(nonatomic,strong)NSMutableArray <UIButton *>*btnMutArr;
-@property(nonatomic,assign)BOOL isOK;
 @property(nonatomic,assign)CGFloat X;//如果加载了下一个btn，那么直到他的尾巴处的x值，记住包含两边固有的间距进行比较
 @property(nonatomic,assign)int row;
 @property(nonatomic,assign)CGFloat hotLabelHeight;
@@ -33,11 +32,11 @@
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    if (!self.isOK) {
+    static dispatch_once_t dispatchOnce;
+    dispatch_once(&dispatchOnce, ^{
         self.scrollView.alpha = 1;
         [self createHotLabelWithArr:self.titleArr];
-        self.isOK = YES;
-    }
+    });
 }
 
 -(void)createHotLabelWithArr:(NSArray <NSString *>*)dataArr{

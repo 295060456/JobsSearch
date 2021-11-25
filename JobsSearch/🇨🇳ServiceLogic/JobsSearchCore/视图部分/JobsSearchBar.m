@@ -9,7 +9,6 @@
 
 @interface JobsSearchBar ()
 
-@property(nonatomic,assign)BOOL isOK;
 @property(nonatomic,copy)TwoDataBlock jobsSearchBarBlock;
 @property(nonatomic,strong)UIImageView *imgView;
 
@@ -25,11 +24,11 @@
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    if (!self.isOK) {
+    static dispatch_once_t dispatchOnce;
+    dispatch_once(&dispatchOnce, ^{
         self.textField.alpha = 1;
         self.cancelBtn.alpha = 1;
-        self.isOK = YES;
-    }
+    });
 }
 #pragma mark —— UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑
