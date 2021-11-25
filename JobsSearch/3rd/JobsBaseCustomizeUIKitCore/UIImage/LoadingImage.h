@@ -14,23 +14,23 @@
 static inline UIImage *__nullable KIMG(NSString *__nonnull imgName){
     return [UIImage imageNamed:imgName];
 }
-/// 读取自定义Bundle文件里面的图片 输出 NSString *
-/// @param bundle_folderName 如果在此自定义Bundle下还存在文件夹，不管几级都在此写，属于中间路径，函数内部是进行字符串拼接
-/// @param pathForResource 自定义 Bundle 的名字
-/// @param fileFullNameWithSuffix 目标图片的名字，如果不带后缀名，函数内部直接强制加 @".png" 后缀
+/// 根据参数输出系统需要的文件路径
 /// @param blueFolderName 如果资源存在于蓝色文件夹下则blueFolderName是蓝色文件夹的名字，如果资源位于黄色文件夹下则不填
-static inline NSString *__nullable pathForBuddleIMG(NSString *__nullable blueFolderName,
-                                                    NSString *__nullable pathForResource,
-                                                    NSString *__nullable bundle_folderName,
-                                                    NSString *__nonnull fileFullNameWithSuffix){
+/// @param pathForResource  自定义 Bundle 的名字
+/// @param bundle_folderName 如果在此自定义Bundle下还存在文件夹，不管几级都在此写，属于中间路径，函数内部是进行字符串拼接
+/// @param ofType 文件类型（后缀名）
+static inline NSString *__nullable getPathForResource(NSString *__nullable blueFolderName,
+                                                      NSString *__nullable pathForResource,
+                                                      NSString *__nullable bundle_folderName,
+                                                      NSString *__nullable ofType){
     NSString *filePath = nil;
     if ([NSString isNullString:blueFolderName]) {//最外层是黄色文件夹
-        filePath = [[NSBundle mainBundle] pathForResource:pathForResource
-                                                   ofType:@"bundle"];
+        filePath = [NSBundle.mainBundle pathForResource:pathForResource
+                                                    ofType:ofType];
     }else{//最外层是蓝色文件夹
-        filePath = [[NSBundle mainBundle] pathForResource:pathForResource
-                                                   ofType:@"bundle"
-                                              inDirectory:blueFolderName];//蓝色文件夹下是bundle
+        filePath = [NSBundle.mainBundle pathForResource:pathForResource
+                                                 ofType:ofType
+                                            inDirectory:blueFolderName];//蓝色文件夹下是bundle
         
         if ([NSString isNullString:filePath]) {//蓝色文件夹下是蓝色文件夹
             filePath = blueFolderName;
@@ -40,6 +40,20 @@ static inline NSString *__nullable pathForBuddleIMG(NSString *__nullable blueFol
     if (![NSString isNullString:bundle_folderName]) {
         filePath = [filePath stringByAppendingPathComponent:bundle_folderName];
     }
+    
+    return filePath;
+}
+/// 读取自定义Bundle文件里面的图片 输出 NSString *
+/// @param bundle_folderName 如果在此自定义Bundle下还存在文件夹，不管几级都在此写，属于中间路径，函数内部是进行字符串拼接
+/// @param pathForResource 自定义 Bundle 的名字
+/// @param fileFullNameWithSuffix 目标图片的名字，如果不带后缀名，函数内部直接强制加 @".png" 后缀
+/// @param blueFolderName 如果资源存在于蓝色文件夹下则blueFolderName是蓝色文件夹的名字，如果资源位于黄色文件夹下则不填
+static inline NSString *__nullable pathForBuddleIMG(NSString *__nullable blueFolderName,
+                                                    NSString *__nullable pathForResource,
+                                                    NSString *__nullable bundle_folderName,
+                                                    NSString *__nonnull fileFullNameWithSuffix){
+    
+    NSString *filePath = getPathForResource(blueFolderName,pathForResource,bundle_folderName,@"bundle");
     
     //容错处理
     if (![fileFullNameWithSuffix containsString:@"."]) {//如果是其他格式资源请自带后缀名
@@ -76,7 +90,11 @@ static inline NSData *__nullable KDataByBuddleIMG(NSString *__nonnull pathForRes
     NSData *imgData = [NSData dataWithContentsOfFile:filePath];
     return imgData;
 }
-
+/// 获取Bundle下的图片
+/// @param pathForResource 自定义 Bundle 的名字
+/// @param blueFolderName 如果资源存在于蓝色文件夹下则blueFolderName是蓝色文件夹的名字，如果资源位于黄色文件夹下则不填
+/// @param bundle_folderName 如果在此自定义Bundle下还存在文件夹，不管几级都在此写，属于中间路径，函数内部是进行字符串拼接
+/// @param fileFullNameWithSuffix 目标图片的名字，如果不带后缀名，函数内部直接强制加 @".png" 后缀
 static inline UIImage *__nullable KIMGByDataFromBuddleIMG(NSString *__nonnull pathForResource,
                                                           NSString *__nullable blueFolderName,
                                                           NSString *__nullable bundle_folderName,

@@ -15,6 +15,7 @@
 #import "AABlock.h"
 #import "MacroDef_Func.h"
 #import "MacroDef_SysWarning.h"
+#import "FileFolderHandleTool.h"
 
 #import "WHToast+DDToast.h"
 
@@ -125,18 +126,27 @@ SEL _Nullable selectorBlocks(callback _Nonnull ,id _Nullable target);
 /// 判断本程序是否存在某个类
 +(BOOL)judgementAppExistClassWithName:(nullable NSString *)className;
 /// 判断某个实例对象是否存在某个【不带参数的方法】
-+(BOOL)judgementObj:(nullable id)obj existMethodWithName:(nullable NSString *)methodName;
++(BOOL)judgementObj:(nonnull NSObject *)obj
+existMethodWithName:(nullable NSString *)methodName;
 /// 如果某个实例对象存在某个【不带参数的方法】，则对其调用执行
 /// @param targetObj 靶点，方法在哪里
 /// @param methodName 不带参数的方法名
-+(void)targetObj:(nullable id)targetObj callingMethodWithName:(nullable NSString *)methodName;
-/// NSInvocation的使用，方法多参数传递
-/// @param methodName 方法名
-/// @param targetObj 靶点，方法在哪里
-/// @param paramarrays 参数数组
++(void)targetObj:(nonnull NSObject *)targetObj
+callingMethodWithName:(nullable NSString *)methodName;
+/// 如果某个实例对象存在某个【不带参数的方法】，则对其调用执行
+/// @param methodName 不带参数的方法名
+-(void)callingMethodWithName:(nullable NSString *)methodName;
+/// 使用 dispatch_once 来执行只需运行一次的线程安全代码
+/// @param methodName 需要执行的方法的方法名（不带参数）
+-(void)dispatchOnceInvokingWithMethodName:(nullable NSString *)methodName;
+
 +(void)methodName:(NSString *_Nonnull)methodName
-        targetObj:(id _Nonnull)targetObj
+        targetObj:(NSObject * _Nonnull)targetObj
       paramarrays:(NSArray *_Nullable)paramarrays;
+/// 读取本地的plist文件到内存  【 plist ——> NSDictionary * 】
+/// @param fileName Plist文件名
+-(nullable NSDictionary *)readLocalPlistWithFileName:(nullable NSString *)fileName;
+
 @end
 /**
  通知的写法：示例代码

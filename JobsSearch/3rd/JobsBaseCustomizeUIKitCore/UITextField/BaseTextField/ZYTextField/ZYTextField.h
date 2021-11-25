@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, PlaceHolderAlignment){
 @property(nonatomic,strong)UIFont *ZYplaceholderLabelFont_1;//占位文字字体 失去焦点
 @property(nonatomic,strong)UIFont *ZYplaceholderLabelFont_2;//占位文字字体 聚焦状态
 
-@property(nonatomic,assign)CGFloat offset;
+@property(nonatomic,assign)CGFloat offset;//光标的起始距离距离控件左边的差值
 @property(nonatomic,assign)CGFloat leftViewOffsetX;
 @property(nonatomic,assign)CGFloat rightViewOffsetX;
 @property(nonatomic,assign)PlaceHolderAlignment placeHolderAlignment;//PlaceHolder的位置

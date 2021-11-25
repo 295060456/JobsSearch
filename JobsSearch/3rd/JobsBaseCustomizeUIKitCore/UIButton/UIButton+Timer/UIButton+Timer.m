@@ -88,6 +88,7 @@ static char *UIButton_CountDownBtn_timerFinishBlock = "UIButton_CountDownBtn_tim
 
 -(void)setTitleLabelConfigEnd{
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    self.titleLabel.numberOfLines = 1;//不加这一句会有UI异常
     self.titleLabel.font = self.btnTimerConfig.titleLabelEndFont;
     [self setTitleColor:self.btnTimerConfig.titleEndCor
                forState:UIControlStateNormal];

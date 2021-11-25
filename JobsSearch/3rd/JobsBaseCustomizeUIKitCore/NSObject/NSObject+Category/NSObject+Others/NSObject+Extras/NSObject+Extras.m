@@ -352,18 +352,43 @@ static void selectorImp(id self,
     return NSClassFromString(className);
 }
 /// 判断某个实例对象是否存在某个【不带参数的方法】
-+(BOOL)judgementObj:(id)obj existMethodWithName:(nullable NSString *)methodName{
-    SEL sel = NSSelectorFromString(methodName);
-    return [obj respondsToSelector:sel];
++(BOOL)judgementObj:(nonnull NSObject *)obj
+existMethodWithName:(nullable NSString *)methodName{
+    if (!obj || [NSString isNullString:methodName]) {
+        return NO;
+    }else{
+        SEL sel = NSSelectorFromString(methodName);
+        return [obj respondsToSelector:sel];
+    }
 }
 /// 如果某个实例对象存在某个【不带参数的方法】，则对其调用执行
 /// @param targetObj 靶点，方法在哪里
 /// @param methodName 不带参数的方法名
-+(void)targetObj:(nullable id)targetObj
++(void)targetObj:(nonnull NSObject *)targetObj
 callingMethodWithName:(nullable NSString *)methodName{
     if ([NSObject judgementObj:targetObj existMethodWithName:methodName]) {
         SuppressWarcPerformSelectorLeaksWarning([targetObj performSelector:NSSelectorFromString(methodName)]);
+    }else{
+        NSLog(@"目标类：%@,不存在此方法：%@,请检查",targetObj.class,methodName);
     }
+}
+/// 如果某个实例对象存在某个【不带参数的方法】，则对其调用执行
+/// @param methodName 不带参数的方法名
+-(void)callingMethodWithName:(nullable NSString *)methodName{
+    if ([NSObject judgementObj:self existMethodWithName:methodName]) {
+        SuppressWarcPerformSelectorLeaksWarning([self performSelector:NSSelectorFromString(methodName)]);
+    }else{
+        NSLog(@"目标类：%@,不存在此方法：%@,请检查",self.class,methodName);
+    }
+}
+/// 使用 dispatch_once 来执行只需运行一次的线程安全代码
+/// @param methodName 需要执行的方法的方法名（不带参数）
+-(void)dispatchOnceInvokingWithMethodName:(nullable NSString *)methodName{
+    static dispatch_once_t dispatchOnce;
+    @jobs_weakify(self)
+    dispatch_once(&dispatchOnce, ^{
+        [weak_self callingMethodWithName:methodName];
+    });
 }
 /// NSInvocation的使用，方法多参数传递
 /// @param methodName 方法名
@@ -421,6 +446,18 @@ callingMethodWithName:(nullable NSString *)methodName{
         [invocation getReturnValue:&result];
         NSLog(@"result = %@",result);
     }
+}
+/// 读取本地的plist文件到内存  【 plist ——> NSDictionary * 】
+/// @param fileName Plist文件名
+-(nullable NSDictionary *)readLocalPlistWithFileName:(nullable NSString *)fileName{
+    NSString *filePath = getPathForResource(nil,
+                                            fileName,
+                                            nil,
+                                            @"plist");
+    
+    if ([FileFolderHandleTool isExistsAtPath:filePath]) {
+        return [[NSDictionary alloc] initWithContentsOfFile:filePath];
+    }return nil;
 }
 #pragma mark —— @property(nonatomic,strong)NSIndexPath *_indexPath;
 -(NSIndexPath *)_indexPath{
