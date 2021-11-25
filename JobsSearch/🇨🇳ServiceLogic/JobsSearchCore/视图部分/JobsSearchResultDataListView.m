@@ -25,6 +25,7 @@ UITableViewDelegate
 
 @implementation JobsSearchResultDataListView
 
+static dispatch_once_t dispatchOnce;
 -(void)dealloc{
     NSLog(@"Running self.class = %@;NSStringFromSelector(_cmd) = '%@';__FUNCTION__ = %s", self.class, NSStringFromSelector(_cmd),__FUNCTION__);
 }
@@ -32,12 +33,12 @@ UITableViewDelegate
 -(instancetype)init{
     if (self = [super init]) {
         self.backgroundColor = kBlueColor;
+        dispatchOnce = 0;
     }return self;
 }
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    static dispatch_once_t dispatchOnce;
     dispatch_once(&dispatchOnce, ^{
         self.tableView.alpha = 1;
     });

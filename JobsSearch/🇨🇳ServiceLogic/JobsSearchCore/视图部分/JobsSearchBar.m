@@ -16,15 +16,16 @@
 
 @implementation JobsSearchBar
 
+static dispatch_once_t dispatchOnce;
 - (instancetype)init{
     if (self = [super init]) {
         self.backgroundColor = HEXCOLOR(0xF9F9F9);
+        dispatchOnce = 0;
     }return self;
 }
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    static dispatch_once_t dispatchOnce;
     dispatch_once(&dispatchOnce, ^{
         self.textField.alpha = 1;
         self.cancelBtn.alpha = 1;

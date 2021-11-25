@@ -29,28 +29,28 @@
 }
 
 -(void)richElementsInCellWithModel:(id _Nullable)model{
-    self.hotLabel.titleArr = (NSArray *)model;
+    self.jobsHotLabel.viewModelDataArr = (NSArray *)model;
 }
 //点击了哪个Btn？
 -(void)actionBlockJobsSearchShowHotwordsTBVCell:(MKDataBlock _Nullable)jobsSearchShowHotwordsTBVCellBlock{
     self.jobsSearchShowHotwordsTBVCellBlock = jobsSearchShowHotwordsTBVCellBlock;
 }
 #pragma mark —— lazyLoad
--(HotLabel *)hotLabel{
-    if (!_hotLabel) {
-        _hotLabel = HotLabel.new;
+-(JobsHotLabel *)jobsHotLabel{
+    if (!_jobsHotLabel) {
+        _jobsHotLabel = JobsHotLabel.new;
         @weakify(self)
-        [_hotLabel actionBlockHotLabel:^(id data) {//点击了哪个Btn？
+        [_jobsHotLabel actionViewBlock:^(id data) {//点击了哪个Btn？
             @strongify(self)
             if (self.jobsSearchShowHotwordsTBVCellBlock) {
                 self.jobsSearchShowHotwordsTBVCellBlock(data);
             }
         }];
-        [self.contentView addSubview:_hotLabel];
-        [_hotLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.contentView addSubview:_jobsHotLabel];
+        [_jobsHotLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.contentView);
         }];
-    }return _hotLabel;
+    }return _jobsHotLabel;
 }
 
 @end

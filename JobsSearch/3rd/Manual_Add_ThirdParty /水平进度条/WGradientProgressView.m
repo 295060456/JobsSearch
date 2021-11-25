@@ -17,15 +17,15 @@
 
 @implementation WGradientProgressView
 
+static dispatch_once_t dispatchOnce;
 - (instancetype)init{
     if (self = [super init]) {
-        
+        dispatchOnce = 0;
     }return self;
 }
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    static dispatch_once_t dispatchOnce;
     dispatch_once(&dispatchOnce, ^{
         if (self.img) {
             self.imgV.alpha = 1;
@@ -65,7 +65,7 @@
 
 -(UIFont *)titleFont{
     if (!_titleFont) {
-        _titleFont = [UIFont systemFontOfSize:6.5
+        _titleFont = [UIFont systemFontOfSize:KWidth(6.5)
                                        weight:UIFontWeightRegular];
     }return _titleFont;
 }

@@ -158,6 +158,7 @@
 		84B3BD8D274D26A20005DF73 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84B3BD05274D26A10005DF73 /* ZYTextField.bundle */; };
 		84B3BD8E274D26A20005DF73 /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BD06274D26A10005DF73 /* ZYTextField+HistoryDataList.m */; };
 		84B3BD8F274D26A20005DF73 /* JobsMagicTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BD0A274D26A10005DF73 /* JobsMagicTextField.m */; };
+		84F8F45E274FC73F00834D67 /* JobsHotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F8F45D274FC73F00834D67 /* JobsHotLabel.m */; };
 		B1FCA2073A31A5D9A5BF4BB0 /* Pods_JobsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D6A2C60AC3B0FBF5A86E3 /* Pods_JobsSearch.framework */; };
 		C5226BF925875982004447FB /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226BF425875982004447FB /* BWShareView.m */; };
 		C5226BFA25875982004447FB /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5226BF625875982004447FB /* BWItemCollectionViewCell.m */; };
@@ -271,7 +272,6 @@
 		C5B47F782529F7B300387F47 /* 放大镜.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B47F772529F7B300387F47 /* 放大镜.png */; };
 		C5B47F832529F82A00387F47 /* 时钟.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B47F822529F82A00387F47 /* 时钟.png */; };
 		C5B47F952529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */; };
-		C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B47F9D252A006F00387F47 /* HotLabel.m */; };
 		C5B8552E252B448200890A66 /* 扫描.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B8552D252B448200890A66 /* 扫描.png */; };
 		C5BA3AF5252C64F90039530C /* 假数据.json in Resources */ = {isa = PBXBuildFile; fileRef = C5BA3AF4252C64F90039530C /* 假数据.json */; };
 		C5C2444C2541A72F00CB55F5 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C2444B2541A72F00CB55F5 /* TableViewCell.m */; };
@@ -642,6 +642,8 @@
 		84B3BD08274D26A10005DF73 /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
 		84B3BD0A274D26A10005DF73 /* JobsMagicTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsMagicTextField.m; sourceTree = "<group>"; };
 		84B3BD0B274D26A10005DF73 /* JobsMagicTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsMagicTextField.h; sourceTree = "<group>"; };
+		84F8F45C274FC73F00834D67 /* JobsHotLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsHotLabel.h; sourceTree = "<group>"; };
+		84F8F45D274FC73F00834D67 /* JobsHotLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsHotLabel.m; sourceTree = "<group>"; };
 		A4C4C01C7F0007273D14CECE /* Pods-JobsSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-JobsSearchUITests/Pods-JobsSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A84ECDA1DF94EA70BE0F2CA4 /* Pods-JobsSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsSearch.debug.xcconfig"; path = "Target Support Files/Pods-JobsSearch/Pods-JobsSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		C51F86FF2608616100953C10 /* MacroDef_AppDeviceScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_AppDeviceScreenSize.h; sourceTree = "<group>"; };
@@ -871,8 +873,6 @@
 		C5B47F822529F82A00387F47 /* 时钟.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "时钟.png"; sourceTree = "<group>"; };
 		C5B47F932529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsSearchShowHotwordsTBVCell.h; sourceTree = "<group>"; };
 		C5B47F942529FB1C00387F47 /* JobsSearchShowHotwordsTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsSearchShowHotwordsTBVCell.m; sourceTree = "<group>"; };
-		C5B47F9C252A006F00387F47 /* HotLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotLabel.h; sourceTree = "<group>"; };
-		C5B47F9D252A006F00387F47 /* HotLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotLabel.m; sourceTree = "<group>"; };
 		C5B8552D252B448200890A66 /* 扫描.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描.png"; sourceTree = "<group>"; };
 		C5BA3AF4252C64F90039530C /* 假数据.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "假数据.json"; sourceTree = "<group>"; };
 		C5C2444A2541A72F00CB55F5 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -2644,6 +2644,15 @@
 			path = JobsMagicTextField;
 			sourceTree = "<group>";
 		};
+		84F8F45B274FC73F00834D67 /* JobsHotLabel */ = {
+			isa = PBXGroup;
+			children = (
+				84F8F45C274FC73F00834D67 /* JobsHotLabel.h */,
+				84F8F45D274FC73F00834D67 /* JobsHotLabel.m */,
+			);
+			path = JobsHotLabel;
+			sourceTree = "<group>";
+		};
 		C51F86FE2608616100953C10 /* 苹果产品尺寸 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3223,6 +3232,7 @@
 		C59B9A222526E3780039B485 /* Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				84F8F45B274FC73F00834D67 /* JobsHotLabel */,
 				C58D6B55263044F300966F5F /* 播放器控制层 */,
 				C59B9C182526E3F00039B485 /* 电影倒计时特效 */,
 				C59B9BDE2526E3F00039B485 /* 分享控件 */,
@@ -3237,7 +3247,6 @@
 				C59B9BF02526E3F00039B485 /* 文件夹操作 */,
 				848A3DCC2747903800D8F240 /* App国际化 */,
 				C5542B8A25F32498002D1CA6 /* CheckMemFreeVC */,
-				C5B47F872529FA1500387F47 /* HotLabel */,
 				C59B9C452526E3F10039B485 /* LBLaunchImageAd. */,
 				C59B9BE62526E3F00039B485 /* Suspend */,
 				C59B9C302526E3F10039B485 /* TimerManager */,
@@ -3549,15 +3558,6 @@
 				C5A442D025ABFBDE000F0CD2 /* WHToast+DDToast.m */,
 			);
 			path = WHToast;
-			sourceTree = "<group>";
-		};
-		C5B47F872529FA1500387F47 /* HotLabel */ = {
-			isa = PBXGroup;
-			children = (
-				C5B47F9C252A006F00387F47 /* HotLabel.h */,
-				C5B47F9D252A006F00387F47 /* HotLabel.m */,
-			);
-			path = HotLabel;
 			sourceTree = "<group>";
 		};
 		C5B47F912529FAAD00387F47 /* 热门搜索Cell */ = {
@@ -4123,6 +4123,7 @@
 				84B3BD7B274D26A20005DF73 /* NSObject+Shake.m in Sources */,
 				84B3BD43274D26A10005DF73 /* BaseCollectionView.m in Sources */,
 				C5C64FAF259DF87100FD2F99 /* ECPrivacyCheckBluetooth.m in Sources */,
+				84F8F45E274FC73F00834D67 /* JobsHotLabel.m in Sources */,
 				84B3BD3E274D26A10005DF73 /* UITextView+IndicateWordLimit.m in Sources */,
 				84B3BD4B274D26A10005DF73 /* NSString+Extras.m in Sources */,
 				C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */,
@@ -4275,7 +4276,6 @@
 				84B3BD4F274D26A10005DF73 /* UIViewController+XLBubbleTransition.m in Sources */,
 				84B3BD0F274D26A10005DF73 /* UIImage+YBGIF.m in Sources */,
 				84B3BD66274D26A10005DF73 /* UITableView+WWFoldableTableView.m in Sources */,
-				C5B47F9E252A006F00387F47 /* HotLabel.m in Sources */,
 				84B3BD7C274D26A20005DF73 /* NSObject+Random.m in Sources */,
 				84B3BD4D274D26A10005DF73 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */,
 				84B3BD10274D26A10005DF73 /* UIImage+Tailor.m in Sources */,

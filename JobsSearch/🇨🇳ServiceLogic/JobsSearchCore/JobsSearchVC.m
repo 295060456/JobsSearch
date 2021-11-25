@@ -78,7 +78,7 @@ UITableViewDataSource
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(hotLabelNotification:)
-                                                 name:@"HotLabel"
+                                                 name:@"JobsHotLabel"
                                                object:nil];
 }
 

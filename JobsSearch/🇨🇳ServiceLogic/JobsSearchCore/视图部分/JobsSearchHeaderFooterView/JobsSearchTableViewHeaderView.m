@@ -16,6 +16,7 @@
 
 @implementation JobsSearchTableViewHeaderView
 
+static dispatch_once_t dispatchOnce;
 -(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
                               withData:(id)data{
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
@@ -23,13 +24,13 @@
             NSString *str = (NSString *)data;
             self.titleLab.text = str;
             self.contentView.backgroundColor = kWhiteColor;
+            dispatchOnce = 0;
         }
     }return self;
 }
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    static dispatch_once_t dispatchOnce;
     dispatch_once(&dispatchOnce, ^{
         self.titleLab.alpha = 1;
         if (self.isShowDelBtn) {

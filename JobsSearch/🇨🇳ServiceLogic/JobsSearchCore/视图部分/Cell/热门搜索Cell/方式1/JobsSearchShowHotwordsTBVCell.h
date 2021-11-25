@@ -6,13 +6,13 @@
 //
 
 #import "UITableViewCell+Margin.h"
-#import "HotLabel.h"
+#import "JobsHotLabel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JobsSearchShowHotwordsTBVCell : UITableViewCell
 
-@property(nonatomic,strong)HotLabel *hotLabel;
+@property(nonatomic,strong)JobsHotLabel *jobsHotLabel;
 @property(nonatomic,assign)long indexRow;
 @property(nonatomic,assign)long indexSection;
 
