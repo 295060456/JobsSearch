@@ -25,6 +25,8 @@
 		84588E912743F7E200119697 /* Chip.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E882743F7E200119697 /* Chip.xcassets */; };
 		84588E922743F7E200119697 /* UserInfo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E892743F7E200119697 /* UserInfo.xcassets */; };
 		84589D7B2744C30A00119697 /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84589D7A2744C30A00119697 /* bundle */; };
+		846AFF862750D4630091554A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF7E2750D4630091554A /* Localizable.strings */; };
+		846AFF872750D4630091554A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF802750D4630091554A /* InfoPlist.strings */; };
 		848A3DD62747903800D8F240 /* CLLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A3DD32747903800D8F240 /* CLLanguageManager.m */; };
 		84B3BD0C274D26A10005DF73 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BB72274D26A00005DF73 /* UIImage+ScreenShot.m */; };
 		84B3BD0D274D26A10005DF73 /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BB75274D26A00005DF73 /* UIImage+Extras.m */; };
@@ -382,6 +384,12 @@
 		84588E882743F7E200119697 /* Chip.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chip.xcassets; sourceTree = "<group>"; };
 		84588E892743F7E200119697 /* UserInfo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserInfo.xcassets; sourceTree = "<group>"; };
 		84589D7A2744C30A00119697 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
+		846AFF7F2750D4630091554A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		846AFF812750D4630091554A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		846AFF822750D4630091554A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		846AFF832750D4630091554A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		846AFF842750D4630091554A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		846AFF852750D4630091554A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		848A3DCD2747903800D8F240 /* App国际化.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "App国际化.md"; sourceTree = "<group>"; };
 		848A3DCF2747903800D8F240 /* AppInternationalizationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInternationalizationVC.m; sourceTree = "<group>"; };
 		848A3DD02747903800D8F240 /* AppInternationalizationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInternationalizationVC.h; sourceTree = "<group>"; };
@@ -1087,6 +1095,15 @@
 			children = (
 			);
 			path = "外部字体";
+			sourceTree = "<group>";
+		};
+		846AFF7D2750D4630091554A /* 国际化桥接数据 */ = {
+			isa = PBXGroup;
+			children = (
+				846AFF7E2750D4630091554A /* Localizable.strings */,
+				846AFF802750D4630091554A /* InfoPlist.strings */,
+			);
+			path = "国际化桥接数据";
 			sourceTree = "<group>";
 		};
 		848A3DCC2747903800D8F240 /* App国际化 */ = {
@@ -3725,6 +3742,7 @@
 		C5D3353725763F8A0019C56E /* 资源文件管理 */ = {
 			isa = PBXGroup;
 			children = (
+				846AFF7D2750D4630091554A /* 国际化桥接数据 */,
 				845897762744BFC400119697 /* 外部字体 */,
 				84588E252743F70600119697 /* 图片资源文件 */,
 				84588E242743F6FE00119697 /* 视频资源文件 */,
@@ -3857,6 +3875,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"en-GB",
 			);
 			mainGroup = C59B98CE2526DE260039B485;
 			productRefGroup = C59B98D82526DE260039B485 /* Products */;
@@ -3888,6 +3908,7 @@
 				C5710870253C09E3005B3A0C /* home_priase_animation.json in Resources */,
 				84588E902743F7E200119697 /* Message.xcassets in Resources */,
 				C5710874253C09E3005B3A0C /* green_lottie_tab_news.json in Resources */,
+				846AFF862750D4630091554A /* Localizable.strings in Resources */,
 				C5C64FD2259DF87100FD2F99 /* 相机@2x.png in Resources */,
 				C5710878253C09E3005B3A0C /* tab_me_animate.json in Resources */,
 				84B3BD22274D26A10005DF73 /* Sound.wav in Resources */,
@@ -3898,6 +3919,7 @@
 				84B3BD16274D26A10005DF73 /* WhiteRightArrow@2x.png in Resources */,
 				C571087B253C09E3005B3A0C /* 社区.json in Resources */,
 				C5710884253C09E3005B3A0C /* tab_message_animate.json in Resources */,
+				846AFF872750D4630091554A /* InfoPlist.strings in Resources */,
 				84589D7B2744C30A00119697 /* bundle in Resources */,
 				C5B47F782529F7B300387F47 /* 放大镜.png in Resources */,
 				C5C64FBC259DF87100FD2F99 /* 媒体与AppleMusic@2x.png in Resources */,
@@ -4346,6 +4368,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		846AFF7E2750D4630091554A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846AFF7F2750D4630091554A /* zh-Hans */,
+				846AFF822750D4630091554A /* en */,
+				846AFF842750D4630091554A /* en-GB */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		846AFF802750D4630091554A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846AFF812750D4630091554A /* zh-Hans */,
+				846AFF832750D4630091554A /* en */,
+				846AFF852750D4630091554A /* en-GB */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		C59B98E32526DE260039B485 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

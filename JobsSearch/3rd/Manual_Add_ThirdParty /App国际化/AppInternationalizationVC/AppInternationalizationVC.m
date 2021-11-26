@@ -55,6 +55,16 @@
         vc.tabBarItem.title = self.tabBarTitleMutArr[i];
     }
 }
+/// 刷新本界面，且2秒后退出
+-(void)refreshAndBack{
+    // 刷新本界面
+    if (self.dataMutArr.count) {
+        _dataMutArr = nil;
+    }
+    [self.tableView reloadData];
+    @jobs_weakify(self)
+    DispathdDelaySth(2.0, [weak_self backBtnClickEvent:nil]);
+}
 /// 设置App语言环境
 -(void)setAppLanguageAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
@@ -112,7 +122,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self setAppLanguageAtIndexPath:indexPath];
     [self changeTabBarItemTitle:indexPath];
     
-    [self backBtnClickEvent:nil];
+    [self refreshAndBack];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
@@ -232,9 +242,11 @@ viewForHeaderInSection:(NSInteger)section{
 -(NSMutableArray<NSString *> *)dataMutArr{
     if (!_dataMutArr) {
         _dataMutArr = NSMutableArray.array;
-        [_dataMutArr addObject:NSLocalizedString(@"跟随系统", nil)];
-        [_dataMutArr addObject:NSLocalizedString(@"中文", nil)];
-        [_dataMutArr addObject:NSLocalizedString(@"英文", nil)];
+        
+        [_dataMutArr addObject:Internationalization(@"By System")];
+        [_dataMutArr addObject:Internationalization(@"Chinese")];
+        [_dataMutArr addObject:Internationalization(@"English")];
+        
     }return _dataMutArr;
 }
 
@@ -242,11 +254,11 @@ viewForHeaderInSection:(NSInteger)section{
     if (!_tabBarTitleMutArr) {
         _tabBarTitleMutArr = NSMutableArray.array;
         
-        [_tabBarTitleMutArr addObject:[NSObject localStringWithKey:@"Home"]];
-        [_tabBarTitleMutArr addObject:[NSObject localStringWithKey:@"XiMa"]];
-        [_tabBarTitleMutArr addObject:[NSObject localStringWithKey:@"Recharge"]];
-        [_tabBarTitleMutArr addObject:[NSObject localStringWithKey:@"CustomerService"]];
-        [_tabBarTitleMutArr addObject:[NSObject localStringWithKey:@"MemberCenter"]];
+        [_tabBarTitleMutArr addObject:Internationalization(@"Home")];
+        [_tabBarTitleMutArr addObject:Internationalization(@"XiMa")];
+        [_tabBarTitleMutArr addObject:Internationalization(@"Recharge")];
+        [_tabBarTitleMutArr addObject:Internationalization(@"CustomerService")];
+        [_tabBarTitleMutArr addObject:Internationalization(@"MemberCenter")];
         
     }return _tabBarTitleMutArr;
 }

@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  Casino
+
+  Created by Jobs on 2021/11/18.
+  
+*/
+
+"By System" = "跟随系统";
+"Chinese" = "中文";
+"English" = "英文";
+
+"Home" = "首页";
+"XiMa" = "洗码";
+"Recharge" = "充值";
+"CustomerService" = "客服";
+"MemberCenter" = "会员中心";
+
+"B\na\nc\nk\nT\no\nL\no\ng\ni\nn" = "返\n回\n登\n录";
+"L\no\ng\ni\nn" = "新\n用\n户\n注\n册";
+"Forgot code" = "忘记密码";
+"Back to HomePage" = "返回首页";
+"Save the user name" = "保存用户名";
+"Register" = "注册";
+"Login" = "登录";
+"Customer service" = "人工客服";
+"Get" = "获取验证码";
+
+"User" = "用户名";
+"Code" = "密码";
+"Confirm" = "确认密码";
+"telephone" = "手机号码";
+"Auth code" = "手机验证码";
+
+//"20"

@@ -166,6 +166,12 @@ static dispatch_once_t dispatchOnce;\
 dispatch_once(&dispatchOnce, ^{\
     Selector\
 });\
+///主线程上延迟执行某个事件
+#define DispathdDelaySth(Second,Sth)\
+dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(Second * NSEC_PER_SEC));\
+dispatch_after(delayTime, dispatch_get_main_queue(), ^{\
+    Sth;\
+});\
 
 #pragma mark ======================================== 时间相关 ========================================
 /** 时间间隔 */

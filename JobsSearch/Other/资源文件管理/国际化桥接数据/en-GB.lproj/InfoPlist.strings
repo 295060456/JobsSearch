@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Casino
+
+  Created by Jobs on 2021/11/18.
+  
+*/
+
+// Localizable App Name是App在英语环境环境下显示的名称
+CFBundleDisplayName = "Localizable App Name";
