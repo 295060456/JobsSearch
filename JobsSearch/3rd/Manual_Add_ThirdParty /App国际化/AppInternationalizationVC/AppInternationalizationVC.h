@@ -6,6 +6,9 @@
 //
 
 #import "BaseViewController.h"
+#import "UIViewController+BackBtn.h"
+#import "UITableViewCell+BaseCellProtocol.h"
+#import "UITableViewHeaderFooterView+BaseTableViewHeaderFooterViewProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

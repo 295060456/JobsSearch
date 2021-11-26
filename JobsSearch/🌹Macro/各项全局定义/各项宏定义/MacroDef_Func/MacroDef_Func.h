@@ -66,6 +66,8 @@ static inline id getSceneDelegate(){
         sceneDelegate = UIApplication.sharedApplication.connectedScenes.allObjects.firstObject.delegate;
     }return sceneDelegate;
 }
+#pragma mark ======================================== 国际化 ================================================
+#define Internationalization(text)  [NSObject localStringWithKey:text]
 
 #pragma mark ======================================== 字体 ================================================
 #define kFontSize(x) [UIFont systemFontOfSize:x weight:UIFontWeightRegular]

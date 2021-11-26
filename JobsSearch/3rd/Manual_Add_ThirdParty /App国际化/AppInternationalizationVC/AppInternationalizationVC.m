@@ -7,9 +7,6 @@
 
 #import "AppInternationalizationVC.h"
 
-#import "UITableViewCell+BaseCellProtocol.h"
-#import "UITableViewHeaderFooterView+BaseTableViewHeaderFooterViewProtocol.h"
-
 @interface AppInternationalizationVC ()
 // UI
 @property(nonatomic,strong)UITableView *tableView;
@@ -114,6 +111,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [self setAppLanguageAtIndexPath:indexPath];
     [self changeTabBarItemTitle:indexPath];
+    
+    [self backBtnClickEvent:nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
