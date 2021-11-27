@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   Casino
 
@@ -9,6 +9,7 @@
 "By System" = "跟随系统";
 "Chinese" = "中文";
 "English" = "英文";
+"App language switch" = "App国际化之应用内部切换语言";
 
 "Home" = "首页";
 "XiMa" = "洗码";
@@ -31,5 +32,12 @@
 "Confirm" = "确认密码";
 "telephone" = "手机号码";
 "Auth code" = "手机验证码";
+"Play Record" = "洗码记录";
+"My Play" = "我的洗码";
+"Draw it" = "领取洗码";
 
-//"20"
+"Sec" = "秒";
+"Online customer service" = "在线客服";
+"You can also contact customer service through the following ways" = "您还可以通过以下方式联系客服";
+"Later" = "后获取";
+"zaixiankefu_en" = "zaixiankefu_zh-Hans";

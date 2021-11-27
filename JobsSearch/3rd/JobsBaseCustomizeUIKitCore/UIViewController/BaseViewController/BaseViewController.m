@@ -7,7 +7,7 @@
 
 #import "BaseViewController.h"
 
-@interface BaseViewController ()<UIGestureRecognizerDelegate>
+@interface BaseViewController ()
 
 @end
 
@@ -36,11 +36,17 @@
 -(void)loadView{
     [super loadView];
     self.currentPage = 1;
-    self.view.backgroundColor = kWhiteColor;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (self.backgroundImage) {
+        self.bgImageView.alpha = 1;
+    }else{
+        self.view.backgroundColor = kWhiteColor;
+    }
+    
     /*
      *  #pragma mark —— 全局配置 GKNavigationBar -(void)makeGKNavigationBarConfigure
      */
@@ -102,8 +108,9 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
 -(UIImageView *)bgImageView{
     if (!_bgImageView) {
         _bgImageView = UIImageView.new;
-        _bgImageView.userInteractionEnabled = YES;
         _bgImageView.frame = self.view.bounds;
+        _bgImageView.image = self.backgroundImage;
+        _bgImageView.userInteractionEnabled = YES;
         self.view = _bgImageView;
     }return _bgImageView;
 }

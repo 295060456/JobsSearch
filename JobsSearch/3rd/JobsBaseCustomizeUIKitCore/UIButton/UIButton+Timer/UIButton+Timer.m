@@ -167,7 +167,7 @@ static char *UIButton_CountDownBtn_timerFinishBlock = "UIButton_CountDownBtn_tim
         // 显示的时间格式
         switch (self.btnTimerConfig.showTimeType) {
             case ShowTimeType_SS:{
-                self.btnTimerConfig.formatTimeStr = [NSString stringWithFormat:@"%ld秒",(long)currentTime];
+                self.btnTimerConfig.formatTimeStr = [NSString stringWithFormat:@"%ld %@",(long)currentTime,Internationalization(@"Sec")];
             }break;
             case ShowTimeType_MMSS:{
                 self.btnTimerConfig.formatTimeStr = [NSObject getMMSSFromStr:[NSString stringWithFormat:@"%ld",(long)currentTime]];

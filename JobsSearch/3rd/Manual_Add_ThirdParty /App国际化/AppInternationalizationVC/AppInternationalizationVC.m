@@ -26,12 +26,12 @@
 
 -(void)loadView{
     [super loadView];
+    self.setupNavigationBarHidden = YES;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.setupNavigationBarHidden = YES;
-    self.gk_navTitle = @"App国际化之应用内部切换语言";
+    self.gk_navTitle = Internationalization(@"App language switch");
     self.gk_navTitleColor = kBlueColor;
     self.tableView.alpha = 1;
 }
@@ -133,7 +133,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [UITableViewCell cellWithTableView:tableView];
-    
+    /// 适配iOS 13夜间模式/深色外观(Dark Mode)
+    cell.backgroundColor = [UIColor xy_createWithLightColor:UIColor.whiteColor darkColor:UIColor.whiteColor];
     UIViewModel *viewModel = UIViewModel.new;
     viewModel.text = self.dataMutArr[indexPath.row];
     

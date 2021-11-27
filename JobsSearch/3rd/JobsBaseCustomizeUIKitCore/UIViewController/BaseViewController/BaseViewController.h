@@ -13,6 +13,12 @@
 #import "ReactiveObjC.h"
 #endif
 
+//#if __has_include(<Masonry/Masonry.h>)
+//#import <Masonry/Masonry.h>
+//#else
+//#import "Masonry.h"
+//#endif
+
 #if __has_include(<MJRefresh/MJRefresh.h>)
 #import <MJRefresh/MJRefresh.h>
 #else
@@ -36,9 +42,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseViewController : UIViewController<BaseViewProtocol>
+@interface BaseViewController : UIViewController
+<
+BaseViewProtocol
+,UIGestureRecognizerDelegate
+>
 
-#pragma mark —— RACSignal
 @property(nonatomic,strong)RACSignal *reqSignal;
 @property(nonatomic,assign)BOOL setupNavigationBarHidden;
 @property(nonatomic,strong)UIImageView *bgImageView;

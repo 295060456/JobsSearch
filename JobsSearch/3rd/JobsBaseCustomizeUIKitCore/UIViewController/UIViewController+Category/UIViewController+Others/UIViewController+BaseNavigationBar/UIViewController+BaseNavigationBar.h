@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <objc/runtime.h>
 #import "BaseNavigationBar.h"
 #import "MacroDef_Cor.h"
 #import "MacroDef_Size.h"
@@ -31,7 +32,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIBarButtonItem *leftBarButtonItem_back;
 @property(nonatomic,strong)UINavigationItem *navItem;
 @property(nonatomic,strong)UIColor *bgCor;
-@property(nonatomic,strong)UIImage *backgroundImage;
 @property(nonatomic,assign)CGFloat navigationBarHeight;
 @property(nonatomic,assign)BOOL isHiddenNavigationBar;
 @property(nonatomic,assign)BOOL isBarTranslucent;

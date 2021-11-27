@@ -22,6 +22,7 @@ def develop_sdk
 end
 
 def func
+  pod 'XYColorOC' # https://github.com/RayJiang16/XYColor 适配iOS 13夜间模式/深色外观(Dark Mode)
   pod 'JobsGlobleDef'
 #  pod 'FBRetainCycleDetector' # https://github.com/facebook/FBRetainCycleDetector
   pod 'DoraemonKit' # https://github.com/didi/DoraemonKit 滴滴打车出的工具

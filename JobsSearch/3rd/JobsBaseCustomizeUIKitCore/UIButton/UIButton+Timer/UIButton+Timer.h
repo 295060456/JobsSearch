@@ -12,6 +12,7 @@
 #import "TimerManager.h"//时间管理
 #import "ButtonTimerDefStructure.h"
 #import "ButtonTimerConfigModel.h"
+#import "MacroDef_Func.h"
 
 #if __has_include(<ReactiveObjC/ReactiveObjC.h>)
 #import <ReactiveObjC/ReactiveObjC.h>

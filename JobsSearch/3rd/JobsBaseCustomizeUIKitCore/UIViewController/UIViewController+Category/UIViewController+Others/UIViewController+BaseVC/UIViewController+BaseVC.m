@@ -6,17 +6,19 @@
 //
 
 #import "UIViewController+BaseVC.h"
-#import <objc/runtime.h>
 
 @implementation UIViewController (BaseVC)
 
 static char *UIViewController_BaseVC_requestParams = "UIViewController_BaseVC_requestParams";
 static char *UIViewController_BaseVC_pushOrPresent = "UIViewController_BaseVC_pushOrPresent";
 static char *UIViewController_BaseVC_rootVC = "UIViewController_BaseVC_rootVC";
+static char *UIViewController_BaseVC_backgroundImage = "UIViewController_BaseVC_backgroundImage";
 
 @dynamic requestParams;
 @dynamic pushOrPresent;
 @dynamic rootVC;
+@dynamic backgroundImage;
+
 #pragma mark —— present
 /// 简洁版强制present展现一个控制器页面【不需要正向传参】
 -(void)comingToPresentVC:(UIViewController *)viewController{
@@ -159,6 +161,24 @@ static char *UIViewController_BaseVC_rootVC = "UIViewController_BaseVC_rootVC";
     objc_setAssociatedObject(self,
                              UIViewController_BaseVC_rootVC,
                              rootVC,
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+#pragma mark —— @property(nonatomic,strong)UIImage *backgroundImage;
+-(UIImage *)backgroundImage{
+    UIImage *BackgroundImage = objc_getAssociatedObject(self, UIViewController_BaseVC_backgroundImage);
+    if (!BackgroundImage) {
+        BackgroundImage = KIMG(@"启动页SLOGAN");
+        objc_setAssociatedObject(self,
+                                 UIViewController_BaseVC_backgroundImage,
+                                 BackgroundImage,
+                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }return BackgroundImage;
+}
+
+-(void)setBackgroundImage:(UIImage *)backgroundImage{
+    objc_setAssociatedObject(self,
+                             UIViewController_BaseVC_backgroundImage,
+                             backgroundImage,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 

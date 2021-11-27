@@ -6,14 +6,12 @@
 //
 
 #import "UIViewController+BaseNavigationBar.h"
-#import <objc/runtime.h>
 
 @implementation UIViewController (BaseNavigationBar)
 
 static char *UIViewController_NavigationBar_navigationBar = "UIViewController_NavigationBar_navigationBar";
 static char *UIViewController_NavigationBar_leftBarButtonItem_back = "UIViewController_NavigationBar_leftBarButtonItem_back";
 static char *UIViewController_NavigationBar_bgCor = "UIViewController_NavigationBar_bgCor";
-static char *UIViewController_NavigationBar_backgroundImage = "UIViewController_NavigationBar_backgroundImage";
 static char *UIViewController_NavigationBar_navigationBarHeight = "UIViewController_NavigationBar_navigationBarHeight";
 static char *UIViewController_NavigationBar_isHiddenNavigationBar = "UIViewController_NavigationBar_isHiddenNavigationBar";
 static char *UIViewController_NavigationBar_isBarTranslucent = "UIViewController_NavigationBar_isBarTranslucent";
@@ -32,7 +30,6 @@ static char *UIViewController_NavigationBar_shadowCor = "UIViewController_Naviga
 @dynamic navigationBarHeight;
 @dynamic isHiddenNavigationBar;
 @dynamic isBarTranslucent;
-@dynamic backgroundImage;
 @dynamic shadow;
 @dynamic navItem;
 @dynamic foregroundColorAttributeNameCor;
@@ -133,24 +130,6 @@ static char *UIViewController_NavigationBar_shadowCor = "UIViewController_Naviga
     objc_setAssociatedObject(self,
                              UIViewController_NavigationBar_bgCor,
                              bgCor,
-                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-#pragma mark —— @property(nonatomic,strong)UIImage *backgroundImage;
--(UIImage *)backgroundImage{
-    UIImage *BackgroundImage = objc_getAssociatedObject(self, UIViewController_NavigationBar_backgroundImage);
-    if (!BackgroundImage) {
-        BackgroundImage = KIMG(@"启动页SLOGAN");
-        objc_setAssociatedObject(self,
-                                 UIViewController_NavigationBar_backgroundImage,
-                                 BackgroundImage,
-                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }return BackgroundImage;
-}
-
--(void)setBackgroundImage:(UIImage *)backgroundImage{
-    objc_setAssociatedObject(self,
-                             UIViewController_NavigationBar_backgroundImage,
-                             backgroundImage,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 #pragma mark —— @property(nonatomic,assign)CGFloat navigationBarHeight;
