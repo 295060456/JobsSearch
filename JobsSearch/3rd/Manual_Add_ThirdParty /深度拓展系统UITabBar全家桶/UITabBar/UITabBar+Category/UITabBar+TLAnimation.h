@@ -8,6 +8,9 @@
 //  如果是深度自定义 TabBarItem 请自行修改UITabBar+TLAnimation.m中的方法进行适配
 
 #import <UIKit/UIKit.h>
+#import <objc/runtime.h>
+#import "UITabBarItem+TLAnimation.h"
+#import "TLAnimationProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

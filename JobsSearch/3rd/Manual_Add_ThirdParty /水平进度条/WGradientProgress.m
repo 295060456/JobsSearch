@@ -7,7 +7,6 @@
 //
 
 #import "WGradientProgress.h"
-#import "NSTimerManager.h"
 
 @interface WGradientProgress ()
 
@@ -80,11 +79,6 @@
     [self.nsTimerManager_length nsTimeDestroy];
     //UI归位
     self.gradLayer.frame = CGRectZero;
-}
-///旋转 以适应不同方向的直线型进度条
--(void)setTransformRadians:(CGFloat)transformRadians{
-    [UIView setTransform:transformRadians
-                 forView:self];
 }
 
 -(void)hide{

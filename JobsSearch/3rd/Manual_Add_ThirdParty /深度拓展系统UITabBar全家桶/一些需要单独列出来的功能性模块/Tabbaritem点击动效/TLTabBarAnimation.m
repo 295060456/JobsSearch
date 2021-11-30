@@ -74,7 +74,7 @@ void playFireworksAnimation(UIView *view,
     explosionLayer.name = @"emitterLayer";
     explosionLayer.emitterShape = kCAEmitterLayerCircle;
     explosionLayer.emitterMode = kCAEmitterLayerOutline;
-    explosionLayer.emitterSize = CGSizeMake(25, 0);
+    explosionLayer.emitterSize = CGSizeMake(KWidth(25), 0);
     explosionLayer.emitterCells = @[explosionCell];
     explosionLayer.renderMode = kCAEmitterLayerOldestFirst;
     explosionLayer.masksToBounds = NO;
@@ -99,7 +99,7 @@ void playFireworksAnimation(UIView *view,
     chargeLayer.name = @"emitterLayer";
     chargeLayer.emitterShape = kCAEmitterLayerCircle;
     chargeLayer.emitterMode = kCAEmitterLayerOutline;
-    chargeLayer.emitterSize = CGSizeMake(25, 0);
+    chargeLayer.emitterSize = CGSizeMake(KWidth(25), 0);
     chargeLayer.emitterCells = @[chargeCell];
     chargeLayer.renderMode = kCAEmitterLayerOldestFirst;
     chargeLayer.masksToBounds = NO;

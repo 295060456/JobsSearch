@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-#import "TabbarVC.h"
+#import "JobsTabbarVC.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability-new"
@@ -16,7 +16,7 @@
 
 @property(readonly,strong)NSPersistentCloudKitContainer *persistentContainer;
 @property(nonatomic,assign)BOOL allowOrentitaionRotation;
-@property(nonatomic,strong)TabbarVC *tabBarVC;
+@property(nonatomic,strong)JobsTabbarVC *tabBarVC;
 @property(nonatomic,strong)UIWindow *window;//仅仅为了iOS 13 版本向下兼容而存在
 
 +(instancetype)sharedInstance;

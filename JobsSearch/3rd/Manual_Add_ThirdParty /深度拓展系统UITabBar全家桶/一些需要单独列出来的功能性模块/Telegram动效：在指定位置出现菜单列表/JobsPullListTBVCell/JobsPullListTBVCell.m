@@ -22,18 +22,9 @@
     }return cell;
 }
 
--(void)richElementsInCellWithModel:(id _Nullable)model{
-    if ([model isKindOfClass:NSDictionary.class]) {
-        NSDictionary *dic = (NSDictionary *)model;
-        NSArray *titleArr = dic[@"titleMutArr"];
-        NSArray *imagesArr = dic[@"imagesMutArr"];
-        if (titleArr.count) {
-            self.textLabel.text = titleArr[self.indexRow];
-        }
-        if (imagesArr.count) {
-            self.imageView.image = imagesArr[self.indexRow];
-        }
-    }
+-(void)richElementsInCellWithModel:(UIViewModel *_Nullable)model{
+    self.textLabel.text = model.text;
+    self.imageView.image = model.image;
 }
 
 @end

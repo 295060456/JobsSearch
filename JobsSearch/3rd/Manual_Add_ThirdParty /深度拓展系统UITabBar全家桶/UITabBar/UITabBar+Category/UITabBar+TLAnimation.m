@@ -7,10 +7,6 @@
 //
 
 #import "UITabBar+TLAnimation.h"
-#import "UITabBarItem+TLAnimation.h"
-#import "TLAnimationProtocol.h"
-
-#import <objc/runtime.h>
 
 @implementation UITabBar (TLAnimation)
 

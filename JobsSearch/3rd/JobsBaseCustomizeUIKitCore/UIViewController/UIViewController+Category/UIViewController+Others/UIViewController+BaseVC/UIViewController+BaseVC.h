@@ -10,6 +10,7 @@
 #import "BaseViewControllerProtocol.h"
 #import "AABlock.h"
 #import "MacroDef_Func.h"
+#import "LoadingImage.h"
 
 #if __has_include(<ReactiveObjC/RACmetamacros.h>)
 #import <ReactiveObjC/RACmetamacros.h>

@@ -1,43 +1,41 @@
 //
-//  TabbarVC.m
+//  JobsTabbarVC.m
 //  TabbarItemLottie
 //
 //  Created by 叶晓倩 on 2017/9/29.
 //  Copyright © 2017年 xa. All rights reserved.
 //
 
-#import "TabbarVC.h"
-#import "UIView+Gesture.h"
-#import "TLTabBarAnimation.h"
-#import "UITabBar+TLAnimation.h"
-#import "UITabBarItem+TLAnimation.h"
-#import "TransitionController.h"
-#import "TransitionAnimation.h"
+#import "JobsTabbarVC.h"
 
-TabbarVC *tabBarVC;
-
-@interface TabbarVC ()
-<
-UITabBarControllerDelegate,
-UIGestureRecognizerDelegate
->
-
+@interface JobsTabbarVC ()
+// Data
+@property(nonatomic,assign)BOOL isOpenPPBadge;
 @property(nonatomic,assign)NSInteger subViewControllerCount;
 @property(nonatomic,strong)NSMutableArray <UIView *>*UITabBarButtonMutArr;//UITabBarButton 是内部类 直接获取不到，需要间接获取
 
+@property(nonatomic,strong)NSMutableArray <UIViewModel *>*pullListAutoSizeViewMutArr;
+
 @end
 
-@implementation TabbarVC
+@implementation JobsTabbarVC
 
 - (void)dealloc{
     NSLog(@"Running self.class = %@;NSStringFromSelector(_cmd) = '%@';__FUNCTION__ = %s", self.class, NSStringFromSelector(_cmd),__FUNCTION__);
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+static JobsTabbarVC *static_tabbarVC = nil;
++(instancetype)sharedInstance{
+    @synchronized(self){
+        if (!static_tabbarVC) {
+            static_tabbarVC = JobsTabbarVC.new;
+        }
+    }return static_tabbarVC;
+}
 
 -(void)loadView{
     [super loadView];
     self.delegate = self;
-    tabBarVC = self;
     self.isOpenScrollTabbar = YES;
 }
 
@@ -52,6 +50,8 @@ UIGestureRecognizerDelegate
             [weakSelf panGestureRecognizer:(UIPanGestureRecognizer *)data3];
         };
     }
+    
+    self.myTabBar.alpha = 1;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -64,38 +64,47 @@ UIGestureRecognizerDelegate
 -(void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
 
-    self.myTabBar.height += self.myTabBar.offsetHeight;
+    self.myTabBar.height += self.myTabBar.customTabBarOffsetHeight;
     self.myTabBar.y = self.view.height - self.myTabBar.height;
-    
-    for (UITabBarItem *item in self.tabBar.items) {
-        if ([item.title isEqualToString:@"首页"]) {
-            [item pp_addBadgeWithText:@"919+"];
-#pragma mark —— 动画
-            [UIView animationAlert:item.badgeView];//图片从小放大
-            shakerAnimation(item.badgeView, 2, 20);//重力弹跳动画效果
-//            [UIView 视图上下一直来回跳动的动画:item.badgeView];
+
+//    [self ppBadge:YES];
+}
+// 开启/关闭 PPBadgeView的效果,至少在viewDidLayoutSubviews后有效
+-(void)ppBadge:(BOOL)open{
+    self.isOpenPPBadge = open;
+    if (open) {
+        for (UITabBarItem *item in self.tabBar.items) {
+            if ([item.title isEqualToString:@"首页"]) {
+                [item pp_addBadgeWithText:@"919+"];
+    #pragma mark —— 动画
+                [UIView animationAlert:item.badgeView];//图片从小放大
+                shakerAnimation(item.badgeView, 2, 20);//重力弹跳动画效果
+    //            [UIView 视图上下一直来回跳动的动画:item.badgeView];
+            }
         }
     }
 }
-
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-}
 #pragma mark —— 一些私有方法
+/// 判别是否有Lottie
+/// @param index index
+-(BOOL)judgeLottieWithIndex:(NSInteger)index{
+    JobsTabBarControllerConfig *config = (JobsTabBarControllerConfig *)self.tabBarControllerConfigMutArr[index];
+    return ![NSString isNullString:config.lottieName];
+}
+
 -(void)UISetting{
     for (int i = 0; i < self.tabBarControllerConfigMutArr.count; i++) {
-        TabBarControllerConfig *config = (TabBarControllerConfig *)self.tabBarControllerConfigMutArr[i];
-
-        
-        UIViewController *viewController = self.childMutArr[i];
-        //
-//        [self addLottieImage:viewController
-//                 lottieImage:config.lottieName];
-        
-        viewController.title = config.title;
-        viewController.tabBarItem = [[TabBarItem alloc] initWithConfig:config];
         
 //        viewController.view.backgroundColor = RandomColor;
+        JobsTabBarControllerConfig *config = (JobsTabBarControllerConfig *)self.tabBarControllerConfigMutArr[i];
+        // For Test
+//        if ([self judgeLottieWithIndex:i]) {
+//            [self addLottieImage:config.lottieName];// 有Lottie动画名，则优先创建Lottie动画
+//        }
+        
+        UIViewController *viewController = self.childMutArr[i];
+        viewController.title = config.title;
+        viewController.tabBarItem = [JobsTabBarItem.alloc initWithConfig:config];
         
         if (config.humpOffsetY != 0) {
             //一般的图片
@@ -107,7 +116,7 @@ UIGestureRecognizerDelegate
         }
 
         if (![viewController isKindOfClass:UINavigationController.class]) {//防止UIImagePickerController崩
-            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+            UINavigationController *nav = [UINavigationController.alloc initWithRootViewController:viewController];
             nav.title = config.title;
             [self.childMutArr replaceObjectAtIndex:i withObject:nav];//替换元素，每个VC加Navigation
         }
@@ -121,21 +130,21 @@ UIGestureRecognizerDelegate
             [self.UITabBarButtonMutArr addObject:subView];
         }
     }
-    
+    /// 根据config.lottieName 方法-config.lottieName:offsetY:lottieName:内部做了判空处理
     for (int i = 0; i < self.childMutArr.count; i++) {
-        TabBarControllerConfig *config = (TabBarControllerConfig *)self.tabBarControllerConfigMutArr[i];
-        if (![NSString isNullString:config.lottieName]) {
-            [self.tabBar addLottieImage:i
-                                offsetY:-config.humpOffsetY / 2
-                             lottieName:config.lottieName];
-        }
+        JobsTabBarControllerConfig *config = (JobsTabBarControllerConfig *)self.tabBarControllerConfigMutArr[i];
+        [self.tabBar addLottieImage:i
+                            offsetY:-config.humpOffsetY / 2
+                         lottieName:config.lottieName];
     }
     
-    //初始显示
+    //初始显示【具备Lottie播放条件才进行相关初始化操作】
     if (self.firstUI_selectedIndex < self.viewControllers.count) {
         self.selectedIndex = self.firstUI_selectedIndex;//初始显示哪个
-        [self lottieImagePlay:self.childMutArr[self.firstUI_selectedIndex]];
-        [self.tabBar animationLottieImage:self.firstUI_selectedIndex];
+        if ([self judgeLottieWithIndex:self.selectedIndex]) {
+            [self.childMutArr[self.firstUI_selectedIndex] lottieImagePlay];
+            [self.tabBar animationLottieImage:self.firstUI_selectedIndex];
+        }
     }
 }
 #pragma mark —— 手势事件
@@ -167,10 +176,13 @@ UIGestureRecognizerDelegate
 }
 
 -(void)长按手势做什么:(UILongPressGestureRecognizer *)longPressGR{
-    [NSObject feedbackGenerator];//震动反馈
+    
+    if (self.isFeedbackGenerator) {
+        [NSObject feedbackGenerator];//震动反馈
+    }
+    
     [JobsPullListAutoSizeView initWithTargetView:self.UITabBarButtonMutArr[longPressGR.view.tag]
-                                    imagesMutArr:nil
-                                     titleMutArr:[NSMutableArray arrayWithObjects:@"qqq",@"24r",nil]];
+                                      dataMutArr:self.pullListAutoSizeViewMutArr];
 }
 
 - (void)panGestureRecognizer:(UIPanGestureRecognizer *)pan{
@@ -188,8 +200,7 @@ UIGestureRecognizerDelegate
     CGPoint translation = [sender translationInView:self.view];
     if (translation.x > 0.f && self.selectedIndex > 0) {
         self.selectedIndex --;
-    }
-    else if (translation.x < 0.f && self.selectedIndex + 1 < self.viewControllers.count) {
+    }else if (translation.x < 0.f && self.selectedIndex + 1 < self.viewControllers.count) {
         self.selectedIndex ++;
     }
 }
@@ -202,57 +213,58 @@ UIGestureRecognizerDelegate
         subView.minimumPressDuration = 1;
         subView.target = self;
         subView.longPressGR.enabled = YES;
-        
 //        @weakify(self)
-        subView.callbackBlock = ^(id weakSelf, id arg, UIGestureRecognizer *data3) {
+        subView.callbackBlock = ^(id weakSelf,
+                                  id arg,
+                                  UIGestureRecognizer *data3) {
 //            @strongify(self)
             [weakSelf LZBTabBarItemLongPress:(UILongPressGestureRecognizer *)data3];
         };
     }
 }
-
--(void)addLottieImage:(UIViewController *)vc
-          lottieImage:(NSString *)lottieImage{
-    vc.view.backgroundColor = [UIColor lightGrayColor];
-
-    LOTAnimationView *lottieView = [LOTAnimationView animationNamed:lottieImage];
-    lottieView.frame = [UIScreen mainScreen].bounds;
-    lottieView.contentMode = UIViewContentModeScaleAspectFit;
-    lottieView.loopAnimation = YES;
-    lottieView.tag = 100;
-    [vc.view addSubview:lottieView];
-}
-
--(void)lottieImagePlay:(UIViewController *)vc{
-    LOTAnimationView *lottieView = (LOTAnimationView *)[vc.view viewWithTag:100];
-    if (!lottieView ||
-        ![lottieView isKindOfClass:LOTAnimationView.class]) {
-        return;
-    }
-    lottieView.animationProgress = 0;
-    [lottieView play];
-}
 #pragma mark —— UITabBarDelegate 监听TabBarItem点击事件
 - (void)tabBar:(UITabBar *)tabBar
  didSelectItem:(UITabBarItem *)item {
+
     if ([self.tabBar.items containsObject:item]) {
         NSInteger index = [self.tabBar.items indexOfObject:item];
         NSLog(@"当前点击：%ld",(long)index);
-        [self.tabBar animationLottieImage:(int)index];
-        [NSObject playSoundWithFileName:@"Sound.wav"];
-        [NSObject feedbackGenerator];
-        shakerAnimation(item.badgeView, 2, 20);//重力弹跳动画效果
-        [item pp_increase];
+        
+        if ([self judgeLottieWithIndex:self.selectedIndex]) {
+            [self.tabBar animationLottieImage:(int)index];
+        }
+        
+        if (self.isFeedbackGenerator) {
+            [NSObject feedbackGenerator];
+        }
+        
+        if (self.isPlaySound) {
+            [NSObject playSoundWithFileName:@"Sound.wav"];
+        }
 
-        UIView *UITabBarButton = self.UITabBarButtonMutArr[index];
-        [UIView animationAlert:UITabBarButton];//图片从小放大
+        if (self.isShakerAnimation) {
+            shakerAnimation(item.badgeView, 2, 20);//重力弹跳动画效果
+        }
+        
+        if (self.isOpenPPBadge) {
+            [item pp_increase];
+        }
+        
+        if (self.isAnimationAlert) {
+            UIView *UITabBarButton = self.UITabBarButtonMutArr[index];
+            [UIView animationAlert:UITabBarButton];//图片从小放大
+        }
     }
 }
 #pragma mark - UITabBarControllerDelegate
 - (BOOL)tabBarController:(UITabBarController *)tabBarController
 shouldSelectViewController:(UIViewController *)viewController {
-    [self lottieImagePlay:viewController];
-    return YES;
+    
+    NSInteger index = [self.childMutArr indexOfObject:viewController];
+    if ([viewController isKindOfClass:UIViewController.class] &&
+        [self judgeLottieWithIndex:index]) {
+        [viewController lottieImagePlay];
+    }return YES;
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController
@@ -283,12 +295,23 @@ shouldSelectViewController:(UIViewController *)viewController {
     }
 }
 #pragma mark —— lazyLoad
--(CustomTabBar *)myTabBar{
+-(JobsTabBar *)myTabBar{
     if (!_myTabBar) {
-        _myTabBar = [[CustomTabBar alloc] initWithBgImg:nil];
+        _myTabBar = JobsTabBar.new;
+        _myTabBar.backgroundImage = KIMG(@"底部导航栏背景(刘海屏)");
+        _myTabBar.backgroundColor = UIColor.yellowColor;
+        
+        UIViewModel *viewModel = UIViewModel.new;
+        viewModel.bgCor = kWhiteColor;
+        viewModel.bgImage = isiPhoneX_series() ? KIMG(@"底部导航栏背景(刘海屏)") : KIMG(@"底部导航栏背景(非刘海屏)");
+        viewModel.isTranslucent = NO;
+        viewModel.offsetHeight = KWidth(5);
+
+        [_myTabBar richElementsInViewWithModel:viewModel];
+        
         [self setValue:_myTabBar
                 forKey:@"tabBar"];//KVC 进行替换
-        _myTabBar.frame = self.tabBar.bounds;
+        NSLog(@"");
     }return _myTabBar;
 }
 
@@ -298,19 +321,15 @@ shouldSelectViewController:(UIViewController *)viewController {
         [_suspendBtn setImage:KIMG(@"旋转")
                      forState:UIControlStateNormal];
         _suspendBtn.isAllowDrag = NO;//悬浮效果必须要的参数
-        @jobs_weakify(self)
+        BtnClickEvent(_suspendBtn, [self.suspendBtn startRotateAnimation];);
         self.view.vc = weak_self;
         [self.view addSubview:_suspendBtn];
-        _suspendBtn.frame = CGRectMake(80,
-                                       100,
-                                       50,
-                                       50);
+        _suspendBtn.frame = CGRectMake(KWidth(80),
+                                       KWidth(100),
+                                       KWidth(50),
+                                       KWidth(50));
         [UIView cornerCutToCircleWithView:_suspendBtn
-                          andCornerRadius:25];
-        [[_suspendBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof SuspendBtn * _Nullable x) {
-//            @strongify(self)
-            [x startRotateAnimation];
-        }];
+                          andCornerRadius:KWidth(25)];
     }return _suspendBtn;
 }
 
@@ -326,10 +345,38 @@ shouldSelectViewController:(UIViewController *)viewController {
     }return _childMutArr;
 }
 
--(NSMutableArray<TabBarControllerConfig *> *)tabBarControllerConfigMutArr{
+-(NSMutableArray<JobsTabBarControllerConfig *> *)tabBarControllerConfigMutArr{
     if (!_tabBarControllerConfigMutArr) {
         _tabBarControllerConfigMutArr = NSMutableArray.array;
     }return _tabBarControllerConfigMutArr;
+}
+
+-(NSMutableArray<UIViewModel *> *)pullListAutoSizeViewMutArr{
+    if (!_pullListAutoSizeViewMutArr) {
+        _pullListAutoSizeViewMutArr = NSMutableArray.array;
+        
+        {
+            UIViewModel *viewModel = UIViewModel.new;
+            viewModel.image = KIMG(@"");
+            viewModel.text = @"111";
+            [_pullListAutoSizeViewMutArr addObject:viewModel];
+        }
+        
+        {
+            UIViewModel *viewModel = UIViewModel.new;
+            viewModel.image = KIMG(@"");
+            viewModel.text = @"222";
+            [_pullListAutoSizeViewMutArr addObject:viewModel];
+        }
+        
+        {
+            UIViewModel *viewModel = UIViewModel.new;
+            viewModel.image = KIMG(@"");
+            viewModel.text = @"333";
+            [_pullListAutoSizeViewMutArr addObject:viewModel];
+        }
+        
+    }return _pullListAutoSizeViewMutArr;
 }
 
 @end

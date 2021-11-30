@@ -6,19 +6,13 @@
 //
 
 #import "JobsPullListAutoSizeView.h"
-#import "JobsPullListTBVCell.h"
-#import "UIView+Extras.h"
 
 @interface JobsPullListAutoSizeView ()
-<
-UITableViewDelegate
-,UITableViewDataSource
->
-
+// UI
 @property(nonatomic,strong)UITableView *tableview;//content
 @property(nonatomic,strong)UIView *targetView;
-@property(nonatomic,strong)NSMutableArray *imagesMutArr;
-@property(nonatomic,strong)NSMutableArray *titleMutArr;
+// Data
+@property(nonatomic,strong)NSMutableArray <UIViewModel *>*dataMutArr;
 
 @end
 
@@ -30,9 +24,8 @@ UITableViewDelegate
 }
 
 + (instancetype)initWithTargetView:(UIView *__nonnull)targetView
-                      imagesMutArr:(NSMutableArray <UIImage *>*__nullable)imagesMutArr
-                       titleMutArr:(NSMutableArray <NSString *>*__nonnull)titleMutArr{
-    
+                        dataMutArr:(NSArray <UIViewModel *>*__nonnull)dataMutArr{
+
     //先检查MainWindow里面是否存在本类，如果存在即释放 保证只创建一次
     JobsPullListAutoSizeView *(^checkMainWindowExistSelf)(void) = ^(void){
         JobsPullListAutoSizeView *jobsPullListAutoSizeView = nil;
@@ -48,24 +41,21 @@ UITableViewDelegate
         [view removeFromSuperview];//释放
     }else{
         view = [[JobsPullListAutoSizeView alloc] initWithTargetView:targetView
-                                                       imagesMutArr:imagesMutArr
-                                                        titleMutArr:titleMutArr];
+                                                         dataMutArr:dataMutArr];
     }return view;
 }
 
 - (instancetype)initWithTargetView:(UIView *__nonnull)targetView
-                      imagesMutArr:(NSMutableArray <UIImage *>*__nullable)imagesMutArr
-                       titleMutArr:(NSMutableArray <NSString *>*__nonnull)titleMutArr{
+                        dataMutArr:(NSArray <UIViewModel *>*__nonnull)dataMutArr{
     if (self = [super init]) {
         self.targetView = targetView;
-        self.imagesMutArr = imagesMutArr;
-        self.titleMutArr = titleMutArr;
-        [self make];
+        self.dataMutArr = (NSMutableArray *)dataMutArr;
+        [self makeUI];
     }return self;
 }
 
--(void)make{
-    self.backgroundColor = [UIColor grayColor];
+-(void)makeUI{
+    self.backgroundColor = UIColor.grayColor;
     self.alpha = 0.7;
     [getMainWindow() addSubview:self];
     self.frame = getMainWindow().frame;
@@ -90,19 +80,15 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 -(NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section{
-    return self.titleMutArr.count;
+    return self.dataMutArr.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     JobsPullListTBVCell *cell = [JobsPullListTBVCell cellWithTableView:tableView];
     cell.contentView.backgroundColor = self.bgColorListTBV;
-    cell.indexRow = indexPath.row;
-    cell.indexSection = indexPath.section;
-    [cell richElementsInCellWithModel:@{
-        @"titleMutArr":self.titleMutArr,
-        @"imagesMutArr":self.imagesMutArr
-    }];
+    cell.indexPath = indexPath;
+    [cell richElementsInCellWithModel:self.dataMutArr[indexPath.row]];
     return cell;
 }
 #pragma mark —— lazyLoad
@@ -110,14 +96,13 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (!_tableview) {
         _tableview = UITableView.new;
         _tableview.scrollEnabled = NO;
-        [UIView cornerCutToCircleWithView:_tableview
-                          andCornerRadius:3];//圆润
+        [UIView cornerCutToCircleWithView:_tableview andCornerRadius:KWidth(3)];//圆润
         _tableview.delegate = self;
         _tableview.dataSource = self;
         [self addSubview:_tableview];
         
         CGRect d = [self.targetView convertRect:self.targetView.bounds toView:getMainWindow()];
-        CGFloat tableviewHeight = self.listTbVCellHeight * self.titleMutArr.count;
+        CGFloat tableviewHeight = self.listTbVCellHeight * self.dataMutArr.count;
         CGFloat tableviewY = d.origin.y - tableviewHeight - self.listTbVOffset;
 
         //做了适配
@@ -132,26 +117,20 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 -(CGFloat)listTbVWidth{
     if (_listTbVWidth == 0) {
-        _listTbVWidth = 100;
+        _listTbVWidth = KWidth(100);
     }return _listTbVWidth;
 }
 
 -(CGFloat)listTbVCellHeight{
     if (_listTbVCellHeight == 0) {
-        _listTbVCellHeight = 50;
+        _listTbVCellHeight = KWidth(50);
     }return _listTbVCellHeight;
 }
 
 -(CGFloat)listTbVOffset{
     if (_listTbVOffset == 0) {
-        _listTbVOffset = 10;
+        _listTbVOffset = KWidth(10);
     }return _listTbVOffset;
-}
-
--(NSMutableArray *)imagesMutArr{
-    if (!_imagesMutArr) {
-        _imagesMutArr = NSMutableArray.array;
-    }return _imagesMutArr;
 }
 
 -(UIColor *)bgColorListTBV{

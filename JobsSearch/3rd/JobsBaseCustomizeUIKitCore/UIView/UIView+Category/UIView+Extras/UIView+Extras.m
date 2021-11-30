@@ -114,9 +114,8 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
     targetView.layer.mask = maskLayer;
 }
 
-+(void)setTransform:(float)radians
-            forView:(UIView *__nonnull)view{
-    view.transform = CGAffineTransformMakeRotation(M_PI * radians);
+-(void)transformByRadians:(CGFloat)radians{
+    self.transform = CGAffineTransformMakeRotation(M_PI * radians);
     //    使用:例如逆时针旋转40度
     //    [setTransform:40/180 forLable:label]
 }

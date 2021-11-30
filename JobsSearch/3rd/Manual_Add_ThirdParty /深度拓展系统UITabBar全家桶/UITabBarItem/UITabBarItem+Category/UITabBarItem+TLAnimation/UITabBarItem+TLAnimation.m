@@ -7,8 +7,6 @@
 //
 
 #import "UITabBarItem+TLAnimation.h"
-#import "TLAnimationProtocol.h"
-#import <objc/runtime.h>
 
 @implementation UITabBarItem (TLAnimation)
 
@@ -21,8 +19,8 @@
 }
 
 -(id<TLAnimationProtocol>)animation{
-    return objc_getAssociatedObject(self,
-                                    _cmd);
+    return objc_getAssociatedObject(self,_cmd);
 }
+
 @end
 

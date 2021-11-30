@@ -25,14 +25,12 @@ typedef enum : NSUInteger {
 @property(nonatomic,assign)NSTimeInterval length_timeInterval;//长度变化的频率
 @property(nonatomic,assign)NSTimeInterval length_timeSecIntervalSinceDate;//长度变化的时间延迟
 @property(nonatomic,assign)WGradientProgressType progressType;
-@property(nonatomic,strong)UIColor *progressColor;
-
-@property(nonatomic,strong)UIColor *fenceLayerColor;//栅栏颜色
+@property(nonatomic,strong)UIColor * _Nullable progressColor;
+@property(nonatomic,strong)UIColor * _Nullable fenceLayerColor;//栅栏颜色
 
 -(void)showOnParent;// 启动色彩翻滚
 -(void)hide;
-///旋转 以适应不同方向的直线型进度条
--(void)setTransformRadians:(CGFloat)transformRadians;
+
 -(void)actionWGradientProgressBlock:(TwoDataBlock _Nullable)WGradientProgressBlock;
 
 -(void)start;

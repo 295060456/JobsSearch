@@ -69,8 +69,7 @@ typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
                             byRoundingCorners:(UIRectCorner)corners
                                   cornerRadii:(CGSize)cornerRadii;
 //旋转
-+(void)setTransform:(float)radians
-            forView:(UIView *__nonnull)view;
+-(void)transformByRadians:(CGFloat)radians;
 //view 转 image
 + (UIImage *__nonnull)getImageFromView:(UIView *__nonnull)view;
 /// iOS 阴影效果 添加了shadowPath后消除了离屏渲染问题 。特别提示：不能存在 -(void)drawRect:(CGRect)rect 或者在-(void)drawRect:(CGRect)rect里面写，否则无效

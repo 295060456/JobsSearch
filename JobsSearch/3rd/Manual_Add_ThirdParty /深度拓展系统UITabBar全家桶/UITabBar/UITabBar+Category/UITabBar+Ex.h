@@ -7,12 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <objc/runtime.h>
+
+#if __has_include(<lottie-ios/Lottie.h>)
+#import <lottie-ios/Lottie.h>
+#else
+#import "Lottie.h"
+#endif
+
+#define LOTAnimationViewWidth 33
+#define LOTAnimationViewHeight 33
 
 @interface UITabBar (Ex)
 
 -(void)addLottieImage:(NSUInteger)index
               offsetY:(CGFloat)offsetY
-           lottieName:(NSString *)lottieName;
+           lottieName:(nullable NSString *)lottieName;
 -(void)animationLottieImage:(NSInteger)index;
 
 @end

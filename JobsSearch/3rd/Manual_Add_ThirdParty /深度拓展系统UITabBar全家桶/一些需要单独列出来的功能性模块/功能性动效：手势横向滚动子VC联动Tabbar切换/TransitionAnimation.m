@@ -11,11 +11,9 @@
 @implementation TransitionAnimation
 
 - (instancetype)initWithTargetEdge:(UIRectEdge)targetEdge{
-    self = [self init];
-    if (self) {
+    if (self = [self init]) {
         _targetEdge = targetEdge;
-    }
-    return self;
+    }return self;
 }
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{

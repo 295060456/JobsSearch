@@ -5,11 +5,20 @@
 //  Created by Jobs on 2020/10/15.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UIView+Extras.h"
+#import "BaseView.h"
+#import "JobsPullListTBVCell.h"
+#import "UIViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JobsPullListAutoSizeView : UIView
+@interface JobsPullListAutoSizeView : BaseView
+<
+UITableViewDelegate
+,UITableViewDataSource
+>
 
 @property(nonatomic,assign)CGFloat listTbVWidth;
 @property(nonatomic,assign)CGFloat listTbVCellHeight;
@@ -17,8 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIColor *bgColorListTBV;
 
 + (instancetype)initWithTargetView:(UIView *__nonnull)targetView
-                      imagesMutArr:(NSMutableArray <UIImage *>*__nullable)imagesMutArr
-                       titleMutArr:(NSMutableArray <NSString *>*__nonnull)titleMutArr;
+                        dataMutArr:(NSArray <UIViewModel *>*__nonnull)dataMutArr;
+- (instancetype)initWithTargetView:(UIView *__nonnull)targetView
+                        dataMutArr:(NSArray <UIViewModel *>*__nonnull)dataMutArr;
 
 @end
 

@@ -9,7 +9,7 @@
 #ifndef Other_h
 #define Other_h
 
-#import "TabbarControllerSysEx.h"
+#import "JobsTabbarControllerSysEx.h"
 
 #import "ViewController@1.h"
 #import "ViewController@2.h"

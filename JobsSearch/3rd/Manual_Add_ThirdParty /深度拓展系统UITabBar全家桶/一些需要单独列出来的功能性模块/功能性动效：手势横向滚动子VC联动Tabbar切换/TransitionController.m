@@ -10,31 +10,31 @@
 
 @interface TransitionController()
 
-@property (nonatomic, weak) id<UIViewControllerContextTransitioning> transitionContext;
-
-@property (nonatomic, strong, readonly) UIPanGestureRecognizer *gestureRecognizer;
-
-@property (nonatomic, readwrite) CGPoint initialTranslationInContainerView;
+@property(nonatomic,weak)id<UIViewControllerContextTransitioning> transitionContext;
+@property(nonatomic,strong,readonly)UIPanGestureRecognizer *gestureRecognizer;
+@property(nonatomic,readwrite)CGPoint initialTranslationInContainerView;
 
 @end
 
 @implementation TransitionController
 
+- (void)dealloc{
+    [self.gestureRecognizer removeTarget:self
+                                  action:@selector(gestureRecognizeDidUpdate:)];
+}
+
 - (instancetype)initWithGestureRecognizer:(UIPanGestureRecognizer *)gestureRecognizer{
-    self = [super init];
-    if (self){
+    if (self = [super init]){
         _gestureRecognizer = gestureRecognizer;
-        [_gestureRecognizer addTarget:self action:@selector(gestureRecognizeDidUpdate:)];
-    }
-    return self;
+        [_gestureRecognizer addTarget:self
+                               action:@selector(gestureRecognizeDidUpdate:)];
+    }return self;
 }
 
 - (instancetype)init{
-    @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"Use -initWithGestureRecognizer:" userInfo:nil];
-}
-
-- (void)dealloc{
-    [self.gestureRecognizer removeTarget:self action:@selector(gestureRecognizeDidUpdate:)];
+    @throw [NSException exceptionWithName:NSInvalidArgumentException
+                                   reason:@"Use -initWithGestureRecognizer:"
+                                 userInfo:nil];
 }
 
 - (void)startInteractiveTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
@@ -49,8 +49,7 @@
     if ((translation.x > 0.f && self.initialTranslationInContainerView.x < 0.f) ||
         (translation.x < 0.f && self.initialTranslationInContainerView.x > 0.f)){
         return -1.f;
-    }
-    return fabs(translation.x)/CGRectGetWidth(transitionContainerView.bounds);
+    }return fabs(translation.x)/CGRectGetWidth(transitionContainerView.bounds);
 }
 
 - (void)gestureRecognizeDidUpdate:(UIScreenEdgePanGestureRecognizer *)gestureRecognizer{

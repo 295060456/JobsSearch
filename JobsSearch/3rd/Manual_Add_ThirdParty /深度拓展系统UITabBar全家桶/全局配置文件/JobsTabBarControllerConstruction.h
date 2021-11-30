@@ -1,5 +1,5 @@
 //
-//  TabBarControllerConstruction.h
+//  JobsTabBarControllerConstruction.h
 //  DouDong-II
 //
 //  Created by Jobs on 2021/1/11.
@@ -24,7 +24,7 @@ static inline UIViewController *childViewController_customStyle(UIViewController
                                                                 CGFloat humpOffsetY,//Y轴凸起的偏移量 传0就是不凸起
                                                                 NSString *lottieName,//有值则用Lottie动画
                                                                 NSUInteger tag){
-    TabBarControllerConfig *config = TabBarControllerConfig.new;
+    JobsTabBarControllerConfig *config = JobsTabBarControllerConfig.new;
     config.vc = viewController;
     config.title = title;
     config.imageSelected = imageSelected;
@@ -33,7 +33,7 @@ static inline UIViewController *childViewController_customStyle(UIViewController
     config.lottieName = lottieName;
     config.tag = tag;
     
-    [[JobsSearchAppDelegate sharedInstance].tabBarVC.tabBarControllerConfigMutArr addObject:config];
+    [JobsSearchAppDelegate.sharedInstance.tabBarVC.tabBarControllerConfigMutArr addObject:config];
     
 //    setAnimation(viewController.tabBarItem, tag);//可选实现
     return viewController;
@@ -106,7 +106,7 @@ static inline void setAnimation(UITabBarItem *item,
 static inline UIViewController *childViewController_SystemStyle(UIViewController *viewController,
                                                                 UITabBarSystemItem systemItem,
                                                                 NSUInteger tag){
-    viewController.view.backgroundColor = [UIColor whiteColor];
+    viewController.view.backgroundColor = UIColor.whiteColor;
     viewController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:systemItem
                                                                            tag:tag];
     setAnimation(viewController.tabBarItem, tag);//可选实现

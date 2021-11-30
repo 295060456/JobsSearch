@@ -1,25 +1,24 @@
 //
-//  Header.h
-//  TabBar
+//  JobsTabbarControllerSysEx.h
+//  Casino
 //
-//  Created by 故乡的云 on 2019/7/19.
-//  Copyright © 2019 故乡的云. All rights reserved.
+//  Created by Jobs on 2021/11/29.
 //
 
-#ifndef Header_h
-#define Header_h
+#ifndef JobsTabbarControllerSysEx_h
+#define JobsTabbarControllerSysEx_h
 
-#import "TabBarControllerConfig.h"//全局配置文件
-#import "TabBarControllerConstruction.h"//构造方法
+#import "JobsTabBarControllerConfig.h"//全局配置文件
+#import "JobsTabBarControllerConstruction.h"//构造方法
 
 //UITabBarItem
 #import "UITabBarItem+TLAnimation.h"
-#import "TabBarItem.h"
+#import "JobsTabBarItem.h"
 //UITabBarController
-#import "TabbarVC.h"
+#import "JobsTabbarVC.h"
 //UITabBar
 #import "UITabBar+TLAnimation.h"
-#import "CustomTabBar.h"
+#import "JobsTabBar.h"
 #import "UITabBar+Ex.h"
 
 //在系统api基础上二次封装的功能性拓展
@@ -48,4 +47,4 @@
 //悬浮小球、可旋转、可择机手动停止
 #import "SuspendBtn.h"
 
-#endif /* Header_h */
+#endif /* JobsTabbarControllerSysEx_h */

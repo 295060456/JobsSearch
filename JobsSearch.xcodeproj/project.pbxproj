@@ -15,6 +15,58 @@
 		840C804A27451B3900356BBC /* ZBRequestEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C804227451B3800356BBC /* ZBRequestEngine.m */; };
 		840C804B27451B3900356BBC /* ZBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C804427451B3800356BBC /* ZBRequestManager.m */; };
 		840C804C27451B3900356BBC /* ZBURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C804527451B3800356BBC /* ZBURLRequest.m */; };
+		844080B12754A91C00B9926E /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 844080932754A91C00B9926E /* BaseButton.m */; };
+		844080B22754A91C00B9926E /* UIButton+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 844080962754A91C00B9926E /* UIButton+UI.m */; };
+		844080B32754A91C00B9926E /* 高度自定义的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = 8440809A2754A91C00B9926E /* 高度自定义的按钮.md */; };
+		844080B42754A91C00B9926E /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440809B2754A91C00B9926E /* UIButton+ImageTitleSpacing.m */; };
+		844080B52754A91C00B9926E /* UIButton+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440809E2754A91C00B9926E /* UIButton+Timer.m */; };
+		844080B62754A91C00B9926E /* ButtonTimerConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 844080A12754A91C00B9926E /* ButtonTimerConfigModel.m */; };
+		844080B72754A91C00B9926E /* del_Photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 844080A52754A91C00B9926E /* del_Photo@3x.png */; };
+		844080B82754A91C00B9926E /* del_Photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 844080A62754A91C00B9926E /* del_Photo@2x.png */; };
+		844080B92754A91C00B9926E /* LGiOSBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 844080A72754A91C00B9926E /* LGiOSBtn.m */; };
+		844080BA2754A91C00B9926E /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 844080AA2754A91C00B9926E /* RBCLikeButton.bundle */; };
+		844080BB2754A91C00B9926E /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 844080AB2754A91C00B9926E /* RBCLikeButton.m */; };
+		844080BC2754A91C00B9926E /* Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 844080AD2754A91C00B9926E /* Sound.wav */; };
+		844080BD2754A91C00B9926E /* 带有按键音的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = 844080AE2754A91C00B9926E /* 带有按键音的按钮.md */; };
+		844080BE2754A91C00B9926E /* SoundBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 844080AF2754A91C00B9926E /* SoundBtn.m */; };
+		844E4D9C2755045700A6EA94 /* JobsTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D5A2755045500A6EA94 /* JobsTabBarControllerConfig.m */; };
+		844E4D9D2755045700A6EA94 /* TabbaritemImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D5C2755045500A6EA94 /* TabbaritemImage.bundle */; };
+		844E4D9E2755045700A6EA94 /* home_priase_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D5E2755045500A6EA94 /* home_priase_animation.json */; };
+		844E4D9F2755045700A6EA94 /* 主页.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D5F2755045500A6EA94 /* 主页.json */; };
+		844E4DA02755045700A6EA94 /* wode.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D602755045500A6EA94 /* wode.json */; };
+		844E4DA12755045700A6EA94 /* 任务.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D612755045500A6EA94 /* 任务.json */; };
+		844E4DA22755045700A6EA94 /* green_lottie_tab_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D622755045500A6EA94 /* green_lottie_tab_news.json */; };
+		844E4DA32755045700A6EA94 /* dingdan.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D632755045500A6EA94 /* dingdan.json */; };
+		844E4DA42755045700A6EA94 /* green_lottie_tab_home.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D642755045500A6EA94 /* green_lottie_tab_home.json */; };
+		844E4DA52755045700A6EA94 /* 我的.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D652755045500A6EA94 /* 我的.json */; };
+		844E4DA62755045700A6EA94 /* tab_me_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D662755045500A6EA94 /* tab_me_animate.json */; };
+		844E4DA72755045700A6EA94 /* upgrade.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D672755045500A6EA94 /* upgrade.json */; };
+		844E4DA82755045700A6EA94 /* tab_home_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D682755045500A6EA94 /* tab_home_animate.json */; };
+		844E4DA92755045700A6EA94 /* 社区.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D692755045500A6EA94 /* 社区.json */; };
+		844E4DAA2755045700A6EA94 /* tab_search_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D6A2755045500A6EA94 /* tab_search_animate.json */; };
+		844E4DAB2755045700A6EA94 /* 上传与拍照.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D6B2755045500A6EA94 /* 上传与拍照.json */; };
+		844E4DAC2755045700A6EA94 /* music_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D6C2755045500A6EA94 /* music_animation.json */; };
+		844E4DAD2755045700A6EA94 /* green_lottie_tab_mine.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D6D2755045500A6EA94 /* green_lottie_tab_mine.json */; };
+		844E4DAE2755045700A6EA94 /* huiyuan.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D6E2755045500A6EA94 /* huiyuan.json */; };
+		844E4DAF2755045700A6EA94 /* fangzi.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D6F2755045500A6EA94 /* fangzi.json */; };
+		844E4DB02755045700A6EA94 /* green_lottie_tab_discover.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D702755045500A6EA94 /* green_lottie_tab_discover.json */; };
+		844E4DB12755045700A6EA94 /* record_change.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D712755045600A6EA94 /* record_change.json */; };
+		844E4DB22755045700A6EA94 /* tab_message_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D722755045600A6EA94 /* tab_message_animate.json */; };
+		844E4DB32755045700A6EA94 /* JobsTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D762755045600A6EA94 /* JobsTabbarVC.m */; };
+		844E4DB42755045700A6EA94 /* JobsPullListAutoSizeView.md in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D792755045600A6EA94 /* JobsPullListAutoSizeView.md */; };
+		844E4DB52755045700A6EA94 /* JobsPullListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D7C2755045600A6EA94 /* JobsPullListTBVCell.m */; };
+		844E4DB62755045700A6EA94 /* JobsPullListAutoSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D7E2755045600A6EA94 /* JobsPullListAutoSizeView.m */; };
+		844E4DB72755045700A6EA94 /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D802755045600A6EA94 /* TransitionAnimation.m */; };
+		844E4DB82755045700A6EA94 /* 功能性动效：手势横向滚动子VC联动Tabbar切换.md in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D812755045600A6EA94 /* 功能性动效：手势横向滚动子VC联动Tabbar切换.md */; };
+		844E4DB92755045700A6EA94 /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D832755045600A6EA94 /* TransitionController.m */; };
+		844E4DBA2755045700A6EA94 /* Tabbaritem点击动效.md in Resources */ = {isa = PBXBuildFile; fileRef = 844E4D872755045600A6EA94 /* Tabbaritem点击动效.md */; };
+		844E4DBB2755045700A6EA94 /* TLTabBarAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D892755045600A6EA94 /* TLTabBarAnimation.m */; };
+		844E4DBC2755045700A6EA94 /* JobsTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D8D2755045600A6EA94 /* JobsTabBarItem.m */; };
+		844E4DBD2755045700A6EA94 /* UITabBarItem+TLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D912755045600A6EA94 /* UITabBarItem+TLAnimation.m */; };
+		844E4DBE2755045700A6EA94 /* UITabBar+TLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D952755045700A6EA94 /* UITabBar+TLAnimation.m */; };
+		844E4DBF2755045700A6EA94 /* UITabBar+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D962755045700A6EA94 /* UITabBar+Ex.m */; };
+		844E4DC02755045700A6EA94 /* JobsTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E4D9B2755045700A6EA94 /* JobsTabBar.m */; };
+		844E516C2755070100A6EA94 /* UIViewController+Lottie.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E516A2755070100A6EA94 /* UIViewController+Lottie.m */; };
 		84588E8A2743F7E200119697 /* Agency.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E812743F7E100119697 /* Agency.xcassets */; };
 		84588E8B2743F7E200119697 /* Tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E822743F7E200119697 /* Tabbar.xcassets */; };
 		84588E8C2743F7E200119697 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84588E832743F7E200119697 /* Home.xcassets */; };
@@ -43,19 +95,6 @@
 		84B3BD18274D26A10005DF73 /* UITableViewCell+WhiteArrows.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BB97274D26A00005DF73 /* UITableViewCell+WhiteArrows.m */; };
 		84B3BD19274D26A10005DF73 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BB99274D26A00005DF73 /* BaseTableViewCell.m */; };
 		84B3BD1A274D26A10005DF73 /* NSBundle+CLLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BB9D274D26A00005DF73 /* NSBundle+CLLanguage.m */; };
-		84B3BD1B274D26A10005DF73 /* 高度自定义的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = 84B3BBA2274D26A00005DF73 /* 高度自定义的按钮.md */; };
-		84B3BD1C274D26A10005DF73 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BBA3274D26A00005DF73 /* UIButton+ImageTitleSpacing.m */; };
-		84B3BD1D274D26A10005DF73 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BBA6274D26A00005DF73 /* BaseButton.m */; };
-		84B3BD1E274D26A10005DF73 /* RBCLikeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84B3BBA9274D26A00005DF73 /* RBCLikeButton.bundle */; };
-		84B3BD1F274D26A10005DF73 /* RBCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BBAA274D26A00005DF73 /* RBCLikeButton.m */; };
-		84B3BD20274D26A10005DF73 /* UIButton+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BBAD274D26A00005DF73 /* UIButton+Timer.m */; };
-		84B3BD21274D26A10005DF73 /* ButtonTimerConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BBB0274D26A00005DF73 /* ButtonTimerConfigModel.m */; };
-		84B3BD22274D26A10005DF73 /* Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84B3BBB3274D26A00005DF73 /* Sound.wav */; };
-		84B3BD23274D26A10005DF73 /* 带有按键音的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = 84B3BBB4274D26A00005DF73 /* 带有按键音的按钮.md */; };
-		84B3BD24274D26A10005DF73 /* SoundBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BBB5274D26A00005DF73 /* SoundBtn.m */; };
-		84B3BD25274D26A10005DF73 /* del_Photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B3BBB9274D26A00005DF73 /* del_Photo@3x.png */; };
-		84B3BD26274D26A10005DF73 /* del_Photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B3BBBA274D26A00005DF73 /* del_Photo@2x.png */; };
-		84B3BD27274D26A10005DF73 /* LGiOSBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BBBB274D26A00005DF73 /* LGiOSBtn.m */; };
 		84B3BD28274D26A10005DF73 /* UIColor+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BBBF274D26A00005DF73 /* UIColor+Gradient.m */; };
 		84B3BD29274D26A10005DF73 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BBC2274D26A00005DF73 /* UIColor+Hex.m */; };
 		84B3BD2A274D26A10005DF73 /* TYFFSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3BBC5274D26A00005DF73 /* TYFFSwizzle.m */; };
@@ -185,41 +224,6 @@
 		C5633214252AE88A00699392 /* 垃圾箱.png in Resources */ = {isa = PBXBuildFile; fileRef = C5633213252AE88A00699392 /* 垃圾箱.png */; };
 		C565CB4225A4380800848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CB3F25A4380800848134 /* TwoVerticalArrangementLabsView.m */; };
 		C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = C56E29E7252EECEC004ACCC7 /* nodata.png */; };
-		C5710860253C09E3005B3A0C /* JobsPullListAutoSizeView in Resources */ = {isa = PBXBuildFile; fileRef = C5710824253C09E2005B3A0C /* JobsPullListAutoSizeView */; };
-		C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5710827253C09E2005B3A0C /* JobsPullListTBVCell.m */; };
-		C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5710829253C09E2005B3A0C /* JobsPullListAutoSizeView.m */; };
-		C5710864253C09E3005B3A0C /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C571082C253C09E2005B3A0C /* TransitionAnimation.m */; };
-		C5710865253C09E3005B3A0C /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C571082E253C09E2005B3A0C /* TransitionController.m */; };
-		C5710866253C09E3005B3A0C /* 参考demo in Resources */ = {isa = PBXBuildFile; fileRef = C5710833253C09E2005B3A0C /* 参考demo */; };
-		C5710867253C09E3005B3A0C /* TLTabBarAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5710834253C09E2005B3A0C /* TLTabBarAnimation.m */; };
-		C5710868253C09E3005B3A0C /* TabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C5710837253C09E2005B3A0C /* TabBarControllerConfig.m */; };
-		C5710869253C09E3005B3A0C /* UITabBar+TLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C571083A253C09E2005B3A0C /* UITabBar+TLAnimation.m */; };
-		C571086A253C09E3005B3A0C /* UITabBar+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = C571083B253C09E2005B3A0C /* UITabBar+Ex.m */; };
-		C571086B253C09E3005B3A0C /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C571083C253C09E2005B3A0C /* CustomTabBar.m */; };
-		C571086C253C09E3005B3A0C /* UITabBarItem+TLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5710841253C09E3005B3A0C /* UITabBarItem+TLAnimation.m */; };
-		C571086D253C09E3005B3A0C /* TabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5710843253C09E3005B3A0C /* TabBarItem.m */; };
-		C571086F253C09E3005B3A0C /* TabbaritemImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5710849253C09E3005B3A0C /* TabbaritemImage.bundle */; };
-		C5710870253C09E3005B3A0C /* home_priase_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = C571084B253C09E3005B3A0C /* home_priase_animation.json */; };
-		C5710871253C09E3005B3A0C /* 主页.json in Resources */ = {isa = PBXBuildFile; fileRef = C571084C253C09E3005B3A0C /* 主页.json */; };
-		C5710872253C09E3005B3A0C /* wode.json in Resources */ = {isa = PBXBuildFile; fileRef = C571084D253C09E3005B3A0C /* wode.json */; };
-		C5710873253C09E3005B3A0C /* 任务.json in Resources */ = {isa = PBXBuildFile; fileRef = C571084E253C09E3005B3A0C /* 任务.json */; };
-		C5710874253C09E3005B3A0C /* green_lottie_tab_news.json in Resources */ = {isa = PBXBuildFile; fileRef = C571084F253C09E3005B3A0C /* green_lottie_tab_news.json */; };
-		C5710875253C09E3005B3A0C /* dingdan.json in Resources */ = {isa = PBXBuildFile; fileRef = C5710850253C09E3005B3A0C /* dingdan.json */; };
-		C5710876253C09E3005B3A0C /* green_lottie_tab_home.json in Resources */ = {isa = PBXBuildFile; fileRef = C5710851253C09E3005B3A0C /* green_lottie_tab_home.json */; };
-		C5710877253C09E3005B3A0C /* 我的.json in Resources */ = {isa = PBXBuildFile; fileRef = C5710852253C09E3005B3A0C /* 我的.json */; };
-		C5710878253C09E3005B3A0C /* tab_me_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = C5710853253C09E3005B3A0C /* tab_me_animate.json */; };
-		C5710879253C09E3005B3A0C /* upgrade.json in Resources */ = {isa = PBXBuildFile; fileRef = C5710854253C09E3005B3A0C /* upgrade.json */; };
-		C571087A253C09E3005B3A0C /* tab_home_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = C5710855253C09E3005B3A0C /* tab_home_animate.json */; };
-		C571087B253C09E3005B3A0C /* 社区.json in Resources */ = {isa = PBXBuildFile; fileRef = C5710856253C09E3005B3A0C /* 社区.json */; };
-		C571087C253C09E3005B3A0C /* tab_search_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = C5710857253C09E3005B3A0C /* tab_search_animate.json */; };
-		C571087D253C09E3005B3A0C /* 上传与拍照.json in Resources */ = {isa = PBXBuildFile; fileRef = C5710858253C09E3005B3A0C /* 上传与拍照.json */; };
-		C571087E253C09E3005B3A0C /* music_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = C5710859253C09E3005B3A0C /* music_animation.json */; };
-		C571087F253C09E3005B3A0C /* green_lottie_tab_mine.json in Resources */ = {isa = PBXBuildFile; fileRef = C571085A253C09E3005B3A0C /* green_lottie_tab_mine.json */; };
-		C5710880253C09E3005B3A0C /* huiyuan.json in Resources */ = {isa = PBXBuildFile; fileRef = C571085B253C09E3005B3A0C /* huiyuan.json */; };
-		C5710881253C09E3005B3A0C /* fangzi.json in Resources */ = {isa = PBXBuildFile; fileRef = C571085C253C09E3005B3A0C /* fangzi.json */; };
-		C5710882253C09E3005B3A0C /* green_lottie_tab_discover.json in Resources */ = {isa = PBXBuildFile; fileRef = C571085D253C09E3005B3A0C /* green_lottie_tab_discover.json */; };
-		C5710883253C09E3005B3A0C /* record_change.json in Resources */ = {isa = PBXBuildFile; fileRef = C571085E253C09E3005B3A0C /* record_change.json */; };
-		C5710884253C09E3005B3A0C /* tab_message_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = C571085F253C09E3005B3A0C /* tab_message_animate.json */; };
 		C58D6B58263044F300966F5F /* CustomZFPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D6B56263044F300966F5F /* CustomZFPlayerControlView.m */; };
 		C595D2652587145A002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D25E2587145A002A4531 /* SuspendLab.m */; };
 		C595D2662587145A002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D2602587145A002A4531 /* SuspendView.m */; };
@@ -323,7 +327,6 @@
 		C5C64FD7259DF87100FD2F99 /* 文件和文件夹@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C64FA2259DF87100FD2F99 /* 文件和文件夹@3x.png */; };
 		C5C64FD8259DF87100FD2F99 /* 定位服务@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C64FA3259DF87100FD2F99 /* 定位服务@3x.png */; };
 		C5C64FD9259DF87100FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C64FA6259DF87100FD2F99 /* ECPrivacyCheckGatherTool.m */; };
-		C5D24A8A25AD6AF7008CD6E1 /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D24A8925AD6AF7008CD6E1 /* TabbarVC.m */; };
 		C5D6D9CC25860E4A00029AFF /* NSTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6D9CB25860E4A00029AFF /* NSTimerManager.m */; };
 		C5D8D164260CC3EB00BDAF76 /* toastLoading.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5D8D163260CC3EB00BDAF76 /* toastLoading.gif */; };
 		C5D8DFDE260CDB3500BDAF76 /* JobsInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D8DFDD260CDB3500BDAF76 /* JobsInputAccessoryView.m */; };
@@ -374,6 +377,83 @@
 		840C804527451B3800356BBC /* ZBURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBURLRequest.m; sourceTree = "<group>"; };
 		840C804627451B3900356BBC /* ZBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBNetworking.h; sourceTree = "<group>"; };
 		840C804727451B3900356BBC /* ZBURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBURLRequest.h; sourceTree = "<group>"; };
+		844080922754A91C00B9926E /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		844080932754A91C00B9926E /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		844080962754A91C00B9926E /* UIButton+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+UI.m"; sourceTree = "<group>"; };
+		844080972754A91C00B9926E /* UIButton+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+UI.h"; sourceTree = "<group>"; };
+		844080992754A91C00B9926E /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
+		8440809A2754A91C00B9926E /* 高度自定义的按钮.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
+		8440809B2754A91C00B9926E /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
+		8440809D2754A91C00B9926E /* ButtonTimerDefStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonTimerDefStructure.h; sourceTree = "<group>"; };
+		8440809E2754A91C00B9926E /* UIButton+Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Timer.m"; sourceTree = "<group>"; };
+		844080A02754A91C00B9926E /* ButtonTimerConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonTimerConfigModel.h; sourceTree = "<group>"; };
+		844080A12754A91C00B9926E /* ButtonTimerConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonTimerConfigModel.m; sourceTree = "<group>"; };
+		844080A22754A91C00B9926E /* UIButton+Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Timer.h"; sourceTree = "<group>"; };
+		844080A42754A91C00B9926E /* LGiOSBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGiOSBtn.h; sourceTree = "<group>"; };
+		844080A52754A91C00B9926E /* del_Photo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "del_Photo@3x.png"; sourceTree = "<group>"; };
+		844080A62754A91C00B9926E /* del_Photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "del_Photo@2x.png"; sourceTree = "<group>"; };
+		844080A72754A91C00B9926E /* LGiOSBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGiOSBtn.m; sourceTree = "<group>"; };
+		844080A92754A91C00B9926E /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
+		844080AA2754A91C00B9926E /* RBCLikeButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RBCLikeButton.bundle; sourceTree = "<group>"; };
+		844080AB2754A91C00B9926E /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
+		844080AD2754A91C00B9926E /* Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound.wav; sourceTree = "<group>"; };
+		844080AE2754A91C00B9926E /* 带有按键音的按钮.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "带有按键音的按钮.md"; sourceTree = "<group>"; };
+		844080AF2754A91C00B9926E /* SoundBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundBtn.m; sourceTree = "<group>"; };
+		844080B02754A91C00B9926E /* SoundBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundBtn.h; sourceTree = "<group>"; };
+		844E4D582755045500A6EA94 /* JobsTabBarControllerConstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsTabBarControllerConstruction.h; sourceTree = "<group>"; };
+		844E4D592755045500A6EA94 /* JobsTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsTabBarControllerConfig.h; sourceTree = "<group>"; };
+		844E4D5A2755045500A6EA94 /* JobsTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsTabBarControllerConfig.m; sourceTree = "<group>"; };
+		844E4D5C2755045500A6EA94 /* TabbaritemImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TabbaritemImage.bundle; sourceTree = "<group>"; };
+		844E4D5E2755045500A6EA94 /* home_priase_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home_priase_animation.json; sourceTree = "<group>"; };
+		844E4D5F2755045500A6EA94 /* 主页.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "主页.json"; sourceTree = "<group>"; };
+		844E4D602755045500A6EA94 /* wode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wode.json; sourceTree = "<group>"; };
+		844E4D612755045500A6EA94 /* 任务.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "任务.json"; sourceTree = "<group>"; };
+		844E4D622755045500A6EA94 /* green_lottie_tab_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_news.json; sourceTree = "<group>"; };
+		844E4D632755045500A6EA94 /* dingdan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dingdan.json; sourceTree = "<group>"; };
+		844E4D642755045500A6EA94 /* green_lottie_tab_home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_home.json; sourceTree = "<group>"; };
+		844E4D652755045500A6EA94 /* 我的.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "我的.json"; sourceTree = "<group>"; };
+		844E4D662755045500A6EA94 /* tab_me_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_me_animate.json; sourceTree = "<group>"; };
+		844E4D672755045500A6EA94 /* upgrade.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = upgrade.json; sourceTree = "<group>"; };
+		844E4D682755045500A6EA94 /* tab_home_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_home_animate.json; sourceTree = "<group>"; };
+		844E4D692755045500A6EA94 /* 社区.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "社区.json"; sourceTree = "<group>"; };
+		844E4D6A2755045500A6EA94 /* tab_search_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_search_animate.json; sourceTree = "<group>"; };
+		844E4D6B2755045500A6EA94 /* 上传与拍照.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "上传与拍照.json"; sourceTree = "<group>"; };
+		844E4D6C2755045500A6EA94 /* music_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music_animation.json; sourceTree = "<group>"; };
+		844E4D6D2755045500A6EA94 /* green_lottie_tab_mine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_mine.json; sourceTree = "<group>"; };
+		844E4D6E2755045500A6EA94 /* huiyuan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = huiyuan.json; sourceTree = "<group>"; };
+		844E4D6F2755045500A6EA94 /* fangzi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fangzi.json; sourceTree = "<group>"; };
+		844E4D702755045500A6EA94 /* green_lottie_tab_discover.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_discover.json; sourceTree = "<group>"; };
+		844E4D712755045600A6EA94 /* record_change.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = record_change.json; sourceTree = "<group>"; };
+		844E4D722755045600A6EA94 /* tab_message_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_message_animate.json; sourceTree = "<group>"; };
+		844E4D752755045600A6EA94 /* JobsTabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsTabbarVC.h; sourceTree = "<group>"; };
+		844E4D762755045600A6EA94 /* JobsTabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsTabbarVC.m; sourceTree = "<group>"; };
+		844E4D792755045600A6EA94 /* JobsPullListAutoSizeView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = JobsPullListAutoSizeView.md; sourceTree = "<group>"; };
+		844E4D7A2755045600A6EA94 /* JobsPullListAutoSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsPullListAutoSizeView.h; sourceTree = "<group>"; };
+		844E4D7C2755045600A6EA94 /* JobsPullListTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsPullListTBVCell.m; sourceTree = "<group>"; };
+		844E4D7D2755045600A6EA94 /* JobsPullListTBVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsPullListTBVCell.h; sourceTree = "<group>"; };
+		844E4D7E2755045600A6EA94 /* JobsPullListAutoSizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsPullListAutoSizeView.m; sourceTree = "<group>"; };
+		844E4D802755045600A6EA94 /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
+		844E4D812755045600A6EA94 /* 功能性动效：手势横向滚动子VC联动Tabbar切换.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "功能性动效：手势横向滚动子VC联动Tabbar切换.md"; sourceTree = "<group>"; };
+		844E4D822755045600A6EA94 /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
+		844E4D832755045600A6EA94 /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
+		844E4D842755045600A6EA94 /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
+		844E4D862755045600A6EA94 /* TLAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimationProtocol.h; sourceTree = "<group>"; };
+		844E4D872755045600A6EA94 /* Tabbaritem点击动效.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Tabbaritem点击动效.md"; sourceTree = "<group>"; };
+		844E4D882755045600A6EA94 /* TLTabBarAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabBarAnimation.h; sourceTree = "<group>"; };
+		844E4D892755045600A6EA94 /* TLTabBarAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTabBarAnimation.m; sourceTree = "<group>"; };
+		844E4D8A2755045600A6EA94 /* JobsTabbarControllerSysEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsTabbarControllerSysEx.h; sourceTree = "<group>"; };
+		844E4D8D2755045600A6EA94 /* JobsTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsTabBarItem.m; sourceTree = "<group>"; };
+		844E4D8E2755045600A6EA94 /* JobsTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsTabBarItem.h; sourceTree = "<group>"; };
+		844E4D912755045600A6EA94 /* UITabBarItem+TLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+TLAnimation.m"; sourceTree = "<group>"; };
+		844E4D922755045600A6EA94 /* UITabBarItem+TLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+TLAnimation.h"; sourceTree = "<group>"; };
+		844E4D952755045700A6EA94 /* UITabBar+TLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+TLAnimation.m"; sourceTree = "<group>"; };
+		844E4D962755045700A6EA94 /* UITabBar+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Ex.m"; sourceTree = "<group>"; };
+		844E4D972755045700A6EA94 /* UITabBar+TLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+TLAnimation.h"; sourceTree = "<group>"; };
+		844E4D982755045700A6EA94 /* UITabBar+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Ex.h"; sourceTree = "<group>"; };
+		844E4D9A2755045700A6EA94 /* JobsTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsTabBar.h; sourceTree = "<group>"; };
+		844E4D9B2755045700A6EA94 /* JobsTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsTabBar.m; sourceTree = "<group>"; };
+		844E516A2755070100A6EA94 /* UIViewController+Lottie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Lottie.m"; sourceTree = "<group>"; };
+		844E516B2755070100A6EA94 /* UIViewController+Lottie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Lottie.h"; sourceTree = "<group>"; };
 		84588E812743F7E100119697 /* Agency.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Agency.xcassets; sourceTree = "<group>"; };
 		84588E822743F7E200119697 /* Tabbar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tabbar.xcassets; sourceTree = "<group>"; };
 		84588E832743F7E200119697 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
@@ -424,27 +504,6 @@
 		84B3BB9A274D26A00005DF73 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		84B3BB9D274D26A00005DF73 /* NSBundle+CLLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+CLLanguage.m"; sourceTree = "<group>"; };
 		84B3BB9E274D26A00005DF73 /* NSBundle+CLLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+CLLanguage.h"; sourceTree = "<group>"; };
-		84B3BBA1274D26A00005DF73 /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
-		84B3BBA2274D26A00005DF73 /* 高度自定义的按钮.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
-		84B3BBA3274D26A00005DF73 /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
-		84B3BBA5274D26A00005DF73 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
-		84B3BBA6274D26A00005DF73 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
-		84B3BBA8274D26A00005DF73 /* RBCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCLikeButton.h; sourceTree = "<group>"; };
-		84B3BBA9274D26A00005DF73 /* RBCLikeButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RBCLikeButton.bundle; sourceTree = "<group>"; };
-		84B3BBAA274D26A00005DF73 /* RBCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCLikeButton.m; sourceTree = "<group>"; };
-		84B3BBAC274D26A00005DF73 /* ButtonTimerDefStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonTimerDefStructure.h; sourceTree = "<group>"; };
-		84B3BBAD274D26A00005DF73 /* UIButton+Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Timer.m"; sourceTree = "<group>"; };
-		84B3BBAF274D26A00005DF73 /* ButtonTimerConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonTimerConfigModel.h; sourceTree = "<group>"; };
-		84B3BBB0274D26A00005DF73 /* ButtonTimerConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonTimerConfigModel.m; sourceTree = "<group>"; };
-		84B3BBB1274D26A00005DF73 /* UIButton+Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Timer.h"; sourceTree = "<group>"; };
-		84B3BBB3274D26A00005DF73 /* Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound.wav; sourceTree = "<group>"; };
-		84B3BBB4274D26A00005DF73 /* 带有按键音的按钮.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "带有按键音的按钮.md"; sourceTree = "<group>"; };
-		84B3BBB5274D26A00005DF73 /* SoundBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundBtn.m; sourceTree = "<group>"; };
-		84B3BBB6274D26A00005DF73 /* SoundBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundBtn.h; sourceTree = "<group>"; };
-		84B3BBB8274D26A00005DF73 /* LGiOSBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGiOSBtn.h; sourceTree = "<group>"; };
-		84B3BBB9274D26A00005DF73 /* del_Photo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "del_Photo@3x.png"; sourceTree = "<group>"; };
-		84B3BBBA274D26A00005DF73 /* del_Photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "del_Photo@2x.png"; sourceTree = "<group>"; };
-		84B3BBBB274D26A00005DF73 /* LGiOSBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGiOSBtn.m; sourceTree = "<group>"; };
 		84B3BBBF274D26A00005DF73 /* UIColor+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Gradient.m"; sourceTree = "<group>"; };
 		84B3BBC0274D26A00005DF73 /* UIColor+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Gradient.h"; sourceTree = "<group>"; };
 		84B3BBC2274D26A00005DF73 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
@@ -715,55 +774,6 @@
 		C565CB4025A4380800848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
 		C565CB4125A4380800848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
 		C56E29E7252EECEC004ACCC7 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
-		C5710824253C09E2005B3A0C /* JobsPullListAutoSizeView */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JobsPullListAutoSizeView; sourceTree = "<group>"; };
-		C5710825253C09E2005B3A0C /* JobsPullListAutoSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsPullListAutoSizeView.h; sourceTree = "<group>"; };
-		C5710827253C09E2005B3A0C /* JobsPullListTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsPullListTBVCell.m; sourceTree = "<group>"; };
-		C5710828253C09E2005B3A0C /* JobsPullListTBVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsPullListTBVCell.h; sourceTree = "<group>"; };
-		C5710829253C09E2005B3A0C /* JobsPullListAutoSizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsPullListAutoSizeView.m; sourceTree = "<group>"; };
-		C571082B253C09E2005B3A0C /* 功能性动效：手势横向滚动子VC联动Tabbar切换 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "功能性动效：手势横向滚动子VC联动Tabbar切换"; sourceTree = "<group>"; };
-		C571082C253C09E2005B3A0C /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
-		C571082D253C09E2005B3A0C /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
-		C571082E253C09E2005B3A0C /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
-		C571082F253C09E2005B3A0C /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
-		C5710831253C09E2005B3A0C /* TLAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimationProtocol.h; sourceTree = "<group>"; };
-		C5710832253C09E2005B3A0C /* TLTabBarAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabBarAnimation.h; sourceTree = "<group>"; };
-		C5710833253C09E2005B3A0C /* 参考demo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "参考demo"; sourceTree = "<group>"; };
-		C5710834253C09E2005B3A0C /* TLTabBarAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTabBarAnimation.m; sourceTree = "<group>"; };
-		C5710836253C09E2005B3A0C /* TabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConfig.h; sourceTree = "<group>"; };
-		C5710837253C09E2005B3A0C /* TabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarControllerConfig.m; sourceTree = "<group>"; };
-		C5710839253C09E2005B3A0C /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
-		C571083A253C09E2005B3A0C /* UITabBar+TLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+TLAnimation.m"; sourceTree = "<group>"; };
-		C571083B253C09E2005B3A0C /* UITabBar+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Ex.m"; sourceTree = "<group>"; };
-		C571083C253C09E2005B3A0C /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
-		C571083D253C09E2005B3A0C /* UITabBar+TLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+TLAnimation.h"; sourceTree = "<group>"; };
-		C571083E253C09E2005B3A0C /* UITabBar+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Ex.h"; sourceTree = "<group>"; };
-		C5710840253C09E3005B3A0C /* TabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarItem.h; sourceTree = "<group>"; };
-		C5710841253C09E3005B3A0C /* UITabBarItem+TLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+TLAnimation.m"; sourceTree = "<group>"; };
-		C5710842253C09E3005B3A0C /* UITabBarItem+TLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+TLAnimation.h"; sourceTree = "<group>"; };
-		C5710843253C09E3005B3A0C /* TabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarItem.m; sourceTree = "<group>"; };
-		C5710847253C09E3005B3A0C /* TabbarControllerSysEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarControllerSysEx.h; sourceTree = "<group>"; };
-		C5710849253C09E3005B3A0C /* TabbaritemImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TabbaritemImage.bundle; sourceTree = "<group>"; };
-		C571084B253C09E3005B3A0C /* home_priase_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home_priase_animation.json; sourceTree = "<group>"; };
-		C571084C253C09E3005B3A0C /* 主页.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "主页.json"; sourceTree = "<group>"; };
-		C571084D253C09E3005B3A0C /* wode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wode.json; sourceTree = "<group>"; };
-		C571084E253C09E3005B3A0C /* 任务.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "任务.json"; sourceTree = "<group>"; };
-		C571084F253C09E3005B3A0C /* green_lottie_tab_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_news.json; sourceTree = "<group>"; };
-		C5710850253C09E3005B3A0C /* dingdan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dingdan.json; sourceTree = "<group>"; };
-		C5710851253C09E3005B3A0C /* green_lottie_tab_home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_home.json; sourceTree = "<group>"; };
-		C5710852253C09E3005B3A0C /* 我的.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "我的.json"; sourceTree = "<group>"; };
-		C5710853253C09E3005B3A0C /* tab_me_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_me_animate.json; sourceTree = "<group>"; };
-		C5710854253C09E3005B3A0C /* upgrade.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = upgrade.json; sourceTree = "<group>"; };
-		C5710855253C09E3005B3A0C /* tab_home_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_home_animate.json; sourceTree = "<group>"; };
-		C5710856253C09E3005B3A0C /* 社区.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "社区.json"; sourceTree = "<group>"; };
-		C5710857253C09E3005B3A0C /* tab_search_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_search_animate.json; sourceTree = "<group>"; };
-		C5710858253C09E3005B3A0C /* 上传与拍照.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "上传与拍照.json"; sourceTree = "<group>"; };
-		C5710859253C09E3005B3A0C /* music_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music_animation.json; sourceTree = "<group>"; };
-		C571085A253C09E3005B3A0C /* green_lottie_tab_mine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_mine.json; sourceTree = "<group>"; };
-		C571085B253C09E3005B3A0C /* huiyuan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = huiyuan.json; sourceTree = "<group>"; };
-		C571085C253C09E3005B3A0C /* fangzi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fangzi.json; sourceTree = "<group>"; };
-		C571085D253C09E3005B3A0C /* green_lottie_tab_discover.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_discover.json; sourceTree = "<group>"; };
-		C571085E253C09E3005B3A0C /* record_change.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = record_change.json; sourceTree = "<group>"; };
-		C571085F253C09E3005B3A0C /* tab_message_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_message_animate.json; sourceTree = "<group>"; };
 		C58D6B56263044F300966F5F /* CustomZFPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomZFPlayerControlView.m; sourceTree = "<group>"; };
 		C58D6B57263044F300966F5F /* CustomZFPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomZFPlayerControlView.h; sourceTree = "<group>"; };
 		C595D25D2587145A002A4531 /* SuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendLab.h; sourceTree = "<group>"; };
@@ -954,9 +964,6 @@
 		C5C64FA9259DF87100FD2F99 /* ECPrivacyCheckTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPrivacyCheckTools.h; sourceTree = "<group>"; };
 		C5C64FAB259DF87100FD2F99 /* ECPrivacyCheckTools不用pod管理的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ECPrivacyCheckTools不用pod管理的情况说明.md"; sourceTree = "<group>"; };
 		C5C64FAC259DF87100FD2F99 /* ECAuthorizationTools.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ECAuthorizationTools.md; sourceTree = "<group>"; };
-		C5D24A8825AD6AF7008CD6E1 /* TabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
-		C5D24A8925AD6AF7008CD6E1 /* TabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
-		C5D24A8E25AD6B03008CD6E1 /* TabBarControllerConstruction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConstruction.h; sourceTree = "<group>"; };
 		C5D6D9CA25860E4A00029AFF /* NSTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerManager.h; sourceTree = "<group>"; };
 		C5D6D9CB25860E4A00029AFF /* NSTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerManager.m; sourceTree = "<group>"; };
 		C5D8D163260CC3EB00BDAF76 /* toastLoading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = toastLoading.gif; sourceTree = "<group>"; };
@@ -1031,6 +1038,286 @@
 				84B3BCEB274D26A10005DF73 /* NSObject+CallBackInfoByBlock */,
 			);
 			path = "NSObject+Category";
+			sourceTree = "<group>";
+		};
+		844080912754A91C00B9926E /* BaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				844080922754A91C00B9926E /* BaseButton.h */,
+				844080932754A91C00B9926E /* BaseButton.m */,
+			);
+			path = BaseButton;
+			sourceTree = "<group>";
+		};
+		844080942754A91C00B9926E /* UIButton+Category */ = {
+			isa = PBXGroup;
+			children = (
+				844080952754A91C00B9926E /* UIButton+UI */,
+				844080982754A91C00B9926E /* UIButton+ImageTitleSpacing */,
+				8440809C2754A91C00B9926E /* UIButton+Timer */,
+			);
+			path = "UIButton+Category";
+			sourceTree = "<group>";
+		};
+		844080952754A91C00B9926E /* UIButton+UI */ = {
+			isa = PBXGroup;
+			children = (
+				844080962754A91C00B9926E /* UIButton+UI.m */,
+				844080972754A91C00B9926E /* UIButton+UI.h */,
+			);
+			path = "UIButton+UI";
+			sourceTree = "<group>";
+		};
+		844080982754A91C00B9926E /* UIButton+ImageTitleSpacing */ = {
+			isa = PBXGroup;
+			children = (
+				844080992754A91C00B9926E /* UIButton+ImageTitleSpacing.h */,
+				8440809A2754A91C00B9926E /* 高度自定义的按钮.md */,
+				8440809B2754A91C00B9926E /* UIButton+ImageTitleSpacing.m */,
+			);
+			path = "UIButton+ImageTitleSpacing";
+			sourceTree = "<group>";
+		};
+		8440809C2754A91C00B9926E /* UIButton+Timer */ = {
+			isa = PBXGroup;
+			children = (
+				8440809D2754A91C00B9926E /* ButtonTimerDefStructure.h */,
+				8440809E2754A91C00B9926E /* UIButton+Timer.m */,
+				8440809F2754A91C00B9926E /* ButtonTimerModel */,
+				844080A22754A91C00B9926E /* UIButton+Timer.h */,
+			);
+			path = "UIButton+Timer";
+			sourceTree = "<group>";
+		};
+		8440809F2754A91C00B9926E /* ButtonTimerModel */ = {
+			isa = PBXGroup;
+			children = (
+				844080A02754A91C00B9926E /* ButtonTimerConfigModel.h */,
+				844080A12754A91C00B9926E /* ButtonTimerConfigModel.m */,
+			);
+			path = ButtonTimerModel;
+			sourceTree = "<group>";
+		};
+		844080A32754A91C00B9926E /* 高仿iOS长按删除+抖动 */ = {
+			isa = PBXGroup;
+			children = (
+				844080A42754A91C00B9926E /* LGiOSBtn.h */,
+				844080A52754A91C00B9926E /* del_Photo@3x.png */,
+				844080A62754A91C00B9926E /* del_Photo@2x.png */,
+				844080A72754A91C00B9926E /* LGiOSBtn.m */,
+			);
+			path = "高仿iOS长按删除+抖动";
+			sourceTree = "<group>";
+		};
+		844080A82754A91C00B9926E /* 高仿抖音点赞动画 */ = {
+			isa = PBXGroup;
+			children = (
+				844080A92754A91C00B9926E /* RBCLikeButton.h */,
+				844080AA2754A91C00B9926E /* RBCLikeButton.bundle */,
+				844080AB2754A91C00B9926E /* RBCLikeButton.m */,
+			);
+			path = "高仿抖音点赞动画";
+			sourceTree = "<group>";
+		};
+		844080AC2754A91C00B9926E /* SoundBtn */ = {
+			isa = PBXGroup;
+			children = (
+				844080AD2754A91C00B9926E /* Sound.wav */,
+				844080AE2754A91C00B9926E /* 带有按键音的按钮.md */,
+				844080AF2754A91C00B9926E /* SoundBtn.m */,
+				844080B02754A91C00B9926E /* SoundBtn.h */,
+			);
+			path = SoundBtn;
+			sourceTree = "<group>";
+		};
+		844E4D572755045500A6EA94 /* 全局配置文件 */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D582755045500A6EA94 /* JobsTabBarControllerConstruction.h */,
+				844E4D592755045500A6EA94 /* JobsTabBarControllerConfig.h */,
+				844E4D5A2755045500A6EA94 /* JobsTabBarControllerConfig.m */,
+			);
+			path = "全局配置文件";
+			sourceTree = "<group>";
+		};
+		844E4D5B2755045500A6EA94 /* 资源文件 */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D5C2755045500A6EA94 /* TabbaritemImage.bundle */,
+				844E4D5D2755045500A6EA94 /* LottieResources */,
+			);
+			path = "资源文件";
+			sourceTree = "<group>";
+		};
+		844E4D5D2755045500A6EA94 /* LottieResources */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D5E2755045500A6EA94 /* home_priase_animation.json */,
+				844E4D5F2755045500A6EA94 /* 主页.json */,
+				844E4D602755045500A6EA94 /* wode.json */,
+				844E4D612755045500A6EA94 /* 任务.json */,
+				844E4D622755045500A6EA94 /* green_lottie_tab_news.json */,
+				844E4D632755045500A6EA94 /* dingdan.json */,
+				844E4D642755045500A6EA94 /* green_lottie_tab_home.json */,
+				844E4D652755045500A6EA94 /* 我的.json */,
+				844E4D662755045500A6EA94 /* tab_me_animate.json */,
+				844E4D672755045500A6EA94 /* upgrade.json */,
+				844E4D682755045500A6EA94 /* tab_home_animate.json */,
+				844E4D692755045500A6EA94 /* 社区.json */,
+				844E4D6A2755045500A6EA94 /* tab_search_animate.json */,
+				844E4D6B2755045500A6EA94 /* 上传与拍照.json */,
+				844E4D6C2755045500A6EA94 /* music_animation.json */,
+				844E4D6D2755045500A6EA94 /* green_lottie_tab_mine.json */,
+				844E4D6E2755045500A6EA94 /* huiyuan.json */,
+				844E4D6F2755045500A6EA94 /* fangzi.json */,
+				844E4D702755045500A6EA94 /* green_lottie_tab_discover.json */,
+				844E4D712755045600A6EA94 /* record_change.json */,
+				844E4D722755045600A6EA94 /* tab_message_animate.json */,
+			);
+			path = LottieResources;
+			sourceTree = "<group>";
+		};
+		844E4D732755045600A6EA94 /* UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D742755045600A6EA94 /* BaseTabBarController */,
+			);
+			path = UITabBarController;
+			sourceTree = "<group>";
+		};
+		844E4D742755045600A6EA94 /* BaseTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D752755045600A6EA94 /* JobsTabbarVC.h */,
+				844E4D762755045600A6EA94 /* JobsTabbarVC.m */,
+			);
+			path = BaseTabBarController;
+			sourceTree = "<group>";
+		};
+		844E4D772755045600A6EA94 /* 一些需要单独列出来的功能性模块 */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D782755045600A6EA94 /* Telegram动效：在指定位置出现菜单列表 */,
+				844E4D7F2755045600A6EA94 /* 功能性动效：手势横向滚动子VC联动Tabbar切换 */,
+				844E4D852755045600A6EA94 /* Tabbaritem点击动效 */,
+			);
+			path = "一些需要单独列出来的功能性模块";
+			sourceTree = "<group>";
+		};
+		844E4D782755045600A6EA94 /* Telegram动效：在指定位置出现菜单列表 */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D792755045600A6EA94 /* JobsPullListAutoSizeView.md */,
+				844E4D7A2755045600A6EA94 /* JobsPullListAutoSizeView.h */,
+				844E4D7B2755045600A6EA94 /* JobsPullListTBVCell */,
+				844E4D7E2755045600A6EA94 /* JobsPullListAutoSizeView.m */,
+			);
+			path = "Telegram动效：在指定位置出现菜单列表";
+			sourceTree = "<group>";
+		};
+		844E4D7B2755045600A6EA94 /* JobsPullListTBVCell */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D7C2755045600A6EA94 /* JobsPullListTBVCell.m */,
+				844E4D7D2755045600A6EA94 /* JobsPullListTBVCell.h */,
+			);
+			path = JobsPullListTBVCell;
+			sourceTree = "<group>";
+		};
+		844E4D7F2755045600A6EA94 /* 功能性动效：手势横向滚动子VC联动Tabbar切换 */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D802755045600A6EA94 /* TransitionAnimation.m */,
+				844E4D812755045600A6EA94 /* 功能性动效：手势横向滚动子VC联动Tabbar切换.md */,
+				844E4D822755045600A6EA94 /* TransitionController.h */,
+				844E4D832755045600A6EA94 /* TransitionController.m */,
+				844E4D842755045600A6EA94 /* TransitionAnimation.h */,
+			);
+			path = "功能性动效：手势横向滚动子VC联动Tabbar切换";
+			sourceTree = "<group>";
+		};
+		844E4D852755045600A6EA94 /* Tabbaritem点击动效 */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D862755045600A6EA94 /* TLAnimationProtocol.h */,
+				844E4D872755045600A6EA94 /* Tabbaritem点击动效.md */,
+				844E4D882755045600A6EA94 /* TLTabBarAnimation.h */,
+				844E4D892755045600A6EA94 /* TLTabBarAnimation.m */,
+			);
+			path = "Tabbaritem点击动效";
+			sourceTree = "<group>";
+		};
+		844E4D8B2755045600A6EA94 /* UITabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D8C2755045600A6EA94 /* BaseTabBarItem */,
+				844E4D8F2755045600A6EA94 /* UITabBarItem+Category */,
+			);
+			path = UITabBarItem;
+			sourceTree = "<group>";
+		};
+		844E4D8C2755045600A6EA94 /* BaseTabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D8D2755045600A6EA94 /* JobsTabBarItem.m */,
+				844E4D8E2755045600A6EA94 /* JobsTabBarItem.h */,
+			);
+			path = BaseTabBarItem;
+			sourceTree = "<group>";
+		};
+		844E4D8F2755045600A6EA94 /* UITabBarItem+Category */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D902755045600A6EA94 /* UITabBarItem+TLAnimation */,
+			);
+			path = "UITabBarItem+Category";
+			sourceTree = "<group>";
+		};
+		844E4D902755045600A6EA94 /* UITabBarItem+TLAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D912755045600A6EA94 /* UITabBarItem+TLAnimation.m */,
+				844E4D922755045600A6EA94 /* UITabBarItem+TLAnimation.h */,
+			);
+			path = "UITabBarItem+TLAnimation";
+			sourceTree = "<group>";
+		};
+		844E4D932755045700A6EA94 /* UITabBar */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D942755045700A6EA94 /* UITabBar+Category */,
+				844E4D992755045700A6EA94 /* BaseTabBar */,
+			);
+			path = UITabBar;
+			sourceTree = "<group>";
+		};
+		844E4D942755045700A6EA94 /* UITabBar+Category */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D952755045700A6EA94 /* UITabBar+TLAnimation.m */,
+				844E4D962755045700A6EA94 /* UITabBar+Ex.m */,
+				844E4D972755045700A6EA94 /* UITabBar+TLAnimation.h */,
+				844E4D982755045700A6EA94 /* UITabBar+Ex.h */,
+			);
+			path = "UITabBar+Category";
+			sourceTree = "<group>";
+		};
+		844E4D992755045700A6EA94 /* BaseTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				844E4D9A2755045700A6EA94 /* JobsTabBar.h */,
+				844E4D9B2755045700A6EA94 /* JobsTabBar.m */,
+			);
+			path = BaseTabBar;
+			sourceTree = "<group>";
+		};
+		844E51692755070100A6EA94 /* UIViewController+Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				844E516A2755070100A6EA94 /* UIViewController+Lottie.m */,
+				844E516B2755070100A6EA94 /* UIViewController+Lottie.h */,
+			);
+			path = "UIViewController+Lottie";
 			sourceTree = "<group>";
 		};
 		84588E232743F6E800119697 /* 其他 */ = {
@@ -1360,85 +1647,13 @@
 		84B3BB9F274D26A00005DF73 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				84B3BBA0274D26A00005DF73 /* 高度自定义的按钮 */,
-				84B3BBA4274D26A00005DF73 /* BaseButton */,
-				84B3BBA7274D26A00005DF73 /* 高仿抖音点赞动画 */,
-				84B3BBAB274D26A00005DF73 /* UIButton+Timer */,
-				84B3BBB2274D26A00005DF73 /* SoundBtn */,
-				84B3BBB7274D26A00005DF73 /* 高仿iOS长按删除+抖动 */,
+				844080A82754A91C00B9926E /* 高仿抖音点赞动画 */,
+				844080A32754A91C00B9926E /* 高仿iOS长按删除+抖动 */,
+				844080912754A91C00B9926E /* BaseButton */,
+				844080AC2754A91C00B9926E /* SoundBtn */,
+				844080942754A91C00B9926E /* UIButton+Category */,
 			);
 			path = UIButton;
-			sourceTree = "<group>";
-		};
-		84B3BBA0274D26A00005DF73 /* 高度自定义的按钮 */ = {
-			isa = PBXGroup;
-			children = (
-				84B3BBA1274D26A00005DF73 /* UIButton+ImageTitleSpacing.h */,
-				84B3BBA2274D26A00005DF73 /* 高度自定义的按钮.md */,
-				84B3BBA3274D26A00005DF73 /* UIButton+ImageTitleSpacing.m */,
-			);
-			path = "高度自定义的按钮";
-			sourceTree = "<group>";
-		};
-		84B3BBA4274D26A00005DF73 /* BaseButton */ = {
-			isa = PBXGroup;
-			children = (
-				84B3BBA5274D26A00005DF73 /* BaseButton.h */,
-				84B3BBA6274D26A00005DF73 /* BaseButton.m */,
-			);
-			path = BaseButton;
-			sourceTree = "<group>";
-		};
-		84B3BBA7274D26A00005DF73 /* 高仿抖音点赞动画 */ = {
-			isa = PBXGroup;
-			children = (
-				84B3BBA8274D26A00005DF73 /* RBCLikeButton.h */,
-				84B3BBA9274D26A00005DF73 /* RBCLikeButton.bundle */,
-				84B3BBAA274D26A00005DF73 /* RBCLikeButton.m */,
-			);
-			path = "高仿抖音点赞动画";
-			sourceTree = "<group>";
-		};
-		84B3BBAB274D26A00005DF73 /* UIButton+Timer */ = {
-			isa = PBXGroup;
-			children = (
-				84B3BBAC274D26A00005DF73 /* ButtonTimerDefStructure.h */,
-				84B3BBAD274D26A00005DF73 /* UIButton+Timer.m */,
-				84B3BBAE274D26A00005DF73 /* ButtonTimerModel */,
-				84B3BBB1274D26A00005DF73 /* UIButton+Timer.h */,
-			);
-			path = "UIButton+Timer";
-			sourceTree = "<group>";
-		};
-		84B3BBAE274D26A00005DF73 /* ButtonTimerModel */ = {
-			isa = PBXGroup;
-			children = (
-				84B3BBAF274D26A00005DF73 /* ButtonTimerConfigModel.h */,
-				84B3BBB0274D26A00005DF73 /* ButtonTimerConfigModel.m */,
-			);
-			path = ButtonTimerModel;
-			sourceTree = "<group>";
-		};
-		84B3BBB2274D26A00005DF73 /* SoundBtn */ = {
-			isa = PBXGroup;
-			children = (
-				84B3BBB3274D26A00005DF73 /* Sound.wav */,
-				84B3BBB4274D26A00005DF73 /* 带有按键音的按钮.md */,
-				84B3BBB5274D26A00005DF73 /* SoundBtn.m */,
-				84B3BBB6274D26A00005DF73 /* SoundBtn.h */,
-			);
-			path = SoundBtn;
-			sourceTree = "<group>";
-		};
-		84B3BBB7274D26A00005DF73 /* 高仿iOS长按删除+抖动 */ = {
-			isa = PBXGroup;
-			children = (
-				84B3BBB8274D26A00005DF73 /* LGiOSBtn.h */,
-				84B3BBB9274D26A00005DF73 /* del_Photo@3x.png */,
-				84B3BBBA274D26A00005DF73 /* del_Photo@2x.png */,
-				84B3BBBB274D26A00005DF73 /* LGiOSBtn.m */,
-			);
-			path = "高仿iOS长按删除+抖动";
 			sourceTree = "<group>";
 		};
 		84B3BBBC274D26A00005DF73 /* UIColor */ = {
@@ -1951,6 +2166,7 @@
 		84B3BC40274D26A10005DF73 /* UIViewController+Others */ = {
 			isa = PBXGroup;
 			children = (
+				844E51692755070100A6EA94 /* UIViewController+Lottie */,
 				84B3BC41274D26A10005DF73 /* UIViewController+BWShareView */,
 				84B3BC44274D26A10005DF73 /* UIViewController+JPImageresizerView */,
 				84B3BC47274D26A10005DF73 /* UIViewController+BackBtn */,
@@ -2934,148 +3150,15 @@
 		C5710821253C09D4005B3A0C /* 深度拓展系统UITabBar全家桶 */ = {
 			isa = PBXGroup;
 			children = (
-				C5710835253C09E2005B3A0C /* 全局配置文件 */,
-				C5710822253C09E2005B3A0C /* 一些需要单独列出来的功能性模块 */,
-				C5710848253C09E3005B3A0C /* 资源文件 */,
-				C5710847253C09E3005B3A0C /* TabbarControllerSysEx.h */,
-				C5710838253C09E2005B3A0C /* UITabBar */,
-				C5710844253C09E3005B3A0C /* UITabBarController */,
-				C571083F253C09E3005B3A0C /* UITabBarItem */,
+				844E4D572755045500A6EA94 /* 全局配置文件 */,
+				844E4D772755045600A6EA94 /* 一些需要单独列出来的功能性模块 */,
+				844E4D5B2755045500A6EA94 /* 资源文件 */,
+				844E4D8A2755045600A6EA94 /* JobsTabbarControllerSysEx.h */,
+				844E4D932755045700A6EA94 /* UITabBar */,
+				844E4D732755045600A6EA94 /* UITabBarController */,
+				844E4D8B2755045600A6EA94 /* UITabBarItem */,
 			);
 			path = "深度拓展系统UITabBar全家桶";
-			sourceTree = "<group>";
-		};
-		C5710822253C09E2005B3A0C /* 一些需要单独列出来的功能性模块 */ = {
-			isa = PBXGroup;
-			children = (
-				C571082A253C09E2005B3A0C /* 功能性动效：手势横向滚动子VC联动Tabbar切换 */,
-				C5710830253C09E2005B3A0C /* Tabbaritem点击动效 */,
-				C5710823253C09E2005B3A0C /* Telegram动效：在指定位置出现菜单列表 */,
-			);
-			path = "一些需要单独列出来的功能性模块";
-			sourceTree = "<group>";
-		};
-		C5710823253C09E2005B3A0C /* Telegram动效：在指定位置出现菜单列表 */ = {
-			isa = PBXGroup;
-			children = (
-				C5710826253C09E2005B3A0C /* Cell */,
-				C5710824253C09E2005B3A0C /* JobsPullListAutoSizeView */,
-				C5710825253C09E2005B3A0C /* JobsPullListAutoSizeView.h */,
-				C5710829253C09E2005B3A0C /* JobsPullListAutoSizeView.m */,
-			);
-			path = "Telegram动效：在指定位置出现菜单列表";
-			sourceTree = "<group>";
-		};
-		C5710826253C09E2005B3A0C /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				C5710827253C09E2005B3A0C /* JobsPullListTBVCell.m */,
-				C5710828253C09E2005B3A0C /* JobsPullListTBVCell.h */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		C571082A253C09E2005B3A0C /* 功能性动效：手势横向滚动子VC联动Tabbar切换 */ = {
-			isa = PBXGroup;
-			children = (
-				C571082B253C09E2005B3A0C /* 功能性动效：手势横向滚动子VC联动Tabbar切换 */,
-				C571082F253C09E2005B3A0C /* TransitionAnimation.h */,
-				C571082C253C09E2005B3A0C /* TransitionAnimation.m */,
-				C571082D253C09E2005B3A0C /* TransitionController.h */,
-				C571082E253C09E2005B3A0C /* TransitionController.m */,
-			);
-			path = "功能性动效：手势横向滚动子VC联动Tabbar切换";
-			sourceTree = "<group>";
-		};
-		C5710830253C09E2005B3A0C /* Tabbaritem点击动效 */ = {
-			isa = PBXGroup;
-			children = (
-				C5710833253C09E2005B3A0C /* 参考demo */,
-				C5710831253C09E2005B3A0C /* TLAnimationProtocol.h */,
-				C5710832253C09E2005B3A0C /* TLTabBarAnimation.h */,
-				C5710834253C09E2005B3A0C /* TLTabBarAnimation.m */,
-			);
-			path = "Tabbaritem点击动效";
-			sourceTree = "<group>";
-		};
-		C5710835253C09E2005B3A0C /* 全局配置文件 */ = {
-			isa = PBXGroup;
-			children = (
-				C5710836253C09E2005B3A0C /* TabBarControllerConfig.h */,
-				C5710837253C09E2005B3A0C /* TabBarControllerConfig.m */,
-				C5D24A8E25AD6B03008CD6E1 /* TabBarControllerConstruction.h */,
-			);
-			path = "全局配置文件";
-			sourceTree = "<group>";
-		};
-		C5710838253C09E2005B3A0C /* UITabBar */ = {
-			isa = PBXGroup;
-			children = (
-				C5710839253C09E2005B3A0C /* CustomTabBar.h */,
-				C571083C253C09E2005B3A0C /* CustomTabBar.m */,
-				C571083E253C09E2005B3A0C /* UITabBar+Ex.h */,
-				C571083B253C09E2005B3A0C /* UITabBar+Ex.m */,
-				C571083D253C09E2005B3A0C /* UITabBar+TLAnimation.h */,
-				C571083A253C09E2005B3A0C /* UITabBar+TLAnimation.m */,
-			);
-			path = UITabBar;
-			sourceTree = "<group>";
-		};
-		C571083F253C09E3005B3A0C /* UITabBarItem */ = {
-			isa = PBXGroup;
-			children = (
-				C5710840253C09E3005B3A0C /* TabBarItem.h */,
-				C5710843253C09E3005B3A0C /* TabBarItem.m */,
-				C5710842253C09E3005B3A0C /* UITabBarItem+TLAnimation.h */,
-				C5710841253C09E3005B3A0C /* UITabBarItem+TLAnimation.m */,
-			);
-			path = UITabBarItem;
-			sourceTree = "<group>";
-		};
-		C5710844253C09E3005B3A0C /* UITabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				C5D24A8825AD6AF7008CD6E1 /* TabbarVC.h */,
-				C5D24A8925AD6AF7008CD6E1 /* TabbarVC.m */,
-			);
-			path = UITabBarController;
-			sourceTree = "<group>";
-		};
-		C5710848253C09E3005B3A0C /* 资源文件 */ = {
-			isa = PBXGroup;
-			children = (
-				C571084A253C09E3005B3A0C /* LottieResources */,
-				C5710849253C09E3005B3A0C /* TabbaritemImage.bundle */,
-			);
-			path = "资源文件";
-			sourceTree = "<group>";
-		};
-		C571084A253C09E3005B3A0C /* LottieResources */ = {
-			isa = PBXGroup;
-			children = (
-				C571084E253C09E3005B3A0C /* 任务.json */,
-				C5710858253C09E3005B3A0C /* 上传与拍照.json */,
-				C5710856253C09E3005B3A0C /* 社区.json */,
-				C5710852253C09E3005B3A0C /* 我的.json */,
-				C571084C253C09E3005B3A0C /* 主页.json */,
-				C5710850253C09E3005B3A0C /* dingdan.json */,
-				C571085C253C09E3005B3A0C /* fangzi.json */,
-				C571085D253C09E3005B3A0C /* green_lottie_tab_discover.json */,
-				C5710851253C09E3005B3A0C /* green_lottie_tab_home.json */,
-				C571085A253C09E3005B3A0C /* green_lottie_tab_mine.json */,
-				C571084F253C09E3005B3A0C /* green_lottie_tab_news.json */,
-				C571084B253C09E3005B3A0C /* home_priase_animation.json */,
-				C571085B253C09E3005B3A0C /* huiyuan.json */,
-				C5710859253C09E3005B3A0C /* music_animation.json */,
-				C571085E253C09E3005B3A0C /* record_change.json */,
-				C5710855253C09E3005B3A0C /* tab_home_animate.json */,
-				C5710853253C09E3005B3A0C /* tab_me_animate.json */,
-				C571085F253C09E3005B3A0C /* tab_message_animate.json */,
-				C5710857253C09E3005B3A0C /* tab_search_animate.json */,
-				C5710854253C09E3005B3A0C /* upgrade.json */,
-				C571084D253C09E3005B3A0C /* wode.json */,
-			);
-			path = LottieResources;
 			sourceTree = "<group>";
 		};
 		C58D6B55263044F300966F5F /* 播放器控制层 */ = {
@@ -3896,99 +3979,100 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5C64FD1259DF87100FD2F99 /* HomeKit@2x.png in Resources */,
+				844E4DA62755045700A6EA94 /* tab_me_animate.json in Resources */,
 				C5C64FCE259DF87100FD2F99 /* 通讯录@3x.png in Resources */,
 				C5C64FD3259DF87100FD2F99 /* 照片@2x.png in Resources */,
 				C59B98ED2526DE270039B485 /* LaunchScreen.storyboard in Resources */,
 				84B3BD42274D26A10005DF73 /* 我为什么要这么做.md in Resources */,
-				C571087F253C09E3005B3A0C /* green_lottie_tab_mine.json in Resources */,
 				C5C64FBB259DF87100FD2F99 /* 健康@3x.png in Resources */,
-				C5710882253C09E3005B3A0C /* green_lottie_tab_discover.json in Resources */,
 				C5C64FD5259DF87100FD2F99 /* 相机@3x.png in Resources */,
-				C5710875253C09E3005B3A0C /* dingdan.json in Resources */,
-				C5710870253C09E3005B3A0C /* home_priase_animation.json in Resources */,
+				844E4DA22755045700A6EA94 /* green_lottie_tab_news.json in Resources */,
 				84588E902743F7E200119697 /* Message.xcassets in Resources */,
-				C5710874253C09E3005B3A0C /* green_lottie_tab_news.json in Resources */,
+				844E4DB12755045700A6EA94 /* record_change.json in Resources */,
+				844E4DB02755045700A6EA94 /* green_lottie_tab_discover.json in Resources */,
+				844E4DAA2755045700A6EA94 /* tab_search_animate.json in Resources */,
+				844E4DA32755045700A6EA94 /* dingdan.json in Resources */,
+				844E4DA82755045700A6EA94 /* tab_home_animate.json in Resources */,
+				844E4DBA2755045700A6EA94 /* Tabbaritem点击动效.md in Resources */,
 				846AFF862750D4630091554A /* Localizable.strings in Resources */,
+				844E4DB42755045700A6EA94 /* JobsPullListAutoSizeView.md in Resources */,
+				844E4DAB2755045700A6EA94 /* 上传与拍照.json in Resources */,
+				844080BC2754A91C00B9926E /* Sound.wav in Resources */,
 				C5C64FD2259DF87100FD2F99 /* 相机@2x.png in Resources */,
-				C5710878253C09E3005B3A0C /* tab_me_animate.json in Resources */,
-				84B3BD22274D26A10005DF73 /* Sound.wav in Resources */,
-				C5710873253C09E3005B3A0C /* 任务.json in Resources */,
+				844080BA2754A91C00B9926E /* RBCLikeButton.bundle in Resources */,
+				844E4DA52755045700A6EA94 /* 我的.json in Resources */,
+				844E4DAE2755045700A6EA94 /* huiyuan.json in Resources */,
 				84B3BD6A274D26A10005DF73 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md in Resources */,
 				C5C64FD8259DF87100FD2F99 /* 定位服务@3x.png in Resources */,
-				C5710877253C09E3005B3A0C /* 我的.json in Resources */,
 				84B3BD16274D26A10005DF73 /* WhiteRightArrow@2x.png in Resources */,
-				C571087B253C09E3005B3A0C /* 社区.json in Resources */,
-				C5710884253C09E3005B3A0C /* tab_message_animate.json in Resources */,
+				844080B72754A91C00B9926E /* del_Photo@3x.png in Resources */,
+				844E4DAD2755045700A6EA94 /* green_lottie_tab_mine.json in Resources */,
 				846AFF872750D4630091554A /* InfoPlist.strings in Resources */,
 				84589D7B2744C30A00119697 /* bundle in Resources */,
 				C5B47F782529F7B300387F47 /* 放大镜.png in Resources */,
 				C5C64FBC259DF87100FD2F99 /* 媒体与AppleMusic@2x.png in Resources */,
 				84B3BD3C274D26A10005DF73 /* 移除 系统自带的 UITabBarButton in Resources */,
 				84588E8A2743F7E200119697 /* Agency.xcassets in Resources */,
-				C571087A253C09E3005B3A0C /* tab_home_animate.json in Resources */,
 				C5C64FCF259DF87100FD2F99 /* 定位服务@2x.png in Resources */,
 				C5D8D164260CC3EB00BDAF76 /* toastLoading.gif in Resources */,
 				C5C64FBF259DF87100FD2F99 /* 运动与健身@3x.png in Resources */,
 				84588E922743F7E200119697 /* UserInfo.xcassets in Resources */,
 				C5C64FC1259DF87100FD2F99 /* 提醒事项@3x.png in Resources */,
-				C5710879253C09E3005B3A0C /* upgrade.json in Resources */,
 				C59BA1F325271DAE0039B485 /* 删除.png in Resources */,
-				C571087C253C09E3005B3A0C /* tab_search_animate.json in Resources */,
-				C5710880253C09E3005B3A0C /* huiyuan.json in Resources */,
 				84B3BD40274D26A10005DF73 /* iOS 获取手机型号、系统版本.png in Resources */,
-				C571086F253C09E3005B3A0C /* TabbaritemImage.bundle in Resources */,
-				84B3BD23274D26A10005DF73 /* 带有按键音的按钮.md in Resources */,
+				844080BD2754A91C00B9926E /* 带有按键音的按钮.md in Resources */,
 				C59B9C9B2526E3F10039B485 /* 水平进度条.png in Resources */,
 				84588E8F2743F7E200119697 /* Login.xcassets in Resources */,
 				C5C64FCC259DF87100FD2F99 /* 语音识别@3x.png in Resources */,
-				84B3BD1E274D26A10005DF73 /* RBCLikeButton.bundle in Resources */,
+				844E4DA12755045700A6EA94 /* 任务.json in Resources */,
 				84B3BD68274D26A10005DF73 /* 专治UITableView相应链断裂.md in Resources */,
 				84588E912743F7E200119697 /* Chip.xcassets in Resources */,
 				C5C64FCB259DF87100FD2F99 /* 蓝牙@3x.png in Resources */,
 				C5C64FC7259DF87100FD2F99 /* 通讯录@2x.png in Resources */,
-				C5710881253C09E3005B3A0C /* fangzi.json in Resources */,
-				C571087E253C09E3005B3A0C /* music_animation.json in Resources */,
-				C5710872253C09E3005B3A0C /* wode.json in Resources */,
+				844E4DA92755045700A6EA94 /* 社区.json in Resources */,
 				C5C64FBE259DF87100FD2F99 /* 媒体与AppleMusic@3x.png in Resources */,
 				84B3BD50274D26A10005DF73 /* 使用方法.md in Resources */,
+				844E4DAF2755045700A6EA94 /* fangzi.json in Resources */,
 				84B3BD5C274D26A10005DF73 /* JsonRes.bundle in Resources */,
 				84B3BD3F274D26A10005DF73 /* UITextView+IndicateWordLimit.png in Resources */,
 				C5C64FC5259DF87100FD2F99 /* 麦克风@3x.png in Resources */,
+				844E4D9D2755045700A6EA94 /* TabbaritemImage.bundle in Resources */,
+				844E4DAC2755045700A6EA94 /* music_animation.json in Resources */,
 				C5C64FC0259DF87100FD2F99 /* 健康@2x.png in Resources */,
 				C5C64FD4259DF87100FD2F99 /* 照片@3x.png in Resources */,
-				C571087D253C09E3005B3A0C /* 上传与拍照.json in Resources */,
-				C5710866253C09E3005B3A0C /* 参考demo in Resources */,
-				C5710860253C09E3005B3A0C /* JobsPullListAutoSizeView in Resources */,
 				C59B98EA2526DE270039B485 /* Assets.xcassets in Resources */,
 				C5C64FC3259DF87100FD2F99 /* 麦克风@2x.png in Resources */,
+				844E4DA72755045700A6EA94 /* upgrade.json in Resources */,
+				844E4D9F2755045700A6EA94 /* 主页.json in Resources */,
 				C5C64FD7259DF87100FD2F99 /* 文件和文件夹@3x.png in Resources */,
+				844E4DB82755045700A6EA94 /* 功能性动效：手势横向滚动子VC联动Tabbar切换.md in Resources */,
 				C59B98E52526DE260039B485 /* Main.storyboard in Resources */,
 				84B3BD17274D26A10005DF73 /* WhiteRightArrow@3x.png in Resources */,
+				844E4DA42755045700A6EA94 /* green_lottie_tab_home.json in Resources */,
+				844080B82754A91C00B9926E /* del_Photo@2x.png in Resources */,
 				84588E8B2743F7E200119697 /* Tabbar.xcassets in Resources */,
 				C5C64FC6259DF87100FD2F99 /* 提醒事项@2x.png in Resources */,
 				84588E8C2743F7E200119697 /* Home.xcassets in Resources */,
 				C5C64FC4259DF87100FD2F99 /* 02.PNG in Resources */,
 				C5C64FC2259DF87100FD2F99 /* 01.PNG in Resources */,
-				C5710876253C09E3005B3A0C /* green_lottie_tab_home.json in Resources */,
+				844E4D9E2755045700A6EA94 /* home_priase_animation.json in Resources */,
+				844E4DB22755045700A6EA94 /* tab_message_animate.json in Resources */,
 				84588E8D2743F7E200119697 /* Customer.xcassets in Resources */,
 				C5C64FCD259DF87100FD2F99 /* 日历@2x.png in Resources */,
-				84B3BD1B274D26A10005DF73 /* 高度自定义的按钮.md in Resources */,
 				C5C64FC8259DF87100FD2F99 /* 日历@3x.png in Resources */,
 				84B3BD73274D26A10005DF73 /* UICollectionViewFlowLayout.md in Resources */,
 				C5B8552E252B448200890A66 /* 扫描.png in Resources */,
 				84B3BD8D274D26A20005DF73 /* ZYTextField.bundle in Resources */,
 				C5C64FC9259DF87100FD2F99 /* 语音识别@2x.png in Resources */,
 				C5C64FD6259DF87100FD2F99 /* HomeKit@3x.png in Resources */,
-				C5710871253C09E3005B3A0C /* 主页.json in Resources */,
+				844080B32754A91C00B9926E /* 高度自定义的按钮.md in Resources */,
 				C5C64FBD259DF87100FD2F99 /* 运动与健身@2x.png in Resources */,
 				C5C64FCA259DF87100FD2F99 /* 蓝牙@2x.png in Resources */,
-				C5710883253C09E3005B3A0C /* record_change.json in Resources */,
-				84B3BD25274D26A10005DF73 /* del_Photo@3x.png in Resources */,
 				C59B99982526E0A50039B485 /* ZZCircleProgress.bundle in Resources */,
+				844E4DA02755045700A6EA94 /* wode.json in Resources */,
 				C5633214252AE88A00699392 /* 垃圾箱.png in Resources */,
 				C5B47F832529F82A00387F47 /* 时钟.png in Resources */,
 				84588E8E2743F7E200119697 /* Bank.xcassets in Resources */,
-				84B3BD26274D26A10005DF73 /* del_Photo@2x.png in Resources */,
 				C56E29E8252EECEC004ACCC7 /* nodata.png in Resources */,
 				C5C64FD0259DF87100FD2F99 /* 文件和文件夹@2x.png in Resources */,
 				C5BA3AF5252C64F90039530C /* 假数据.json in Resources */,
@@ -4123,19 +4207,17 @@
 				84B3BD2C274D26A10005DF73 /* UIView+SuspendView.m in Sources */,
 				84B3BD59274D26A10005DF73 /* UIViewController+BRPickerView.m in Sources */,
 				84B3BD86274D26A20005DF73 /* NSObject+DefConfig.m in Sources */,
+				844080B52754A91C00B9926E /* UIButton+Timer.m in Sources */,
 				C59B9CE22526E4110039B485 /* ViewController@4.m in Sources */,
 				84B3BD46274D26A10005DF73 /* UICollectionViewCell+Default.m in Sources */,
 				C59B98F02526DE270039B485 /* main.m in Sources */,
 				C546FFD5258B61CD0008928C /* XHLaunchAdConfiguration.m in Sources */,
 				84B3BD45274D26A10005DF73 /* UICollectionViewCell+ShakeAnimation.m in Sources */,
 				84B3BD69274D26A10005DF73 /* UIControl+XY.m in Sources */,
-				84B3BD1D274D26A10005DF73 /* BaseButton.m in Sources */,
 				C5A437D525AAF7B3000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C59B9CCE2526E3F10039B485 /* CADisplayLink_TimerManager.m in Sources */,
 				C5226BF925875982004447FB /* BWShareView.m in Sources */,
-				84B3BD1F274D26A10005DF73 /* RBCLikeButton.m in Sources */,
 				C59B9CB52526E3F10039B485 /* JhtBannerScrollView.m in Sources */,
-				C5710864253C09E3005B3A0C /* TransitionAnimation.m in Sources */,
 				C5C64FAE259DF87100FD2F99 /* ECPrivacyCheckHomeKit.m in Sources */,
 				C5A442D825ABFBDE000F0CD2 /* JXCategoryTimelineCell.m in Sources */,
 				84B3BD3D274D26A10005DF73 /* UITextView+Extend.m in Sources */,
@@ -4146,24 +4228,26 @@
 				84B3BD43274D26A10005DF73 /* BaseCollectionView.m in Sources */,
 				C5C64FAF259DF87100FD2F99 /* ECPrivacyCheckBluetooth.m in Sources */,
 				84F8F45E274FC73F00834D67 /* JobsHotLabel.m in Sources */,
+				844E516C2755070100A6EA94 /* UIViewController+Lottie.m in Sources */,
 				84B3BD3E274D26A10005DF73 /* UITextView+IndicateWordLimit.m in Sources */,
 				84B3BD4B274D26A10005DF73 /* NSString+Extras.m in Sources */,
-				C5710861253C09E3005B3A0C /* JobsPullListTBVCell.m in Sources */,
 				84B3BD8B274D26A20005DF73 /* CJTextField.m in Sources */,
 				84B3BD34274D26A10005DF73 /* UIView+ViewController.m in Sources */,
 				C5A442D325ABFBDE000F0CD2 /* JXCategoryTitleBackgroundCellModel.m in Sources */,
 				84B3BD35274D26A10005DF73 /* UIView+JHGestureBlock.m in Sources */,
 				C59B9CB32526E3F10039B485 /* MonitorNetwoking.m in Sources */,
 				84B3BD7F274D26A20005DF73 /* NSObject+RichText.m in Sources */,
+				844080B12754A91C00B9926E /* BaseButton.m in Sources */,
 				84037F58274CC52A00D9079E /* RACEXTRuntimeExtensions.m in Sources */,
+				844E4DB52755045700A6EA94 /* JobsPullListTBVCell.m in Sources */,
 				C546FFCF258B61CD0008928C /* XHLaunchImageView.m in Sources */,
 				84B3BD14274D26A10005DF73 /* UITableViewCell+BaseCellProtocol.m in Sources */,
 				C5A442D525ABFBDE000F0CD2 /* JXCategoryTitleBackgroundView.m in Sources */,
 				C59A3C3A258DD1D6005F6260 /* UserDefaultModel.m in Sources */,
-				C5710862253C09E3005B3A0C /* JobsPullListAutoSizeView.m in Sources */,
 				84B3BD80274D26A20005DF73 /* NSObject+Extras.m in Sources */,
 				C59B99992526E0A50039B485 /* ZZCountingLabel.m in Sources */,
 				C5D8DFDE260CDB3500BDAF76 /* JobsInputAccessoryView.m in Sources */,
+				844E4DBC2755045700A6EA94 /* JobsTabBarItem.m in Sources */,
 				C5A442D625ABFBDE000F0CD2 /* JXCategoryTimelineView.m in Sources */,
 				C53CADE5261C4DB800AC1891 /* NSObject+AppTools.m in Sources */,
 				C546C45F252C2BF3003694FF /* JobsSearchTableView.m in Sources */,
@@ -4173,7 +4257,6 @@
 				C5C64FB3259DF87100FD2F99 /* ECPrivacyCheckCalendars.m in Sources */,
 				84B3BD67274D26A10005DF73 /* BaseTableView.m in Sources */,
 				84B3BD47274D26A10005DF73 /* BaseCollectionViewCell.m in Sources */,
-				C5710868253C09E3005B3A0C /* TabBarControllerConfig.m in Sources */,
 				C59B9C9A2526E3F10039B485 /* WGradientProgress.m in Sources */,
 				84B3BD6C274D26A10005DF73 /* NSArray+Extend.m in Sources */,
 				C546FFD2258B61CD0008928C /* XHLaunchAdController.m in Sources */,
@@ -4193,7 +4276,11 @@
 				84B3BD36274D26A10005DF73 /* UIView+Animation.m in Sources */,
 				C59B9CB42526E3F10039B485 /* JhtBannerView.m in Sources */,
 				84B3BD0C274D26A10005DF73 /* UIImage+ScreenShot.m in Sources */,
+				844080BB2754A91C00B9926E /* RBCLikeButton.m in Sources */,
 				C58D6B58263044F300966F5F /* CustomZFPlayerControlView.m in Sources */,
+				844E4DBE2755045700A6EA94 /* UITabBar+TLAnimation.m in Sources */,
+				844080B62754A91C00B9926E /* ButtonTimerConfigModel.m in Sources */,
+				844E4DBB2755045700A6EA94 /* TLTabBarAnimation.m in Sources */,
 				C59B9CCD2526E3F10039B485 /* Nanosecond_TimerManager.m in Sources */,
 				84B3BD74274D26A10005DF73 /* CALayer+Transition.m in Sources */,
 				C59B99AA2526E1190039B485 /* NotificationManager.m in Sources */,
@@ -4201,7 +4288,6 @@
 				84B3BD0E274D26A10005DF73 /* UIImage+SYS.m in Sources */,
 				84B3BD6E274D26A10005DF73 /* BaseTableViewFooterView.m in Sources */,
 				84B3BD39274D26A10005DF73 /* UIView+Extras.m in Sources */,
-				84B3BD21274D26A10005DF73 /* ButtonTimerConfigModel.m in Sources */,
 				84B3BD71274D26A10005DF73 /* KFZShopCatoryFlowLayput.m in Sources */,
 				C59B9C9C2526E3F10039B485 /* WGradientProgressView.m in Sources */,
 				84B3BD19274D26A10005DF73 /* BaseTableViewCell.m in Sources */,
@@ -4211,8 +4297,8 @@
 				84B3BD61274D26A10005DF73 /* UINavigationController+SafeTransition.m in Sources */,
 				84B3BD76274D26A10005DF73 /* BaseCollectionReusableView.m in Sources */,
 				C5C64FD9259DF87100FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */,
+				844080B22754A91C00B9926E /* UIButton+UI.m in Sources */,
 				84B3BD78274D26A20005DF73 /* NSObject+SYSAlertController.m in Sources */,
-				C571086D253C09E3005B3A0C /* TabBarItem.m in Sources */,
 				84B3BD55274D26A10005DF73 /* UIViewController+Shake.m in Sources */,
 				C59B9CE12526E4110039B485 /* ViewController@5.m in Sources */,
 				84B3BD53274D26A10005DF73 /* UIViewController+BackBtn.m in Sources */,
@@ -4220,10 +4306,11 @@
 				C59B9CD02526E3F10039B485 /* ImageCodeView.m in Sources */,
 				84B3BD54274D26A10005DF73 /* UIViewController+EmptyData.m in Sources */,
 				84B3BD8E274D26A20005DF73 /* ZYTextField+HistoryDataList.m in Sources */,
+				844E4DBD2755045700A6EA94 /* UITabBarItem+TLAnimation.m in Sources */,
 				84B3BD2B274D26A10005DF73 /* BaseView.m in Sources */,
-				C571086B253C09E3005B3A0C /* CustomTabBar.m in Sources */,
 				84B3BD84274D26A20005DF73 /* TimeModel.m in Sources */,
 				C59B9D9F2526EC070039B485 /* JobsSearchVC.m in Sources */,
+				844E4DB32755045700A6EA94 /* JobsTabbarVC.m in Sources */,
 				C5C64FB4259DF87100FD2F99 /* ECPrivacyCheckSpeechRecognition.m in Sources */,
 				84B3BD7E274D26A20005DF73 /* NSObject+AFNReachability.m in Sources */,
 				84B3BD6D274D26A10005DF73 /* UITableViewHeaderFooterView+BaseTableViewHeaderFooterViewProtocol.m in Sources */,
@@ -4233,20 +4320,16 @@
 				C59A3C3B258DD1D6005F6260 /* UserDefaultManager.m in Sources */,
 				84B3BD8F274D26A20005DF73 /* JobsMagicTextField.m in Sources */,
 				84B3BD52274D26A10005DF73 /* UIViewController+JPImageresizerView.m in Sources */,
+				844080BE2754A91C00B9926E /* SoundBtn.m in Sources */,
 				C5D6D9CC25860E4A00029AFF /* NSTimerManager.m in Sources */,
-				84B3BD1C274D26A10005DF73 /* UIButton+ImageTitleSpacing.m in Sources */,
 				C5C64FB0259DF87100FD2F99 /* ECPrivacyCheckCamera.m in Sources */,
 				84B3BD29274D26A10005DF73 /* UIColor+Hex.m in Sources */,
-				84B3BD27274D26A10005DF73 /* LGiOSBtn.m in Sources */,
 				C5C64FB7259DF87100FD2F99 /* ECPrivacyCheckPhotos.m in Sources */,
 				84B3BD0D274D26A10005DF73 /* UIImage+Extras.m in Sources */,
 				C59B9D712526E5AD0039B485 /* ViewController@2.m in Sources */,
-				84B3BD20274D26A10005DF73 /* UIButton+Timer.m in Sources */,
 				84B3BD4A274D26A10005DF73 /* BaseNavigationBar.m in Sources */,
-				C5710865253C09E3005B3A0C /* TransitionController.m in Sources */,
-				84B3BD24274D26A10005DF73 /* SoundBtn.m in Sources */,
 				84B3BD87274D26A20005DF73 /* NSObject+CallBackInfoByBlock.m in Sources */,
-				C571086A253C09E3005B3A0C /* UITabBar+Ex.m in Sources */,
+				844080B92754A91C00B9926E /* LGiOSBtn.m in Sources */,
 				840C804A27451B3900356BBC /* ZBRequestEngine.m in Sources */,
 				C5A442D725ABFBDE000F0CD2 /* JXCategoryTimelineCellModel.m in Sources */,
 				84B3BD37274D26A10005DF73 /* UIView+AOP.m in Sources */,
@@ -4266,6 +4349,7 @@
 				C546C487252C3979003694FF /* JobsSearchResultDataListTBVCell.m in Sources */,
 				C5A442D425ABFBDE000F0CD2 /* JXCategoryTitleBackgroundCell.m in Sources */,
 				C59B999A2526E0A50039B485 /* ZZCircleProgress.m in Sources */,
+				844E4DB92755045700A6EA94 /* TransitionController.m in Sources */,
 				840C804C27451B3900356BBC /* ZBURLRequest.m in Sources */,
 				C5C64FB2259DF87100FD2F99 /* ECPrivacyCheckFilesAndFolders.m in Sources */,
 				84B3BD5F274D26A10005DF73 /* BaseViewController.m in Sources */,
@@ -4274,6 +4358,7 @@
 				C59B9F132526F56E0039B485 /* JobsSearchBar.m in Sources */,
 				C5C2444C2541A72F00CB55F5 /* TableViewCell.m in Sources */,
 				C5A437D325AAF7B3000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
+				844E4DB62755045700A6EA94 /* JobsPullListAutoSizeView.m in Sources */,
 				C546FFD6258B61CD0008928C /* XHLaunchAdCache.m in Sources */,
 				84B3BD11274D26A10005DF73 /* UIImage+Overlay.m in Sources */,
 				84B3BD41274D26A10005DF73 /* UIDevice+XMUtils.m in Sources */,
@@ -4294,6 +4379,7 @@
 				84B3BD28274D26A10005DF73 /* UIColor+Gradient.m in Sources */,
 				84B3BD57274D26A10005DF73 /* UIViewController+GifImageView.m in Sources */,
 				84B3BD2E274D26A10005DF73 /* UIView+Gesture.m in Sources */,
+				844E4D9C2755045700A6EA94 /* JobsTabBarControllerConfig.m in Sources */,
 				84B3BD7D274D26A20005DF73 /* NSObject+Sound.m in Sources */,
 				84B3BD4F274D26A10005DF73 /* UIViewController+XLBubbleTransition.m in Sources */,
 				84B3BD0F274D26A10005DF73 /* UIImage+YBGIF.m in Sources */,
@@ -4308,17 +4394,17 @@
 				84B3BD77274D26A10005DF73 /* NSObject+SPAlertController.m in Sources */,
 				84B3BD7A274D26A20005DF73 /* NSObject+Measure.m in Sources */,
 				C546FFCE258B61CD0008928C /* XHLaunchAdButton.m in Sources */,
-				C5710869253C09E3005B3A0C /* UITabBar+TLAnimation.m in Sources */,
 				84B3BD8A274D26A20005DF73 /* HQTextField.m in Sources */,
 				84B3BD3A274D26A10005DF73 /* UIFont+Extras.m in Sources */,
 				84B3BD18274D26A10005DF73 /* UITableViewCell+WhiteArrows.m in Sources */,
 				840C804B27451B3900356BBC /* ZBRequestManager.m in Sources */,
+				844E4DBF2755045700A6EA94 /* UITabBar+Ex.m in Sources */,
 				84B3BD13274D26A10005DF73 /* UILabel+Gesture.m in Sources */,
-				C571086C253C09E3005B3A0C /* UITabBarItem+TLAnimation.m in Sources */,
 				84B3BD60274D26A10005DF73 /* UIViewModel.m in Sources */,
+				844E4DB72755045700A6EA94 /* TransitionAnimation.m in Sources */,
 				84B3BD5B274D26A10005DF73 /* LOTAnimationMJRefreshHeader.m in Sources */,
 				C59B98E82526DE260039B485 /* JobsSearch.xcdatamodeld in Sources */,
-				C5710867253C09E3005B3A0C /* TLTabBarAnimation.m in Sources */,
+				844080B42754A91C00B9926E /* UIButton+ImageTitleSpacing.m in Sources */,
 				84B3BD3B274D26A10005DF73 /* DeleteSystemUITabBarButton.m in Sources */,
 				C595D2662587145A002A4531 /* SuspendView.m in Sources */,
 				84B3BD6B274D26A10005DF73 /* NSArray+Extension.m in Sources */,
@@ -4328,7 +4414,7 @@
 				840C804927451B3900356BBC /* ZBCacheManager.m in Sources */,
 				84B3BD12274D26A10005DF73 /* UILabel+Extra.m in Sources */,
 				C5C64FB1259DF87100FD2F99 /* ECPrivacyCheckLocationServices.m in Sources */,
-				C5D24A8A25AD6AF7008CD6E1 /* TabbarVC.m in Sources */,
+				844E4DC02755045700A6EA94 /* JobsTabBar.m in Sources */,
 				84B3BD30274D26A10005DF73 /* UIView+Gradient.m in Sources */,
 				84B3BD85274D26A20005DF73 /* DDRecord.m in Sources */,
 				C59B9CB62526E3F10039B485 /* JhtBannerCardView.m in Sources */,
