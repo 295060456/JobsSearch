@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
 #import <TXFileOperation.h>
-#import "NSString+Extras.h"
+#import "NSStringExtras.h"
 #import "TimeModel.h"
 #import "AABlock.h"
 

@@ -9,6 +9,10 @@
 
 @implementation UIButton (UI)
 
+-(void)normalImage:(UIImage *)image{
+    [self setImage:image forState:UIControlStateNormal];
+}
+
 -(void)normalBackgroundImage:(UIImage *)backgroundImage{
     [self setBackgroundImage:backgroundImage forState:UIControlStateNormal];
 }

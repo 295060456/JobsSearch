@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (UI)
 
+-(void)normalImage:(UIImage *)image;
 -(void)normalBackgroundImage:(UIImage *)backgroundImage;
 -(void)normalTitle:(NSString *)title;
 -(void)normalTitleColor:(UIColor *)titleColor;

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AABlock.h"
 #import "NSObject+Extras.h"
-#import "NSString+Extras.h"
+#import "NSStringExtras.h"
 
 #if __has_include(<SPAlertController/SPAlertController.h>)
 #import <SPAlertController/SPAlertController.h>

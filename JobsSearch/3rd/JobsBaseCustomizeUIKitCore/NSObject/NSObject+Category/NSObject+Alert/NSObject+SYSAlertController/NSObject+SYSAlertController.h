@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AABlock.h"
-#import "NSString+Extras.h"
+#import "NSStringExtras.h"
 #import "NSObject+Extras.h"
 
 #if __has_include(<ReactiveObjC/RACmetamacros.h>)

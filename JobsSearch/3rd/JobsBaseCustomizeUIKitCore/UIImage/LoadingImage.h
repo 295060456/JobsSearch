@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSString+Extras.h"
+#import "NSStringExtras.h"
 
 /// 直接拖图片在项目文件夹，没用Bundle进行管理，也没有用Assets.xcassets
 /// @param imgName 文件可以不强制要求带后缀名，系统会自动识别png文件
