@@ -24,16 +24,33 @@
 /// 数据data
 #define HTTPServiceResponseDataKey  @"data"
 
+/**
+ 后台定义：
+ 
+ 【返回状态码(code)】
+ -1、服务器异常。
+ 0、表示成功。
+ 1、登录已过期，请重新登录。
+ 2、授权失败。
+ 4、限定时间内超过请求次数
+ 6.、风险操作。
+ 7、未设置交易密码。
+ 8、帐号已在其他设备登录。
+ 
+ 【需要权限的接口】请求头加上authorization字段，值为服务器颁发的jwt令牌。令牌无感刷新，需实时更新
+ */
 /// 请求数据返回的状态码、根据自己的服务端数据来
 typedef NS_ENUM(NSUInteger, HTTPResponseCode) {//KKK
-    ///请求成功 200
-    HTTPResponseCodeSuccess = 200,
-    ///未登录 & 被踢 401
-    HTTPResponseCodeNotLogin = 401,
-    ///550 后台业务代码参数异常 参数异常
-    HTTPResponseCodeAnomalous = 550,
-    ///后台代码异常 999
-    HTTPResponseCodeError = 999,
+    
+    HTTPResponseCodeServeError = -1,/// 服务器异常
+    HTTPResponseCodeSuccess = 0,/// 请求成功
+    HTTPResponseCodeLoginDate = 1,/// 登录已过期，请重新登录
+    HTTPResponseCodeAuthorizationFailure = 2,/// 授权失败
+    HTTPResponseCodeLeakTime = 4,/// 限定时间内超过请求次数
+    HTTPResponseCodeRiskOperation = 6,/// 风险操作
+    HTTPResponseCodeNoSettingTransactionPassword = 7,/// 未设置交易密码
+    HTTPResponseCodeOffline = 8/// 帐号已在其他设备登录
+    ///其他代号，展示msg内容即可
 };
 
 static NSString *const HTTPServiceErrorDomain = @"HTTPServiceErrorDomain";/// The Http request error domain
