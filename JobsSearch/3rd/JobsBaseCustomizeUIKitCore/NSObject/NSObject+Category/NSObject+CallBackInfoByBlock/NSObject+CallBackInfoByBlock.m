@@ -6,7 +6,6 @@
 //
 
 #import "NSObject+CallBackInfoByBlock.h"
-#import <objc/runtime.h>
 
 @implementation NSObject (CallBackInfoByBlock)
 

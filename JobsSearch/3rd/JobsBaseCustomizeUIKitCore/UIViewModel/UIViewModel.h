@@ -13,6 +13,19 @@
 #import "MacroDef_Size.h"
 #import "UIImage+Extras.h"
 
+#if __has_include(<VerifyCode/NTESVerifyCodeManager.h>)
+#import <VerifyCode/NTESVerifyCodeManager.h>
+#else
+#import "NTESVerifyCodeManager.h"
+#endif
+
+typedef enum : NSInteger {
+    VerifyCodeInitFinish = 0,/// 验证码组件初始化完成
+    VerifyCodeInitFailed,/// 验证码组件初始化出错
+    VerifyCodeValidateFinish,/// 完成验证之后的回调
+    VerifyCodeCloseWindow,/// 关闭验证码窗口后的回调
+} NTESVerifyCodeManagerStyle;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewModel : NSObject
@@ -32,6 +45,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign)BOOL isTranslucent;//是否取消tabBar的透明效果
 @property(nonatomic,assign)CGFloat offsetHeight;
 @property(nonatomic,assign)CGFloat offsetWidth;
+/// 网易云盾回调数据
+@property(nonatomic,assign)NTESVerifyCodeManagerStyle ntesVerifyCodeManagerStyle;
+@property(nonatomic,assign)BOOL ntesVerifyCodeFinishResult;
+@property(nonatomic,strong)NSString *ntesVerifyCodeValidate;
+@property(nonatomic,strong)NSString *ntesVerifyCodeMessage;
+@property(nonatomic,strong)NSArray *ntesVerifyCodeError;
+@property(nonatomic,assign)NTESVerifyCodeClose ntesVerifyCodeClose;
 
 @end
 

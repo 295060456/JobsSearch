@@ -1,9 +1,11 @@
 //
-//  WHToast+DDToast.h
-//  DouDong-II
+//  NSObject+WHToast.h
+//  Casino
 //
-//  Created by Jobs on 2021/1/10.
+//  Created by Jobs on 2021/12/2.
 //
+
+#import <Foundation/Foundation.h>
 
 #if __has_include(<WHToast/WHToast.h>)
 #import <WHToast/WHToast.h>
@@ -19,7 +21,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WHToast (DDToast)
+@interface NSObject (WHToast)
 /** 仅文字，展示在屏幕中间 */
 +(void)toastMsg:(NSString *)msg;
 /** 失败图标和文字，展示在屏幕中间 */

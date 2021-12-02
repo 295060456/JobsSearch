@@ -77,13 +77,13 @@ static dispatch_once_t dispatchOnce;
                             userDefaultModel.obj = container;
                             userDefaultModel.key = storageID;
                             
-                            [UserDefaultManager storedData:userDefaultModel];
+                            [NSUserDefaults updateWithModel:userDefaultModel];
                             NSLog(@"历史数据已存入");
         };
         
         if (![NSString isNullString:textField.text]) {
             //先取值进行对比
-            NSArray *jobsSearchHistoryDataArr = (NSArray *)[UserDefaultManager fetchDataWithKey:@"JobsSearchHistoryData"];
+            NSArray *jobsSearchHistoryDataArr = (NSArray *)[NSUserDefaults readWithKey:@"JobsSearchHistoryData"];
             if (jobsSearchHistoryDataArr.count) {
                 if (!checkArrContainString(jobsSearchHistoryDataArr,textField.text)) {
                     //目标数组不存在此字符串，允许存入

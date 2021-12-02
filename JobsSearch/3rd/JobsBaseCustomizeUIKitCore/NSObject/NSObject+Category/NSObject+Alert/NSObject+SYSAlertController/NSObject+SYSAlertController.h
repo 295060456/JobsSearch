@@ -41,7 +41,7 @@
 #import "WHToast.h"
 #endif
 
-#import "WHToast+DDToast.h"
+#import "NSObject+WHToast.h"//提示
 
 /*
 * 使用说明

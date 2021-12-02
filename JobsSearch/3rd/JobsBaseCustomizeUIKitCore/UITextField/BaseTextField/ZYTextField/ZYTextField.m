@@ -1,4 +1,3 @@
-
 #import "ZYTextField.h"
 
 @interface ZYTextField ()
@@ -50,7 +49,6 @@
     }
     // 不成为第一响应者
     [self resignFirstResponder];
-    self.isOk = YES;
 }
 /**
  * 当前文本框聚焦时就会调用
@@ -202,7 +200,7 @@
 
 -(UIColor *)ZYtextColor{
     if (!_ZYtextColor) {
-        _ZYtextColor = KGreenColor;
+        _ZYtextColor = kWhiteColor;
     }return _ZYtextColor;
 }
 

@@ -18,7 +18,7 @@
 #import "FileFolderHandleTool.h"
 #import "LoadingImage.h"
 
-#import "WHToast+DDToast.h"
+#import "NSObject+WHToast.h"//提示
 
 #if __has_include(<WHToast/WHToast.h>)
 #import <WHToast/WHToast.h>

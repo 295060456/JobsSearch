@@ -23,7 +23,7 @@
 #import "WHToast.h"
 #endif
 
-#import "WHToast+DDToast.h"
+#import "NSObject+WHToast.h"//提示
 
 //  pod 'SPAlertController'# https://github.com/SPStore/SPAlertController 深度定制AlertController
 

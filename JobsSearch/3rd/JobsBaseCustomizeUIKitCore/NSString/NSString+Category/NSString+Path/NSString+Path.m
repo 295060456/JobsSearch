@@ -43,6 +43,12 @@
                                                 NSUserDomainMask,
                                                 YES) lastObject];
 }
+/// 获取沙盒中NSUserDefaults的保存位置
++(NSString *)userDefaultsDir{
+    return NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,
+                                               NSUserDomainMask,
+                                               YES).firstObject;
+}
 /// 获取沙盒中Libarary/Preferences的目录路径：
 +(NSString *)preferencesDir{
     return [NSString.libraryDir stringByAppendingPathComponent:@"Preferences"];

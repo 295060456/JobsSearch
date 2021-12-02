@@ -12,6 +12,11 @@
 #import "BaseViewControllerProtocol.h"
 #import "BaseCellProtocol.h"
 #import "BaseViewProtocol.h"
+#import "BaseTableViewHeaderFooterViewProtocol.h"
+#import "BaseButtonProtocol.h"
+
+#pragma mark —— NSUserDefaults
+#import "NSUserDefaults+Manager.h"
 
 #pragma mark —— UIViewModel
 #import "UIViewModel.h"
@@ -45,6 +50,8 @@
 #import "NSObject+RichText.h"
 #import "NSObject+Shake.h"
 #import "NSObject+Sound.h"
+#import "NSObject+NTESVerifyCode.h"//网易云盾
+#import "NSObject+WHToast.h"//提示
 ///【对FileFolderHandleTool的二次封装】 存数据，储存成功返回地址
 #import "NSObject+DataSave.h"
 /// 时间相关方法
@@ -59,6 +66,7 @@
 #import "NSObject+DataBinding.h"
 
 #pragma mark —— NSString
+#import "NSString+FilteringSpecialCharacters.h"// 特殊字符集
 #import "NSStringExtras.h"
 
 #pragma mark —— RedefineSys

@@ -531,7 +531,7 @@
 
 + (BOOL)isFirstLaunchApp{
     BOOL flag;
-    NSDate *oldDate =  [UserDefaultManager fetchDataWithKey:@"APPFirstStartKey"];
+    NSDate *oldDate =  [NSUserDefaults readWithKey:@"APPFirstStartKey"];
     if (oldDate == nil) {
         NSLog(@"未启动过，第一次启动");
         flag = YES;
@@ -549,7 +549,7 @@
     userDefaultModel.key = @"APPFirstStartKey";
     userDefaultModel.obj = NSDate.date;
     
-    [UserDefaultManager storedData:userDefaultModel];
+    [NSUserDefaults updateWithModel:userDefaultModel];
     return flag;
 }
 ///判断某个时间是否为  今天（系统时区）

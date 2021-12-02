@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString *)documentsDir;
 /// 获取沙盒中Library的目录路径：
 +(NSString *)libraryDir;
+/// 获取沙盒中NSUserDefaults的保存位置
++(NSString *)userDefaultsDir;
 /// 获取沙盒中Libarary/Preferences的目录路径：
 +(NSString *)preferencesDir;
 /// 获取沙盒中Library/Caches的目录路径：

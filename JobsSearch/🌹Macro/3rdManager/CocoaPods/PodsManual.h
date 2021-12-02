@@ -28,6 +28,6 @@
 #import "JXCategoryTitleBackgroundView.h"
 #import "JXCategoryTimelineView.h"
 /// 提示框
-#import "WHToast+DDToast.h"
+#import "NSObject+WHToast.h"//提示
 
 #endif /* PodsManual_h */

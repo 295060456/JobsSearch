@@ -323,7 +323,7 @@ viewForHeaderInSection:(NSInteger)section{
             userDefaultModel.key = @"JobsSearchHistoryData";
             userDefaultModel.obj = self.historySearchMutArr;
             
-            [UserDefaultManager storedData:userDefaultModel];
+            [NSUserDefaults updateWithModel:userDefaultModel];
             
             if (self.historySearchMutArr.count == 0) {
                 [self.sectionTitleMutArr removeAllObjects];
@@ -369,7 +369,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         userDefaultModel.key = @"JobsSearchHistoryData";
         userDefaultModel.obj = self.historySearchMutArr;
         
-        [UserDefaultManager storedData:userDefaultModel];
+        [NSUserDefaults updateWithModel:userDefaultModel];
         
         if (self.historySearchMutArr.count == 0) {
             [self.sectionTitleMutArr removeAllObjects];
@@ -492,7 +492,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
                     @strongify(self)
                     [self.historySearchMutArr removeAllObjects];
                     
-                    NSArray *jobsSearchHistoryDataArr = (NSArray *)[UserDefaultManager fetchDataWithKey:@"JobsSearchHistoryData"];
+                    NSArray *jobsSearchHistoryDataArr = (NSArray *)[NSUserDefaults readWithKey:@"JobsSearchHistoryData"];
                     self->_historySearchMutArr = [NSMutableArray arrayWithArray:jobsSearchHistoryDataArr];
 
                     [self.sectionTitleMutArr removeAllObjects];
@@ -557,7 +557,7 @@ forHeaderFooterViewReuseIdentifier:NSStringFromClass(JobsSearchTableViewHeaderVi
 
 -(NSMutableArray<NSString *> *)historySearchMutArr{
     if (!_historySearchMutArr) {
-        NSArray *jobsSearchHistoryDataArr = (NSArray *)[UserDefaultManager fetchDataWithKey:@"JobsSearchHistoryData"];
+        NSArray *jobsSearchHistoryDataArr = (NSArray *)[NSUserDefaults readWithKey:@"JobsSearchHistoryData"];
         if (jobsSearchHistoryDataArr) {
             _historySearchMutArr = [NSMutableArray arrayWithArray:jobsSearchHistoryDataArr];
         }else{

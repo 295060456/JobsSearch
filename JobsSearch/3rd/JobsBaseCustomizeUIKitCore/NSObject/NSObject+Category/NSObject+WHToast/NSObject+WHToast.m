@@ -1,13 +1,13 @@
 //
-//  WHToast+DDToast.m
-//  DouDong-II
+//  NSObject+WHToast.m
+//  Casino
 //
-//  Created by Jobs on 2021/1/10.
+//  Created by Jobs on 2021/12/2.
 //
 
-#import "WHToast+DDToast.h"
+#import "NSObject+WHToast.h"
 
-@implementation WHToast (DDToast)
+@implementation NSObject (WHToast)
 /** 仅文字，展示在屏幕中间 */
 +(void)toastMsg:(NSString *)msg{
     [WHToast showMessage:msg

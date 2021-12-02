@@ -6,7 +6,7 @@
 //
 
 #import "BaseViewController.h"
-#import "WHToast+DDToast.h"
+#import "NSObject+WHToast.h"//提示
 
 NS_ASSUME_NONNULL_BEGIN
 /// 本类用来测试是否正常走deallco方法的控制器

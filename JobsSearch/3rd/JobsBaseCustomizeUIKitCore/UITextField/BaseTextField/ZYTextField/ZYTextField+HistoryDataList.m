@@ -159,7 +159,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         userDefaultModel.key = @"dataMutArr";
         userDefaultModel.obj = self.dataMutArr;
         
-        [UserDefaultManager storedData:userDefaultModel];
+        [NSUserDefaults updateWithModel:userDefaultModel];
         
         [self.tableview removeFromSuperview];
         self.tableview = nil;
