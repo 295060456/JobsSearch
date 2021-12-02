@@ -12,7 +12,7 @@
 #import "JobsBaseCustomizeUIKitCoreHeader.h"
 
 #pragma mark —— Manual_Add_ThirdParty
-#import "UserDefaultManager.h"
+#import "NSUserDefaults+Manager.h"
 #import "NSTimerManager.h"
 #import "TXFileOperation.h"
 #import "FileFolderHandleTool.h"

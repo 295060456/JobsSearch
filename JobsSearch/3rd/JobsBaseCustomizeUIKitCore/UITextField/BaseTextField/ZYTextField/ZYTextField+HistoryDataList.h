@@ -10,7 +10,7 @@
 #import "LoadingImage.h"
 #import "UIView+Measure.h"
 #import "UserDefaultModel.h"
-#import "UserDefaultManager.h"
+#import "NSUserDefaults+Manager.h"
 #import "AABlock.h"
 
 #if __has_include(<Masonry/Masonry.h>)

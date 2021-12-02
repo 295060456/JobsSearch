@@ -21,6 +21,7 @@
 #import "NSString+Others.h"
 #import "NSString+Replace.h"
 #import "NSString+Statistics.h"
+#import "NSString+Path.h"
 #import "NSString+FilteringSpecialCharacters.h"
 
 #endif /* NSStringExtras_h */

@@ -9,10 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
-#import <TXFileOperation.h>
+
+#import "AABlock.h"
+#import "UIImage+Extras.h"
 #import "NSStringExtras.h"
 #import "TimeModel.h"
-#import "AABlock.h"
+
+#if __has_include(<TXFileOperation/TXFileOperation.h>)
+#import <TXFileOperation/TXFileOperation.h>
+#else
+#import "TXFileOperation.h"
+#endif
 
 typedef enum : NSUInteger {
     TXT = 0,
@@ -42,29 +49,10 @@ NS_ASSUME_NONNULL_BEGIN
  3.tmp:只是临时使用的数据应该保存在/ tmp 文件夹，tmp目录不是你程序退出的时候就清空，是在你内存不足的情况系统会给你清空，看是网络缓存的数据还是本地存储的，如果本地存储你可以放在doc目录。
  尽管iCloud不会备份这些文件，但在应用使用完这些数据之后要注意随时删除，避免占用用户设备的空间。
  */
+
 #pragma mark —— 禁止App系统文件夹document同步
-///因为它会同步。苹果要求：可重复产生的数据不得进行同步,什么叫做可重复数据？这里最好禁止，否则会影响上架，被拒！
+/// 因为它会同步。苹果要求：可重复产生的数据不得进行同步,什么叫做可重复数据？这里最好禁止，否则会影响上架，被拒！
 +(void)banSysDocSynchronization;
-#pragma mark —— iOS获取文件的 文件名 和 后缀
-///从路径中获得完整的文件名 （带后缀）
-+(NSString *)getFullFileName:(NSString *)filePath;
-///获得文件名 （不带后缀）
-+(NSString *)getOnlyFileName:(NSString *)filePath;
-///获得文件的后缀名 （不带'.'）
-+(NSString *)getSuffixFileName:(NSString *)filePath;
-#pragma mark —— 目录获取
-///获取沙盒的主目录路径：
-+(NSString *)homeDir;
-///获取真机沙盒中Documents的目录路径：
-+(NSString *)documentsDir;
-///获取沙盒中Library的目录路径：
-+(NSString *)libraryDir;
-///获取沙盒中Libarary/Preferences的目录路径：
-+(NSString *)preferencesDir;
-///获取沙盒中Library/Caches的目录路径：
-+(NSString *)cachesDir;
-///获取沙盒中tmp的目录路径：供系统使用，程序员不要使用，因为随时会被销毁
-+(NSString *)tmpDir;
 #pragma mark - 创建Library/Caches下的文件夹📂路径 还未真正创建
 /// 以当前时间戳生成缓存路径 Library/Caches：存放缓存文件，iTunes不会备份此目录，此目录下文件不会在应用退出删除。一般存放体积比较大，不是特别重要的资源。
 /// @param folderNameEx 中间层自定义的文件夹
@@ -72,9 +60,9 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString *)createCacheFolderPath:(NSString * __nullable)folderNameEx
                             fileEx:(NSString * __nullable)fileNameEx;
 #pragma mark —— 创建文件（夹）
-///软性 创建文件夹📂：
-+ (BOOL)createDirectoryAtPath:(NSString *)path
-                        error:(NSError *__autoreleasing *)error;
+/// 软性 仅仅是创建文件夹：返回是否创建成功
++(BOOL)createDirectoryAtPath:(NSString *)path
+                       error:(NSError *__autoreleasing *)error;
 /// 创建带文件夹的文件 返回是否创建带文件夹的文件成功状态
 /// @param path 文件创建的路径
 /// @param contentsData 写入文件的内容
@@ -98,10 +86,10 @@ NS_ASSUME_NONNULL_BEGIN
 */
 +(BOOL)createFoldByFolderUrl:(NSString *)folder_url
                        error:(NSError *__autoreleasing *)error;
-///获取文件创建的时间
+/// 获取文件创建的时间
 +(NSDate *)creationDateOfItemAtPath:(NSString *)path
                               error:(NSError *__autoreleasing *)error;
-///获取文件修改的时间
+/// 获取文件修改的时间
 +(NSDate *)modificationDateOfItemAtPath:(NSString *)path
                                   error:(NSError *__autoreleasing *)error;
 #pragma mark —— 读取文件内容
@@ -143,36 +131,36 @@ bundleFileSuffix:(NSString *__nonnull)bundleFileSuffix
 +(void)delFile:(NSArray *)pathArr
     fileSuffix:(NSString *_Nullable)fileSuffix
          error:(NSError *__autoreleasing *)error;
-///删除文件（夹） error 传nil；path传文件夹则删除文件夹下面的所有文件，path传一个具体的文件，则删除标的文件
+/// 删除文件（夹）
 +(BOOL)removeItemAtPath:(NSString *)path
                   error:(NSError *__autoreleasing *)error;
-///给定一个路径，删除旗下所有东西
+/// 给定一个路径，删除旗下所有东西
 +(void)cleanFilesWithPath:(NSString *)PathStr;
-///清空Cashes文件夹
+/// 清空Cashes文件夹
 +(BOOL)clearCachesDirectory;
-///清空temp文件夹
+/// 清空temp文件夹
 +(BOOL)clearTmpDirectory;
 #pragma mark —— 复制文件（夹）
-///复制文件 依据源文件的路径复制一份到目标路径：
+/// 复制文件 依据源文件的路径复制一份到目标路径：
 /*参数1、被复制文件路径
  *参数2、要复制到的目标文件路径
  *参数3、当要复制到的文件路径文件存在，会复制失败，这里传入是否覆盖
  *参数4、错误信息
  */
-+ (BOOL)copyItemAtPath:(NSString *)path
-                toPath:(NSString *)toPath
-             overwrite:(BOOL)overwrite
-                 error:(NSError *__autoreleasing *)error;
++(BOOL)copyItemAtPath:(NSString *)path
+               toPath:(NSString *)toPath
+            overwrite:(BOOL)overwrite
+                error:(NSError *__autoreleasing *)error;
 #pragma mark —— 移动文件（夹）
 /// 移动文件(夹) 依据源文件的路径移动到目标路径：
 /// @param path 被移动文件路径
 /// @param toPath 要移动到的目标文件路径
 /// @param overwrite 当要移动到的文件路径文件存在，会移动失败，这里传入是否覆盖
 /// @param error 错误信息抛出
-+ (BOOL)moveItemAtPath:(NSString *)path
++(BOOL)moveItemAtPath:(NSString *)path
                 toPath:(NSString *)toPath
              overwrite:(BOOL)overwrite
-                 error:(NSError *__autoreleasing *)error;
+                error:(NSError *__autoreleasing *)error;
 #pragma mark —— 根据URL获取文件名
 /*参数1：文件路径
  *参数2、是否需要后缀
@@ -184,25 +172,25 @@ bundleFileSuffix:(NSString *__nonnull)bundleFileSuffix
 /// 根据文件路径获取文件扩展类型:
 +(NSString *)suffixAtPath:(NSString *)path;
 #pragma mark —— 判断文件（夹）是否存在
-///判断文件路径是否存在:
+/// 判断文件路径是否存在:
 +(BOOL)isExistsAtPath:(NSString *)path;
-///判断路径是否为空（判空条件是文件大小为0，或者是文件夹下没有子文件）:
+/// 判断路径是否为空（判空条件是文件大小为0，或者是文件夹下没有子文件）:
 +(BOOL)isEmptyItemAtPath:(NSString *)path
                    error:(NSError *__autoreleasing *)error;
-///判断目录是否是文件夹：
+/// 判断目录是否是文件夹：
 +(BOOL)isDirectoryAtPath:(NSString *)path
                    error:(NSError *__autoreleasing *)error;
-///判断目录是否是文件:
+/// 判断目录是否是文件:
 +(BOOL)isFileAtPath:(NSString *)path
               error:(NSError *__autoreleasing *)error;
-///判断目录是否可以执行:
+/// 判断目录是否可以执行:
 +(BOOL)isExecutableItemAtPath:(NSString *)path;
-///判断目录是否可读:
+/// 判断目录是否可读:
 +(BOOL)isReadableItemAtPath:(NSString *)path;
-///判断目录是否可写:
+/// 判断目录是否可写:
 +(BOOL)isWritableItemAtPath:(NSString *)path;
 #pragma mark —— 获取文件（夹）大小
-///获取文件大小（NSNumber）:
+/// 获取文件大小（NSNumber）:
 +(NSNumber *)sizeOfItemAtPath:(NSString *)path
                         error:(NSError *__autoreleasing *)error;
 ///获取文件夹大小（NSNumber）:
@@ -223,44 +211,52 @@ bundleFileSuffix:(NSString *__nonnull)bundleFileSuffix
  参数2：是否深遍历 (1. 浅遍历：返回当前目录下的所有文件和文件夹；
  2. 深遍历：返回当前目录下及子目录下的所有文件和文件夹)
  */
-+(NSArray *)listFilesInDirectoryAtPath:(NSString *)path
-                                  deep:(BOOL)deep;
++ (NSArray *)listFilesInDirectoryAtPath:(NSString *)path
+                                   deep:(BOOL)deep;
+#pragma mark —— 系统相册相关
+/// 获取相册最新加载（录制、拍摄）的资源
++(PHAsset *)gettingLastResource:(NSString *)Key;
+/// 相册
++(void)createAlbumFolder:(NSString *)folderName
+       ifExitFolderBlock:(MKDataBlock)ifExitFolderBlock
+       completionHandler:(TwoDataBlock)completionBlock;
+/// 创建一个名为folderName的相册，并且以路径pathStr保存文件
++(void)createAlbumFolder:(NSString *)folderName
+                    path:(NSString *)pathStr;
+/// 保存视频资源文件到指定的相册路径，这里是整个App名字的相册
++(void)saveRes:(NSURL *)movieURL;
+/// 是否存在此相册判断逻辑依据 注意和 isExistsAtPath进行区分
++(BOOL)isExistFolder:(NSString *)folderName;
+/// 保存文件到系统默认的相册，image是要保存的图片
++(void)saveImage:(UIImage *)image;
+/// 保存完成后调用的方法
++(void)savedPhotoImage:(UIImage*)image
+didFinishSavingWithError: (NSError *)error
+           contextInfo: (void *)contextInfo;
+/// 保存文件到系统默认的相册，videoPath为视频下载到本地之后的本地路径
++(void)saveVideo:(NSString *)videoPath;
+/// 保存视频完成之后的回调
++(void)video:(NSString *)videoPath
+didFinishSavingWithError:(NSError *)error
+ contextInfo:(void *)contextInfo;
+/// 仅获取PHAsset里面的视频
++(void)getVideoFromPHAsset:(PHAsset *)phAsset
+                  complete:(MKDataBlock)completeBlock;
+/// 获取PHAsset里面的相片
++(void)getPicFromPHAsset:(PHAsset *)phAsset
+                complete:(MKDataBlock)completeBlock;
+/// 获取PHAsset里面的声音
++(void)getAudioFromPHAsset:(PHAsset *)phAsset
+                  complete:(MKDataBlock)completeBlock;
+/// AVAsset 转 NSData
++(NSData *)AVAssetToData:(AVAsset *)asset;
 #pragma mark —— 获取文件属性
 +(id)attributeOfItemAtPath:(NSString *)path
-                    forKey:(NSString *)key
+                      forKey:(NSString *)key
                      error:(NSError *__autoreleasing *)error;
 ///获取文件属性集合:
 +(NSDictionary *)attributesOfItemAtPath:(NSString *)path
                                   error:(NSError *__autoreleasing *)error;
-#pragma mark —— 系统相册相关
-///获取相册最新加载（录制、拍摄）的资源
-+(PHAsset *)gettingLastResource:(NSString *)Key;
-
-+(void)createAlbumFolder:(NSString *)folderName
-       ifExitFolderBlock:(MKDataBlock)ifExitFolderBlock
-       completionHandler:(TwoDataBlock)completionBlock;
-///创建一个名为folderName的相册，并且以路径pathStr保存文件
-+(void)createAlbumFolder:(NSString *)folderName
-                    path:(NSString *)pathStr;
-///保存视频资源文件到指定的相册路径，这里是整个App名字的相册
-+(void)saveRes:(NSURL *)movieURL;
-///是否存在此相册判断逻辑依据
-+(BOOL)isExistFolder:(NSString *)folderName;
-///保存文件到系统默认的相册
-+(void)saveVideo:(NSString *)videoPath;
-+(void)saveImage:(UIImage *)image;
-///仅获取PHAsset里面的视频
-+(void)getVideoFromPHAsset:(PHAsset *)phAsset
-                  complete:(MKDataBlock)completeBlock;
-///获取PHAsset里面的相片
-+(void)getPicFromPHAsset:(PHAsset *)phAsset
-                complete:(MKDataBlock)completeBlock;
-///获取PHAsset里面的声音
-+(void)getAudioFromPHAsset:(PHAsset *)phAsset
-                  complete:(MKDataBlock)completeBlock;
-///AVAsset 转 NSData
-+(NSData *)AVAssetToData:(AVAsset *)asset;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -22,7 +22,7 @@
     if ([NSString isNullString:documentsChildDir]) {
         documentsChildDir = @"";
     }
-    NSString *folderPath = [NSString stringWithFormat:@"%@/%@",FileFolderHandleTool.documentsDir,documentsChildDir];
+    NSString *folderPath = [NSString stringWithFormat:@"%@/%@",NSString.documentsDir,documentsChildDir];
     // 创建文件夹
     [FileFolderHandleTool createFoldByFolderUrl:folderPath error:error];
     // 文件全名带后缀路径
