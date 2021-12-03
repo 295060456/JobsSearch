@@ -30,10 +30,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewModel : NSObject
 
-@property(nonatomic,strong)UIColor *textCor;//字体颜色
+@property(nonatomic,strong)UIColor *textCor;//主字体颜色
+@property(nonatomic,strong)UIColor *subTextCor;//副字体颜色
 @property(nonatomic,strong)UIColor *bgCor;//背景颜色
 @property(nonatomic,strong)UIFont *font;//字体
-@property(nonatomic,strong)NSString *text;//文字内容
+@property(nonatomic,strong)NSString *text;//主文字内容
+@property(nonatomic,strong)NSString *subText;//副文字内容
 @property(nonatomic,strong)UIImage *image;//图片
 @property(nonatomic,strong)UIImage *bgImage;//背景图片
 @property(nonatomic,assign)CGFloat cornerRadius;//圆切角

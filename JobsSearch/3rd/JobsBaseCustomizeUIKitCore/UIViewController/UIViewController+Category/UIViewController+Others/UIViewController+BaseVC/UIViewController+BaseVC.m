@@ -33,7 +33,7 @@ static char *UIViewController_BaseVC_backgroundImage = "UIViewController_BaseVC_
 }
 /// 简洁版强制present展现一个控制器页面【需要正向传参】
 -(void)comingToPresentVC:(UIViewController *)viewController
-    requestParams:(id _Nullable)requestParams{
+           requestParams:(id _Nullable)requestParams{
     [UIViewController comingFromVC:self
                               toVC:viewController
                        comingStyle:ComingStyle_PRESENT
@@ -57,7 +57,7 @@ static char *UIViewController_BaseVC_backgroundImage = "UIViewController_BaseVC_
 }
 /// 简洁版强制push展现一个控制器页面【需要正向传参】
 -(void)comingToPushVC:(UIViewController *)viewController
-    requestParams:(id _Nullable)requestParams{
+        requestParams:(id _Nullable)requestParams{
     [UIViewController comingFromVC:self
                               toVC:viewController
                        comingStyle:ComingStyle_PUSH

@@ -16,9 +16,6 @@
 #import "MacroDef_Func.h"
 #import "MacroDef_SysWarning.h"
 #import "FileFolderHandleTool.h"
-#import "LoadingImage.h"
-
-#import "NSObject+WHToast.h"//提示
 
 #if __has_include(<WHToast/WHToast.h>)
 #import <WHToast/WHToast.h>
@@ -147,6 +144,11 @@ callingMethodWithName:(nullable NSString *)methodName;
 /// 读取本地的plist文件到内存  【 plist ——> NSDictionary * 】
 /// @param fileName Plist文件名
 -(nullable NSDictionary *)readLocalPlistWithFileName:(nullable NSString *)fileName;
+/// 将基本数据类型（先统一默认视作浮点数）转化为图片进行显示。使用前提，图片的名字命令为0~9，方便进行映射
+/// @param inputData 需要进行转换映射的基本数据类型数据
+/// @param bitNum 如果操作对象是浮点数，那么小数点后需要保留的位数
+-(nonnull NSMutableArray <UIImage *>*)translateToArr:(CGFloat)inputData
+                                   saveBitAfterPoint:(NSInteger)bitNum;
 
 @end
 /**

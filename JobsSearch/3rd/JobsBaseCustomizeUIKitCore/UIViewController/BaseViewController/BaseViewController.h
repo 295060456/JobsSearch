@@ -32,7 +32,6 @@
 #endif
 
 #import "AABlock.h"
-#import "DDRecord.h"
 #import "BaseViewProtocol.h"
 #import "UIView+EmptyData.h"
 #import "UIView+MJRefresh.h"

@@ -5,7 +5,7 @@
 //  Created by Jobs on 2020/10/9.
 //
 
-#ifndef MacroDef_Cor_h
+#ifndef MacroDef_Cor_h 
 #define MacroDef_Cor_h
 
 #pragma mark ======================================== 色彩相关 ========================================
@@ -120,9 +120,9 @@
 */
 #define KLightTextColor [UIColor lightTextColor]
 #define KDarkTextColor [UIColor darkTextColor]
-/* systemGroupedBackgroundColor is now the same as systemGroupedBackgroundColor.
+/* groupTableViewBackgroundColor is now the same as systemGroupedBackgroundColor.
 */
-#define KSystemGroupedBackgroundColor [UIColor systemGroupedBackgroundColor]
+#define KGroupTableViewBackgroundColor [UIColor groupTableViewBackgroundColor]
 #define KViewFlipsideBackgroundColor [UIColor viewFlipsideBackgroundColor]
 #define KScrollViewTexturedBackgroundColor [UIColor scrollViewTexturedBackgroundColor]
 #define KUnderPageBackgroundColor [UIColor underPageBackgroundColor]

@@ -459,6 +459,62 @@ callingMethodWithName:(nullable NSString *)methodName{
         return [[NSDictionary alloc] initWithContentsOfFile:filePath];
     }return nil;
 }
+/// 将基本数据类型（先统一默认视作浮点数）转化为图片进行显示。使用前提，图片的名字命令为0~9，方便进行映射
+/// @param inputData 需要进行转换映射的基本数据类型数据
+/// @param bitNum 如果操作对象是浮点数，那么小数点后需要保留的位数
+-(nonnull NSMutableArray <UIImage *>*)translateToArr:(CGFloat)inputData
+                                   saveBitAfterPoint:(NSInteger)bitNum{
+    
+    if ([self isFloat:inputData] && !bitNum) {
+        bitNum = 2;//默认保存小数点后2位
+    }
+
+    NSString *format = [@"%." stringByAppendingString:[NSString stringWithFormat:@"%ldf",bitNum]];
+    NSString *str = [NSString stringWithFormat:format,inputData];
+    
+    NSMutableArray <NSString *>*resultMutArr = NSMutableArray.array;// For test
+    NSMutableArray <UIImage *>*resultIMGMutArr = NSMutableArray.array;
+    
+    NSUInteger len = str.length;
+    unichar buffer[len + 1];
+    [str getCharacters:buffer
+                 range:NSMakeRange(0, len)];
+    
+    for(int i = 0; i < len; i++) {
+        NSLog(@"%C", buffer[i]);
+        NSString *temp = [NSString stringWithFormat:@"%C",buffer[i]];
+        [resultMutArr addObject:temp];
+        // 数字映射图片
+        if ([temp isEqualToString:@"."]) {
+            temp = @"小数点";
+        }
+        [resultIMGMutArr addObject:KIMG(temp)];
+    }
+    NSLog(@"resultMutArr【For Test】 = %@",resultMutArr);
+    return resultIMGMutArr;
+}
+// 获取任意数字最高位数字
+-(NSInteger)getTopDigit:(NSInteger)number{
+    // makes sure you really get the digit!
+    number = labs(number);// abs()
+    if (number < 10){
+        return number;
+    }return [self getTopDigit:((number - (number % 10)) / 10)];
+}
+// 判断任意给定的一个整型是多少位数
+-(NSInteger)bitNum:(NSInteger)number{
+    NSInteger count = 0;
+    while(number != 0){
+        number /= 10;
+        count++;
+    }
+    printf("数字是 %ld 位数。", (long)count);
+    return count;
+}
+// 判断任意数字是否为小数
+-(BOOL)isFloat:(CGFloat)num{
+    return num - (int)num;
+}
 #pragma mark —— @property(nonatomic,strong)NSIndexPath *_indexPath;
 -(NSIndexPath *)_indexPath{
     return objc_getAssociatedObject(self, NSObject_Extras_indexPath);;

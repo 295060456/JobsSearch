@@ -10,6 +10,7 @@
 #import "AABlock.h"
 #import "BaseCellProtocol.h"
 #import "MacroDef_Func.h"
+#import "UIViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AABlock.h"
 #import "NSObject+Extras.h"
+#import "NSObject+WHToast.h"//提示
 #import "NSStringExtras.h"
 
 #if __has_include(<SPAlertController/SPAlertController.h>)
@@ -22,8 +23,6 @@
 #else
 #import "WHToast.h"
 #endif
-
-#import "NSObject+WHToast.h"//提示
 
 //  pod 'SPAlertController'# https://github.com/SPStore/SPAlertController 深度定制AlertController
 

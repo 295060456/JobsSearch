@@ -19,7 +19,7 @@
 +(instancetype)cellWithTableView:(UITableView *)tableView{
     BaseTableViewCell *cell = (BaseTableViewCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     if (!cell) {
-        cell = [[BaseTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+        cell = [[BaseTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
                                         reuseIdentifier:ReuseIdentifier];
 //        [UIView cornerCutToCircleWithView:cell andCornerRadius:6];
     }return cell;
@@ -33,10 +33,13 @@
     }return self;
 }
 
--(void)richElementsInCellWithModel:(id _Nullable)model{}
+-(void)richElementsInCellWithModel:(UIViewModel *_Nullable)model{
+    self.textLabel.text = [NSString stringWithFormat:@"%@",model.text];
+    self.detailTextLabel.text = [NSString stringWithFormat:@"%@",model.subText];
+}
 
 +(CGFloat)cellHeightWithModel:(id _Nullable)model{
-    return 0;
+    return 44;
 }
 /*
     用于以此为基类的BaseTableViewCell的具体子类所有数据的回调,当然也可以用NSObject分类的方法定位于：@interface NSObject (CallBackInfoByBlock)

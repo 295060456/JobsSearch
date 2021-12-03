@@ -38,10 +38,15 @@
 #import "NSArray+Extension.h"
 
 #pragma mark —— NSObject
+/// 设备信息
+#import "CurrentDeviceModel.h"
+/// iOS设备唯一标识符
+#import "NSObject+ID.h"
 /// NSObject+Alert
 #import "NSObject+SPAlertController.h"
 #import "NSObject+SYSAlertController.h"
 /// NSObject+Others
+#import "NSObject+Class.h"
 #import "NSObject+AFNReachability.h"
 #import "NSObject+Extras.h"
 #import "NSObject+Measure.h"
@@ -201,6 +206,7 @@
 /// BaseView
 #import "BaseView.h"
 /// UIView+Category
+#import "UIView+AutoSelfAdaptionSize.h"
 #import "UIView+Animation.h"
 #import "UIView+AOP.h"
 #import "UIView+BackgroundImage.h"

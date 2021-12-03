@@ -10,6 +10,7 @@
 #import "AABlock.h"
 #import "NSStringExtras.h"
 #import "NSObject+Extras.h"
+#import "NSObject+WHToast.h"//提示
 
 #if __has_include(<ReactiveObjC/RACmetamacros.h>)
 #import <ReactiveObjC/RACmetamacros.h>
@@ -40,8 +41,6 @@
 #else
 #import "WHToast.h"
 #endif
-
-#import "NSObject+WHToast.h"//提示
 
 /*
 * 使用说明

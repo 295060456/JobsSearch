@@ -77,7 +77,7 @@ static inline CGFloat NavigationBarAndStatusBarHeight(UINavigationController * _
 static inline CGFloat TabBarHeight(UITabBarController * _Nullable tabBarController){
     //因为tabbar可以自定义高度，所以这个地方返回系统默认的49像素的高度
     if (tabBarController) {
-        return tabBarController.tabBar.frame.size.height;;
+        return tabBarController.tabBar.frame.size.height;
     }else{
         return 49.f;
     }
