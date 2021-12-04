@@ -10,24 +10,16 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability-new"
 
+JobsSearchAppDelegate *appDelegate;
 @interface JobsSearchAppDelegate ()
 
 @end
 
 @implementation JobsSearchAppDelegate
 
-static JobsSearchAppDelegate *static_appDelegate = nil;
-+(instancetype)sharedInstance{
-    @synchronized(self){
-        if (!static_appDelegate) {
-            static_appDelegate = JobsSearchAppDelegate.new;
-        }
-    }return static_appDelegate;
-}
-
 -(instancetype)init{
     if (self = [super init]) {
-        static_appDelegate = self;
+        appDelegate = self;
     }return self;
 }
 /// 在这里写支持的旋转方向，为了防止横屏方向，应用启动时候界面变为横屏模式

@@ -6,6 +6,7 @@
 //
 
 #import "BaseViewController.h"
+#import "MacroDef_Func.h"
 #import "UIViewController+BackBtn.h"
 #import "UITableViewCell+BaseCellProtocol.h"
 #import "UITableViewHeaderFooterView+BaseTableViewHeaderFooterViewProtocol.h"

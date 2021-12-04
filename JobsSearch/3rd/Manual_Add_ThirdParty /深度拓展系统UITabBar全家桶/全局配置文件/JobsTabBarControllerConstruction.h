@@ -7,6 +7,7 @@
 
 #import "TLTabBarAnimation.h"
 #import "UITabBarItem+TLAnimation.h"
+#import "MacroDef_Func.h"
 #import "JobsSearchAppDelegate.h"
 
 /// 包装 viewController / 自定义样式UITabBarItem
@@ -33,7 +34,8 @@ static inline UIViewController *childViewController_customStyle(UIViewController
     config.lottieName = lottieName;
     config.tag = tag;
     
-    [JobsSearchAppDelegate.sharedInstance.tabBarVC.tabBarControllerConfigMutArr addObject:config];
+    extern JobsSearchAppDelegate *appDelegate;
+    [appDelegate.tabBarVC.tabBarControllerConfigMutArr addObject:config];
     
 //    setAnimation(viewController.tabBarItem, tag);//可选实现
     return viewController;

@@ -9,8 +9,7 @@
 #define MacroDef_Func_h
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
-
+#import "MacroDef_SysWarning.h"
 #import "MacroDef_Print.h"
 #import "MacroDef_Notification.h"
 #import "MacroDef_QUEUE.h"
@@ -19,7 +18,7 @@
 #import "MacroDef_Strong@Weak.h"
 #import "MacroDef_Time.h"
 
-static inline UIWindow * getMainWindow(){
+static inline UIWindow *getMainWindow(){
     UIWindow *window = nil;
     //以下方法有时候会拿不到window
     if (@available(iOS 13.0, *)) {
@@ -30,12 +29,7 @@ static inline UIWindow * getMainWindow(){
             }
         }
     }
-    
-    if (AppDelegate.sharedInstance.window) {
-        window = AppDelegate.sharedInstance.window;
-        return window;
-    }
-    
+
     if (UIApplication.sharedApplication.delegate.window) {
         window = UIApplication.sharedApplication.delegate.window;
         return window;
@@ -65,8 +59,38 @@ static inline BOOL isiPhoneX_series() {
         }
     }return iPhoneXSeries;
 }
-
-static inline id getSceneDelegate(){
+/**
+    1、该方法只能获取系统默认的AppDelegate；
+    2、如果要获取自定义的appDelegate，则需要：
+ 
+     AppDelegate *appDelegate;//在类定义域和实现域之外暴露
+     
+     -(instancetype)init{
+         if (self = [super init]) {
+             appDelegate = self;
+         }return self;
+     }
+     
+     获取方式：extern AppDelegate *appDelegate;
+ */
+static inline id getSysAppDelegate(){
+    return UIApplication.sharedApplication.delegate;
+}
+/**
+    1、该方法只能获取系统默认的SceneDelegate；
+    2、如果要获取自定义的sceneDelegate，则需要：
+ 
+     SceneDelegate *sceneDelegate;//在类定义域和实现域之外暴露
+         
+     -(instancetype)init{
+         if (self = [super init]) {
+             sceneDelegate = self;
+         }return self;
+     }
+     
+     获取方式：extern SceneDelegate *sceneDelegate;
+ */
+static inline id getSysSceneDelegate(){
     id sceneDelegate = nil;
     if (@available(iOS 13.0, *)) {
         sceneDelegate = UIApplication.sharedApplication.connectedScenes.allObjects.firstObject.delegate;

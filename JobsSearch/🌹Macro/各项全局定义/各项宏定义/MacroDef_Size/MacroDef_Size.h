@@ -10,16 +10,28 @@
 
 #import <UIKit/UIKit.h>
 #import "MacroDef_Func.h"
+#import "MacroDef_SysWarning.h"
 #import "MacroDef_AppDeviceScreenSize.h"
 
-#define MainScreen          UIScreen.mainScreen.bounds.size
-#define Device_Width        MainScreen.width//获取屏幕宽高
-#define Device_Height       MainScreen.height
-#define SCREEN_WIDTH        Device_Width
-#define SCREEN_HEIGHT       Device_Height
+#ifndef MainScreen
+#define MainScreen UIScreen.mainScreen.bounds.size
+#endif
 
-#define SCREEN_MAX_LENGTH   (MAX(Device_Width, Device_Height))
-#define SCREEN_MIN_LENGTH   (MIN(Device_Width, Device_Height))
+#ifndef SCREEN_WIDTH
+#define SCREEN_WIDTH UIScreen.mainScreen.bounds.size.width
+#endif
+
+#ifndef SCREEN_HEIGHT
+#define SCREEN_HEIGHT UIScreen.mainScreen.bounds.size.height
+#endif
+
+#ifndef SCREEN_MAX_LENGTH
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#endif
+
+#ifndef SCREEN_MIN_LENGTH
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+#endif
 
 #pragma mark —— 安全区域
 //顶部的安全距离

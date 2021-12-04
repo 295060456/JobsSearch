@@ -33,3 +33,18 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+/**
+ 
+ #pragma mark —— 存取用户信息Demo
+ -(void)saveAndReadUserInfoDemo{
+     DDUserModel *userModel = DDUserModel.new;
+     userModel.token = @"12345";
+     userModel.uid = @"54321";
+     
+     [self saveUserInfo:userModel];
+     NSLog(@"");
+     DDUserModel *f = [self readUserInfo];
+     NSLog(@"");
+ }
+ 
+ */

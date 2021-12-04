@@ -50,8 +50,9 @@
 }
 /// 【App语言国际化】手动更改UITabBarItem的标题
 -(void)changeTabBarItemTitle:(NSIndexPath *)indexPath{
-    for (int i = 0; i < AppDelegate.sharedInstance.tabBarVC.childMutArr.count; i ++) {
-        UIViewController *vc = AppDelegate.sharedInstance.tabBarVC.childMutArr[i];
+    AppDelegate *appDelegate = getSysAppDelegate();
+    for (int i = 0; i < appDelegate.tabBarVC.childMutArr.count; i ++) {
+        UIViewController *vc = appDelegate.tabBarVC.childMutArr[i];
         vc.tabBarItem.title = self.tabBarTitleMutArr[i];
     }
 }

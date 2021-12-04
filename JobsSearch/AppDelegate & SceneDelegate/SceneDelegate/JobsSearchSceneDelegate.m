@@ -12,24 +12,16 @@ API_AVAILABLE(ios(13.0))
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability-new"
 
+JobsSearchSceneDelegate *sceneDelegate;
 @interface JobsSearchSceneDelegate ()
 
 @end
 
 @implementation JobsSearchSceneDelegate
 
-static JobsSearchSceneDelegate *static_sceneDelegate = nil;
-+(instancetype)sharedInstance{
-    @synchronized(self){
-        if (!static_sceneDelegate) {
-            static_sceneDelegate = JobsSearchSceneDelegate.new;
-        }
-    }return static_sceneDelegate;
-}
-
 -(instancetype)init{
     if (self = [super init]) {
-        static_sceneDelegate = self;
+        sceneDelegate = self;
     }return self;
 }
 
@@ -75,7 +67,8 @@ willConnectToSession:(UISceneSession *)session
 }
 #pragma mark —— lazyLoad
 -(UIWindow *)window{
-    [_window setRootViewController:JobsSearchAppDelegate.sharedInstance.tabBarVC];
+    extern JobsSearchAppDelegate *appDelegate;
+    [_window setRootViewController:appDelegate.tabBarVC];
     [_window makeKeyAndVisible];
     return _window;
 }
