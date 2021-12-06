@@ -9,6 +9,15 @@
 
 @implementation UIButton (UI)
 
+#pragma mark —— Common
+-(void)titleFont:(UIFont *)font{
+    self.titleLabel.font = font;
+}
+
+-(void)titleAlignment:(NSTextAlignment)textAlignment{
+    self.titleLabel.textAlignment = textAlignment;
+}
+#pragma mark —— Normal
 -(void)normalImage:(UIImage *)image{
     [self setImage:image forState:UIControlStateNormal];
 }
@@ -24,9 +33,21 @@
 -(void)normalTitleColor:(UIColor *)titleColor{
     [self setTitleColor:titleColor forState:UIControlStateNormal];
 }
+#pragma mark —— Selected
+-(void)selectedImage:(UIImage *)image{
+    [self setImage:image forState:UIControlStateSelected];
+}
 
--(void)titleFont:(UIFont *)font{
-    self.titleLabel.font = font;
+-(void)selectedBackgroundImage:(UIImage *)backgroundImage{
+    [self setBackgroundImage:backgroundImage forState:UIControlStateSelected];
+}
+
+-(void)selectedTitle:(NSString *)title{
+    [self setTitle:title forState:UIControlStateSelected];
+}
+
+-(void)selectedTitleColor:(UIColor *)titleColor{
+    [self setTitleColor:titleColor forState:UIControlStateSelected];
 }
 
 @end

@@ -17,6 +17,7 @@
 #import "MacroDef_UserDefault.h"
 #import "MacroDef_Strong@Weak.h"
 #import "MacroDef_Time.h"
+#import "MacroDef_Singleton.h"
 
 static inline UIWindow *getMainWindow(){
     UIWindow *window = nil;

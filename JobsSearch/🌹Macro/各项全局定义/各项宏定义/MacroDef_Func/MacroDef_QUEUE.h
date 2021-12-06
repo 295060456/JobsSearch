@@ -12,9 +12,9 @@
 ///异步获取某个队列
 #define GET_QUEUE_ASYNC(queue, block)\
 if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(queue)) == 0) {\
-block();\
+    if (block) block();\
 } else {\
-dispatch_async(queue, block);\
+    dispatch_async(queue, block);\
 }
 ///获取主队列
 #define GET_MAIN_QUEUE_ASYNC(block) GET_QUEUE_ASYNC(dispatch_get_main_queue(), block)

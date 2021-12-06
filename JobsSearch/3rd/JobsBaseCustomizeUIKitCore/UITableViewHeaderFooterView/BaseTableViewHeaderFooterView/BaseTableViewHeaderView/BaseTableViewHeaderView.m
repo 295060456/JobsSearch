@@ -20,6 +20,10 @@
 
     }return self;
 }
+//在具体的子类实现，实现控制UITableViewHeaderFooterView是否悬停
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:[self.tableView rectForHeaderInSection:self.section]];
+}
 //具体由子类进行复写【数据定UI】【如果所传参数为基本数据类型，那么包装成对象NSNumber进行转化承接】
 -(void)richElementsInViewWithModel:(id _Nullable)model{}
 //具体由子类进行复写【数据定高】【如果所传参数为基本数据类型，那么包装成对象NSNumber进行转化承接】
@@ -39,5 +43,6 @@
 -(void)actionBlockTableViewHeaderView:(MKDataBlock _Nullable)tableViewHeaderViewBlock{
     self.tableViewHeaderViewBlock = tableViewHeaderViewBlock;
 }
+
 
 @end

@@ -60,6 +60,10 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
 }
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleDefault;
+}
 #pragma mark —— UITableViewDelegate,UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;

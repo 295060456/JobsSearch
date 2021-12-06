@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param lineSpacing 行与行之间的间距
 /// @param calcLabelHeight_Width 计算的结论是宽或者高
 /// @param font 该字符串的字号和字体
-/// @param Height_Width  文本的宽度
+/// @param Height_Width  文本的宽度/高度
 -(CGFloat)getContentHeightOrWidthWithParagraphStyleLineSpacing:(CGFloat)lineSpacing
                                          calcLabelHeight_Width:(CalcLabelHeight_Width)calcLabelHeight_Width
                                                           font:(UIFont *_Nullable)font

@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  */
 
-@interface UICollectionViewCell (Default)
+@interface UICollectionViewCell (Default)<BaseCellProtocol>
 
 +(instancetype)defaultCellWithCollectionView:(nonnull UICollectionView *)collectionView
                                 forIndexPath:(nonnull NSIndexPath *)indexPath;

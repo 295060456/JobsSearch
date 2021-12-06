@@ -38,6 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSString *subText;//副文字内容
 @property(nonatomic,strong)UIImage *image;//图片
 @property(nonatomic,strong)UIImage *bgImage;//背景图片
+@property(nonatomic,assign)NSTextAlignment textAlignment;
+@property(nonatomic,assign)NSLineBreakMode lineBreakMode;
+@property(nonatomic,strong)NSAttributedString *attributedText API_AVAILABLE(ios(6.0));
 @property(nonatomic,assign)CGFloat cornerRadius;//圆切角
 @property(nonatomic,assign)CGFloat width;//宽
 @property(nonatomic,assign)CGFloat height;//高

@@ -17,12 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setupBarButtonItem:(UIViewController * __nonnull)vc
                     title:(NSString * __nullable)title
                  selector:(SEL __nonnull)selector;
-/*
-    用于以此为基类的UINavigationController的具体子类上所有数据的回调,当然也可以用NSObject分类的方法定位于：@interface NSObject (CallBackInfoByBlock)
- */
--(void)actionBlockBaseNavigationVC:(MKDataBlock)baseNavigationVCBlock;
-
-//+(UINavigationController *)rootNavigationController;
 
 @end
 

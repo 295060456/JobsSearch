@@ -13,6 +13,17 @@
 @end
 
 @implementation BaseView
+/**
+ 协议中是可以定义属性的
+ 但是只有对应的getter和setter方法，没有对应的成员变量
+ 而getter和setter就是操作的对应成员变量
+ 所以就无法调用getter或者setter 否则项目崩溃
+ 所以需要 @synthesize
+ */
+@synthesize viewSize = _viewSize;
+@synthesize viewRect = _viewRect;
+@synthesize viewWidth = _viewWidth;
+@synthesize viewHeight = _viewHeight;
 
 -(instancetype)init{
     if (self = [super init]) {
@@ -53,5 +64,21 @@
 -(void)actionBlockBaseView:(MKDataBlock)baseViewBlock{
     self.baseViewBlock = baseViewBlock;
 }
+//数据（字符串）定宽
+-(CGFloat)widthByData:(UIViewModel *_Nonnull)data{
+    return [data.text getContentHeightOrWidthWithParagraphStyleLineSpacing:0
+                                                     calcLabelHeight_Width:CalcLabelWidth
+                                                                      font:data.font
+                                              boundingRectWithHeight_Width:data.height];
+}
+//数据（字符串）定高
+-(CGFloat)heightByData:(UIViewModel *_Nonnull)data{
+    return [data.text getContentHeightOrWidthWithParagraphStyleLineSpacing:0
+                                                     calcLabelHeight_Width:CalcLabelHeight
+                                                                      font:data.font
+                                              boundingRectWithHeight_Width:data.width];
+}
+
+
 
 @end

@@ -11,7 +11,6 @@
 @interface BaseNavigationVC ()
 
 @property(nonatomic,strong)NSShadow *shadow;
-@property(nonatomic,copy)MKDataBlock baseNavigationVCBlock;
 
 @end
 
@@ -50,11 +49,11 @@
 
 -(void)loadView{
     [super loadView];
+    self.delegate = self;
 }
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.delegate = self;
 //    self.navigationBar.hidden = YES;// [self setNavigationBarHidden:YES animated:YES]; 这么写不行
 }
 
@@ -81,12 +80,6 @@
 
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
-}
-/*
-    用于以此为基类的UINavigationController的具体子类上所有数据的回调,当然也可以用NSObject分类的方法定位于：@interface NSObject (CallBackInfoByBlock)
- */
--(void)actionBlockBaseNavigationVC:(MKDataBlock)baseNavigationVCBlock{
-    self.baseNavigationVCBlock = baseNavigationVCBlock;
 }
 //在指定的单独的控制器里面更改状态栏的颜色（不是全局统一样式的批量改）
 /** 同时在指定的控制器里面实现此方法

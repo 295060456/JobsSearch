@@ -23,11 +23,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (UI)
 
+#pragma mark —— Common
+-(void)titleFont:(UIFont *)font;
+-(void)titleAlignment:(NSTextAlignment)textAlignment;
+#pragma mark —— Normal
 -(void)normalImage:(UIImage *)image;
 -(void)normalBackgroundImage:(UIImage *)backgroundImage;
 -(void)normalTitle:(NSString *)title;
 -(void)normalTitleColor:(UIColor *)titleColor;
--(void)titleFont:(UIFont *)font;
+#pragma mark —— Selected
+-(void)selectedImage:(UIImage *)image;
+-(void)selectedBackgroundImage:(UIImage *)backgroundImage;
+-(void)selectedTitle:(NSString *)title;
+-(void)selectedTitleColor:(UIColor *)titleColor;
 
 @end
 

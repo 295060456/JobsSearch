@@ -186,6 +186,7 @@
 #import "BaseTableViewHeaderView.h"
 /// UITableViewHeaderFooterView+Category
 #import "UITableViewHeaderFooterView+BaseTableViewHeaderFooterViewProtocol.h"
+#import "UITableViewHeaderFooterView+Attribute.h"
 
 #pragma mark —— UITextField
 /// BaseTextField
@@ -210,6 +211,7 @@
 #import "UIView+Animation.h"
 #import "UIView+AOP.h"
 #import "UIView+BackgroundImage.h"
+#import "UIView+BackgroundLabel.h"
 #import "UIView+Chain.h"
 #import "UIView+EmptyData.h"
 #import "UIView+Extras.h"
