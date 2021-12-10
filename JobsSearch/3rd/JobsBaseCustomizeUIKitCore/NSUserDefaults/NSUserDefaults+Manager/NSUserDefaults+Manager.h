@@ -7,43 +7,12 @@
 
 #import <Foundation/Foundation.h>
 #import "UserDefaultModel.h"
+#import "JobsUserDefaultDefine.h"
 
 #if __has_include(<MJExtension/MJExtension.h>)
 #import <MJExtension/MJExtension.h>
 #else
 #import "MJExtension.h"
-#endif
-
-#ifndef SetUserDefaultKeyWithValue
-#define SetUserDefaultKeyWithValue(key,value) [NSUserDefaults.standardUserDefaults setValue:value forKey:key]
-#endif
-
-#ifndef SetUserDefaultKeyWithObject
-#define SetUserDefaultKeyWithObject(key,object) [NSUserDefaults.standardUserDefaults setObject:object forKey:key]
-#endif
-
-#ifndef SetUserBoolKeyWithObject
-#define SetUserBoolKeyWithObject(key,object) [NSUserDefaults.standardUserDefaults setBool:object forKey:key]
-#endif
-
-#ifndef GetUserDefaultValueForKey
-#define GetUserDefaultValueForKey(key) [NSUserDefaults.standardUserDefaults valueForKey:key]
-#endif
-
-#ifndef GetUserDefaultObjForKey
-#define GetUserDefaultObjForKey(key) [NSUserDefaults.standardUserDefaults objectForKey:key]
-#endif
-
-#ifndef GetUserDefaultBoolForKey
-#define GetUserDefaultBoolForKey(key) [NSUserDefaults.standardUserDefaults boolForKey:key]
-#endif
-
-#ifndef DeleUserDefaultWithKey
-#define DeleUserDefaultWithKey(key) [NSUserDefaults.standardUserDefaults removeObjectForKey:key]
-#endif
-
-#ifndef UserDefaultSynchronize
-#define UserDefaultSynchronize NSUserDefaults.standardUserDefaults.synchronize
 #endif
 
 NS_ASSUME_NONNULL_BEGIN

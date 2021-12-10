@@ -7,7 +7,6 @@
 //
 
 #import "UITableView+XSAnimationKit.h"
-#import "TableViewAnimationKit.h"
 
 @implementation UITableView (XSAnimationKit)
 

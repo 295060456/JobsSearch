@@ -6,21 +6,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
-//#import "UBLSearchCollectionReusableView.h"
-//#import "UBLHotCollectionReusableView.h"
-//#import "UBLAllCollectionReusableView.h"
+#import "BaseCollectionViewCell.h"
+#import "CasinoTopCVCell.h"
+#import "CasinoBannerCVCell.h"
+#import "CasinoMarqueeCVCell.h"
+#import "CasinoGameCVCell.h"
+#import "CasinoGameCell.h"
+#import "CasinoGameCollectionReusableView.h"
 //
-//#import "UBLVideoCollectionViewCell@Style1.h"
-//#import "UBLVideoCollectionViewCell@Style2.h"
-//#import "UBLVideoCollectionViewCell@Style3.h"
-//#import "UBLVideoCollectionViewCell@Style4.h"
-//#import "UBLVideoCollectionViewCell@Style5.h"
-//#import "UBLVideoCollectionViewCell@Style6.h"
-//#import "UBLVideoCollectionViewCell@Style7.h"
-//#import "UBLVideoCollectionViewCell@Style8.h"
-//#import "UBLVideoCollectionViewCell@Style9.h"
-//#import "UBLVideoCollectionViewCell@Style10.h"
+#import "JobsImageNumberViewCVCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

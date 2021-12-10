@@ -23,10 +23,10 @@
 @implementation HistoryDataListTBVCell
 
 +(instancetype)cellWithTableView:(UITableView *)tableView{
-    HistoryDataListTBVCell *cell = (HistoryDataListTBVCell *)[tableView dequeueReusableCellWithIdentifier:@"InfoTBVCell"];
+    HistoryDataListTBVCell *cell = (HistoryDataListTBVCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier(self.class)];
     if (!cell) {
         cell = [[HistoryDataListTBVCell alloc]initWithStyle:UITableViewCellStyleSubtitle
-                                            reuseIdentifier:ReuseIdentifier];
+                                            reuseIdentifier:reuseIdentifier(self.class)];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.contentView.backgroundColor = HEXCOLOR(0x242A37);
     }return cell;

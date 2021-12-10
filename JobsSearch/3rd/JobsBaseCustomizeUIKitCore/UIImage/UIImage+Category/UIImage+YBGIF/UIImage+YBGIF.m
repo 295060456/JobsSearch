@@ -7,7 +7,6 @@
 //
 
 #import "UIImage+YBGIF.h"
-#import <ImageIO/ImageIO.h>
 
 @implementation UIImage (YBGIF)
 

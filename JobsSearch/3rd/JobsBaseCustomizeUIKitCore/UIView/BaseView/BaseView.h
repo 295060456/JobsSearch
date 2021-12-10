@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AABlock.h"
 #import "BaseViewProtocol.h"
+#import "MacroDef_Notification.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,10 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
     用于以此为基类的View层上所有数据的回调,当然也可以用NSObject分类的方法定位于：@interface NSObject (CallBackInfoByBlock)
  */
 -(void)actionBlockBaseView:(MKDataBlock)baseViewBlock;
-//数据（字符串）定宽
--(CGFloat)widthByData:(UIViewModel *_Nonnull)data;
-//数据（字符串）定高
--(CGFloat)heightByData:(UIViewModel *_Nonnull)data;
 
 @end
 

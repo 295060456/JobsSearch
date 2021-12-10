@@ -9,9 +9,8 @@
 #import "AABlock.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+// https://www.jianshu.com/p/564b5da57ea1
 @interface NSObject (DefConfig)
-
 // 回到主线程
 -(void)getMainQueue:(NoResultBlock)block;
 // 开启一个子线程

@@ -17,12 +17,12 @@
 
 +(instancetype)cellWithCollectionView:(nonnull UICollectionView *)collectionView
                          forIndexPath:(nonnull NSIndexPath *)indexPath{
-    id cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(self.class)
+    id cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier(self.class)
                                                         forIndexPath:indexPath];
     if (!cell) {
         [collectionView registerClass:self.class
-           forCellWithReuseIdentifier:ReuseIdentifier];
-        [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(self.class)
+           forCellWithReuseIdentifier:reuseIdentifier(self.class)];
+        [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier(self.class)
                                                   forIndexPath:indexPath];
     }return cell;
 }

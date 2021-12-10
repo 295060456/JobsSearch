@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-//https://kangzubin.com/ios-device-model/
-//https://gist.github.com/kangzubin/5b4f989d6b1113bfbe43c5772f3ba1fd
+#import <sys/sysctl.h>
 
 typedef enum : NSUInteger {
     iPhoneScreen_default = 0,// iPhone Simulator 或者 新出的机型
@@ -22,28 +21,27 @@ typedef enum : NSUInteger {
     iPhoneScreen_XSMAX = 8
 } iPhoneScreen;
 
+//https://kangzubin.com/ios-device-model/
+//https://gist.github.com/kangzubin/5b4f989d6b1113bfbe43c5772f3ba1fd
 @interface UIDevice (XMUtils)
-
 /**
  获取硬件平台名称，叫 device model 或者 machine name
 
  @return 硬件平台名称，如 iPhone3,1、iPad7,4 等
  */
-+ (NSString *)platform;
-
++(NSString *)platform;
 /**
  获取设备型号名称
 
  @return 设备型号名称，如 iPhone 7、iPhone X、iPad Pro 10.5-inch 等
  */
-+ (NSString *)platformString;
-
++(NSString *)platformString;
 /**
  获取设备型号名称
 
  @return 设备型号名称，与 platformString 一致，只查询一次然后缓存
  */
-+ (NSString *)deviceName;
++(NSString *)deviceName;
 
 +(BOOL)judgementUpperIphone6;//判断当前机型是否是iphone6 及其以上机型,过滤掉对ipad的判断
 

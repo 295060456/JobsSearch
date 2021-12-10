@@ -7,10 +7,11 @@
 
 #import <Foundation/Foundation.h>
 #import "AABlock.h"
+#import "BaseProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol BaseTableViewHeaderFooterViewProtocol <NSObject>
+@protocol BaseTableViewHeaderFooterViewProtocol <BaseProtocol>
 
 @optional
 

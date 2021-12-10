@@ -32,6 +32,8 @@
 #endif
 
 #import "AABlock.h"
+#import "NotificationManager.h"
+#import "MacroDef_Notification.h"
 #import "BaseViewProtocol.h"
 #import "UIView+EmptyData.h"
 #import "UIView+MJRefresh.h"
@@ -52,6 +54,8 @@ BaseViewProtocol
 @property(nonatomic,strong)UIImageView *bgImageView;
 @property(nonatomic,assign)NSInteger __block currentPage;
 @property(nonatomic,copy)MKDataBlock viewControllerBlock;
+
+-(void)setGKNav;
 /*
     用于以此为基类的控制器上所有数据的回调,当然也可以用NSObject分类的方法定位于：@interface NSObject (CallBackInfoByBlock)
  */

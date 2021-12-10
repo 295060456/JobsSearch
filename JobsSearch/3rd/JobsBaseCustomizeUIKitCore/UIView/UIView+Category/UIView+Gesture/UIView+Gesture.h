@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NSStringExtras.h"
+#import "JobsString.h"
 #import "NSObject+Extras.h"
 
 #if __has_include(<ReactiveObjC/RACmetamacros.h>)

@@ -7,16 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "TableViewAnimationKitConfig.h"
+#import "TableViewAnimationKit.h"
 
 @interface UITableView (XSAnimationKit)
-
 /**
  show the tableView animation 
  
  @param animationType type of animation to show TableView
  */
 - (void)xs_showTableViewAnimationWithType:(XSTableViewAnimationType )animationType;
-
 
 @end

@@ -24,7 +24,7 @@ end
 def func
   pod 'NTESVerifyCode' # 网易验证码 https://github.com/yidun/NTESVerifyCode https://support.dun.163.com/documents/15588062143475712?docId=150442931089756160
   pod 'XYColorOC' # https://github.com/RayJiang16/XYColor 适配iOS 13夜间模式/深色外观(Dark Mode)
-  pod 'JobsGlobleDef'
+  # pod 'JobsGlobleDef'
 #  pod 'FBRetainCycleDetector' # https://github.com/facebook/FBRetainCycleDetector
   pod 'DoraemonKit' # https://github.com/didi/DoraemonKit 滴滴打车出的工具
   pod 'Masonry'

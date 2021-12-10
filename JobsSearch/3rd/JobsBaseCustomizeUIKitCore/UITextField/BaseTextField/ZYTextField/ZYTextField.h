@@ -4,12 +4,7 @@
 #import "UITextField+Extend.h"
 #import "LoadingImage.h"
 #import "MacroDef_Cor.h"
-
-typedef NS_ENUM(NSUInteger, PlaceHolderAlignment){
-    PlaceHolderAlignmentLeft,// 左对齐 默认
-    PlaceHolderAlignmentCenter,// 居中对齐
-    PlaceHolderAlignmentRight// 右对齐
-};
+#import "TextFieldDefine.h"
 
 @interface ZYTextField : UITextField
 

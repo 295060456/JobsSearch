@@ -8,6 +8,8 @@
 
 extern NSString *const kUserAssert;
 
+FOUNDATION_EXTERN NSString *const LanguageSwitchNotification;
 FOUNDATION_EXTERN NSString *const UBLEnterBackgroundStopPlayer;
 FOUNDATION_EXTERN NSString *const MKAFNReachabilityStatus;
+
 

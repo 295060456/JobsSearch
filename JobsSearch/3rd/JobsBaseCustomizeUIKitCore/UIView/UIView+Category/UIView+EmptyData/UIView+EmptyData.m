@@ -6,7 +6,7 @@
 //
 
 #import "UIView+EmptyData.h"
-#import "NSStringExtras.h"
+#import "JobsString.h"
 #import <objc/runtime.h>
 
 @implementation UIView (EmptyData)

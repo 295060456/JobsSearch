@@ -1,0 +1,28 @@
+//
+//  LivingVC.h
+//  UBallLive
+//
+//  Created by Jobs on 2020/10/21.
+//
+
+#import <UIKit/UIKit.h>
+#import "UBLBaseViewController.h"
+#import "UBLChatVC.h"//聊天
+
+#import "UBLLivingVideoView.h"
+#import "UBLLivingNavView.h"//导航栏
+
+#import "UBLLivingModel.h"
+
+#import "JobsSocketIOTools.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UBLLivingVC : UBLBaseViewController
+
+@property(nonatomic,strong)UBLLivingModel *livingModel;
+-(void)actionBlockLivingVC:(MKDataBlock _Nullable)livingVCBlock;
+
+@end
+
+NS_ASSUME_NONNULL_END

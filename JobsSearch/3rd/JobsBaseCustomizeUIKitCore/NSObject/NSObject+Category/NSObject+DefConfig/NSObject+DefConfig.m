@@ -7,8 +7,6 @@
 
 #import "NSObject+DefConfig.h"
 
-//https://www.jianshu.com/p/564b5da57ea1
-
 @implementation NSObject (DefConfig)
 // 回到主线程
 -(void)getMainQueue:(NoResultBlock)block{

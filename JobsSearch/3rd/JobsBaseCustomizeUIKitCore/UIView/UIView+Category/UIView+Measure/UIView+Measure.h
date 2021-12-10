@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewProtocol.h"
+#import "UIViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (Measure)
+@interface UIView (Measure)<BaseViewProtocol>
 
 @property(nonatomic,assign)CGFloat x;
 @property(nonatomic,assign)CGFloat y;

@@ -48,7 +48,7 @@
             }
             
             CGSize sizeTemp = [self boundingRectWithSize:size
-                                                 options:NSStringDrawingUsesLineFragmentOrigin |    NSStringDrawingUsesFontLeading
+                                                 options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
                                               attributes:attributesMutDic
                                                  context:nil].size;
             lableSize = CGSizeMake(ceilf(sizeTemp.width),
@@ -57,10 +57,10 @@
         
         switch (calcLabelHeight_Width) {
             case CalcLabelHeight:{
-                return lableSize.height;;
+                return lableSize.height;
             }break;
             case CalcLabelWidth:{
-                return lableSize.width;;
+                return lableSize.width;
             }break;
             default:{
                 return 0;
@@ -82,7 +82,7 @@
         width = 20;
     }
     CGRect rect = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
-                                     options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin
+                                     options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
                                   attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font weight:UIFontWeightRegular]}
                                      context:nil];
     return rect.size.height;

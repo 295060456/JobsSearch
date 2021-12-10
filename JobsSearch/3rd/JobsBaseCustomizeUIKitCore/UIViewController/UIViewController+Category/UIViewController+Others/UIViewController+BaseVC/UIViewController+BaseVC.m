@@ -13,11 +13,13 @@ static char *UIViewController_BaseVC_requestParams = "UIViewController_BaseVC_re
 static char *UIViewController_BaseVC_pushOrPresent = "UIViewController_BaseVC_pushOrPresent";
 static char *UIViewController_BaseVC_rootVC = "UIViewController_BaseVC_rootVC";
 static char *UIViewController_BaseVC_backgroundImage = "UIViewController_BaseVC_backgroundImage";
+static char *UIViewController_BaseVC_viewModel = "UIViewController_BaseVC_viewModel";
 
 @dynamic requestParams;
 @dynamic pushOrPresent;
 @dynamic rootVC;
 @dynamic backgroundImage;
+@dynamic viewModel;
 
 #pragma mark —— present
 /// 简洁版强制present展现一个控制器页面【不需要正向传参】
@@ -179,6 +181,24 @@ static char *UIViewController_BaseVC_backgroundImage = "UIViewController_BaseVC_
     objc_setAssociatedObject(self,
                              UIViewController_BaseVC_backgroundImage,
                              backgroundImage,
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+#pragma mark —— @property(nonatomic,strong)UIViewModel *viewModel;
+-(UIViewModel *)viewModel{
+    UIViewModel *ViewModel = objc_getAssociatedObject(self, UIViewController_BaseVC_viewModel);
+    if (!ViewModel) {
+        ViewModel = UIViewModel.new;
+        objc_setAssociatedObject(self,
+                                 UIViewController_BaseVC_viewModel,
+                                 ViewModel,
+                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }return ViewModel;
+}
+
+-(void)setViewModel:(UIViewModel *)viewModel{
+    objc_setAssociatedObject(self,
+                             UIViewController_BaseVC_viewModel,
+                             viewModel,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 

@@ -7,8 +7,6 @@
 //
 
 #import "UINavigationController+SafeTransition.h"
-#import "TYFFSwizzle.h"
-#import <objc/runtime.h>
 
 @interface UINavigationController ()
 

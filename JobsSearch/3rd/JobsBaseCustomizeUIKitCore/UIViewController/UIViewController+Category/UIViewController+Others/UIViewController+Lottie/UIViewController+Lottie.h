@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "NSStringExtras.h"
+#import "JobsString.h"
 
 #if __has_include(<lottie-ios/Lottie.h>)
 #import <lottie-ios/Lottie.h>

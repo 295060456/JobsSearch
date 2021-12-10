@@ -10,10 +10,10 @@
 @implementation UITableViewCell (BaseCellProtocol)
 
 +(instancetype)cellWithTableView:(UITableView *)tableView{
-    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier(self.class)];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:ReuseIdentifier];
+                                      reuseIdentifier:reuseIdentifier(self.class)];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }return cell;

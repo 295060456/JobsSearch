@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MacroDef_Strong@Weak.h"
 /// For RAC
 #define BtnClickEvent(button,action)\
 @jobs_weakify(self)\

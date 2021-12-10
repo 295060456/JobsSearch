@@ -10,19 +10,19 @@
 #import "MacroDef_SysWarning.h"
 #import "NSObject+Time.h"
 #import "NSUserDefaults+Manager.h"
-#import "TimeModel.h"
+#import "JobsTimeModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (Time)
 
 #pragma mark —— 时间格式转换
-/// 接受一个秒数，对这个秒数进行解析出：时、分、秒，存入TimeModel，外层再对这个TimeModel进行取值，对数据进行拼装
-+(TimeModel *)HHMMSS:(NSInteger)TimeSec;
+/// 接受一个秒数，对这个秒数进行解析出：时、分、秒，存入JobsTimeModel，外层再对这个JobsTimeModel进行取值，对数据进行拼装
++(JobsTimeModel *)HHMMSS:(NSInteger)TimeSec;
 /// 将某个（NSDate *）时间 转换格式
 /// @param date 一个指定的时间，若未指定则为当前时间
 /// @param timeFormatStr 时间格式 缺省值 @"MMM dd,yyyy HH:mm tt"
-+(TimeFormatterModel *)timeFormatterWithDate:(NSDate *_Nullable)date
++(JobsTimeFormatterModel *)timeFormatterWithDate:(NSDate *_Nullable)date
                                timeFormatStr:(NSString *_Nullable)timeFormatStr;
 /// NSDate * ---> NSString *   (NSDate*)时间 转 (NSString*)时间戳（毫秒级）
 /// @param date 不传值则为当前时间
@@ -66,17 +66,17 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSDate *)strByDate:(NSString *_Nonnull)dateStr
        timeFormatter:(NSString *_Nullable)timeFormatter;
 #pragma mark —— 功能性的
-+(TimeModel *)makeSpecificTime;//各个具体时间的拆解
++(JobsTimeModel *)makeSpecificTime;//各个具体时间的拆解
 /// 获得当前时间
-+(TimeFormatterModel *)currentTime;
++(JobsTimeFormatterModel *)currentTime;
 /// 获得今天的时间:年/月/日
 /// @param dateFormat 时间格式：缺省值@"yyyy-MM-dd"
-+(TimeFormatterModel *)getToday:(NSString *_Nullable)dateFormat;
++(JobsTimeFormatterModel *)getToday:(NSString *_Nullable)dateFormat;
 /// 可以获得两个日期之间的时间间隔
 /// @param startTime （给定） 开始时间【字符串格式】
 /// @param endTime （可以不用给定）结束时间【字符串格式】
 /// @param timeFormatter 时间格式：缺省值@"yyyy-MM-dd HH:mm:ss"
-+(TimeFormatterModel *)timeIntervalstartDate:(NSString *_Nonnull)startTime
++(JobsTimeFormatterModel *)timeIntervalstartDate:(NSString *_Nonnull)startTime
                                      endDate:(NSString *_Nullable)endTime
                                timeFormatter:(NSString *_Nullable)timeFormatter;
 //https://www.jianshu.com/p/5f4e7fabcc02

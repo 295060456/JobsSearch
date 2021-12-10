@@ -11,9 +11,9 @@
 @implementation NSObject (Time)
 
 #pragma mark —— 时间格式转换
-///接受一个秒数，对这个秒数进行解析出：时、分、秒，存入TimeModel，外层再对这个TimeModel进行取值，对数据进行拼装
-+(TimeModel *)HHMMSS:(NSInteger)TimeSec{
-    TimeModel *timeModel = TimeModel.new;
+///接受一个秒数，对这个秒数进行解析出：时、分、秒，存入JobsTimeModel，外层再对这个JobsTimeModel进行取值，对数据进行拼装
++(JobsTimeModel *)HHMMSS:(NSInteger)TimeSec{
+    JobsTimeModel *timeModel = JobsTimeModel.new;
     //format of hour
     timeModel.customHour = [NSString stringWithFormat:@"%02ld",TimeSec / 3600].integerValue;
     //format of minute
@@ -25,9 +25,9 @@
 /// 将某个（NSDate *）时间 转换格式
 /// @param date 一个指定的时间，若未指定则为当前时间
 /// @param timeFormatStr 时间格式 缺省值 @"MMM dd,yyyy HH:mm tt"
-+(TimeFormatterModel *)timeFormatterWithDate:(NSDate *_Nullable)date
++(JobsTimeFormatterModel *)timeFormatterWithDate:(NSDate *_Nullable)date
                                timeFormatStr:(NSString *_Nullable)timeFormatStr{
-    TimeFormatterModel *timeModel = TimeFormatterModel.new;
+    JobsTimeFormatterModel *timeModel = JobsTimeFormatterModel.new;
     NSDateFormatter *dateFormatter = NSDateFormatter.new;
     //设定时间格式,这里可以设置成自己需要的格式
     if([NSString isNullString:timeFormatStr]){
@@ -125,7 +125,7 @@
 }
 //以当前手机系统时间（包含了时区）为基准，给定一个日期偏移值（正值代表未来，负值代表过去，0代表现在），返回字符串特定格式的“星期几”
 +(NSString *)whatDayOfWeekDistanceNow:(NSInteger)offsetDay{
-    TimeModel *timeModel = [TimeModel makeSpecificTime];
+    JobsTimeModel *timeModel = [JobsTimeModel makeSpecificTime];
     NSInteger currentWeekday = timeModel.currentWeekday;//当前时间是周几？1代表周日 2代表周一 7代表周六
     NSInteger offsetResDay = currentWeekday + offsetDay;//偏移量以后的值，对这个值进行分析和讨论
     NSInteger resResWeekDay = 0;//处理的结果落在0~6
@@ -178,12 +178,12 @@
 +(NSString *)getDayWithDate:(NSDate *_Nullable)date
               dateFormatStr:(NSString *_Nullable)dateFormatStr{
     if (!date) {
-        date = TimeModel.new.currentDate;
+        date = JobsTimeModel.new.currentDate;
     }
     
     NSDateFormatter *dateFormatter = nil;
     if ([NSString isNullString:dateFormatStr]) {
-        dateFormatter = TimeModel.new.dateFormatter;
+        dateFormatter = JobsTimeModel.new.dateFormatter;
     }else{
         dateFormatter = NSDateFormatter.new;
         dateFormatter.dateFormat = dateFormatStr;
@@ -192,7 +192,7 @@
 /// NSDate 和 NSString相互转换
 +(NSString *)dateString:(NSDate *)date
        dateFormatterStr:(NSString *)dateFormatterStr{
-    TimeModel *timeModel = TimeModel.new;
+    JobsTimeModel *timeModel = JobsTimeModel.new;
     timeModel.customDate = date;
     timeModel.dateFormatterStr = dateFormatterStr;
     //NSDate 转 NSString
@@ -248,7 +248,7 @@
 }
 #pragma mark —— 功能性的
 //各个具体时间的拆解
-+(TimeModel *)makeSpecificTime{
++(JobsTimeModel *)makeSpecificTime{
     NSCalendar *calendar = NSCalendar.currentCalendar;
     NSUInteger unitFlags;
     
@@ -288,7 +288,7 @@
                                                NSTimeZoneCalendarUnit);
     }
     
-    TimeModel *timeModel = TimeModel.new;
+    JobsTimeModel *timeModel = JobsTimeModel.new;
     
     NSDateComponents *dateComponent = [calendar components:unitFlags
                                                   fromDate:timeModel.currentDate];
@@ -309,10 +309,10 @@
     return timeModel;
 }
 /// 获得当前时间
-+(TimeFormatterModel *)currentTime{
++(JobsTimeFormatterModel *)currentTime{
     NSDate *date = NSDate.date;
     NSTimeZone *zone = NSTimeZone.systemTimeZone;// 系统时区
-    TimeFormatterModel *timeModel = TimeFormatterModel.new;
+    JobsTimeFormatterModel *timeModel = JobsTimeFormatterModel.new;
     
     NSTimeInterval interval = [zone secondsFromGMTForDate:date];//??
     NSDate *currentDate = [date dateByAddingTimeInterval:interval];
@@ -328,7 +328,7 @@
 }
 /// 获得今天的时间:年/月/日
 /// @param dateFormat 时间格式：缺省值@"yyyy-MM-dd"
-+(TimeFormatterModel *)getToday:(NSString *_Nullable)dateFormat{
++(JobsTimeFormatterModel *)getToday:(NSString *_Nullable)dateFormat{
     
     NSDateFormatter *formatter = NSDateFormatter.new;
     
@@ -344,7 +344,7 @@
     NSDate *dateTime_Date = [formatter dateFromString:dateTime_Str];
     NSTimeInterval interval = [zone secondsFromGMTForDate:NSDate.date];
     
-    TimeFormatterModel *timeModel = TimeFormatterModel.new;
+    JobsTimeFormatterModel *timeModel = JobsTimeFormatterModel.new;
     timeModel.dateStr = dateTime_Str;
     timeModel.date = dateTime_Date;
     timeModel.intervalBySec = interval;
@@ -356,7 +356,7 @@
 /// @param startTime （给定） 开始时间【字符串格式】
 /// @param endTime （可以不用给定）结束时间【字符串格式】
 /// @param timeFormatter 时间格式：缺省值@"yyyy-MM-dd HH:mm:ss"
-+(TimeFormatterModel *)timeIntervalstartDate:(NSString *_Nonnull)startTime
++(JobsTimeFormatterModel *)timeIntervalstartDate:(NSString *_Nonnull)startTime
                                      endDate:(NSString *_Nullable)endTime
                                timeFormatter:(NSString *_Nullable)timeFormatter{
     if ([NSString isNullString:timeFormatter]) {
@@ -374,7 +374,7 @@
         endDate = [dateFormatter dateFromString:endTime];
     }
     
-    TimeFormatterModel *timeModel = TimeFormatterModel.new;
+    JobsTimeFormatterModel *timeModel = JobsTimeFormatterModel.new;
     timeModel.intervalBySec = [endDate timeIntervalSinceDate:startDate];
     timeModel.intervalByMilliSec = timeModel.intervalBySec * 1000;
     
@@ -402,7 +402,7 @@
                                    byDateFormatter:(NSDateFormatter *)dateFormatter{
     
     if (!dateFormatter) {
-        TimeModel *timeModel = TimeModel.new;
+        JobsTimeModel *timeModel = JobsTimeModel.new;
         timeModel.dateFormatterStr = @"HH:mm:ss";//根据自己的需求定义格式
         dateFormatter = timeModel.dateFormatter;
     }
@@ -416,7 +416,7 @@
                                              toEndTime:(NSString *)endTime
                                        byDateFormatter:(NSDateFormatter *)dateFormatter{
     if (!dateFormatter) {
-        TimeModel *timeModel = TimeModel.new;
+        JobsTimeModel *timeModel = JobsTimeModel.new;
         timeModel.dateFormatterStr = @"HH:mm:ss";//根据自己的需求定义格式
         dateFormatter = timeModel.dateFormatter;
     }
@@ -561,7 +561,7 @@
     fmt.dateFormat = @"yyyy-MM-dd";
     
     NSString *dateStr = [fmt stringFromDate:date];
-    NSString *nowStr = [fmt stringFromDate:TimeModel.new.currentDate];// Now
+    NSString *nowStr = [fmt stringFromDate:JobsTimeModel.new.currentDate];// Now
     
     return [dateStr isEqualToString:nowStr];
 }

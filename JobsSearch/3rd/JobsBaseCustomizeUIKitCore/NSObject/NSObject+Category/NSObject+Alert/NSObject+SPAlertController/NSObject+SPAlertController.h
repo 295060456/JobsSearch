@@ -10,7 +10,7 @@
 #import "AABlock.h"
 #import "NSObject+Extras.h"
 #import "NSObject+WHToast.h"//提示
-#import "NSStringExtras.h"
+#import "JobsString.h"
 
 #if __has_include(<SPAlertController/SPAlertController.h>)
 #import <SPAlertController/SPAlertController.h>

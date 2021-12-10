@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (JudgeNull)
 #pragma mark —— 判空
--(BOOL)isNotBlank;
+- (BOOL)isNotBlank;
 /**
 *  判断对象 / 数组是否为空
 *  为空返回 YES

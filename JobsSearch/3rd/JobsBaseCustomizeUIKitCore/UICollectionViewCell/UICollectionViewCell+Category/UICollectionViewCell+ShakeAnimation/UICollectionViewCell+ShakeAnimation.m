@@ -8,7 +8,6 @@
 #import "UICollectionViewCell+ShakeAnimation.h"
 
 @implementation UICollectionViewCell (ShakeAnimation)
-
 // 实现cell抖动方法
 -(void)beginShake{
     CAKeyframeAnimation *anim = CAKeyframeAnimation.animation;

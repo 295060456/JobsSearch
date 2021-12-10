@@ -11,22 +11,26 @@
 
 -(void)registerCollectionViewClass{
     
-//    [self registerClass:DDUserDetailsCollectionReusableView.class
-//        forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-//        withReuseIdentifier:NSStringFromClass(DDUserDetailsCollectionReusableView.class)];
-//
-//    [self registerClass:DDCollectionViewCell_Style1.class
-//        forCellWithReuseIdentifier:NSStringFromClass(DDCollectionViewCell_Style1.class)];
-//    [self registerClass:DDCollectionViewCell_Style2.class
-//        forCellWithReuseIdentifier:NSStringFromClass(DDCollectionViewCell_Style2.class)];
-//    [self registerClass:DDCollectionViewCell_Style3.class
-//        forCellWithReuseIdentifier:NSStringFromClass(DDCollectionViewCell_Style3.class)];
-//    [self registerClass:DDCollectionViewCell_Style4.class
-//        forCellWithReuseIdentifier:NSStringFromClass(DDCollectionViewCell_Style4.class)];
-//    [self registerClass:DDCollectionViewCell_Style5.class
-//        forCellWithReuseIdentifier:NSStringFromClass(DDCollectionViewCell_Style5.class)];
+    [self registerClass:CasinoGameCollectionReusableView.class
+    forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+    withReuseIdentifier:reuseIdentifier(CasinoGameCollectionReusableView)];
+    
     [self registerClass:UICollectionViewCell.class
-        forCellWithReuseIdentifier:NSStringFromClass(UICollectionViewCell.class)];
+        forCellWithReuseIdentifier:reuseIdentifier(UICollectionViewCell)];
+    [self registerClass:BaseCollectionViewCell.class
+        forCellWithReuseIdentifier:reuseIdentifier(BaseCollectionViewCell)];
+    [self registerClass:CasinoTopCVCell.class
+        forCellWithReuseIdentifier:reuseIdentifier(CasinoTopCVCell)];
+    [self registerClass:CasinoBannerCVCell.class
+        forCellWithReuseIdentifier:reuseIdentifier(CasinoBannerCVCell)];
+    [self registerClass:CasinoMarqueeCVCell.class
+        forCellWithReuseIdentifier:reuseIdentifier(CasinoMarqueeCVCell)];
+    [self registerClass:CasinoGameCVCell.class
+        forCellWithReuseIdentifier:reuseIdentifier(CasinoGameCVCell)];
+    [self registerClass:CasinoGameCell.class
+        forCellWithReuseIdentifier:reuseIdentifier(CasinoGameCell)];
+    [self registerClass:JobsImageNumberViewCVCell.class
+        forCellWithReuseIdentifier:reuseIdentifier(JobsImageNumberViewCVCell)];
 }
 
 @end

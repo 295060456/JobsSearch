@@ -10,7 +10,7 @@
 #import "NSObject+Time.h"
 #import "NSObject+RichText.h"//富文本
 #import "NSObject+Extras.h"
-#import "TimerManager.h"//时间管理
+#import "JobsTimerManager.h"//时间管理
 #import "ButtonTimerDefStructure.h"
 #import "ButtonTimerConfigModel.h"
 #import "MacroDef_Func.h"

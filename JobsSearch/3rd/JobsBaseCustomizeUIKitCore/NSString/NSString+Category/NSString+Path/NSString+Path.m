@@ -25,7 +25,7 @@
 #pragma mark —— 目录获取
 /// 获取bundle路径
 +(NSString *)bundlePath{
-    return NSBundle.mainBundle.bundlePath;;
+    return NSBundle.mainBundle.bundlePath;
 }
 /// 获取沙盒的主目录路径：
 +(NSString *)homeDir{

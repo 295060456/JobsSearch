@@ -111,7 +111,11 @@ static inline id getSysSceneDelegate(){
 #endif
 /// 其他
 #ifndef ReuseIdentifier
-#define ReuseIdentifier NSStringFromClass ([self class])
+#define ReuseIdentifier self.class.description
+#endif
+
+#ifndef reuseIdentifier
+#define reuseIdentifier(Class) Class.class.description
 #endif
 
 #ifndef AvailableSysVersion

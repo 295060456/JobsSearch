@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NSStringExtras.h"
+#import "JobsString.h"
 
 #if __has_include(<ReactiveObjC/ReactiveObjC.h>)
 #import <ReactiveObjC/ReactiveObjC.h>

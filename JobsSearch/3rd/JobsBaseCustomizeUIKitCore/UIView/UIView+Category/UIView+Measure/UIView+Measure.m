@@ -153,7 +153,20 @@
     frame.origin.y = bottom - frame.size.height;
     self.frame = frame;
 }
-
-
+#pragma mark —— BaseViewProtocol
+//数据（字符串）定宽
++(CGFloat)widthByData:(UIViewModel *_Nonnull)data{
+    return [data.text getContentHeightOrWidthWithParagraphStyleLineSpacing:0
+                                                     calcLabelHeight_Width:CalcLabelWidth
+                                                                      font:data.font
+                                              boundingRectWithHeight_Width:data.height];
+}
+//数据（字符串）定高
++(CGFloat)heightByData:(UIViewModel *_Nonnull)data{
+    return [data.text getContentHeightOrWidthWithParagraphStyleLineSpacing:0
+                                                     calcLabelHeight_Width:CalcLabelHeight
+                                                                      font:data.font
+                                              boundingRectWithHeight_Width:data.width];
+}
 
 @end

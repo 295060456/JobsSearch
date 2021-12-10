@@ -15,7 +15,7 @@
 
 - (void)dealloc{
     NSLog(@"Running self.class = %@;NSStringFromSelector(_cmd) = '%@';__FUNCTION__ = %s", self.class, NSStringFromSelector(_cmd),__FUNCTION__);
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [NSNotificationCenter.defaultCenter removeObserver:self];
 }
 
 - (instancetype)init{
@@ -36,6 +36,7 @@
 -(void)loadView{
     [super loadView];
     self.currentPage = 1;
+    self.backgroundImage = KIMG(@"洗码背景图");
 }
 
 - (void)viewDidLoad {
@@ -58,6 +59,7 @@
 //        self.gk_navLineHidden = YES;
 //    }
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    NotificationAdd(self, @selector(languageSwitchNotification:), LanguageSwitchNotification, nil);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -92,6 +94,13 @@
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     self.view.mjRefreshTargetView.mj_footer.y = self.view.mjRefreshTargetView.contentSize.height;
+}
+
+-(void)setGKNav{
+    self.gk_navTitle = self.viewModel.text;
+    self.gk_navTitleColor = HEXCOLOR(0xD3B698);
+    self.gk_navBackgroundColor = HEXCOLOR(0x564533);
+    self.gk_navTitleFont = [UIFont systemFontOfSize:KWidth(18) weight:UIFontWeightRegular];
 }
 /**
  
@@ -133,6 +142,11 @@
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
 shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     return YES;
+}
+#pragma mark —— BaseProtocol
+/// 接收通知并相应的方法【在分类或者基类中实现会屏蔽具体子类的相关实现】
+-(void)languageSwitchNotification:(nonnull NSNotification *)notification{
+    NSLog(@"通知传递过来的 = %@",notification.object);
 }
 #pragma mark —— lazyLoad
 -(UIImageView *)bgImageView{

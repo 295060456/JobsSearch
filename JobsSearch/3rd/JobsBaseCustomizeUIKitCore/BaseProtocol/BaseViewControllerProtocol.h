@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "BaseProtocol.h"
 
 typedef enum : NSUInteger {
     ComingStyle_PUSH = 0,
@@ -15,7 +16,7 @@ typedef enum : NSUInteger {
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol BaseViewControllerProtocol <NSObject>
+@protocol BaseViewControllerProtocol <BaseProtocol>
 
 @optional
 

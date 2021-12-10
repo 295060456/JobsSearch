@@ -14,7 +14,7 @@
 -(BOOL)isAllSameCharWithStandardChar:(char)standardChar{
     if (self.length) {
         NSMutableArray* carries = [NSMutableArray array];
-        for (int i=0; i < self.length; i++) {
+        for (int i = 0; i < self.length; i++) {
             char s = [self characterAtIndex:i];
             if(s == standardChar){
                 NSString *tempString = [NSString stringWithUTF8String:&s];

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ImageIO/ImageIO.h>
 
 @interface UIImageView (GIF)
 /**

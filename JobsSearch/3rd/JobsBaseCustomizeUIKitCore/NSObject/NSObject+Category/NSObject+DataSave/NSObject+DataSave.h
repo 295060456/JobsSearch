@@ -8,6 +8,12 @@
 #import <Foundation/Foundation.h>
 #import "FileFolderHandleTool.h"
 
+#if __has_include(<TXFileOperation/TXFileOperation.h>)
+#import <TXFileOperation/TXFileOperation.h>
+#else
+#import "TXFileOperation.h"
+#endif
+
 NS_ASSUME_NONNULL_BEGIN
 // 本工具类是对FileFolderHandleTool的再一次封装，目的是尽可能不要去关注过于底层交互化的FileFolderHandleTool，避免痛苦
 @interface NSObject (DataSave)

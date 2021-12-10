@@ -7,11 +7,10 @@
 //
 
 #import "UIDevice+XMUtils.h"
-#import <sys/sysctl.h>
 
 @implementation UIDevice (XMUtils)
 
-+ (NSString *)platform {
++(NSString *)platform{
     size_t size;
     sysctlbyname("hw.machine",
                  NULL,
@@ -32,9 +31,8 @@
     free(machine);
     return platform;
 }
-
 // See also: https://www.theiphonewiki.com/wiki/Models
-+ (NSString *)platformString {
++(NSString *)platformString{
     NSString *platform = [self platform];
     
     if (!platform) {
@@ -140,7 +138,6 @@
     // For new device, return the hardware string directly.
     return platform;
 }
-
 #pragma mark —— 判断当前机型是否是iphone6 及其以上机型,过滤掉对ipad的判断
 +(BOOL)judgementUpperIphone6{
     NSString *str = [UIDevice platformString];
@@ -161,7 +158,7 @@
     return [str isEqualToString:@"iPhone Simulator"]?YES:NO;
 }
 
-+ (NSString *)deviceName {
++(NSString *)deviceName{
     static NSString *deviceName = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

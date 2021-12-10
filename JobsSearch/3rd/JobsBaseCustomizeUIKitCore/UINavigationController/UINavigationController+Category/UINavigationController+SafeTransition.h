@@ -9,6 +9,8 @@
 /* 解决Can't add self as subview 的崩溃 */
 
 #import <UIKit/UIKit.h>
+#import <objc/runtime.h>
+#import "NSObject+Swizzling.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

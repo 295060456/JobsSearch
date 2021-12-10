@@ -6,9 +6,6 @@
 
 #import "NotificationManager.h"
 
-NSString *const kUserAssert = @"kUserAssert";
-
-NSString *const UBLEnterBackgroundStopPlayer = @"UBLEnterBackgroundStopPlayer";//进入后台发通知停止播放器
-/// 网络监测
-NSString *const MKAFNReachabilityStatus = @"MKAFNReachabilityStatus";
-
+NSString *const LanguageSwitchNotification = @"LanguageSwitchNotification";// 语言切换
+NSString *const UBLEnterBackgroundStopPlayer = @"UBLEnterBackgroundStopPlayer";// 退到后台停止播放ZFPlayer
+NSString *const MKAFNReachabilityStatus = @"MKAFNReachabilityStatus";//网络状态监控

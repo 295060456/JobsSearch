@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <objc/message.h>
 #import "AABlock.h"
-#import "NSStringExtras.h"
+#import "JobsString.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

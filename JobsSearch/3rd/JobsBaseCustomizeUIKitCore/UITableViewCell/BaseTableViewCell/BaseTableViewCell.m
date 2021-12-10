@@ -17,17 +17,18 @@
 @synthesize idxPath = _idxPath;
 
 +(instancetype)cellWithTableView:(UITableView *)tableView{
-    BaseTableViewCell *cell = (BaseTableViewCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
+    BaseTableViewCell *cell = (BaseTableViewCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier(self.class)];
     if (!cell) {
         cell = [[BaseTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
-                                        reuseIdentifier:ReuseIdentifier];
+                                        reuseIdentifier:reuseIdentifier(self.class)];
 //        [UIView cornerCutToCircleWithView:cell andCornerRadius:6];
     }return cell;
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style
               reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+    if (self = [super initWithStyle:style
+                    reuseIdentifier:reuseIdentifier]) {
         [self richElementsInCellWithModel:nil];
         self.selectionStyle = UITableViewCellSelectionStyleNone;// 取消点击效果 【不能在cellWithTableView里面写】
     }return self;

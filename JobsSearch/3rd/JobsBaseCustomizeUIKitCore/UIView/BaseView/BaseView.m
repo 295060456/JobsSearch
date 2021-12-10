@@ -27,7 +27,7 @@
 
 -(instancetype)init{
     if (self = [super init]) {
-        
+
     }return self;
 }
 
@@ -40,6 +40,7 @@
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
 }
+#pragma mark —— BaseViewProtocol
 //具体由子类进行复写【数据定UI】【如果所传参数为基本数据类型，那么包装成对象NSNumber进行转化承接】
 -(void)richElementsInViewWithModel:(id _Nullable)model{}
 //具体由子类进行复写【数据定宽】【如果所传参数为基本数据类型，那么包装成对象NSNumber进行转化承接】
@@ -64,21 +65,5 @@
 -(void)actionBlockBaseView:(MKDataBlock)baseViewBlock{
     self.baseViewBlock = baseViewBlock;
 }
-//数据（字符串）定宽
--(CGFloat)widthByData:(UIViewModel *_Nonnull)data{
-    return [data.text getContentHeightOrWidthWithParagraphStyleLineSpacing:0
-                                                     calcLabelHeight_Width:CalcLabelWidth
-                                                                      font:data.font
-                                              boundingRectWithHeight_Width:data.height];
-}
-//数据（字符串）定高
--(CGFloat)heightByData:(UIViewModel *_Nonnull)data{
-    return [data.text getContentHeightOrWidthWithParagraphStyleLineSpacing:0
-                                                     calcLabelHeight_Width:CalcLabelHeight
-                                                                      font:data.font
-                                              boundingRectWithHeight_Width:data.width];
-}
-
-
 
 @end
